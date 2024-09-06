@@ -1,0 +1,256 @@
+:root {
+    --carrotOrange: #de9228;
+    --japaneseIndigo: #1c3843;
+    --marigold: #ee9b26;
+    --pictonBlue: #3db2ed;
+    --darkMidnightBlue: #12375f;
+    --midnightGreen: #12475f;
+    --seaGreen: #3c8d5c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-ji {
+    background-color: var(--japaneseIndigo);
+}
+
+.bg-dmb {
+    background-color: var(--darkMidnightBlue);
+}
+
+.bg-marigold {
+    background-color: var(--marigold);
+}
+
+.bg-mg {
+    background-color: var(--midnightGreen);
+}
+
+.bg-image {
+    background: url('https://avvanz.com/wp-content/uploads/2023/09/home-bg.webp') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.text-co{
+    color: var(--carrotOrange);
+}
+
+.text-dmb {
+    color: var(--darkMidnightBlue);
+}
+
+.text-marigold {
+    color: var(--marigold);
+}
+
+.text-justify{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.navbar-brand:hover .brand-logo {
+    transform: scale(0.9);
+}
+
+.btn-orange-border {
+    color: var(--marigold);
+    border-radius: 25px;
+    border: 3px solid var(--marigold);
+}
+
+.btn-orange-border:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid var(--marigold);
+    background-color: var(--marigold);
+}
+
+.border-dmb {
+    border: 3px solid var(--darkMidnightBlue) !important;
+}
+
+/* Navigation Section */
+.navigation {
+    color: black !important;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+
+.navigation:hover {
+    color: var(--marigold) !important;
+}
+
+.navigation-item {
+    color: black !important;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+
+.navigation-item:hover {
+    color: white !important;
+    background-color: var(--marigold);
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.divider-start-25{
+    border-bottom: 3px solid var(--marigold) !important;
+    width: 25%;
+}
+
+.divider-start-50{
+    border-bottom: 3px solid var(--marigold) !important;
+    width: 50%;
+}
+
+.divider-center-25 {
+    border-bottom: 3px solid var(--marigold) !important;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.transition-up {
+    transition: transform 0.3s ease-in-out;
+}
+
+.transition-up:hover {
+    transform: translateY(-10px);
+}
+
+/* Header Section */
+.login-1 {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-1:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--marigold);
+}
+.login-2 {
+    color: var(--pictonBlue) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-2:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--pictonBlue);
+}
+.login-3 {
+    color: white !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-3:hover {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.brand-logo {
+    transition: transform 0.3s ease;
+}
+
+/* Floating Section */
+.floating-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border: none;
+}
+
+.floating-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.floating-btn-left {
+    background-color: var(--darkMidnightBlue);
+    bottom: 20px;
+    left: 20px;
+}
+
+.floating-btn-right {
+    background-color: var(--seaGreen);
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Footer Section */
+.footer-background{
+    background-color: var(--darkMidnightBlue);
+}
+
+.link-category{
+    color: var(--marigold) !important;
+}
+
+.link-item{
+    color: white;
+}
+
+.link-item:hover{
+    color: var(--marigold) !important;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    border-color: var(--marigold);
+    color: var(--marigold);
+}
+
+/* Swiper Section */
+.swiper {
+    width: auto;
+    height: auto;
+}

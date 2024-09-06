@@ -1,0 +1,132 @@
+/* Hero Section */
+.hero-button{
+    color: white;
+    background-color: var(--marigold) !important;
+    border-radius: 25px;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+
+.hero-button:hover {
+    color: white;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-screen-button {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.hero-screen-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--marigold);
+}
+
+.hero-develop-button {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.hero-develop-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--darkMidnightBlue);
+}
+
+/* Solution Section */
+.solution-image{
+    height: 250px;
+    width: 400px;
+}
+
+.solution-button {
+    color: var(--darkMidnightBlue);
+    border-radius: 25px;
+    border: 3px solid var(--darkMidnightBlue);
+}
+
+.solution-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--darkMidnightBlue);
+}
+
+/* Industry Section */
+.industry-divider{
+    border-bottom: 5px solid var(--marigold) !important;
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-display {
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.15);
+}
+
+.card-icon i {
+    font-size: 2rem;
+}
+
+.card-description {
+    padding: 1rem;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+    font-size: 50px;
+}
+
+.card-display {
+    height: 300px;
+    width: auto;
+    border-radius: 50px;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.card-display:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    transition: opacity 0.3s ease;
+}
+
+.card-display:hover .card-body {
+    opacity: 0;
+}
+
+.card-display:hover .card-description {
+    opacity: 1;
+    border-radius: 50px;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+}
+
+.card-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}

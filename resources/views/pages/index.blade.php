@@ -4,19 +4,23 @@
 Avvanz - Background Checks & Screening
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+@endsection()
+
 @section('content')
 
 <!-- Navbar Section #1 -->
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
-<div class="hero">
+<section class="bg-image">
     <div class="container">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
                 <div class="text-white">
-                    <h1 class="h1 fw-bolder">We Screen & Strengthen your Human Assets</h1>
-                    <h1 class="hero-divider"></h1>
+                    <h1 class="fw-bolder">We Screen & Strengthen your Human Assets</h1>
+                    <h1 class="divider-start-50"></h1>
                     <p>Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.</p>
                     <a href="#" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                 </div>
@@ -26,26 +30,26 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 text-center text-white">
+</section>
+<section class="container my-5 text-center text-white">
     <div class="row">
-        <div class="col hero-screen p-5">
+        <div class="col bg-dmb p-5">
             <h1 class="fw-bolder">Screen</h1>
             <p>Background Checks, KYC/AML and Company Due Diligence</p>
             <a href="#" class="btn hero-screen-button fw-bolder text-uppercase">Click to know more</a>
         </div>
-        <div class="col hero-develop p-5">
+        <div class="col bg-marigold p-5">
             <h1 class="fw-bolder">Develop</h1>
             <p>F2F/Virtual LIVE Training, Coaching and Customized elearning</p>
             <a href="#" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Awards Section -->
-<div class="container my-5">
-    <h1 class="text-center award-title fw-bolder">Awards & Certification</h1>
-    <h1 class="text-center award-divider"></h1>
+<section class="container my-5">
+    <h1 class="text-center text-dmb fw-bolder">Awards & Certification</h1>
+    <h1 class="text-center divider-center-25"></h1>
     <div class="row m-5">
         <div class="col p-3">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -74,13 +78,14 @@ Avvanz - Background Checks & Screening
             <img src="{{ asset('images/award-4.png') }}" class="d-block w-75" alt="Award 4">
         </div>
     </div>
-</div>
+</section>
+
 <!-- Solution Section -->
-<div class="container my-5 py-5">
+<section class="container my-5 py-5">
     <div class="row">
         <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
             <div>
-                <h3 class="fw-bold solution-title">Searching for an automated compliant background screening solution?</h3>
+                <h3 class="fw-bold text-co">Searching for an automated compliant background screening solution?</h3>
                 <p>As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.</p>
                 <a href="#" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
             </div>
@@ -89,9 +94,10 @@ Avvanz - Background Checks & Screening
             <img src="{{ asset('images/pexels-jack-sparrow-5917727-1-scaled-1.png') }}" alt="Placeholder Image" class="transition-up solution-image">
         </div>
     </div>
-</div>
+</section>
+
 <!-- Courses Section -->
-<div class="courses-background text-white p-5">
+<section class="bg-mg text-white p-5">
     <div class="row">
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
             <img src="{{ asset('images/people-working-as-team-company.png') }}" alt="Placeholder Image" class="transition-up solution-image">
@@ -100,16 +106,19 @@ Avvanz - Background Checks & Screening
             <div>
                 <h3 class="fw-bold">Do you want to be effectively onboard and upskill your employees?</h3>
                 <p>Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.</p>
-                <a href="#" class="btn courses-button fw-bolder text-uppercase">Explore Courses</a>
+                <a href="#" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 <!-- Partners Section -->
-<div class="container my-5">
-    <h1 class="text-center partners-title fw-bolder">Discover Our Partners</h1>
-    <h1 class="text-center partners-divider"></h1>
-    <p class="text-center mt-2 partners-description">Connect with our trusted service providers and integration<br> partners to streamline your background screening process.</p>
+<section class="container my-5">
+    <h1 class="text-center text-dmb fw-bolder">Discover Our Partners</h1>
+    <h1 class="text-center divider-center-25"></h1>
+    <p class="text-center mt-2 text-wrap text-justify">
+        Connect with our trusted service providers and integration partners to streamline your background screening process.
+    </p>
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
@@ -141,9 +150,10 @@ Avvanz - Background Checks & Screening
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-</div>
+</section>
+
 <!-- Industry Section -->
-<div class="industry-background text-center container-fluid">
+<section class="bg-image text-center container-fluid">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -285,17 +295,10 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Floating Button -->
-<!-- Left -->
-<a href="#" class="floating-btn floating-btn-left">
-    <img src="{{ asset('images/footer-logo.png') }}" alt="Left Icon">
-</a>
-<!-- Right -->
-<a href="#" class="floating-btn floating-btn-right">
-    <i class="fas fa-phone text-white"></i>
-</a>
+@include('layouts.floating')
 
 <!-- Footer Section -->
 @include('layouts.footer')
@@ -303,5 +306,5 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('scripts')
-    <script src="{{asset('js/home.js')}}"></script>
+    
 @endsection

@@ -1,0 +1,23 @@
+/* Awards Section */
+.link-hover {
+    color: var(--marigold) !important;
+    text-decoration: none;
+}
+
+.link-hover:hover {
+    color: var(--pictonBlue) !important;
+}
+
+/* Vision & Mission Section */
+.accordion-item {
+    background-color: var(--midnightGreen);
+}
+
+.accordion-button {
+    color: var(--darkMidnightBlue);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: var(--marigold);
+}

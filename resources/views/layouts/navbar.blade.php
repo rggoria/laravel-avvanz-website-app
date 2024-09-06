@@ -1,9 +1,9 @@
 <header>
     <!-- Navbar #1 -->
-    <nav class="navbar navbar-expand-lg navbar-dark background-color-1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ji">
         <div class="container">
             <a class="navbar-brand d-none d-lg-block" href="mailto:consult@avvanz.com">
-                <i class="fas fa-envelope orange-icon"></i>
+                <i class="fas fa-envelope text-marigold"></i>
                 consult@avvanz.com
             </a>
             <div class="navbar-collapse">
@@ -22,7 +22,7 @@
         </div>
     </nav>            
     <!-- Navbar #2 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-pure-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="{{ asset('images/avvanz.webp') }}" alt="Avvanz Logo" width="190" height="45" class="brand-logo">
