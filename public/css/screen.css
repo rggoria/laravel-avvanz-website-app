@@ -1,0 +1,11 @@
+.btn-submit {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--carrotOrange);
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.btn-submit:hover {
+    color: var(--carrotOrange) !important;
+    border-radius: 5px;
+    background-color: white;
+}

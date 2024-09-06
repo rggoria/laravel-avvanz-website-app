@@ -39,11 +39,11 @@
                         </a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="workplace-safety.html">Workplace Safety and Health Guideline</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="workplace-safety-and-health-guideline">Workplace Safety and Health Guideline</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="environmental-social-governance.html">Environmental, Social and Governance</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="environmental-social-and-governance">Environmental, Social and Governance</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="join-avvanz.html">Join Avvanz</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="join-avvanz">Join Avvanz</a></li>
                         </ul>
                     </li>
                     
@@ -54,20 +54,20 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <div class="btn-group dropend">
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">Background Screening</a>
+                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="background-screening">Background Screening</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Why Avvanz Screen</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Background Checks</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Avvanz Screen Global</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Process</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">KYC AML Compliance</a></li>
+                                        <li><a class="dropdown-item navigation-item fw-bolder" href="why-avvanz-screen">Why Avvanz Screen</a></li>
+                                        <li><a class="dropdown-item navigation-item fw-bolder" href="background-check">Background Checks</a></li>
+                                        <li><a class="dropdown-item navigation-item fw-bolder" href="avvanz-screenglobal">Avvanz Screen Global</a></li>
+                                        <li><a class="dropdown-item navigation-item fw-bolder" href="process">Process</a></li>
+                                        <li><a class="dropdown-item navigation-item fw-bolder" href="kyc-aml-compliance">KYC AML Compliance</a></li>
                                     </ul>
                                 </li>
                             </div>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">ScreenChain</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="screen-chain">ScreenChain</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Singapore Work Passes</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="singapore-work-passes">Singapore Work Passes</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item navigation-item fw-bolder" href="#">Company Due Diligence</a></li>
                             <li><hr class="dropdown-divider"></li>

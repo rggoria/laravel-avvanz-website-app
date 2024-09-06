@@ -1,13 +1,3 @@
-/* Awards Section */
-.link-hover {
-    color: var(--marigold) !important;
-    text-decoration: none;
-}
-
-.link-hover:hover {
-    color: var(--pictonBlue) !important;
-}
-
 /* Vision & Mission Section */
 .accordion-item {
     background-color: var(--midnightGreen);
@@ -20,4 +10,16 @@
 .accordion-button:not(.collapsed) {
     background-color: white;
     color: var(--marigold);
+}
+
+.btn-form-submit {
+    color: white;
+    background-color: var(--marigold);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-form-submit:hover {
+    color: white;
+    transform: scale(0.95);
+    background-color: var(-marigold);
 }

@@ -6,6 +6,7 @@
     --darkMidnightBlue: #12375f;
     --midnightGreen: #12475f;
     --seaGreen: #3c8d5c;
+    --antiFlashWhite: #f2f2f2;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
     background-color: var(--midnightGreen);
 }
 
+.bg-afw {
+    background-color: var(--antiFlashWhite);
+}
+
 .bg-image {
     background: url('https://avvanz.com/wp-content/uploads/2023/09/home-bg.webp') no-repeat center center;
     background-size: cover;
@@ -45,6 +50,10 @@ body {
 
 .text-marigold {
     color: var(--marigold);
+}
+
+.text-pb {
+    color: var(--pictonBlue);
 }
 
 .text-justify{
@@ -72,6 +81,34 @@ body {
 
 .border-dmb {
     border: 3px solid var(--darkMidnightBlue) !important;
+}
+
+.border-radius-dmb {
+    border: 3px solid var(--darkMidnightBlue) !important;
+    border-radius: 25px;
+}
+
+.border-radius-co {
+    border: 3px solid var(--carrotOrange) !important;
+    border-radius: 25px;
+}
+
+.border-simple-left {
+    border-radius: 25px 0 0 25px;
+}
+
+.border-simple-right {
+    border-radius: 0 25px 25px 0;
+}
+
+/* Links */
+.link-hover {
+    color: var(--marigold) !important;
+    text-decoration: none;
+}
+
+.link-hover:hover {
+    color: var(--pictonBlue) !important;
 }
 
 /* Navigation Section */
@@ -214,10 +251,6 @@ body {
 }
 
 /* Footer Section */
-.footer-background{
-    background-color: var(--darkMidnightBlue);
-}
-
 .link-category{
     color: var(--marigold) !important;
 }
