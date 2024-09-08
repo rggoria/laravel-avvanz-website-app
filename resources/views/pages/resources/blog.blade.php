@@ -10,7 +10,7 @@ Blog - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image">
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -24,37 +24,42 @@ Blog - Avvanz Global
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Partners Section -->
-<div class="container my-5">
-    <div class="text-center">
-        <h1 class="text-dmb fw-bolder display-5">Discover Our Partners</h1>
-        <h1 class="divider-center-25"></h1>
-        <p class="lead mt-2">
-            Connect with our trusted service providers and integration partners to streamline your background screening process.
-        </p>
-    </div>
+<!-- Blog Section -->
+<section class="container my-5">
     <div class="row g-3 py-5">
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
+        @foreach($blogItems as $item)
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card border-radius-dmb h-100">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sample Image 3">
+                    <img src="{{ asset('images/resources/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">
-                            This is a title for Sample Card 3
+                            {{ $item['title'] }}
                         </h5>
-                        <div class="lead text-muted">
-                            <small>
-                                Created on: September 10, 2024
-                            </small>
-                        </div>
+                        <h5 class="card-text fw-bolder text-marigold">
+                            Read More »
+                        </h5>                       
+                    </div>
+                    <div class="card-footer bg-transparent text-muted">
+                        {{ $item['created_at'] }}
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
+        @endforeach
     </div>
-</div>
+    <nav>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+        </ul>
+    </nav>
+</section>
 
 <!-- Floating Button -->
 @include('layouts.floating')
