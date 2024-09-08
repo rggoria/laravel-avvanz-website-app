@@ -355,7 +355,7 @@ Background Checks Singapore - Avvanz Global
                     <div class="text-center">
                       <h4 class="fw-bolder text-dmb">Consult with Us</h4>
                       <br>
-                      <a href="#" class="btn text-uppercase btn-submit">get started</a>
+                      <a href="#" class="btn text-uppercase btn-marigold-link">get started</a>
                     </div>
                 </div>
             </div>

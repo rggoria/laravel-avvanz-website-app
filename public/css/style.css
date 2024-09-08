@@ -7,6 +7,13 @@
     --midnightGreen: #12475f;
     --seaGreen: #3c8d5c;
     --antiFlashWhite: #f2f2f2;
+    --brightGray: #eaf1ee;
+
+    --blackSqueeze: #e9f4f6;
+    --linkWater: #d8e8f3;
+    --givry: #f7e6c5;
+    --periglacialBlue: #dce2d2;
+    --dustStorm: #e9d6d5;
 }
 
 body {
@@ -33,15 +40,39 @@ body {
 .bg-afw {
     background-color: var(--antiFlashWhite);
 }
+.bg-bg {
+    background-color: var(--brightGray);
+}
+
+.bg-bs {
+    background-color: var(--blackSqueeze);
+}
+
+.bg-lw {
+    background-color: var(--linkWater);
+}
+
+.bg-givry {
+    background-color: var(--givry);
+}
+
+.bg-pb {
+    background-color: var(--periglacialBlue);
+}
+
+.bg-ds {
+    background-color: var(--dustStorm);
+}
 
 .bg-image {
-    background: url('https://avvanz.com/wp-content/uploads/2023/09/home-bg.webp') no-repeat center center;
+    background: url("https://avvanz.com/wp-content/uploads/2023/09/home-bg.webp")
+        no-repeat center center;
     background-size: cover;
     padding: 80px 0;
 }
 
-.text-co{
-    color: var(--carrotOrange);
+.text-co {
+    color: var(--carrotOrange) !important;
 }
 
 .text-dmb {
@@ -56,7 +87,7 @@ body {
     color: var(--pictonBlue);
 }
 
-.text-justify{
+.text-justify {
     width: 50%;
     margin: 0 auto;
     display: block;
@@ -77,6 +108,30 @@ body {
     border-radius: 25px;
     border: 3px solid var(--marigold);
     background-color: var(--marigold);
+}
+
+.btn-marigold-link {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--carrotOrange);
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.btn-marigold-link:hover {
+    color: var(--carrotOrange) !important;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.btn-marigold-transition {
+    color: white;
+    background-color: var(--marigold);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-marigold-transition:hover {
+    color: white;
+    transform: scale(0.95);
+    background-color: var(-marigold);
 }
 
 .border-dmb {
@@ -105,10 +160,12 @@ body {
 .link-hover {
     color: var(--marigold) !important;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link-hover:hover {
     color: var(--pictonBlue) !important;
+    font-weight: bold;
 }
 
 /* Navigation Section */
@@ -133,13 +190,22 @@ body {
     background-color: var(--marigold);
 }
 
+.dropdown-divider {
+    margin: 0;
+}
+
 .dropdown-menu {
     padding: 0;
     margin: 0;
 }
 
-.dropdown-divider {
-    margin: 0;
+.nav-main-display:hover .nav-main-content {
+    display: block;
+}
+
+.nav-main-display .nav-main-content {
+    margin-top: -6px;
+    border-radius: 0.25rem;
 }
 
 .dropdown-submenu {
@@ -157,12 +223,12 @@ body {
     display: block;
 }
 
-.divider-start-25{
+.divider-start-25 {
     border-bottom: 3px solid var(--marigold) !important;
     width: 25%;
 }
 
-.divider-start-50{
+.divider-start-50 {
     border-bottom: 3px solid var(--marigold) !important;
     width: 50%;
 }
@@ -251,15 +317,15 @@ body {
 }
 
 /* Footer Section */
-.link-category{
+.link-category {
     color: var(--marigold) !important;
 }
 
-.link-item{
+.link-item {
     color: white;
 }
 
-.link-item:hover{
+.link-item:hover {
     color: var(--marigold) !important;
 }
 
@@ -286,4 +352,64 @@ body {
 .swiper {
     width: auto;
     height: auto;
+}
+
+.table-fixed {
+    table-layout: fixed;
+    width: 100%;
+}
+.table-fixed td {
+    text-align: center;
+    padding: 8px;
+    vertical-align: middle;
+}
+.table-fixed col {
+    width: 33.33%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+    border-bottom: 3px solid var(--darkMidnightBlue);
+}
+
+.img-border-rounded-dmb {
+    border-radius: 50%;
+    border: 3px solid var(--darkMidnightBlue);
+}
+
+.modal-body {
+    padding: 0;
+}
+.modal-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-dialog {
+    max-width: 700px;
+}
+
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--antiFlashWhite);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.speech-bubble-tail {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--antiFlashWhite);
 }

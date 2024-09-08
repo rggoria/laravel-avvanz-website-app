@@ -84,7 +84,7 @@ Join Avvanz - Avvanz Global
                         <input class="form-control" type="file" id="formFile">
                     </div>
                     
-                    <button type="submit" class="btn btn-form-submit w-100">submit</button>
+                    <button type="submit" class="btn btn-marigold-transition w-100">submit</button>
                 </form>
             </div>
         </div>

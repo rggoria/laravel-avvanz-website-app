@@ -24,7 +24,7 @@
     <!-- Navbar #2 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{{ route('home') }}">
                 <img src="{{ asset('images/avvanz.webp') }}" alt="Avvanz Logo" width="190" height="45" class="brand-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,82 +32,79 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="/about-us" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="workplace-safety-and-health-guideline">Workplace Safety and Health Guideline</a></li>
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-1') }}">Workplace Safety and Health Guideline</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="environmental-social-and-governance">Environmental, Social and Governance</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-2') }}">Environmental, Social and Governance</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="join-avvanz">Join Avvanz</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-3') }}">Join Avvanz</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown nav-main-display">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Screen
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <div class="btn-group dropend">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="background-screening">Background Screening</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="why-avvanz-screen">Why Avvanz Screen</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="background-check">Background Checks</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="avvanz-screenglobal">Avvanz Screen Global</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="process">Process</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="kyc-aml-compliance">KYC AML Compliance</a></li>
-                                    </ul>
-                                </li>
-                            </div>
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                            <li class="dropdown-submenu dropend nav-submenu-display">
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="background-screening">Background Screening</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-1') }}">Why Avvanz Screen</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-2') }}">Background Checks</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-3') }}">Avvanz Screen Global</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-4') }}">Process</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-5') }}">KYC AML Compliance</a></li>
+                                </ul>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="screen-chain">ScreenChain</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-2') }}">ScreenChain</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="singapore-work-passes">Singapore Work Passes</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-3') }}">Singapore Work Passes</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Company Due Diligence</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-4') }}">Company Due Diligence</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Partnership Integration</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-5') }}">Partnership Integration</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown nav-main-display">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Develop
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Star Trainers</a></li>
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-1') }}">Star Trainers</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Learn Global</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-2') }}">Learn Global</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Nibble & Learn</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-3') }}">Nibble & Learn</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-main-display">
                         <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Blog</a></li>
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-1') }}">Blog</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Industry Reports</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-2') }}">Industry Reports</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Webinar & Video</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-3') }}">Webinar & Video</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="#">Press and Media</a></li>
+                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-4') }}">Press and Media</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation text-uppercase fw-bolder" href="#">Contact Us</a>
+                    <li class="nav-item nav-main-display">
+                        <a class="nav-link navigation text-uppercase fw-bolder" href="{{ route('contact') }}">Contact Us</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-main-display">
                         <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Global
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
                             <div class="btn-group dropend">
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APC</a>

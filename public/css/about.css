@@ -11,15 +11,3 @@
     background-color: white;
     color: var(--marigold);
 }
-
-.btn-form-submit {
-    color: white;
-    background-color: var(--marigold);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.btn-form-submit:hover {
-    color: white;
-    transform: scale(0.95);
-    background-color: var(-marigold);
-}
