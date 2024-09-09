@@ -26,6 +26,81 @@ Contact Us - Avvanz Global
     </div>
 </section>
 
+<!-- Partner Section -->
+<section class="container my-5 text-white">
+    <div class="text-center">
+        <h1 class="text-dmb fw-bolder display-5">
+            Request a Demo
+        </h1>
+        <h1 class="divider-center-25"></h1>
+    </div>
+    <div class="row g-3 mt-3">
+        <div class="col-md-3">
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">
+                Internation Backgorund Check
+            </h4>
+        </div>
+        <div class="col-md-3">
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">
+                Workpass Requirement Background Checks
+            </h4>
+        </div>
+        <div class="col-md-3">
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">
+                Compnay Due Diligence
+            </h4>
+        </div>
+        <div class="col-md-3">
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">
+                LIVE Training and eLearning
+            </h4>
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <h1 class="text-dmb fw-bolder display-5">
+            Avvanz Global Offices
+        </h1>
+        <h1 class="divider-center-25"></h1>
+        <p class="lead text-dark my-3">
+            Feel free to send us a message. We would like to hear it from you!
+        </p>
+        <div class="row justify-content-center text-start">
+            <div class="col-md-8">
+                <div class="p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-dmb fw-bolder">Name <span class="sup text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cname" class="form-label text-dmb fw-bolder">Company Name <span class="sup text-danger">*</span></label>
+                            <input type="text" class="form-control" id="cname" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-dmb fw-bolder">Company Email <span class="sup text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact" class="form-label text-dmb fw-bolder">Company Contact No. <span class="sup text-danger">*</span></label>
+                            <input type="text" class="form-control" id="contact" placeholder="Enter your contact no." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label text-dmb fw-bolder">Subject <span class="sup text-danger">*</span></label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter your subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-dmb fw-bolder">Message <span class="sup text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter you message...."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-marigold-transition w-100">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Global Section -->
 <section class="container my-5">
     <div class="text-center">
@@ -35,55 +110,52 @@ Contact Us - Avvanz Global
         <h1 class="divider-center-25"></h1>
     </div>
     <div class="row g-3 py-5">
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <!-- Card Header with Google Maps -->
+        @foreach ( $globalItems as $count => $item )
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+                <div class="card
+                @if ( $count === 0 || $count === 3 || $count === 4 )
+                    bg-marigold
+                @else
+                    bg-dmb
+                @endif
+                w-100 h-100 text-white">
                     <div class="card-header">
                         <iframe
-                            class="map-frame"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.233295080981!2d-122.4111700846811!3d37.78349977975786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cb2d9a29d%3A0x8bb1f1d67a4d4e8e!2s1600+Pine+St%2C+San+Francisco%2C+CA+94109!5e0!3m2!1sen!2sus!4v1631137658101!5m2!1sen!2sus"
+                            class="w-100"
+                            style="height: 300px; border: 0;"
+                            src="{{ $item['geolocation'] }}"
+                            {{-- geolocation --}}
+                            loading="lazy"
                             allowfullscreen=""
-                            loading="lazy"></iframe>
+                            title="Google Maps Location"></iframe>
                     </div>
-
-                    <!-- Card Body with Address Details -->
-                    <div class="card-body">
-                        <h5 class="card-title">Location Details</h5>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center">
+                            {{ $item['country'] }}
+                        </h5>
                         <p class="card-text">
-                            <strong>Address:</strong><br>
-                            1600 Pine Street, San Francisco, CA 94109, USA
+                            <strong>{{ $item['company'] }}</strong><br>
+                            <p>
+                                {{ $item['address'] }}
+                            </p>
+                            @if ($item['contact'])
+                                <p>
+                                    {{ $item['contact'] }}
+                                </p>
+                            @endif
+                            <p>
+                                consult@avvanz.com
+                            </p>
+                            @if ($item['country'] == "Singapore")
+                                <p>
+                                    clientservices@avvanz.com
+                                </p>
+                            @endif
                         </p>
                     </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card w-100 h-100">
-                <!-- Card Header with Google Maps -->
-                <div class="card-header p-0">
-                    <iframe
-                        class="w-100"
-                        style="height: 300px; border: 0;"
-                        src="https://maps.google.com/maps?q=31st%20Floor%2C%20Virspacio%20Coworkspaces%2C%20One%20San%20Miguel%20Avenue%20Building%2C%20San%20Miguel%20Avenue%20corner%2C%20Shaw%20Blvd%20Ortigas%20Center%2C%20Pasig%20City&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
-                        loading="lazy"
-                        allowfullscreen=""
-                        title="Google Maps Location"></iframe>
-                </div>
-
-                <!-- Card Body with Address Details and Button -->
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Location Details</h5>
-                    <p class="card-text">
-                        <strong>Address:</strong><br>
-                        31st Floor, Virspacio Coworkspaces, One San Miguel Avenue Building, San Miguel Avenue corner, Shaw Blvd Ortigas Center, Pasig City
-                    </p>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=31st+Floor,+Virspacio+Coworkspaces,+One+San+Miguel+Avenue+Building,+San+Miguel+Avenue+corner,+Shaw+Blvd+Ortigas+Center,+Pasig+City"
-                        class="btn btn-primary mt-3"
-                        target="_blank">Get Directions</a>
-                </div>
             </div>
-        </div>
+        @endforeach
     </div>
 </section>
 

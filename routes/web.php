@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::get('/contact-us', [PagesController::class, 'contact'])->name('contact');
+Route::get('/global', [PagesController::class, 'global'])->name('global');
 
 // About Us Controller
 Route::get('/about-us', [AboutController::class, 'index'])->name('about-main');

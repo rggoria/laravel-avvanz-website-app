@@ -14,7 +14,7 @@ About Us - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image">
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -24,7 +24,7 @@ About Us - Avvanz Global
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Partner Section -->
 <section class="container my-5 text-white">

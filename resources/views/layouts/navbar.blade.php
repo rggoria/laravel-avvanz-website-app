@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
@@ -47,7 +47,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Screen
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -72,7 +72,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Develop
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -100,8 +100,11 @@
                     <li class="nav-item nav-main-display">
                         <a class="nav-link navigation text-uppercase fw-bolder" href="{{ route('contact') }}">Contact Us</a>
                     </li>
-                    <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item nav-main-display">
+                        <a class="nav-link navigation text-uppercase fw-bolder" href="{{ route('global') }}">Global</a>
+                    </li>
+                    {{-- <li class="nav-item dropdown nav-main-display">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Global
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -136,7 +139,7 @@
                                 </li>
                             </div>
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
