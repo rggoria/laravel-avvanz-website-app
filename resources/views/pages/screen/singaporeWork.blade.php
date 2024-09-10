@@ -6,7 +6,7 @@ MOM Verification - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -14,9 +14,13 @@ MOM Verification - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Mandatory Checks for Singapore Work Passes</h1>
+                <h1 class="fw-bolder display-5">
+                    Mandatory Checks for Singapore Work Passes
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Contact us at mom.cs@avvanz.com or 6403 3836</p>
+                <p class="lead">
+                    Contact us at mom.cs@avvanz.com or 6403 3836
+                </p>
             </div>
         </div>
     </div>
@@ -25,7 +29,7 @@ MOM Verification - Avvanz Global
 <!-- Singpaore Pass Section -->
 <section class="bg-mg py-5">
     <div class="container">
-        <div class="row">
+        <div class="row g-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div class="text-white">
                     <p class="lead">
@@ -43,7 +47,7 @@ MOM Verification - Avvanz Global
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="https://avvanz.com/wp-content/uploads/2023/03/normal_u8-2.svg" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/singaporework.svg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
         </div>
     </div>

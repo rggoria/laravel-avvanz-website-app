@@ -167,7 +167,7 @@ Workplace Safety & Health Guidelines
     <h1 class="fw-bolder text-dmb">Specific measures in relation to Covid-19</h1>
     <h1 class="divider-center-25"></h1>
     <br>
-    <img src="{{asset('images/management-team-768x714.png')}}" alt="">
+    <img src="{{asset('images/management-team-768x714.png')}}" alt="" class="img-fluid">
     <div class="row py-5">
         <div class="col">
             <ul class="list-unstyled text-start">

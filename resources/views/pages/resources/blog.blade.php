@@ -28,7 +28,7 @@ Blog - Avvanz Global
 
 <!-- Blog Section -->
 <section class="container my-5">
-    <div class="row g-3 py-5">
+    <div class="row g-3">
         @foreach($blogItems as $item)
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card border-radius-dmb h-100">
@@ -37,9 +37,9 @@ Blog - Avvanz Global
                         <h5 class="card-title fw-bolder text-dmb">
                             {{ $item['title'] }}
                         </h5>
-                        <h5 class="card-text fw-bolder text-marigold">
+                        <p class="card-text fw-bolder text-marigold">
                             Read More »
-                        </h5>                       
+                        </p>                  
                     </div>
                     <div class="card-footer bg-transparent text-muted">
                         {{ $item['created_at'] }}

@@ -29,7 +29,9 @@ Partnership Integration - Avvanz Global
 <!-- Partners Section -->
 <div class="container my-5">
     <div class="text-center">
-        <h1 class="text-dmb fw-bolder display-5">Discover Our Partners</h1>
+        <h1 class="text-dmb fw-bolder display-5">
+            Discover Our Partners
+        </h1>
         <h1 class="divider-center-25"></h1>
         <p class="lead mt-2">
             Connect with our trusted service providers and integration partners to streamline your background screening process.
@@ -39,7 +41,7 @@ Partnership Integration - Avvanz Global
         <div class="swiper-wrapper my-5">
             @foreach ( $trustedPartnerItems as $item )
                 <div class="swiper-slide">
-                    <img src="{{ asset('images/' . $item) }}" class="img-fluid" alt="Partner {{ $item }}">
+                    <img src="{{ asset('images/screen/' . $item) }}" class="img-fluid" alt="Partner {{ $item }}">
                 </div>
             @endforeach
         </div>

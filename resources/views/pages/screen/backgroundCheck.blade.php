@@ -4,13 +4,9 @@
 Background Checks Singapore - Avvanz Global
 @endsection
 
-@section('css')
-<link rel="stylesheet" href="{{ asset('css/screen.css') }}">
-@endsection
-
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -18,9 +14,13 @@ Background Checks Singapore - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Background Checks​</h1>
+                <h1 class="fw-bolder display-5">
+                    Background Checks
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Know Who You’re Hiring</p>
+                <p class="lead">
+                    Know Who You’re Hiring
+                </p>
             </div>
         </div>
     </div>
@@ -28,28 +28,29 @@ Background Checks Singapore - Avvanz Global
 
 <!-- Background Check​ Section -->
 <section class="my-5 container">
-    <div class="row">
+    <div class="row g-3">
         <div class="col-md-7 d-flex align-items-center">
             <div>
-                <h1 class="fw-bolder text-dmb">
+                <h1 class="fw-bolder display-5 text-dmb mb-3">
                     What types of background checks are offered?
                 </h1>
-                <br>
-                <p>
-                    Combat resume discrepancies with Avvanz’s comprehensive background check solutions. Ensure trustworthy hires and protect your organization’s assets with both pre-employment and in-employment screening.
+               <p>
+                    Combat resume discrepancies with <span class="fw-bolder">Avvanz’s</span> comprehensive background check solutions. Ensure trustworthy hires and protect your organization’s assets with both pre-employment and in-employment screening.
                 </p>
             </div>
         </div>
         <div class="col-md-5 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/about-us-img-3-768x512.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img src="{{ asset('images/screen/backgroundcheck.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
         </div>
     </div>
 
     <!-- Due Diligence Background Checks -->
     <div class="my-5">
-        <h1 class="text-center text-dmb fw-bolder">Due Diligence Background Checks</h1>
+        <h1 class="text-center text-dmb fw-bolder display-5">
+            Due Diligence Background Checks
+        </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper h-100">
             <div class="swiper-wrapper my-5 text-white">
                 <div class="swiper-slide">
                     <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
@@ -112,7 +113,9 @@ Background Checks Singapore - Avvanz Global
 
     <!-- Identity Checks -->
     <div class="my-5">
-        <h1 class="text-center text-dmb fw-bolder">Identity Checks</h1>
+        <h1 class="text-center text-dmb fw-bolder display-5">
+            Identity Checks
+        </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
@@ -177,7 +180,9 @@ Background Checks Singapore - Avvanz Global
 
     <!-- Financial Checks -->
     <div class="my-5">
-        <h1 class="text-center text-dmb fw-bolder">Financial Checks</h1>
+        <h1 class="text-center text-dmb fw-bolder display-5">
+            Financial Checks
+        </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
@@ -242,7 +247,9 @@ Background Checks Singapore - Avvanz Global
 
     <!-- Integrity Checks -->
     <div class="my-5">
-        <h1 class="text-center text-dmb fw-bolder">Integrity Checks</h1>
+        <h1 class="text-center text-dmb fw-bolder display-5">
+            Integrity Checks
+        </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
@@ -312,39 +319,40 @@ Background Checks Singapore - Avvanz Global
         <div class="row">
             <div class="col-md-8 d-flex align-items-center">
                 <div>
-                    <h1 class="fw-bolder">Get Started with Avvanz</h1>
+                    <h1 class="fw-bolder display-5">
+                        Get Started with Avvanz
+                    </h1>
                     <h1 class="divider-start-25"></h1>
-                    <br>
-                    <p>
+                    <p class="lead mt-3">
                         Order checks in minutes with our uniquely innovative multi-award platform at <a href="#" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
                     </p>
                     <ul class="list-unstyled">
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
-                            <span class="fw-bold">NO</span> lengthy onboarding
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
+                            <span class="fw-bold">NO</span>&nbsp;lengthy onboarding
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
                             As easy as ordering an item on an eCommerce store - More than 20 types of checks covering 150+ countries
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
-                            <span class="fw-bold">NO</span> Setup Fees
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
+                            <span class="fw-bold">NO</span>&nbsp;Setup Fees
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
-                            <span class="fw-bold">NO</span> Onboarding Fees
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
+                            <span class="fw-bold">NO</span>&nbsp;Onboarding Fees
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
-                            <span class="fw-bold">NO</span> Minimum Commitment
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
+                            <span class="fw-bold">NO</span>&nbsp;Minimum Commitment
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
-                            <span class="fw-bold">NO</span> Subscription Fees
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
+                            <span class="fw-bold">NO</span>&nbsp;Subscription Fees
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check list-icon text-pb"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check me-2 fs-6 mt-1 text-pb align-self-start"></i>
                             Pay-per-Use
                         </li>
                     </ul>

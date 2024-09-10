@@ -130,16 +130,16 @@ class ScreenController extends Controller
         $partnerAchievementItems = [
             [
                 'title' => 'OneID and Avvanz Partnership: Revolutionizing Digital Identity Verification for Enhanced Security',
-                'image' => 'xZX.png',
+                'image' => 'achievement1.png',
                 'created_at' => 'June 8, 2023'
             ],
             [
                 'title' => 'Integrating Background Screening with your HRMS/ATS',
-                'image' => 'pexels-yan-krukau-7693107-scaled.jpg',
+                'image' => 'achievement2.jpg',
                 'created_at' => 'May 2, 2023'
             ],[
                 'title' => 'Affinidi and Avvanz Sign MOU to Streamline Employment Background Checks in Singapore',
-                'image' => 'Affinidi.jpg',
+                'image' => 'achievement3.jpg',
                 'created_at' => 'August 5, 2022'
             ],
         ];

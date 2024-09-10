@@ -409,7 +409,7 @@ About Us - Avvanz Global
             <h1 class="divider-center-25"></h1>
             <p>Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.</p>
             <br>
-            <img src="{{asset('images/management-team-768x714.png')}}" alt="">
+            <img src="{{asset('images/management-team-768x714.png')}}" alt="" class="img-fluid">
         </div>
     </div>
 

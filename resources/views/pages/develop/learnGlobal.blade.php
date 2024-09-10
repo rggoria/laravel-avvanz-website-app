@@ -31,7 +31,7 @@ LearnGlobal - Avvanz Global
 <section class="container my-5">
     <div class="text-center">
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img src="{{ asset('images/develop/normal_u17.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-50 w-50">
+            <img src="{{ asset('images/develop/LearnGlobal.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-50 w-50">
         </div>
         <h1 class="divider-center-25"></h1>
         <p class="lead mt-5">
@@ -44,7 +44,7 @@ LearnGlobal - Avvanz Global
                 <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $index }}">
                     <img src="{{ asset('images/develop/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-text lead text-co">
+                        <h5 class="card-text fw-bolder text-co">
                             {{ $item['title'] }}
                         </h5>
                     </div>
@@ -80,23 +80,41 @@ LearnGlobal - Avvanz Global
         </h1>
         <h1 class="divider-center-25"></h1>
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img src="{{ asset('images/develop/clientsArtboard-4-1-2048x896.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-75 w-75">
+            <img src="{{ asset('images/develop/clients.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-75 w-75">
         </div>
         <h1 class="fw-bolder text-dmb display-5 mt-5">
             Client Testimonials
         </h1>
         <h1 class="divider-center-25"></h1>
-        <div class="speech-bubble my-3">
-            "I thought the program will be highly technical and dry but to my amazement, it was delivered in a very engaging and layman way, and I still managed to grasp the in-depth elements of difficult to comprehend technologies like AI and Blockchain. The use of interactive training methodologies really helped."
-            <div class="speech-bubble-tail"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper my-5">
+                <div class="swiper-slide">
+                    <div class="speech-bubble my-3">
+                        "I thought the program will be highly technical and dry but to my amazement, it was delivered in a very engaging and layman way, and I still managed to grasp the in-depth elements of difficult to comprehend technologies like AI and Blockchain. The use of interactive training methodologies really helped."
+                        <div class="speech-bubble-tail"></div>
+                    </div>
+                    <p class="fw-bold text-dmb">
+                        Ocean Network Express
+                        <br>
+                        <small class="text-dark">
+                            Managing Director
+                        </small>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="speech-bubble my-3">
+                        "All our staff across all levels from all regions went through the DT Program. We built solid actionable plan in line with ARA's Digital Vision"
+                        <div class="speech-bubble-tail"></div>
+                    </div>
+                    <p class="fw-bold text-dmb">
+                        ARA Group
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <p class="fw-bold text-dmb">
-            Ocean Network Express
-            <br>
-            <small class="text-dark">
-                Managing Director
-            </small>
-        </p>
     </div>
 </section>
 

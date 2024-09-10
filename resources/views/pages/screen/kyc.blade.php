@@ -6,7 +6,7 @@ KYC AML Compliance - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!-- Hero Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -14,9 +14,13 @@ KYC AML Compliance - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">KYC AML Compliance</h1>
+                <h1 class="fw-bolder display-5">
+                    KYC AML Compliance
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Building Stronger Businesses</p>
+                <p class="lead">
+                    Building Stronger Businesses
+                </p>
             </div>
         </div>
     </div>
@@ -25,7 +29,7 @@ KYC AML Compliance - Avvanz Global
 <!-- Award Section -->
 <section class="bg-mg py-5">
     <div class="container text-center text-white w-75">
-        <p>
+        <p class="lead">
             Gold Medal awarded ScreenGlobal Platform allows for Know Your Customer (KYC) and Customer/Company Due Diligence (CDD) related automated workflows that provide quick visibility into potential risks associated with financial crimes like money laundering and terrorist financing. Our comprehensive fraud detection and prevention solutions provide dynamic insights into customer events and changes.
         </p>
     </div>
@@ -33,11 +37,11 @@ KYC AML Compliance - Avvanz Global
 
 <!-- Partner Section -->
 <section class="container my-5 text-white">
-    <div class="row g-3">
-        <div class="col-4">
+    <div class="row g-3 py-3">
+        <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
             <div class="card p-5 d-flex justify-content-center align-items-center bg-marigold h-100 w-100">
                 <div class="card-body text-center">
-                    <img src="https://avvanz.com/wp-content/uploads/2023/03/normal_u14.png" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
+                    <img src="{{ asset('images/screen/kyc1.png') }}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
                     <br>
                     <h4 class="card-title fw-bolder">Verify identity of your subjects</h4>
                     <p class="card-text">
@@ -46,10 +50,10 @@ KYC AML Compliance - Avvanz Global
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
             <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
                 <div class="card-body text-center">
-                    <img src="https://avvanz.com/wp-content/uploads/2023/03/sassasasas.png" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
+                    <img src="{{ asset('images/screen/kyc2.png') }}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
                     <br>
                     <h4 class="card-title fw-bolder">KYC or Know Your Customer (or Business or Partner or Employee)</h4>
                     <p class="card-text">
@@ -58,10 +62,10 @@ KYC AML Compliance - Avvanz Global
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
             <div class="card p-5 d-flex justify-content-center align-items-center bg-marigold h-100 w-100">
                 <div class="card-body text-center">
-                    <img src="https://avvanz.com/wp-content/uploads/2023/03/normal_u13.png" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
+                    <img src="{{ asset('images/screen/kyc3.png') }}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Best Background Screening Provider">
                     <br>
                     <h4 class="card-title fw-bolder">Global Watchlist and Sanctions with constant monitoring tools</h4>
                     <p class="card-text">
@@ -73,36 +77,35 @@ KYC AML Compliance - Avvanz Global
     </div>
 </section>
 
-<section class="my-5">
-    <div class="container">
+<section class="container-fluid bg-afw mt-5">
+    <div class="container py-5">
         <h1 class="fw-bolder text-dmb">What else does this entail?</h1>
         <h1 class="divider-start-25"></h1>
-        <br>
-        <div class="row">
-            <div class="col-md-7 d-flex align-items-center">
+        <div class="row g-3 py-5">
+            <div class="col-md-7 d-flex align-items-center justify-content-center">
                 <div>
                     <ul class="list-unstyled">
-                        <li class="list-item">
-                            <i class="fas fa-check-circle list-icon"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                             Consolidated AML data sets with Continuous Monitoring capabilities. AML data can be retrieved in minutes. This dynamic global database covers Global Watchlist and Sanctions, Adverse Media, PEPs, Criminal Enforcements, Financial Compliance and Healthcare Sanctions.
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check-circle list-icon"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                             Identity Verification (KYC) – Passports and IDs from more than 150 countries can be verified using Machine Language technologies.
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check-circle list-icon"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                             Seamless integration via RESTful APIs to 3rd party platforms and client portals with customizable UX/UI.
                         </li>
-                        <li class="list-item">
-                            <i class="fas fa-check-circle list-icon"></i>
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                             Additional Background Checks to ensure your organization meets compliance obligations in whichever part of the globe your business sits in.
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about-us-img-3-768x512.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/kyc4.svg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
         </div>
     </div>

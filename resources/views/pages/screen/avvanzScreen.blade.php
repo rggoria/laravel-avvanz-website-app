@@ -6,31 +6,35 @@ Why Avvanz Screen​ - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image">
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Why Avvanz Screen​</h1>
+                <h1 class="fw-bolder display-5">
+                    Why Avvanz Screen​
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Reliable and accurate background checks</p>
+                <p class="lead">
+                    Reliable and accurate background checks
+                </p>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Avvanz Screen​ Section -->
 <section class="bg-mg py-5 text-white">
     <div class="container">
-        <div class="row">
+        <div class="row g-3">
             <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about-us-img-3-768x512.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/whyavvanz.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
             <div class="col-md-6 d-flex align-items-center text-center">
-                <h5>
+                <h5 class="lead">
                     Avvanz helps more than 3000 companies across the globe mitigate risks due to wrongful hires through our multi-award-winning Screen Global Platform and our high-performance Avvanz Team.   
                 </h5>
             </div>           
@@ -40,7 +44,9 @@ Why Avvanz Screen​ - Avvanz Global
 
 <!-- Health Rules Section -->
 <section class="container my-5 text-center">
-    <h4 class="fw-bolder text-dmb">Partnering with Avvanz for your Background Screening works in your best interest as we bring you the following highly differentiated value propositions:</h4>
+    <h4 class="fw-bolder text-dmb">
+        Partnering with Avvanz for your Background Screening works in your best interest as we bring you the following highly differentiated value propositions:
+    </h4>
     <br>
     <div class="row g-3">
         <!-- 1 -->

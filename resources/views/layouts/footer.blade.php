@@ -1,9 +1,9 @@
 <footer class="text-center bg-mg pt-5">
     <div class="container text-center text-md-start">
-        <div class="row">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="row g-3 py-5">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                 <a class="navbar-brand" href="https://avvanz.com/">
-                    <img src="{{ asset('images/footer-logo.png') }}" alt="Avvanz Logo">
+                    <img src="{{ asset('images/footer-logo.png') }}" alt="Avvanz Logo" class="img-fluid">
                 </a>
             </div>
             <div class="col-md-2">
@@ -72,27 +72,28 @@
         </div>
         <div class="row">
             <div class="col-md-3">
-                <img src="{{ asset('images/head-napbs-logo_new.png') }}" alt="PBSA">
+                <img src="{{ asset('images/head-napbs-logo_new.png') }}" alt="PBSA" class="img-fluid">
             </div>
             <div class="col-md-2">
                 <h4 class="text-uppercase fw-bold mb-4 link-category">
                     Social Media
                 </h4>
-                <div class="d-flex justify-content-center">
-                    <a href="https://www.facebook.com/AvvanzGlobal/" class="social-icon rounded-circle" target="_blank" aria-label="Facebook">
+                <div class="d-flex flex-row gap-3">
+                    <a class="btn social-icon" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/avvanz/" class="social-icon rounded-circle" target="_blank" aria-label="LinkedIn">
+                    
+                    <a class="btn social-icon" href="https://www.linkedin.com/company/avvanz/" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" class="social-icon rounded-circle" target="_blank" aria-label="Youtube">
+                    
+                    <a class="btn social-icon" href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" target="_blank" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                </div>
+                </div>                
             </div>
             <div class="col-md-7"></div>
         </div>
-       
         <div class="text-center py-4 text-white">
             Copyright © 2024
             <a class="text-decoration-none text-white fw-bold" href="https://avvanz.com/"> Avvanz.com</a>

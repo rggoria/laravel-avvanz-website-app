@@ -6,7 +6,7 @@ Avvanz ScreenGlobal - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -14,9 +14,13 @@ Avvanz ScreenGlobal - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Avvanz ScreenGlobal</h1>
+                <h1 class="fw-bolder display-5">
+                    Avvanz ScreenGlobal
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Your Trusted Partner</p>
+                <p class="lead">
+                    Your Trusted Partner
+                </p>
             </div>
         </div>
     </div>
@@ -28,16 +32,17 @@ Avvanz ScreenGlobal - Avvanz Global
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
                 <div class="text-white">
-                    <h1 class="h1 fw-bolder">More than 20% of CVs or Resumes</h1>
-                    <h1 class="divider-start-25"></h1>
-                    <br>
-                    <p>
+                    <h1 class="fw-bolder display-5">
+                        More than 20% of CVs or Resumes
+                    </h1>
+                    <h1 class="divider-start-25 mb-3"></h1>
+                    <p class="lead">
                         Statistics have shown that more than 20% of CVs or resumes have discrepancies and hence it’s imperative that a thorough Background Screening and Due Diligence process is in place to sieve out the wrong hires who can be detrimental to your organization. Your candidates and employees need to be of the highest level of “integrity” and “security”. Both aspects cannot be compromised otherwise it might cost your organization in terms of reduced productivity, fraud-related costs, reputational damages, and even a decline in shareholder earnings.
                     </p>
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about-us-img-2-jpg.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/screenglobal.svg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
         </div>
     </div>
@@ -45,7 +50,7 @@ Avvanz ScreenGlobal - Avvanz Global
 
 <!-- Strategy Section -->
 <section class="container py-5">
-    <p>
+    <p class="lead">
         Since the discrepancies can be in several areas, the candidates must be channeled through different background checkpoints based on the risks associated with their functions or roles. A thorough background screening process will greatly mitigate the “security” and “integrity” risks. Organizations need to understand the following when implementing a background screening strategy:
     </p>
     <div class="row g-3 text-white">

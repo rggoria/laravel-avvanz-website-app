@@ -26,7 +26,7 @@ Contact Us - Avvanz Global
     </div>
 </section>
 
-<!-- Partner Section -->
+<!-- Request Demo Section -->
 <section class="container my-5 text-white">
     <div class="text-center">
         <h1 class="text-dmb fw-bolder display-5">
@@ -37,7 +37,7 @@ Contact Us - Avvanz Global
     <div class="row g-3 mt-3">
         <div class="col-md-3">
             <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">
-                Internation Backgorund Check
+                International Backgorund Check
             </h4>
         </div>
         <div class="col-md-3">
@@ -58,7 +58,7 @@ Contact Us - Avvanz Global
     </div>
     <div class="text-center my-5">
         <h1 class="text-dmb fw-bolder display-5">
-            Avvanz Global Offices
+            General Inquiry
         </h1>
         <h1 class="divider-center-25"></h1>
         <p class="lead text-dark my-3">
@@ -93,7 +93,7 @@ Contact Us - Avvanz Global
                             <textarea class="form-control" id="message" rows="3" placeholder="Enter you message...."></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-marigold-transition w-100">submit</button>
+                        <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
                     </form>
                 </div>
             </div>
@@ -111,7 +111,7 @@ Contact Us - Avvanz Global
     </div>
     <div class="row g-3 py-5">
         @foreach ( $globalItems as $count => $item )
-            <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="card
                 @if ( $count === 0 || $count === 3 || $count === 4 )
                     bg-marigold
@@ -129,29 +129,35 @@ Contact Us - Avvanz Global
                             allowfullscreen=""
                             title="Google Maps Location"></iframe>
                     </div>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h5 class="card-title text-center">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-center fw-bolder">
                             {{ $item['country'] }}
-                        </h5>
-                        <p class="card-text">
-                            <strong>{{ $item['company'] }}</strong><br>
-                            <p>
+                        </h3>
+                        <div class="card-text">
+                            <p class="fw-bold">
+                                {{ $item['company'] }}
+                            </p>
+                            <p class="d-flex align-items-start mb-2 lead">
+                                <i class="fas fa-map-marker-alt me-2 fs-6 mt-2 align-self-start"></i>
                                 {{ $item['address'] }}
                             </p>
                             @if ($item['contact'])
-                                <p>
+                                <p class="d-flex align-items-start mb-2 lead">
+                                    <i class="fas fa-phone-alt me-2 fs-6 mt-2 align-self-start"></i>
                                     {{ $item['contact'] }}
                                 </p>
                             @endif
-                            <p>
+                            <p class="d-flex align-items-start mb-2 lead">
+                                <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
                                 consult@avvanz.com
                             </p>
                             @if ($item['country'] == "Singapore")
-                                <p>
+                                <p class="d-flex align-items-start mb-2 lead">
+                                    <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
                                     clientservices@avvanz.com
                                 </p>
                             @endif
-                        </p>
+                        </div>                        
                     </div>
                 </div>
             </div>

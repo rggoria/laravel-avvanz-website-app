@@ -51,7 +51,7 @@ class ResourcesController extends Controller
             [
                 'title' => 'Background Verification Service in Asia',
                 'description' => 'Background Verification Service in Asia Background verification services play a crucial role in the hiring process across industries in Asia. Employers are increasingly recognizing the importance of thorough background checks to',
-                'image' => 'blog1.webp',
+                'image' => 'industry1.webp',
                 'created_at' => 'January 18, 2024',
             ],
         ];
@@ -64,34 +64,34 @@ class ResourcesController extends Controller
     {
         $webinarItems = [
             [
-                'title' => 'Choosing the Best Corporate Training Companies',
-                'image' => 'blog1.webp',
-                'created_at' => 'September 4, 2024',
+                'title' => 'Quickiebinar Part 2: Leadership – with Ariya Chittasy',
+                'image' => 'webinar1.png',
+                'created_at' => 'June 6, 2023',
             ],
             [
-                'title' => 'Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers',
-                'image' => 'blog2.jpg',
-                'created_at' => 'May 14, 2024',
+                'title' => 'Quickiebinar Part 1: Leadership – with Zubin Zack',
+                'image' => 'webinar2.png',
+                'created_at' => 'June 2, 2023',
             ],
             [
-                'title' => 'Demystifying the DBS Check Application: Your Path to Employment',
-                'image' => 'blog3.png',
-                'created_at' => 'May 10, 2024',
+                'title' => 'Avvanz Techstival 2023 Philippine Edition',
+                'image' => 'webinar3.png',
+                'created_at' => 'May 2, 2023',
             ],
             [
-                'title' => 'The Essential Background Check: Unveiling the Basics of DBS Checks',
-                'image' => 'blog4.png',
-                'created_at' => 'May 7, 2024',
+                'title' => 'AVVANZ WEBCAFE: The Great Resignation vs. The Great Retention',
+                'image' => 'webinar4.png',
+                'created_at' => 'January 6, 2022',
             ],
             [
-                'title' => 'The Key to Confidence: Following a Proven Financial Due Diligence Checklist',
-                'image' => 'blog5.jpg',
-                'created_at' => 'May 2, 2024',
+                'title' => 'Avvanz Webcafe: Monetary Authority of Singapore (MAS) Mandatory Reference Checks',
+                'image' => 'webinar5.png',
+                'created_at' => 'January 6, 2022',
             ],
             [
-                'title' => 'Navigating Success: Your Guide to Corporate Training Programs in Singapore',
-                'image' => 'blog6.png',
-                'created_at' => 'April 30, 2024',
+                'title' => 'Leadership in Education: In what areas schools can leverage disruptive technologies?',
+                'image' => 'webinar6.png',
+                'created_at' => 'January 6, 2022',
             ],
         ];
         return view("pages.resources.webinar", [

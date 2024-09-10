@@ -26,7 +26,7 @@ Revision Nibble & Learn - Avvanz Global
     </div>
 </section>
 
-<!-- Partners Section -->
+<!-- Capabilities Section -->
 <section class="container-fluid bg-mg">
     <div class="container text-white py-5">
         <div class="text-center">
@@ -40,47 +40,65 @@ Revision Nibble & Learn - Avvanz Global
         </div>
         <div class="row bg-dark">
             <!-- Video Container -->
-            <div class="col-lg-8 col-md-7 col-12 d-flex align-items-center justify-content-center">
-                <div class="ratio ratio-16x9 w-100">
-                    <iframe
-                        id="videoPlayer"
-                        src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
-                        title="YouTube video player"
-                        allowfullscreen>
-                    </iframe>
-                </div>      
+            <div class="col-lg-8 col-md-8 h-100 p-0">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-podcast1">
+                        <div class="ratio ratio-16x9 w-100">
+                            <iframe
+                                id="videoPlayer"
+                                src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
+                                title="YouTube video player"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-podcast2">
+                        <div class="ratio ratio-16x9 w-100">
+                            <iframe
+                                id="videoPlayer"
+                                src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
+                                title="YouTube video player"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-podcast3">
+                        <div class="ratio ratio-16x9 w-100">
+                            <iframe
+                                id="videoPlayer"
+                                src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
+                                title="YouTube video player"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <!-- Sidebar -->
-            <div class="col-lg-4 col-md-5 col-12 p-0">
+            <div class="col-lg-4 col-md-4 h-100 p-0 bg-afw">
                 <div class="bg-dmb fw-bolder p-2">
                     Top Podcast
                 </div>
-                <div class="list-group">
-                    <li class="list-group-item list-group-item-actio data-video active" data-video-id="zlyAWt_UMAU" aria-current="true" style="cursor: pointer">
-                        <div class="d-flex w-100 justify-content-between align-items-start">
-                            <i class="fas fa-play-circle me-2 fs-4"></i>
-                            <h5 class="mb-1 ms-auto">Digital Transformation Quick Starter Blueprint</h5>
-                            <small class="text-body-secondary">32:29</small>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-actio data-video" data-video-id="5aBki-Dqf40" style="cursor: pointer">
-                        <div class="d-flex w-100 justify-content-between align-items-start">
-                            <i class="fas fa-play-circle me-2 fs-4"></i>
-                            <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
-                            <small class="text-body-secondary">0:16</small>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-actio data-video" data-video-id="1XoW0l25gyE" style="cursor: pointer">
-                        <div class="d-flex w-100 justify-content-between align-items-start">
-                            <i class="fas fa-play-circle me-2 fs-4"></i>
-                            <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
-                            <small class="text-body-secondary">0:16</small>
-                        </div>
-                    </li>
-                </div>               
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
+                        <i class="fas fa-play-circle me-2 fs-4"></i>
+                        <h5 class="mb-1 me-auto">Digital Transformation Quick Starter Blueprint</h5>
+                        <small class="text-body-secondary">32:29</small>
+                    </button>
+                    <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
+                        <i class="fas fa-play-circle me-2 fs-4"></i>
+                        <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
+                        <small class="text-body-secondary">0:16</small>
+                    </button>
+                    <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
+                        <i class="fas fa-play-circle me-2 fs-4"></i>
+                        <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
+                        <small class="text-body-secondary">0:16</small>
+                    </button>
+                </div>             
             </div>
         </div>
-    </div>   
+    </div>
 </section>
 
 <!-- Excellence Section -->
@@ -106,16 +124,5 @@ Revision Nibble & Learn - Avvanz Global
 
 <!-- Footer Section -->
 @include('layouts.footer')
-
-@section('scripts')
-<script>
-    $(document).ready(function() {
-        $('.data-video').click(function() {
-            var videoId = $(this).data('video-id');
-            $('#videoPlayer').attr('src', 'https://www.youtube.com/embed/' + videoId);
-        });
-    });
-</script>
-@endsection
 
 @endsection

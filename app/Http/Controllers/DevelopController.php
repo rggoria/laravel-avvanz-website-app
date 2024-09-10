@@ -12,15 +12,15 @@ class DevelopController extends Controller
             [
                 'title' => 'Leadership',
                 'description' => 'This program is meticulously designed to empower you with the tools, insights and confidence needed to lead effectively, inspire change and drive success.',
-                'icon' => 'fa-user-circle'
+                'icon' => 'fa-user-tie'
             ], [
                 'title' => 'Sales',
                 'description' => 'This Progam is designed to transform you into a top-tier sales professional, equipped with the tools and strategies to excel in today’s dynamic sales environment.',
-                'icon' => 'fa-home'
+                'icon' => 'fa-chart-bar'
             ], [
                 'title' => 'Digital Transformation & Critical Skills for Digital Economy',
                 'description' => 'This Program is designed to equip professionals and leaders with the knowledge and skills to drive digital innovation and leverage cutting-edge technologies in their organizations.',
-                'icon' => 'fa-circle'
+                'icon' => 'fa-digital-ocean'
             ],
         ];
         $programItems = [
@@ -33,15 +33,15 @@ class DevelopController extends Controller
             [
                 'title' => 'LEARNGLOBAL',
                 'description' => 'An integrated platform for complete Learning and Development without needing multiple investments in various platforms and solutions.',
-                'image' => 'upload01.png'
+                'image' => 'methodology1.png'
             ], [
                 'title' => 'STAR TRAINERS',
                 'description' => 'Highly experienced business leaders who have global training experience.',
-                'image' => 'upload02.png'
+                'image' => 'methodology2.png'
             ], [
                 'title' => 'NIBBLE & LEARN',
                 'description' => 'Short, quick, and effective Nibble-n-Learn format courses.',
-                'image' => 'upload03.png'
+                'image' => 'methodology3.png'
             ],
         ];
         $methodologyItems = [

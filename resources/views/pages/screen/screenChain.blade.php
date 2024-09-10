@@ -6,7 +6,7 @@ ScreenChain - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -14,9 +14,13 @@ ScreenChain - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">ScreenChain</h1>
+                <h1 class="fw-bolder display-5">
+                    ScreenChain
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Our Innovative Process Solutions</p>
+                <p class="lead">
+                    Our Innovative Process Solutions
+                </p>
             </div>
         </div>
     </div>
@@ -25,24 +29,26 @@ ScreenChain - Avvanz Global
 <!-- Health Protocol Section -->
 <section class="container-fluid py-5">
     <div class="container text-white text-center">
-        <h1 class="fw-bolder text-dmb">Blockchain Technology-Enabled Background Screening for Speed, Efficiency, Transparency</h1>
+        <h1 class="fw-bolder text-dmb display-5">
+            Blockchain Technology-Enabled Background Screening for Speed, Efficiency, Transparency
+        </h1>
         <h1 class="divider-center-25"></h1>
         <br>
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="https://avvanz.com/wp-content/uploads/2023/03/normal_u19.png" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+        <div class="d-flex align-items-center justify-content-center py-3">
+            <img src="{{ asset('images/screen/screenchain.png') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
         </div>
        <div class="text-dark text-start mt-2">
             <ul class="list-unstyled">
-                <li class="list-item">
-                    <i class="fas fa-check-circle list-icon"></i>
+                <li class="d-flex align-items-start mb-2">
+                    <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                     1st ever Blockchain Technology enabled ledger that offers you immediate results on pre-vetted checks.
                 </li>
-                <li class="list-item">
-                    <i class="fas fa-check-circle list-icon"></i>
+                <li class="d-flex align-items-start mb-2">
+                    <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                     Get the results in seconds at a fraction of the price!
                 </li>
-                <li class="list-item">
-                    <i class="fas fa-check-circle list-icon"></i>
+                <li class="d-flex align-items-start mb-2">
+                    <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                     TO request a full demo of ScreenChain, email us at consult@avvanz.com.
                 </li>
             </ul>

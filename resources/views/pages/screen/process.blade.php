@@ -10,28 +10,34 @@ Process - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image">
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Process</h1>
+                <h1 class="fw-bolder display-5">
+                    Process
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Our Innovative Process Solutions</p>
+                <p class="lead">
+                    Our Innovative Process Solutions
+                </p>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Health Protocol Section -->
 <section class="container-fluid bg-mg py-5">
     <div class="container text-white text-center">
-        <h1 class="fw-bolder">Overview of Background Check Process</h1>
+        <h1 class="fw-bolder display-5">
+            Overview of Background Check Process
+        </h1>
         <h1 class="divider-center-25"></h1>       
-        <p class="m-5">
+        <p class="lead m-5">
             This whole process can be likened to a Candidate having to go through 2 Firewalls before gaining access to your company the SECURITY Firewall and the INTEGRITY Firewall.
         </p>
         <div class="d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/christmas.pdf-1-791x1024.png') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img src="{{ asset('images/screen/process.png') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
         </div>
     </div>
 </section>

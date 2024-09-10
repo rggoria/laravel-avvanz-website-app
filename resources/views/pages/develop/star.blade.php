@@ -30,7 +30,7 @@ Star Trainers - Avvanz Global
 <section class="container my-5 text-center">
     <!-- Star Trainer # 1 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/normal_u11.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img src="{{ asset('images/develop/star1.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
         <h1 class="text-dmb fw-bolder">
             Kevin Cottam, PCC, BSc
         </h1>
@@ -45,25 +45,25 @@ Star Trainers - Avvanz Global
             <p>
                 Kevin empowers future-ready courageous leaders thru his Nomadic Leadership Program.
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Expand new leaders’ wisdom
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Embrace a Nomadic Mindset so we can move on beyond management to leadership
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Explore creativity through the Nomadic Mindset
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Energize resilience through adaptation to create agile environments
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Experience powerful executive presence through effective communication
                 </li>
             </ul>
@@ -75,7 +75,7 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 2 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/normal_u15.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img src="{{ asset('images/develop/star2.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
         <h1 class="text-dmb fw-bolder">
             Sylvia Fernandes
         </h1>
@@ -90,34 +90,34 @@ Star Trainers - Avvanz Global
             <p class="fw-bolder">
                 𝗩𝗲𝗿𝘀𝘂𝘀 𝗡𝗼𝗻-𝗡𝗟𝗣 𝗩𝗲𝗻𝗱𝗼𝗿𝘀:
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     The Accelerated approach installs high-performance habits & mental wellness in self-sustaining individuals, hence it is cost-efficient because they do not have to work long-term with a coach.
                 </li>
             </ul>
             <p class="fw-bolder">
                 𝗩𝗲𝗿𝘀𝘂𝘀 𝗢𝘁𝗵𝗲𝗿 𝗡𝗟𝗣 𝗩𝗲𝗻𝗱𝗼𝗿𝘀:
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     International experience. Worked with clients in both western and eastern regions of the globe. Also specializes in corporate coaching, the approach is customized to every organization, unlike one-size-fits-all solutions
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Multicultural experience
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     18 years experience and 3000 clients track record
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Training is solution-focused with a lean approach on less is more.
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Multi-channel coaching -Delivers coaching programs via multiple mediums (offline and online) to maximize learning efficiency.
                 </li>
             </ul>
@@ -126,7 +126,7 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 3 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/normal_u22.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img src="{{ asset('images/develop/star3.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
         <h1 class="text-dmb fw-bolder">
             Dr. Gleb Tsipurksy
         </h1>
@@ -141,17 +141,17 @@ Star Trainers - Avvanz Global
             <p>
                 Training experts on the following topics:
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Cutting-edge behavioral science-based techniques in decision making
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Cognitive bias risk management
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Future proofing-businesses
                 </li>
             </ul>
@@ -163,7 +163,7 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 4 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/normal_u23.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img src="{{ asset('images/develop/star4.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
         <h1 class="text-dmb fw-bolder">
             Kannan Chettiar
         </h1>
@@ -178,46 +178,46 @@ Star Trainers - Avvanz Global
             <p>
                 A Certified International Trainer with very high ratings from Fortune 500 Clients and an accredited StrengthScope Practitioner. He constantly delivers talks and speaking engagements on topics such as:
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Thought-leadership
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Digital Transformation
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Design-Thinking
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Communication
                 </li>
             </ul>
             <p>
                 He is proficient in:
             </p>
-            <ul class="list-group">
+            <ul class="list-group ms-4">
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     English
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Tamil,
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Elementary Mandarin
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Malay
                 </li>
                 <li class="d-flex align-items-start mb-2">
-                    <i class="fas fa-circle me-2 fs-6 mt-1 align-self-start"></i>
+                    <i class="fas fa-circle me-2 mt-2 align-self-start" style="font-size: 7px;"></i>
                     Thai
                 </li>
             </ul>

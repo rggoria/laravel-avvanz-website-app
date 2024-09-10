@@ -6,7 +6,7 @@ Screen - Avvanz Global
 
 @section('content')
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -14,80 +14,82 @@ Screen - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Screen</h1>
+                <h1 class="fw-bolder display-5">
+                    Screen
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Know more about risk mitigation</p>
+                <p class="lead">
+                    Know more about risk mitigation
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="container py-5">
-    <h1 class="text-center text-dmb fw-bolder">Ensure that the “right” and “safe” talents are identified before hiring.</h1>
+    <h1 class="text-center text-dmb fw-bolder">
+        Ensure that the “right” and “safe” talents are identified before hiring.
+    </h1>
     <h1 class="text-center divider-center-25"></h1>
 </section>
 
 <!-- Background Checks Section -->
 <section class="bg-mg">
     <div class="container py-5 text-white">
-        <h1 class="fw-bolder">Background Checks</h1>
+        <h1 class="fw-bolder display-5">
+            Background Checks
+        </h1>
         <h1 class="divider-start-25"></h1>
-        <br>
-        <div class="row">
+        <div class="row g-3 py-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div>
-                    <p>
+                    <p class="lead">
                         People are the biggest business assets to any organization. On the same token, people can pose the biggest business risks and these risks have to be mitigated to avoid consequential damages to the organizations.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         Organizations need to ensure that the “right” and “safe” talents are identified before hiring. Unfortunately, organizations still adhere to the age-old practice of character reference checks with references provided by the candidates and all of us know that this practice is quite a pointless exercise. It is to be noted that risks can also arise from existing employees not just new joiners.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         Studies and our research have shown that more than 30% of CVs or Resumes have some form of discrepancies – Fake credentials, inflated employment experiences, undeclared offenses/derogatory pasts or even disturbing social media footprint.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         Hence the need for a thorough pre-employment or in-employment background checks (or background screening or vetting) to be undertaken on candidates or employees. There are more than 20 types of background checks that can be conducted. What specific checks need to be selected really depends on the risks associated with their functions or roles by industry.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         Click here to find out more about the different types of Background Checks and the Process <a href="https://www.avvanz.com/background-screening/" class="link-hover">https://www.avvanz.com/background-screening/</a>.
                     </p>
-                    <br>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about-us-img-3-768x512.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/screen1.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
         </div>
     </div>
 </section>
 
+<!-- Company Dilegence Section -->
 <section class="my-5">
     <div class="container">
-        <h1 class="fw-bolder text-dmb">Company Due Diligence</h1>
+        <h1 class="fw-bolder display-5">
+            Company Due Diligence
+        </h1>
         <h1 class="divider-start-25"></h1>
-        <br>
-        <div class="row">
+        <div class="row g-3 py-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div>
-                    <p>
+                    <p class="lead">
                         Just like how you can conduct background checks on individuals, you can vet companies too. These companies can be your partners or clients or vendors or even investment targets.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         Click here to find more about the different types of Company Due Diligence checks <a href="https://www.avvanz.com/company-due-diligence/" class="link-hover">https://www.avvanz.com/company-due-diligence/</a>.
                     </p>
-                    <br>
-                    <p>
+                    <p class="lead">
                         For a non-obligatory consultation, email us at <a href="mailto:consult@avvanz.com" class="link-hover">consult@avvanz.com</a>.
                     </p>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about-us-img-3-768x512.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/screen/screen2.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
             </div>
         </div>
     </div>
