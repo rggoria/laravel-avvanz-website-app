@@ -92,7 +92,7 @@ Contact Us - Avvanz Global
                             <label for="message" class="form-label text-dmb fw-bolder">Message <span class="sup text-danger">*</span></label>
                             <textarea class="form-control" id="message" rows="3" placeholder="Enter you message...."></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
                     </form>
                 </div>
@@ -111,56 +111,56 @@ Contact Us - Avvanz Global
     </div>
     <div class="row g-3 py-5">
         @foreach ( $globalItems as $count => $item )
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="card
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card
                 @if ( $count === 0 || $count === 3 || $count === 4 )
                     bg-marigold
                 @else
                     bg-dmb
                 @endif
                 w-100 h-100 text-white">
-                    <div class="card-header">
-                        <iframe
-                            class="w-100"
-                            style="height: 300px; border: 0;"
-                            src="{{ $item['geolocation'] }}"
-                            {{-- geolocation --}}
-                            loading="lazy"
-                            allowfullscreen=""
-                            title="Google Maps Location"></iframe>
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title text-center fw-bolder">
-                            {{ $item['country'] }}
-                        </h3>
-                        <div class="card-text">
-                            <p class="fw-bold">
-                                {{ $item['company'] }}
-                            </p>
-                            <p class="d-flex align-items-start mb-2 lead">
-                                <i class="fas fa-map-marker-alt me-2 fs-6 mt-2 align-self-start"></i>
-                                {{ $item['address'] }}
-                            </p>
-                            @if ($item['contact'])
-                                <p class="d-flex align-items-start mb-2 lead">
-                                    <i class="fas fa-phone-alt me-2 fs-6 mt-2 align-self-start"></i>
-                                    {{ $item['contact'] }}
-                                </p>
-                            @endif
-                            <p class="d-flex align-items-start mb-2 lead">
-                                <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
-                                consult@avvanz.com
-                            </p>
-                            @if ($item['country'] == "Singapore")
-                                <p class="d-flex align-items-start mb-2 lead">
-                                    <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
-                                    clientservices@avvanz.com
-                                </p>
-                            @endif
-                        </div>                        
+                <div class="card-header">
+                    <iframe
+                        class="w-100"
+                        style="height: 300px; border: 0;"
+                        src="{{ $item['geolocation'] }}"
+                        {{-- geolocation --}}
+                        loading="lazy"
+                        allowfullscreen=""
+                        title="Google Maps Location"></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h3 class="card-title text-center fw-bolder">
+                        {{ $item['country'] }}
+                    </h3>
+                    <div class="card-text">
+                        <p class="fw-bold">
+                            {{ $item['company'] }}
+                        </p>
+                        <p class="d-flex align-items-start mb-2 lead">
+                            <i class="fas fa-map-marker-alt me-2 fs-6 mt-2 align-self-start"></i>
+                            {{ $item['address'] }}
+                        </p>
+                        @if ($item['contact'])
+                        <p class="d-flex align-items-start mb-2 lead">
+                            <i class="fas fa-phone-alt me-2 fs-6 mt-2 align-self-start"></i>
+                            {{ $item['contact'] }}
+                        </p>
+                        @endif
+                        <p class="d-flex align-items-start mb-2 lead">
+                            <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
+                            consult@avvanz.com
+                        </p>
+                        @if ($item['country'] == "Singapore")
+                        <p class="d-flex align-items-start mb-2 lead">
+                            <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
+                            clientservices@avvanz.com
+                        </p>
+                        @endif
                     </div>
                 </div>
             </div>
+        </div>
         @endforeach
     </div>
 </section>

@@ -10,7 +10,7 @@ Join Avvanz - Avvanz Global
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endsection()
 
-{{-- Navbar Section --}}
+<!--  Navbar Section -->
 @include('layouts.navbar')
 
 <!-- Hero Section -->
@@ -18,9 +18,13 @@ Join Avvanz - Avvanz Global
     <div class="container">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
-                <h1 class="fw-bolder">Avvanz Careers</h1>
+                <h1 class="fw-bolder display-5">
+                    Avvanz Careers
+                </h1>
                 <h1 class="divider-start-25"></h1>
-                <p>Join our Team</p>
+                <p class="lead">
+                    Join our Team
+                </p>
             </div>
         </div>
     </div>
@@ -28,9 +32,13 @@ Join Avvanz - Avvanz Global
 
 <!-- Join Section -->
 <section class="container my-5">
-    <h1 class="text-center text-dmb fw-bolder">JOIN US NOW!</h1>
+    <h1 class="text-center text-dmb display-5 fw-bolder">
+        JOIN US NOW!
+    </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <p class="text-center mt-2 text-black">To join us, please fill in the required information so that we connect with you soonest possible.</p>
+    <p class="text-center mt-2 text-black lead">
+        To join us, please fill in the required information so that we connect with you soonest possible.
+    </p>
 
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -94,7 +102,9 @@ Join Avvanz - Avvanz Global
 <!-- Careers Section -->
 <section class="bg-afw py-5">
     <div class="container my-5">
-        <h1 class="text-center text-dmb fw-bolder">Avvanz Careers</h1>
+        <h1 class="text-center text-dmb fw-bolder display-5">
+            Avvanz Careers
+        </h1>
         <h1 class="divider-center-25"></h1>
         <br>
         <div class="accordion accordion-flush border border-white text-white" id="accordionFlushExample">

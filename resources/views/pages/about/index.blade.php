@@ -190,7 +190,7 @@ About Us - Avvanz Global
 <section class="bg-mg p-5">
     <div class="container text-center text-white">
         <div class="row gy-3">
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <h1 class="fw-bolder display-5">
                     Vision
                 </h1>
@@ -200,7 +200,7 @@ About Us - Avvanz Global
                     To be clear number one choice for all organizations who care to hire the “right” and “safe” global talents and empower them to be able to achieve growth leaps.
                 </p>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <h1 class="fw-bolder display-5">
                     Mission
                 </h1>
@@ -345,28 +345,28 @@ About Us - Avvanz Global
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner1.png') }}" class="img-fluid" alt="Partner 1">
+                <img src="{{ asset('images/pages/partner1.png') }}" class="img-fluid" alt="Partner 1">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner2.png') }}" class="img-fluid" alt="Partner 2">
+                <img src="{{ asset('images/pages/partner2.png') }}" class="img-fluid" alt="Partner 2">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner3.png') }}" class="img-fluid" alt="Partner 3">
+                <img src="{{ asset('images/pages/partner3.png') }}" class="img-fluid" alt="Partner 3">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner4.png') }}" class="img-fluid" alt="Partner 4">
+                <img src="{{ asset('images/pages/partner4.png') }}" class="img-fluid" alt="Partner 4">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner5.png') }}" class="img-fluid" alt="Partner 5">
+                <img src="{{ asset('images/pages/partner5.png') }}" class="img-fluid" alt="Partner 5">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner6.png') }}" class="img-fluid" alt="Partner 6">
+                <img src="{{ asset('images/pages/partner6.png') }}" class="img-fluid" alt="Partner 6">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner7.png') }}" class="img-fluid" alt="Partner 7">
+                <img src="{{ asset('images/pages/partner7.png') }}" class="img-fluid" alt="Partner 7">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/partner8.png') }}" class="img-fluid" alt="Partner 8">
+                <img src="{{ asset('images/pages/partner8.png') }}" class="img-fluid" alt="Partner 8">
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -670,5 +670,9 @@ About Us - Avvanz Global
 
 <!-- Footer Section -->
 @include('layouts.footer')
+
+@section('scripts')
+    <script src="{{ asset('js/swiper.js') }}"></script>
+@endsection
 
 @endsection

@@ -377,4 +377,8 @@ Background Checks Singapore - Avvanz Global
 <!-- Footer Section -->
 @include('layouts.footer')
 
+@section('scripts')
+    <script src="{{ asset('js/swiper.js') }}"></script>
+@endsection
+
 @endsection
