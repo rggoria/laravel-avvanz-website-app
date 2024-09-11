@@ -1,0 +1,93 @@
+@extends('layouts.master')
+
+@section('title')
+Privacy Policy - Avvanz Global
+@endsection
+
+@section('content')
+
+<!--  Navbar Section -->
+@include('layouts.navbar')
+
+<!-- Hero Section -->
+<section class="bg-image">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-md-7 offset-auto">
+                <h1 class="fw-bolder display-5">
+                    Privacy Policy
+                </h1>
+                <h1 class="divider-start-25"></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Privacy Policy Section -->
+<section class="container my-5 text-center">
+    <div class="border-dmb p-5 text-start bg-mg text-white">
+        <p class="lead">
+            Avvanz is a global background screening and workforce solutions provider that recognizes the importance of privacy policies in every location where it operates. With the increasing number of data breaches and privacy concerns, Avvanz is committed to safeguarding the personal information of its clients and their employees.
+        </p>
+        <p class="lead">
+            To ensure compliance with local laws and regulations, Avvanz has developed a comprehensive set of privacy policies that are tailored to each global location. These policies outline the types of personal information that Avvanz collects, how it is used, and how it is protected.
+        </p>
+        <p class="lead">
+            Avvanz’s privacy policies are designed to be transparent and easy to understand. They provide clear explanations of how personal information is collected, used, and shared, as well as the rights of individuals to access, correct, and delete their personal data.
+        </p>
+        <p class="lead">
+            In addition to complying with local laws and regulations, Avvanz also adheres to international privacy standards such as the General Data Protection Regulation (GDPR) in the European Union. Avvanz recognizes that data protection is a fundamental right and is committed to upholding the highest standards of privacy and security.
+        </p>
+        <p class="lead">
+            Avvanz’s commitment to privacy extends beyond its own operations. The company also works closely with its clients to ensure that their privacy policies are up-to-date and in compliance with local laws and regulations. Avvanz provides guidance on best practices for data protection and offers training programs for employees on how to handle sensitive personal information.
+        </p>
+        <p class="lead">
+            Overall, Avvanz recognizes that privacy is a critical issue for businesses operating in today’s global economy. By securing the importance of privacy policies on each global location, Avvanz is helping to protect the personal information of its clients and their employees, while also maintaining compliance with local laws and regulations.
+        </p>
+    </div>
+</section>
+
+<!-- Fraud Memo Section -->
+<section class="bg-mg py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-white fw-bolder display-5">
+                Privacy Policy : Candidates
+            </h1>
+            <h1 class="divider-center-25"></h1>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto my-4">
+            <a href="{{ route('privacy-1') }}" class="btn btn-primary">
+                Philippines
+            </a>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto my-4">
+            <a href="{{ route('privacy-2') }}" class="btn btn-primary">
+                Australia
+            </a>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto my-4">
+            <a href="{{ route('privacy-3') }}" class="btn btn-primary">
+                Singapore
+            </a>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto my-4">
+            <a href="{{ route('privacy-4') }}" class="btn btn-primary">
+                United States of America
+            </a>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto my-4">
+            <a href="{{ route('privacy-5') }}" class="btn btn-primary">
+                United Kingdom
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Floating Button -->
+@include('layouts.floating')
+
+<!-- Footer Section -->
+@include('layouts.footer')
+
+@endsection

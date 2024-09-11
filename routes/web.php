@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DevelopController;
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ResourcesController;
 use App\Http\Controllers\ScreenController;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +20,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PagesController::class, 'index'])->name('home');
-Route::get('/contact-us', [PagesController::class, 'contact'])->name('contact');
-Route::get('/global', [PagesController::class, 'global'])->name('global');
+// Homepage Controller
+Route::get('/', [HomepageController::class, 'index'])->name('home');
+Route::get('/cookie-policy', [HomepageController::class, 'cookie'])->name('cookie');
+Route::get('/ethics-anti-bribery-and-corruption', [HomepageController::class, 'ethics'])->name('ethics');
+Route::get('/general-information-security-policy', [HomepageController::class, 'general'])->name('general');
+Route::get('/contact-us', [HomepageController::class, 'contact'])->name('contact');
+Route::get('/global', [HomepageController::class, 'global'])->name('global');
 
 // About Us Controller
 Route::get('/about-us', [AboutController::class, 'index'])->name('about-main');
@@ -52,3 +58,11 @@ Route::get('/blog', [ResourcesController::class, 'blog'])->name('resources-1');
 Route::get('/industry', [ResourcesController::class, 'industry'])->name('resources-2');
 Route::get('/conference', [ResourcesController::class, 'webinar'])->name('resources-3');
 Route::get('/press-and-media', [ResourcesController::class, 'press'])->name('resources-4');
+
+// Privacy Controller
+Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('privacy-main');
+Route::get('/privacy-policy-candidate-philippines', [PrivacyController::class, 'philippines'])->name('privacy-1');
+Route::get('/privacy-policy-candidate-autralia', [PrivacyController::class, 'australia'])->name('privacy-2');
+Route::get('/privacy-policy-candidate-singapore', [PrivacyController::class, 'singapore'])->name('privacy-3');
+Route::get('/privacy-policy-candidate-united-states-of-america', [PrivacyController::class, 'usa'])->name('privacy-4');
+Route::get('/privacy-policy-candidate-united-kingdom', [PrivacyController::class, 'uk'])->name('privacy-5');

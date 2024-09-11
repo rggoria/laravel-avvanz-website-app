@@ -343,6 +343,22 @@ body {
     color: var(--marigold) !important;
 }
 
+.link-address {
+    text-align: start;
+    color: white;
+}
+
+.link-address:hover {
+    color: var(--marigold);
+    background-color: transparent;
+}
+
+.link-address.active {
+    color: var(--marigold) !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+}
+
 .social-icon {
     display: flex;
     align-items: center;

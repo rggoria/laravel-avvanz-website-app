@@ -9,13 +9,13 @@
             <div class="navbar-collapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link login-1 text-uppercase fw-bolder" href="#">ScreenGlobal LOGIN</a>
+                        <a class="nav-link login-1 text-uppercase fw-bolder" href="https://www.avvanz.com/screenglobal/">ScreenGlobal LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link login-2 text-uppercase fw-bolder" href="#">CDDGLOBAL LOGIN</a>
+                        <a class="nav-link login-2 text-uppercase fw-bolder" href="https://www.avvanz.com/cddglobal/">CDDGLOBAL LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link login-3 text-uppercase fw-bolder" href="#">LEARNGLOBAL LOGIN</a>
+                        <a class="nav-link login-3 text-uppercase fw-bolder" href="https://learnglobal.apptitude.xyz/">LEARNGLOBAL LOGIN</a>
                     </li>
                 </ul>
             </div>
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('images/avvanz.webp') }}" alt="Avvanz Logo" width="190" height="45" class="brand-logo">
+                <img src="{{ asset('images/homepage/avvanzLogo.webp') }}" alt="Avvanz Logo" width="190" height="45" class="brand-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

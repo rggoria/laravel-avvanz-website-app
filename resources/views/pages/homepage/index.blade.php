@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Global - Avvanz Global
+Avvanz - Background Checks & Screening
 @endsection
 
 @section('css')
@@ -30,7 +30,7 @@ Global - Avvanz Global
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/pages/hero.webp') }}" alt="Placeholder Image" class="transition-up">
+                <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up">
             </div>
         </div>
     </div>
@@ -71,13 +71,13 @@ Global - Avvanz Global
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/pages/award1.png') }}" class="d-block w-100" alt="Award 1">
+                        <img src="{{ asset('images/homepage/certification1.png') }}" class="d-block w-100" alt="Award 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/pages/award2.png') }}" class="d-block w-100" alt="Award 2">
+                        <img src="{{ asset('images/homepage/certification2.png') }}" class="d-block w-100" alt="Award 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/pages/award3.png') }}" class="d-block w-100" alt="Award 3">
+                        <img src="{{ asset('images/homepage/certification3.png') }}" class="d-block w-100" alt="Award 3">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -91,7 +91,7 @@ Global - Avvanz Global
             </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="{{ asset('images/pages/award4.png') }}" class="d-block w-75" alt="Award 4">
+            <img src="{{ asset('images/homepage/certification4.png') }}" class="d-block w-75" alt="Award 4">
         </div>
     </div>
 </section>
@@ -111,7 +111,7 @@ Global - Avvanz Global
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/pexels-jack-sparrow-5917727-1-scaled-1.png') }}" alt="Placeholder Image" class="transition-up solution-image">
+            <img src="{{ asset('images/homepage/homepage2.png') }}" alt="Placeholder Image" class="transition-up solution-image">
         </div>
     </div>
 </section>
@@ -120,7 +120,7 @@ Global - Avvanz Global
 <section class="bg-mg text-white p-5">
     <div class="row g-3">
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/people-working-as-team-company.png') }}" alt="Placeholder Image" class="transition-up solution-image">
+            <img src="{{ asset('images/homepage/homepage3.png') }}" alt="Placeholder Image" class="transition-up solution-image">
         </div>
         <div class="col-lg-6 d-flex align-items-center">
             <div>
@@ -148,28 +148,28 @@ Global - Avvanz Global
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner1.png') }}" class="img-fluid" alt="Partner 1">
+                <img src="{{ asset('images/screen/partner1.png') }}" class="img-fluid" alt="Partner 1">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner2.png') }}" class="img-fluid" alt="Partner 2">
+                <img src="{{ asset('images/screen/partner2.png') }}" class="img-fluid" alt="Partner 2">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner3.png') }}" class="img-fluid" alt="Partner 3">
+                <img src="{{ asset('images/screen/partner3.png') }}" class="img-fluid" alt="Partner 3">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner4.png') }}" class="img-fluid" alt="Partner 4">
+                <img src="{{ asset('images/screen/partner4.png') }}" class="img-fluid" alt="Partner 4">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner5.png') }}" class="img-fluid" alt="Partner 5">
+                <img src="{{ asset('images/screen/partner5.png') }}" class="img-fluid" alt="Partner 5">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner6.png') }}" class="img-fluid" alt="Partner 6">
+                <img src="{{ asset('images/screen/partner6.png') }}" class="img-fluid" alt="Partner 6">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner7.png') }}" class="img-fluid" alt="Partner 7">
+                <img src="{{ asset('images/screen/partner7.png') }}" class="img-fluid" alt="Partner 7">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner8.png') }}" class="img-fluid" alt="Partner 8">
+                <img src="{{ asset('images/screen/partner8.png') }}" class="img-fluid" alt="Partner 8">
             </div>
         </div>
         <div class="swiper-pagination"></div>

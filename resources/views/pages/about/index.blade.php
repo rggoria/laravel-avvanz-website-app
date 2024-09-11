@@ -345,28 +345,28 @@ About Us - Avvanz Global
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner1.png') }}" class="img-fluid" alt="Partner 1">
+                <img src="{{ asset('images/screen/partner1.png') }}" class="img-fluid" alt="Partner 1">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner2.png') }}" class="img-fluid" alt="Partner 2">
+                <img src="{{ asset('images/screen/partner2.png') }}" class="img-fluid" alt="Partner 2">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner3.png') }}" class="img-fluid" alt="Partner 3">
+                <img src="{{ asset('images/screen/partner3.png') }}" class="img-fluid" alt="Partner 3">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner4.png') }}" class="img-fluid" alt="Partner 4">
+                <img src="{{ asset('images/screen/partner4.png') }}" class="img-fluid" alt="Partner 4">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner5.png') }}" class="img-fluid" alt="Partner 5">
+                <img src="{{ asset('images/screen/partner5.png') }}" class="img-fluid" alt="Partner 5">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner6.png') }}" class="img-fluid" alt="Partner 6">
+                <img src="{{ asset('images/screen/partner6.png') }}" class="img-fluid" alt="Partner 6">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner7.png') }}" class="img-fluid" alt="Partner 7">
+                <img src="{{ asset('images/screen/partner7.png') }}" class="img-fluid" alt="Partner 7">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/pages/partner8.png') }}" class="img-fluid" alt="Partner 8">
+                <img src="{{ asset('images/screen/partner8.png') }}" class="img-fluid" alt="Partner 8">
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -389,7 +389,7 @@ About Us - Avvanz Global
             <!-- Award 1 -->
             <div class="col-md-4 mb-4">
                 <div class="d-flex flex-column" style="height: 32rem;">
-                    <img src="https://www.avvanz.com/wp-content/uploads/2023/03/normal_u13-1.svg" class="card-img-top" alt="Best Background Screening Provider">
+                    <img src="{{ asset('images/about/award1.svg') }}" class="card-img-top" alt="Best Background Screening Provider">
                     <div class="card-body d-flex flex-column text-white text-center">
                         <h5 class="card-title text-center">Executive of the Year - HR Technology</h5>
                         <p class="card-text text-center flex-fill">Avvanz’s Managing Director, Kannan Chettiar, has been awarded EXECUTIVE OF THE YEAR – HR TECHNOLOGY by the very prestigious Singapore Business Review.</p>
@@ -401,7 +401,7 @@ About Us - Avvanz Global
             <!-- Award 2 -->
             <div class="col-md-4 mb-4">
                 <div class="d-flex flex-column" style="height: 32rem;">
-                    <img src="https://www.avvanz.com/wp-content/uploads/2023/03/normal_u17-1.svg" class="card-img-top" alt="Best Training Provider (Sales)">
+                    <img src="{{ asset('images/about/award2.svg') }}" class="card-img-top" alt="Best Training Provider (Sales)">
                     <div class="card-body d-flex flex-column text-white text-center">
                         <h5 class="card-title text-center">Best Training Provider (Sales)</h5>
                         <p class="card-text text-center flex-fill">HumanResources Magazine, a leading magazine for HR Community in Asia, awarded Avvanz GOLD MEDAL for BEST BACKGROUND SCREENING PROVIDER & Finalist for BEST TRAINING PROVIDER (SALES) for 2018.</p>
@@ -413,7 +413,7 @@ About Us - Avvanz Global
             <!-- Award 3 -->
             <div class="col-md-4 mb-4">
                 <div class="d-flex flex-column" style="height: 32rem;">
-                    <img src="https://www.avvanz.com/wp-content/uploads/2023/03/normal_u18-1.svg" class="card-img-top" alt="Best Background Screening Provider">
+                    <img src="{{ asset('images/about/award3.svg') }}" class="card-img-top" alt="Best Background Screening Provider">
                     <div class="card-body d-flex flex-column text-white text-center">
                         <h5 class="card-title text-center">Best Background Screening Provider</h5>
                         <p class="card-text text-center flex-fill">HumanResources Magazine, a leading magazine for HR Community in Asia, has nominated Avvanz as the BEST BACKGROUND SCREENING PROVIDER.</p>
@@ -497,7 +497,7 @@ About Us - Avvanz Global
                 Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
             </p>
             <br>
-            <img src="{{asset('images/management-team-768x714.png')}}" alt="" class="img-fluid">
+            <img src="{{asset('images/about/management.png')}}" alt="Management Team" class="img-fluid">
         </div>
     </div>
 </section>

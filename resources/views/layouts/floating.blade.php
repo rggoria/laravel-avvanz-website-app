@@ -1,6 +1,6 @@
 <!-- Left -->
 <a href="#" class="floating-btn floating-btn-left">
-    <img src="{{ asset('images/footer-logo.png') }}" alt="Left Icon">
+    <img src="{{ asset('images/homepage/avvanzFooter.png') }}" alt="Left Icon">
 </a>
 <!-- Right -->
 <a href="#" class="floating-btn floating-btn-right">
