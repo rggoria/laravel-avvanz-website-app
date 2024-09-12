@@ -22,7 +22,48 @@ class ScreenController extends Controller
     }
     public function backgroundCheck()
     {
-        return view('pages.screen.backgroundCheck');
+        $dueDiligenceItems = [
+            [
+                'icon' => 'fa-film',
+                'title' => 'Adverse Media Check',
+                'description' => 'We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. Its not just about names, its about behavior.'
+            ],[
+                'icon' => 'fa-globe',
+                'title' => 'Global Watchlist and Sanctions',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],[
+                'icon' => 'fa-newspaper',
+                'title' => 'Office of Foreign Assets Control',
+                'description' => 'Stay compliant, mitigate risk. We monitor OFAC\'s list to prevent hiring threats to national security or engaging in illicit activities.'
+            ],[
+                'icon' => 'fa-desktop',
+                'title' => 'Social Media Screening',
+                'description' => 'Peace of mind through thorough online vetting. We ensure safety and compliance without compromising privacy.'
+            ],[
+                'icon' => 'fa-lock',
+                'title' => 'Sex Offenderd Registry',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],[
+                'icon' => 'fa-globe',
+                'title' => 'Global Watchlist and Sanctions',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],[
+                'icon' => 'fa-globe',
+                'title' => 'Global Watchlist and Sanctions',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],[
+                'icon' => 'fa-globe',
+                'title' => 'Global Watchlist and Sanctions',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],[
+                'icon' => 'fa-globe',
+                'title' => 'Global Watchlist and Sanctions',
+                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+            ],
+        ];
+        return view('pages.screen.backgroundCheck',[
+            'dueDiligenceItems'=> $dueDiligenceItems,
+        ]);
     }
 
     public function avvanzSreenGlobal()
