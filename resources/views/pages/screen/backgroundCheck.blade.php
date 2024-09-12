@@ -84,58 +84,23 @@ Background Checks Singapore - Avvanz Global
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
+                @foreach ( $identityCheck as $item )
+                    <div class="swiper-slide">
+                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                </div>
+                                <h4 class="card-title fw-bolder">
+                                    {{ $item['title'] }}
+                                </h4>
+                                <p class="card-text">
+                                    {{ $item['description'] }}
+                                </p>
                             </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-globe fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -151,58 +116,23 @@ Background Checks Singapore - Avvanz Global
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
+                @foreach ( $financialCheck as $item )
+                    <div class="swiper-slide">
+                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                </div>
+                                <h4 class="card-title fw-bolder">
+                                    {{ $item['title'] }}
+                                </h4>
+                                <p class="card-text">
+                                    {{ $item['description'] }}
+                                </p>
                             </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-globe fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -218,58 +148,23 @@ Background Checks Singapore - Avvanz Global
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper my-5 text-white">
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
+                @foreach ( $integrityCheck as $item )
+                    <div class="swiper-slide">
+                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                </div>
+                                <h4 class="card-title fw-bolder">
+                                    {{ $item['title'] }}
+                                </h4>
+                                <p class="card-text">
+                                    {{ $item['description'] }}
+                                </p>
                             </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-globe fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-film fa-2x"></i>
-                            </div>
-                            <h4 class="card-title fw-bolder">Global Watchlist and Sanctions</h4>
-                            <p class="card-text">
-                                We deliver negative media insights from thousands of global sources, spanning back to the early 1900s. It's not just about names, it's about behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>

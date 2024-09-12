@@ -42,27 +42,95 @@ class ScreenController extends Controller
             ],[
                 'icon' => 'fa-lock',
                 'title' => 'Sex Offenderd Registry',
-                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+                'description' => 'Ensure safety with thorough checks for any history of sexual violations.'
+            ],[
+                'icon' => 'fa-times',
+                'title' => 'Criminal or Criminality Check',
+                'description' => 'Ensure safety with thorough checks for any history of sexual violations.'
+            ],[
+                'icon' => 'fa-check-double',
+                'title' => 'Civil Litigation Check',
+                'description' => 'Scouring through commercial and civil court sources for a comprehensive background check wherever the subject has been.'
+            ],[
+                'icon' => 'fa-user-check',
+                'title' => 'Conflict of Interest/ Directorship',
+                'description' => 'Discover past and present directorships while uncovering any disqualifications.'
+            ],[
+                'icon' => 'fa-hospital',
+                'title' => 'Drug Testing',
+                'description' => 'Empower drug testing panels for thorough subject assessments.'
+            ],
+        ];
+        $identityCheck = [
+            [
+                'icon' => 'fa-id-card-alt',
+                'title' => 'Identity Check - ID Validation',
+                'description' => 'We verify documents from official sources, including governmental agencies and embassies, across 200+ countries.'
             ],[
                 'icon' => 'fa-globe',
-                'title' => 'Global Watchlist and Sanctions',
-                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+                'title' => 'Identity Check - Passport MRZ',
+                'description' => 'This check determines the validity of a passport\'s machine readable zone (MRZ) code.'
             ],[
-                'icon' => 'fa-globe',
-                'title' => 'Global Watchlist and Sanctions',
-                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+                'icon' => 'fa-address-book',
+                'title' => 'Address Check',
+                'description' => 'This check will validate if the poof of residency or addresses provided by the candidate is verified true.'
             ],[
-                'icon' => 'fa-globe',
-                'title' => 'Global Watchlist and Sanctions',
-                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+                'icon' => 'fa-file-signature',
+                'title' => 'Legal Right to Work',
+                'description' => 'This check verifies the legality of the subject to work in the particular country.'
             ],[
-                'icon' => 'fa-globe',
-                'title' => 'Global Watchlist and Sanctions',
-                'description' => 'Elevate global compliance with our thorough due diligence solution. Screen 45+ regulatory bodies, 1600+ Watch Lists, covering AML, KYC, terrorism, and corruption.'
+                'icon' => 'fa-id-card',
+                'title' => 'Driving License',
+                'description' => 'This check will verify if the Driving License is valid.'
+            ],
+        ];
+        $financialCheck = [
+            [
+                'icon' => 'fa-credit-card ',
+                'title' => 'Credit Check',
+                'description' => 'Offers information about Subject\'s borrowing history and financial indebtedness. May also include payment defaults or delinquencies.'
+            ],[
+                'icon' => 'fa-file-invoice-dollar',
+                'title' => 'Financial Regulatory Check',
+                'description' => 'Verify regulatory compliance for subjects: Screening for disqualifications and disciplinary actions.'
+            ],[
+                'icon' => 'fa-money-check-alt',
+                'title' => 'Bankruptcy Check',
+                'description' => 'Bankruptcy Check is to check if Subject is declared bankrupt and recorded with insolvency or is facing a bankrupt petition.'
+            ],
+        ];
+        $integrityCheck = [
+            [
+                'icon' => 'fa-graduation-cap',
+                'title' => 'Education Verification',
+                'description' => 'We verify attendance, graduation, and certification. If no centralized databases, agents may visit for a fee.'
+            ],[
+                'icon' => 'fa-university',
+                'title' => 'Institution Accreditation Check',
+                'description' => 'We ensure educational quality through accreditation checks. Accredited degrees are esteemed, so it\'s crucial to verify institution status to steer clear of diploma mills.'
+            ], [
+                'icon' => 'fa-file-alt ',
+                'title' => 'Professional Qualifications/ Memberships',
+                'description' => 'We validate the dates, levels, and authenticity of professional certifications/licenses, as well as details regarding trade memberships.'
+            ],[
+                'icon' => 'fa-users',
+                'title' => 'Employment Details Verification with HR',
+                'description' => 'We verify key details including dates, positions, responsibilities, reasons for leaving, and rehire eligibility.'
+            ],[
+                'icon' => 'fa-briefcase',
+                'title' => 'Employment Performance Check with Supervisor/ HR',
+                'description' => 'Thorough interviews with supervisors evaluate performance and behavior against KPIs'
+            ],[
+                'icon' => 'fa-paste',
+                'title' => 'Resume or CV Comparison Check',
+                'description' => 'This check verifies the candidate\'s resume against the information provided in the application form or the Candidate Data page on the ScreenGlobal platform.'
             ],
         ];
         return view('pages.screen.backgroundCheck',[
             'dueDiligenceItems'=> $dueDiligenceItems,
+            'identityCheck' => $identityCheck,
+            'financialCheck'=> $financialCheck,
+            'integrityCheck'=> $integrityCheck
         ]);
     }
 
