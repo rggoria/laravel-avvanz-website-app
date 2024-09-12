@@ -32,55 +32,101 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    @php
+                        $currentRouteName = Route::currentRouteName();
+                    @endphp
+
                     <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-1') }}">Workplace Safety and Health Guideline</a></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'about-1' ? 'active' : '' }}" href="{{ route('about-1') }}">
+                                    Workplace Safety and Health Guideline
+                                </a>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-2') }}">Environmental, Social and Governance</a></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'about-2' ? 'active' : '' }}" href="{{ route('about-2') }}">
+                                    Environmental, Social and Governance
+                                </a>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('about-3') }}">Join Avvanz</a></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'about-3' ? 'active' : '' }}" href="{{ route('about-3') }}">
+                                    Join Avvanz
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Screen
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
                             <li class="dropdown-submenu dropend nav-submenu-display">
-                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="background-screening">Background Screening</a>
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder {{ $currentRouteName == 'screen-1' ? 'active' : '' }}" href="{{ route('screen-1') }}">
+                                    Background Screening
+                                </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-1') }}">Why Avvanz Screen</a></li>
-                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-2') }}">Background Checks</a></li>
-                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-3') }}">Avvanz Screen Global</a></li>
-                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-4') }}">Process</a></li>
-                                    <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-sub-5') }}">KYC AML Compliance</a></li>
+                                    <li>
+                                        <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-sub-1' ? 'active' : '' }}" href="{{ route('screen-sub-1') }}">Why Avvanz Screen</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-sub-2' ? 'active' : '' }}" href="{{ route('screen-sub-2') }}">Background Checks</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-sub-3' ? 'active' : '' }}" href="{{ route('screen-sub-3') }}">Avvanz Screen Global</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-sub-4' ? 'active' : '' }}" href="{{ route('screen-sub-4') }}">Process</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-sub-5' ? 'active' : '' }}" href="{{ route('screen-sub-5') }}">KYC AML Compliance</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-2') }}">ScreenChain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-3') }}">Singapore Work Passes</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-4') }}">Company Due Diligence</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('screen-5') }}">Partnership Integration</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-2' ? 'active' : '' }}" href="{{ route('screen-2') }}">ScreenChain</a></li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-3' ? 'active' : '' }}" href="{{ route('screen-3') }}">Singapore Work Passes</a></li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-4' ? 'active' : '' }}" href="{{ route('screen-4') }}">Company Due Diligence</a></li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'screen-5' ? 'active' : '' }}" href="{{ route('screen-5') }}">Partnership Integration</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Develop
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-1') }}">Star Trainers</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-2') }}">Learn Global</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('develop-3') }}">Nibble & Learn</a></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'develop-1' ? 'active' : '' }}" href="{{ route('develop-1') }}">Star Trainers</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'develop-2' ? 'active' : '' }}" href="{{ route('develop-2') }}">Learn Global</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'develop-3' ? 'active' : '' }}" href="{{ route('develop-3') }}">Nibble & Learn</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
@@ -88,20 +134,31 @@
                             Resources
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-1') }}">Blog</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-2') }}">Industry Reports</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-3') }}">Webinar & Video</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navigation-item fw-bolder" href="{{ route('resources-4') }}">Press and Media</a></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-1' ? 'active' : '' }}" href="{{ route('resources-1') }}">Blog</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-2' ? 'active' : '' }}" href="{{ route('resources-2') }}">Industry Reports</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-3' ? 'active' : '' }}" href="{{ route('resources-3') }}">Webinar & Video</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-4' ? 'active' : '' }}" href="{{ route('resources-4') }}">Press and Media</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item nav-main-display">
-                        <a class="nav-link navigation text-uppercase fw-bolder" href="{{ route('contact') }}">Contact Us</a>
+                        <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item nav-main-display">
-                        <a class="nav-link navigation text-uppercase fw-bolder" href="{{ route('global') }}">Global</a>
+                        <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'global' ? 'active' : '' }}" href="{{ route('global') }}">Global</a>
                     </li>
                     {{-- <li class="nav-item dropdown nav-main-display">
                         <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

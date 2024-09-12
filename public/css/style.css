@@ -186,10 +186,13 @@ body {
 .navigation {
     color: black !important;
     background-color: transparent;
-    transition: color 1s, border-radius 1s, background-color 1s;
 }
 
 .navigation:hover {
+    color: var(--marigold) !important;
+}
+
+.navigation.active {
     color: var(--marigold) !important;
 }
 
@@ -200,6 +203,11 @@ body {
 }
 
 .navigation-item:hover {
+    color: white !important;
+    background-color: var(--marigold);
+}
+
+.navigation-item.active {
     color: white !important;
     background-color: var(--marigold);
 }
@@ -343,20 +351,20 @@ body {
     color: var(--marigold) !important;
 }
 
-.link-address {
+.link-location {
+    color: var(--marigold);
     text-align: start;
+}
+
+.link-location:hover {
+    background-color: transparent;
     color: white;
 }
 
-.link-address:hover {
-    color: var(--marigold);
-    background-color: transparent;
-}
-
-.link-address.active {
-    color: var(--marigold) !important;
+.link-location.active {
     font-weight: bold !important;
     background-color: transparent !important;
+    color: white !important;
 }
 
 .social-icon {

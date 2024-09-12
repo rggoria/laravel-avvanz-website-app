@@ -21,7 +21,7 @@ LearnGlobal - Avvanz Global
                 <p class="lead">
                     Explore Courses
                 </p>
-                <a href="#" class="btn btn-orange-border fw-bolder text-uppercase">learnglobal login</a>
+                <a href="https://learnglobal.apptitude.xyz/" class="btn btn-orange-border fw-bolder text-uppercase">learnglobal login</a>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@ LearnGlobal - Avvanz Global
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalLabel-{{ $index }}">{{ $item['title'] }}</h5>
+                            <h5 class="modal-title w-bolder text-co" id="modalLabel-{{ $index }}">{{ $item['title'] }}</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">

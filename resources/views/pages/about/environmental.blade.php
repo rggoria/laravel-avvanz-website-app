@@ -41,17 +41,19 @@ Environmental, Social and Governance
 <section class="container py-5">
     <div class="row g-3">
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card border-radius-dmb h-100">
-                <img src="{{ asset('images/about/environment1.png') }}" class="card-img-top" alt="sample">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title fw-bolder text-dmb">
-                        Executive of the Year - HR Technology
-                    </h5>
-                    <p class="card-text text-muted">
-                        May 2, 2023
-                    </p>                  
+            <a href="https://www.avvanz.com/avvanz-charity-movement-to-tahanan-ng-pagmamahal/" class="text-decoration-none">
+                <div class="card border-radius-dmb h-100">
+                    <img src="{{ asset('images/about/environment1.png') }}" class="card-img-top" alt="sample">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bolder text-dmb">
+                            Executive of the Year - HR Technology
+                        </h5>
+                        <p class="card-text text-muted">
+                            May 2, 2023
+                        </p>                  
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>

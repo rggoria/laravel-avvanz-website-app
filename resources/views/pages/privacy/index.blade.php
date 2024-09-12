@@ -4,6 +4,10 @@
 Privacy Policy - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/privacy.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -57,27 +61,27 @@ Privacy Policy - Avvanz Global
             <h1 class="divider-center-25"></h1>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto my-4">
-            <a href="{{ route('privacy-1') }}" class="btn btn-primary">
+            <a href="{{ route('privacy-1') }}" class="btn btn-candidate">
                 Philippines
             </a>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto my-4">
-            <a href="{{ route('privacy-2') }}" class="btn btn-primary">
+            <a href="{{ route('privacy-2') }}" class="btn btn-candidate">
                 Australia
             </a>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto my-4">
-            <a href="{{ route('privacy-3') }}" class="btn btn-primary">
+            <a href="{{ route('privacy-3') }}" class="btn btn-candidate">
                 Singapore
             </a>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto my-4">
-            <a href="{{ route('privacy-4') }}" class="btn btn-primary">
+            <a href="{{ route('privacy-4') }}" class="btn btn-candidate">
                 United States of America
             </a>
         </div>
         <div class="d-grid gap-2 col-4 mx-auto my-4">
-            <a href="{{ route('privacy-5') }}" class="btn btn-primary">
+            <a href="{{ route('privacy-5') }}" class="btn btn-candidate">
                 United Kingdom
             </a>
         </div>

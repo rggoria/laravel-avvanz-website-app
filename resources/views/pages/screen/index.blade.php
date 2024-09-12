@@ -56,7 +56,7 @@ Screen - Avvanz Global
                         Hence the need for a thorough pre-employment or in-employment background checks (or background screening or vetting) to be undertaken on candidates or employees. There are more than 20 types of background checks that can be conducted. What specific checks need to be selected really depends on the risks associated with their functions or roles by industry.
                     </p>
                     <p class="lead">
-                        Click here to find out more about the different types of Background Checks and the Process <a href="https://www.avvanz.com/background-screening/" class="link-hover">https://www.avvanz.com/background-screening/</a>.
+                        Click here to find out more about the different types of Background Checks and the Process <a href="{{ route('screen-1') }}" class="link-hover">https://www.avvanz.com/background-screening/</a>.
                     </p>
                 </div>
             </div>
@@ -81,7 +81,7 @@ Screen - Avvanz Global
                         Just like how you can conduct background checks on individuals, you can vet companies too. These companies can be your partners or clients or vendors or even investment targets.
                     </p>
                     <p class="lead">
-                        Click here to find more about the different types of Company Due Diligence checks <a href="https://www.avvanz.com/company-due-diligence/" class="link-hover">https://www.avvanz.com/company-due-diligence/</a>.
+                        Click here to find more about the different types of Company Due Diligence checks <a href="{{ route('screen-4') }}" class="link-hover">https://www.avvanz.com/company-due-diligence/</a>.
                     </p>
                     <p class="lead">
                         For a non-obligatory consultation, email us at <a href="mailto:consult@avvanz.com" class="link-hover">consult@avvanz.com</a>.

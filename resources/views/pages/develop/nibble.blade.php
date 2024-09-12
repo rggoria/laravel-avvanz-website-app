@@ -4,6 +4,10 @@
 Revision Nibble & Learn - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/develop.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -80,17 +84,17 @@ Revision Nibble & Learn - Avvanz Global
                     Top Podcast
                 </div>
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
+                    <button class="nav-link link-sub-tab active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
                         <i class="fas fa-play-circle me-2 fs-4"></i>
                         <h5 class="mb-1 me-auto">Digital Transformation Quick Starter Blueprint</h5>
                         <small class="text-body-secondary">32:29</small>
                     </button>
-                    <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
+                    <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
                         <i class="fas fa-play-circle me-2 fs-4"></i>
                         <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
                         <small class="text-body-secondary">0:16</small>
                     </button>
-                    <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
+                    <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
                         <i class="fas fa-play-circle me-2 fs-4"></i>
                         <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
                         <small class="text-body-secondary">0:16</small>

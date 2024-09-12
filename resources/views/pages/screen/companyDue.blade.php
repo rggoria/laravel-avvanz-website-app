@@ -163,7 +163,7 @@ Company Due Diligence - Avvanz Global
                 Overall, Avvanz can leverage our expertise in research and analysis to conduct comprehensive company due diligence, helping clients make informed decisions about potential business opportunities while mitigating risks and ensuring regulatory compliance.
             </p>
             <div class="d-grid gap-2 col-2 mx-auto my-4">
-                <a href="#" class="btn btn-marigold-transition">Contact Us</a>
+                <a href="{{ route('contact') }}" class="btn btn-marigold-transition">Contact Us</a>
             </div>
         </div>
     </div>

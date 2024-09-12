@@ -4,6 +4,10 @@
 Webinars & Videos - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/resources.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -31,20 +35,22 @@ Webinars & Videos - Avvanz Global
     <div class="row g-3">
         @foreach($webinarItems as $item)
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card border-radius-dmb h-100">
-                <img src="{{ asset('images/resources/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title fw-bolder text-dmb">
-                        {{ $item['title'] }}
-                    </h5>
-                    <p class="card-text fw-bolder text-marigold">
-                        Read More »
-                    </p>
+            <a href="{{ $item['link'] }}" class="text-decoration-none">
+                <div class="card border-radius-dmb h-100">
+                    <img src="{{ asset('images/resources/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bolder text-dmb">
+                            {{ $item['title'] }}
+                        </h5>
+                        <p class="card-text fw-bolder text-marigold">
+                            Read More »
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent text-muted">
+                        {{ $item['created_at'] }}
+                    </div>
                 </div>
-                <div class="card-footer bg-transparent text-muted">
-                    {{ $item['created_at'] }}
-                </div>
-            </div>
+            </a>
         </div>
         @endforeach
     </div>
@@ -68,13 +74,13 @@ Webinars & Videos - Avvanz Global
             <br>
             <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-webinar" type="button" role="tab" aria-controls="pills-webinar" aria-selected="true">Webinar</button>
+                    <button class="nav-link link-tab active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-webinar" type="button" role="tab" aria-controls="pills-webinar" aria-selected="true">Webinar</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="false">Events</button>
+                    <button class="nav-link link-tab" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="false">Events</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-company-tab" data-bs-toggle="pill" data-bs-target="#pills-company" type="button" role="tab" aria-controls="pills-company" aria-selected="false">Company Updates</button>
+                    <button class="nav-link link-tab" id="pills-company-tab" data-bs-toggle="pill" data-bs-target="#pills-company" type="button" role="tab" aria-controls="pills-company" aria-selected="false">Company Updates</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -121,17 +127,17 @@ Webinars & Videos - Avvanz Global
                                 Top Videos Webinar
                             </div>
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
+                                <button class="nav-link link-sub-tab active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Digital Transformation Quick Starter Blueprint</h5>
                                     <small class="text-body-secondary">32:29</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
                                     <small class="text-body-secondary">0:16</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
                                     <small class="text-body-secondary">0:16</small>
@@ -183,17 +189,17 @@ Webinars & Videos - Avvanz Global
                                 Top Video Event
                             </div>
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
+                                <button class="nav-link link-sub-tab active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Digital Transformation Quick Starter Blueprint</h5>
                                     <small class="text-body-secondary">32:29</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
                                     <small class="text-body-secondary">0:16</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
                                     <small class="text-body-secondary">0:16</small>
@@ -245,17 +251,17 @@ Webinars & Videos - Avvanz Global
                                 Top Videos Company Update
                             </div>
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
+                                <button class="nav-link link-sub-tab active d-flex w-100 text-start align-items-start" id="v-pills-podcast1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast1" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Digital Transformation Quick Starter Blueprint</h5>
                                     <small class="text-body-secondary">32:29</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast2" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">NLP Success Mindset</h5>
                                     <small class="text-body-secondary">0:16</small>
                                 </button>
-                                <button class="nav-link d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
+                                <button class="nav-link link-sub-tab d-flex w-100 text-start align-items-start" id="v-pills-podcast3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-podcast3" type="button">
                                     <i class="fas fa-play-circle me-2 fs-4"></i>
                                     <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
                                     <small class="text-body-secondary">0:16</small>

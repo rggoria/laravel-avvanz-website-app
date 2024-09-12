@@ -26,7 +26,7 @@ Avvanz - Background Checks & Screening
                     <p class="lead">
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
-                    <a href="#" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
+                    <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
@@ -44,7 +44,7 @@ Avvanz - Background Checks & Screening
             <p class="lead">
                 Background Checks, KYC/AML and Company Due Diligence
             </p>
-            <a href="#" class="btn hero-screen-button fw-bolder text-uppercase">
+            <a href="{{ route('screen-main') }}" class="btn hero-screen-button fw-bolder text-uppercase">
                 Click to know more
             </a>
         </div>
@@ -55,7 +55,7 @@ Avvanz - Background Checks & Screening
             <p class="lead">
                 F2F/Virtual LIVE Training, Coaching and Customized elearning
             </p>
-            <a href="#" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
+            <a href="{{ route('develop-main') }}" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
         </div>
     </div>
 </section>
@@ -107,7 +107,7 @@ Avvanz - Background Checks & Screening
                 <p class="lead">
                     As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
                 </p>
-                <a href="#" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
+                <a href="{{ route('screen-main') }}" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
@@ -130,7 +130,7 @@ Avvanz - Background Checks & Screening
                 <p class="lead">
                     Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
                 </p>
-                <a href="#" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+                <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
             </div>
         </div>
     </div>

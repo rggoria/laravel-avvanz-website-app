@@ -4,6 +4,10 @@
 Develop - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/develop.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -77,7 +81,7 @@ Develop - Avvanz Global
                             {{ $item['description'] }}
                         </h5>
                         <div class="d-grid gap-2 col-6 mx-auto my-4">
-                            <a href="#" class="btn btn-marigold-transition text-uppercase">learn more</a>
+                            <a href="{{ $item['link'] }}" class="btn learn-button-marigold text-uppercase">learn more</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +134,7 @@ Develop - Avvanz Global
                                 {{ $item['description'] }}
                             </h5>
                             <div class="d-grid gap-2 col-6 mx-auto my-4">
-                                <a href="#" class="btn btn-marigold-transition text-uppercase">learn more</a>
+                                <a href="{{ $item['link'] }}" class="btn learn-button-mg text-uppercase">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +165,7 @@ Develop - Avvanz Global
         </p>
     </div>
     <div class="d-grid gap-2 col-2 mx-auto my-4">
-        <a href="#" class="btn btn-marigold-transition">Contact Us</a>
+        <a href="{{ route('contact') }}" class="btn btn-marigold-transition">Contact Us</a>
     </div>
 </section>
 

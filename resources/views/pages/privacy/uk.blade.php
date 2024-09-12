@@ -4,6 +4,10 @@
 Privacy Policy: Candidate (UK) - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/privacy.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -100,12 +104,12 @@ Privacy Policy: Candidate (UK) - Avvanz Global
         </p>
         <ol>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Application of this Privacy Policy
                 </span>
                 <ol>
                     <li>
-                        “<span class="fw-bolder">Personal Data</span>” The term “data” refers to information about an individual, such as their telephone number, email address, financial, details, home address, employment details, educational qualifications, and transaction activity in relation to the purchase of services from us or from that data in combination with other information to which we may have access.
+                        “<span class="fw-bolder h5">Personal Data</span>” The term “data” refers to information about an individual, such as their telephone number, email address, financial, details, home address, employment details, educational qualifications, and transaction activity in relation to the purchase of services from us or from that data in combination with other information to which we may have access.
                     </li>
                     <li>
                         By using any, services, or campaigns offered by Avvanz or submitting information to or otherwise communicating with Avvanz, you agree and consent to Avvanz and our related entities, affiliates, and subsidiaries (individually and collectively, “Companies”), as well as their respective representatives and/or agents (collectively referred to herein as “Avvanz”, “us”, “we” or “our”) collecting, using, and disclosing your Personal Data in accordance with this Privacy Policy. “You” or “your” means any individual to whom the Act applies and includes an individual actual or prospective customer, but excludes any corporate entity (including corporate customers) and any other entity that is excluded under the Act.
@@ -119,7 +123,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Collection & Consent
                 </span>
                 <ol>
@@ -132,49 +136,49 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                             We will use the information you submit in your application to execute the checks requested by the Requesting Organization. All information requested is used solely to create a Disclosure and is collected, stored, and processed in compliance with UK GDPR and GDPR. We will maintain the confidentiality of your personal information and will not disclose it to any third party except: 
                         </span>
                         <ul>
-                            <li>
+                            <li class="bullet-list">
                                 As necessary for providing our Criminal Record online service to you; or 
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 As required by law. The sort of information gathered will be determined by the type of check requested and the documents You have on hand.
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When you communicate with our customer service officers, for example by meeting, email, or telephone call, you are hereby consenting to have these communications recorded;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When you use some of our services, such as registering for an online account with us, you’re helping us create a better experience for our customers;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When you request that we contact you, please include your name and contact information in an email or other mailing list;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When responding to our promotions, campaigns, or other initiatives, or attending our events;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When we receive references from business partners and third parties, e.g., where you have consented to be referred by them;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When you visit our websites;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 when you participate in any survey or promotion conducted by us and/or our business partners (including by submitting photos);
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 For video recordings, (CCTV) when visiting our premises or photo or video recordings at events;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 When we receive information about you from third-party social networking services, you choose to connect with them;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 our processing of that information for that specific reason.; and/or
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 In order to authenticate Your identity, you will be requested to present identity verification. If you are unable to give the Disclosure and Barring Service with Route 1 documents, (also known as DBS), We will confirm Your identity by comparing the personal information You provide to the information stored about You on other databases to which we have access, such as those kept by credit reference agencies (CRAs), such as Equifax. Before this occurs, the Identity Verifier will notify You in advance.
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Checking your information with Equifax is solely for the purpose of confirming your identification. This is referred to as a soft search and is not a credit check. You can conduct an infinite number of soft searches on your credit record without affecting your credit report or score. These will appear on your credit record for a period of 12 months.
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Each CRA has created its own version of a notice that details how the three major credit reference agencies, Equifax, Experian, and TransUnion (previously Callcredit), (also referred to in the notice as “credit reference agencies” or “CRAs”) use and exchange personal data. This personal data, often known as ‘bureau data,’ that they obtain about you and/or your firm is used in credit activities.
                             </li>
                             <p class="lead mt-3">
@@ -189,7 +193,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                         </ul>
                         <ol>
                             <li>
-                                <span class="fw-bolder">
+                                <span class="fw-bolder h5">
                                     Criminal Record Checks
                                 </span>
                                 <p>
@@ -228,7 +232,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Purposes for which we collect, use, share and disclose your Personal Data
                 </span>
                 <ol>
@@ -236,63 +240,49 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                         Your personal information may be collected, shared, used, and/or disclosed for the following purposes and to the extent allowed by law:
                     </li>
                     <ul>
-                        <li>
+                        <li class="bullet-list">
                             Acts on the Requesting Organization’s directions and will use the information You give in Your application to conduct criminal records checks as authorized by them.
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To verify and process your personal particulars and payments;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To provide goods and services to you;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To respond and deal with inquiries, complaints, and other customer-care matters or otherwise communicate with you;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To monitor or record phone calls and customer-facing interactions for quality assurance, employee training and performance evaluation, and identity verification purposes;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To verify and manage payment, billing, account, credit checks, and debt-recovery matters;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To send you information, promotions, updates, and marketing and advertising materials in relation to our goods and services and that of our group companies;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To manage, develop and improve our business and operations to serve you better;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To carry out market research and customer surveys;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To conduct investigations or audits or carry out crime and fraud prevention and risk management activities;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To comply with legal and regulatory requirements;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To enforce our legal rights and obligations;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             To facilitate business asset transactions (which may extend to any mergers, acquisitions, or asset sales);
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             For other purposes for which we have obtained your consent; and
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             For any other legitimate purposes necessary, ancillary, or related to the above-specified purposes.
                         </li>
                     </ul>
@@ -300,35 +290,28 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                         Your Personal Data may be shared with people who work for us, other companies, or groups that help us do our job. These people might include people like officers and employees, suppliers, and advisors:
                     </li>
                     <ul>
-                        <li>
+                        <li class="bullet-list">
                             Banks, credit card companies, and payment vendors;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Debt collection agencies;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Credit information companies;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Our business partners and authorized distributors, dealers, or resellers;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Relevant government regulators or authorities or law enforcement agencies;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Our insurers and advisors, including consultants, auditors, and lawyers;
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Data intermediaries; and
                         </li>
-                
-                        <li>
+                        <li class="bullet-list">
                             Any other party to whom you authorize us to disclose your Personal Data.
                         </li>
                     </ul>
@@ -353,15 +336,13 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                         </span>
                         <br>
                         <ul>
-                            <li>
+                            <li class="bullet-list">
                                 Complies with the Act and accompanying guidelines issued by the relevant regulatory authorities, all applicable laws and regulations, and this Privacy Policy (“Data Standards”) and shall not do or permit anything to be done which might cause such party or us to breach the Data Standards;
                             </li>
-                    
-                            <li>
+                            <li class="bullet-list">
                                 We take all appropriate steps to make sure that our customers comply with our data handling policies. We also take measures to protect the data in the same way as the law requires.;
                             </li>
-                    
-                            <li>
+                            <li class="bullet-list">
                                 Protects Personal Data by making reasonable security arrangements to prevent unauthorized access, use, disclosure, or modification.
                             </li>
                         </ul>
@@ -370,7 +351,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Withdrawal of Consent & Access
                 </span>
                 <ol>
@@ -386,7 +367,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Accuracy & Correction
                 </span>
                 <ol>
@@ -399,7 +380,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Protection, Policies, and Procedures
                 </span>
                 <ol>
@@ -409,7 +390,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Retention and Disposal of Personal Data
                 </span>
                 <ol>
@@ -435,7 +416,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Rights as Data Subjects
                 </span>
                 <ol>
@@ -445,7 +426,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Third-Party Links and Products on Our Services
                 </span>
                 <ol>
@@ -455,7 +436,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Update/Changes to the Privacy Policy
                 </span>
                <p>
@@ -463,7 +444,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                </p>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Contact us
                 </span>
                 <p>
@@ -472,7 +453,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 <p>
                     We have appointed a Data Protection Officer/s to oversee our compliance with the Privacy Act. If you have any questions, requests, or feedback about your personal data, please contact us:
                 </p>
-                <p class="fw-bolder mt-3">
+                <p class="fw-bolder mt-3 h5">
                     The Data Protection Officer
                 </p>
                 <p class="lead">

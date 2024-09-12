@@ -324,7 +324,7 @@ Background Checks Singapore - Avvanz Global
                     </h1>
                     <h1 class="divider-start-25"></h1>
                     <p class="lead mt-3">
-                        Order checks in minutes with our uniquely innovative multi-award platform at <a href="#" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
+                        Order checks in minutes with our uniquely innovative multi-award platform at <a href="https://www.avvanz.com/screenglobal/" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
                     </p>
                     <ul class="list-unstyled">
                         <li class="d-flex align-items-start mb-2">
@@ -363,7 +363,7 @@ Background Checks Singapore - Avvanz Global
                     <div class="text-center">
                       <h4 class="fw-bolder text-dmb">Consult with Us</h4>
                       <br>
-                      <a href="#" class="btn text-uppercase btn-marigold-link">get started</a>
+                      <a href="{{ route('contact') }}" class="btn text-uppercase btn-marigold-link">get started</a>
                     </div>
                 </div>
             </div>

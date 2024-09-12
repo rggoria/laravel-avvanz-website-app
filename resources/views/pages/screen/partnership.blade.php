@@ -52,7 +52,7 @@ Partnership Integration - Avvanz Global
     <div class="row g-3 py-5">
         @foreach($partnerAchievementItems as $item)
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <a href="#" class="text-decoration-none">
+                <a href="{{ $item['link'] }}" class="text-decoration-none">
                     <div class="card border-radius-dmb h-100">
                         <img src="{{ asset('images/screen/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
                         <div class="card-body d-flex flex-column">

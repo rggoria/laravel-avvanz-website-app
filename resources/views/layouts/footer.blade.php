@@ -30,22 +30,22 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link link-address active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true">
+                            <button class="nav-link link-location active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true">
                                 <i class="fas fa-map-marker-alt"></i> Singapore
                             </button>
-                            <button class="nav-link link-address" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false">
                                 <i class="fas fa-map-marker-alt"></i> USA & LATAM
                             </button>
-                            <button class="nav-link link-address" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false">
                                 <i class="fas fa-map-marker-alt"></i> Philippines
                             </button>
-                            <button class="nav-link link-address" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false">
                                 <i class="fas fa-map-marker-alt"></i> Australia & NZ
                             </button>
-                            <button class="nav-link link-address" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false">
                                 <i class="fas fa-map-marker-alt"></i> United Kingdom
                             </button>
-                            <button class="nav-link link-address" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false">
                                 <i class="fas fa-map-marker-alt"></i> India
                             </button>
                         </div>

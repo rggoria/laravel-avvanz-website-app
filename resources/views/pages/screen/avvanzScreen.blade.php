@@ -105,7 +105,7 @@ Why Avvanz Screen​ - Avvanz Global
                     Fully-documented Privacy Policy
                 </h4>
                 <p>
-                    The <a href="#" class="link-hover fw-bold">Privacy Policy</a> can be viewed at Avvanz website.
+                    The <a href="{{ route('privacy-main') }}" class="link-hover fw-bold">Privacy Policy</a> can be viewed at Avvanz website.
                 </p>
               </div>
             </div>

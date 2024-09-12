@@ -201,7 +201,7 @@ MOM Verification - Avvanz Global
         </div>
         <div class="my-4">
             <p class="lead">
-                Avvanz’s multi award winning <a href="#" class="link-hover">ScreenGlobal platform</a> is listed at No 1 in MOM’s trusted background screening companies list. We cover 150+ countries and will be able to help you with your Education and Institution Accreditation Check amongst 20 other types of <a href="#" class="link-hover">background checks</a>. ScreenGlobal is the only eCommerce platform that enables you to browse, select, order and monitor your checks in real-time.
+                Avvanz’s multi award winning <a href="https://www.avvanz.com/screenglobal/" class="link-hover">ScreenGlobal platform</a> is listed at No 1 in MOM’s trusted background screening companies list. We cover 150+ countries and will be able to help you with your Education and Institution Accreditation Check amongst 20 other types of <a href="{{ route('screen-sub-2') }}" class="link-hover">background checks</a>. ScreenGlobal is the only eCommerce platform that enables you to browse, select, order and monitor your checks in real-time.
             </p>
             <p class="lead">
                 Completely hassle-free and peace of mind!
@@ -211,7 +211,7 @@ MOM Verification - Avvanz Global
             </p>
         </div>
         <div class="d-grid gap-2 col-2 mx-auto my-4">
-            <a href="#" class="btn btn-marigold-transition">Contact Us</a>
+            <a href="{{ route('contact') }}" class="btn btn-marigold-transition">Contact Us</a>
         </div>
     </div>
 </section>
@@ -268,7 +268,7 @@ MOM Verification - Avvanz Global
         </table>
         <div class="text-white py-5">
             <p class="lead">
-                For updated prices, please feel free to log in at <a href="#" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
+                For updated prices, please feel free to log in at <a href="https://www.avvanz.com/screenglobal/" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
             </p>
         </div>
     </div>

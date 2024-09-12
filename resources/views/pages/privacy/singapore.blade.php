@@ -4,6 +4,10 @@
 Privacy Policy: Candidate (Singapore) - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/privacy.css') }}">
+@endsection
+
 @section('content')
 
 <!--  Navbar Section -->
@@ -40,12 +44,12 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
         </p>
         <ol>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Application of this Privacy Policy
                 </span>
                 <ol>
                     <li>
-                        “<span class="fw-bolder">Personal Data</span>” The term “data” refers to information about an individual, such as their telephone number, email address, financial, details, home address, employment details, educational qualifications, and transaction activity in relation to the purchase of services from us or from that data in combination with other information to which we may have access.
+                        “<span class="fw-bolder h5">Personal Data</span>” The term “data” refers to information about an individual, such as their telephone number, email address, financial, details, home address, employment details, educational qualifications, and transaction activity in relation to the purchase of services from us or from that data in combination with other information to which we may have access.
                     </li>
                     <li>
                         By using any products, services, or campaigns offered by Avvanz Inc. or submitting information to or otherwise communicating with Avvanz Pte. Ltd., you agree and consent to Avvanz Pte. Ltd. and our related entities, affiliates, and subsidiaries (individually and collectively, “Companies”), as well as their respective representatives and/or agents (collectively referred to herein as “Avvanz”, “us”, “we” or “our”) collecting, using, and disclosing your Personal Data in accordance with this Privacy Policy. “You” or “you’re” means any individual to whom the Republic Act No. 10173 applies and includes an individual actual or prospective customer, but excludes any corporate entity (including corporate customers) and any other entity that is excluded under the Republic Act No. 10173.
@@ -59,7 +63,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Purposes for which we collect, use, share and disclose your Personal Data.
                 </span>
                 <ol>
@@ -67,43 +71,43 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                         Your personal information may be collected, shared, used, and/or disclosed for the following purposes with consent and to the extent allowed by law:
                     </li>
                     <ul>
-                        <li>
+                        <li class="bullet-list">
                             When you visit our websites or when you use or purchase our services, register for an online account with us, respond to our promotions, campaigns, or other initiatives, or attend our events; you’re helping us create a better experience for our customers;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When you communicate with our customer service officers, for example by meeting, email, or telephone call, you are hereby consenting to have these communications recorded;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When we receive information about you from third-party social networking services, you choose to connect with them;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When we receive references from business partners and third parties, e.g., where you have consented to be referred by them;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When you participate in any survey or promotion conducted by us and/or our business partners (including by submitting photos);
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             For video recordings, (CCTV) when visiting our premises or photo or video recordings at events;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When you submit your Personal Data to us for any reason, you are consenting to our processing of that information for that specific reason.; and/or
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             When we collect your Personal Data by lawful means, we will notify you.
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             To verify and process your personal particulars and payments, billing, account, credit checks, and debt-recovery matters;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             To respond and deal with inquiries, complaints, and other customer-care matters or otherwise communicate with you;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             To monitor or record phone calls and customer-facing interactions for quality assurance, employee training and performance evaluation, and identity verification purposes;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             To conduct investigations or audits or carry out crime and fraud prevention and risk management activities;
                         </li>
-                        <li>
+                        <li class="bullet-list">
                             To facilitate business asset transactions (which may extend to any mergers, acquisitions, or asset sales);
                         </li>
                     </ul>
@@ -112,25 +116,25 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                             Your Personal Data may be shared with people who work for us, other companies, or groups that help us do our job. These people might include people like officers and employees, suppliers, and advisors:
                         </span>
                         <ul>
-                            <li>
+                            <li class="bullet-list">
                                 Banks, credit card companies, and payment vendors;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Credit information companies;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Our business partners and authorized distributors, dealers, or resellers;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Relevant government regulators or authorities or law enforcement agencies;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Our insurers and advisors, including consultants, auditors, and lawyers;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Data intermediaries; and
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Any other party to whom you authorize us to disclose your Personal Data. 
                             </li>
                         </ul>
@@ -152,13 +156,13 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                             Your data may be transferred to a country or territory outside of the Philippines, but we will make sure that the Personal Data is protected at least as well as it is under the RA 10173-Data Privacy Act of 2012. This means that the Personal Data will be protected from unauthorized access, use, or disclosure:
                         </span>
                         <ul>
-                            <li>
+                            <li class="bullet-list">
                                 Complies with the Act and accompanying guidelines issued by the relevant regulatory authorities, all applicable laws and regulations, and this Privacy Policy (“<b>Data Standards</b>”) and shall not do or permit anything to be done which might cause such party or us to breach the Data Standards;
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 We take all appropriate steps to make sure that our customers comply with our data handling policies. We also take measures to protect the data in the same way as the law requires.; and
                             </li>
-                            <li>
+                            <li class="bullet-list">
                                 Protects Personal Data by making reasonable security arrangements to prevent unauthorized access, use, disclosure, or modification.
                             </li>
                         </ul>
@@ -172,7 +176,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Withdrawal of Consent & Access
                 </span>
                 <ol>
@@ -188,7 +192,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Accuracy & Correction
                 </span>
                 <ol>
@@ -201,7 +205,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Protection, Policies, and Procedures
                 </span>
                 <ol>
@@ -211,7 +215,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Retention and Disposal of Personal Data
                 </span>
                 <ol>
@@ -237,7 +241,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Rights as Data Subjects
                 </span>
                 <ol>
@@ -247,7 +251,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Third-Party Links and Products on Our Services
                 </span>
                 <ol>
@@ -257,7 +261,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                 </ol>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Contact us
                 </span>
                 <ol>
@@ -266,7 +270,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
                     </li>
                 </ol>
 
-            <p class="fw-bolder mt-3">
+            <p class="fw-bolder h5 mt-3">
                 The Data Protection Officer
             </p>
             <p class="lead">
@@ -286,7 +290,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
             </p>
             </li>
             <li>
-                <span class="fw-bolder">
+                <span class="fw-bolder h5">
                     Update/Changes to the Privacy Policy
                 </span>
                 <ol>
