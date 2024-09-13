@@ -15,6 +15,27 @@ Avvanz - Background Checks & Screening
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
+<section class="container-fluid" style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
+                <div class="text-white">
+                    <h1 class="fw-bolder display-5">
+                        We Screen & Strengthen your Human Assets
+                    </h1>
+                    <h1 class="divider-start-50"></h1>
+                    <p>
+                        Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
+                    </p>
+                    <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
+                <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up image-hero">
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <section class="container my-5 text-center text-white">
@@ -100,22 +121,24 @@ Avvanz - Background Checks & Screening
 
 <!-- Courses Section -->
 <section class="bg-mg text-white p-5">
-    <div class="row g-3">
-        <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up image-horizontal-display" loading="lazy">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center">
-            <div>
-                <h3 class="fw-bold">
-                    Do you want to be effectively onboard and upskill your employees?
-                </h3>
-                <p class="lead">
-                    Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
-                </p>
-                <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up image-horizontal-display" loading="lazy">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3 class="fw-bold">
+                        Do you want to be effectively onboard and upskill your employees?
+                    </h3>
+                    <p class="lead">
+                        Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
+                    </p>
+                    <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+                </div>
             </div>
         </div>
-    </div>
+   </div>
 </section>
 
 <!-- Partners Section -->
