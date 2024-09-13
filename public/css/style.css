@@ -100,7 +100,7 @@ body {
 .image-navbar-logo {
     transition: transform 0.3s ease;
     height: 40px;
-    width: auto;
+    width: 100px;
 }
 
 .image-navbar-logo:hover {
@@ -110,7 +110,7 @@ body {
 .image-footer-logo-1 {
     transition: transform 0.3s ease;
     height: 65px;
-    width: auto;
+    width: 100px;
 }
 
 .image-footer-logo-1:hover {
@@ -120,7 +120,7 @@ body {
 .image-footer-logo-2 {
     transition: transform 0.3s ease;
     height: 80px;
-    width: auto;
+    width: 100px;
 }
 
 .image-footer-logo-2:hover {
@@ -134,12 +134,12 @@ body {
 
 .image-horizontal-display {
     height: 250px;
-    width: 500px;
+    width: 350px;
 }
 
 .image-brand {
     height: 200px;
-    width: 400px;
+    width: 350px;
 }
 
 .btn-orange-border {
