@@ -27,6 +27,7 @@ Route::get('/ethics-anti-bribery-and-corruption', [HomepageController::class, 'e
 Route::get('/general-information-security-policy', [HomepageController::class, 'general'])->name('general');
 Route::get('/contact-us', [HomepageController::class, 'contact'])->name('contact');
 Route::get('/global', [HomepageController::class, 'global'])->name('global');
+Route::get('/testing', [HomepageController::class, 'testing'])->name('testing');
 
 // About Us Controller
 Route::get('/about-us', [AboutController::class, 'index'])->name('about-main');

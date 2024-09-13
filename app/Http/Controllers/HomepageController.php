@@ -93,4 +93,8 @@ class HomepageController extends Controller
     {
         return view("pages.homepage.global");
     }
+
+    public function testing() {
+        return view('pages.homepage.testing');
+    }
 }
