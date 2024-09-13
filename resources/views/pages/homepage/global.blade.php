@@ -111,7 +111,7 @@ Global - Avvanz Global
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage2.png') }}" alt="Placeholder Image" class="transition-up solution-image">
+            <img src="{{ asset('images/homepage/homepage2.png') }}" alt="Placeholder Image" class="transition-up display-image">
         </div>
     </div>
 </section>
@@ -120,7 +120,7 @@ Global - Avvanz Global
 <section class="bg-mg text-white p-5">
     <div class="row g-3">
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage3.png') }}" alt="Placeholder Image" class="transition-up solution-image">
+            <img src="{{ asset('images/homepage/homepage3.png') }}" alt="Placeholder Image" class="transition-up display-image">
         </div>
         <div class="col-lg-6 d-flex align-items-center">
             <div>

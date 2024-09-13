@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero-button{
+.hero-button {
     color: white;
     background-color: var(--marigold) !important;
     border-radius: 25px;
@@ -39,9 +39,9 @@
 }
 
 /* Solution Section */
-.solution-image{
+.display-image {
     height: 250px;
-    width: 400px;
+    width: 500px;
 }
 
 .solution-button {
@@ -58,7 +58,7 @@
 }
 
 /* Industry Section */
-.industry-divider{
+.industry-divider {
     border-bottom: 5px solid var(--marigold) !important;
     width: 25%;
     margin: 0 auto;
@@ -67,8 +67,8 @@
 
 .card-display {
     border: 1px solid #dee2e6;
-    border-radius: .375rem;
-    box-shadow: 0 0 .5rem rgba(0,0,0,.15);
+    border-radius: 0.375rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
 }
 
 .card-icon i {

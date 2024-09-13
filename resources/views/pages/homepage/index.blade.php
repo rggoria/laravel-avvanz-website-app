@@ -24,7 +24,7 @@ Avvanz - Background Checks & Screening
                         We Screen & Strengthen your Human Assets
                     </h1>
                     <h1 class="divider-start-50"></h1>
-                    <p class="lead">
+                    <p>
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
                     <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
@@ -94,7 +94,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="{{ asset('images/homepage/certification4.webp') }}" class="d-block w-75" alt="Award 4" loading="lazy">
+            <img src="{{ asset('images/homepage/certification4.webp') }}" class="display-image" alt="Award 4" loading="lazy">
         </div>
     </div>
 </section>
@@ -114,7 +114,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
+            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Placeholder Image" class="transition-up display-image" loading="lazy">
         </div>
     </div>
 </section>
@@ -123,7 +123,7 @@ Avvanz - Background Checks & Screening
 <section class="bg-mg text-white p-5">
     <div class="row g-3">
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
+            <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up display-image" loading="lazy">
         </div>
         <div class="col-lg-6 d-flex align-items-center">
             <div>
