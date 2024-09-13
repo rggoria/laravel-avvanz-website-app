@@ -44,6 +44,11 @@
     width: 500px;
 }
 
+.image-brand {
+    height: 200px;
+    width: 400px;
+}
+
 .solution-button {
     color: var(--darkMidnightBlue);
     border-radius: 25px;

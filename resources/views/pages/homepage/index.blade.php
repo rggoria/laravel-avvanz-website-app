@@ -69,18 +69,18 @@ Avvanz - Background Checks & Screening
         Awards & Certification
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <div class="row g-3 m-5">
-        <div class="col-md-6 p-3">
+    <div class="row g-5 my-5">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-3 d-flex justify-content-center">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/homepage/certification1.webp') }}" class="d-block w-100 h-100" alt="Award 1" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification1.webp') }}" class="display-image" alt="Award 1" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification2.webp') }}" class="d-block w-100" alt="Award 2" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification2.webp') }}" class="display-image" alt="Award 2" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification3.webp') }}" class="d-block w-100" alt="Award 3" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification3.webp') }}" class="display-image" alt="Award 3" loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -93,7 +93,7 @@ Avvanz - Background Checks & Screening
                 </button>
             </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
             <img src="{{ asset('images/homepage/certification4.webp') }}" class="display-image" alt="Award 4" loading="lazy">
         </div>
     </div>
@@ -148,13 +148,11 @@ Avvanz - Background Checks & Screening
     <p class="text-center mt-2 text-wrap text-justify lead">
         Connect with our trusted service providers and integration partners to streamline your background screening process.
     </p>
-    <div class="swiper mySwiper my-5">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper my-5">
             @foreach ( $trustedPartnerItems as $item )
                 <div class="swiper-slide">
-                    <div class="ratio ratio-16x9">
-                        <img src="{{ asset('images/screen/' . $item) }}" class="img-fluid" alt="Responsive image" loading="lazy">
-                      </div>
+                    <img src="{{ asset('images/screen/' . $item) }}" class="image-brand" alt="Responsive image" loading="lazy">
                 </div>
             @endforeach
         </div>
@@ -165,7 +163,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image text-center container-fluid">
+<section class="bg-image text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -316,7 +314,7 @@ Avvanz - Background Checks & Screening
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
+    <script src="{{ asset('js/homepageSwiper.js') }}"></script>
 @endsection
 
 @endsection
