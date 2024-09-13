@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- Preload critical background image -->
-    <link rel="preload" href="https://avvanz.com/wp-content/uploads/2023/09/home-bg.webp" as="image">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     @yield('css')
 </head>
