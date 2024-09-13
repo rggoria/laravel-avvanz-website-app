@@ -672,7 +672,7 @@ About Us - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}" async></script>
+    <script src="{{ asset('js/swiper.js') }}"></script>
 @endsection
 
 @endsection

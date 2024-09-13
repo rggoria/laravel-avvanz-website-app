@@ -238,7 +238,7 @@ Background Checks Singapore - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/backgroundCheckSwiper.js') }}" async></script>
+    <script src="{{ asset('js/backgroundCheckSwiper.js') }}"></script>
 @endsection
 
 @endsection
