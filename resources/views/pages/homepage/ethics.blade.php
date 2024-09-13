@@ -330,7 +330,3 @@ Ethics, Anti-bribery and Corruption - Avvanz Global
 @include('layouts.footer')
 
 @endsection
-
-@section('scripts')
-
-@endsection

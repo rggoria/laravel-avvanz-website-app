@@ -72,7 +72,7 @@ Avvanz - Background Checks & Screening
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/homepage/certification1.png') }}" class="d-block w-100" alt="Award 1" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification1.png') }}" class="d-block w-100 h-100" alt="Award 1" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <img src="{{ asset('images/homepage/certification2.png') }}" class="d-block w-100" alt="Award 2" loading="lazy">
@@ -330,8 +330,8 @@ Avvanz - Background Checks & Screening
 <!-- Footer Section -->
 @include('layouts.footer')
 
+@section('scripts')
+    <script src="{{ asset('js/swiper.js') }}" async></script>
 @endsection
 
-@section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
 @endsection

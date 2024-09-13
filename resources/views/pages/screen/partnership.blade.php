@@ -79,7 +79,7 @@ Partnership Integration - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
+    <script src="{{ asset('js/swiper.js') }}" async></script>
 @endsection
 
 @endsection

@@ -149,7 +149,7 @@ LearnGlobal - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-<script src="{{ asset('js/learnGlobalSwiper.js') }}"></script>
+<script src="{{ asset('js/learnGlobalSwiper.js') }}" async></script>
 @endsection
 
 @endsection
