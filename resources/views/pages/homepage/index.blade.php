@@ -15,7 +15,7 @@ Avvanz - Background Checks & Screening
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
-<section style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
+<section class="container-fluid" style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
     <div class="container py-5">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
