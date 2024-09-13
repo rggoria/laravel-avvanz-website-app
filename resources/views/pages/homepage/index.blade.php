@@ -15,7 +15,7 @@ Avvanz - Background Checks & Screening
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
-<section class="container-fluid" style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
+<section style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
     <div class="container">
         <div class="row py-3">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
@@ -316,7 +316,7 @@ Avvanz - Background Checks & Screening
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}"></script>
+    <script src="{{ asset('js/homepageSwiper.js') }}" async></script>
 @endsection
 
 @endsection
