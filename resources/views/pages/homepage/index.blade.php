@@ -148,30 +148,13 @@ Avvanz - Background Checks & Screening
     </p>
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner1.webp') }}" class="img-fluid" alt="Partner 1" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner2.webp') }}" class="img-fluid" alt="Partner 2" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner3.webp') }}" class="img-fluid" alt="Partner 3" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner4.webp') }}" class="img-fluid" alt="Partner 4" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner5.webp') }}" class="img-fluid" alt="Partner 5" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner6.webp') }}" class="img-fluid" alt="Partner 6" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner7.webp') }}" class="img-fluid" alt="Partner 7" loading="lazy">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner8.webp') }}" class="img-fluid" alt="Partner 8" loading="lazy">
-            </div>
+            @foreach ( $trustedPartnerItems as $item )
+                <div class="swiper-slide">
+                    <div class="ratio ratio-16x9">
+                        <img src="{{ asset('images/screen/' . $item) }}" class="img-fluid" alt="Responsive image">
+                      </div>
+                </div>
+            @endforeach
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>

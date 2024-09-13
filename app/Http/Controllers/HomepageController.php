@@ -8,7 +8,19 @@ class HomepageController extends Controller
 {
     public function index()
     {
-        return view("pages.homepage.index");
+        $trustedPartnerItems = [
+            'partner1.webp',
+            'partner2.webp',
+            'partner3.webp',
+            'partner4.webp',
+            'partner5.webp',
+            'partner6.webp',
+            'partner7.webp',
+            'partner8.webp',
+        ];
+        return view("pages.homepage.index", [
+            "trustedPartnerItems"=> $trustedPartnerItems,
+        ]);
     }
 
     public function contact()
