@@ -227,14 +227,14 @@ class ScreenController extends Controller
     
     public function partnership() {
         $trustedPartnerItems = [
-            'partner1.png',
-            'partner2.png',
-            'partner3.png',
-            'partner4.png',
-            'partner5.png',
-            'partner6.png',
-            'partner7.png',
-            'partner8.png',
+            'partner1.webp',
+            'partner2.webp',
+            'partner3.webp',
+            'partner4.webp',
+            'partner5.webp',
+            'partner6.webp',
+            'partner7.webp',
+            'partner8.webp',
         ];
         $partnerAchievementItems = [
             [

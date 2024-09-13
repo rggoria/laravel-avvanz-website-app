@@ -72,13 +72,13 @@ Avvanz - Background Checks & Screening
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/homepage/certification1.png') }}" class="d-block w-100 h-100" alt="Award 1" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification1.webp') }}" class="d-block w-100 h-100" alt="Award 1" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification2.png') }}" class="d-block w-100" alt="Award 2" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification2.webp') }}" class="d-block w-100" alt="Award 2" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification3.png') }}" class="d-block w-100" alt="Award 3" loading="lazy">
+                        <img src="{{ asset('images/homepage/certification3.webp') }}" class="d-block w-100" alt="Award 3" loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -92,7 +92,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="{{ asset('images/homepage/certification4.png') }}" class="d-block w-75" alt="Award 4" loading="lazy">
+            <img src="{{ asset('images/homepage/certification4.webp') }}" class="d-block w-75" alt="Award 4" loading="lazy">
         </div>
     </div>
 </section>
@@ -112,7 +112,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage2.png') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
+            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
         </div>
     </div>
 </section>
@@ -121,7 +121,7 @@ Avvanz - Background Checks & Screening
 <section class="bg-mg text-white p-5">
     <div class="row g-3">
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage3.png') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
+            <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up solution-image" loading="lazy">
         </div>
         <div class="col-lg-6 d-flex align-items-center">
             <div>
@@ -149,28 +149,28 @@ Avvanz - Background Checks & Screening
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner1.png') }}" class="img-fluid" alt="Partner 1" loading="lazy">
+                <img src="{{ asset('images/screen/partner1.webp') }}" class="img-fluid" alt="Partner 1" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner2.png') }}" class="img-fluid" alt="Partner 2" loading="lazy">
+                <img src="{{ asset('images/screen/partner2.webp') }}" class="img-fluid" alt="Partner 2" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner3.png') }}" class="img-fluid" alt="Partner 3" loading="lazy">
+                <img src="{{ asset('images/screen/partner3.webp') }}" class="img-fluid" alt="Partner 3" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner4.png') }}" class="img-fluid" alt="Partner 4" loading="lazy">
+                <img src="{{ asset('images/screen/partner4.webp') }}" class="img-fluid" alt="Partner 4" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner5.png') }}" class="img-fluid" alt="Partner 5" loading="lazy">
+                <img src="{{ asset('images/screen/partner5.webp') }}" class="img-fluid" alt="Partner 5" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner6.png') }}" class="img-fluid" alt="Partner 6" loading="lazy">
+                <img src="{{ asset('images/screen/partner6.webp') }}" class="img-fluid" alt="Partner 6" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner7.png') }}" class="img-fluid" alt="Partner 7" loading="lazy">
+                <img src="{{ asset('images/screen/partner7.webp') }}" class="img-fluid" alt="Partner 7" loading="lazy">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner8.png') }}" class="img-fluid" alt="Partner 8" loading="lazy">
+                <img src="{{ asset('images/screen/partner8.webp') }}" class="img-fluid" alt="Partner 8" loading="lazy">
             </div>
         </div>
         <div class="swiper-pagination"></div>

@@ -3,7 +3,7 @@
         <div class="row g-3 py-5">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('images/homepage/avvanzFooter.png') }}" alt="Avvanz Logo" class="img-fluid">
+                    <img src="{{ asset('images/homepage/avvanzFooter.webp') }}" alt="Avvanz Logo" class="img-fluid" loading="lazy">
                 </a>
             </div>
             <div class="col-md-2">
@@ -140,7 +140,7 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="{{ asset('images/homepage/pbsa.png') }}" alt="PBSA" class="img-fluid">
+                <img src="{{ asset('images/homepage/pbsa.webp') }}" alt="PBSA" class="img-fluid" loading="lazy">
             </div>
             <div class="col-md-2">
                 <h4 class="text-uppercase fw-bold mb-4 link-category">

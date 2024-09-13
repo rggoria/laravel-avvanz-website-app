@@ -148,28 +148,28 @@ Global - Avvanz Global
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner1.png') }}" class="img-fluid" alt="Partner 1">
+                <img src="{{ asset('images/screen/partner1.webp') }}" class="img-fluid" alt="Partner 1">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner2.png') }}" class="img-fluid" alt="Partner 2">
+                <img src="{{ asset('images/screen/partner2.webp') }}" class="img-fluid" alt="Partner 2">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner3.png') }}" class="img-fluid" alt="Partner 3">
+                <img src="{{ asset('images/screen/partner3.webp') }}" class="img-fluid" alt="Partner 3">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner4.png') }}" class="img-fluid" alt="Partner 4">
+                <img src="{{ asset('images/screen/partner4.webp') }}" class="img-fluid" alt="Partner 4">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner5.png') }}" class="img-fluid" alt="Partner 5">
+                <img src="{{ asset('images/screen/partner5.webp') }}" class="img-fluid" alt="Partner 5">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner6.png') }}" class="img-fluid" alt="Partner 6">
+                <img src="{{ asset('images/screen/partner6.webp') }}" class="img-fluid" alt="Partner 6">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner7.png') }}" class="img-fluid" alt="Partner 7">
+                <img src="{{ asset('images/screen/partner7.webp') }}" class="img-fluid" alt="Partner 7">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner8.png') }}" class="img-fluid" alt="Partner 8">
+                <img src="{{ asset('images/screen/partner8.webp') }}" class="img-fluid" alt="Partner 8">
             </div>
         </div>
         <div class="swiper-pagination"></div>
