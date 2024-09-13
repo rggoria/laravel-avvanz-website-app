@@ -50,11 +50,11 @@ Background Checks Singapore - Avvanz Global
             Due Diligence Background Checks
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper pb-5">
             <div class="swiper-wrapper my-5 text-white">
                 @foreach ( $dueDiligenceItems as $item )
                     <div class="swiper-slide">
-                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -86,7 +86,7 @@ Background Checks Singapore - Avvanz Global
             <div class="swiper-wrapper my-5 text-white">
                 @foreach ( $identityCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -118,7 +118,7 @@ Background Checks Singapore - Avvanz Global
             <div class="swiper-wrapper my-5 text-white">
                 @foreach ( $financialCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -150,7 +150,7 @@ Background Checks Singapore - Avvanz Global
             <div class="swiper-wrapper my-5 text-white">
                 @foreach ( $integrityCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-5 d-flex justify-content-center align-items-center bg-mg h-100 w-100">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -238,7 +238,7 @@ Background Checks Singapore - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
+    <script src="{{ asset('js/backgroundCheckSwiper.js') }}"></script>
 @endsection
 
 @endsection
