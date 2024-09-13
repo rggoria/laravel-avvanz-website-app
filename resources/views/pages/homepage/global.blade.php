@@ -14,11 +14,11 @@ Global - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
-<section class="bg-image">
+<section style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
-                <div class="text-white">
+                <div style="color: white;">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>
@@ -35,6 +35,7 @@ Global - Avvanz Global
         </div>
     </div>
 </section>
+
 <section class="container my-5 text-center text-white">
     <div class="row">
         <div class="col-md-6 bg-dmb p-5">
