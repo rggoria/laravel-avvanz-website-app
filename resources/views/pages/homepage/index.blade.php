@@ -30,9 +30,9 @@ Avvanz - Background Checks & Screening
                     <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                 </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
+            {{-- <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
                 <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up">
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
