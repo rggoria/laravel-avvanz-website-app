@@ -151,7 +151,7 @@ Avvanz - Background Checks & Screening
             @foreach ( $trustedPartnerItems as $item )
                 <div class="swiper-slide">
                     <div class="ratio ratio-16x9">
-                        <img src="{{ asset('images/screen/' . $item) }}" class="img-fluid" alt="Responsive image">
+                        <img src="{{ asset('images/screen/' . $item) }}" class="img-fluid" alt="Responsive image" loading="lazy">
                       </div>
                 </div>
             @endforeach
