@@ -16,7 +16,7 @@ Avvanz - Background Checks & Screening
 
 <!-- Hero Section #1 -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
                 <div class="text-white">
@@ -30,12 +30,13 @@ Avvanz - Background Checks & Screening
                     <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                 </div>
             </div>
-            {{-- <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
+            <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
                 <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up">
-            </div> --}}
+            </div>
         </div>
     </div>
 </section>
+
 
 <section class="container my-5 text-center text-white">
     <div class="row">
