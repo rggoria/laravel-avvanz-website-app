@@ -16,6 +16,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
     @yield('css')
+    <style>
+        body {
+            padding-top: 56px; /* Adjust for fixed navbar */
+        }
+    </style>
 </head>
 <body>
     @yield('content')
