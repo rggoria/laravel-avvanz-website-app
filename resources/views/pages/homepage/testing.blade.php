@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Bootstrap Website</title>
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  media="print" onload="this.media='all'">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/testing.css') }}" media="print" onload="this.media='all'">
     <style>
         body {
-            padding-top: 56px; /* Adjust for fixed navbar */
+            padding: 0;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>   
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-ji">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ji">
             <div class="container">
                 <a class="navbar-brand d-none d-lg-block" href="mailto:consult@avvanz.com">
-                    <i class="fas fa-envelope text-marigold"></i>
+                    <i class="far fa-envelope text-marigold"></i>
                     consult@avvanz.com
                 </a>
                 <div class="navbar-collapse">
