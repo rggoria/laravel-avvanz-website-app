@@ -1,0 +1,34 @@
+/* Header Section */
+.login-1 {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-1:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--marigold);
+}
+.login-2 {
+    color: var(--pictonBlue) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-2:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--pictonBlue);
+}
+.login-3 {
+    color: white !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-3:hover {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: white;
+}

@@ -10,7 +10,8 @@
     <!-- Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  media="print" onload="this.media='all'">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/testing.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/testing1.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
         body {
             padding: 0;
