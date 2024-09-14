@@ -22,8 +22,7 @@
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
     </style>
 </head>
