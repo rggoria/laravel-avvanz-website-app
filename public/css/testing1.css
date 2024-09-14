@@ -12,13 +12,3 @@
 .text-marigold {
     color: var(--marigold);
 }
-
-.image-navbar-logo {
-    transition: transform 0.3s ease;
-    height: 40px;
-    width: 100px;
-}
-
-.image-navbar-logo:hover {
-    transform: scale(0.9);
-}

@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Bootstrap Website</title>
-
+    <meta name="description" content="Our Multi-award winning background checks platform ScreenGlobal will help you mitigate risk due to wrongful hires.">
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  media="print" onload="this.media='all'">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/testing1.css') }}" media="print" onload="this.media='all'">
+    <link rel="preload" href="https://www.avvanz.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
     <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
         body {
             padding: 0;
             margin: 0;
+        }
+        .container {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -186,19 +194,18 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h1 class="mt-5">Welcome to My Simple Bootstrap Website</h1>
-                <p>This is a simple example using Bootstrap and a CDN to ensure fast loading times.</p>
-                <p>Feel free to customize it to your needs.</p>
+       <!-- Main Content -->
+       <div class="container" style="background-color: pink">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h1 class="mt-5">Welcome to My Simple Bootstrap Website</h1>
+                    <p>This is a simple example using Bootstrap and a CDN to ensure fast loading times.</p>
+                    <p>Feel free to customize it to your needs.</p>
+                </div>
             </div>
         </div>
-    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
