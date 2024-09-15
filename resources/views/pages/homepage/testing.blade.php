@@ -14,22 +14,38 @@
     <link rel="preload" href="https://www.avvanz.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
     <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
-        * {
+       * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+        /* Navbar custom styles */
         .navbar {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
             padding: 0.5rem 1rem;
         }
 
+        /* Ensure flex alignment is handled by Bootstrap */
         .navbar-expand-lg {
             flex-direction: row;
             flex-wrap: nowrap;
+        }
+
+        /* Make sure the navbar brand and toggler button align properly */
+        .navbar-brand {
+            margin-right: auto; /* Pushes brand to the left */
+        }
+
+        /* Adjust padding and margin as needed */
+        .navbar-nav {
+            margin-left: auto; /* Pushes nav items to the right */
+        }
+
+        /* Media queries for responsive adjustments */
+        @media (max-width: 991.98px) { /* Adjust as per Bootstrap's lg breakpoint */
+            .navbar-expand-lg {
+                flex-direction: column;
+            }
         }
 
         .container {
