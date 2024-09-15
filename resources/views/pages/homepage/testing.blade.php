@@ -40,13 +40,6 @@
         .navbar-nav {
             margin-left: auto; /* Pushes nav items to the right */
         }
-
-        /* Media queries for responsive adjustments */
-        @media (max-width: 991.98px) { /* Adjust as per Bootstrap's lg breakpoint */
-            .navbar-expand-lg {
-                flex-direction: column;
-            }
-        }
     </style>
 </head>
 <body>
