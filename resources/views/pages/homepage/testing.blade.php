@@ -13,16 +13,10 @@
     <link rel="stylesheet" href="{{ asset('css/testing1.css') }}" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
-       * {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        .image-navbar-logo {
-            transition: transform 0.3s ease;
-            height: 50px;
-            width: 150px;
         }
     </style>
 </head>
