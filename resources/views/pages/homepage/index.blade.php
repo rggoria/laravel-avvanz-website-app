@@ -6,7 +6,7 @@ Avvanz - Background Checks & Screening
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
-<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
 @endsection()
 
 @section('content')
@@ -24,7 +24,7 @@ Avvanz - Background Checks & Screening
                         We Screen & Strengthen your Human Assets
                     </h1>
                     <h1 class="divider-start-50"></h1>
-                    <p>
+                    <p class="lead">
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
                     <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
@@ -152,9 +152,9 @@ Avvanz - Background Checks & Screening
     </p>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper my-5">
-            @foreach ( $trustedPartnerItems as $item )
+            @foreach ( $trustedPartnerItems as $count => $item )
                 <div class="swiper-slide">
-                    <img src="{{ asset('images/screen/' . $item) }}" class="image-brand" alt="Responsive image" loading="lazy">
+                    <img src="{{ asset('images/screen/' . $item) }}" width="300" height="200" alt="Partner Image {{ $count }}" loading="lazy">
                 </div>
             @endforeach
         </div>

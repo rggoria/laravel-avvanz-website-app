@@ -7,7 +7,8 @@ About Us - Avvanz Global
 @section('content')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/about.css') }}">
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<link rel="stylesheet" href="{{ asset('css/about.css') }}" media="print" onload="this.media='all'">
 @endsection()
 
 <!--  Navbar Section -->
@@ -15,7 +16,7 @@ About Us - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container py-5">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -85,7 +86,7 @@ About Us - Avvanz Global
     </div>
     <div class="row justify-content-center align-items-center">
         <div class="col-lg-3 d-flex justify-content-center align-items-center my-5">
-            <img src="{{ asset('images/about/aboutus1.png') }}" alt="About Us Image" class="img-fluid rounded-3 w-auto h-auto transition-up">
+            <img src="{{ asset('images/about/aboutus1.png') }}" width="250" height="350" alt="About Us Image 1" class="rounded-3 transition-up">
         </div>
         <div class="col-lg-9">
             <div>
@@ -125,7 +126,7 @@ About Us - Avvanz Global
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about/aboutus2.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/about/aboutus2.webp') }}" width="450" height="300" alt="About Us Image 2" class="transition-up rounded-3">
             </div>
         </div>
     </div>
@@ -180,7 +181,7 @@ About Us - Avvanz Global
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about/aboutus3.webp') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img src="{{ asset('images/about/aboutus3.webp') }}" width="450" height="300" alt="About Us Image 3" class="transition-up rounded-3">
             </div>
         </div>
     </div>
@@ -325,7 +326,7 @@ About Us - Avvanz Global
                 </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center align-items-center my-5">
-                <img src="{{ asset('images/about/aboutus4.png') }}" alt="About Us Image" class="img-fluid rounded-3 w-auto h-auto transition-up">
+                <img src="{{ asset('images/about/aboutus4.png') }}" width="250" height="350" alt="About Us Image 4" class="rounded-3 transition-up">
             </div>
         </div>
     </div>
@@ -342,32 +343,13 @@ About Us - Avvanz Global
             Connect with our trusted service providers and integration partners to streamline your background screening process.
         </p>
     </div>
-    <div class="swiper mySwiper my-5">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper my-5">
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner1.webp') }}" class="img-fluid" alt="Partner 1">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner2.webp') }}" class="img-fluid" alt="Partner 2">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner3.webp') }}" class="img-fluid" alt="Partner 3">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner4.webp') }}" class="img-fluid" alt="Partner 4">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner5.webp') }}" class="img-fluid" alt="Partner 5">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner6.webp') }}" class="img-fluid" alt="Partner 6">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner7.webp') }}" class="img-fluid" alt="Partner 7">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner8.webp') }}" class="img-fluid" alt="Partner 8">
-            </div>
+            @foreach ( $trustedPartnerItems as $count => $item )
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/screen/' . $item) }}" width="300" height="200" alt="Partner Image {{ $count }}" loading="lazy">
+                </div>
+            @endforeach
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -439,7 +421,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 1 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory1.jpg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory1.jpg')}}" width="350" height="350" alt="Salman Syed Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Salman Syed
             </h1>
@@ -453,7 +435,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 2 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory2.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory2.svg')}}" width="350" height="350" alt="Chia Hock Lai Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Chia Hock Lai
             </h1>
@@ -470,7 +452,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 3 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory3.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory3.svg')}}" width="350" height="350" alt="David Wee Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 David Wee
             </h1>
@@ -497,7 +479,7 @@ About Us - Avvanz Global
                 Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
             </p>
             <br>
-            <img src="{{asset('images/about/management.png')}}" alt="Management Team" class="img-fluid">
+            <img src="{{asset('images/about/management.png')}}" width="450" height="450" alt="Management Team">
         </div>
     </div>
 </section>
@@ -505,7 +487,7 @@ About Us - Avvanz Global
     <div class="container text-center">
         <!-- Advisory # 4 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory4.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory4.webp')}}" width="350" height="350" alt="Kannan Chettiar Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Kannan Chettiar
             </h1>
@@ -521,7 +503,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 5 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory5.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory5.svg')}}" width="350" height="350" alt="Alvin Caga Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Alvin Caga
             </h1>
@@ -537,7 +519,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 6 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory6.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory6.webp')}}" width="350" height="350" alt="Jan Espino Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Jan Espino
             </h1>
@@ -553,7 +535,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 7 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory7.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory7.webp')}}" width="350" height="350" alt="Siang Tan Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Siang Tan
             </h1>
@@ -569,7 +551,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 8 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory8.jpg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory8.jpg')}}" width="350" height="350" alt="Marcellus Solomon Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Marcellus Solomon
             </h1>
@@ -594,7 +576,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 9 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory9.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory9.webp')}}" width="350" height="350" alt="Christy Lim Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Christy Lim
             </h1>
@@ -613,7 +595,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 10 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory10.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory10.webp')}}" width="350" height="350" alt="Jhoann Alberto Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Jhoann Alberto
             </h1>
@@ -632,7 +614,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 11 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory11.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory11.webp')}}" width="350" height="350" alt="Denisse Aisah Pangilinan Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Denisse Aisah Pangilinan
             </h1>
@@ -648,7 +630,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 12 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory12.webp')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+            <img src="{{ asset('images/about/advisory12.webp')}}" width="350" height="350" alt="Michael Santos Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Michael Santos
             </h1>
@@ -672,7 +654,7 @@ About Us - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
+    <script src="{{ asset('js/swiper.js') }}" defer></script>
 @endsection
 
 @endsection

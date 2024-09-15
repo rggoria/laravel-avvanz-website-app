@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
         }
-                /* Navbar #1 */
+        /* Navbar #1 */
         .navbar.navbar-dark.bg-ji {
             background-color: #1c3843; /* Example color, replace with actual */
         }

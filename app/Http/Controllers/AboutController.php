@@ -8,7 +8,19 @@ class AboutController extends Controller
 {
     public function index()
     {
-        return view('pages.about.index');
+        $trustedPartnerItems = [
+            'partner1.webp',
+            'partner2.webp',
+            'partner3.webp',
+            'partner4.webp',
+            'partner5.webp',
+            'partner6.webp',
+            'partner7.webp',
+            'partner8.webp',
+        ];
+        return view("pages.about.index", [
+            "trustedPartnerItems"=> $trustedPartnerItems,
+        ]);
     }
 
     public function workplaceSafety()
