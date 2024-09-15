@@ -66,28 +66,6 @@
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-ji">
-            <div class="container">
-                <a class="navbar-brand d-none d-lg-block" href="mailto:consult@avvanz.com">
-                    <i class="far fa-envelope text-marigold"></i>
-                    consult@avvanz.com
-                </a>
-                <div class="navbar-collapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link login-1 text-uppercase fw-bolder" href="https://www.avvanz.com/screenglobal/">ScreenGlobal LOGIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link login-2 text-uppercase fw-bolder" href="https://www.avvanz.com/cddglobal/">CDDGLOBAL LOGIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link login-3 text-uppercase fw-bolder" href="https://learnglobal.apptitude.xyz/">LEARNGLOBAL LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         {{-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
