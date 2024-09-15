@@ -36,12 +36,7 @@
 
         /* Adjust padding and margin as needed */
         .navbar-nav {
-            flex-direction: row;
-        }
-
-        .navbar-collapse {
-          display: flex !important;
-          flex-basis: auto;
+            margin-left: auto; /* Pushes nav items to the right */
         }
 
         .image-navbar-logo {
@@ -52,8 +47,7 @@
     </style>
 </head>
 <body>
-
-    @include('layouts.navbar')
+   @include('layouts.navbar')
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" async></script>
