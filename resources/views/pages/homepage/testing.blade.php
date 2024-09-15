@@ -19,26 +19,6 @@
             padding: 0;
         }
 
-        /* Navbar custom styles */
-        .navbar {
-            padding: 0.5rem 1rem;
-        }
-
-        /* Ensure flex alignment is handled by Bootstrap */
-        .navbar-expand-lg {
-            flex-direction: row;
-        }
-
-        /* Make sure the navbar brand and toggler button align properly */
-        .navbar-brand {
-            margin-right: auto; /* Pushes brand to the left */
-        }
-
-        /* Adjust padding and margin as needed */
-        .navbar-nav {
-            margin-left: auto; /* Pushes nav items to the right */
-        }
-
         .image-navbar-logo {
             transition: transform 0.3s ease;
             height: 50px;
