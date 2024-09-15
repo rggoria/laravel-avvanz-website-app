@@ -1,7 +1,7 @@
 .image-navbar-logo {
     transition: transform 0.3s ease;
-    height: 40px;
-    width: 100px;
+    height: auto;
+    width: 150px;
 }
 
 .image-navbar-logo:hover {

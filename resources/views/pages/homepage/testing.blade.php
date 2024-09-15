@@ -38,6 +38,10 @@
         .navbar-nav {
             margin-left: auto; /* Pushes nav items to the right */
         }
+
+        .navbar-collapse {
+            min-height: 60px; /* Adjust to match your navbar's height */
+        }
     </style>
 </head>
 <body>
