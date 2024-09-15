@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  media="print" onload="this.media='all'">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/testing1.css') }}" media="print" onload="this.media='all'">
-    <link rel="preload" href="https://www.avvanz.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
     <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
        * {
