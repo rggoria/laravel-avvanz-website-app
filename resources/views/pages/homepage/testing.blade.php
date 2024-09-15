@@ -27,7 +27,6 @@
         /* Ensure flex alignment is handled by Bootstrap */
         .navbar-expand-lg {
             flex-direction: row;
-            flex-wrap: nowrap;
         }
 
         /* Make sure the navbar brand and toggler button align properly */
@@ -66,7 +65,7 @@
             </div>
         </nav>
 
-        {{-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('images/homepage/avvanzLogo.webp') }}" alt="Avvanz Logo" class="image-navbar-logo">
@@ -207,7 +206,7 @@
                     </ul>
                 </div>
             </div>
-        </nav> --}}
+        </nav>
     </header>
 
     <!-- Optional JavaScript; choose one of the two! -->
