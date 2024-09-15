@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'">
     <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
-    @yield('css')
+    <!-- Critical CSS -->
     <style>
         * {
             box-sizing: border-box;
@@ -23,6 +21,9 @@
             padding: 0;
         }
     </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    @yield('css')
 </head>
 <body>
     @yield('content')

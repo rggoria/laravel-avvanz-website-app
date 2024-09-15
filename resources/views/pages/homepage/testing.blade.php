@@ -16,6 +16,64 @@
             margin: 0;
             padding: 0;
         }
+                /* Navbar #1 */
+        .navbar.navbar-dark.bg-ji {
+            background-color: #1c3843; /* Example color, replace with actual */
+        }
+
+        .navbar-dark .navbar-brand .text-marigold {
+            color: #ee9b26; /* Example color, replace with actual */
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        /* Navbar #2 */
+        .navbar.navbar-light.bg-white {
+            background-color: #fff;
+        }
+
+        .navbar-light .navbar-brand .image-navbar-logo {
+            width: 150px;
+            height: 50px;
+        }
+
+        .navbar-toggler {
+            border: none; /* Remove default border */
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        /* Dropdowns */
+        .navbar-nav .dropdown-menu {
+            background-color: #fff; /* Adjust if needed */
+            border: 1px solid #ddd; /* Adjust border color */
+        }
+
+        .dropdown-item {
+            font-weight: bolder;
+        }
+
+        /* Ensure dropdown items don't cause layout shifts */
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        /* General body and container styles */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1140px; /* Example width, adjust as needed */
+            margin: auto;
+        }
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
