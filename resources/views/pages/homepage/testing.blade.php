@@ -36,7 +36,12 @@
 
         /* Adjust padding and margin as needed */
         .navbar-nav {
-            margin-left: auto; /* Pushes nav items to the right */
+            flex-direction: row;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
         }
 
         .image-navbar-logo {
