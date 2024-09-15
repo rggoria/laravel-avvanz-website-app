@@ -35,7 +35,7 @@
     <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Custom JS -->
-    <script src="{{ asset('js/index.js') }}" async></script>
+    <script src="{{ asset('js/index.js') }}" defer></script>
     @yield('scripts')
 </body>
 </html>

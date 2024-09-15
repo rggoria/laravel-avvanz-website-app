@@ -17,7 +17,8 @@
     --bg-image-url: url("{{ asset("images/homepageBg.webp") }}");
 }
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -98,31 +99,17 @@ body {
 
 .image-navbar-logo {
     transition: transform 0.3s ease;
-    height: 40px;
-    width: 100px;
 }
 
 .image-navbar-logo:hover {
     transform: scale(0.9);
 }
 
-.image-footer-logo-1 {
+.image-footer-logo {
     transition: transform 0.3s ease;
-    height: 65px;
-    width: 100px;
 }
 
-.image-footer-logo-1:hover {
-    transform: scale(0.9);
-}
-
-.image-footer-logo-2 {
-    transition: transform 0.3s ease;
-    height: 80px;
-    width: 100px;
-}
-
-.image-footer-logo-2:hover {
+.image-footer-logo:hover {
     transform: scale(0.9);
 }
 
