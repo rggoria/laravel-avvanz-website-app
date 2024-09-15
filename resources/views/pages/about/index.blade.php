@@ -421,7 +421,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 1 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory1.jpg')}}" width="350" height="350" alt="Salman Syed Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory1.jpg')}}" width="200" height="200" alt="Salman Syed Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Salman Syed
             </h1>
@@ -435,7 +435,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 2 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory2.svg')}}" width="350" height="350" alt="Chia Hock Lai Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory2.svg')}}" width="200" height="200" alt="Chia Hock Lai Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Chia Hock Lai
             </h1>
@@ -452,7 +452,7 @@ About Us - Avvanz Global
 
         <!-- Advisory # 3 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory3.svg')}}" width="350" height="350" alt="David Wee Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory3.svg')}}" width="200" height="200" alt="David Wee Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 David Wee
             </h1>
@@ -479,7 +479,7 @@ About Us - Avvanz Global
                 Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
             </p>
             <br>
-            <img src="{{asset('images/about/management.png')}}" width="450" height="450" alt="Management Team">
+            <img src="{{asset('images/about/management.png')}}" width="300" height="300" alt="Management Team">
         </div>
     </div>
 </section>
@@ -487,7 +487,7 @@ About Us - Avvanz Global
     <div class="container text-center">
         <!-- Advisory # 4 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory4.webp')}}" width="350" height="350" alt="Kannan Chettiar Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory4.webp')}}" width="200" height="200" alt="Kannan Chettiar Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Kannan Chettiar
             </h1>
@@ -503,7 +503,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 5 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory5.svg')}}" width="350" height="350" alt="Alvin Caga Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory5.svg')}}" width="200" height="200" alt="Alvin Caga Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Alvin Caga
             </h1>
@@ -519,7 +519,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 6 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory6.webp')}}" width="350" height="350" alt="Jan Espino Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory6.webp')}}" width="200" height="200" alt="Jan Espino Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Jan Espino
             </h1>
@@ -535,7 +535,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 7 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory7.webp')}}" width="350" height="350" alt="Siang Tan Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory7.webp')}}" width="200" height="200" alt="Siang Tan Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Siang Tan
             </h1>
@@ -551,7 +551,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 8 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory8.jpg')}}" width="350" height="350" alt="Marcellus Solomon Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory8.jpg')}}" width="200" height="200" alt="Marcellus Solomon Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Marcellus Solomon
             </h1>
@@ -576,7 +576,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 9 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory9.webp')}}" width="350" height="350" alt="Christy Lim Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory9.webp')}}" width="200" height="200" alt="Christy Lim Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Christy Lim
             </h1>
@@ -595,7 +595,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 10 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory10.webp')}}" width="350" height="350" alt="Jhoann Alberto Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory10.webp')}}" width="200" height="200" alt="Jhoann Alberto Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Jhoann Alberto
             </h1>
@@ -614,7 +614,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 11 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory11.webp')}}" width="350" height="350" alt="Denisse Aisah Pangilinan Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory11.webp')}}" width="200" height="200" alt="Denisse Aisah Pangilinan Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Denisse Aisah Pangilinan
             </h1>
@@ -630,7 +630,7 @@ About Us - Avvanz Global
         </section>
         <!-- Advisory # 12 -->
         <section class="my-5">
-            <img src="{{ asset('images/about/advisory12.webp')}}" width="350" height="350" alt="Michael Santos Image" class="img-border-rounded-dmb">
+            <img src="{{ asset('images/about/advisory12.webp')}}" width="200" height="200" alt="Michael Santos Image" class="img-border-rounded-dmb">
             <h1 class="text-dmb fw-bolder">
                 Michael Santos
             </h1>
