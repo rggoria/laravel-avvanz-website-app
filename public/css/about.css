@@ -1,6 +1,7 @@
 /* Vision & Mission Section */
 .accordion-item {
     background-color: var(--midnightGreen);
+    color: white;
 }
 
 .accordion-button {
