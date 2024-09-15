@@ -47,13 +47,6 @@
                 flex-direction: column;
             }
         }
-
-        .container {
-            width: 100%;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin: 0 auto;
-        }
     </style>
 </head>
 <body>
@@ -224,17 +217,6 @@
             </div>
         </nav> --}}
     </header>
-
-       <!-- Main Content -->
-       <div class="container" style="background-color: pink">
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <h1 class="mt-5">Welcome to My Simple Bootstrap Website</h1>
-                    <p>This is a simple example using Bootstrap and a CDN to ensure fast loading times.</p>
-                    <p>Feel free to customize it to your needs.</p>
-                </div>
-            </div>
-        </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" async></script>
