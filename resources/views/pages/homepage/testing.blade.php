@@ -14,10 +14,24 @@
     <link rel="preload" href="https://www.avvanz.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
     <link rel="stylesheet" href="{{ asset('css/testing2.css') }}" media="print" onload="this.media='all'">
     <style>
-        body {
-            padding: 0;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
         }
+
+        .navbar {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-expand-lg {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
         .container {
             width: 100%;
             padding-left: 15px;
@@ -51,7 +65,7 @@
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        {{-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('images/homepage/avvanzLogo.webp') }}" alt="Avvanz Logo" class="image-navbar-logo">
@@ -192,7 +206,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
     </header>
 
        <!-- Main Content -->
