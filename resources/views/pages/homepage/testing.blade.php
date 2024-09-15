@@ -40,7 +40,7 @@
         }
 
         .navbar-collapse {
-          display: flex !important; // stylelint-disable-line declaration-no-important
+          display: flex !important;
           flex-basis: auto;
         }
 
@@ -48,10 +48,6 @@
             transition: transform 0.3s ease;
             height: 50px;
             width: 150px;
-        }
-
-        .navbar-collapse {
-            min-height: 60px; /* Adjust to match your navbar's height */
         }
     </style>
 </head>
