@@ -17,8 +17,7 @@
     --bg-image-url: url("{{ asset("images/homepageBg.webp") }}");
 }
 
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
 }
