@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
     @yield('css')
     <style>
-        body {
-            padding-top: 56px; /* Adjust for fixed navbar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>

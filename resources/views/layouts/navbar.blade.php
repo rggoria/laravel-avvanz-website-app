@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-ji">
         <div class="container">
             <a class="navbar-brand d-none d-lg-block" href="mailto:consult@avvanz.com">
-                <i class="fas fa-envelope text-marigold"></i>
+                <i class="far fa-envelope text-marigold"></i>
                 consult@avvanz.com
             </a>
             <div class="navbar-collapse">
