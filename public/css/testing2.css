@@ -1,6 +1,6 @@
 .image-navbar-logo {
     transition: transform 0.3s ease;
-    height: auto;
+    height: 50px;
     width: 150px;
 }
 

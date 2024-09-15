@@ -41,7 +41,7 @@
 
         .image-navbar-logo {
             transition: transform 0.3s ease;
-            height: auto;
+            height: 50px;
             width: 150px;
         }
 
@@ -59,7 +59,7 @@
                     <i class="far fa-envelope text-marigold"></i>
                     consult@avvanz.com
                 </a>
-                <div class="navbar-collapse">
+                <div>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link login-1 text-uppercase fw-bolder" href="https://www.avvanz.com/screenglobal/">ScreenGlobal LOGIN</a>
