@@ -39,6 +39,12 @@
             margin-left: auto; /* Pushes nav items to the right */
         }
 
+        .image-navbar-logo {
+            transition: transform 0.3s ease;
+            height: auto;
+            width: 150px;
+        }
+
         .navbar-collapse {
             min-height: 60px; /* Adjust to match your navbar's height */
         }
