@@ -95,6 +95,18 @@ class HomepageController extends Controller
     }
 
     public function testing() {
-        return view('pages.homepage.testing');
+        $trustedPartnerItems = [
+            'partner1.webp',
+            'partner2.webp',
+            'partner3.webp',
+            'partner4.webp',
+            'partner5.webp',
+            'partner6.webp',
+            'partner7.webp',
+            'partner8.webp',
+        ];
+        return view("pages.homepage.testing", [
+            "trustedPartnerItems"=> $trustedPartnerItems,
+        ]);
     }
 }
