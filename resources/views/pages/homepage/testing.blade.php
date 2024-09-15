@@ -34,6 +34,17 @@
             margin-right: auto; /* Pushes brand to the left */
         }
 
+        .navbar-placeholder {
+            display: none; /* Hidden by default */
+        }
+
+        @media (min-width: 992px) { /* Adjust to match your breakpoint */
+            .navbar-placeholder {
+                display: block;
+                height: 60px; /* Match the height of your actual element */
+            }
+        }
+
         /* Adjust padding and margin as needed */
         .navbar-nav {
             margin-left: auto; /* Pushes nav items to the right */
@@ -55,7 +66,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-ji">
             <div class="container">
-                <a class="navbar-brand d-none d-lg-block" href="mailto:consult@avvanz.com">
+                <a class="navbar-brand d-none d-lg-block navbar-placeholder" href="mailto:consult@avvanz.com">
                     <i class="far fa-envelope text-marigold"></i>
                     consult@avvanz.com
                 </a>
