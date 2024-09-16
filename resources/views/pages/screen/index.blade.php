@@ -11,14 +11,14 @@ Screen - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Screen
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Know more about risk mitigation
                 </p>
             </div>
@@ -26,7 +26,7 @@ Screen - Avvanz Global
     </div>
 </section>
 
-<section class="container py-5">
+<section class="container container-margin">
     <h1 class="text-center text-dmb fw-bolder">
         Ensure that the “right” and “safe” talents are identified before hiring.
     </h1>
@@ -43,25 +43,29 @@ Screen - Avvanz Global
         <div class="row g-3 py-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div>
-                    <p class="lead">
+                    <p>
                         People are the biggest business assets to any organization. On the same token, people can pose the biggest business risks and these risks have to be mitigated to avoid consequential damages to the organizations.
                     </p>
-                    <p class="lead">
+                    <p>
                         Organizations need to ensure that the “right” and “safe” talents are identified before hiring. Unfortunately, organizations still adhere to the age-old practice of character reference checks with references provided by the candidates and all of us know that this practice is quite a pointless exercise. It is to be noted that risks can also arise from existing employees not just new joiners.
                     </p>
-                    <p class="lead">
+                    <p>
                         Studies and our research have shown that more than 30% of CVs or Resumes have some form of discrepancies – Fake credentials, inflated employment experiences, undeclared offenses/derogatory pasts or even disturbing social media footprint.
                     </p>
-                    <p class="lead">
+                    <p>
                         Hence the need for a thorough pre-employment or in-employment background checks (or background screening or vetting) to be undertaken on candidates or employees. There are more than 20 types of background checks that can be conducted. What specific checks need to be selected really depends on the risks associated with their functions or roles by industry.
                     </p>
-                    <p class="lead">
+                    <p>
                         Click here to find out more about the different types of Background Checks and the Process <a href="{{ route('screen-1') }}" class="link-hover">https://www.avvanz.com/background-screening/</a>.
                     </p>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/screen/screen1.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img
+                    src="{{ asset('images/screen/screen1.webp') }}"
+                    alt="Screen Image 1"
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
         </div>
     </div>
@@ -77,19 +81,23 @@ Screen - Avvanz Global
         <div class="row g-3 py-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div>
-                    <p class="lead">
+                    <p>
                         Just like how you can conduct background checks on individuals, you can vet companies too. These companies can be your partners or clients or vendors or even investment targets.
                     </p>
-                    <p class="lead">
+                    <p>
                         Click here to find more about the different types of Company Due Diligence checks <a href="{{ route('screen-4') }}" class="link-hover">https://www.avvanz.com/company-due-diligence/</a>.
                     </p>
-                    <p class="lead">
+                    <p>
                         For a non-obligatory consultation, email us at <a href="mailto:consult@avvanz.com" class="link-hover">consult@avvanz.com</a>.
                     </p>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/screen/screen2.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img
+                    src="{{ asset('images/screen/screen2.webp') }}"
+                    alt="Screen Image 2"
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
         </div>
     </div>
