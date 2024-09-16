@@ -31,6 +31,13 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
+        .container-margin {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">

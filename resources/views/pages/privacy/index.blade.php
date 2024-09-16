@@ -28,24 +28,24 @@ Privacy Policy - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container my-5 text-center">
-    <div class="border-dmb p-5 text-start bg-mg text-white">
-        <p>
+<section class="container container-margin text-center">
+    <div class="border-dmb section-padding text-start bg-mg text-white">
+        <p class="lead">
             Avvanz is a global background screening and workforce solutions provider that recognizes the importance of privacy policies in every location where it operates. With the increasing number of data breaches and privacy concerns, Avvanz is committed to safeguarding the personal information of its clients and their employees.
         </p>
-        <p>
+        <p class="lead">
             To ensure compliance with local laws and regulations, Avvanz has developed a comprehensive set of privacy policies that are tailored to each global location. These policies outline the types of personal information that Avvanz collects, how it is used, and how it is protected.
         </p>
-        <p>
+        <p class="lead">
             Avvanz’s privacy policies are designed to be transparent and easy to understand. They provide clear explanations of how personal information is collected, used, and shared, as well as the rights of individuals to access, correct, and delete their personal data.
         </p>
-        <p>
+        <p class="lead">
             In addition to complying with local laws and regulations, Avvanz also adheres to international privacy standards such as the General Data Protection Regulation (GDPR) in the European Union. Avvanz recognizes that data protection is a fundamental right and is committed to upholding the highest standards of privacy and security.
         </p>
-        <p>
+        <p class="lead">
             Avvanz’s commitment to privacy extends beyond its own operations. The company also works closely with its clients to ensure that their privacy policies are up-to-date and in compliance with local laws and regulations. Avvanz provides guidance on best practices for data protection and offers training programs for employees on how to handle sensitive personal information.
         </p>
-        <p>
+        <p class="lead">
             Overall, Avvanz recognizes that privacy is a critical issue for businesses operating in today’s global economy. By securing the importance of privacy policies on each global location, Avvanz is helping to protect the personal information of its clients and their employees, while also maintaining compliance with local laws and regulations.
         </p>
     </div>
