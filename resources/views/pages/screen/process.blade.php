@@ -47,7 +47,7 @@ Process - Avvanz Global
 </section>
 
 <!-- Note Section  -->
-<section class="bg-afw py-5">
+<section class="bg-afw padding-vertical">
     <div class="container text-center w-75">
         <h6 class="fw-bold">
             Note: TAT or Turn-Around Time is computed from the date when you Checkout your Order after Candidate’s required information, signed Letter of Consent and mandatory documents are submitted at Avvanz ScreenGlobal.
