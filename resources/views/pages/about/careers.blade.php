@@ -15,14 +15,14 @@ Join Avvanz - Avvanz Global
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Avvanz Careers
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Join our Team
                 </p>
             </div>
@@ -31,12 +31,12 @@ Join Avvanz - Avvanz Global
 </div>
 
 <!-- Join Section -->
-<section class="container my-5">
+<section class="container container-margin">
     <h1 class="text-center text-dmb display-5 fw-bolder">
         JOIN US NOW!
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <p class="text-center mt-2 text-black lead">
+    <p class="text-center mt-2 text-black">
         To join us, please fill in the required information so that we connect with you soonest possible.
     </p>
 
