@@ -7,7 +7,7 @@ About Us - Avvanz Global
 @section('content')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/about.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endsection()
 
 <!--  Navbar Section -->
