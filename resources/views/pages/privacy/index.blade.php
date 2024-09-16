@@ -16,7 +16,7 @@ Privacy Policy - Avvanz Global
 <!-- Hero Section -->
 <section class="bg-image">
     <div class="container">
-        <div class="row text-white py-5">
+        <div class="row text-white hero-padding">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Privacy Policy

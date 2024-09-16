@@ -22,6 +22,10 @@
             margin: 0;
             padding: 0;
         }
+        .hero-padding {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
