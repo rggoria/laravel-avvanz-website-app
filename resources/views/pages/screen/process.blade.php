@@ -11,14 +11,14 @@ Process - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Process
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Our Innovative Process Solutions
                 </p>
             </div>
@@ -27,17 +27,21 @@ Process - Avvanz Global
 </section>
 
 <!-- Health Protocol Section -->
-<section class="container-fluid bg-mg py-5">
+<section class="container-fluid bg-mg padding-vertical">
     <div class="container text-white text-center">
         <h1 class="fw-bolder display-5">
             Overview of Background Check Process
         </h1>
         <h1 class="divider-center-25"></h1>       
-        <p class="lead m-5">
+        <p class="m-5">
             This whole process can be likened to a Candidate having to go through 2 Firewalls before gaining access to your company the SECURITY Firewall and the INTEGRITY Firewall.
         </p>
         <div class="d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/screen/process.png') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img 
+                src="{{ asset('images/screen/process.webp') }}" 
+                alt="Proccess" 
+                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                loading="lazy">
         </div>
     </div>
 </section>
