@@ -15,14 +15,14 @@ Workplace Safety & Health Guidelines
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Workplace Safety & Health Guidelines
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Follow safety guidelines
                 </p>
             </div>
@@ -40,7 +40,7 @@ Workplace Safety & Health Guidelines
         <p class="lead mt-5">
             Avvanz is a leading Technology-enabled provider of Screening, Onboarding and Developing solutions in professional services industry. We are committed to providing staff, contractors and visitors with a healthy and safe environment.
         </p>
-        <p class="lead">
+        <p>
             This policy applies to the company premises, activities of the company and controlled equipment. The company strives to fully integrate health and safety into all aspects of its activities through a continuous improvement of processes. This is achieved by:
         </p>
         <ul class="list-unstyled">
@@ -53,13 +53,13 @@ Workplace Safety & Health Guidelines
                 Setting measurable objectives and targets aimed at controlling higher risk activities and increasing awareness of health and safety.
             </li>
         </ul>
-        <p class="lead">
+        <p>
             Our principal goal is to improve well-being, health and safety management and to eliminate injuries and illnesses at our workplaces. Our aim is to protect the inherent safety of all our employees, candidates, contractors, vendors and partners.
         </p>
-        <p class="lead">
+        <p>
             WSH Team is made up of Kannan Chettiar (Managing Director), Alvin Caga (Co-Founder) and Jhoann Alberto (Head of Client Services and Operations).
         </p>
-        <p class="lead">
+        <p>
             We commit to adhere to relevant legal requirements. Our duties and responsibilities will include ensuring well-being, safety and health at work. We commit to continuously enhancing and improving WSH performance, especially amidst Covid-19.
         </p>
     </div>
@@ -74,10 +74,10 @@ Workplace Safety & Health Guidelines
     <div class="row gy-5">
         <div class="col-md-7 d-flex align-items-center">
             <div>
-                <p class="lead">
+                <p>
                     All staff is briefed on WSH and Business Continuity Planning measures Eg) Emergency like floods, earthquakes or terrorist attacks. The Operations Centre is regularly inspected and audited. Regular safety talks are held as well to continuously educate the workforce. Everyone is accountable for their and their colleagues’ safety. Accountability is one of Avvanz’s core values.
                 </p>
-                <p class="lead">
+                <p>
                     All staff is trained on Personal Data Privacy policies to safeguard employee and client-related data.
                 </p>
                 <p class="fw-bold">
@@ -112,7 +112,11 @@ Workplace Safety & Health Guidelines
             </div>
         </div>
         <div class="col-md-5 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/about/health1.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img 
+                src="{{ asset('images/about/health1.webp') }}" 
+                alt="Health Image 1" 
+                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                loading="lazy">
         </div>
     </div>
 </section>
@@ -159,7 +163,11 @@ Workplace Safety & Health Guidelines
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/about/health2.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img 
+                    src="{{ asset('images/about/health2.webp') }}" 
+                    alt="Health Image 2" 
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
         </div>
     </div>
@@ -172,7 +180,11 @@ Workplace Safety & Health Guidelines
     </h1>
     <h1 class="divider-center-25"></h1>
     <br>
-    <img src="{{asset('images/about/health3.jpg')}}" alt="" class="img-fluid">
+    <img 
+        src="{{ asset('images/about/health3.webp') }}" 
+        alt="Health Image 3" 
+        class="transition-up img-fluid rounded-3 w-auto h-auto"
+        loading="lazy">
     <div class="row g-3 py-5">
         <div class="col-sm-12 col-md-6 col-lg-6">
             <ul class="list-unstyled text-start">
@@ -248,7 +260,7 @@ Workplace Safety & Health Guidelines
             Monitoring of WSH performance
         </h1>
         <h1 class="divider-start-25"></h1>
-        <p class="lead">
+        <p>
             Monitoring of WSH performance
         </p>
         <p class="fw-bold">
@@ -278,19 +290,23 @@ Workplace Safety & Health Guidelines
                             Employee feedback
                         </li>
                     </ul>
-                    <p class="lead">
+                    <p>
                         Should an incident happen, Root Cause Analysis (RCA) will be undertaken followed by an action plan which is intended to ensure no recurrence of such an incident.
                     </p>
-                    <p class="lead">
+                    <p>
                         By Kannan Chettiar, Managing Director of Avvanz
                     </p>
-                    <p class="lead">
+                    <p>
                         27th May 2020
                     </p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 align-items-center justify-content-center">
-                <img src="{{ asset('images/about/health4.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img 
+                    src="{{ asset('images/about/health4.webp') }}" 
+                    alt="Health Image 4" 
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
         </div>
     </div>
