@@ -7,7 +7,6 @@ About Us - Avvanz Global
 @section('content')
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/about.css') }}" media="print" onload="this.media='all'">
 @endsection()
 
@@ -16,14 +15,14 @@ About Us - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container py-5">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     We Play Our Role
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Know more about us
                 </p>
             </div>
@@ -32,7 +31,7 @@ About Us - Avvanz Global
 </section>
 
 <!-- Partner Section -->
-<section class="container my-5 text-white">
+<section class="container container-margin text-white">
     <div class="row g-3">
         <div class="col-md-3">
             <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">Vision, Mission & Core Values</h4>
