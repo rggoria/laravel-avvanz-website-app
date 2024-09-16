@@ -14,7 +14,6 @@
     --givry: #f7e6c5;
     --periglacialBlue: #dce2d2;
     --dustStorm: #e9d6d5;
-    --bg-image-url: url("{{ asset("images/homepageBg.webp") }}");
 }
 
 body {
