@@ -64,11 +64,6 @@ body {
     background-color: var(--dustStorm);
 }
 
-.bg-image {
-    background: url("../images/homepage/homepageBg.webp") no-repeat center;
-    background-size: cover;
-}
-
 .text-co {
     color: var(--carrotOrange) !important;
 }

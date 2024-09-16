@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
         }
-        .bg-image1 {
+        .bg-image {
             background: url("../images/homepage/homepageBg.webp") no-repeat center;
             background-size: cover;
             position: relative;

@@ -16,7 +16,7 @@ Avvanz - Background Checks & Screening
 
 <!-- Hero Section #1 -->
 <section class="bg-image">
-    <div class="container py-5">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
                 <div class="text-white">
@@ -38,7 +38,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 
-<section class="container my-5 text-center text-white">
+<section class="container container-margin text-center text-white">
     <div class="row">
         <div class="col-md-6 bg-dmb p-5">
             <h1 class="fw-bolder display-5">
