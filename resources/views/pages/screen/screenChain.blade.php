@@ -11,14 +11,14 @@ ScreenChain - Avvanz Global
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     ScreenChain
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Our Innovative Process Solutions
                 </p>
             </div>
@@ -27,7 +27,7 @@ ScreenChain - Avvanz Global
 </div>
 
 <!-- Health Protocol Section -->
-<section class="container-fluid py-5">
+<section class="container-fluid padding-vertical">
     <div class="container text-white text-center">
         <h1 class="fw-bolder text-dmb display-5">
             Blockchain Technology-Enabled Background Screening for Speed, Efficiency, Transparency
@@ -35,9 +35,13 @@ ScreenChain - Avvanz Global
         <h1 class="divider-center-25"></h1>
         <br>
         <div class="d-flex align-items-center justify-content-center py-3">
-            <img src="{{ asset('images/screen/screenchain.png') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img
+                src="{{ asset('images/screen/screenchain.webp') }}"
+                alt="ScreenChain"
+                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                loading="lazy">
         </div>
-       <div class="text-dark text-start mt-2">
+        <div class="text-dark text-start mt-2">
             <ul class="list-unstyled">
                 <li class="d-flex align-items-start mb-2">
                     <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>

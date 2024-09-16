@@ -11,14 +11,14 @@ MOM Verification - Avvanz Global
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Mandatory Checks for Singapore Work Passes
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Contact us at mom.cs@avvanz.com or 6403 3836
                 </p>
             </div>
@@ -27,27 +27,31 @@ MOM Verification - Avvanz Global
 </div>
 
 <!-- Singpaore Pass Section -->
-<section class="bg-mg py-5">
+<section class="bg-mg padding-vertical">
     <div class="container">
         <div class="row g-3">
             <div class="col-md-7 d-flex align-items-center">
                 <div class="text-white">
-                    <p class="lead">
+                    <p>
                         From the 1st of September 2023, Ministry of Manpower (MOM) requires Employment Pass (EP) candidates (from any country) to pass a 2-stage eligibility framework:
                     </p>
-                    <p class="lead">
+                    <p>
                         <span class="fw-bold">Stage 1</span> – Qualifying salary
                     </p>
-                    <p class="lead">
+                    <p>
                         <span class="fw-bold">Stage 2</span> – COMPASS or Complementarity Assessment Framework
                     </p>
-                    <p class="lead">
+                    <p>
                         With the implementation of COMPASS, post-secondary diploma and above qualifications declared to MOM should be supported with a Verification Proof. This requirement applies to new EP applications from 1 September 2023, and renewals from 1 September 2024.
                     </p>
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/screen/singaporework.svg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img
+                    src="{{ asset('images/screen/singaporework.webp') }}"
+                    alt="Singapore Work Image"
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
         </div>
     </div>
@@ -147,7 +151,7 @@ MOM Verification - Avvanz Global
 <section class="container my-5">
     <h1 class="text-center text-dmb fw-bolder">Why work with Avvanz?</h1>
     <div class="container mt-5">
-        <div class="row row-cols-sm-1 row-cols-md-5 row-cols-lg-5 g-4">
+        <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-5 g-4">
             <div class="col">
                 <div class="h-100 bg-bs">
                     <div class="card-body text-center">
@@ -200,13 +204,13 @@ MOM Verification - Avvanz Global
             </div>
         </div>
         <div class="my-4">
-            <p class="lead">
+            <p>
                 Avvanz’s multi award winning <a href="https://www.avvanz.com/screenglobal/" class="link-hover">ScreenGlobal platform</a> is listed at No 1 in MOM’s trusted background screening companies list. We cover 150+ countries and will be able to help you with your Education and Institution Accreditation Check amongst 20 other types of <a href="{{ route('screen-sub-2') }}" class="link-hover">background checks</a>. ScreenGlobal is the only eCommerce platform that enables you to browse, select, order and monitor your checks in real-time.
             </p>
-            <p class="lead">
+            <p>
                 Completely hassle-free and peace of mind!
             </p>
-            <p class="lead">
+            <p>
                 Avvanz’s dedicated MOM Client Success Team (<a href="mailto:mom.cs@avvanz.com" class="link-hover">mom.cs@avvanz.com</a>) will hand hold you through every step of the way.
             </p>
         </div>
@@ -222,7 +226,12 @@ MOM Verification - Avvanz Global
             <thead class="bg-white">
                 <tr>
                     <th colspan="3">
-                        <img src="https://www.avvanz.com/wp-content/uploads/2021/07/avvanzlogo.webp" alt="Avvanz Logo" class="img-fluid">
+                        <img 
+                            src="{{ asset('images/homepage/avvanzLogo.webp') }}"
+                            alt="Avvanz Logo Image"
+                            width="200"
+                            width="150"
+                            loading="lazy">
                         <br>
                         <span class="lead text-marigold fw-bold">
                             Checks Price and Turnaround Time (TAT) information
@@ -267,7 +276,7 @@ MOM Verification - Avvanz Global
             </tbody>
         </table>
         <div class="text-white py-5">
-            <p class="lead">
+            <p>
                 For updated prices, please feel free to log in at <a href="https://www.avvanz.com/screenglobal/" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
             </p>
         </div>
