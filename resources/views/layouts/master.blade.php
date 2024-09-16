@@ -22,6 +22,11 @@
             margin: 0;
             padding: 0;
         }
+        .bg-image1 {
+            background: url("../images/homepage/homepageBg.webp") no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
         .hero-padding {
             padding-top: 3rem;
             padding-bottom: 3rem;

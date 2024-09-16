@@ -14,7 +14,7 @@ Privacy Policy - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<section class="bg-image">
+<section class="bg-image1">
     <div class="container">
         <div class="row text-white hero-padding">
             <div class="col-md-7 offset-auto">
