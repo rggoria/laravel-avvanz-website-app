@@ -11,14 +11,14 @@ Background Checks Singapore - Avvanz Global
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Background Checks
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Know Who You’re Hiring
                 </p>
             </div>
@@ -27,20 +27,24 @@ Background Checks Singapore - Avvanz Global
 </div>
 
 <!-- Background Check​ Section -->
-<section class="my-5 container">
+<section class="container margin-vertical">
     <div class="row g-3">
         <div class="col-md-7 d-flex align-items-center">
             <div>
                 <h1 class="fw-bolder display-5 text-dmb mb-3">
                     What types of background checks are offered?
                 </h1>
-               <p>
+                <p>
                     Combat resume discrepancies with <span class="fw-bolder">Avvanz’s</span> comprehensive background check solutions. Ensure trustworthy hires and protect your organization’s assets with both pre-employment and in-employment screening.
                 </p>
             </div>
         </div>
         <div class="col-md-5 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/screen/backgroundcheck.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+            <img 
+                src="{{ asset('images/screen/backgroundcheck.webp') }}" 
+                alt="Placeholder Image" 
+                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                loading="lazy">
         </div>
     </div>
 
@@ -51,10 +55,10 @@ Background Checks Singapore - Avvanz Global
         </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper pb-5">
-            <div class="swiper-wrapper my-5 text-white">
+            <div class="swiper-wrapper my-5">
                 @foreach ( $dueDiligenceItems as $item )
                     <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -83,10 +87,10 @@ Background Checks Singapore - Avvanz Global
         </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5 text-white">
+            <div class="swiper-wrapper my-5">
                 @foreach ( $identityCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -115,10 +119,10 @@ Background Checks Singapore - Avvanz Global
         </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5 text-white">
+            <div class="swiper-wrapper my-5">
                 @foreach ( $financialCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -147,10 +151,10 @@ Background Checks Singapore - Avvanz Global
         </h1>
         <h1 class="text-center divider-center-25"></h1>
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5 text-white">
+            <div class="swiper-wrapper my-5">
                 @foreach ( $integrityCheck as $item )
                     <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg" style="height: 20rem">
+                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <i class="fas {{ $item['icon'] }} fa-2x"></i>
@@ -183,7 +187,7 @@ Background Checks Singapore - Avvanz Global
                         Get Started with Avvanz
                     </h1>
                     <h1 class="divider-start-25"></h1>
-                    <p class="lead mt-3">
+                    <p class="mt-3">
                         Order checks in minutes with our uniquely innovative multi-award platform at <a href="https://www.avvanz.com/screenglobal/" class="link-hover">https://www.avvanz.com/screenglobal/</a>.
                     </p>
                     <ul class="list-unstyled">
