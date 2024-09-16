@@ -15,14 +15,14 @@ Environmental, Social and Governance
 
 <!-- Environmental Section -->
 <div class="bg-image">
-    <div class="container">
+    <div class="container hero-padding">
         <div class="row text-white">
             <div class="bcol-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Environmental, Social and Governance
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Make a difference
                 </p>
                 <div class="input-group mt-5">
@@ -38,12 +38,16 @@ Environmental, Social and Governance
     </div>
 </div>
 
-<section class="container py-5">
+<section class="container container-margin">
     <div class="row g-3">
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <a href="https://www.avvanz.com/avvanz-charity-movement-to-tahanan-ng-pagmamahal/" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
-                    <img src="{{ asset('images/about/environment1.png') }}" class="card-img-top" alt="sample">
+                    <img
+                        src="{{ asset('images/about/environment1.webp') }}" 
+                        class="card-img-top" 
+                        alt="Environment Image 1"
+                        loading='lazy'>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">
                             Executive of the Year - HR Technology

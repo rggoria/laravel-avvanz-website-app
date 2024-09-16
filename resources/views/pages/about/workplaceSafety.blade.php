@@ -37,7 +37,7 @@ Workplace Safety & Health Guidelines
             Strives to fully integrate health and safety
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <p class="lead mt-5">
+        <p class="mt-5">
             Avvanz is a leading Technology-enabled provider of Screening, Onboarding and Developing solutions in professional services industry. We are committed to providing staff, contractors and visitors with a healthy and safe environment.
         </p>
         <p>
