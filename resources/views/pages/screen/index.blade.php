@@ -11,7 +11,7 @@ Screen - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -26,7 +26,7 @@ Screen - Avvanz Global
     </div>
 </section>
 
-<section class="container container-margin">
+<section class="container margin-vertical">
     <h1 class="text-center text-dmb fw-bolder">
         Ensure that the “right” and “safe” talents are identified before hiring.
     </h1>

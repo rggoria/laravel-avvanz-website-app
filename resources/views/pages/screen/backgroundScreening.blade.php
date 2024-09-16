@@ -11,7 +11,7 @@ Background Screening - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -27,14 +27,14 @@ Background Screening - Avvanz Global
 </section>
 
 <!-- Checks Screening -->
-<section class="bg-mg hero-padding text-white">
+<section class="bg-mg padding-vertical text-white">
     <div class="text-center">
         <h1 class="fw-bolder display-5">
             Individual Background Checks Screening
         </h1>
         <h1 class="divider-center-25"></h1>
     </div>
-    <div class="container container-margin">
+    <div class="container margin-vertical">
         <p>
             Statistics have shown that more than 30% of CVs or resumes have discrepancies. Hence it’s imperative that a thorough Background Screening and Due Diligence process is in place to sieve out the wrong hires who can be detrimental to your organization. Your candidates and employees should be on the highest level of “integrity” and “security”. Both aspects cannot be compromised otherwise it might cost your organization in terms of reduced productivity, fraud-related costs, reputational damages, and even a decline in shareholder earnings.
         </p>

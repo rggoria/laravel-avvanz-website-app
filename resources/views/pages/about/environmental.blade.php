@@ -15,7 +15,7 @@ Environmental, Social and Governance
 
 <!-- Environmental Section -->
 <div class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="bcol-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -38,7 +38,7 @@ Environmental, Social and Governance
     </div>
 </div>
 
-<section class="container container-margin">
+<section class="container margin-vertical">
     <div class="row g-3">
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <a href="https://www.avvanz.com/avvanz-charity-movement-to-tahanan-ng-pagmamahal/" class="text-decoration-none">

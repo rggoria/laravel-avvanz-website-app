@@ -15,7 +15,7 @@ About Us - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -31,7 +31,7 @@ About Us - Avvanz Global
 </section>
 
 <!-- Partner Section -->
-<section class="container container-margin text-white">
+<section class="container margin-vertical text-white">
     <div class="row g-3">
         <div class="col-md-3">
             <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">Vision, Mission & Core Values</h4>

@@ -15,7 +15,7 @@ Workplace Safety & Health Guidelines
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">

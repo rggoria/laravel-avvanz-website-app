@@ -16,7 +16,7 @@ Privacy Policy - Avvanz Global
 <!-- Hero Section -->
 <section class="bg-image">
     <div class="container">
-        <div class="row text-white hero-padding">
+        <div class="row text-white padding-vertical">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Privacy Policy
@@ -28,7 +28,7 @@ Privacy Policy - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container container-margin text-center">
+<section class="container margin-vertical text-center">
     <div class="border-dmb section-padding text-start bg-mg text-white">
         <p>
             Avvanz is a global background screening and workforce solutions provider that recognizes the importance of privacy policies in every location where it operates. With the increasing number of data breaches and privacy concerns, Avvanz is committed to safeguarding the personal information of its clients and their employees.

@@ -11,14 +11,14 @@ Why Avvanz Screen​ - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Why Avvanz Screen​
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Reliable and accurate background checks
                 </p>
             </div>
@@ -27,14 +27,18 @@ Why Avvanz Screen​ - Avvanz Global
 </section>
 
 <!-- Avvanz Screen​ Section -->
-<section class="bg-mg py-5 text-white">
+<section class="bg-mg padding-vertical text-white">
     <div class="container">
         <div class="row g-3">
             <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/screen/whyavvanz.jpg') }}" alt="Placeholder Image" class="transition-up img-fluid rounded-3 w-auto h-auto">
+                <img 
+                    src="{{ asset('images/screen/whyavvanz.webp') }}" 
+                    alt="Why Avvanz" 
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    loading="lazy">
             </div>
             <div class="col-md-6 d-flex align-items-center text-center">
-                <h5 class="lead">
+                <h5>
                     Avvanz helps more than 3000 companies across the globe mitigate risks due to wrongful hires through our multi-award-winning Screen Global Platform and our high-performance Avvanz Team.   
                 </h5>
             </div>           

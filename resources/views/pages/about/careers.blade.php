@@ -15,7 +15,7 @@ Join Avvanz - Avvanz Global
 
 <!-- Hero Section -->
 <div class="bg-image">
-    <div class="container hero-padding">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -31,7 +31,7 @@ Join Avvanz - Avvanz Global
 </div>
 
 <!-- Join Section -->
-<section class="container container-margin">
+<section class="container margin-vertical">
     <h1 class="text-center text-dmb display-5 fw-bolder">
         JOIN US NOW!
     </h1>

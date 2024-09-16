@@ -27,11 +27,11 @@
             background-size: cover;
             position: relative;
         }
-        .hero-padding {
+        .padding-vertical {
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
-        .container-margin {
+        .margin-vertical {
             margin-top: 3rem;
             margin-bottom: 3rem;
         }
