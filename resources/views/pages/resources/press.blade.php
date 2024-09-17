@@ -10,7 +10,7 @@ Press & Media - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<section class="bg-image">
+<section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -37,6 +37,7 @@ Press & Media - Avvanz Global
                         src="{{ asset('images/resources/' . $item['image']) }}"
                         class="card-img-top"
                         alt="{{ $item['title'] }}"
+                        style="height: 200px; width: auto;"
                         loading="lazy">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">

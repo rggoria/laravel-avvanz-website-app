@@ -14,7 +14,7 @@ Webinars & Videos - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<section class="bg-image">
+<section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -34,12 +34,13 @@ Webinars & Videos - Avvanz Global
 <section class="container my-5">
     <div class="row g-3">
         @foreach($webinarItems as $item)
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
             <a href="{{ $item['link'] }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
                     <img
                         src="{{ asset('images/resources/' . $item['image']) }}"
                         class="card-img-top"
+                        style="height: 200px; width: auto;"
                         alt="{{ $item['title'] }}"
                         loading="lazy">
                     <div class="card-body d-flex flex-column">
