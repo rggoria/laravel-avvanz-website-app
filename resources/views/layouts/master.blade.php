@@ -8,13 +8,13 @@
     <meta name="description" content="Our Multi-award winning background checks platform ScreenGlobal will help you mitigate risk due to wrongful hires.">
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
-    <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
     <!-- Preload Bootstrap CSS -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
     <!-- Minified Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Minified Swiper CSS -->
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
+    <!-- Swiper CSS -->
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
     <!-- Critical CSS -->
     <style>
