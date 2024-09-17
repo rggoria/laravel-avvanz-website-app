@@ -47,11 +47,13 @@
                     <div class="text-white">
                         <h1 class="fw-bolder display-5">
                             We Screen & Strengthen your Human Assets
-                        </h1>
+                        </h1>            
                         <h1 class="divider-start-50"></h1>
+                        <br>
                         <p>
                             Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                         </p>
+                        <br>
                         <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                     </div>
                 </div>
