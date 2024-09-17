@@ -33,7 +33,7 @@ Process - Avvanz Global
             Overview of Background Check Process
         </h1>
         <h1 class="divider-center-25"></h1>       
-        <p class="m-5">
+        <p style="margin: 3rem">
             This whole process can be likened to a Candidate having to go through 2 Firewalls before gaining access to your company the SECURITY Firewall and the INTEGRITY Firewall.
         </p>
         <div class="d-flex align-items-center justify-content-center">
