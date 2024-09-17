@@ -49,33 +49,30 @@ Revision Nibble & Learn - Avvanz Global
                     <div class="tab-pane fade show active" id="v-pills-podcast1">
                         <div class="ratio ratio-16x9 w-100">
                             <iframe
-                                id="videoPlayer"
-                                src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
+                                data-src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
                                 title="YouTube video player"
                                 allowfullscreen
-                                loading="lazy">
+                                class="lazy-frame">
                             </iframe>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-podcast2">
                         <div class="ratio ratio-16x9 w-100">
                             <iframe
-                                id="videoPlayer"
-                                src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
+                                data-src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
                                 title="YouTube video player"
                                 allowfullscreen
-                                loading="lazy">
+                                class="lazy-frame">
                             </iframe>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-podcast3">
                         <div class="ratio ratio-16x9 w-100">
                             <iframe
-                                id="videoPlayer"
-                                src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
+                                data-src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
                                 title="YouTube video player"
                                 allowfullscreen
-                                loading="lazy">
+                                class="lazy-frame">
                             </iframe>
                         </div>
                     </div>
@@ -104,7 +101,7 @@ Revision Nibble & Learn - Avvanz Global
                     </button>
                 </div>             
             </div>
-        </div>
+        </div>        
     </div>
 </section>
 
@@ -135,23 +132,33 @@ Revision Nibble & Learn - Avvanz Global
 @section('scripts')
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const iframes = document.querySelectorAll('iframe.lazy-frame');
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const iframe = entry.target;
-                    iframe.src = iframe.getAttribute('data-src');
-                    iframe.classList.remove('lazy-frame');
-                    observer.unobserve(iframe);
-                }
-            });
+        const lazyFrames = document.querySelectorAll('iframe.lazy-frame');
+        const tabLinks = document.querySelectorAll('#v-pills-tab button');
+        function loadIframe(iframe) {
+            const src = iframe.getAttribute('data-src');
+            if (src) {
+                iframe.src = src;
+                iframe.classList.remove('lazy-frame');
+            }
+        }
+    
+        function onTabShow(event) {
+            const targetId = event.target.getAttribute('data-bs-target');
+            const targetFrame = document.querySelector(targetId + ' iframe.lazy-frame');
+            if (targetFrame) {
+                loadIframe(targetFrame);
+            }
+        }
+    
+        tabLinks.forEach(link => {
+            link.addEventListener('shown.bs.tab', onTabShow);
         });
-
-        iframes.forEach(iframe => {
-            observer.observe(iframe);
-        });
+        const activeTab = document.querySelector('.tab-pane.active iframe.lazy-frame');
+        if (activeTab) {
+            loadIframe(activeTab);
+        }
     });
-</script>
+</script>    
 @endsection
 
 @endsection
