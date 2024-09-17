@@ -117,9 +117,9 @@ Contact Us - Avvanz Global
                     w-100 h-100 text-white">
                     <div class="card-header">
                         <iframe
-                            class="w-100"
+                            class="w-100 lazy-iframe"
+                            data-src="{{ $item['geolocation'] }}"
                             style="height: 300px; border: 0;"
-                            src="{{ $item['geolocation'] }}"
                             loading="lazy"
                             allowfullscreen
                             title="Google Maps Location"></iframe>
@@ -165,5 +165,27 @@ Contact Us - Avvanz Global
 
 <!-- Footer Section -->
 @include('layouts.footer')
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var iframes = document.querySelectorAll('.lazy-iframe');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var iframe = entry.target;
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.classList.remove('lazy-iframe');
+                    observer.unobserve(iframe);
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        iframes.forEach(function(iframe) {
+            observer.observe(iframe);
+        });
+    });
+</script>
+@endsection
 
 @endsection
