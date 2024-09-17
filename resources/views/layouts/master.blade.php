@@ -22,7 +22,13 @@
             margin: 0;
             padding: 0;
         }
-        .bg-image {
+        .bg-image-1 {
+            background: url("../images/homepage/homepageBg.webp") no-repeat center;
+            background-size: cover;
+            position: relative;
+            min-height: 300px
+        }
+        .bg-image-2 {
             background: url("../images/homepage/homepageBg.webp") no-repeat center;
             background-size: cover;
             position: relative;
@@ -44,12 +50,6 @@
         }
         .text-center {
             text-align: center;
-        }
-        .hero-min-height-1 {
-            min-height: 300px;
-        }
-        .hero-min-height-2 {
-            min-height: 100px;
         }
     </style>
     <!-- Custom CSS -->

@@ -15,9 +15,9 @@ Avvanz - Background Checks & Screening
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<section class="bg-image">
+<section class="bg-image-1">
     <div class="container padding-vertical">
-        <div class="row hero-min-height-1">
+        <div class="row">
             <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
                     <h1 class="fw-bolder display-5">

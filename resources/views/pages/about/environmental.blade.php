@@ -14,9 +14,9 @@ Environmental, Social and Governance
 @include('layouts.navbar')
 
 <!-- Environmental Section -->
-<div class="bg-image">
+<div class="bg-image-2">
     <div class="container padding-vertical">
-        <div class="row hero-min-height-2 text-white">
+        <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Environmental, Social and Governance
