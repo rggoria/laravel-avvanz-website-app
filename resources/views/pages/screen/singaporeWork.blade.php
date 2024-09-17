@@ -27,10 +27,10 @@ MOM Verification - Avvanz Global
 </section>
 
 <!-- Singpaore Pass Section -->
-<section class="bg-mg padding-vertical">
-    <div class="container">
+<section class="bg-mg">
+    <div class="container padding-vertical">
         <div class="row g-3">
-            <div class="col-md-7 d-flex align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
                     <p>
                         From the 1st of September 2023, Ministry of Manpower (MOM) requires Employment Pass (EP) candidates (from any country) to pass a 2-stage eligibility framework:
@@ -46,14 +46,15 @@ MOM Verification - Avvanz Global
                     </p>
                 </div>
             </div>
-            <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <img
+            <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
+                <img 
                     src="{{ asset('images/screen/singaporework.webp') }}"
                     alt="Singapore Work Image"
-                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    class="img-fluid"
+                    style="width: 300px; height: 300px;"
                     loading="lazy">
             </div>
-        </div>
+        </div>            
     </div>
 </section>
 
