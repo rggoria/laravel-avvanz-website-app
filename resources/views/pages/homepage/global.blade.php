@@ -14,30 +14,31 @@ Global - Avvanz Global
 <!-- Navbar Section #1 -->
 @include('layouts.navbar')
 
-<!-- Hero Section #1 -->
-<section class="bg-image">
+<!-- Hero Section -->
+<section class="bg-image-1">
     <div class="container padding-vertical">
-        <div class="row text-white">
-            <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>
-                    <h1 class="divider-start-50"></h1>
+                    <div class="divider-start-50"></div>
                     <p>
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
-                    <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
+                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
                 </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                <img
+            <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
+                <img 
                     src="{{ asset('images/homepage/homepage1.webp') }}"
                     alt="Placeholder Image"
-                    class="transition-up image-hero"
+                    class="img-fluid"
+                    style="width: 300px; height: 300px;"
                     loading="lazy">
             </div>
-        </div>
+        </div>            
     </div>
 </section>
 
@@ -47,7 +48,7 @@ Global - Avvanz Global
             <h1 class="fw-bolder display-5">
                 Screen
             </h1>
-            <p class="lead">
+            <p>
                 Background Checks, KYC/AML and Company Due Diligence
             </p>
             <a href="{{ route('screen-main') }}" class="btn hero-screen-button fw-bolder text-uppercase">
@@ -58,7 +59,7 @@ Global - Avvanz Global
             <h1 class="fw-bolder display-5">
                 Develop
             </h1>
-            <p class="lead">
+            <p>
                 F2F/Virtual LIVE Training, Coaching and Customized elearning
             </p>
             <a href="{{ route('develop-main') }}" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
@@ -126,7 +127,7 @@ Global - Avvanz Global
                 <h3 class="fw-bold text-co">
                     Searching for an automated compliant background screening solution?
                 </h3>
-                <p class="lead">
+                <p>
                     As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
                 </p>
                 <a href="{{ route('screen-main') }}" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
@@ -158,7 +159,7 @@ Global - Avvanz Global
                     <h3 class="fw-bold">
                         Do you want to be effectively onboard and upskill your employees?
                     </h3>
-                    <p class="lead">
+                    <p>
                         Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
                     </p>
                     <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
@@ -174,7 +175,7 @@ Global - Avvanz Global
         Discover Our Partners
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <p class="text-center mt-2 text-wrap text-justify lead">
+    <p class="text-center mt-2 text-wrap text-justify">
         Connect with our trusted service providers and integration partners to streamline your background screening process.
     </p>
     <div class="swiper mySwiper">
