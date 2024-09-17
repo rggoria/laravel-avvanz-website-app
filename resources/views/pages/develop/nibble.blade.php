@@ -132,4 +132,26 @@ Revision Nibble & Learn - Avvanz Global
 <!-- Footer Section -->
 @include('layouts.footer')
 
+@section('scripts')
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const iframes = document.querySelectorAll('iframe.lazy-frame');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const iframe = entry.target;
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.classList.remove('lazy-frame');
+                    observer.unobserve(iframe);
+                }
+            });
+        });
+
+        iframes.forEach(iframe => {
+            observer.observe(iframe);
+        });
+    });
+</script>
+@endsection
+
 @endsection
