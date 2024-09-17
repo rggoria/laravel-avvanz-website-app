@@ -114,7 +114,8 @@ MOM Verification - Avvanz Global
                 <iframe
                     src="https://www.youtube.com/embed/NoQk6ka-tCI?start=1"
                     title="YouTube video player"
-                    allowfullscreen>
+                    allowfullscreen
+                    loading="lazy">
                 </iframe>
             </div>
             <div class="mt-5 row">
