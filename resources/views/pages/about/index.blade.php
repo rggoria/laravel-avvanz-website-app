@@ -504,7 +504,7 @@ About Us - Avvanz Global
         <!-- Advisory # 3 -->
         <section class="my-5">
             <img 
-                src="{{ asset('images/about/advisory2.webp')}}" 
+                src="{{ asset('images/about/advisory3.webp')}}" 
                 width="200" 
                 height="200" 
                 alt="David Wee Image" 

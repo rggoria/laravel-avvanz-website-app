@@ -14,9 +14,9 @@ Workplace Safety & Health Guidelines
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image">
     <div class="container padding-vertical">
-        <div class="row text-white">
+        <div class="row hero-min-height-2 text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Workplace Safety & Health Guidelines
@@ -28,10 +28,10 @@ Workplace Safety & Health Guidelines
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Health Protocol Section -->
-<section class="container-fluid bg-mg py-5">
+<section class="container-fluid bg-mg padding-vertical">
     <div class="container text-white">
         <h1 class="text-center fw-bolder display-5">
             Strives to fully integrate health and safety
