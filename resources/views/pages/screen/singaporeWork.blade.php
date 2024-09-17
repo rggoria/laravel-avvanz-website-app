@@ -111,12 +111,12 @@ MOM Verification - Avvanz Global
             <br>
             <div class="ratio ratio-16x9">
                 <iframe
-                    src="https://www.youtube.com/embed/NoQk6ka-tCI?start=1"
+                    data-src="https://www.youtube.com/embed/NoQk6ka-tCI?start=1"
                     title="YouTube video player"
                     allowfullscreen
-                    loading="lazy">
+                    class="lazy-frame">
                 </iframe>
-            </div>            
+            </div>        
             <div class="mt-5 row">
                 <div class="col-12 d-flex justify-content-center">
                     <div class="col-8 text-center">
@@ -289,5 +289,27 @@ MOM Verification - Avvanz Global
 
 <!-- Footer Section -->
 @include('layouts.footer')
+
+@section('scripts')
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const iframes = document.querySelectorAll('iframe.lazy-frame');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const iframe = entry.target;
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.classList.remove('lazy-frame');
+                    observer.unobserve(iframe);
+                }
+            });
+        });
+
+        iframes.forEach(iframe => {
+            observer.observe(iframe);
+        });
+    });
+</script>
+@endsection
 
 @endsection
