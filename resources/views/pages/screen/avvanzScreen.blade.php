@@ -30,14 +30,17 @@ Why Avvanz Screen​ - Avvanz Global
 <section class="bg-mg padding-vertical text-white">
     <div class="container">
         <div class="row g-3">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
                 <img 
                     src="{{ asset('images/screen/whyavvanz.webp') }}" 
                     alt="Why Avvanz" 
-                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    width="450" 
+                    height="300"
+                    alt="About Us Image 3" 
+                    class="transition-up rounded-3"
                     loading="lazy">
             </div>
-            <div class="col-md-6 d-flex align-items-center text-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center text-center">
                 <h5>
                     Avvanz helps more than 3000 companies across the globe mitigate risks due to wrongful hires through our multi-award-winning Screen Global Platform and our high-performance Avvanz Team.   
                 </h5>
