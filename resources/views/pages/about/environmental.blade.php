@@ -46,6 +46,7 @@ Environmental, Social and Governance
                     <img
                         src="{{ asset('images/about/environment1.webp') }}" 
                         class="card-img-top" 
+                        style="height: 200px; width:auto"
                         alt="Environment Image 1"
                         loading='lazy'>
                     <div class="card-body d-flex flex-column">
