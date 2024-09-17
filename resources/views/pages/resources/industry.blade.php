@@ -11,14 +11,14 @@ Industry Report - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Industry Report
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Latest Industry Reports 
                 </p>
             </div>
@@ -27,13 +27,17 @@ Industry Report - Avvanz Global
 </section>
 
 <!-- Industry Section -->
-<section class="container my-5">
+<section class="container margin-vertical">
     <div class="row g-3">
         @foreach($industryItems as $item)
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <a href="{{ $item['link'] }}" class="text-decoration-none">
                     <div class="card border-radius-dmb h-100">
-                        <img src="{{ asset('images/resources/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
+                        <img
+                            src="{{ asset('images/resources/' . $item['image']) }}"
+                            class="card-img-top"
+                            alt="{{ $item['title'] }}"
+                            loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bolder text-dmb">
                                 {{ $item['title'] }}

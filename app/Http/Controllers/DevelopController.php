@@ -36,17 +36,17 @@ class DevelopController extends Controller
             [
                 'title' => 'LEARNGLOBAL',
                 'description' => 'An integrated platform for complete Learning and Development without needing multiple investments in various platforms and solutions.',
-                'image' => 'methodology1.png',
+                'image' => 'methodology1.webp',
                 'link' => 'https://www.avvanz.com/learnglobal/',
             ], [
                 'title' => 'STAR TRAINERS',
                 'description' => 'Highly experienced business leaders who have global training experience.',
-                'image' => 'methodology2.png',
+                'image' => 'methodology2.webp',
                 'link' => 'https://www.avvanz.com/star-trainers/',
             ], [
                 'title' => 'NIBBLE & LEARN',
                 'description' => 'Short, quick, and effective Nibble-n-Learn format courses.',
-                'image' => 'methodology3.png',
+                'image' => 'methodology3.webp',
                 'link' => 'https://www.avvanz.com/free-courses/?playlist=09d1fc2&video=5a205ec',
             ],
         ];
@@ -76,31 +76,31 @@ class DevelopController extends Controller
         $learnglobalItems = [
             [
                 'title' => 'Impactful Communications',
-                'image' => 'learnglobal1.jpg'
+                'image' => 'learnglobal1.webp'
             ], [
                 'title' => 'Multiply Your Time',
-                'image' => 'learnglobal2.jpg'
+                'image' => 'learnglobal2.webp'
             ], [
                 'title' => 'Manage Your Stakeholders',
-                'image' => 'learnglobal3.jpg'
+                'image' => 'learnglobal3.webp'
             ], [
                 'title' => 'Advanced Negotiation Skills',
-                'image' => 'learnglobal4.jpg'
+                'image' => 'learnglobal4.webp'
             ], [
                 'title' => 'Multi-dimensional Thinking',
-                'image' => 'learnglobal5.jpg'
+                'image' => 'learnglobal5.webp'
             ], [
                 'title' => 'Industry 4.0',
-                'image' => 'learnglobal6.jpg'
+                'image' => 'learnglobal6.webp'
             ], [
                 'title' => 'Problem Solving Techniques',
-                'image' => 'learnglobal7.jpg'
+                'image' => 'learnglobal7.webp'
             ], [
                 'title' => 'Onboarding New Employees for Success',
-                'image' => 'learnglobal8.jpg'
+                'image' => 'learnglobal8.webp'
             ], [
                 'title' => 'Apply Sports in Business',
-                'image' => 'learnglobal9.jpg'
+                'image' => 'learnglobal9.webp'
             ],
         ];
         return view("pages.develop.learnGlobal", [

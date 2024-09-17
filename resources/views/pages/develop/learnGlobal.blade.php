@@ -11,14 +11,14 @@ LearnGlobal - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     LearnGlobal
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Explore Courses
                 </p>
                 <a href="https://learnglobal.apptitude.xyz/" class="btn btn-orange-border fw-bolder text-uppercase">learnglobal login</a>
@@ -28,13 +28,17 @@ LearnGlobal - Avvanz Global
 </section>
 
 <!-- LearnGlobal Section -->
-<section class="container my-5">
+<section class="container margin-vertical">
     <div class="text-center">
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img src="{{ asset('images/develop/LearnGlobal.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-50 w-50">
+            <img
+                src="{{ asset('images/develop/LearnGlobal.webp')}}"
+                alt="LearnGlobal"
+                class="transition-up img-fluid h-50 w-50"
+                loading="lazy">
         </div>
         <h1 class="divider-center-25"></h1>
-        <p class="lead mt-5">
+        <p class="mt-5">
             An integrated platform for complete Learning and Development with a large library of on-demand, micro-learning accessible 24/7.
         </p>
     </div>
@@ -42,7 +46,11 @@ LearnGlobal - Avvanz Global
         @foreach($learnglobalItems as $index => $item)
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $index }}">
-                    <img src="{{ asset('images/develop/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
+                    <img
+                        src="{{ asset('images/develop/' . $item['image']) }}"
+                        class="card-img-top"
+                        alt="{{ $item['title'] }}"
+                        loading="lazy">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-text fw-bolder text-co">
                             {{ $item['title'] }}
@@ -59,7 +67,11 @@ LearnGlobal - Avvanz Global
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="{{ asset('images/develop/' . $item['image']) }}" class="img-fluid" alt="{{ $item['title'] }}">
+                            <img
+                                src="{{ asset('images/develop/' . $item['image']) }}"
+                                class="img-fluid"
+                                alt="{{ $item['title'] }}"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -80,7 +92,11 @@ LearnGlobal - Avvanz Global
         </h1>
         <h1 class="divider-center-25"></h1>
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img src="{{ asset('images/develop/clients.png')}}" alt="Placeholder Image" class="transition-up img-fluid h-75 w-75">
+            <img
+                src="{{ asset('images/develop/clients.webp')}}"
+                alt="Clients Image"
+                class="transition-up img-fluid h-75 w-75"
+                loading="lazy">
         </div>
         <h1 class="fw-bolder text-dmb display-5 mt-5">
             Client Testimonials

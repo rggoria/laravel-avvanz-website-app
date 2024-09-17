@@ -11,14 +11,14 @@ Star Trainers - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Star Trainers
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Thought Leaders, Industry Practitioners, Subject Matter Experts in Various Domains
                 </p>
             </div>
@@ -27,10 +27,14 @@ Star Trainers - Avvanz Global
 </section>
 
 <!-- Star Trainers Section -->
-<section class="container my-5 text-center">
+<section class="container margin-vertical text-center">
     <!-- Star Trainer # 1 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/star1.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img
+            src="{{ asset('images/develop/star1.webp')}}"
+            alt="Kevin Cottam Image"
+            class="img-fluid img-border-rounded-dmb h-25 w-25"
+            loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Kevin Cottam, PCC, BSc
         </h1>
@@ -75,7 +79,11 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 2 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/star2.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img
+            src="{{ asset('images/develop/star2.webp')}}"
+            alt="Sylvia Fernandes Image"
+            class="img-fluid img-border-rounded-dmb h-25 w-25"
+            loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Sylvia Fernandes
         </h1>
@@ -126,7 +134,11 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 3 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/star3.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img
+            src="{{ asset('images/develop/star3.webp')}}"
+            alt="Dr. Gleb Tsipurksy Image"
+            class="img-fluid img-border-rounded-dmb h-25 w-25"
+            loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Dr. Gleb Tsipurksy
         </h1>
@@ -163,7 +175,11 @@ Star Trainers - Avvanz Global
 
     <!-- Star Trainer # 4 -->
     <section class="my-5">
-        <img src="{{ asset('images/develop/star4.svg')}}" alt="" class="img-fluid img-border-rounded-dmb h-25 w-25">
+        <img
+            src="{{ asset('images/develop/star4.webp')}}"
+            alt="Kannan Chettiar Image"
+            class="img-fluid img-border-rounded-dmb h-25 w-25"
+            loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Kannan Chettiar
         </h1>

@@ -15,14 +15,14 @@ Webinars & Videos - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Webinars & Videos
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Join the conversation
                 </p>
             </div>
@@ -37,7 +37,11 @@ Webinars & Videos - Avvanz Global
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <a href="{{ $item['link'] }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
-                    <img src="{{ asset('images/resources/' . $item['image']) }}" class="card-img-top" alt="{{ $item['title'] }}">
+                    <img
+                        src="{{ asset('images/resources/' . $item['image']) }}"
+                        class="card-img-top"
+                        alt="{{ $item['title'] }}"
+                        loading="lazy">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">
                             {{ $item['title'] }}
@@ -95,7 +99,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -105,7 +110,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -115,7 +121,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -157,7 +164,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -167,7 +175,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -177,7 +186,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -219,7 +229,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -229,7 +240,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>
@@ -239,7 +251,8 @@ Webinars & Videos - Avvanz Global
                                             id="videoPlayer"
                                             src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
                                             title="YouTube video player"
-                                            allowfullscreen>
+                                            allowfullscreen
+                                            loading="lazy">
                                         </iframe>
                                     </div>
                                 </div>

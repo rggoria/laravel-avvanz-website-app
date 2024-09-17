@@ -11,7 +11,7 @@ Cookie policy - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -24,7 +24,7 @@ Cookie policy - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container my-5 text-center">
+<section class="container margin-vertical text-center">
     <div class="border-dmb p-5 text-start">
         <p class="fw-bolder">
             Last Updated: September 27, 2023
@@ -34,7 +34,7 @@ Cookie policy - Avvanz Global
                 <span class="fw-bolder">
                     Introduction
                 </span>
-                <p class="lead">
+                <p>
                     Welcome to www.avvanz.com (“we,” “us,” or “our”). This Cookie Policy explains how we use cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies as described in this policy.
                 </p>
             </li>
@@ -42,7 +42,7 @@ Cookie policy - Avvanz Global
                 <span class="fw-bolder">
                     What Are Cookies?
                 </span>
-                <p class="lead">
+                <p>
                     Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.
                 </p>
             </li>
@@ -50,7 +50,7 @@ Cookie policy - Avvanz Global
                 <span class="fw-bolder">
                     Types of Cookies We Use
                 </span>
-                <p class="lead mb-0">
+                <p class="mb-0">
                     We use the following types of cookies on our website:
                 </p>
                 <ul>
@@ -72,7 +72,7 @@ Cookie policy - Avvanz Global
                 <span class="fw-bolder">
                     How We Use Cookies
                 </span>
-                <p class="lead mb-0">
+                <p class="mb-0">
                     We use cookies for the following purposes:
                 </p>
                 <ul>
@@ -96,7 +96,7 @@ Cookie policy - Avvanz Global
                     Third-Party Cookies
                 </span>
             </li>
-            <p class="lead">
+            <p>
                 We may also allow third-party service providers to use cookies on our website to collect information about your online activities over time and across different websites. These providers may include analytics and advertising companies. Please refer to the respective privacy policies of these third parties for more information about their practices.
             </p>
             <li>
@@ -104,7 +104,7 @@ Cookie policy - Avvanz Global
                     Managing Cookies
                 </span>
             </li>
-            <p class="lead">
+            <p>
                 You have the option to manage your cookie preferences. You can typically do this through your web browser settings. Please note that disabling certain cookies may impact the functionality and features of our website.
             </p>
             <li>
@@ -112,7 +112,7 @@ Cookie policy - Avvanz Global
                     Changes to This Policy
                 </span>
             </li>
-            <p class="lead">
+            <p>
                 We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to revisit this policy regularly to stay informed about our use of cookies.
             </p>
             <li>
@@ -120,11 +120,8 @@ Cookie policy - Avvanz Global
                     Contact Us
                 </span>
             </li>
-            <p class="fw-bolder">
-                <span class="lead">
-                    If you have any questions or concerns about this Cookie Policy or our use of cookies, please contact us at
-                </span>
-                consult@avvanz.com<span class="lead">.</span>
+            <p>
+                If you have any questions or concerns about this Cookie Policy or our use of cookies, please contact us at <span class="fw-bolder">consult@avvanz.com</span>.
             </p>
         </ol>
     </div>

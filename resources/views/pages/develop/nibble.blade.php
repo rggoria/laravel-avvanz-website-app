@@ -15,14 +15,14 @@ Revision Nibble & Learn - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Nibble & Learn
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Start learning
                 </p>
             </div>
@@ -32,13 +32,13 @@ Revision Nibble & Learn - Avvanz Global
 
 <!-- Capabilities Section -->
 <section class="container-fluid bg-mg">
-    <div class="container text-white py-5">
+    <div class="container text-white padding-vertical">
         <div class="text-center">
             <h1 class="fw-bolder display-5">
                 Unlock Your Capabilities
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="lead mt-2">
+            <p class="mt-2">
                 Free Knowledge Nibbles Tailored To Your Needs
             </p>
         </div>
@@ -52,7 +52,8 @@ Revision Nibble & Learn - Avvanz Global
                                 id="videoPlayer"
                                 src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
                                 title="YouTube video player"
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                     </div>
@@ -62,7 +63,8 @@ Revision Nibble & Learn - Avvanz Global
                                 id="videoPlayer"
                                 src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
                                 title="YouTube video player"
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                     </div>
@@ -72,7 +74,8 @@ Revision Nibble & Learn - Avvanz Global
                                 id="videoPlayer"
                                 src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
                                 title="YouTube video player"
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                     </div>
@@ -113,10 +116,10 @@ Revision Nibble & Learn - Avvanz Global
         </h1>
         <h1 class="divider-center-25"></h1>
         <div class="text-start my-5">
-            <p class="lead">
+            <p>
                 Every day, as your organization continues to grow and your team has more demands placed on their time, it becomes more and more difficult to find the time for face-to-face learning.
             </p>
-            <p class="lead">
+            <p>
                 We host Knowledge Nibbles on a variety of business topics. If you are looking to drive personal, team, and business development, create a more engaging and collaborative culture, or want to explore new avenues of innovation, then our Knowledge Nibbles are for you. Informal discussions happen in an interactive environment that is tailored to your specific needs. Lunch & Learn sessions can be scheduled at a time convenient for your organization.
             </p>
         </div>      

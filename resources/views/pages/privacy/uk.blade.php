@@ -15,7 +15,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -28,28 +28,28 @@ Privacy Policy: Candidate (UK) - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container my-5 text-center">
+<section class="container margin-vertical text-center">
     <div class="border-dmb bg-mg p-5 text-start text-white">
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Privacy Policy describes how Avvanz with company registration number: [_____] (“Avvanz”) in accordance with EU General Data Protection Regulation (GDPR) and UK GDPR, And, as required pursuant to the Data Protection Legislation (Article 32 of the GDPR); and other measures necessary in order for the Processor to comply with the data privacy requirements and the Data Protection Act 2018 is all about transparency, and thus it requires a Privacy Policy respects and protects the privacy of our employees, clients, service providers, stakeholders, and the general public (data subjects) apply to all “personal data,” which includes any information relating to a living, identified or identifiable person.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Policy applies to information that Avvanz collects about its clients for the purpose of a background screening, job applicants, and employees (as well as other individuals who have given their written authorization for Avvanz to conduct a background investigation on them). We will only use this information in a way that is consistent with applicable laws.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             We commit to ensuring compliance with the strictest standards of security and confidentiality regarding all personal or sensitive personal information submitted to us by our data subjects.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             All Requesting Organizations must follow the DBS/DS Code of Practice, the General Data Protection Regulation (GDPR), and the UK GDPR, and have a policy for hiring ex-offenders as well as a policy for the secure storage, handling, use, retention, and disposal of Disclosure Certificates and Disclosure Information. Please go to the Requesting Organization’s privacy notice or agreement for more information on how they may use your data.
         </p>
         <p class="fw-bolder mt-5">
             The principles of data protection
         </p>
-        <p class="lead">
+        <p>
             The Legislation stipulates that anyone processing personal data must comply with six data protection principles of good practice. These Principles are legally enforceable. 
         </p>
         <p class="fw-bolder">
@@ -84,22 +84,22 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 Accountability: besides complying with the Legislation, it is necessary to demonstrate compliance. (a) an identifier such as a name, an identification number, location data or an online identifier, or (b) one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of the individual. 
             </li>
         </ol>
-        <p class="lead">
+        <p>
             Personal data means any information relating to an identified or identifiable living individual: 
         </p>
-        <p class="lead">
+        <p>
             “Identifiable living individual” means a living individual who can be identified, directly or indirectly, in particular by reference to: 
         </p>
         <p class="fw-bolder">
             Data Controller and Data Processor 
         </p>
-        <p class="lead">
+        <p>
             In the processing of personal data for its own employment purposes, Avvanz shall act as a data Controller. 
         </p>
-        <p class="lead">
+        <p>
             Avvanz shall act in the capacity of data Processor for the processing of personal data on behalf of its clients, pursuant to the provision of the background screening services as per its core activity. In these circumstances, Avvanz’ clients shall be considered the data Controllers, unless they specifically inform that they are also Processors, in which case their own end-clients shall be regarded as the data Controllers. For the avoidance of any doubt, Avvanz shall always follow the instructions given by its Clients, regardless of if they are Processors or Controllers. 
         </p>
-        <p class="lead">
+        <p>
             For the purpose of this policy, the terms data Controller and data Processor shall be understood in accordance with the relevant definitions set out in the Legislation. 
         </p>
         <ol>
@@ -181,7 +181,7 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                             <li class="bullet-list">
                                 Each CRA has created its own version of a notice that details how the three major credit reference agencies, Equifax, Experian, and TransUnion (previously Callcredit), (also referred to in the notice as “credit reference agencies” or “CRAs”) use and exchange personal data. This personal data, often known as ‘bureau data,’ that they obtain about you and/or your firm is used in credit activities.
                             </li>
-                            <p class="lead mt-3">
+                            <p class="mt-3">
                                 The Equifax notice can be found at the following address: <a href="https://www.equifax.co.uk/crain.html" class="link-hover">https://www.equifax.co.uk/crain.html</a>
                             </p>
                             <p>
@@ -456,19 +456,19 @@ Privacy Policy: Candidate (UK) - Avvanz Global
                 <p class="fw-bolder mt-3 h5">
                     The Data Protection Officer
                 </p>
-                <p class="lead">
+                <p>
                     23 Austin Friars, London EC2N 2QP
                 </p>
-                <p class="lead">
+                <p>
                     United Kingdom
                 </p>
-                <p class="lead">
+                <p>
                     Tel:
                 </p>
-                <p class="lead">
+                <p>
                     Email: <a href="mailto:dpo@avvanz.com" class="link-hover">dpo@avvanz.com</a>
                 </p>
-                <div class="lead mt-3">
+                <div class="mt-3">
                     <p>
                         For information on Your rights as an applicant and for information on how Your details will be used by the Disclosure & Barring Service, please visit: 
                     </p>

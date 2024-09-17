@@ -31,12 +31,15 @@ Avvanz - Background Checks & Screening
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up image-hero">
+                <img
+                    src="{{ asset('images/homepage/homepage1.webp') }}"
+                    alt="Placeholder Image"
+                    class="transition-up image-hero"
+                    loading="lazy">
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="container margin-vertical text-center text-white">
     <div class="row">
@@ -74,13 +77,25 @@ Avvanz - Background Checks & Screening
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/homepage/certification1.webp') }}" class="image-horizontal-display" alt="Award 1" loading="lazy">
+                        <img
+                            src="{{ asset('images/homepage/certification1.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 1"
+                            loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification2.webp') }}" class="image-horizontal-display" alt="Award 2" loading="lazy">
+                        <img
+                            src="{{ asset('images/homepage/certification2.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 2"
+                            loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification3.webp') }}" class="image-horizontal-display" alt="Award 3" loading="lazy">
+                        <img
+                            src="{{ asset('images/homepage/certification3.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 3"
+                            loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -94,7 +109,11 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
-            <img src="{{ asset('images/homepage/certification4.webp') }}" class="image-horizontal-display" alt="Award 4" loading="lazy">
+            <img
+                src="{{ asset('images/homepage/certification4.webp') }}"
+                class="image-horizontal-display"
+                alt="Award 4"
+                loading="lazy">
         </div>
     </div>
 </section>
@@ -114,7 +133,11 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Placeholder Image" class="transition-up image-horizontal-display" loading="lazy">
+            <img
+                src="{{ asset('images/homepage/homepage2.webp') }}"
+                alt="Homepage Image 2"
+                class="transition-up image-horizontal-display"
+                loading="lazy">
         </div>
     </div>
 </section>
@@ -124,7 +147,11 @@ Avvanz - Background Checks & Screening
     <div class="container">
         <div class="row g-3">
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Placeholder Image" class="transition-up image-horizontal-display" loading="lazy">
+                <img
+                    src="{{ asset('images/homepage/homepage3.webp') }}"
+                    alt="Homepage Image 3"
+                    class="transition-up image-horizontal-display"
+                    loading="lazy">
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div>
@@ -154,7 +181,12 @@ Avvanz - Background Checks & Screening
         <div class="swiper-wrapper my-5">
             @foreach ( $trustedPartnerItems as $count => $item )
                 <div class="swiper-slide">
-                    <img src="{{ asset('images/screen/' . $item) }}" width="300" height="200" alt="Partner Image {{ $count }}" loading="lazy">
+                    <img
+                        src="{{ asset('images/screen/' . $item) }}"
+                        width="300"
+                        height="200"
+                        alt="Partner Image {{ $count }}"
+                        loading="lazy">
                 </div>
             @endforeach
         </div>

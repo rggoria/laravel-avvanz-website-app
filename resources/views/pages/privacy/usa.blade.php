@@ -15,7 +15,7 @@ Privacy Policy: Candidate (USA) - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -28,21 +28,21 @@ Privacy Policy: Candidate (USA) - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container my-5 text-center">
+<section class="container margin-vertical text-center">
     <div class="border-dmb bg-mg p-5 text-start text-white">
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             Avvanz is committed to protecting your privacy as a consumer reporting agency authorized by the Federal Fair Credit Reporting Act (FCRA) and other applicable state and federal regulations. 
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Privacy Policy describes how Avvanz Ltd. with company registration number: [_____] (“Avvanz”) in accordance with the EU General Data Protection Regulation (GDPR), And, as required pursuant to the Data Protection Legislation (Article 32 of the GDPR); and other measures necessary in order for the Processor to comply with the data privacy requirements and the Data Protection Act 2018 is all about transparency, Children’s Online Privacy Protection Rule (“COPPA”), California Consumer Privacy Act of 2018 (CCPA), and thus it requires a Privacy Policy respects and protects the privacy of our employees, clients, service providers, stakeholders, and the general public (data subjects) apply to all “personal data,” which includes any information relating to a living, identified or identifiable person.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Policy also applies to personal information provided by Avvanz clients, as well as their job applicants and employees (as well as other individuals who have provided written authorization for Avvanz’s clients to conduct a background investigation on them), when using Avvanz’s online background screening solution, which is only accessible through an access-restricted portion of Avvanz’s website. Avvanz will only collect, keep, and utilize personally identifiable information in accordance with relevant laws, including the Fair Credit Reporting Act.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             We commit to ensuring compliance with the strictest standards of security and confidentiality regarding all personal or sensitive personal information submitted to us by our data subjects. 
         </p>
@@ -293,19 +293,19 @@ Privacy Policy: Candidate (USA) - Avvanz Global
                 <p class="fw-bolder mt-3 h5">
                     The Data Protection Officer
                 </p>
-                <p class="lead">
+                <p>
                     1850 Mountain Blvd, Oakland, 
                 </p>
-                <p class="lead">
+                <p>
                     CA 94611, United States
                 </p>
-                <p class="lead">
+                <p>
                     Tel: <a href="mailto:">+1 628-225-3243</a>
                 </p>
-                <p class="lead">
+                <p>
                     Email: <a href="mailto:dpo@avvanz.com" class="link-hover">dpo@avvanz.com</a>
                 </p>
-                <div class="lead mt-3">
+                <div class="mt-3">
                     <p>
                         To find out more about the Philippine Republic Act 10173 Data Privacy Act of 2012, please visit <a href="https://www.privacy.gov.ph/data-privacy-act/" class="link-hover">https://www.privacy.gov.ph/data-privacy-act/</a>.
                     </p>

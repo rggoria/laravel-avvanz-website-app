@@ -5,6 +5,7 @@ Global - Avvanz Global
 @endsection
 
 @section('css')
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 @endsection()
 
@@ -14,29 +15,33 @@ Global - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section #1 -->
-<section style="background: url({{ asset('images/homepage/homepageBg.webp') }}) no-repeat center center; background-size: cover;">
-    <div class="container">
-        <div class="row">
+<section class="bg-image">
+    <div class="container padding-vertical">
+        <div class="row text-white">
             <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
-                <div style="color: white;">
+                <div class="text-white">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>
                     <h1 class="divider-start-50"></h1>
-                    <p class="lead">
+                    <p>
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
                     <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('images/homepage/homepage1.webp') }}" alt="Placeholder Image" class="transition-up">
+                <img
+                    src="{{ asset('images/homepage/homepage1.webp') }}"
+                    alt="Placeholder Image"
+                    class="transition-up image-hero"
+                    loading="lazy">
             </div>
         </div>
     </div>
 </section>
 
-<section class="container my-5 text-center text-white">
+<section class="container margin-vertical text-center text-white">
     <div class="row">
         <div class="col-md-6 bg-dmb p-5">
             <h1 class="fw-bolder display-5">
@@ -67,18 +72,30 @@ Global - Avvanz Global
         Awards & Certification
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <div class="row g-3 m-5">
-        <div class="col-md-6 p-3">
+    <div class="row g-5 my-5">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-3 d-flex justify-content-center">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/homepage/certification1.png') }}" class="d-block w-100" alt="Award 1">
+                        <img
+                            src="{{ asset('images/homepage/certification1.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 1"
+                            loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification2.png') }}" class="d-block w-100" alt="Award 2">
+                        <img
+                            src="{{ asset('images/homepage/certification2.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 2"
+                            loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/homepage/certification3.png') }}" class="d-block w-100" alt="Award 3">
+                        <img
+                            src="{{ asset('images/homepage/certification3.webp') }}"
+                            class="image-horizontal-display"
+                            alt="Award 3"
+                            loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -91,8 +108,12 @@ Global - Avvanz Global
                 </button>
             </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
-            <img src="{{ asset('images/homepage/certification4.png') }}" class="d-block w-75" alt="Award 4">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+            <img
+                src="{{ asset('images/homepage/certification4.webp') }}"
+                class="image-horizontal-display"
+                alt="Award 4"
+                loading="lazy">
         </div>
     </div>
 </section>
@@ -112,29 +133,39 @@ Global - Avvanz Global
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage2.png') }}" alt="Placeholder Image" class="transition-up display-image">
+            <img
+                src="{{ asset('images/homepage/homepage2.webp') }}"
+                alt="Homepage Image 2"
+                class="transition-up image-horizontal-display"
+                loading="lazy">
         </div>
     </div>
 </section>
 
 <!-- Courses Section -->
 <section class="bg-mg text-white p-5">
-    <div class="row g-3">
-        <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/homepage/homepage3.png') }}" alt="Placeholder Image" class="transition-up display-image">
-        </div>
-        <div class="col-lg-6 d-flex align-items-center">
-            <div>
-                <h3 class="fw-bold">
-                    Do you want to be effectively onboard and upskill your employees?
-                </h3>
-                <p class="lead">
-                    Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
-                </p>
-                <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img
+                    src="{{ asset('images/homepage/homepage3.webp') }}"
+                    alt="Homepage Image 3"
+                    class="transition-up image-horizontal-display"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+                <div>
+                    <h3 class="fw-bold">
+                        Do you want to be effectively onboard and upskill your employees?
+                    </h3>
+                    <p class="lead">
+                        Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
+                    </p>
+                    <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+                </div>
             </div>
         </div>
-    </div>
+   </div>
 </section>
 
 <!-- Partners Section -->
@@ -146,32 +177,18 @@ Global - Avvanz Global
     <p class="text-center mt-2 text-wrap text-justify lead">
         Connect with our trusted service providers and integration partners to streamline your background screening process.
     </p>
-    <div class="swiper mySwiper my-5">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper my-5">
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner1.webp') }}" class="img-fluid" alt="Partner 1">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner2.webp') }}" class="img-fluid" alt="Partner 2">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner3.webp') }}" class="img-fluid" alt="Partner 3">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner4.webp') }}" class="img-fluid" alt="Partner 4">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner5.webp') }}" class="img-fluid" alt="Partner 5">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner6.webp') }}" class="img-fluid" alt="Partner 6">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner7.webp') }}" class="img-fluid" alt="Partner 7">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/screen/partner8.webp') }}" class="img-fluid" alt="Partner 8">
-            </div>
+            @foreach ( $trustedPartnerItems as $count => $item )
+                <div class="swiper-slide">
+                    <img
+                        src="{{ asset('images/screen/' . $item) }}"
+                        width="300"
+                        height="200"
+                        alt="Partner Image {{ $count }}"
+                        loading="lazy">
+                </div>
+            @endforeach
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -180,7 +197,7 @@ Global - Avvanz Global
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image text-center container-fluid">
+<section class="bg-image text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -331,7 +348,7 @@ Global - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
-    <script src="{{ asset('js/swiper.js') }}" async></script>
+    <script src="{{ asset('js/homepageSwiper.js') }}"></script>
 @endsection
 
 @endsection

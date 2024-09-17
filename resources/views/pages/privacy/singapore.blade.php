@@ -15,7 +15,7 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
@@ -28,17 +28,17 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
 </section>
 
 <!-- Privacy Policy Section -->
-<section class="container my-5 text-center">
+<section class="container margin-vertical text-center">
     <div class="border-dmb bg-mg p-5 text-start text-white">
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Privacy Policy describes how Avvanz a trading name of Avvanz Pte. Ltd. with company registration number: [201608532H] (“Avvanz”) in accordance with Personal Data Privacy Commission (PDPC) in compliance with the Singapore Personal Data Protection Act 2012 (No. 26 of 2012) (“Act”) and the Data Protection Act 2018,  (Article 32 of the GDPR), respect and protect the privacy of our employees, clients, service providers, stakeholders, and the general public (data subjects) apply to all “personal data,” which includes any information relating to a living, identified or identifiable person.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             This Policy applies to information that Avvanz collects about its clients, job applicants, and employees (as well as other individuals who have given their written authorization for Avvanz to conduct a background investigation on them). We will only use this information in a way that is consistent with applicable laws.
         </p>
-        <p class="lead">
+        <p>
             &emsp;&emsp;&emsp;
             We commit to ensuring compliance with the strictest standards of security and confidentiality regarding all personal or sensitive personal information submitted to us by our data subjects.
         </p>
@@ -273,19 +273,19 @@ Privacy Policy: Candidate (Singapore) - Avvanz Global
             <p class="fw-bolder h5 mt-3">
                 The Data Protection Officer
             </p>
-            <p class="lead">
+            <p>
                 1 Wallich St., #14-01 Guoco
             </p>
-            <p class="lead">
+            <p>
                 Tower, Singapore 078881
             </p>
-            <p class="lead">
+            <p>
                 Tel: [+65-68095398]
             </p>
-            <p class="lead">
+            <p>
                 Email: <a href="mailto:dpo@avvanz.com" class="link-hover">dpo@avvanz.com</a>
             </p>
-            <p class="lead mt-3">
+            <p class="mt-3">
                 To find out more about the Philippine Republic Act 10173 Data Privacy Act of 2012, please visit <a href="https://www.privacy.gov.ph/data-privacy-act/" class="link-hover">https://www.privacy.gov.ph/data-privacy-act/</a>.
             </p>
             </li>

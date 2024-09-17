@@ -11,14 +11,14 @@ Contact Us - Avvanz Global
 
 <!-- Hero Section -->
 <section class="bg-image">
-    <div class="container">
+    <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Contact Us
                 </h1>
                 <h1 class="divider-start-25"></h1>
-                <p class="lead">
+                <p>
                     Feel free to send us a message. We would like to hear it from you!
                 </p>
             </div>
@@ -27,7 +27,7 @@ Contact Us - Avvanz Global
 </section>
 
 <!-- Request Demo Section -->
-<section class="container my-5 text-white">
+<section class="container margin-vertical text-white">
     <div class="text-center">
         <h1 class="text-dmb fw-bolder display-5">
             Request a Demo
@@ -61,7 +61,7 @@ Contact Us - Avvanz Global
             General Inquiry
         </h1>
         <h1 class="divider-center-25"></h1>
-        <p class="lead text-dark my-3">
+        <p class="text-dark my-3">
             Feel free to send us a message. We would like to hear it from you!
         </p>
         <div class="row justify-content-center text-start">
@@ -124,7 +124,6 @@ Contact Us - Avvanz Global
                         class="w-100"
                         style="height: 300px; border: 0;"
                         src="{{ $item['geolocation'] }}"
-                        {{-- geolocation --}}
                         loading="lazy"
                         allowfullscreen=""
                         title="Google Maps Location"></iframe>
@@ -137,22 +136,22 @@ Contact Us - Avvanz Global
                         <p class="fw-bold">
                             {{ $item['company'] }}
                         </p>
-                        <p class="d-flex align-items-start mb-2 lead">
+                        <p class="d-flex align-items-start mb-2">
                             <i class="fas fa-map-marker-alt me-2 fs-6 mt-2 align-self-start"></i>
                             {{ $item['address'] }}
                         </p>
                         @if ($item['contact'])
-                        <p class="d-flex align-items-start mb-2 lead">
+                        <p class="d-flex align-items-start mb-2">
                             <i class="fas fa-phone-alt me-2 fs-6 mt-2 align-self-start"></i>
                             {{ $item['contact'] }}
                         </p>
                         @endif
-                        <p class="d-flex align-items-start mb-2 lead">
+                        <p class="d-flex align-items-start mb-2">
                             <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
                             consult@avvanz.com
                         </p>
                         @if ($item['country'] == "Singapore")
-                        <p class="d-flex align-items-start mb-2 lead">
+                        <p class="d-flex align-items-start mb-2">
                             <i class="fas fa-envelope me-2 fs-6 mt-2 align-self-start"></i>
                             clientservices@avvanz.com
                         </p>
