@@ -27,7 +27,7 @@ Process - Avvanz Global
 </section>
 
 <!-- Health Protocol Section -->
-<section class="container-fluid bg-mg padding-vertical">
+<section class="container-fluid bg-mg section-padding">
     <div class="container text-white text-center">
         <h1 class="fw-bolder display-5">
             Overview of Background Check Process
@@ -47,7 +47,7 @@ Process - Avvanz Global
 </section>
 
 <!-- Note Section  -->
-<section class="bg-afw padding-vertical">
+<section class="bg-afw">
     <div class="container text-center section-padding">
         <h6 class="fw-bold">
             Note: TAT or Turn-Around Time is computed from the date when you Checkout your Order after Candidate’s required information, signed Letter of Consent and mandatory documents are submitted at Avvanz ScreenGlobal.
