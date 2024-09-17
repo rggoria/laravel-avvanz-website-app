@@ -43,42 +43,52 @@ Revision Nibble & Learn - Avvanz Global
             </p>
         </div>
         <div class="row bg-dark">
-            <!-- Video Container -->
             <div class="col-lg-8 col-md-8 h-100 p-0">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-podcast1">
                         <div class="ratio ratio-16x9 w-100">
+                            <div class="video-facade" data-src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1">
+                                <img src="https://img.youtube.com/vi/zlyAWt_UMAU/hqdefault.jpg" alt="Video Thumbnail" class="img-fluid">
+                                <button class="btn btn-primary play-button">Play</button>
+                            </div>
                             <iframe
-                                data-src="https://www.youtube.com/embed/zlyAWt_UMAU?start=1"
+                                class="lazy-frame"
                                 title="YouTube video player"
                                 allowfullscreen
-                                class="lazy-frame">
+                                style="display: none;">
                             </iframe>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-podcast2">
                         <div class="ratio ratio-16x9 w-100">
+                            <div class="video-facade" data-src="https://www.youtube.com/embed/5aBki-Dqf40?start=1">
+                                <img src="https://img.youtube.com/vi/5aBki-Dqf40/hqdefault.jpg" alt="Video Thumbnail" class="img-fluid">
+                                <button class="btn btn-primary play-button">Play</button>
+                            </div>
                             <iframe
-                                data-src="https://www.youtube.com/embed/5aBki-Dqf40?start=1"
+                                class="lazy-frame"
                                 title="YouTube video player"
                                 allowfullscreen
-                                class="lazy-frame">
+                                style="display: none;">
                             </iframe>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-podcast3">
                         <div class="ratio ratio-16x9 w-100">
+                            <div class="video-facade" data-src="https://www.youtube.com/embed/1XoW0l25gyE?start=1">
+                                <img src="https://img.youtube.com/vi/1XoW0l25gyE/hqdefault.jpg" alt="Video Thumbnail" class="img-fluid">
+                                <button class="btn btn-primary play-button">Play</button>
+                            </div>
                             <iframe
-                                data-src="https://www.youtube.com/embed/1XoW0l25gyE?start=1"
+                                class="lazy-frame"
                                 title="YouTube video player"
                                 allowfullscreen
-                                class="lazy-frame">
+                                style="display: none;">
                             </iframe>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
-            <!-- Sidebar -->
             <div class="col-lg-4 col-md-4 h-100 p-0 bg-afw">
                 <div class="bg-dmb fw-bolder p-2">
                     Top Podcast
@@ -99,7 +109,7 @@ Revision Nibble & Learn - Avvanz Global
                         <h5 class="mb-1 me-auto">Nomadic Mindset To Beat Stress</h5>
                         <small class="text-body-secondary">0:16</small>
                     </button>
-                </div>             
+                </div>
             </div>
         </div>        
     </div>
@@ -132,31 +142,43 @@ Revision Nibble & Learn - Avvanz Global
 @section('scripts')
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const lazyFrames = document.querySelectorAll('iframe.lazy-frame');
         const tabLinks = document.querySelectorAll('#v-pills-tab button');
-        function loadIframe(iframe) {
-            const src = iframe.getAttribute('data-src');
-            if (src) {
+        function replaceFacadeWithIframe(tabPane) {
+            const facade = tabPane.querySelector('.video-facade');
+            const iframe = tabPane.querySelector('iframe.lazy-frame');
+            if (facade && iframe) {
+                const src = facade.getAttribute('data-src');
+                facade.style.display = 'none';
                 iframe.src = src;
-                iframe.classList.remove('lazy-frame');
+                iframe.style.display = '';
             }
         }
     
         function onTabShow(event) {
             const targetId = event.target.getAttribute('data-bs-target');
-            const targetFrame = document.querySelector(targetId + ' iframe.lazy-frame');
-            if (targetFrame) {
-                loadIframe(targetFrame);
+            const targetPane = document.querySelector(targetId);
+            if (targetPane) {
+                replaceFacadeWithIframe(targetPane);
             }
         }
     
         tabLinks.forEach(link => {
             link.addEventListener('shown.bs.tab', onTabShow);
         });
-        const activeTab = document.querySelector('.tab-pane.active iframe.lazy-frame');
+        const activeTab = document.querySelector('.tab-pane.active');
         if (activeTab) {
-            loadIframe(activeTab);
+            replaceFacadeWithIframe(activeTab);
         }
+        document.querySelectorAll('.video-facade .play-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const facade = this.parentElement;
+                const iframe = facade.nextElementSibling;
+                const src = facade.getAttribute('data-src');
+                facade.style.display = 'none'; 
+                iframe.src = src; 
+                iframe.style.display = '';
+            });
+        });
     });
 </script>    
 @endsection
