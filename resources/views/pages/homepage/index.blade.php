@@ -14,30 +14,31 @@ Avvanz - Background Checks & Screening
 <!-- Navbar Section #1 -->
 @include('layouts.navbar')
 
-<!-- Hero Section #1 -->
+<!-- Hero Section -->
 <section class="bg-image">
     <div class="container padding-vertical">
-        <div class="row text-white">
-            <div class="col-md-6 order-2 order-md-1 d-flex align-items-center">
+        <div class="row hero-min-height">
+            <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>
-                    <h1 class="divider-start-50"></h1>
+                    <div class="divider-start-50"></div>
                     <p>
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
-                    <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
+                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
                 </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                <img
+            <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
+                <img 
                     src="{{ asset('images/homepage/homepage1.webp') }}"
                     alt="Placeholder Image"
-                    class="transition-up image-hero"
+                    class="img-fluid"
+                    style="width: 300px; height: 300px;"
                     loading="lazy">
             </div>
-        </div>
+        </div>            
     </div>
 </section>
 
