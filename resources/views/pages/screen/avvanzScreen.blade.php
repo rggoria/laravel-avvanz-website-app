@@ -10,7 +10,7 @@ Why Avvanz Screen​ - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<section class="bg-image">
+<section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">

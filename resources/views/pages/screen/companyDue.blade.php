@@ -10,7 +10,7 @@ Company Due Diligence - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -24,7 +24,7 @@ Company Due Diligence - Avvanz Global
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Fraud Memo Section -->
 <section class="bg-mg padding-vertical">

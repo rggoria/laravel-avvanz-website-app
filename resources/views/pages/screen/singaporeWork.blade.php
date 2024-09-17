@@ -10,7 +10,7 @@ MOM Verification - Avvanz Global
 @include('layouts.navbar')
 
 <!-- Hero Section -->
-<div class="bg-image">
+<section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
             <div class="col-md-7 offset-auto">
@@ -24,7 +24,7 @@ MOM Verification - Avvanz Global
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Singpaore Pass Section -->
 <section class="bg-mg padding-vertical">
@@ -119,7 +119,7 @@ MOM Verification - Avvanz Global
             <div class="mt-5 row">
                 <div class="col-12 d-flex justify-content-center">
                     <div class="col-8 text-center">
-                        <h4 class="text-dmb fw-bolder lead">
+                        <h4 class="text-dmb fw-bolder">
                             Do ensure you have the following ready when you order:
                         </h4>
                         <ul class="list-group text-start">
@@ -233,7 +233,7 @@ MOM Verification - Avvanz Global
                             width="150"
                             loading="lazy">
                         <br>
-                        <span class="lead text-marigold fw-bold">
+                        <span class="text-marigold fw-bold">
                             Checks Price and Turnaround Time (TAT) information
                         </span>
                     </th>
