@@ -26,10 +26,10 @@ Process - Avvanz Global
     </div>
 </section>
 
-<!-- Health Protocol Section -->
-<section class="container-fluid bg-mg section-padding">
+<!-- Protocol Section -->
+<section class="container-fluid padding-vertical">
     <div class="container text-white text-center">
-        <h1 class="fw-bolder display-5">
+        <h1 class="fw-bolder text-dmb display-5">
             Overview of Background Check Process
         </h1>
         <h1 class="divider-center-25"></h1>       
@@ -40,7 +40,7 @@ Process - Avvanz Global
             <img 
                 src="{{ asset('images/screen/process.webp') }}" 
                 alt="Proccess"
-                width="300"
+                width="350"
                 height="500"
                 class="transition-up rounded-3"
                 loading="lazy">

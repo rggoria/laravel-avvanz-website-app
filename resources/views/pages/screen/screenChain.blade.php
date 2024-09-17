@@ -19,14 +19,14 @@ ScreenChain - Avvanz Global
                 </h1>
                 <h1 class="divider-start-25"></h1>
                 <p>
-                    Our Innovative Process Solutions
+                    Understand Screenchain
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Health Protocol Section -->
+<!-- Protocol Section -->
 <section class="container-fluid padding-vertical">
     <div class="container text-white text-center">
         <h1 class="fw-bolder text-dmb display-5">
@@ -34,15 +34,17 @@ ScreenChain - Avvanz Global
         </h1>
         <h1 class="divider-center-25"></h1>
         <br>
-        <div class="d-flex align-items-center justify-content-center py-3">
-            <img
-                src="{{ asset('images/screen/screenchain.webp') }}"
+        <div class="text-center">
+            <img 
+                src="{{ asset('images/screen/screenchain.webp') }}" 
                 alt="ScreenChain"
-                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                width="350"
+                height="300"
+                class="transition-up rounded-3"
                 loading="lazy">
         </div>
-        <div class="text-dark text-start mt-2">
-            <ul class="list-unstyled">
+        <div class="text-dark text-start section-padding">
+            <ul class="list-group">
                 <li class="d-flex align-items-start mb-2">
                     <i class="fas fa-check-circle me-2 fs-6 mt-1 align-self-start"></i>
                     1st ever Blockchain Technology enabled ledger that offers you immediate results on pre-vetted checks.
