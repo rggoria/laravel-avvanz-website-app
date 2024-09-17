@@ -27,7 +27,7 @@ Partnership Integration - Avvanz Global
 </section>
 
 <!-- Partners Section -->
-<div class="container my-5">
+<div class="container margin-vertical">
     <div class="text-center">
         <h1 class="text-dmb fw-bolder display-5">
             Discover Our Partners
