@@ -34,7 +34,7 @@ Why Avvanz Screen​ - Avvanz Global
                 <img 
                     src="{{ asset('images/screen/whyavvanz.webp') }}" 
                     alt="Why Avvanz" 
-                    width="450" 
+                    width="350" 
                     height="300"
                     alt="About Us Image 3" 
                     class="transition-up rounded-3"
