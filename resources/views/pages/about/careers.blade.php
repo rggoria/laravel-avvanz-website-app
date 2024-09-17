@@ -16,7 +16,7 @@ Join Avvanz - Avvanz Global
 <!-- Hero Section -->
 <div class="bg-image">
     <div class="container padding-vertical">
-        <div class="row text-white">
+        <div class="row hero-min-height-2 text-white">
             <div class="col-md-7 offset-auto">
                 <h1 class="fw-bolder display-5">
                     Avvanz Careers
