@@ -48,7 +48,7 @@ Avvanz - Background Checks & Screening
             <h1 class="fw-bolder display-5">
                 Screen
             </h1>
-            <p class="lead">
+            <p>
                 Background Checks, KYC/AML and Company Due Diligence
             </p>
             <a href="{{ route('screen-main') }}" class="btn hero-screen-button fw-bolder text-uppercase">
@@ -59,7 +59,7 @@ Avvanz - Background Checks & Screening
             <h1 class="fw-bolder display-5">
                 Develop
             </h1>
-            <p class="lead">
+            <p>
                 F2F/Virtual LIVE Training, Coaching and Customized elearning
             </p>
             <a href="{{ route('develop-main') }}" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
@@ -127,7 +127,7 @@ Avvanz - Background Checks & Screening
                 <h3 class="fw-bold text-co">
                     Searching for an automated compliant background screening solution?
                 </h3>
-                <p class="lead">
+                <p>
                     As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
                 </p>
                 <a href="{{ route('screen-main') }}" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
@@ -159,7 +159,7 @@ Avvanz - Background Checks & Screening
                     <h3 class="fw-bold">
                         Do you want to be effectively onboard and upskill your employees?
                     </h3>
-                    <p class="lead">
+                    <p>
                         Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
                     </p>
                     <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
@@ -175,7 +175,7 @@ Avvanz - Background Checks & Screening
         Discover Our Partners
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <p class="text-center mt-2 text-wrap text-justify lead">
+    <p class="text-center mt-2 text-wrap text-justify">
         Connect with our trusted service providers and integration partners to streamline your background screening process.
     </p>
     <div class="swiper mySwiper">
