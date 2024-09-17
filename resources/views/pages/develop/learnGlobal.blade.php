@@ -34,7 +34,8 @@ LearnGlobal - Avvanz Global
             <img
                 src="{{ asset('images/develop/LearnGlobal.webp')}}"
                 alt="LearnGlobal"
-                class="transition-up img-fluid h-50 w-50"
+                style="height: 350px; width: 350px"
+                class="transition-up img-fluid"
                 loading="lazy">
         </div>
         <h1 class="divider-center-25"></h1>
@@ -42,13 +43,14 @@ LearnGlobal - Avvanz Global
             An integrated platform for complete Learning and Development with a large library of on-demand, micro-learning accessible 24/7.
         </p>
     </div>
-    <div class="row g-3 py-5">
+    <div class="row g-3 padding-vertical">
         @foreach($learnglobalItems as $index => $item)
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $index }}">
                     <img
                         src="{{ asset('images/develop/' . $item['image']) }}"
                         class="card-img-top"
+                        style="height: 200px; width: auto;"
                         alt="{{ $item['title'] }}"
                         loading="lazy">
                     <div class="card-body d-flex flex-column">
