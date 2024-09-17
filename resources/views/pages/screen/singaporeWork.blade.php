@@ -27,10 +27,10 @@ MOM Verification - Avvanz Global
 </section>
 
 <!-- Singpaore Pass Section -->
-<section class="bg-mg">
-    <div class="container padding-vertical">
+<section class="bg-mg padding-vertical">
+    <div class="container">
         <div class="row g-3">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-7 d-flex align-items-center">
                 <div class="text-white">
                     <p>
                         From the 1st of September 2023, Ministry of Manpower (MOM) requires Employment Pass (EP) candidates (from any country) to pass a 2-stage eligibility framework:
@@ -46,15 +46,14 @@ MOM Verification - Avvanz Global
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <img 
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
+                <img
                     src="{{ asset('images/screen/singaporework.webp') }}"
                     alt="Singapore Work Image"
-                    class="img-fluid"
-                    style="width: 300px; height: 300px;"
+                    class="transition-up img-fluid rounded-3 w-auto h-auto"
                     loading="lazy">
             </div>
-        </div>            
+        </div>
     </div>
 </section>
 
@@ -114,14 +113,13 @@ MOM Verification - Avvanz Global
                 <iframe
                     src="https://www.youtube.com/embed/NoQk6ka-tCI?start=1"
                     title="YouTube video player"
-                    allowfullscreen
-                    loading="lazy">
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="mt-5 row">
                 <div class="col-12 d-flex justify-content-center">
                     <div class="col-8 text-center">
-                        <h4 class="text-dmb fw-bolder">
+                        <h4 class="text-dmb fw-bolder lead">
                             Do ensure you have the following ready when you order:
                         </h4>
                         <ul class="list-group text-start">
@@ -235,7 +233,7 @@ MOM Verification - Avvanz Global
                             width="150"
                             loading="lazy">
                         <br>
-                        <span class="text-marigold fw-bold">
+                        <span class="lead text-marigold fw-bold">
                             Checks Price and Turnaround Time (TAT) information
                         </span>
                     </th>
