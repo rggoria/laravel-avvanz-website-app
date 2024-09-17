@@ -17,7 +17,7 @@ Avvanz - Background Checks & Screening
 <!-- Hero Section -->
 <section class="bg-image">
     <div class="container padding-vertical">
-        <div class="row hero-min-height">
+        <div class="row hero-min-height-1">
             <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
                     <h1 class="fw-bolder display-5">

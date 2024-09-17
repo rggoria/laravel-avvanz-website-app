@@ -38,17 +38,17 @@
         .section-padding {
             padding: 3rem;
         }
-
         .text-white {
             color: white;
         }
-
         .text-center {
             text-align: center;
         }
-
-        .hero-min-height {
+        .hero-min-height-1 {
             min-height: 300px;
+        }
+        .hero-min-height-2 {
+            min-height: 100px;
         }
     </style>
     <!-- Custom CSS -->
