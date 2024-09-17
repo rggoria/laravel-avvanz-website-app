@@ -39,12 +39,13 @@ Partnership Integration - Avvanz Global
     </div>
     <div class="swiper mySwiper my-5">
         <div class="swiper-wrapper my-5">
-            @foreach ( $trustedPartnerItems as $item )
+            @foreach ( $trustedPartnerItems as $count => $item )
                 <div class="swiper-slide">
                     <img
                         src="{{ asset('images/screen/' . $item) }}"
-                        class="img-fluid"
-                        alt="Partner {{ $item }}"
+                        width="300"
+                        height="200"
+                        alt="Partner Image {{ $count }}"
                         loading="lazy">
                 </div>
             @endforeach
