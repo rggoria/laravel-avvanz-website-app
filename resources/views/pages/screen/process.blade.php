@@ -36,11 +36,13 @@ Process - Avvanz Global
         <p style="margin: 3rem">
             This whole process can be likened to a Candidate having to go through 2 Firewalls before gaining access to your company the SECURITY Firewall and the INTEGRITY Firewall.
         </p>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="text-center">
             <img 
                 src="{{ asset('images/screen/process.webp') }}" 
-                alt="Proccess" 
-                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                alt="Proccess"
+                width="300"
+                height="500"
+                class="transition-up rounded-3"
                 loading="lazy">
         </div>
     </div>
