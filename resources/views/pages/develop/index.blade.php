@@ -43,7 +43,8 @@ Develop - Avvanz Global
             <img
                 src="{{ asset('images/develop/develop1.webp')}}"
                 alt="Develop Image 1"
-                class="transition-up img-fluid h-50 w-50"
+                style="height: 450px; width:350px;"
+                class="transition-up img-fluid"
                 loading="lazy">
         </div>
         <p class="my-5 text-start">
@@ -56,7 +57,8 @@ Develop - Avvanz Global
             <img
                 src="{{ asset('images/develop/develop2.webp')}}"
                 alt="Develop Image 2"
-                class="transition-up img-fluid h-50 w-50"
+                style="height: 350px; width:350px;"
+                class="transition-up img-fluid"
                 loading="lazy">
         </div>
         <hr>
@@ -64,7 +66,8 @@ Develop - Avvanz Global
             <img
                 src="{{ asset('images/develop/develop3.webp')}}"
                 alt="Develop Image 3"
-                class="transition-up img-fluid h-50 w-50"
+                style="height: 200px; width:350px;"
+                class="transition-up img-fluid"
                 loading="lazy">
         </div>
     </div>
