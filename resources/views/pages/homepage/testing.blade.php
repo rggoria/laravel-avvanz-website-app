@@ -43,11 +43,18 @@
     <section class="bg-image">
         <div class="container padding-vertical">
             <div class="row text-white">
+                <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
+                    <img
+                        src="{{ asset('images/homepage/homepage1.webp') }}"
+                        alt="Placeholder Image"
+                        class="transition-up image-hero"
+                        loading="lazy">
+                </div>
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="text-white">
                         <h1 class="fw-bolder display-5">
                             We Screen & Strengthen your Human Assets
-                        </h1>            
+                        </h1>
                         <h1 class="divider-start-50"></h1>
                         <br>
                         <p>
@@ -56,14 +63,7 @@
                         <br>
                         <a href="{{ route('contact') }}" class="btn hero-button text-uppercase fw-bolder">Request a Demo</a>
                     </div>
-                </div>
-                <div class="col-md-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
-                    <img
-                        src="{{ asset('images/homepage/homepage1.webp') }}"
-                        alt="Placeholder Image"
-                        class="transition-up image-hero"
-                        loading="lazy">
-                </div>
+                </div>                
             </div>
         </div>
     </section>
