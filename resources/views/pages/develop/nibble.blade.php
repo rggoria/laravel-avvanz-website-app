@@ -42,8 +42,8 @@ Revision Nibble & Learn - Avvanz Global
                 Free Knowledge Nibbles Tailored To Your Needs
             </p>
         </div>
-        <div class="row bg-dark">
-            <div class="col-lg-8 col-md-8 h-100 p-0">
+        <div class="row bg-dark" style="max-height: 500px">
+            <div class="col-lg-8 col-md-8 p-0">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-podcast1">
                         <div class="ratio ratio-16x9 w-100">
