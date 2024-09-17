@@ -26,6 +26,7 @@
             background: url("../images/homepage/homepageBg.webp") no-repeat center;
             background-size: cover;
             position: relative;
+            min-height: 100px;
         }
         .padding-vertical {
             padding-top: 3rem;
