@@ -35,20 +35,6 @@
         .section-padding {
             padding: 3rem;
         }
-        /* Custom styles */
-        .hero-button {
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            padding: 10px 20px;
-            text-transform: uppercase;
-        }
-
-        .divider-start-50 {
-            border-top: 2px solid #ffffff;
-            width: 50%;
-            margin-top: 20px;
-        }
 
         .text-white {
             color: white;
@@ -58,7 +44,7 @@
             text-align: center;
         }
 
-        .min-height {
+        .hero-min-height {
             min-height: 300px; /* Adjust based on content */
         }
     </style>
@@ -68,8 +54,8 @@
     <!-- Hero Section #1 -->
     <section class="bg-image">
         <div class="container padding-vertical">
-            <div class="row align-items-center min-height">
-                <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+            <div class="row hero-min-height">
+                <div class="col-md-6 order-2 order-md-1">
                     <div class="text-white">
                         <h1 class="fw-bolder display-5">
                             We Screen & Strengthen your Human Assets
@@ -81,14 +67,13 @@
                         <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
-                    <!-- You can add an image or additional content here -->
+                <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
                     <img 
-                    src="{{ asset('images/homepage/homepage1.webp') }}"
-                    alt="Placeholder Image"
-                    class="img-fluid"
-                    style="width: 200px; height: 200px;"
-                    loading="lazy">
+                        src="{{ asset('images/homepage/homepage1.webp') }}"
+                        alt="Placeholder Image"
+                        class="img-fluid"
+                        style="width: 300px; height: 300px;"
+                        loading="lazy">
                 </div>
             </div>            
         </div>
