@@ -107,8 +107,116 @@ class ResourcesController extends Controller
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening-2/',
             ],
         ];
+        $webinarVideosItems = [
+            [
+                'title' => 'Achieving 60% Hiring ROI Through AI And Background Screening - Avvanz',
+                'code' => 'ZHSO3zmg--4',
+                'duration' => '59:58',
+            ],[
+                'title' => 'Quickiebinar Part 1: How Avvanz Weathered Covid-19',
+                'code' => 'D3TZyD3K4XA',
+                'duration' => '5:45',
+            ],[
+                'title' => 'Digital Transformation For The Maritime Industry – Demystifying The Process - Avvanz',
+                'code' => 'mXFEU_D4vf0',
+                'duration' => '57:13',
+            ],[
+                'title' => 'Panel Discussion: Talent Acquisition And Engagement Challenges Amidst The Pandemic - Avvanz',
+                'code' => 'mnvRWKK4IoQ',
+                'duration' => '1:04:54',
+            ],[
+                'title' => 'IHRP Tech Talk Series-Leveraging HR Tech To Create Best In Class Candidate Experience - Avvanz',
+                'code' => 'TkvNaY6oLI4',
+                'duration' => '1:25:58',
+            ],[
+                'title' => 'Webinar: Safeguarding And Child Protection Part 1',
+                'code' => 'mgAi8BGoeVs',
+                'duration' => '15:38',
+            ],[
+                'title' => 'Webinar: Know Who You Hire - Avvanz',
+                'code' => 'kkh5h7ATWw0',
+                'duration' => '13:38',
+            ],[
+                'title' => 'Webinar: Safeguarding And Child Protection Part 2 - Avvanz',
+                'code' => 'B6i7BiIYsj0',
+                'duration' => '20:49',
+            ],[
+                'title' => 'Webinar: Safeguarding And Child Protection Part 3 - Avvanz',
+                'code' => 'WXF5b8RZ7oI',
+                'duration' => '1:02:13',
+            ],[
+                'title' => 'Quickiebinar Episode 1: Leadership - with Zubin Zack',
+                'code' => 'RU09DnNEWlw',
+                'duration' => '14:57',
+            ],[
+                'title' => 'Quickiebinar Episode 2: Leadership - with Ariya Chittasy',
+                'code' => 'B3ejjezuYfg',
+                'duration' => '10:12',
+            ],[
+                'title' => 'Webinar Series: MOM Requirement',
+                'code' => 'kDHof_DqDXo',
+                'duration' => '22:24',
+            ],[
+                'title' => 'Avvanz HR Leader Series 2023: The 5 Stages of Creating a Strong Risk Culture with Francesca Dickson',
+                'code' => 'JeTyvirtjK4',
+                'duration' => '50:16',
+            ],[
+                'title' => 'Avvanz Webinar 2023: Fast and Effective Due Diligence on any Individual or Company',
+                'code' => '89IEb3oL-N4',
+                'duration' => '29:36',
+            ],[
+                'title' => 'Avvanz HR Leader Series 2023: Security of Critical Infrastructure',
+                'code' => '7lTwSfQEkQE',
+                'duration' => '50:54',
+            ],
+        ];
+        $eventVideosItems = [
+            [
+                'title' => 'AVVANZ TECHSTIVAL 2023 (PH Edition)',
+                'code' => 'NG_TPQDh6dE',
+                'duration' => '1:40',
+            ],[
+                'title' => 'Avvanz Charity Movement to Tahanan ng Pagmamahal',
+                'code' => 'MTc4MDUz',
+                'duration' => '1:40',
+            ],[
+                'title' => 'Avvanz\'s 7th Anniversary Dinner Party',
+                'code' => 'C43kglKA84Q',
+                'duration' => '1:43',
+            ],[
+                'title' => 'Mother\'s Day Tribute  - Avvanz',
+                'code' => 'WgfAXj2MC3Q',
+                'duration' => '0:54',
+            ],
+        ];
+        $companyVideosItems = [
+            [
+                'title' => 'MOM Video Guide',
+                'code' => 'NoQk6ka-tCI',
+                'duration' => '6:05',
+            ],[
+                'title' => 'AFP Check Demo Guide',
+                'code' => '5eJqLw6jRsk',
+                'duration' => '2:34',
+            ],[
+                'title' => 'Avvanz & IDPartner - Partnership Discussion',
+                'code' => 'OdZLuKhu3tg',
+                'duration' => '8:55',
+            ],[
+                'title' => 'Avvanz & OneID - Partnership Discussion',
+                'code' => 'Gvy9kq3MJ-k',
+                'duration' => '4:43',
+            ],[
+                'title' => 'How to Log-in and Use Avvanz CDDGlobal',
+                'code' => '3IsG7ctuZ1A',
+                'duration' => '2:10',
+            ],
+        ];
         return view("pages.resources.webinar", [
             "webinarItems" => $webinarItems,
+            "webinarVideosItems" => $webinarVideosItems,
+            "eventVideosItems" => $eventVideosItems,
+            "companyVideosItems" => $companyVideosItems,
         ]);
     }
 
@@ -120,32 +228,27 @@ class ResourcesController extends Controller
                 'image' => 'press1.webp',
                 'created_at' => 'June 21, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-tackles-employee-screening-challenges-affordable-compliant-and-comprehensive-background-checks-now-available-in-india/',
-            ],
-            [
+            ], [
                 'title' => 'Avvanz Pte ltd Expands its Global Reach with New Office Opening in Bengaluru, India',
                 'image' => 'press2.webp',
                 'created_at' => 'May 13, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-expands-global-reach/',
-            ],
-            [
+            ], [
                 'title' => 'More companies doing background checks for employment pass applicants',
                 'image' => 'press3.webp',
                 'created_at' => 'March 1, 2024',
                 'link'=> 'https://www.avvanz.com/more-companies-doing-background-checks-for-employment-pass-applicants/',
-            ],
-            [
+            ],[
                 'title' => 'Avvanz Announces Partnership With Dauntless Technology Solutions',
                 'image' => 'press4.webp',
                 'created_at' => 'February 29, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-announces-partnership-with-dauntless-technology-solutions/',
-            ],
-            [
+            ],[
                 'title' => 'CNA Explains: How does Singapore screen adults who work with kids?',
                 'image' => 'press5.webp',
                 'created_at' => 'January 30, 2024',
                 'link'=> 'https://www.avvanz.com/cna-explains-how-does-singapore-screen-adults-who-work-with-kids/',
-            ],
-            [
+            ],[
                 'title' => 'Golf club managers to meet over money laundering concerns amid S$1 billion probe',
                 'image' => 'press6.webp',
                 'created_at' => 'September 4, 2023',
