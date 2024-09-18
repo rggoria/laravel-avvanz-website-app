@@ -74,45 +74,44 @@ Global - Avvanz Global
     </h1>
     <h1 class="text-center divider-center-25"></h1>
     <div class="row g-5 my-5">
-        <div class="col-sm-12 col-md-12 col-lg-6 p-3 d-flex justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <div class="swiper awardSwiper">
+                <div class="swiper-wrapper my-5">              
+                    <div class="swiper-slide">
                         <img
                             src="{{ asset('images/homepage/certification1.webp') }}"
-                            class="image-horizontal-display"
+                            class="img-fluid"
+                            style="height: 200px; width:auto"
                             alt="Award 1"
                             loading="lazy">
                     </div>
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <img
                             src="{{ asset('images/homepage/certification2.webp') }}"
-                            class="image-horizontal-display"
+                            class="img-fluid"
+                            style="height: 200px; width:auto"
                             alt="Award 2"
                             loading="lazy">
                     </div>
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <img
                             src="{{ asset('images/homepage/certification3.webp') }}"
-                            class="image-horizontal-display"
+                            class="img-fluid"
+                            style="height: 200px; width:auto"
                             alt="Award 3"
                             loading="lazy">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>    
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
             <img
                 src="{{ asset('images/homepage/certification4.webp') }}"
-                class="image-horizontal-display"
+                class="img-fluid"
+                style="height: 200px; width:auto"
                 alt="Award 4"
                 loading="lazy">
         </div>
@@ -198,7 +197,7 @@ Global - Avvanz Global
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image text-center container-fluid py-5">
+<section class="bg-image-1 text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
