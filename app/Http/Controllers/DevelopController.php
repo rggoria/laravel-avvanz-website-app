@@ -110,6 +110,23 @@ class DevelopController extends Controller
 
     public function nibble()
     {
-        return view("pages.develop.nibble");
+        $nibbleItems = [
+            [
+                'title' => 'Digital Transformation Quick Starter Blueprint',
+                'code' => 'zlyAWt_UMAU',
+                'duration' => '32:29',
+            ], [
+                'title' => 'NLP Success Mindset',
+                'code' => '5aBki-Dqf40',
+                'duration' => '44:21',
+            ],[
+                'title' => 'Nomadic Mindset To Beat Stress',
+                'code' => '1XoW0l25gyE',
+                'duration' => '10:00:55',
+            ],
+        ];
+        return view("pages.develop.nibble", [
+            "nibbleItems"=> $nibbleItems,
+        ]);
     }
 }

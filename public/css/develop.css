@@ -22,24 +22,3 @@
     border: 3px solid white;
     background-color: var(--midnightGreen);
 }
-
-.link-sub-tab {
-    color: var(--darkMidnightBlue) !important;
-    font-weight: bold !important;
-    background-color: white !important;
-    border-radius: 0 !important;
-}
-
-.link-sub-tab:hover {
-    color: var(--darkMidnightBlue) !important;
-    font-weight: bold !important;
-    background-color: var(--periglacialBlue) !important;
-    border-radius: 0 !important;
-}
-
-.link-sub-tab.active {
-    color: var(--darkMidnightBlue) !important;
-    font-weight: bold !important;
-    background-color: var(--periglacialBlue) !important;
-    border-radius: 0 !important;
-}
