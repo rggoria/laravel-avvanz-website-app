@@ -15,12 +15,28 @@ Revision Nibble & Learn - Avvanz Global
         max-width: 100%;
         background: #000;
     }
+
+    .video-facade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.8);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
     .video-player iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        display: none; /* Initially hide the iframe */
     }
     .video-thumbnail {
         cursor: pointer;
@@ -82,15 +98,19 @@ Revision Nibble & Learn - Avvanz Global
         </div>
         <div class="row bg-dark">
             <div class="col-sm-12 col-md-12 col-lg-8 p-0">
-                <!-- Video Player -->
+                <!-- Video Player with Facade -->
                 <div class="video-player">
+                    <div id="videoFacade" class="video-facade" style="cursor: pointer;">
+                        <h5 class="text-center text-light">Click to Load Video</h5>
+                    </div>
                     <iframe 
                         id="videoIframe" 
                         src=""
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
-                        loading="lazy">
+                        loading="lazy" 
+                        style="display: none;">  <!-- Hide initially -->
                     </iframe>
                 </div>
             </div>
@@ -115,7 +135,7 @@ Revision Nibble & Learn - Avvanz Global
                     @endforeach
                 </ul>
             </div>
-        </div>    
+        </div>   
     </div>
 </section>
 
@@ -145,19 +165,28 @@ Revision Nibble & Learn - Avvanz Global
 
 @section('scripts')
 <script>
-    // Pre-load the first video on page load
-    document.addEventListener('DOMContentLoaded', () => {
+    const videoFacade = document.getElementById('videoFacade');
+    const videoIframe = document.getElementById('videoIframe');
+
+    // Load the first video on clicking the facade
+    videoFacade.addEventListener('click', () => {
         const firstVideoId = document.querySelector('.video-thumbnail').getAttribute('data-video-id');
-        document.getElementById('videoIframe').src = `https://www.youtube.com/embed/${firstVideoId}?autoplay=1`;
+        videoIframe.src = `https://www.youtube.com/embed/${firstVideoId}?autoplay=1`;
+        videoFacade.style.display = 'none';  // Hide facade
+        videoIframe.style.display = 'block';  // Show iframe
     });
 
-
+    // Add click event listeners to each thumbnail
     document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
         thumbnail.addEventListener('click', function() {
             document.querySelectorAll('.video-thumbnail').forEach(item => item.classList.remove('active-video'));
             this.classList.add('active-video');
             const videoId = this.getAttribute('data-video-id');
-            document.getElementById('videoIframe').src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+
+            // Load the video
+            videoIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            videoFacade.style.display = 'none';  // Hide facade
+            videoIframe.style.display = 'block';  // Show iframe
         });
     });
 </script>
