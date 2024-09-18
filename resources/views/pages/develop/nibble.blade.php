@@ -86,7 +86,7 @@ Revision Nibble & Learn - Avvanz Global
                 <div class="video-player">
                     <iframe 
                         id="videoIframe" 
-                        src="https://www.youtube.com/embed/{{ $nibbleItems[0]['code'] }}" 
+                        src=""
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
@@ -145,6 +145,13 @@ Revision Nibble & Learn - Avvanz Global
 
 @section('scripts')
 <script>
+    // Pre-load the first video on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const firstVideoId = document.querySelector('.video-thumbnail').getAttribute('data-video-id');
+        document.getElementById('videoIframe').src = `https://www.youtube.com/embed/${firstVideoId}?autoplay=1`;
+    });
+
+
     document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
         thumbnail.addEventListener('click', function() {
             document.querySelectorAll('.video-thumbnail').forEach(item => item.classList.remove('active-video'));
