@@ -4,6 +4,10 @@
 Process - Avvanz Global
 @endsection
 
+@section('css')
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+@endsection()
+
 @section('content')
 
 {{-- Navbar Section --}}
