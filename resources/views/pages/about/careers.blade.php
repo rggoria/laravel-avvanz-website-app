@@ -7,6 +7,7 @@ Join Avvanz - Avvanz Global
 @section('content')
 
 @section('css')
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endsection()
 
