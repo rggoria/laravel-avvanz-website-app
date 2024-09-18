@@ -428,12 +428,6 @@
     background-color: #f0f0f0;
 }
 
-/* Swiper Section */
-.swiper {
-    width: auto;
-    height: auto;
-}
-
 .table-fixed {
     table-layout: fixed;
     width: 100%;

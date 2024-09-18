@@ -3,13 +3,12 @@
     color: white;
     background-color: var(--marigold) !important;
     border-radius: 25px;
-    transition: color 1s, border-radius 1s, background-color 1s;
 }
 
 .hero-button:hover {
     color: white;
+    background-color: var(--pictonBlue) !important;
     border-radius: 25px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .hero-screen-button {
