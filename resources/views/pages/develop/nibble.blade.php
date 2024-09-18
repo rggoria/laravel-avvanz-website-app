@@ -101,7 +101,7 @@ Revision Nibble & Learn - Avvanz Global
                 <!-- Video Player with Facade -->
                 <div class="video-player">
                     <div id="videoFacade" class="video-facade" style="cursor: pointer;">
-                        <h5 class="text-center text-light">Click to Load Video</h5>
+                        <img id="thumbnail" src="" alt="Video Thumbnail" style="width: 100%; height: auto;" />
                     </div>
                     <iframe 
                         id="videoIframe" 
@@ -167,21 +167,28 @@ Revision Nibble & Learn - Avvanz Global
 <script>
     const videoFacade = document.getElementById('videoFacade');
     const videoIframe = document.getElementById('videoIframe');
+    const thumbnail = document.getElementById('thumbnail');
 
-    // Load the first video on clicking the facade
+    // Load the first video thumbnail on page load
+    const firstVideoId = document.querySelector('.video-thumbnail').getAttribute('data-video-id');
+    thumbnail.src = `https://img.youtube.com/vi/${firstVideoId}/hqdefault.jpg`;
+
+    // Load the video on clicking the thumbnail
     videoFacade.addEventListener('click', () => {
-        const firstVideoId = document.querySelector('.video-thumbnail').getAttribute('data-video-id');
         videoIframe.src = `https://www.youtube.com/embed/${firstVideoId}?autoplay=1`;
         videoFacade.style.display = 'none';  // Hide facade
         videoIframe.style.display = 'block';  // Show iframe
     });
 
     // Add click event listeners to each thumbnail
-    document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
+    document.querySelectorAll('.video-thumbnail').forEach(thumbnailItem => {
+        thumbnailItem.addEventListener('click', function() {
             document.querySelectorAll('.video-thumbnail').forEach(item => item.classList.remove('active-video'));
             this.classList.add('active-video');
             const videoId = this.getAttribute('data-video-id');
+
+            // Update the thumbnail for the selected video
+            thumbnail.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
             // Load the video
             videoIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
