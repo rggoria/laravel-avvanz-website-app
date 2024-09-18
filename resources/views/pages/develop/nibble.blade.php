@@ -5,6 +5,7 @@ Revision Nibble & Learn - Avvanz Global
 @endsection
 
 @section('css')
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/develop.css') }}">
 <style>
     .video-player {
