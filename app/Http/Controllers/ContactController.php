@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactEmail;
 use Illuminate\Http\Request;
+use App\Mail\SampleEmail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -59,6 +62,46 @@ class ContactController extends Controller
 
     public function send(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        $request->validate([
+            'name' => 'required',
+            'cname' => 'required',
+            'email' => 'required|email',
+            'contact' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+        ], $this->messages());
+
+        Mail::to($request->email)->send(new ContactEmail($request->all()));
+
+        return back()->with('success', 'Email sent successfully!');
+
+    }
+
+    public function messages() {
+        return [
+            'cname' => 'The company name field is required.',
+            'email' => 'The company email field is required.',
+            'contact' => 'The company contact no. field is required.',
+        ];
+    }
+
+    public function showForm()
+    {
+        return view('contact');
+    }
+
+    public function sendEmail(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'message' => 'required|string',
+        ]);
+
+        // Send the email
+        Mail::to($request->email)->send(new SampleEmail($request->all()));
+
+        return back()->with('success', 'Email sent successfully!');
     }
 }

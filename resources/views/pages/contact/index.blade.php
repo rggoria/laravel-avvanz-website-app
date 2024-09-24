@@ -64,33 +64,67 @@ Contact Us - Avvanz Global
         <p class="text-dark my-3">
             Feel free to send us a message. We would like to hear it from you!
         </p>
-        <div class="row justify-content-center text-start">
-            <div class="col-md-8">
+        <div class="row text-start">
+            <div class="col-md-6 offset-3">
                 <div class="p-4">
-                    <form>
+                    @if (session('success'))
+                        <p class="text-success">{{ session('success') }}</p>
+                    @endif
+                    <form action="{{ route('contact-send') }}" method="POST">
+                        @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label text-dmb fw-bolder">Name <span class="sup text-danger">*</span></label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <input name="name" type="text" class="form-control @error('name') is-invalid @enderror" id="name" aria-describedby="nameInput" placeholder="Enter your name">
+                            @error('name')
+                                <div id="nameInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="cname" class="form-label text-dmb fw-bolder">Company Name <span class="sup text-danger">*</span></label>
-                            <input type="text" class="form-control" id="cname" placeholder="Enter your name" required>
+                            <input name="cname" type="text" class="form-control @error('cname') is-invalid @enderror" id="cname" aria-describedby="cnameInput" placeholder="Enter your company name">
+                            @error('cname')
+                                <div id="cnameInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label text-dmb fw-bolder">Company Email <span class="sup text-danger">*</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" id="email" aria-describedby="emailInput" placeholder="Enter your company email">
+                            @error('email')
+                                <div id="emailInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="contact" class="form-label text-dmb fw-bolder">Company Contact No. <span class="sup text-danger">*</span></label>
-                            <input type="text" class="form-control" id="contact" placeholder="Enter your contact no." required>
+                            <input name="contact" type="text" class="form-control @error('contact') is-invalid @enderror" id="contact" aria-describedby="contactInput" placeholder="Enter your contact no.">
+                            @error('contact')
+                                <div id="contactInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label text-dmb fw-bolder">Subject <span class="sup text-danger">*</span></label>
-                            <input type="text" class="form-control" id="subject" placeholder="Enter your subject" required>
+                            <input name="subject" type="text" class="form-control @error('subject') is-invalid @enderror" id="subject" aria-describedby="subjectInput" placeholder="Enter your suject">
+                            @error('subject')
+                                <div id="subjectInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label text-dmb fw-bolder">Message <span class="sup text-danger">*</span></label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Enter you message...."></textarea>
+                            <textarea name="message" class="form-control @error('message') is-invalid @enderror" id="message" rows="3" aria-describedby="messageInput" placeholder="Enter you message"></textarea>
+                            @error('message')
+                                <div id="messageInput" class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                         </div>
 
                         <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>

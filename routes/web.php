@@ -61,7 +61,9 @@ Route::get('/press-and-media', [ResourcesController::class, 'press'])->name('res
 
 // Contact Controller
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact-us/send', [ContactController::class, 'send'])->name('contact-send');
+Route::post('/contact-us', [ContactController::class, 'send'])->name('contact-send');
+Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
+Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
 
 // Privacy Controller
 Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('privacy-main');
