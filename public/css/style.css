@@ -151,7 +151,7 @@
 .btn-marigold-transition:hover {
     color: white;
     transform: scale(0.95);
-    background-color: var(-marigold);
+    background-color: var(--marigold);
 }
 
 .border-dmb {

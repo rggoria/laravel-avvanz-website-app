@@ -74,8 +74,8 @@ class ContactController extends Controller
 
         Mail::to($request->email)->send(new ContactEmail($request->all()));
 
-        return back()->with('success', 'Email sent successfully!');
-
+        // return back()->with('success', 'Email sent successfully!');
+        return response()->json(['success' => 'Email sent successfully!']);
     }
 
     public function messages() {
