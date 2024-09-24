@@ -72,7 +72,9 @@ class ContactController extends Controller
             'message' => 'required',
         ], $this->messages());
 
-        Mail::to($request->email)->send(new ContactEmail($request->all()));
+        Mail::to($request->email)
+            ->cc(env('ADMIN_EMAIL'))
+            ->send(new ContactEmail($request->all()));
 
         // return back()->with('success', 'Email sent successfully!');
         return response()->json(['success' => 'Email sent successfully!']);
