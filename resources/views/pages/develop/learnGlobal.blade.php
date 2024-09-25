@@ -35,57 +35,42 @@ LearnGlobal - Avvanz Global
 <section class="container margin-vertical">
     <div class="text-center">
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img
-                src="{{ asset('images/develop/LearnGlobal.webp')}}"
-                alt="LearnGlobal"
-                style="height: 350px; width: auto"
-                class="transition-up img-fluid"
-                loading="lazy">
+            <img src="{{ asset('images/develop/LearnGlobal.webp') }}" alt="LearnGlobal" style="height: 350px; width: auto" class="transition-up img-fluid" loading="lazy">
         </div>
         <h1 class="divider-center-25"></h1>
         <p class="mt-5">
             An integrated platform for complete Learning and Development with a large library of on-demand, micro-learning accessible 24/7.
         </p>
     </div>
-    <div class="row g-3 padding-vertical">
-        @foreach($learnglobalItems as $index => $item)
-            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
-                <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $index }}">
-                    <img
-                        src="{{ asset('images/develop/' . $item['image']) }}"
-                        class="card-img-top"
-                        style="height: 200px; width: auto;"
-                        alt="{{ $item['title'] }}"
-                        loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-text fw-bolder text-co">
-                            {{ $item['title'] }}
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="modal-{{ $index }}" tabindex="-1" aria-labelledby="modalLabel-{{ $index }}" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title w-bolder text-co" id="modalLabel-{{ $index }}">{{ $item['title'] }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img
-                                src="{{ asset('images/develop/' . $item['image']) }}"
-                                class="img-fluid"
-                                alt="{{ $item['title'] }}"
-                                loading="lazy">
+    <div class="row g-3 padding-vertical" id="learnglobal-items">
+        @for($i = 0; $i < 6; $i++)
+            @if(isset($learnglobalItems[$i]))
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $i }}">
+                        <img src="{{ asset('images/develop/' . $learnglobalItems[$i]['image']) }}" class="card-img-top" style="height: 200px; width: auto;" alt="{{ $learnglobalItems[$i]['title'] }}" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-text fw-bolder text-co">{{ $learnglobalItems[$i]['title'] }}</h5>
                         </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+                <div class="modal fade" id="modal-{{ $i }}" tabindex="-1" aria-labelledby="modalLabel-{{ $i }}" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title w-bolder text-co" id="modalLabel-{{ $i }}">{{ $learnglobalItems[$i]['title'] }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{{ asset('images/develop/' . $learnglobalItems[$i]['image']) }}" class="img-fluid" alt="{{ $learnglobalItems[$i]['title'] }}" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        @endfor
     </div>
     <div class="text-center mt-4">
-        <button class="btn btn-orange-border">Load More</button>
+        <button class="btn btn-orange-border" id="load-more" data-offset="6">Load More</button>
     </div>
 </section>
 
@@ -179,6 +164,62 @@ LearnGlobal - Avvanz Global
 
 @section('scripts')
 <script>
+    $(document).ready(function() {
+        const totalCount = {{ $totalCount }}; // Get total count from the server
+
+        $('#load-more').on('click', function() {
+            let offset = $(this).data('offset');
+
+            $.ajax({
+                url: '/learnglobal/load-more',
+                method: 'GET',
+                data: { offset: offset },
+                success: function(data) {
+                    if (data.length) {
+                        data.forEach((item, index) => {
+                            $('#learnglobal-items').append(`
+                                <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                                    <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-${offset + index}">
+                                        <img src="/images/develop/${item.image}" class="card-img-top" style="height: 200px; width: auto;" alt="${item.title}" loading="lazy">
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-text fw-bolder text-co">${item.title}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+
+                            $('#learnglobal-items').append(`
+                                <div class="modal fade" id="modal-${offset + index}" tabindex="-1" aria-labelledby="modalLabel-${offset + index}" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title w-bolder text-co" id="modalLabel-${offset + index}">${item.title}</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="/images/develop/${item.image}" class="img-fluid" alt="${item.title}" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                        });
+
+                        // Update offset for the next load
+                        $('#load-more').data('offset', offset + data.length);
+
+                        // Check if we've reached the total count
+                        if (offset + data.length >= totalCount) {
+                            $('#load-more').hide(); // Hide button if no more items
+                        }
+                    } else {
+                        $('#load-more').hide(); // Hide button if no more items
+                    }
+                }
+            });
+        });
+    });
+
      $(document).ready(function() {
         $('#contact-form').on('submit', function(e) {
             e.preventDefault();

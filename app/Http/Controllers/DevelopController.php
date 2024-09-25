@@ -103,11 +103,136 @@ class DevelopController extends Controller
             ], [
                 'title' => 'Apply Sports in Business',
                 'image' => 'learnglobal9.webp'
+            ], [
+                'title' => 'Profiency in Email Writing',
+                'image' => 'learnglobal10.webp'
+            ], [
+                'title' => 'Leading Hybrid Teams',
+                'image' => 'learnglobal11.webp'
+            ], [
+                'title' => 'Holding Effective Meetings',
+                'image' => 'learnglobal12.webp'
+            ], [
+                'title' => 'Engage and Retain Talents',
+                'image' => 'learnglobal13.webp'
+            ], [
+                'title' => 'Conflict Resolution',
+                'image' => 'learnglobal14.webp'
+            ], [
+                'title' => 'Emotional Intelligence at the Workplace',
+                'image' => 'learnglobal15.webp'
+            ], [
+                'title' => 'Corporate Governance',
+                'image' => 'learnglobal16.webp'
+            ], [
+                'title' => 'Developing Your Personal Image',
+                'image' => 'learnglobal17.webp'
+            ], [
+                'title' => 'Customer-Focused Client Services',
+                'image' => 'learnglobal18.webp'
+            ], [
+                'title' => 'Management 101',
+                'image' => 'learnglobal19.webp'
+            ], [
+                'title' => 'Developing Your Adaptability Quotient',
+                'image' => 'learnglobal20.webp'
+            ], [
+                'title' => 'Mental Health and Work-Life Integration',
+                'image' => 'learnglobal21.webp'
+            ], [
+                'title' => 'Coaching and Mentoring Excellence',
+                'image' => 'learnglobal22.webp'
+            ], [
+                'title' => 'Present with Impact',
+                'image' => 'learnglobal23.webp'
             ],
         ];
+        $totalCount = count($learnglobalItems);
         return view("pages.develop.learnGlobal", [
             'learnglobalItems' => $learnglobalItems,
+            'totalCount' => $totalCount,
         ]);
+    }
+
+    public function loadMoreItems(Request $request)
+    {
+        $offset = $request->input('offset', 0);
+        $limit = 6;
+
+        $learnglobalItems = [
+            [
+                'title' => 'Impactful Communications',
+                'image' => 'learnglobal1.webp'
+            ], [
+                'title' => 'Multiply Your Time',
+                'image' => 'learnglobal2.webp'
+            ], [
+                'title' => 'Manage Your Stakeholders',
+                'image' => 'learnglobal3.webp'
+            ], [
+                'title' => 'Advanced Negotiation Skills',
+                'image' => 'learnglobal4.webp'
+            ], [
+                'title' => 'Multi-dimensional Thinking',
+                'image' => 'learnglobal5.webp'
+            ], [
+                'title' => 'Industry 4.0',
+                'image' => 'learnglobal6.webp'
+            ], [
+                'title' => 'Problem Solving Techniques',
+                'image' => 'learnglobal7.webp'
+            ], [
+                'title' => 'Onboarding New Employees for Success',
+                'image' => 'learnglobal8.webp'
+            ], [
+                'title' => 'Apply Sports in Business',
+                'image' => 'learnglobal9.webp'
+            ], [
+                'title' => 'Profiency in Email Writing',
+                'image' => 'learnglobal10.webp'
+            ], [
+                'title' => 'Leading Hybrid Teams',
+                'image' => 'learnglobal11.webp'
+            ], [
+                'title' => 'Holding Effective Meetings',
+                'image' => 'learnglobal12.webp'
+            ], [
+                'title' => 'Engage and Retain Talents',
+                'image' => 'learnglobal13.webp'
+            ], [
+                'title' => 'Conflict Resolution',
+                'image' => 'learnglobal14.webp'
+            ], [
+                'title' => 'Emotional Intelligence at the Workplace',
+                'image' => 'learnglobal15.webp'
+            ], [
+                'title' => 'Corporate Governance',
+                'image' => 'learnglobal16.webp'
+            ], [
+                'title' => 'Developing Your Personal Image',
+                'image' => 'learnglobal17.webp'
+            ], [
+                'title' => 'Customer-Focused Client Services',
+                'image' => 'learnglobal18.webp'
+            ], [
+                'title' => 'Management 101',
+                'image' => 'learnglobal19.webp'
+            ], [
+                'title' => 'Developing Your Adaptability Quotient',
+                'image' => 'learnglobal20.webp'
+            ], [
+                'title' => 'Mental Health and Work-Life Integration',
+                'image' => 'learnglobal21.webp'
+            ], [
+                'title' => 'Coaching and Mentoring Excellence',
+                'image' => 'learnglobal22.webp'
+            ], [
+                'title' => 'Present with Impact',
+                'image' => 'learnglobal23.webp'
+            ],
+        ];
+        $itemsToLoad = array_slice($learnglobalItems, $offset, $limit);
+        return response()->json($itemsToLoad);
     }
 
     public function send(Request $request)

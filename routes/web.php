@@ -52,6 +52,7 @@ Route::get('/partnership-integration', [ScreenController::class, 'partnership'])
 Route::get('/develop', [DevelopController::class, 'index'])->name('develop-main');
 Route::get('/star-trainers', [DevelopController::class, 'star'])->name('develop-1');
 Route::get('/learnglobal', [DevelopController::class, 'learnGlobal'])->name('develop-2');
+Route::get('/learnglobal/load-more', [DevelopController::class, 'loadMoreItems']);
 Route::post('/learnglobal', [DevelopController::class, 'send'])->name('develop-2-send');
 Route::get('/revision-nibble-learn', [DevelopController::class, 'nibble'])->name('develop-3');
 
