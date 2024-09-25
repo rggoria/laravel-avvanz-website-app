@@ -80,8 +80,22 @@ class ResourcesController extends Controller
                 'link' => 'https://www.avvanz.com/q3-newsletter/',
             ],
         ];
+
+        usort($newsletterItems, function ($a, $b) {
+            return strtotime(datetime: $b['created_at']) - strtotime($a['created_at']);
+        });
+
+        $collection = collect($newsletterItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $newsletterItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+
         return view("pages.resources.newsletter", [
-            "newsletterItems" => $newsletterItems,
+            "newsletterItems" => $newsletterItemsPaginated,
         ]);
     }
 
@@ -96,8 +110,22 @@ class ResourcesController extends Controller
                 'link' => 'https://www.avvanz.com/industry-report/',
             ],
         ];
+
+        usort($industryItems, function ($a, $b) {
+            return strtotime(datetime: $b['created_at']) - strtotime($a['created_at']);
+        });
+
+        $collection = collect($industryItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $industryItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+
         return view("pages.resources.industry", [
-            "industryItems" => $industryItems,
+            "industryItems" => $industryItemsPaginated,
         ]);
     }
 
@@ -377,39 +405,173 @@ class ResourcesController extends Controller
     {
         $pressItems = [
             [
-                'title' => 'Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Comprehensive Background Checks Now Available In India',
+                'title' => 'Drug Testing and Health Screening',
                 'image' => 'press1.webp',
-                'created_at' => 'June 21, 2024',
-                'link'=> 'https://www.avvanz.com/avvanz-tackles-employee-screening-challenges-affordable-compliant-and-comprehensive-background-checks-now-available-in-india/',
+                'created_at' => 'February 20, 2020',
+                'link'=> 'https://www.avvanz.com/drug-testing-and-health-screening/',
+            ], [
+                'title' => 'Avvanz partners Epic Concepts',
+                'image' => 'press2.webp',
+                'created_at' => 'May 1, 2020',
+                'link'=> 'https://www.avvanz.com/avvanz-partners-epic-concepts/',
+            ], [
+                'title' => 'View From The Top: How to build a stronger business magnet',
+                'image' => 'press3.webp',
+                'created_at' => 'June 29, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-how-to-build-a-stronger-business-magnet/',
+            ], [
+                'title' => 'View From The Top: No room for complacency',
+                'image' => 'press4.webp',
+                'created_at' => 'July 6, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-no-room-for-complacency/',
+            ], [
+                'title' => 'View From The Top: Disparity between the stock markets and the economy',
+                'image' => 'press5.webp',
+                'created_at' => 'July 13, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-disparity-between-the-stock-markets-and-the-economy/',
+            ], [
+                'title' => 'View From The Top: Emerging stronger from the storm',
+                'image' => 'press6.webp',
+                'created_at' => 'July 27, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-emerging-stronger-from-the-storm/',
+            ], [
+                'title' => 'Avvanz Becomes FinTech Certified',
+                'image' => 'press7.webp',
+                'created_at' => 'July 28, 2020',
+                'link'=> 'https://www.avvanz.com/avvanz-becomes-fintech-certified/',
+            ], [
+                'title' => 'View From The Top: Rediscovering Singapore',
+                'image' => 'press8.webp',
+                'created_at' => 'August 3, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-rediscovering-singapore/',
+            ], [
+                'title' => 'More Detailed Background Checks Needed Before Hiring',
+                'image' => 'press9.webp',
+                'created_at' => 'August 5, 2020',
+                'link'=> 'https://www.avvanz.com/more-detailed-background-checks-needed-before-hiring/',
+            ], [
+                'title' => 'View From The Top: Responsible Retrenchment',
+                'image' => 'press10.webp',
+                'created_at' => 'August 17, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-responsible-retrenchment/',
+            ], [
+                'title' => 'View From The Top: Incentive Or Disincentive',
+                'image' => 'press11.webp',
+                'created_at' => 'September 7, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-incentive-or-disincentive/',
+            ], [
+                'title' => 'View From The Top: A Special Exception',
+                'image' => 'press12.webp',
+                'created_at' => 'September 21, 2020',
+                'link'=> 'https://www.avvanz.com/view-from-the-top-a-special-exception/',
+            ], [
+                'title' => 'Avvanz Partners ACI To Enter The Caribbean Region',
+                'image' => 'press13.webp',
+                'created_at' => 'October 28, 2020',
+                'link'=> 'https://www.avvanz.com/avvanz-partners-aci-to-enter-the-caribbean-region/',
+            ], [
+                'title' => 'Gearing Up For The Unexpected: What Has Changed For Your Business This Year?',
+                'image' => 'press14.webp',
+                'created_at' => 'November 30, 2020',
+                'link'=> 'https://www.avvanz.com/gearing-up-for-the-unexpected-what-has-changed-for-your-business-this-year/',
+            ], [
+                'title' => 'Moving Up The Value Chain',
+                'image' => 'press15.webp',
+                'created_at' => 'February 1, 2021',
+                'link'=> 'https://www.avvanz.com/moving-up-the-value-chain/',
+            ], [
+                'title' => 'Gear Up For A Digital Future',
+                'image' => 'press16.webp',
+                'created_at' => 'February 8, 2021',
+                'link'=> 'https://www.avvanz.com/gear-up-for-a-digital-future/',
+            ], [
+                'title' => 'Why Firms Fall Prey To Dishonest Job Seekers',
+                'image' => 'press17.webp',
+                'created_at' => 'March 1, 2021',
+                'link'=> 'https://www.avvanz.com/why-firms-fall-prey-to-dishonest-job-seekers/',
+            ], [
+                'title' => 'Gender Parity More Than Workplace Flexibility Required',
+                'image' => 'press18.webp',
+                'created_at' => 'March 8, 2021',
+                'link'=> 'https://www.avvanz.com/gender-parity-more-than-workplace-flexibility-required/',
+            ], [
+                'title' => 'Avvanz Has Been Chosen And Appointed By The Ministry Of Manpower (MOM) Work Pass Division As An Approved Global Background Screening Company',
+                'image' => 'press19.webp',
+                'created_at' => 'March 9, 2021',
+                'link'=> 'https://www.avvanz.com/avvanz-has-been-chosen-and-appointed-by-the-ministry-of-manpower-mom-work-pass-division-as-an-approved-global-background-screening-company/',
+            ], [
+                'title' => 'Avvanz Partners ACCA Singapore',
+                'image' => 'press20.webp',
+                'created_at' => 'March 22, 2021',
+                'link'=> 'https://www.avvanz.com/avvanz-partners-acca-singapore/',
+            ], [
+                'title' => 'Ensuring That Shareholders Are Heard',
+                'image' => 'press21.webp',
+                'created_at' => 'March 29, 2021',
+                'link'=> 'https://www.avvanz.com/ensuring-that-shareholders-are-heard/',
+            ], [
+                'title' => 'Continuous monitoring in Healthcare Employees can save more lives',
+                'image' => 'press22.webp',
+                'created_at' => 'June 14, 2021',
+                'link'=> 'https://www.avvanz.com/continuous-monitoring-in-healthcare-employees-can-save-more-lives/',
+            ], [
+                'title' => 'Affinidi and Avvanz Sign MOU to Streamline Employment Background Checks in Singapore',
+                'image' => 'press23.webp',
+                'created_at' => 'August 5, 2022',
+                'link'=> 'https://www.avvanz.com/affinidi-and-avvanz-sign-mou-to-streamline-employment-background-checks-in-singapore/',
+            ], [
+                'title' => 'Applicants for a new employment pass must have academic qualifications from September',
+                'image' => 'press24.webp',
+                'created_at' => 'May 2, 2023',
+                'link'=> 'https://www.avvanz.com/applicants-for-a-new-employment-pass-must-have-academic-qualifications-from-september/',
+            ], [
+                'title' => 'Golf club managers to meet over money laundering concerns amid S$1 billion probe',
+                'image' => 'press25.webp',
+                'created_at' => 'September 4, 2023',
+                'link'=> 'https://www.avvanz.com/golf-club-managers-to-meet-over-money-laundering-concerns-amid-s1-billion-probe/',
+            ], [
+                'title' => 'CNA Explains: How does Singapore screen adults who work with kids?',
+                'image' => 'press26.webp',
+                'created_at' => 'January 30, 2024',
+                'link'=> 'https://www.avvanz.com/cna-explains-how-does-singapore-screen-adults-who-work-with-kids/',
+            ], [
+                'title' => 'Avvanz Announces Partnership With Dauntless Technology Solutions',
+                'image' => 'press27.webp',
+                'created_at' => 'February 29, 2024',
+                'link'=> 'https://www.avvanz.com/avvanz-announces-partnership-with-dauntless-technology-solutions/',
+            ], [
+                'title' => 'More companies doing background checks for employment pass applicants',
+                'image' => 'press28.webp',
+                'created_at' => 'March 1, 2024',
+                'link'=> 'https://www.avvanz.com/more-companies-doing-background-checks-for-employment-pass-applicants/',
             ], [
                 'title' => 'Avvanz Pte ltd Expands its Global Reach with New Office Opening in Bengaluru, India',
-                'image' => 'press2.webp',
+                'image' => 'press29.webp',
                 'created_at' => 'May 13, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-expands-global-reach/',
             ], [
-                'title' => 'More companies doing background checks for employment pass applicants',
-                'image' => 'press3.webp',
-                'created_at' => 'March 1, 2024',
-                'link'=> 'https://www.avvanz.com/more-companies-doing-background-checks-for-employment-pass-applicants/',
-            ],[
-                'title' => 'Avvanz Announces Partnership With Dauntless Technology Solutions',
-                'image' => 'press4.webp',
-                'created_at' => 'February 29, 2024',
-                'link'=> 'https://www.avvanz.com/avvanz-announces-partnership-with-dauntless-technology-solutions/',
-            ],[
-                'title' => 'CNA Explains: How does Singapore screen adults who work with kids?',
-                'image' => 'press5.webp',
-                'created_at' => 'January 30, 2024',
-                'link'=> 'https://www.avvanz.com/cna-explains-how-does-singapore-screen-adults-who-work-with-kids/',
-            ],[
-                'title' => 'Golf club managers to meet over money laundering concerns amid S$1 billion probe',
-                'image' => 'press6.webp',
-                'created_at' => 'September 4, 2023',
-                'link'=> 'https://www.avvanz.com/golf-club-managers-to-meet-over-money-laundering-concerns-amid-s1-billion-probe/',
-            ],
+                'title' => 'Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Comprehensive Background Checks Now Available In India',
+                'image' => 'press30.webp',
+                'created_at' => 'June 21, 2024',
+                'link'=> 'https://www.avvanz.com/avvanz-tackles-employee-screening-challenges-affordable-compliant-and-comprehensive-background-checks-now-available-in-india/',
+            ]
         ];
+
+        usort($pressItems, function ($a, $b) {
+            return strtotime($b['created_at']) - strtotime($a['created_at']);
+        });
+
+        $collection = collect($pressItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $pressItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+
         return view("pages.resources.press", [
-            "pressItems" => $pressItems,
+            "pressItems" => $pressItemsPaginated,
         ]);
     }
 }

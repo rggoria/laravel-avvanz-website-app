@@ -58,17 +58,7 @@ Newsletter - Avvanz Global
             </div>
         @endforeach
     </div>
-    <nav>
-        <ul class="pagination pagination-lg justify-content-center">
-            <li class="page-item active" aria-current="page">
-                <span class="page-link">1</span>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-        </ul>
-    </nav>
+    {{ $newsletterItems->links('partials.paginate') }}
 </section>
 
 <!-- Floating Button -->
