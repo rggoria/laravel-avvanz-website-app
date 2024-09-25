@@ -41,42 +41,49 @@ Join Avvanz - Avvanz Global
         To join us, please fill in the required information so that we connect with you soonest possible.
     </p>
 
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row">
+        <div class="col-6 offset-3">
             <div class="p-4">
-                <form>
+                <div id="response-message"></div>
+                <form id="inquiry-form" enctype="multipart/form-data">
+                    @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label text-dmb fw-bolder">Name <span class="sup text-danger">*</span></label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <div id="name-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label text-dmb fw-bolder">Email <span class="sup text-danger">*</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div id="email-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="contact" class="form-label text-dmb fw-bolder">Contact No. <span class="sup text-danger">*</span></label>
-                        <input type="contact" class="form-control" id="contact" placeholder="Enter your contact no." required>
+                        <input name="contact" type="text" class="form-control" id="contact" placeholder="Enter your contact no.">
+                        <div id="contact-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="country" class="form-label text-dmb fw-bolder">Country <span class="sup text-danger">*</span></label>
-                        <input type="country" class="form-control" id="country" placeholder="Enter your country" required>
+                        <input name="country" type="text" class="form-control" id="country" placeholder="Enter your country">
+                        <div id="country-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="experience" class="form-label text-dmb fw-bolder">Work Experience <span class="sup text-danger">*</span></label>
-                        <select class="form-select form-select mb-3" name="experience" id="experience">
-                            <option selected>Select Experience</option>
+                        <select name="experience" class="form-select" id="experience">
+                            <option selected disabled>Select Experience</option>
                             <option value="0">Fresher</option>
-                            <option value="1">1+Year</option>
-                            <option value="2">2+Year</option>
-                            <option value="3">3+Year</option>
-                            <option value="4">4+Year</option>
+                            <option value="1">1+ Year</option>
+                            <option value="2">2+ Years</option>
+                            <option value="3">3+ Years</option>
+                            <option value="4">4+ Years</option>
                             <option value="5">5 and Above</option>
                         </select>
+                        <div id="experience-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="position" class="form-label text-dmb fw-bolder">Work Position <span class="sup text-danger">*</span></label>
-                        <select class="form-select form-select mb-3" name="experience" id="experience">
-                            <option selected>Select Position</option>
+                        <select name="position" class="form-select" id="position">
+                            <option selected disabled>Select Position</option>
                             <option value="BS">Business Consultant</option>
                             <option value="SEC">Software Engineer Consultant</option>
                             <option value="ME">Marketing Executive</option>
@@ -87,13 +94,16 @@ Join Avvanz - Avvanz Global
                             <option value="CO">Compliance Officer</option>
                             <option value="CSE">Client Services Executive</option>
                         </select>
+                        <div id="position-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label text-dmb fw-bolder">Upload your CV <span class="sup text-danger">*</span></label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input name="cv" class="form-control" type="file" id="formFile">
+                        <div id="cv-error" class="invalid-feedback"></div>
                     </div>
-
-                    <button type="submit" class="btn btn-marigold-transition w-100">submit</button>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -997,5 +1007,38 @@ Join Avvanz - Avvanz Global
 
 <!-- Footer Section -->
 @include('layouts.footer')
+
+@section('scripts')
+<script>
+    $(document).ready(function() {
+        $('#inquiry-form').on('submit', function(e) {
+            e.preventDefault();
+            $('.invalid-feedback').text('');
+            $('#response-message').empty();
+            $.ajax({
+                type: 'POST',
+                url: '{{ route('about-3-send') }}',
+                data: new FormData(this),
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('#response-message').html('<p class="text-success">' + response.success + '</p>');
+                    $('#inquiry-form')[0].reset(); // Reset form
+                },
+                error: function(xhr) {
+                    if (xhr.status === 422) {
+                        // Validation errors
+                        $.each(xhr.responseJSON.errors, function(key, value) {
+                            $('#' + key + '-error').text(value[0]).addClass('d-block');
+                        });
+                    } else {
+                        $('#response-message').html('<p class="text-danger">An error occurred. Please try again.</p>');
+                    }
+                }
+            });
+        });
+    });
+</script>
+@endsection
 
 @endsection

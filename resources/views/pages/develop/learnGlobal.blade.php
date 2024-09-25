@@ -38,7 +38,7 @@ LearnGlobal - Avvanz Global
             <img
                 src="{{ asset('images/develop/LearnGlobal.webp')}}"
                 alt="LearnGlobal"
-                style="height: 350px; width: 350px"
+                style="height: 350px; width: auto"
                 class="transition-up img-fluid"
                 loading="lazy">
         </div>
@@ -143,21 +143,28 @@ LearnGlobal - Avvanz Global
 <!-- Contact Us Section -->
 <section class="container my-5">
     <hr>
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-8">
-            <div class="card text-center p-4">
-                <h4>Contact Us</h4>
-                <form>
+    <div class="row mt-5">
+        <div class="col-6 offset-3">
+            <div class="card p-4 shadow">
+                <h4 class="text-center">Contact Us</h4>
+                <div id="response-message"></div>
+                <form id="contact-form">
+                    @csrf
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+                        <div id="name-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                        <div id="email-error" class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+                        <textarea name="message" class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                        <div id="message-error" class="invalid-feedback"></div>
                     </div>
-                    <button type="submit" class="btn btn-marigold-transition w-100">Send</button>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -171,7 +178,54 @@ LearnGlobal - Avvanz Global
 @include('layouts.footer')
 
 @section('scripts')
+<script>
+     $(document).ready(function() {
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+            $('.invalid-feedback').text('');
+            $('#response-message').empty();
+            $.ajax({
+                type: 'POST',
+                url: '{{ route('develop-2-send') }}',
+                data: $(this).serialize(),
+                success: function(response) {
+                    $('#response-message').html('<p class="text-success">' + response.success + '</p>');
+                    $('#contact-form')[0].reset(); // Reset form
+                },
+                error: function(xhr) {
+                    if (xhr.status === 422) {
+                        // Validation errors
+                        $.each(xhr.responseJSON.errors, function(key, value) {
+                            $('#' + key + '-error').text(value[0]).addClass('d-block');
+                        });
+                    } else {
+                        $('#response-message').html('<p class="text-danger">An error occurred. Please try again.</p>');
+                    }
+                }
+            });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var iframes = document.querySelectorAll('.lazy-iframe');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var iframe = entry.target;
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.classList.remove('lazy-iframe');
+                    observer.unobserve(iframe);
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        iframes.forEach(function(iframe) {
+            observer.observe(iframe);
+        });
+    });
+</script>
 <script src="{{ asset('js/learnGlobalSwiper.js') }}"></script>
 @endsection
+
 
 @endsection

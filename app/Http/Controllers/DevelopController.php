@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\LearnGlobalEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class DevelopController extends Controller
 {
@@ -106,6 +108,21 @@ class DevelopController extends Controller
         return view("pages.develop.learnGlobal", [
             'learnglobalItems' => $learnglobalItems,
         ]);
+    }
+
+    public function send(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+        ]);
+
+        Mail::to($request->email)
+            ->cc(env('ADMIN_EMAIL'))
+            ->send(new LearnGlobalEmail($request->all()));
+
+        return response()->json(['success' => 'Email sent successfully!']);
     }
 
     public function nibble()

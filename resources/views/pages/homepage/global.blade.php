@@ -34,7 +34,7 @@ Global - Avvanz Global
                 <img 
                     src="{{ asset('images/homepage/homepage1.webp') }}"
                     alt="Placeholder Image"
-                    class="img-fluid"
+                    class="img-fluid transition-up"
                     style="width: 300px; height: 300px;"
                     loading="lazy">
             </div>

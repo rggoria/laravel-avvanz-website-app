@@ -1,8 +1,23 @@
 @extends('layouts.master')
 
+@php
+    $currentRouteName = Route::currentRouteName();
+@endphp
+
 @section('title')
-Contact Us - Avvanz Global
+Request Form 
+@if($currentRouteName === 'request-ibc')
+    (IBC)
+@elseif($currentRouteName === 'request-wrbc')
+    (WRBC)
+@elseif($currentRouteName === 'request-cdd')
+    (CDD)
+@elseif($currentRouteName === 'request-lte')
+    (LTE)
+@endif
+- Avvanz Global
 @endsection
+
 
 @section('content')
 
@@ -27,6 +42,81 @@ Contact Us - Avvanz Global
 </section>
 
 <!-- Request Demo Section -->
+<div class="text-center my-5">
+    <h1 class="text-dmb fw-bolder display-5">
+        Wanna ask for a help?
+    </h1>
+    <h1 class="divider-center-25"></h1>
+    <p class="text-dark my-3">
+        please fill the required information so that we connect with you soonest possible.
+    </p>
+    <div class="row text-start">
+        <div class="col-md-6 offset-3">
+            <div class="p-4">
+                <div id="response-message"></div>
+                <form id="contact-form">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-dmb fw-bolder">Name <span class="sup text-danger">*</span></label>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <div id="name-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="cname" class="form-label text-dmb fw-bolder">Company Name <span class="sup text-danger">*</span></label>
+                        <input name="cname" type="text" class="form-control" id="cname" placeholder="Enter your company name">
+                        <div id="cname-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-dmb fw-bolder">Company Email <span class="sup text-danger">*</span></label>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Enter your company email">
+                        <div id="email-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label text-dmb fw-bolder">Company Contact No. <span class="sup text-danger">*</span></label>
+                        <input name="contact" type="text" class="form-control" id="contact" placeholder="Enter your contact no.">
+                        <div id="contact-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="designation" class="form-label text-dmb fw-bolder">Designation <span class="sup text-danger">*</span></label>
+                        <input name="designation" type="text" class="form-control" id="designation" placeholder="Enter your designation">
+                        <div id="designation-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="country" class="form-label text-dmb fw-bolder">Country <span class="sup text-danger">*</span></label>
+                        <input name="country" type="text" class="form-control" id="country" placeholder="Enter your country">
+                        <div id="country-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <label class="form-label text-dmb fw-bolder">How did you hear about Avvanz? <span class="sup text-danger">*</span></label>
+                        <div class="form-check">
+                            <input name="about[]" type="checkbox" class="form-check-input" id="about-client" value="From Avvanz’s other Clients">
+                            <label class="form-check-label" for="about-client">From Avvanz’s other Clients</label>
+                        </div>
+                        <div class="form-check">
+                            <input name="about[]" type="checkbox" class="form-check-input" id="about-google" value="Through Google Search">
+                            <label class="form-check-label" for="about-google">Through Google Search</label>
+                        </div>
+                        <div class="form-check">
+                            <input name="about[]" type="checkbox" class="form-check-input" id="about-others" value="Others">
+                            <label class="form-check-label" for="about-others">Others</label>
+                        </div>
+                        <div id="about-error" class="invalid-feedback"></div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="container margin-vertical text-white">
     <div class="text-center">
         <h1 class="text-dmb fw-bolder display-5">
@@ -62,58 +152,6 @@ Contact Us - Avvanz Global
                     LIVE Training and eLearning
                 </h4>
             </a>
-        </div>
-    </div>
-    <div class="text-center my-5">
-        <h1 class="text-dmb fw-bolder display-5">
-            General Inquiry
-        </h1>
-        <h1 class="divider-center-25"></h1>
-        <p class="text-dark my-3">
-            Feel free to send us a message. We would like to hear it from you!
-        </p>
-        <div class="row text-start">
-            <div class="col-md-6 offset-3">
-                <div class="p-4">
-                    <div id="response-message"></div>
-                    <form id="contact-form">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-dmb fw-bolder">Name <span class="sup text-danger">*</span></label>
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Enter your name">
-                            <div id="name-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cname" class="form-label text-dmb fw-bolder">Company Name <span class="sup text-danger">*</span></label>
-                            <input name="cname" type="text" class="form-control" id="cname" placeholder="Enter your company name">
-                            <div id="cname-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-dmb fw-bolder">Company Email <span class="sup text-danger">*</span></label>
-                            <input name="email" type="email" class="form-control" id="email" placeholder="Enter your company email">
-                            <div id="email-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contact" class="form-label text-dmb fw-bolder">Company Contact No. <span class="sup text-danger">*</span></label>
-                            <input name="contact" type="text" class="form-control" id="contact" placeholder="Enter your contact no.">
-                            <div id="contact-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label text-dmb fw-bolder">Subject <span class="sup text-danger">*</span></label>
-                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Enter your subject">
-                            <div id="subject-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label text-dmb fw-bolder">Message <span class="sup text-danger">*</span></label>
-                            <textarea name="message" class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                            <div id="message-error" class="invalid-feedback"></div>
-                        </div>
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-marigold-transition w-100">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -192,7 +230,7 @@ Contact Us - Avvanz Global
             $('#response-message').empty();
             $.ajax({
                 type: 'POST',
-                url: '{{ route('contact-send') }}',
+                url: '{{ route('request-send') }}',
                 data: $(this).serialize(),
                 success: function(response) {
                     $('#response-message').html('<p class="text-success">' + response.success + '</p>');

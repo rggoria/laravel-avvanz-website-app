@@ -54,15 +54,13 @@
         <div style="text-align: center">
             <img src="https://www.avvanz.com/wp-content/uploads/2021/07/avvanz.webp" alt="Logo" class="logo">
         </div>
-        <h1>Request Inquiry Form Submission</h1>
+        <h1>Avvanz Careers Form Submission</h1>
         <p><strong>Name:</strong> {{ $data['name'] }}</p>
-        <p><strong>Company Name:</strong> {{ $data['cname'] }}</p>
-        <p><strong>Company Email:</strong> {{ $data['email'] }}</p>
-        <p><strong>Company Contact No:</strong> {{ $data['contact'] }}</p>
-        <p><strong>Designation:</strong> {{ $data['designation'] }}</p>
+        <p><strong>Email:</strong> {{ $data['email'] }}</p>
+        <p><strong>Contact No.:</strong> {{ $data['contact'] }}</p>
         <p><strong>Country:</strong> {{ $data['country'] }}</p>
-        <p><strong>How did you hear about Avvanz?:</strong></p>
-        <p>{{ $data['about'] }}</p>
+        <p><strong>Work Experience:</strong>  {{ $data['experience'] }}</p>
+        <p><strong>Work Position:</strong>  {{ $data['position'] }}</p>
         <br>
         <div style="padding-top: 5px;">
             <p>Please do not reply to this email as it is automatically generated.</p>

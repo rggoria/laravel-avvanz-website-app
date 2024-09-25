@@ -5,7 +5,7 @@ namespace App\Mail;
 use Illuminate\Mail\Mailable;
 
 
-class ContactEmail extends Mailable
+class LearnGlobalEmail extends Mailable
 {
     public $data;
 
@@ -16,8 +16,8 @@ class ContactEmail extends Mailable
 
     public function build()
     {
-        return $this->subject($this->data['subject'])
-                    ->view('emails.contact')
+        return $this->subject("General Inquiry Form Submission")
+                    ->view('emails.learnGlobal')
                     ->with('data', $this->data);
     }
 }
