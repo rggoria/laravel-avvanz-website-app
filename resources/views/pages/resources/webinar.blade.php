@@ -114,17 +114,7 @@ Webinars & Videos - Avvanz Global
         </div>
         @endforeach
     </div>
-    <nav>
-        <ul class="pagination pagination-lg justify-content-center">
-            <li class="page-item active" aria-current="page">
-                <span class="page-link">1</span>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-        </ul>
-    </nav>
+    {{ $webinarItems->links('partials.paginate') }}
     <div class="text-center py-5">
         <h1 class="text-dmb fw-bolder display-5">
             Videos
