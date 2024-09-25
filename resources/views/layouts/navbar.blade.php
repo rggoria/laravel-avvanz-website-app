@@ -140,17 +140,22 @@
                             <li>
                                 <hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-2' ? 'active' : '' }}" href="{{ route('resources-2') }}">Industry Reports</a>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-2' ? 'active' : '' }}" href="{{ route('resources-2') }}">Newsletter</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-3' ? 'active' : '' }}" href="{{ route('resources-3') }}">Webinar & Video</a>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-3' ? 'active' : '' }}" href="{{ route('resources-2') }}">Industry Reports</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-4' ? 'active' : '' }}" href="{{ route('resources-4') }}">Press and Media</a>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-4' ? 'active' : '' }}" href="{{ route('resources-3') }}">Webinar & Video</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-5' ? 'active' : '' }}" href="{{ route('resources-4') }}">Press and Media</a>
                             </li>
                         </ul>
                     </li>

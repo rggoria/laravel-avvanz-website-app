@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
+
 
 class ResourcesController extends Controller
 {
-    public function blog()
+    public function blog(Request $request)
     {
         $blogItems = [
             [
@@ -14,40 +16,72 @@ class ResourcesController extends Controller
                 'image' => 'blog1.webp',
                 'created_at' => 'September 4, 2024',
                 'link' => 'https://www.avvanz.com/choosing-the-best-corporate-training-companies/',
-            ],
-            [
+            ], [
                 'title' => 'Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers',
                 'image' => 'blog2.webp',
                 'created_at' => 'May 14, 2024',
                 'link' => 'https://www.avvanz.com/unlocking-opportunities-how-enhanced-dbs-checks-open-doors-for-job-seekers/',
-            ],
-            [
+            ], [
                 'title' => 'Demystifying the DBS Check Application: Your Path to Employment',
                 'image' => 'blog3.webp',
                 'created_at' => 'May 10, 2024',
                 'link' => 'https://www.avvanz.com/demystifying-the-dbs-check-application-your-path-to-employment/',
-            ],
-            [
+            ], [
                 'title' => 'The Essential Background Check: Unveiling the Basics of DBS Checks',
                 'image' => 'blog4.webp',
                 'created_at' => 'May 7, 2024',
                 'link' => 'https://www.avvanz.com/the-essential-background-check-unveiling-the-basics-of-dbs-checks/',
-            ],
-            [
+            ], [
                 'title' => 'The Key to Confidence: Following a Proven Financial Due Diligence Checklist',
                 'image' => 'blog5.webp',
                 'created_at' => 'May 2, 2024',
                 'link' => 'https://www.avvanz.com/the-key-to-confidence-following-a-proven-financial-due-diligence-checklist/',
-            ],
-            [
+            ], [
                 'title' => 'Navigating Success: Your Guide to Corporate Training Programs in Singapore',
                 'image' => 'blog6.webp',
                 'created_at' => 'April 30, 2024',
                 'link' => 'https://www.avvanz.com/navigating-success-your-guide-to-corporate-training-programs-in-singapore/',
             ],
         ];
+
+        $perPage = 3;
+        $currentPage = $request->get('page', 1);
+        $offset = ($currentPage - 1) * $perPage;
+
+        $currentItems = array_slice($blogItems, $offset, $perPage);
+
+        $blogItemsPaginated = new LengthAwarePaginator(
+            $currentItems,
+            count($blogItems),
+            $perPage,
+            $currentPage,
+            ['path' => LengthAwarePaginator::resolveCurrentPath()]
+        );
+
+        if ($request->ajax()) {
+            return view('partials.blog_items', [
+                'blogItems' => $blogItemsPaginated,
+            ]);
+        }
+
         return view("pages.resources.blog", [
-            "blogItems" => $blogItems,
+            "blogItems" => $blogItemsPaginated,
+        ]);
+    }
+
+    public function newsletter()
+    {
+        $newsletterItems = [
+            [
+                'title' => 'Q3 Newsletter',
+                'description' => 'Welcome to our Q3 edition of Avvanz’s newsletter! We are thrilled to share with you the latest developments and insights in background screening, human resource solutions and workforce optimization.',
+                'image' => 'newsletter1.webp',
+                'created_at' => 'September 17, 2024',
+                'link' => 'https://www.avvanz.com/q3-newsletter/',
+            ],
+        ];
+        return view("pages.resources.newsletter", [
+            "newsletterItems" => $newsletterItems,
         ]);
     }
 
