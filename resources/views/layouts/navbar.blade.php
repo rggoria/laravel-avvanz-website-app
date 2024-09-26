@@ -67,7 +67,7 @@
                             Screen
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
-                            <li class="dropdown-submenu dropend nav-submenu-display">
+                            <li class="dropdown-submenu-right dropend nav-submenu-display">
                                 <a class="dropdown-item dropdown-toggle navigation-item fw-bolder {{ $currentRouteName == 'screen-1' ? 'active' : '' }}" href="{{ route('screen-1') }}">
                                     Background Screening
                                 </a>
@@ -162,46 +162,40 @@
                     <li class="nav-item nav-main-display">
                         <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </li>
-                    <li class="nav-item nav-main-display">
-                        <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'global' ? 'active' : '' }}" href="{{ route('global') }}">Global</a>
-                    </li>
-                    {{-- <li class="nav-item dropdown nav-main-display">
+                    <li class="nav-item dropdown nav-main-display">
                         <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Global
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
-                            <div class="btn-group dropend">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APC</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Singapore</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Australia</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Philippines</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <li><hr class="dropdown-divider"></li>
-                            <div class="btn-group dropend">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">Americas</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">USA</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Latin America</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <li><hr class="dropdown-divider"></li>
-                            <div class="btn-group dropend">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">EMEA</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">Middle East</a></li>
-                                        <li><a class="dropdown-item navigation-item fw-bolder" href="#">United Kingdom</a></li>
-                                    </ul>
-                                </li>
-                            </div>
+                            <li class="dropdown-submenu-left dropend nav-submenu-display">
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APC</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-singapore' ? 'active' : '' }}" href="{{ route('global-singapore') }}">Singapore</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-australia' ? 'active' : '' }}" href="{{ route('global-australia') }}">Australia</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-ph' ? 'active' : '' }}" href="{{ route('global-ph') }}">Philippines</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-submenu-left dropend nav-submenu-display">
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">Americas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-usa' ? 'active' : '' }}" href="{{ route('global-usa') }}">USA</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-latin-america' ? 'active' : '' }}" href="{{ route('global-latin-america') }}">Latin America</a></li>
+                                </ul>
+                            </li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-submenu-left dropend nav-submenu-display">
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">EMEA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-uae' ? 'active' : '' }}" href="{{ route('global-uae') }}">Middle East</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-uk' ? 'active' : '' }}" href="{{ route('global-uk') }}">United Kingdom</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li> --}}
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,7 +1,27 @@
 @extends('layouts.master')
 
+@php
+    $currentRouteName = Route::currentRouteName();
+@endphp
+
 @section('title')
-Global - Avvanz Global
+Landing Page 
+@if($currentRouteName === 'global-singapore')
+    (singapore)
+@elseif($currentRouteName === 'global-australia')
+    (australia)
+@elseif($currentRouteName === 'global-ph')
+    (ph)
+@elseif($currentRouteName === 'global-usa')
+    (usa)
+@elseif($currentRouteName === 'global-latin-america')
+    (latin america)
+@elseif($currentRouteName === 'global-uae')
+    (uae)
+@elseif($currentRouteName === 'global-uk')
+    (uk)
+@endif
+- Avvanz Global
 @endsection
 
 @section('css')

@@ -4,7 +4,6 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DevelopController;
 use App\Http\Controllers\HomepageController;
-use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ResourcesController;
 use App\Http\Controllers\ScreenController;
@@ -27,6 +26,13 @@ Route::get('/cookie-policy', [HomepageController::class, 'cookie'])->name('cooki
 Route::get('/ethics-anti-bribery-and-corruption', [HomepageController::class, 'ethics'])->name('ethics');
 Route::get('/general-information-security-policy', [HomepageController::class, 'general'])->name('general');
 Route::get('/global', [HomepageController::class, 'global'])->name('global');
+Route::get('/singapore', [HomepageController::class, 'global'])->name('global-singapore');
+Route::get('/australia', [HomepageController::class, 'global'])->name('global-australia');
+Route::get('/ph', [HomepageController::class, 'global'])->name('global-ph');
+Route::get('/usa', [HomepageController::class, 'global'])->name('global-usa');
+Route::get('/latin-america', [HomepageController::class, 'global'])->name('global-latin-america');
+Route::get('/uae', [HomepageController::class, 'global'])->name('global-uae');
+Route::get('/uk', [HomepageController::class, 'global'])->name('global-uk');
 
 // About Us Controller
 Route::get('/about-us', [AboutController::class, 'index'])->name('about-main');
