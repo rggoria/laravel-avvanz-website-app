@@ -11,9 +11,6 @@ KYC AML Compliance - Avvanz Global
 @section('content')
 
 <!-- Hero Section -->
-@include('layouts.navbar')
-
-<!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
@@ -127,11 +124,5 @@ KYC AML Compliance - Avvanz Global
         </div>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @endsection

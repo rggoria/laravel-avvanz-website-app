@@ -11,9 +11,6 @@ Environmental, Social and Governance
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endsection()
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Environmental Section -->
 <div class="bg-image-2">
     <div class="container padding-vertical">
@@ -71,11 +68,5 @@ Environmental, Social and Governance
     </div>
     {{ $environmentalItems->links('partials.paginate') }}
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @endsection

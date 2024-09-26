@@ -11,9 +11,6 @@ Ethics, Anti-bribery and Corruption - Avvanz Global
 
 @section('content')
 
-<!-- Navbar Section #1 -->
-@include('layouts.navbar')
-
 <!-- Hero Section #1 -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -334,11 +331,5 @@ Ethics, Anti-bribery and Corruption - Avvanz Global
         </div>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @endsection

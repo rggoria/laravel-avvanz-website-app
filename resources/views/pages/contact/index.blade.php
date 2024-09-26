@@ -6,9 +6,6 @@ Contact Us - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -176,12 +173,6 @@ Contact Us - Avvanz Global
         @endforeach
     </div>    
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @section('scripts')
 <script>

@@ -57,7 +57,16 @@
     @yield('css')
 </head>
 <body>
+    <!-- Navbar -->
+    @include('partials.navbar')
     @yield('content')
+
+    <!-- Floating Button -->
+    @include('partials.floating')
+
+    <!-- Footer Section -->
+    @include('partials.footer')
+
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- jQuery CDN -->

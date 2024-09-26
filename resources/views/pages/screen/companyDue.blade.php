@@ -10,9 +10,6 @@ Company Due Diligence - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -172,11 +169,5 @@ Company Due Diligence - Avvanz Global
         </div>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @endsection

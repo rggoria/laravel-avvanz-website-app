@@ -10,9 +10,6 @@ Partnership Integration - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -84,12 +81,6 @@ Partnership Integration - Avvanz Global
         @endforeach
     </div>
 </div>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @section('scripts')
     <script src="{{ asset('js/swiper.js') }}"></script>

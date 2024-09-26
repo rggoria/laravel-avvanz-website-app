@@ -6,9 +6,6 @@ Blog - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -30,12 +27,6 @@ Blog - Avvanz Global
 <section class="container margin-vertical" id="blog-section">
     @include('partials.blog_items', ['blogItems' => $blogItems])
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @section('scripts')
 <script>

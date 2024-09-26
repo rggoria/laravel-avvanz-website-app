@@ -10,9 +10,6 @@ Background Checks Singapore - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -238,12 +235,6 @@ Background Checks Singapore - Avvanz Global
         </div>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @section('scripts')
     <script src="{{ asset('js/backgroundCheckSwiper.js') }}"></script>

@@ -11,9 +11,6 @@ Avvanz - Background Checks & Screening
 
 @section('content')
 
-<!-- Navbar Section #1 -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
@@ -340,12 +337,6 @@ Avvanz - Background Checks & Screening
         </div>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @section('scripts')
     <script src="{{ asset('js/homepageSwiper.js') }}"></script>

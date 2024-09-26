@@ -11,9 +11,6 @@ Develop - Avvanz Global
 
 @section('content')
 
-<!--  Navbar Section -->
-@include('layouts.navbar')
-
 <!-- Hero Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
@@ -192,11 +189,5 @@ Develop - Avvanz Global
         <a href="{{ route('contact') }}" class="btn btn-marigold-transition">Contact Us</a>
     </div>
 </section>
-
-<!-- Floating Button -->
-@include('layouts.floating')
-
-<!-- Footer Section -->
-@include('layouts.footer')
 
 @endsection
