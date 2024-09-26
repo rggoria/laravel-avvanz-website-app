@@ -77,14 +77,16 @@ class AboutController extends Controller
             'position' => 'required|string',
             'cv' => 'required|file|mimes:pdf,doc,docx',
         ]);
+        
+        $experienceValue = (int) $request->experience;
 
-        $experience = match ($request->experience) {
+        $experience = match ($experienceValue) {
             0 => 'Fresher',
             1 => '1+ Year',
-            2 => '2+ Year',
-            3 => '3+ Year',
-            4 => '4+ Year',
-            default => '5 and above',
+            2 => '2+ Years',
+            3 => '3+ Years',
+            4 => '4+ Years',
+            default => '5 and Above',
         };
 
         $position = match ($request->position) {
