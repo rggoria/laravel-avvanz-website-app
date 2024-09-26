@@ -25,7 +25,7 @@
 }
 
 .bg-marigold {
-    background-color: var(--marigold);
+    background-color: var(--marigold) !important;
 }
 
 .bg-mg {

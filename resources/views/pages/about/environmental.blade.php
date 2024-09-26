@@ -26,14 +26,16 @@ Environmental, Social and Governance
                 <p>
                     Make a difference
                 </p>
-                <div class="input-group mt-5">
-                    <input type="text" class="form-control border-simple-left" placeholder="Search...">
-                    <div class="input-group-append">
-                        <button class="btn border-simple-right bg-marigold px-5" type="button">
-                            <i class="fas fa-search text-white"></i>
-                        </button>
+                <form action="https://www.avvanz.com/" method="get">
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control border-simple-left" name="s" placeholder="Search..." required>
+                        <div class="input-group-append">
+                            <button class="btn border-simple-right bg-marigold px-5" type="submit">
+                                <i class="fas fa-search text-white"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -41,27 +43,33 @@ Environmental, Social and Governance
 
 <section class="container margin-vertical">
     <div class="row g-3">
+        @foreach($environmentalItems as $item)
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a href="https://www.avvanz.com/avvanz-charity-movement-to-tahanan-ng-pagmamahal/" class="text-decoration-none">
+            <a href="{{ $item['link'] }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
                     <img
-                        src="{{ asset('images/about/environment1.webp') }}" 
-                        class="card-img-top" 
-                        style="height: 200px; width:auto"
-                        alt="Environment Image 1"
-                        loading='lazy'>
+                        src="{{ asset('images/about/' . $item['image']) }}"
+                        class="card-img-top"
+                        alt="{{ $item['title'] }}"
+                        style="height: 200px; width: auto;"
+                        loading="lazy">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">
-                            Executive of the Year - HR Technology
+                            {{ $item['title'] }}
                         </h5>
-                        <p class="card-text text-muted">
-                            May 2, 2023
-                        </p>                  
+                        <p class="card-text fw-bolder text-marigold">
+                            Read More »
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent text-muted">
+                        {{ $item['created_at'] }}
                     </div>
                 </div>
             </a>
         </div>
+        @endforeach
     </div>
+    {{ $environmentalItems->links('partials.paginate') }}
 </section>
 
 <!-- Floating Button -->

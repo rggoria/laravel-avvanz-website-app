@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\CareersEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class AboutController extends Controller
 {
@@ -32,7 +33,31 @@ class AboutController extends Controller
 
     public function environmental()
     {
-        return view('pages.about.environmental');
+        $environmentalItems = [
+            [
+                'title' => 'Avvanz Charity Movement to Tahanan ng Pagmamahal',
+                'image' => 'environment1.webp',
+                'created_at' => 'May 2, 2023',
+                'link'=> 'https://www.avvanz.com/avvanz-charity-movement-to-tahanan-ng-pagmamahal/',
+            ], 
+        ];
+
+        usort($environmentalItems, function ($a, $b) {
+            return strtotime($b['created_at']) - strtotime($a['created_at']);
+        });
+
+        $collection = collect($environmentalItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $environmentalItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+
+        return view("pages.about.environmental", [
+            "environmentalItems" => $environmentalItemsPaginated,
+        ]);
     }
 
     public function careers()
