@@ -185,16 +185,13 @@ class ScreenController extends Controller
             [
                 'title' => 'Mitigating risks',
                 'description' => 'Conducting CDD can help companies identify potential risks associated with a particular business opportunity, such as legal, financial, or reputational risks. This information can help companies make informed decisions about whether to pursue the opportunity and how to mitigate any identified risks.'
-            ],
-            [
+            ], [
                 'title' => 'Protecting investments',
                 'description' => 'CDD can help companies ensure that they are making a sound investment by verifying the accuracy of the information provided by the target company, assessing the target company’s financial health and stability, and evaluating the target company’s management team and overall business strategy.'
-            ],
-            [
+            ], [
                 'title' => 'Meeting regulatory requirements',
                 'description' => 'In some cases, companies may be required by law to conduct due diligence on potential business partners, vendors, or suppliers to ensure compliance with regulatory requirements.'
-            ],
-            [
+            ], [
                 'title' => 'Maintaining reputation',
                 'description' => 'Conducting CDD can help companies protect their reputation by identifying any potential issues with the target company’s ethical practices, environmental impact, or other factors that could reflect poorly on the company.'
             ],
@@ -203,16 +200,13 @@ class ScreenController extends Controller
             [
                 'title' => 'Define the scope',
                 'description' => 'The first step in conducting CDD is to define the scope of the investigation. This includes identifying the areas of the target company’s operations that require examination, such as financial performance, legal standing, regulatory compliance, and reputation.'
-            ],
-            [
+            ], [
                 'title' => 'Collect information',
                 'description' => 'Avvanz can use a variety of sources to collect information about the target company, such as public records, financial reports, regulatory filings, news articles, and industry reports. We may also conduct interviews with key stakeholders, including executives, employees, customers, and suppliers.'
-            ],
-            [
+            ], [
                 'title' => 'Analyze the information',
                 'description' => 'Once the information is collected, Avvanz can analyze the data to identify any potential risks or issues associated with the target company. They may use a variety of tools and techniques to conduct their analysis, such as financial modeling, risk assessment, and benchmarking.'
-            ],
-            [
+            ], [
                 'title' => 'Prepare a report',
                 'description' => 'The results of the investigation are then compiled into a report, which may include an executive summary, detailed findings, and recommendations for action. The report is typically presented to the client, who can use the information to make informed decisions about the potential business transaction.'
             ],
@@ -242,13 +236,12 @@ class ScreenController extends Controller
                 'image' => 'achievement1.webp',
                 'created_at' => 'June 8, 2023',
                 'link' => 'https://www.avvanz.com/oneid-and-avvanz-partnership-revolutionizing-digital-identity-verification-for-enhanced-security/',
-            ],
-            [
+            ], [
                 'title' => 'Integrating Background Screening with your HRMS/ATS',
                 'image' => 'achievement2.webp',
                 'created_at' => 'May 2, 2023',
                 'link' => 'https://www.avvanz.com/integrating-background-screening-with-your-hrms-ats/',
-            ],[
+            ], [
                 'title' => 'Affinidi and Avvanz Sign MOU to Streamline Employment Background Checks in Singapore',
                 'image' => 'achievement3.webp',
                 'created_at' => 'August 5, 2022',
@@ -259,5 +252,17 @@ class ScreenController extends Controller
             'trustedPartnerItems'=> $trustedPartnerItems,
             'partnerAchievementItems'=> $partnerAchievementItems,
         ]);
+    }
+
+    public function partnershipItem($title){
+        if ($title === 'oneid-and-avvanz-partnership-revolutionizing-digital-identity-verification-for-enhanced-security') {
+            return view('partials.partnership_integration_1');
+        } elseif ($title === 'integrating-background-screening-with-your-hrmsats') {
+            return view('partials.partnership_integration_2');
+        } elseif ($title === 'affinidi-and-avvanz-sign-mou-to-streamline-employment-background-checks-in-singapore') {
+            return view('partials.partnership_integration_3');
+        } else {
+            return back();
+        }
     }
 }

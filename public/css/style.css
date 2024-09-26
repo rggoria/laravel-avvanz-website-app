@@ -14,6 +14,7 @@
     --givry: #f7e6c5;
     --periglacialBlue: #dce2d2;
     --dustStorm: #e9d6d5;
+    --mojo: #bf3d36;
 }
 
 .bg-ji {
@@ -198,6 +199,17 @@
     font-weight: bold;
 }
 
+.file-hover {
+    color: var(--mojo) !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.file-hover:hover {
+    color: black !important;
+    font-weight: bold;
+}
+
 /* Navigation Section */
 .navigation {
     color: black !important;
@@ -289,6 +301,12 @@
 .divider-center-25 {
     border-bottom: 3px solid var(--marigold) !important;
     width: 25%;
+    margin: 0 auto;
+}
+
+.divider-ji {
+    border-bottom: 3px solid var(--japaneseIndigo) !important;
+    width: 100%;
     margin: 0 auto;
 }
 

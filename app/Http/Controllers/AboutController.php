@@ -22,9 +22,40 @@ class AboutController extends Controller
             'partner7.webp',
             'partner8.webp',
         ];
+        $awardItems = [
+            [
+                'title' => 'Executive of the Year - HR Technology',
+                'image' => 'award1.webp',
+                'description' => 'Avvanz’s Managing Director, Kannan Chettiar, has been awarded EXECUTIVE OF THE YEAR – HR TECHNOLOGY by the very prestigious Singapore Business Review.',
+                'link' => 'https://www.avvanz.com/avvanz-managing-director-is-executive-of-the-year-hr-technology/',
+            ], [
+                'title' => 'Best Training Provider (Sales)',
+                'image' => 'award2.webp',
+                'description' => 'HumanResources Magazine, a leading magazine for HR Community in Asia, awarded Avvanz GOLD MEDAL for BEST BACKGROUND SCREENING PROVIDER & Finalist for BEST TRAINING PROVIDER (SALES) for 2018.',
+                'link' => 'https://www.avvanz.com/avvanz-wins-gold-medal-for-best-background-screening-provider/',
+            ], [
+                'title' => 'Best Background Screening Provider',
+                'image' => 'award3.webp',
+                'description' => 'HumanResources Magazine, a leading magazine for HR Community in Asia, has nominated Avvanz as the BEST BACKGROUND SCREENING PROVIDER.',
+                'link' => 'https://www.avvanz.com/avvanz-best-background-screening-provider/',
+            ],
+        ];
         return view("pages.about.index", [
             "trustedPartnerItems"=> $trustedPartnerItems,
+            "awardItems"=> $awardItems,
         ]);
+    }
+
+    public function aboutUsItem($title){
+        if ($title === 'executive-of-the-year-hr-technology') {
+            return view('partials.award_1');
+        } elseif ($title === 'best-training-provider-sales') {
+            return view('partials.award_2');
+        } elseif ($title === 'best-background-screening-provider') {
+            return view('partials.award_3');
+        } else {
+            return back();
+        }
     }
 
     public function workplaceSafety()

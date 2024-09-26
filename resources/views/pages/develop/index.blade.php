@@ -94,7 +94,7 @@ Develop - Avvanz Global
                             {{ $item['description'] }}
                         </h5>
                         <div class="d-grid gap-2 col-6 mx-auto my-4">
-                            <a href="{{ $item['link'] }}" class="btn learn-button-marigold text-uppercase">learn more</a>
+                            <a href="{{ route('trainingItems', ['title' => Str::slug($item['title'])]) }}" class="btn learn-button-marigold text-uppercase">learn more</a>
                         </div>
                     </div>
                 </div>

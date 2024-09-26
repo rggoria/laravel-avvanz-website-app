@@ -36,6 +36,7 @@ Route::get('/uk', [HomepageController::class, 'global'])->name('global-uk');
 
 // About Us Controller
 Route::get('/about-us', [AboutController::class, 'index'])->name('about-main');
+Route::get('/about-us/{title}', [AboutController::class, 'aboutUsItem'])->name('aboutUsItem');
 Route::get('/workplace-safety-and-health-guideline', [AboutController::class, 'workplaceSafety'])->name('about-1');
 Route::get('/environmental-social-and-governance', [AboutController::class, 'environmental'])->name('about-2');
 Route::get('/environmental-social-and-governance/{title}', [AboutController::class, 'environmentalItem1'])->name('environmentalItem1');
@@ -54,9 +55,11 @@ Route::get('/screen-chain', [ScreenController::class, 'screenChain'])->name('scr
 Route::get('/singapore-work-passes', [ScreenController::class, 'singaporeWork'])->name('screen-3');
 Route::get('/company-due-diligence', [ScreenController::class, 'companyDue'])->name('screen-4');
 Route::get('/partnership-integration', [ScreenController::class, 'partnership'])->name('screen-5');
+Route::get('/partnership-integration/{title}', [ScreenController::class, 'partnershipItem'])->name('partnershipItem');
 
 // Develop Controller
 Route::get('/develop', [DevelopController::class, 'index'])->name('develop-main');
+Route::get('/develop/{title}', [DevelopController::class, 'trainingItems'])->name('trainingItems');
 Route::get('/star-trainers', [DevelopController::class, 'star'])->name('develop-1');
 Route::get('/learnglobal', [DevelopController::class, 'learnGlobal'])->name('develop-2');
 Route::get('/learnglobal/load-more', [DevelopController::class, 'loadMoreItems']);

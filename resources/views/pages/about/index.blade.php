@@ -394,52 +394,28 @@ About Us - Avvanz Global
 
         <div class="row">
             <!-- Award 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex flex-column" style="height: 32rem;">
-                    <img
-                        src="{{ asset('images/about/award1.webp') }}" 
-                        class="card-img-top" 
-                        alt="Best Background Screening Provider"
-                        loading="lazy">
-                    <div class="card-body d-flex flex-column text-white text-center">
-                        <h5 class="card-title text-center">Executive of the Year - HR Technology</h5>
-                        <p class="card-text text-center flex-fill">Avvanz’s Managing Director, Kannan Chettiar, has been awarded EXECUTIVE OF THE YEAR – HR TECHNOLOGY by the very prestigious Singapore Business Review.</p>
-                        <a class="btn btn-orange-border" href="https://www.avvanz.com/avvanz-managing-director-is-executive-of-the-year-hr-technology/">Read Full Article</a>
+            @foreach ( $awardItems as $item)
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex flex-column" style="height: 32rem;">
+                        <img
+                            src="{{ asset('images/about/' . $item['image']) }}" 
+                            class="card-img-top" 
+                            alt="{{ $item['title'] }}"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column text-white text-center">
+                            <h5 class="card-title text-center">
+                                {{ $item['title'] }}
+                            </h5>
+                            <p class="card-text text-center flex-fill">
+                                {{ $item['description'] }}
+                            </p>
+                            <a class="btn btn-orange-border" href="{{ route('aboutUsItem', ['title' => Str::slug($item['title'])]) }}">
+                                Read Full Article
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Award 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex flex-column" style="height: 32rem;">
-                    <img 
-                        src="{{ asset('images/about/award2.webp') }}" 
-                        class="card-img-top" 
-                        alt="Best Training Provider (Sales)"
-                        loading="lazy">
-                    <div class="card-body d-flex flex-column text-white text-center">
-                        <h5 class="card-title text-center">Best Training Provider (Sales)</h5>
-                        <p class="card-text text-center flex-fill">HumanResources Magazine, a leading magazine for HR Community in Asia, awarded Avvanz GOLD MEDAL for BEST BACKGROUND SCREENING PROVIDER & Finalist for BEST TRAINING PROVIDER (SALES) for 2018.</p>
-                        <a class="btn btn-orange-border" href="https://www.avvanz.com/avvanz-wins-gold-medal-for-best-background-screening-provider/">Read Full Article</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Award 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="d-flex flex-column" style="height: 32rem;">
-                    <img
-                        src="{{ asset('images/about/award3.webp') }}" 
-                        class="card-img-top" 
-                        alt="Best Background Screening Provider"
-                        loading="lazy">
-                    <div class="card-body d-flex flex-column text-white text-center">
-                        <h5 class="card-title text-center">Best Background Screening Provider</h5>
-                        <p class="card-text text-center flex-fill">HumanResources Magazine, a leading magazine for HR Community in Asia, has nominated Avvanz as the BEST BACKGROUND SCREENING PROVIDER.</p>
-                        <a class="btn btn-orange-border" href="https://www.avvanz.com/avvanz-best-background-screening-provider/">Read Full Article</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

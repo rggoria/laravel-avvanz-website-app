@@ -68,6 +68,43 @@ class DevelopController extends Controller
         ]);
     }
 
+    public function trainingItems($title) {
+        if ($title === 'leadership') {
+            $leadershipItems = [
+                [
+                    'title' => 'Compehensive Curriculum',
+                    'image' => 'leadership1.webp',
+                    'description' => 'From mastering self-leadership to steering entire organizations, our programs cover every aspect of leadership. Each program builds on the previous one, providing a holistic development experience.',
+                ], [
+                    'title' => 'Expert Facilitators',
+                    'image' => 'leadership2.webp',
+                    'description' => 'Learn from seasoned leaders and industry practitioners who bring real-world experience. Our facilitators are dedicated to your growth and success.',
+                ], [
+                    'title' => 'Interactive Learning',
+                    'image' => 'leadership3.webp',
+                    'description' => 'Engage in immersive workshops, case studies, and group discussions that foster practical learning and collaboration. Our programs are designed to be dynamic and interactive, ensuring you can apply what you learn immediately.',
+                ], [
+                    'title' => 'Personalized Growth',
+                    'image' => 'leadership4.webp',
+                    'description' => 'We believe in the unique potential of every leader. Our programs offer personalized assessment, coaching, and feedback to help you identify your strengths and areas for growth.',
+                ], [
+                    'title' => 'Network of Leaders',
+                    'image' => 'leadership5.webp',
+                    'description' => 'Join a community of ambitious professionals and aspiring leaders. Expand your network, share experiences, and learn from the diverse perspectives of your peers.',
+                ], 
+            ];
+            return view('partials.training_1', [
+                'leadershipItems'=> $leadershipItems,
+            ]);
+        } elseif ($title === 'sales') {
+            return view('partials.partnership_integration_2');
+        } elseif ($title === 'digital-transformation-critical-skills-for-digital-economy') {
+            return view('partials.partnership_integration_3');
+        } else {
+            return back();
+        }
+    }
+
     public function star()
     {
         return view("pages.develop.star");

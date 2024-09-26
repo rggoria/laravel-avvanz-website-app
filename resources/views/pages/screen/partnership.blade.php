@@ -58,7 +58,7 @@ Partnership Integration - Avvanz Global
     <div class="row g-3 py-5">
         @foreach($partnerAchievementItems as $item)
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <a href="{{ $item['link'] }}" class="text-decoration-none">
+                <a href="{{ route('partnershipItem', ['title' => Str::slug($item['title'])]) }}" class="text-decoration-none">
                     <div class="card border-radius-dmb h-100">
                         <img
                             src="{{ asset('images/screen/' . $item['image']) }}"
