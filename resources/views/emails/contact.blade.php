@@ -59,10 +59,8 @@
         <p><strong>Company Name:</strong> {{ $data['cname'] }}</p>
         <p><strong>Company Email:</strong> {{ $data['email'] }}</p>
         <p><strong>Company Contact No:</strong> {{ $data['contact'] }}</p>
-        <p><strong>Designation:</strong> {{ $data['designation'] }}</p>
-        <p><strong>Country:</strong> {{ $data['country'] }}</p>
-        <p><strong>How did you hear about Avvanz?:</strong></p>
-        <p>{{ $data['about'] }}</p>
+        <p><strong>Message:</strong></p>
+        <p>{{ $data['message'] }}</p>
         <br>
         <div style="padding-top: 5px;">
             <p>Please do not reply to this email as it is automatically generated.</p>
