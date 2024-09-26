@@ -39,17 +39,17 @@ class DevelopController extends Controller
                 'title' => 'LEARNGLOBAL',
                 'description' => 'An integrated platform for complete Learning and Development without needing multiple investments in various platforms and solutions.',
                 'image' => 'methodology1.webp',
-                'link' => 'https://www.avvanz.com/learnglobal/',
+                'link' => 'https://uatweb.avvanz.com/learnglobal',
             ], [
                 'title' => 'STAR TRAINERS',
                 'description' => 'Highly experienced business leaders who have global training experience.',
                 'image' => 'methodology2.webp',
-                'link' => 'https://www.avvanz.com/star-trainers/',
+                'link' => 'https://uatweb.avvanz.com/star-trainers',
             ], [
                 'title' => 'NIBBLE & LEARN',
                 'description' => 'Short, quick, and effective Nibble-n-Learn format courses.',
                 'image' => 'methodology3.webp',
-                'link' => 'https://www.avvanz.com/free-courses/?playlist=09d1fc2&video=5a205ec',
+                'link' => 'https://uatweb.avvanz.com/revision-nibble-learn',
             ],
         ];
         $methodologyItems = [
@@ -97,9 +97,9 @@ class DevelopController extends Controller
                 'leadershipItems'=> $leadershipItems,
             ]);
         } elseif ($title === 'sales') {
-            return view('partials.partnership_integration_2');
+            return view('partials.training_2');
         } elseif ($title === 'digital-transformation-critical-skills-for-digital-economy') {
-            return view('partials.partnership_integration_3');
+            return view('partials.training_3');
         } else {
             return back();
         }

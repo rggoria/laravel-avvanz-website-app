@@ -12,63 +12,175 @@ class ResourcesController extends Controller
     {
         $blogItems = [
             [
-                'title' => 'Choosing the Best Corporate Training Companies',
+                'title' => 'Tips To Have An Effective Teacher Hiring Strategy',
                 'image' => 'blog1.webp',
-                'created_at' => 'September 4, 2024',
-                'link' => 'https://www.avvanz.com/choosing-the-best-corporate-training-companies/',
+                'created_at' => 'June 21, 2021',
+                'link' => 'https://www.avvanz.com/tips-to-have-an-effective-teacher-hiring-strategy/',
             ], [
-                'title' => 'Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers',
+                'title' => 'How To Prepare Your School For Opening And Reopening During The COVID Crisis',
                 'image' => 'blog2.webp',
-                'created_at' => 'May 14, 2024',
-                'link' => 'https://www.avvanz.com/unlocking-opportunities-how-enhanced-dbs-checks-open-doors-for-job-seekers/',
+                'created_at' => 'June 23, 2021',
+                'link' => 'https://www.avvanz.com/how-to-prepare-your-school-for-opening-and-reopening-during-the-covid-crisis/',
             ], [
-                'title' => 'Demystifying the DBS Check Application: Your Path to Employment',
+                'title' => 'How Fintech Is Transforming The Underwriting Process',
                 'image' => 'blog3.webp',
-                'created_at' => 'May 10, 2024',
-                'link' => 'https://www.avvanz.com/demystifying-the-dbs-check-application-your-path-to-employment/',
+                'created_at' => 'June 24, 2021',
+                'link' => 'https://www.avvanz.com/how-fintech-is-transforming-the-underwriting-process/',
             ], [
-                'title' => 'The Essential Background Check: Unveiling the Basics of DBS Checks',
+                'title' => 'The Hidden Risks Of Hiring Remotely',
                 'image' => 'blog4.webp',
-                'created_at' => 'May 7, 2024',
-                'link' => 'https://www.avvanz.com/the-essential-background-check-unveiling-the-basics-of-dbs-checks/',
+                'created_at' => 'June 30, 2021',
+                'link' => 'https://www.avvanz.com/the-hidden-risks-of-hiring-remotely/',
+            ], [
+                'title' => 'Green Finance May Pave A New Way For The Sustainable Development Of The Banking Industry',
+                'image' => 'blog5.webp',
+                'created_at' => 'July 5, 2021',
+                'link' => 'https://www.avvanz.com/green-finance-may-pave-a-new-way-for-the-sustainable-development-of-the-banking-industry/',
+            ], [
+                'title' => 'Digital Transformation Brings New Opportunities For Healthcare',
+                'image' => 'blog6.webp',
+                'created_at' => 'July 9, 2021',
+                'link' => 'https://www.avvanz.com/digital-transformation-brings-new-opportunities-for-healthcare/',
+            ], [
+                'title' => 'AVVANZ is awarded as HR Technology Company of the Year 2021',
+                'image' => 'blog7.webp',
+                'created_at' => 'July 12, 2021',
+                'link' => 'https://www.avvanz.com/avvanz-is-awarded-as-hr-technology-company-of-the-year-2021/',
+            ], [
+                'title' => 'Creating a Strong, Collaborative Multi-Generational Workforce: 4 Must-Do Steps',
+                'image' => 'blog8.webp',
+                'created_at' => 'August 30, 2021',
+                'link' => 'https://www.avvanz.com/creating-a-strong-collaborative-multi-generational-workforce-4-must-do-steps/',
+            ], [
+                'title' => 'Diamond Rules of Entrepreneurship',
+                'image' => 'blog9.webp',
+                'created_at' => 'December 15, 2021',
+                'link' => 'https://www.avvanz.com/diamond-rules-of-entrepreneurship/',
+            ], [
+                'title' => 'MYTH OR FACT? Digital Transformation Is Costly And Faces Many Uncertainties',
+                'image' => 'blog20.webp',
+                'created_at' => 'January 6, 2022',
+                'link' => 'https://www.avvanz.com/back-myth-or-fact-digital-transformation-is-costly-and-faces-many-uncertainties/',
+            ], [
+                'title' => 'How To Spot Red Flags When Interviewing A Candidate',
+                'image' => 'blog11.webp',
+                'created_at' => 'January 6, 2022',
+                'link' => 'https://www.avvanz.com/how-to-spot-red-flags-when-interviewing-a-candidate/',
+            ], [
+                'title' => 'Digital Transformation Brings New Opportunities For Healthcare',
+                'image' => 'blog12.webp',
+                'created_at' => 'January 6, 2022',
+                'link' => 'https://www.avvanz.com/back-digital-transformation-brings-new-opportunities-for-healthcare/',
+            ], [
+                'title' => 'All you need to know about the British Standard for Security Screening',
+                'image' => 'blog13.webp',
+                'created_at' => 'March 10, 2023',
+                'link' => 'https://www.avvanz.com/all-you-need-to-know-about-the-british-standard-for-security-screening/',
+            ], [
+                'title' => 'Introduction to US Screening requirements',
+                'image' => 'blog14.webp',
+                'created_at' => 'March 10, 2023',
+                'link' => 'https://www.avvanz.com/introduction-to-us-screening-requirements/',
+            ], [
+                'title' => 'All you need to know about the NEW Workforce Screening Standard in Australia',
+                'image' => 'blog15.webp',
+                'created_at' => 'March 10, 2023',
+                'link' => 'https://www.avvanz.com/all-you-need-to-know-about-the-new-workforce-screening-standard-in-australia/',
+            ], [
+                'title' => 'AFP Checks',
+                'image' => 'blog16.webp',
+                'created_at' => 'May 9, 2023',
+                'link' => 'https://www.avvanz.com/afp-checks/',
+            ], [
+                'title' => 'APRA Checks',
+                'image' => 'blog17.webp',
+                'created_at' => 'May 9, 2023',
+                'link' => 'https://www.avvanz.com/apra-checks/',
+            ], [
+                'title' => 'UK DBS Checks',
+                'image' => 'blog18.webp',
+                'created_at' => 'May 31, 2023',
+                'link' => 'https://www.avvanz.com/uk-dbs-checks/',
+            ], [
+                'title' => '1st ever “Amazonified” Company Due Diligence (CDD) Platform',
+                'image' => 'blog19.webp',
+                'created_at' => 'May 31, 2023',
+                'link' => 'https://www.avvanz.com/1st-ever-amazonified-company-due-diligence-cdd-platform/',
+            ], [
+                'title' => 'Navigating the Business World Management Training Courses in Singapore Unveiled',
+                'image' => 'blog20.webp',
+                'created_at' => 'April 25, 2024',
+                'link' => 'https://www.avvanz.com/navigating-the-business-world-management-training-courses-in-singapore-unveiled/',
+            ], [
+                'title' => 'Delighting Customers: Elevate Your Service with Customer Service Training in Singapore',
+                'image' => 'blog21.webp',
+                'created_at' => 'April 26, 2024',
+                'link' => 'https://www.avvanz.com/delighting-customers-elevate-your-service-with-customer-service-training-in-singapore/',
+            ], [
+                'title' => 'Safeguarding Your Future: Essential Steps in the Company Due Diligence Process',
+                'image' => 'blog22.webp',
+                'created_at' => 'April 29, 2024',
+                'link' => 'https://www.avvanz.com/safeguarding-your-future-essential-steps-in-the-company-due-diligence-process/',
+            ], [
+                'title' => 'Navigating Success: Your Guide to Corporate Training Programs in Singapore',
+                'image' => 'blog23.webp',
+                'created_at' => 'April 30, 2024',
+                'link' => 'https://www.avvanz.com/navigating-success-your-guide-to-corporate-training-programs-in-singapore/',
             ], [
                 'title' => 'The Key to Confidence: Following a Proven Financial Due Diligence Checklist',
-                'image' => 'blog5.webp',
+                'image' => 'blog24.webp',
                 'created_at' => 'May 2, 2024',
                 'link' => 'https://www.avvanz.com/the-key-to-confidence-following-a-proven-financial-due-diligence-checklist/',
             ], [
-                'title' => 'Navigating Success: Your Guide to Corporate Training Programs in Singapore',
-                'image' => 'blog6.webp',
-                'created_at' => 'April 30, 2024',
-                'link' => 'https://www.avvanz.com/navigating-success-your-guide-to-corporate-training-programs-in-singapore/',
+                'title' => 'The Essential Background Check: Unveiling the Basics of DBS Checks',
+                'image' => 'blog25.webp',
+                'created_at' => 'May 7, 2024',
+                'link' => 'https://www.avvanz.com/the-essential-background-check-unveiling-the-basics-of-dbs-checks/',
+            ], [
+                'title' => 'Demystifying the DBS Check Application: Your Path to Employment',
+                'image' => 'blog26.webp',
+                'created_at' => 'May 10, 2024',
+                'link' => 'https://www.avvanz.com/demystifying-the-dbs-check-application-your-path-to-employment/',
+            ], [
+                'title' => 'Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers',
+                'image' => 'blog27.webp',
+                'created_at' => 'May 14, 2024',
+                'link' => 'https://www.avvanz.com/unlocking-opportunities-how-enhanced-dbs-checks-open-doors-for-job-seekers/',
+            ], [
+                'title' => 'Choosing the Best Corporate Training Companies',
+                'image' => 'blog28.webp',
+                'created_at' => 'September 4, 2024',
+                'link' => 'https://www.avvanz.com/choosing-the-best-corporate-training-companies/',
+            ], [
+                'title' => 'Customized Corporate Training Programs for Employees',
+                'image' => 'blog29.webp',
+                'created_at' => 'September 9, 2024',
+                'link' => 'https://www.avvanz.com/customized-corporate-training-programs-for-employees/',
+            ], [
+                'title' => 'The Role of Technology in Modern Corporate Training Programs',
+                'image' => 'blog30.webp',
+                'created_at' => 'September 18, 2024',
+                'link' => 'https://www.avvanz.com/the-role-of-technology-in-modern-corporate-training-programs/',
             ],
         ];
 
-        $perPage = 3;
-        $currentPage = $request->get('page', 1);
-        $offset = ($currentPage - 1) * $perPage;
+        usort($blogItems, function ($a, $b) {
+            return strtotime($b['created_at']) - strtotime($a['created_at']);
+        });
 
-        $currentItems = array_slice($blogItems, $offset, $perPage);
-
-        $blogItemsPaginated = new LengthAwarePaginator(
-            $currentItems,
-            count($blogItems),
-            $perPage,
-            $currentPage,
-            ['path' => LengthAwarePaginator::resolveCurrentPath()]
-        );
-
-        if ($request->ajax()) {
-            return view('partials.blog_items', [
-                'blogItems' => $blogItemsPaginated,
-            ]);
-        }
+        $collection = collect($blogItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $blogItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
 
         return view("pages.resources.blog", [
             "blogItems" => $blogItemsPaginated,
         ]);
     }
-
     public function newsletter()
     {
         $newsletterItems = [
@@ -97,6 +209,47 @@ class ResourcesController extends Controller
         return view("pages.resources.newsletter", [
             "newsletterItems" => $newsletterItemsPaginated,
         ]);
+    }
+
+    public function newsletterItem($title){
+        if ($title === 'q3-newsletter') {
+            $checkItems = [
+                [
+                    'title' => 'Safeguard Your Company’s Reputation',
+                    'icon' => 'fa-user-lock',
+                    'description' => 'Your employees represent your brand. Given that 3 to 4 of every resumes pose some form of discrepancies, wrongful hires can lead to reputational, financial and security damages to your organization.',
+                ], [
+                    'title' => 'Mitigate Security Risks',
+                    'icon' => 'fa-clipboard-check',
+                    'description' => 'With cyber threats and internal security breaches on the rise, verifying an employee’s past can protect your company from insider threats. A robust background check will help identify any red flags, such as criminal activity, that could compromise your business’s security.',
+                ], [
+                    'title' => 'Ensure a Safe Work Environment',
+                    'icon' => 'fa-users',
+                    'description' => 'A key part of building a safe and productive workplace is ensuring that employees do not have a history of violence or harassment. Background checks help create a secure environment for all employees, which in turn boosts morale and productivity.',
+                ], [
+                    'title' => 'Verify Qualifications and Skills',
+                    'icon' => 'fa-user-check',
+                    'description' => 'Misrepresenting qualifications on resumes is more common than one might think. Background checks allow you to verify an applicant\'s education, certifications, and past employment to ensure they have the skills required for the role.',
+                ], [
+                    'title' => 'Reduce Turnover and Hiring Costs',
+                    'icon' => 'fa-search-dollar',
+                    'description' => 'Hiring the wrong person is costly. Background checks help you hire candidates with a proven track record, leading to higher employee retention and reducing the need for frequent rehiring, which can drain resources.',
+                ],  [
+                    'title' => 'Compliance with Industry Regulations',
+                    'icon' => 'fa-globe',
+                    'description' => 'Many industries, such as finance and healthcare, have strict regulatory requirements that mandate thorough background checks. Failure to comply with these regulations can result in fines or legal penalties.',
+                ], [
+                    'title' => 'Safeguard Your Company’s Reputation',
+                    'icon' => 'fa-user-lock',
+                    'description' => 'Your employees represent your brand. Hiring someone without proper vetting can lead to reputational damage if they have a history of misconduct. Background checks ensure that you bring in individuals whose values align with your company\'s.',
+                ],
+            ];
+            return view('partials.resources.newsletter.newsletter_1', [
+                'checkItems' => $checkItems,
+            ]);
+        } else {
+            return back();
+        }
     }
 
     public function industry()

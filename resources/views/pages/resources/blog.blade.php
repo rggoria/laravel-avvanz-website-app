@@ -24,32 +24,35 @@ Blog - Avvanz Global
 </section>
 
 <!-- Blog Section -->
-<section class="container margin-vertical" id="blog-section">
-    @include('partials.blog_items', ['blogItems' => $blogItems])
+<section class="container margin-vertical">
+    <div class="row g-3">
+        @foreach($blogItems as $item)
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <a href="{{ $item['link'] }}" class="text-decoration-none">
+                <div class="card border-radius-dmb h-100">
+                    <img
+                        src="{{ asset('images/resources/' . $item['image']) }}"
+                        class="card-img-top"
+                        alt="{{ $item['title'] }}"
+                        style="height: 200px; width: auto;"
+                        loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bolder text-dmb">
+                            {{ $item['title'] }}
+                        </h5>
+                        <p class="card-text fw-bolder text-marigold">
+                            Read More »
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent text-muted">
+                        {{ $item['created_at'] }}
+                    </div>
+                </div>
+            </a>
+        </div>
+        @endforeach
+    </div>
+    {{ $blogItems->links('partials.paginate') }}
 </section>
-
-@section('scripts')
-<script>
-    $(document).ready(function() {
-        $('#blog-section').on('click', '.page-link', function(e) {
-            e.preventDefault();  // Prevent default link behavior
-
-            const page = $(this).data('page');  // Get the page number
-
-            $.ajax({
-                url: '{{ route("resources-1") }}',  // URL for the request
-                type: 'GET',
-                data: { page: page },  // Send the page number
-                success: function(data) {
-                    $('#blog-section').html(data);  // Replace content with the response
-                },
-                error: function(xhr) {
-                    console.error('Error fetching data:', xhr);
-                }
-            });
-        });
-    });
-</script>
-@endsection
 
 @endsection

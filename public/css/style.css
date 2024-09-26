@@ -412,6 +412,26 @@
     color: white !important;
 }
 
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.check-icon:hover {
+    background-color: white;
+    color: var(--marigold);
+}
+
 .social-icon {
     display: flex;
     align-items: center;
@@ -433,19 +453,19 @@
 }
 
 .btn-floating {
-    display: flex; /* Use flex to center the icon */
-    align-items: center; /* Vertically center the icon */
-    justify-content: center; /* Horizontally center the icon */
-    width: 60px; /* Set the width of the button */
-    height: 60px; /* Set the height of the button (same as width for a circle) */
-    border-radius: 50%; /* Make it circular */
-    font-size: 24px; /* Adjust icon size */
-    text-decoration: none; /* Remove underline */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .social-button {
-    width: 2.5rem; /* Responsive width */
-    height: 2.5rem; /* Responsive height */
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
