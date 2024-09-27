@@ -761,7 +761,43 @@ class ResourcesController extends Controller
             return view('partials.resources.press.press_11');
         } elseif ($title === 'view-from-the-top-a-special-exception') {
             return view('partials.resources.press.press_12');
-        }
+        } elseif ($title === 'avvanz-partners-aci-to-enter-the-caribbean-region') {
+            return view('partials.resources.press.press_13');
+        } elseif ($title === 'gearing-up-for-the-unexpected-what-has-changed-for-your-business-this-year') {
+            return view('partials.resources.press.press_14');
+        } elseif ($title === 'moving-up-the-value-chain') {
+            return view('partials.resources.press.press_15');
+        } elseif ($title === 'gear-up-for-a-digital-future') {
+            return view('partials.resources.press.press_16');
+        } elseif ($title === 'why-firms-fall-prey-to-dishonest-job-seekers') {
+            return view('partials.resources.press.press_17');
+        } elseif ($title === 'gender-parity-more-than-workplace-flexibility-required') {
+            return view('partials.resources.press.press_18');
+        } elseif ($title === 'avvanz-has-been-chosen-and-appointed-by-the-ministry-of-manpower-mom-work-pass-division-as-an-approved-global-background-screening-company') {
+            return view('partials.resources.press.press_19');
+        } elseif ($title === 'avvanz-partners-acca-singapore') {
+            return view('partials.resources.press.press_20');
+        } elseif ($title === 'ensuring-that-shareholders-are-heard') {
+            return view('partials.resources.press.press_21');
+        } elseif ($title === 'continuous-monitoring-in-healthcare-employees-can-save-more-lives') {
+            return view('partials.resources.press.press_22');
+        } elseif ($title === 'affinidi-and-avvanz-sign-mou-to-streamline-employment-background-checks-in-singapore') {
+            return view('partials.resources.press.press_23');
+        } elseif ($title === 'applicants-for-a-new-employment-pass-must-have-academic-qualifications-from-september') {
+            return view('partials.resources.press.press_24');
+        } elseif ($title === 'golf-club-managers-to-meet-over-money-laundering-concerns-amid-s1-billion-probe') {
+            return view('partials.resources.press.press_25');
+        } elseif ($title === 'cna-explains-how-does-singapore-screen-adults-who-work-with-kids') {
+            return view('partials.resources.press.press_26');
+        } elseif ($title === 'avvanz-announces-partnership-with-dauntless-technology-solutions') {
+            return view('partials.resources.press.press_27');
+        } elseif ($title === 'more-companies-doing-background-checks-for-employment-pass-applicants') {
+            return view('partials.resources.press.press_28');
+        } elseif ($title === 'avvanz-pte-ltd-expands-its-global-reach-with-new-office-opening-in-bengaluru-india') {
+            return view('partials.resources.press.press_29');
+        } elseif ($title === 'avvanz-tackles-employee-screening-challenges-affordable-compliant-and-comprehensive-background-checks-now-available-in-india') {
+            return view('partials.resources.press.press_30');
+        } 
         // else {
         //     return back();
         // }
