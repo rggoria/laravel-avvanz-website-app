@@ -28,7 +28,7 @@ Press & Media - Avvanz Global
     <div class="row g-3">
         @foreach($pressItems as $item)
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a href="{{ $item['link'] }}" class="text-decoration-none">
+            <a href="{{ route('pressItem', ['title' => Str::slug($item['title'])]) }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
                     <img
                         src="{{ asset('images/resources/' . $item['image']) }}"

@@ -74,6 +74,7 @@ Route::get('/industry', [ResourcesController::class, 'industry'])->name('resourc
 Route::get('/industry/{title}', [ResourcesController::class, 'industryItem'])->name('industryItem');
 Route::get('/conference', [ResourcesController::class, 'webinar'])->name('resources-4');
 Route::get('/press-and-media', [ResourcesController::class, 'press'])->name('resources-5');
+Route::get('/press-and-media/{title}', [ResourcesController::class, 'pressItem'])->name('pressItem');
 
 // Contact Controller
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');

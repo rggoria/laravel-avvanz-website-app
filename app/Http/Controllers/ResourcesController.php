@@ -735,4 +735,35 @@ class ResourcesController extends Controller
             "pressItems" => $pressItemsPaginated,
         ]);
     }
+
+    public function pressItem($title) {
+        if ($title === 'drug-testing-and-health-screening') {
+            return view('partials.resources.press.press_1');
+        } elseif ($title === 'avvanz-partners-epic-concepts') {
+            return view('partials.resources.press.press_2');
+        } elseif ($title === 'view-from-the-top-how-to-build-a-stronger-business-magnet') {
+            return view('partials.resources.press.press_3');
+        } elseif ($title === 'view-from-the-top-no-room-for-complacency') {
+            return view('partials.resources.press.press_4');
+        } elseif ($title === 'view-from-the-top-disparity-between-the-stock-markets-and-the-economy') {
+            return view('partials.resources.press.press_5');
+        } elseif ($title === 'view-from-the-top-emerging-stronger-from-the-storm') {
+            return view('partials.resources.press.press_6');
+        }  elseif ($title === 'avvanz-becomes-fintech-certified') {
+            return view('partials.resources.press.press_7');
+        } elseif ($title === 'view-from-the-top-rediscovering-singapore') {
+            return view('partials.resources.press.press_8');
+        } elseif ($title === 'more-detailed-background-checks-needed-before-hiring') {
+            return view('partials.resources.press.press_9');
+        } elseif ($title === 'view-from-the-top-responsible-retrenchment') {
+            return view('partials.resources.press.press_10');
+        } elseif ($title === 'view-from-the-top-incentive-or-disincentive') {
+            return view('partials.resources.press.press_11');
+        } elseif ($title === 'view-from-the-top-a-special-exception') {
+            return view('partials.resources.press.press_12');
+        }
+        // else {
+        //     return back();
+        // }
+    }
 }
