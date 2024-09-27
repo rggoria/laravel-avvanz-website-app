@@ -245,32 +245,94 @@ Q3 Newsletter - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         Latest Events
     </h1>
-    <div class="row">
-        <div class="col">
+    <div class="row gy-3">
+        <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="card-display">
                 <div class="card-content">
                     <div class="card-body d-flex flex-column align-items-center text-center">
-                        <img class="img-fluid" src="{{ asset('images/resources/newsletter1-3.jpg') }}" alt="newsletter1-3">
+                        <img class="img-fluid h-100 w-100" src="{{ asset('images/resources/newsletter1-7.png') }}" alt="newsletter1-7">
                     </div>
                 </div>
-                <div class="card-description">
-                    <p>Due to generally quick staff turnover, Fast Hiring, Effective Onboarding and Engaging Training solutions are key.</p>
+                <div class="card-description">                   
+                    <p>
+                        <span class="fw-bolder">Job Fair</span>
+                        <br>
+                        Avvanz during the Job Fair at National Teacher's College. Over 60 companies and HR executives has attended, an excellent opportunity to connect and explore new career possibilities.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="card-display">
                 <div class="card-content">
                     <div class="card-body d-flex flex-column align-items-center text-center">
-                        <img class="img-fluid" src="{{ asset('images/resources/newsletter1-3.jpg') }}" alt="newsletter1-3">
+                        <img class="img-fluid h-100 w-100" src="{{ asset('images/resources/newsletter1-8.jpeg') }}" alt="newsletter1-8">
                     </div>
                 </div>
                 <div class="card-description">
-                    <p>Due to generally quick staff turnover, Fast Hiring, Effective Onboarding and Engaging Training solutions are key.</p>
+                    <p>
+                        <span class="fw-bolder">Avvanz Midyear Party</span>
+                        <br>
+                        Avvanz recently hosted its Midyear Party, bringing together the team for a day of fun, connection, and celebration. The event featured an exciting program filled with games, performances, and inspiring speeches.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="card-display">
+                <div class="card-content">
+                    <div class="card-body d-flex flex-column align-items-center text-center">
+                        <img class="img-fluid h-100 w-100" src="{{ asset('images/resources/newsletter1-9.png') }}" alt="newsletter1-9">
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>
+                        <span class="fw-bolder">Art Jam Event</span>
+                        <br>
+                        The event was a fantastic display of creativity and teamwork, showcasing the diverse talents within our team. To top it off, special prizes were awarded to the winners, making the event even more memorable!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="card-display">
+                <div class="card-content">
+                    <div class="card-body d-flex flex-column align-items-center text-center">
+                        <img class="img-fluid h-100 w-100" src="{{ asset('images/resources/newsletter1-10.png') }}" alt="newsletter1-10">
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p>
+                        <span class="fw-bolder">Career Fair</span>
+                        <br>
+                        Avvanz participating in the Career Fair at National Teacher's College from July 31 to August 1. This exciting event brought together over 600 students providing a fantastic opportunity for networking and career growth.
+                    </p>
                 </div>
             </div>
         </div>
     </div>     
+</section>
+
+<section class="container margin-vertical">
+    <a class="d-flex justify-content-center" href="https://backgroundchecks.avvanz.com/info/">
+        <img class="img-fluid w-25 h-25" src="{{ asset('images/resources/newsletter1-11.png') }}" alt="newsletter1-11">
+    </a>
+    <p class="text-center">
+        Know More about Avvanz:
+    </p>
+    <div class="d-flex justify-content-center flex-row gap-3">
+        <a class="btn social-facebook" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a class="btn social-youtube" href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a class="btn social-linkedin" href="https://www.linkedin.com/company/avvanz/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a><a class="btn social-instagram" href="https://www.instagram.com/avvanz_/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
 </section>
 
 @section('scripts')

@@ -1,3 +1,23 @@
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.check-icon:hover {
+    background-color: white;
+    color: var(--marigold);
+}
+
 .card-display {
     height: 350px;
     position: relative;
@@ -44,4 +64,64 @@
 
 .card-display:hover .card-description {
     opacity: 1;
+}
+
+.social-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #5368a1 !important;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #cb3532 !important;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #3c83bb !important;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    color: white !important;
+    background-color: #3b3b3b !important;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
 }
