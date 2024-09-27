@@ -71,6 +71,7 @@ Route::get('/blog', [ResourcesController::class, 'blog'])->name('resources-1');
 Route::get('/newsletter', [ResourcesController::class, 'newsletter'])->name('resources-2');
 Route::get('/newsletter/{title}', [ResourcesController::class, 'newsletterItem'])->name('newsletterItem');
 Route::get('/industry', [ResourcesController::class, 'industry'])->name('resources-3');
+Route::get('/industry/{title}', [ResourcesController::class, 'industryItem'])->name('industryItem');
 Route::get('/conference', [ResourcesController::class, 'webinar'])->name('resources-4');
 Route::get('/press-and-media', [ResourcesController::class, 'press'])->name('resources-5');
 

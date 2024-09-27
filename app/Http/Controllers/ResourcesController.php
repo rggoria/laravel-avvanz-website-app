@@ -282,6 +282,14 @@ class ResourcesController extends Controller
         ]);
     }
 
+    public function industryItem($title) {
+        if ($title === 'background-verification-service-in-asia') {
+            return view('partials.resources.industry.industry_1');
+        } else {
+            return back();
+        }
+    }
+
     public function webinar()
     {
         $webinarItems = [

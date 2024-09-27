@@ -11,7 +11,6 @@ Avvanz wins GOLD Medal for Best Background Screening Provider - Avvanz Global
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endsection()
 
-<!-- Environmental Section -->
 <section class="bg-image-2">
     <div class="container padding-vertical">
         <div class="row text-white">
