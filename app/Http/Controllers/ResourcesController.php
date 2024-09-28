@@ -293,142 +293,170 @@ class ResourcesController extends Controller
     public function webinar()
     {
         $webinarItems = [
-            [
+            [   
+                'id'=> '1',
                 'title' => 'Singtel Learning Fiesta',
                 'image' => 'webinar1.webp',
                 'created_at' => 'June 10, 2014',
                 'link'=> 'https://www.avvanz.com/singtel-learning-fiesta/',
             ], [
+                'id'=> '2',
                 'title' => 'Singapore Human Resources Institute',
                 'image' => 'webinar2.webp',
                 'created_at' => 'February 27, 2015 ',
                 'link'=> 'https://www.avvanz.com/singapore-human-resources-institute/',
             ], [
+                'id'=> '3',
                 'title' => 'Crown International: Effective Talent Recruitment And Retention Strategies',
                 'image' => 'webinar3.webp',
                 'created_at' => 'October 6, 2015 ',
                 'link'=> 'https://www.avvanz.com/crown-international-effective-talent-recruitment-and-retention-strategies/',
             ], [
+                'id'=> '4',
                 'title' => 'Singapore HR Congress: Sieving Out RIGHT And SAFE Multi-Generational Talents',
                 'image' => 'webinar4.webp',
                 'created_at' => 'November 8, 2016',
                 'link'=> 'https://www.avvanz.com/singapore-hr-congress-sieving-out-right-and-safe-multi-generational-talents/',
             ], [
+                'id'=> '5',
                 'title' => 'Webinar: Safeguarding And Child Protection Part 1',
                 'image' => 'webinar5.webp',
                 'created_at' => 'February 19, 2020',
                 'link'=> 'https://www.avvanz.com/webinar-safeguarding-and-child-protection-part-1/',
             ], [
+                'id'=> '6',
                 'title' => 'Recruitment Masterclass: Employer Branding, Candidate Engagement And Background Screening During COVID-19',
                 'image' => 'webinar6.webp',
                 'created_at' => 'May 6, 2020',
                 'link'=> 'https://www.avvanz.com/recruitment-masterclass-employer-branding-candidate-engagement-and-background-screening-during-covid-19/',
             ], [
+                'id'=> '7',
                 'title' => 'Webinar: Know Who You Hire',
                 'image' => 'webinar7.webp',
                 'created_at' => 'May 11, 2020',
                 'link'=> 'https://www.avvanz.com/webinar-know-who-you-hire/',
             ], [
+                'id'=> '8',
                 'title' => 'Webinar: Safeguarding And Child Protection Part 2',
                 'image' => 'webinar8.webp',
                 'created_at' => 'May 13, 2020',
                 'link'=> 'https://www.avvanz.com/webinar-safeguarding-and-child-protection-part-2/',
             ], [
+                'id'=> '9',
                 'title' => 'Webinar: Safeguarding And Child Protection Part 3',
                 'image' => 'webinar9.webp',
                 'created_at' => 'July 17, 2020',
                 'link'=> 'https://www.avvanz.com/webinar-safeguarding-and-child-protection-part-3/',
             ], [
+                'id'=> '10',
                 'title' => 'Special APAC COVID-19 Webinar Panel Discussion',
                 'image' => 'webinar10.webp',
                 'created_at' => 'July 25, 2020',
                 'link'=> 'https://www.avvanz.com/special-apac-covid-19-webinar-panel-discussion/'
             ], [
+                'id'=> '11',
                 'title' => 'Webinar: Safeguarding And Child Protection Part 4',
                 'image' => 'webinar11.webp',
                 'created_at' => 'August 11, 2020',
                 'link'=> 'https://www.avvanz.com/webinar-safeguarding-and-child-protection-part-4/'
             ], [
+                'id'=> '12',
                 'title' => 'IHRP Tech Talk Series-Leveraging HR Tech To Create Best In Class Candidate Experience',
                 'image' => 'webinar12.webp',
                 'created_at' => 'August 28, 2020',
                 'link'=> 'https://www.avvanz.com/ihrp-tech-talk-series-leveraging-hr-tech-to-create-best-in-class-candidate-experience/'
             ], [
+                'id'=> '13',
                 'title' => 'Caribbean Webinar: How And Why To Hire The Best Background Check Company',
                 'image' => 'webinar13.webp',
                 'created_at' => 'October 28, 2020',
                 'link'=> 'https://www.avvanz.com/caribbean-webinar-how-and-why-to-hire-the-best-background-check-company/'
             ], [
+                'id'=> '14',
                 'title' => 'Joint Webinar: The 4th Industrial Revolution – How To Adapt Your Business To The Inevitable Digital Transformation',
                 'image' => 'webinar14.webp',
                 'created_at' => 'November 11, 2020',
                 'link'=> 'https://www.avvanz.com/joint-webinar-the-4th-industrial-revolution-how-to-adapt-your-business-to-the-inevitable-digital-transformation/'
             ], [
+                'id'=> '15',
                 'title' => 'Panel Discussion: Talent Acquisition And Engagement Challenges Amidst The Pandemic',
                 'image' => 'webinar15.webp',
                 'created_at' => 'November 26, 2020',
                 'link'=> 'https://www.avvanz.com/panel-discussion-talent-acquisition-and-engagement-challenges-amidst-the-pandemic/'
             ], [
+                'id'=> '16',
                 'title' => 'Avvanz At Singapore FinTech Festival 2020 (7-11 Dec)',
                 'image' => 'webinar16.webp',
                 'created_at' => 'December 7, 2020',
                 'link'=> 'https://www.avvanz.com/avvanz-at-singapore-fintech-festival-2020-7-11-dec/'
             ], [
+                'id'=> '17',
                 'title' => 'Digital Transformation For The Maritime Industry – Demystifying The Process',
                 'image' => 'webinar17.webp',
                 'created_at' => 'January 21, 2021',
                 'link'=> 'https://www.avvanz.com/digital-transformation-for-the-maritime-industry-demystifying-the-process/'
             ], [
+                'id'=> '18',
                 'title' => 'Quickiebinar Part 1: How Avvanz Weathered Covid-19',
                 'image' => 'webinar18.webp',
                 'created_at' => 'January 29, 2021',
                 'link'=> 'https://www.avvanz.com/quickiebinar-part-1-how-avvanz-weathered-covid-19/'
             ], [
+                'id'=> '19',
                 'title' => 'Avvanz Techstival 7 April',
                 'image' => 'webinar19.webp',
                 'created_at' => 'April 7, 2021',
                 'link'=> 'https://www.avvanz.com/avvanz-techstival-7-april/'
             ], [
+                'id'=> '20',
                 'title' => 'Managing Your Employee Lifecycle From Background Screening To Onboarding To Learning',
                 'image' => 'webinar20.webp',
                 'created_at' => 'June 1, 2021',
                 'link'=> 'https://www.avvanz.com/managing-your-employee-lifecycle-from-background-screening-to-onboarding-to-learning/'
             ], [
+                'id'=> '21',
                 'title' => 'Education Industry: Overcoming Leadership And HR Challenges',
                 'image' => 'webinar21.webp',
                 'created_at' => 'January 6, 2022',
                 'link'=> 'https://www.avvanz.com/education-industry-overcoming-leadership-and-hr-challenges/'
             ], [
+                'id'=> '22',
                 'title' => 'Achieving 60% Hiring ROI Through AI And Background Screening',
                 'image' => 'webinar22.webp',
                 'created_at' => 'January 6, 2022',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '23',
                 'title' => 'Leadership in Education: In what areas schools can leverage disruptive technologies?',
                 'image' => 'webinar23.webp',
                 'created_at' => 'January 6, 2022',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '24',
                 'title' => 'Avvanz Webcafe: Monetary Authority of Singapore (MAS) Mandatory Reference Checks',
                 'image' => 'webinar24.webp',
                 'created_at' => 'January 6, 2022',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '25',
                 'title' => 'AVVANZ WEBCAFE: The Great Resignation vs. The Great Retention',
                 'image' => 'webinar25.webp',
                 'created_at' => 'January 6, 2022',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '26',
                 'title' => 'Avvanz Techstival 2023 Philippine Edition',
                 'image' => 'webinar26.webp',
                 'created_at' => 'May 2, 2023',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '27',
                 'title' => 'Quickiebinar Part 1: Leadership – with Zubin Zack',
                 'image' => 'webinar27.webp',
                 'created_at' => 'June 2, 2023',
                 'link'=> 'https://www.avvanz.com/achieving-60-hiring-roi-through-ai-and-background-screening/'
             ], [
+                'id'=> '28',
                 'title' => 'Quickiebinar Part 2: Leadership – with Ariya Chittasy',
                 'image' => 'webinar28.webp',
                 'created_at' => 'June 6, 2023',
@@ -542,7 +570,7 @@ class ResourcesController extends Controller
         ];
 
         usort($webinarItems, function ($a, $b) {
-            return strtotime($b['created_at']) - strtotime($a['created_at']);
+            return (int)$b['id'] - (int)$a['id'];
         });
 
         $collection = collect($webinarItems);
@@ -560,6 +588,40 @@ class ResourcesController extends Controller
             "eventVideosItems" => $eventVideosItems,
             "companyVideosItems" => $companyVideosItems,
         ]);
+    }
+
+    public function webinarItem($title) {
+        return match ($title) {
+            'singtel-learning-fiesta' => view('partials.resources.webinar.webinar_1'),
+            'singapore-human-resources-institute' => view('partials.resources.webinar.webinar_2'),
+            'crown-international-effective-talent-recruitment-and-retention-strategies' => view('partials.resources.webinar.webinar_3'),
+            'singapore-hr-congress-sieving-out-right-and-safe-multi-generational-talents' => view('partials.resources.webinar.webinar_4'),
+            'webinar-safeguarding-and-child-protection-part-1' => view('partials.resources.webinar.webinar_5'),
+            'recruitment-masterclass-employer-branding-candidate-engagement-and-background-screening-during-covid-19' => view('partials.resources.webinar.webinar_6'),
+            'webinar-know-who-you-hire' => view('partials.resources.webinar.webinar_7'),
+            'webinar-safeguarding-and-child-protection-part-2' => view('partials.resources.webinar.webinar_8'),
+            'webinar-safeguarding-and-child-protection-part-3' => view('partials.resources.webinar.webinar_9'),
+            'special-apac-covid-19-webinar-panel-discussion' => view('partials.resources.webinar.webinar_10'),
+            'webinar-safeguarding-and-child-protection-part-4' => view('partials.resources.webinar.webinar_11'),
+            'ihrp-tech-talk-series-leveraging-hr-tech-to-create-best-in-class-candidate-experience' => view('partials.resources.webinar.webinar_12'),
+            'caribbean-webinar-how-and-why-to-hire-the-best-background-check-company' => view('partials.resources.webinar.webinar_13'),
+            'joint-webinar-the-4th-industrial-revolution-how-to-adapt-your-business-to-the-inevitable-digital-transformation' => view('partials.resources.webinar.webinar_14'),
+            'panel-discussion-talent-acquisition-and-engagement-challenges-amidst-the-pandemic' => view('partials.resources.webinar.webinar_15'),
+            'avvanz-at-singapore-fintech-festival-2020-7-11-dec' => view('partials.resources.webinar.webinar_16'),
+            'digital-transformation-for-the-maritime-industry-demystifying-the-process' => view('partials.resources.webinar.webinar_17'),
+            'quickiebinar-part-1-how-avvanz-weathered-covid-19' => view('partials.resources.webinar.webinar_18'),
+            'avvanz-techstival-7-april' => view('partials.resources.webinar.webinar_19'),
+            'managing-your-employee-lifecycle-from-background-screening-to-onboarding-to-learning' => view('partials.resources.webinar.webinar_20'),
+            'education-industry-overcoming-leadership-and-hr-challenges' => view('partials.resources.webinar.webinar_21'),
+            'achieving-60-hiring-roi-through-ai-and-background-screening' => view('partials.resources.webinar.webinar_22'),
+            'leadership-in-education-in-what-areas-schools-can-leverage-disruptive-technologies' => view('partials.resources.webinar.webinar_23'),
+            'avvanz-webcafe-monetary-authority-of-singapore-mas-mandatory-reference-checks' => view('partials.resources.webinar.webinar_24'),
+            'avvanz-webcafe-the-great-resignation-vs-the-great-retention' => view('partials.resources.webinar.webinar_25'),
+            'avvanz-techstival-2023-philippine-edition' => view('partials.resources.webinar.webinar_26'),
+            'quickiebinar-part-1-leadership-with-zubin-zack' => view('partials.resources.webinar.webinar_27'),
+            'quickiebinar-part-2-leadership-with-ariya-chittasy' => view('partials.resources.webinar.webinar_28'),
+            default => back(),
+        };
     }
 
     public function press()
@@ -797,9 +859,8 @@ class ResourcesController extends Controller
             return view('partials.resources.press.press_29');
         } elseif ($title === 'avvanz-tackles-employee-screening-challenges-affordable-compliant-and-comprehensive-background-checks-now-available-in-india') {
             return view('partials.resources.press.press_30');
-        } 
-        // else {
-        //     return back();
-        // }
+        } else {
+            return back();
+        }
     }
 }

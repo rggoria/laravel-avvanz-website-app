@@ -87,7 +87,7 @@ Webinars & Videos - Avvanz Global
     <div class="row g-3">
         @foreach($webinarItems as $item)
         <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
-            <a href="{{ $item['link'] }}" class="text-decoration-none">
+            <a href="{{ route('webinarItem', ['title' => Str::slug($item['title'])]) }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
                     <img
                         src="{{ asset('images/resources/' . $item['image']) }}"
