@@ -12,151 +12,181 @@ class ResourcesController extends Controller
     {
         $blogItems = [
             [
+                "id"=> '1',
                 'title' => 'Tips To Have An Effective Teacher Hiring Strategy',
                 'image' => 'blog1.webp',
                 'created_at' => 'June 21, 2021',
                 'link' => 'https://www.avvanz.com/tips-to-have-an-effective-teacher-hiring-strategy/',
             ], [
+                'id'=> '2',
                 'title' => 'How To Prepare Your School For Opening And Reopening During The COVID Crisis',
                 'image' => 'blog2.webp',
                 'created_at' => 'June 23, 2021',
                 'link' => 'https://www.avvanz.com/how-to-prepare-your-school-for-opening-and-reopening-during-the-covid-crisis/',
             ], [
+                'id'=> '3',
                 'title' => 'How Fintech Is Transforming The Underwriting Process',
                 'image' => 'blog3.webp',
                 'created_at' => 'June 24, 2021',
                 'link' => 'https://www.avvanz.com/how-fintech-is-transforming-the-underwriting-process/',
             ], [
+                'id'=> '4',
                 'title' => 'The Hidden Risks Of Hiring Remotely',
                 'image' => 'blog4.webp',
                 'created_at' => 'June 30, 2021',
                 'link' => 'https://www.avvanz.com/the-hidden-risks-of-hiring-remotely/',
             ], [
+                'id'=> '5',
                 'title' => 'Green Finance May Pave A New Way For The Sustainable Development Of The Banking Industry',
                 'image' => 'blog5.webp',
                 'created_at' => 'July 5, 2021',
                 'link' => 'https://www.avvanz.com/green-finance-may-pave-a-new-way-for-the-sustainable-development-of-the-banking-industry/',
             ], [
+                'id'=> '6',
                 'title' => 'Digital Transformation Brings New Opportunities For Healthcare',
                 'image' => 'blog6.webp',
                 'created_at' => 'July 9, 2021',
                 'link' => 'https://www.avvanz.com/digital-transformation-brings-new-opportunities-for-healthcare/',
             ], [
+                'id'=> '7',
                 'title' => 'AVVANZ is awarded as HR Technology Company of the Year 2021',
                 'image' => 'blog7.webp',
                 'created_at' => 'July 12, 2021',
                 'link' => 'https://www.avvanz.com/avvanz-is-awarded-as-hr-technology-company-of-the-year-2021/',
             ], [
+                'id'=> '8',
                 'title' => 'Creating a Strong, Collaborative Multi-Generational Workforce: 4 Must-Do Steps',
                 'image' => 'blog8.webp',
                 'created_at' => 'August 30, 2021',
                 'link' => 'https://www.avvanz.com/creating-a-strong-collaborative-multi-generational-workforce-4-must-do-steps/',
             ], [
+                'id'=> '9',
                 'title' => 'Diamond Rules of Entrepreneurship',
                 'image' => 'blog9.webp',
                 'created_at' => 'December 15, 2021',
                 'link' => 'https://www.avvanz.com/diamond-rules-of-entrepreneurship/',
             ], [
+                'id'=> '10',
                 'title' => 'MYTH OR FACT? Digital Transformation Is Costly And Faces Many Uncertainties',
-                'image' => 'blog20.webp',
+                'image' => 'blog10.webp',
                 'created_at' => 'January 6, 2022',
                 'link' => 'https://www.avvanz.com/back-myth-or-fact-digital-transformation-is-costly-and-faces-many-uncertainties/',
             ], [
+                'id'=> '11',
                 'title' => 'How To Spot Red Flags When Interviewing A Candidate',
                 'image' => 'blog11.webp',
                 'created_at' => 'January 6, 2022',
                 'link' => 'https://www.avvanz.com/how-to-spot-red-flags-when-interviewing-a-candidate/',
             ], [
-                'title' => 'Digital Transformation Brings New Opportunities For Healthcare',
+                'id'=> '12',
+                'title' => 'Back Digital Transformation Brings New Opportunities For Healthcare',
                 'image' => 'blog12.webp',
                 'created_at' => 'January 6, 2022',
                 'link' => 'https://www.avvanz.com/back-digital-transformation-brings-new-opportunities-for-healthcare/',
             ], [
+                'id'=> '13',
                 'title' => 'All you need to know about the British Standard for Security Screening',
                 'image' => 'blog13.webp',
                 'created_at' => 'March 10, 2023',
                 'link' => 'https://www.avvanz.com/all-you-need-to-know-about-the-british-standard-for-security-screening/',
             ], [
+                'id'=> '14',
                 'title' => 'Introduction to US Screening requirements',
                 'image' => 'blog14.webp',
                 'created_at' => 'March 10, 2023',
                 'link' => 'https://www.avvanz.com/introduction-to-us-screening-requirements/',
             ], [
+                'id'=> '15',
                 'title' => 'All you need to know about the NEW Workforce Screening Standard in Australia',
                 'image' => 'blog15.webp',
                 'created_at' => 'March 10, 2023',
                 'link' => 'https://www.avvanz.com/all-you-need-to-know-about-the-new-workforce-screening-standard-in-australia/',
             ], [
+                'id'=> '16',
                 'title' => 'AFP Checks',
                 'image' => 'blog16.webp',
                 'created_at' => 'May 9, 2023',
                 'link' => 'https://www.avvanz.com/afp-checks/',
             ], [
+                'id'=> '17',
                 'title' => 'APRA Checks',
                 'image' => 'blog17.webp',
                 'created_at' => 'May 9, 2023',
                 'link' => 'https://www.avvanz.com/apra-checks/',
             ], [
+                'id'=> '18',
                 'title' => 'UK DBS Checks',
                 'image' => 'blog18.webp',
                 'created_at' => 'May 31, 2023',
                 'link' => 'https://www.avvanz.com/uk-dbs-checks/',
             ], [
+                'id'=> '19',
                 'title' => '1st ever “Amazonified” Company Due Diligence (CDD) Platform',
                 'image' => 'blog19.webp',
                 'created_at' => 'May 31, 2023',
                 'link' => 'https://www.avvanz.com/1st-ever-amazonified-company-due-diligence-cdd-platform/',
             ], [
+                'id'=> '20',
                 'title' => 'Navigating the Business World Management Training Courses in Singapore Unveiled',
                 'image' => 'blog20.webp',
                 'created_at' => 'April 25, 2024',
                 'link' => 'https://www.avvanz.com/navigating-the-business-world-management-training-courses-in-singapore-unveiled/',
             ], [
+                'id'=> '21',
                 'title' => 'Delighting Customers: Elevate Your Service with Customer Service Training in Singapore',
                 'image' => 'blog21.webp',
                 'created_at' => 'April 26, 2024',
                 'link' => 'https://www.avvanz.com/delighting-customers-elevate-your-service-with-customer-service-training-in-singapore/',
             ], [
+                'id'=> '22',
                 'title' => 'Safeguarding Your Future: Essential Steps in the Company Due Diligence Process',
                 'image' => 'blog22.webp',
                 'created_at' => 'April 29, 2024',
                 'link' => 'https://www.avvanz.com/safeguarding-your-future-essential-steps-in-the-company-due-diligence-process/',
             ], [
+                'id'=> '23',
                 'title' => 'Navigating Success: Your Guide to Corporate Training Programs in Singapore',
                 'image' => 'blog23.webp',
                 'created_at' => 'April 30, 2024',
                 'link' => 'https://www.avvanz.com/navigating-success-your-guide-to-corporate-training-programs-in-singapore/',
             ], [
+                'id'=> '24',
                 'title' => 'The Key to Confidence: Following a Proven Financial Due Diligence Checklist',
                 'image' => 'blog24.webp',
                 'created_at' => 'May 2, 2024',
                 'link' => 'https://www.avvanz.com/the-key-to-confidence-following-a-proven-financial-due-diligence-checklist/',
             ], [
+                'id'=> '25',
                 'title' => 'The Essential Background Check: Unveiling the Basics of DBS Checks',
                 'image' => 'blog25.webp',
                 'created_at' => 'May 7, 2024',
                 'link' => 'https://www.avvanz.com/the-essential-background-check-unveiling-the-basics-of-dbs-checks/',
             ], [
+                'id'=> '26',
                 'title' => 'Demystifying the DBS Check Application: Your Path to Employment',
                 'image' => 'blog26.webp',
                 'created_at' => 'May 10, 2024',
                 'link' => 'https://www.avvanz.com/demystifying-the-dbs-check-application-your-path-to-employment/',
             ], [
+                'id'=> '27',
                 'title' => 'Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers',
                 'image' => 'blog27.webp',
                 'created_at' => 'May 14, 2024',
                 'link' => 'https://www.avvanz.com/unlocking-opportunities-how-enhanced-dbs-checks-open-doors-for-job-seekers/',
             ], [
+                'id'=> '28',
                 'title' => 'Choosing the Best Corporate Training Companies',
                 'image' => 'blog28.webp',
                 'created_at' => 'September 4, 2024',
                 'link' => 'https://www.avvanz.com/choosing-the-best-corporate-training-companies/',
             ], [
+                'id'=> '29',
                 'title' => 'Customized Corporate Training Programs for Employees',
                 'image' => 'blog29.webp',
                 'created_at' => 'September 9, 2024',
                 'link' => 'https://www.avvanz.com/customized-corporate-training-programs-for-employees/',
             ], [
+                'id'=> '30',
                 'title' => 'The Role of Technology in Modern Corporate Training Programs',
                 'image' => 'blog30.webp',
                 'created_at' => 'September 18, 2024',
@@ -165,7 +195,7 @@ class ResourcesController extends Controller
         ];
 
         usort($blogItems, function ($a, $b) {
-            return strtotime($b['created_at']) - strtotime($a['created_at']);
+            return (int)$b['id'] - (int)$a['id'];
         });
 
         $collection = collect($blogItems);
@@ -181,10 +211,48 @@ class ResourcesController extends Controller
             "blogItems" => $blogItemsPaginated,
         ]);
     }
+
+    public function blogItem($title) {
+        return match ($title) {
+            'tips-to-have-an-effective-teacher-hiring-strategy' => view('partials.resources.blog.blog_1'),
+            'how-to-prepare-your-school-for-opening-and-reopening-during-the-covid-crisis' => view('partials.resources.blog.blog_2'),
+            'how-fintech-is-transforming-the-underwriting-process' => view('partials.resources.blog.blog_3'),
+            'the-hidden-risks-of-hiring-remotely' => view('partials.resources.blog.blog_4'),
+            'green-finance-may-pave-a-new-way-for-the-sustainable-development-of-the-banking-industry' => view('partials.resources.blog.blog_5'),
+            'digital-transformation-brings-new-opportunities-for-healthcare' => view('partials.resources.blog.blog_6'),
+            'avvanz-is-awarded-as-hr-technology-company-of-the-year-2021' => view('partials.resources.blog.blog_7'),
+            'creating-a-strong-collaborative-multi-generational-workforce-4-must-do-steps' => view('partials.resources.blog.blog_8'),
+            'diamond-rules-of-entrepreneurship' => view('partials.resources.blog.blog_9'),
+            'myth-or-fact-digital-transformation-is-costly-and-faces-many-uncertainties' => view('partials.resources.blog.blog_10'),
+            'how-to-spot-red-flags-when-interviewing-a-candidate' => view('partials.resources.blog.blog_11'),
+            'back-digital-transformation-brings-new-opportunities-for-healthcare' => view('partials.resources.blog.blog_12'),
+            'all-you-need-to-know-about-the-british-standard-for-security-screening' => view('partials.resources.blog.blog_13'),
+            'introduction-to-us-screening-requirements' => view('partials.resources.blog.blog_14'),
+            'all-you-need-to-know-about-the-new-workforce-screening-standard-in-australia' => view('partials.resources.blog.blog_15'),
+            'afp-checks' => view('partials.resources.blog.blog_16'),
+            'apra-checks' => view('partials.resources.blog.blog_17'),
+            'uk-dbs-checks' => view('partials.resources.blog.blog_18'),
+            '1st-ever-amazonified-company-due-diligence-cdd-platform' => view('partials.resources.blog.blog_19'),
+            'navigating-the-business-world-management-training-courses-in-singapore-unveiled' => view('partials.resources.blog.blog_20'),
+            'delighting-customers-elevate-your-service-with-customer-service-training-in-singapore' => view('partials.resources.blog.blog_21'),
+            'safeguarding-your-future-essential-steps-in-the-company-due-diligence-process' => view('partials.resources.blog.blog_22'),
+            'navigating-success-your-guide-to-corporate-training-programs-in-singapore' => view('partials.resources.blog.blog_23'),
+            'the-key-to-confidence-following-a-proven-financial-due-diligence-checklist' => view('partials.resources.blog.blog_24'),
+            'the-essential-background-check-unveiling-the-basics-of-dbs-checks' => view('partials.resources.blog.blog_25'),
+            'demystifying-the-dbs-check-application-your-path-to-employment' => view('partials.resources.blog.blog_26'),
+            'unlocking-opportunities-how-enhanced-dbs-checks-open-doors-for-job-seekers' => view('partials.resources.blog.blog_27'),
+            'choosing-the-best-corporate-training-companies' => view('partials.resources.blog.blog_28'),
+            'customized-corporate-training-programs-for-employees' => view('partials.resources.blog.blog_29'),
+            'the-role-of-technology-in-modern-corporate-training-programs' => view('partials.resources.blog.blog_30'),
+            // default => back(),
+        };
+    }
+
     public function newsletter()
     {
         $newsletterItems = [
             [
+                'id'=> '1',
                 'title' => 'Q3 Newsletter',
                 'description' => 'Welcome to our Q3 edition of Avvanz’s newsletter! We are thrilled to share with you the latest developments and insights in background screening, human resource solutions and workforce optimization.',
                 'image' => 'newsletter1.webp',
@@ -194,7 +262,7 @@ class ResourcesController extends Controller
         ];
 
         usort($newsletterItems, function ($a, $b) {
-            return strtotime(datetime: $b['created_at']) - strtotime($a['created_at']);
+            return (int)$b['id'] - (int)$a['id'];
         });
 
         $collection = collect($newsletterItems);
@@ -256,6 +324,7 @@ class ResourcesController extends Controller
     {
         $industryItems = [
             [
+                'id'=> '1',
                 'title' => 'Background Verification Service in Asia',
                 'description' => 'Background Verification Service in Asia Background verification services play a crucial role in the hiring process across industries in Asia. Employers are increasingly recognizing the importance of thorough background checks to',
                 'image' => 'industry1.webp',
@@ -265,7 +334,7 @@ class ResourcesController extends Controller
         ];
 
         usort($industryItems, function ($a, $b) {
-            return strtotime(datetime: $b['created_at']) - strtotime($a['created_at']);
+            return (int)$b['id'] - (int)$a['id'];
         });
 
         $collection = collect($industryItems);
@@ -628,151 +697,181 @@ class ResourcesController extends Controller
     {
         $pressItems = [
             [
+                'id' => '1',
                 'title' => 'Drug Testing and Health Screening',
                 'image' => 'press1.webp',
                 'created_at' => 'February 20, 2020',
                 'link'=> 'https://www.avvanz.com/drug-testing-and-health-screening/',
             ], [
+                'id' => '2',
                 'title' => 'Avvanz partners Epic Concepts',
                 'image' => 'press2.webp',
                 'created_at' => 'May 1, 2020',
                 'link'=> 'https://www.avvanz.com/avvanz-partners-epic-concepts/',
             ], [
+                'id' => '3',
                 'title' => 'View From The Top: How to build a stronger business magnet',
                 'image' => 'press3.webp',
                 'created_at' => 'June 29, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-how-to-build-a-stronger-business-magnet/',
             ], [
+                'id' => '4',
                 'title' => 'View From The Top: No room for complacency',
                 'image' => 'press4.webp',
                 'created_at' => 'July 6, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-no-room-for-complacency/',
             ], [
+                'id' => '5',
                 'title' => 'View From The Top: Disparity between the stock markets and the economy',
                 'image' => 'press5.webp',
                 'created_at' => 'July 13, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-disparity-between-the-stock-markets-and-the-economy/',
             ], [
+                'id' => '6',
                 'title' => 'View From The Top: Emerging stronger from the storm',
                 'image' => 'press6.webp',
                 'created_at' => 'July 27, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-emerging-stronger-from-the-storm/',
             ], [
+                'id' => '7',
                 'title' => 'Avvanz Becomes FinTech Certified',
                 'image' => 'press7.webp',
                 'created_at' => 'July 28, 2020',
                 'link'=> 'https://www.avvanz.com/avvanz-becomes-fintech-certified/',
             ], [
+                'id' => '8',
                 'title' => 'View From The Top: Rediscovering Singapore',
                 'image' => 'press8.webp',
                 'created_at' => 'August 3, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-rediscovering-singapore/',
             ], [
+                'id' => '9',
                 'title' => 'More Detailed Background Checks Needed Before Hiring',
                 'image' => 'press9.webp',
                 'created_at' => 'August 5, 2020',
                 'link'=> 'https://www.avvanz.com/more-detailed-background-checks-needed-before-hiring/',
             ], [
+                'id' => '10',
                 'title' => 'View From The Top: Responsible Retrenchment',
                 'image' => 'press10.webp',
                 'created_at' => 'August 17, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-responsible-retrenchment/',
             ], [
+                'id' => '11',
                 'title' => 'View From The Top: Incentive Or Disincentive',
                 'image' => 'press11.webp',
                 'created_at' => 'September 7, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-incentive-or-disincentive/',
             ], [
+                'id' => '12',
                 'title' => 'View From The Top: A Special Exception',
                 'image' => 'press12.webp',
                 'created_at' => 'September 21, 2020',
                 'link'=> 'https://www.avvanz.com/view-from-the-top-a-special-exception/',
             ], [
+                'id' => '13',
                 'title' => 'Avvanz Partners ACI To Enter The Caribbean Region',
                 'image' => 'press13.webp',
                 'created_at' => 'October 28, 2020',
                 'link'=> 'https://www.avvanz.com/avvanz-partners-aci-to-enter-the-caribbean-region/',
             ], [
+                'id' => '14',
                 'title' => 'Gearing Up For The Unexpected: What Has Changed For Your Business This Year?',
                 'image' => 'press14.webp',
                 'created_at' => 'November 30, 2020',
                 'link'=> 'https://www.avvanz.com/gearing-up-for-the-unexpected-what-has-changed-for-your-business-this-year/',
             ], [
+                'id' => '15',
                 'title' => 'Moving Up The Value Chain',
                 'image' => 'press15.webp',
                 'created_at' => 'February 1, 2021',
                 'link'=> 'https://www.avvanz.com/moving-up-the-value-chain/',
             ], [
+                'id' => '16',
                 'title' => 'Gear Up For A Digital Future',
                 'image' => 'press16.webp',
                 'created_at' => 'February 8, 2021',
                 'link'=> 'https://www.avvanz.com/gear-up-for-a-digital-future/',
             ], [
+                'id' => '17',
                 'title' => 'Why Firms Fall Prey To Dishonest Job Seekers',
                 'image' => 'press17.webp',
                 'created_at' => 'March 1, 2021',
                 'link'=> 'https://www.avvanz.com/why-firms-fall-prey-to-dishonest-job-seekers/',
             ], [
+                'id' => '18',
                 'title' => 'Gender Parity More Than Workplace Flexibility Required',
                 'image' => 'press18.webp',
                 'created_at' => 'March 8, 2021',
                 'link'=> 'https://www.avvanz.com/gender-parity-more-than-workplace-flexibility-required/',
             ], [
+                'id' => '19',
                 'title' => 'Avvanz Has Been Chosen And Appointed By The Ministry Of Manpower (MOM) Work Pass Division As An Approved Global Background Screening Company',
                 'image' => 'press19.webp',
                 'created_at' => 'March 9, 2021',
                 'link'=> 'https://www.avvanz.com/avvanz-has-been-chosen-and-appointed-by-the-ministry-of-manpower-mom-work-pass-division-as-an-approved-global-background-screening-company/',
             ], [
+                'id' => '20',
                 'title' => 'Avvanz Partners ACCA Singapore',
                 'image' => 'press20.webp',
                 'created_at' => 'March 22, 2021',
                 'link'=> 'https://www.avvanz.com/avvanz-partners-acca-singapore/',
             ], [
+                'id' => '21',
                 'title' => 'Ensuring That Shareholders Are Heard',
                 'image' => 'press21.webp',
                 'created_at' => 'March 29, 2021',
                 'link'=> 'https://www.avvanz.com/ensuring-that-shareholders-are-heard/',
             ], [
+                'id' => '22',
                 'title' => 'Continuous monitoring in Healthcare Employees can save more lives',
                 'image' => 'press22.webp',
                 'created_at' => 'June 14, 2021',
                 'link'=> 'https://www.avvanz.com/continuous-monitoring-in-healthcare-employees-can-save-more-lives/',
             ], [
+                'id' => '23',
                 'title' => 'Affinidi and Avvanz Sign MOU to Streamline Employment Background Checks in Singapore',
                 'image' => 'press23.webp',
                 'created_at' => 'August 5, 2022',
                 'link'=> 'https://www.avvanz.com/affinidi-and-avvanz-sign-mou-to-streamline-employment-background-checks-in-singapore/',
             ], [
+                'id' => '24',
                 'title' => 'Applicants for a new employment pass must have academic qualifications from September',
                 'image' => 'press24.webp',
                 'created_at' => 'May 2, 2023',
                 'link'=> 'https://www.avvanz.com/applicants-for-a-new-employment-pass-must-have-academic-qualifications-from-september/',
             ], [
+                'id' => '25',
                 'title' => 'Golf club managers to meet over money laundering concerns amid S$1 billion probe',
                 'image' => 'press25.webp',
                 'created_at' => 'September 4, 2023',
                 'link'=> 'https://www.avvanz.com/golf-club-managers-to-meet-over-money-laundering-concerns-amid-s1-billion-probe/',
             ], [
+                'id' => '26',
                 'title' => 'CNA Explains: How does Singapore screen adults who work with kids?',
                 'image' => 'press26.webp',
                 'created_at' => 'January 30, 2024',
                 'link'=> 'https://www.avvanz.com/cna-explains-how-does-singapore-screen-adults-who-work-with-kids/',
             ], [
+                'id' => '27',
                 'title' => 'Avvanz Announces Partnership With Dauntless Technology Solutions',
                 'image' => 'press27.webp',
                 'created_at' => 'February 29, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-announces-partnership-with-dauntless-technology-solutions/',
             ], [
+                'id' => '28',
                 'title' => 'More companies doing background checks for employment pass applicants',
                 'image' => 'press28.webp',
                 'created_at' => 'March 1, 2024',
                 'link'=> 'https://www.avvanz.com/more-companies-doing-background-checks-for-employment-pass-applicants/',
             ], [
+                'id' => '29',
                 'title' => 'Avvanz Pte ltd Expands its Global Reach with New Office Opening in Bengaluru, India',
                 'image' => 'press29.webp',
                 'created_at' => 'May 13, 2024',
                 'link'=> 'https://www.avvanz.com/avvanz-expands-global-reach/',
             ], [
+                'id' => '30',
                 'title' => 'Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Comprehensive Background Checks Now Available In India',
                 'image' => 'press30.webp',
                 'created_at' => 'June 21, 2024',
@@ -781,7 +880,7 @@ class ResourcesController extends Controller
         ];
 
         usort($pressItems, function ($a, $b) {
-            return strtotime($b['created_at']) - strtotime($a['created_at']);
+            return (int)$b['id'] - (int)$a['id'];
         });
 
         $collection = collect($pressItems);

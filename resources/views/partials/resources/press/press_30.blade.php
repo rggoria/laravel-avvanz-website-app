@@ -82,7 +82,7 @@ Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Compreh
                 <i class="fab fa-linkedin-in"></i>
             </a>
         </section>
-    </div>    
+    </div> 
 </section>
 
 @endsection
