@@ -23,7 +23,7 @@ Demystifying the DBS Check Application: Your Path to Employment - Avvanz Global
 
 <section class="container margin-vertical">
     <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog26-1.jpg') }}" alt="blog26-1">
+        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog26-1.png') }}" alt="blog26-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding DBS Checks

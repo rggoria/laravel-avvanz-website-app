@@ -28,14 +28,17 @@ Blog - Avvanz Global
     <div class="row g-3">
         @foreach($blogItems as $item)
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a href="{{ route('blogItem', ['title' => Str::slug($item['title'])]) }}" class="text-decoration-none">
+            {{-- <a href="{{ route('blogItem', ['title' => Str::slug($item['title'])]) }}" class="text-decoration-none"> --}}
+            <a href="{{ $item['link'] }}" class="text-decoration-none">
                 <div class="card border-radius-dmb h-100">
-                    <img
-                        src="{{ asset('images/resources/' . $item['image']) }}"
-                        class="card-img-top"
-                        alt="{{ $item['title'] }}"
-                        style="height: 200px; width: auto;"
-                        loading="lazy">
+                    @if(!empty($item['image']))
+                        <img
+                            src="{{ asset('images/resources/' . $item['image']) }}"
+                            class="card-img-top"
+                            alt="{{ $item['title'] }}"
+                            style="height: 200px; width: auto;"
+                            loading="lazy">
+                    @endif
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bolder text-dmb">
                             {{ $item['title'] === 'Back Digital Transformation Brings New Opportunities For Healthcare' ? 'Digital Transformation Brings New Opportunities For Healthcare' : $item['title'] }}
