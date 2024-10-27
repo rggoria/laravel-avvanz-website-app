@@ -23,7 +23,7 @@ The Role of Technology in Modern Corporate Training Programs - Avvanz Global
 
 <section class="container margin-vertical">
     <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog30-1.jpg') }}" alt="blog30-1">
+        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog35-1.jpg') }}" alt="blog35-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Evolution of Corporate Training Through Technology
