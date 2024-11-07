@@ -13,7 +13,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            Personal Background Verification Check: Why It’s Essential and How to Do It Right - Avvanz Global
+            Personal Background Verification Check: Why It’s Essential and How to Do It Right
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 25, 2024
@@ -218,6 +218,9 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
     <p>
         <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> today to learn more about how you can protect your organization with a reliable and efficient <span class="fw-bolder">personal background verification check</span>.
     </p>
+    <p class="fwb-bolder">
+        Frequently Asked Questions
+    </p>
     <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -342,7 +345,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        Personal Background Verification Check: Why It’s Essential and How to Do It Right - Avvanz Global
+        Personal Background Verification Check: Why It’s Essential and How to Do It Right
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>

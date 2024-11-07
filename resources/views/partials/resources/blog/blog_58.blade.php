@@ -13,7 +13,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            The Complete Guide to Employment Background Verification Check: Why It Matters for Your Business - Avvanz Global
+            The Complete Guide to Employment Background Verification Check: Why It Matters for Your Business
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 25, 2024
@@ -173,6 +173,9 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
     <p>
         Partnering with a reputable background check provider like <span class="fw-bolder">Avvanz</span> ensures that your business hires the right candidates with confidence. <span class="fw-bolder">Avvanz</span> offers global coverage and innovative screening solutions, making it easier for companies to conduct thorough pre-employment and in-employment checks. Their tailored background verification solutions are designed to protect your business from potential risks and enhance the overall quality of your hiring process.
     </p>
+    <p class="fwb-bolder">
+        Frequently Asked Questions
+    </p>
     <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -297,7 +300,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        The Complete Guide to Employment Background Verification Check: Why It Matters for Your Business - Avvanz Global
+        The Complete Guide to Employment Background Verification Check: Why It Matters for Your Business
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>

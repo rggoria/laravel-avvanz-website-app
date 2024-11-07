@@ -13,7 +13,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            How Long Does a Background Verification Check Take? - Avvanz Global
+            How Long Does a Background Verification Check Take?
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 25, 2024
@@ -302,7 +302,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        How Long Does a Background Verification Check Take? - Avvanz Global
+        How Long Does a Background Verification Check Take?
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>

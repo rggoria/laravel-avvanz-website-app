@@ -13,7 +13,7 @@ How Far Back Do Criminal Background Verification Checks Go? - Avvanz Global
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            How Far Back Do Criminal Background Verification Checks Go? - Avvanz Global
+            How Far Back Do Criminal Background Verification Checks Go?
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 21, 2024
@@ -304,7 +304,7 @@ How Far Back Do Criminal Background Verification Checks Go? - Avvanz Global
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        How Far Back Do Criminal Background Verification Checks Go? - Avvanz Global
+        How Far Back Do Criminal Background Verification Checks Go?
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>

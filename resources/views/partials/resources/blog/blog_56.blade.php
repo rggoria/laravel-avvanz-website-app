@@ -13,7 +13,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            Smart Background Verification Check: A Comprehensive Guide for Employers - Avvanz Global
+            Smart Background Verification Check: A Comprehensive Guide for Employers
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 25, 2024
@@ -248,6 +248,9 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
             Easy integration with existing HR systems for a seamless experience.
         </li>
     </ul>
+    <p class="fwb-bolder">
+        Frequently Asked Questions
+    </p>
     <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -372,7 +375,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        Smart Background Verification Check: A Comprehensive Guide for Employers - Avvanz Global
+        Smart Background Verification Check: A Comprehensive Guide for Employers
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>

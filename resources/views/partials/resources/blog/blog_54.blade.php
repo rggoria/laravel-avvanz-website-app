@@ -13,7 +13,7 @@ How to Check Someone’s Criminal Background Verification: A Comprehensive Guide
 <section class="bg-image-2">
     <div class="container padding-vertical text-white">
         <h1 class="fw-bolder display-5">            
-            How to Check Someone’s Criminal Background Verification: A Comprehensive Guide - Avvanz Global
+            How to Check Someone’s Criminal Background Verification: A Comprehensive Guide
         </h1>
         <p>
             <i class="fa fa-calendar"></i> October 21, 2024
@@ -352,7 +352,7 @@ How to Check Someone’s Criminal Background Verification: A Comprehensive Guide
         </section>
     </div>
     <h1 class="fw-bolder display-5">
-        How to Check Someone’s Criminal Background Verification: A Comprehensive Guide - Avvanz Global
+        How to Check Someone’s Criminal Background Verification: A Comprehensive Guide
     </h1>
     <div class="hstack gap-3 text-marigold">
         <div class="vr" style="width: 3px;"></div>
