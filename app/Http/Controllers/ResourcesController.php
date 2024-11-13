@@ -455,6 +455,48 @@ class ResourcesController extends Controller
                 'image' => '',
                 'created_at' => 'October 29, 2024',
                 'link' => 'https://avvanz.com/how-to-run-a-background-verification-check-on-yourself-for-free/',
+            ], [
+                'id'=> '75',
+                'title' => 'Why Conducting a Criminal Background Verification Check for Employment is Crucial for Every Business',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/criminal-background-verification-check-for-employment/',
+            ], [
+                'id'=> '76',
+                'title' => 'How Do Background Verification Checks Work: A Complete Guide for Employers',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/how-do-background-verification-checks-work/',
+            ],  [
+                'id'=> '77',
+                'title' => 'How to Do a Background Verification Check: A Complete Guide for Employers',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/how-to-do-background-verification-check/',
+            ], [
+                'id'=> '78',
+                'title' => 'How to Run a Background Verification Check on Someone for Free',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/how-to-run-a-background-verification-check-on-someone-for-free/',
+            ],  [
+                'id'=> '79',
+                'title' => 'What Does Consider Mean on a Background Verification Check?',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/what-does-consider-mean-on-a-background-verification-check/',
+            ], [
+                'id'=> '80',
+                'title' => 'How to Check Criminal Record by Name: A Comprehensive Guide',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/how-to-check-a-criminal-record-by-name/',
+            ], [
+                'id'=> '81',
+                'title' => 'The Importance of Background Verification Jobs in Today’s Hiring Process',
+                'image' => '',
+                'created_at' => 'November 7, 2024',
+                'link' => 'https://www.avvanz.com/background-verification-jobs/',
             ],
         ];
 
