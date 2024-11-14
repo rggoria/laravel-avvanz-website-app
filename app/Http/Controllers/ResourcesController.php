@@ -594,6 +594,13 @@ class ResourcesController extends Controller
             'what-comes-up-on-a-background-verification-check-for-a-job' => view('partials.resources.blog.blog_72'),
             'comprehensive-guide-to-employer-background-verification-check-why-its-essential-for-your-business' => view('partials.resources.blog.blog_73'),
             'how-to-run-a-background-verification-check-on-yourself-for-free' => view('partials.resources.blog.blog_74'),
+            'why-conducting-a-criminal-background-verification-check-for-employment-is-crucial-for-every-business' => view('partials.resources.blog.blog_75'),
+            'how-do-background-verification-checks-work-a-complete-guide-for-employers' => view('partials.resources.blog.blog_76'),
+            'how-to-do-a-background-verification-check-a-complete-guide-for-employers' => view('partials.resources.blog.blog_77'),
+            'how-to-run-a-background-verification-check-on-someone-for-free' => view('partials.resources.blog.blog_78'),
+            'what-does-consider-mean-on-a-background-verification-check' => view('partials.resources.blog.blog_79'),
+            'how-to-check-criminal-record-by-name-a-comprehensive-guide' => view('partials.resources.blog.blog_80'),
+            'the-importance-of-background-verification-jobs-in-todays-hiring-process' => view('partials.resources.blog.blog_81'),
             // default => back(),
         };
     }
