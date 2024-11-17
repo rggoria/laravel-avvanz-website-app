@@ -30,8 +30,8 @@ Webinar: Safeguarding And Child Protection Part 2 - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Webinar: Safeguarding And Child Protection Part 2
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar8-1.png') }}" alt="webinar8-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar8-1.png') }}" alt="webinar8-1">
     </div> 
     <p>
         This is Part 2 of the Webinar Series on <span class="fw-bolder">Safeguarding and Child Protection</span>.

@@ -22,8 +22,8 @@ Delighting Customers: Elevate Your Service with Customer Service Training in Sin
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog21-1.png') }}" alt="blog21-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog21-1.png') }}" alt="blog21-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Importance of Customer Service Training
@@ -99,8 +99,8 @@ Delighting Customers: Elevate Your Service with Customer Service Training in Sin
     <p>
         Remember, customer service training is just one aspect of corporate training in Singapore. Companies can explore other training programs such as executive coaching, communication skills training, management training courses, and soft skills training to further enhance their workforce capabilities.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog21-2.png') }}" alt="blog21-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog21-2.png') }}" alt="blog21-2">
     </div>
     <p class="fw-bolder">
         Key Components of Effective Customer Service Trainings

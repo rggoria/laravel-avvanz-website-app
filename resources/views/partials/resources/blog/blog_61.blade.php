@@ -6,6 +6,11 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -160,14 +165,14 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <span class="fw-bolder">Ready for a reliable background check? </span>
         <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> for professional background screening services that will verify your employment history and more.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. How do I find my employment history for free using government services?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. How do I find my employment history for free using government services?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -179,7 +184,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Can I find my employment history online for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Can I find my employment history online for free?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -191,7 +196,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What if I can’t remember all my previous jobs?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What if I can’t remember all my previous jobs?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -203,7 +208,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does it take to get Social Security employment records?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does it take to get Social Security employment records?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -215,7 +220,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can my credit report show my employment history?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can my credit report show my employment history?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -227,7 +232,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. How can I find my employment history for free without government records?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. How can I find my employment history for free without government records?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -239,7 +244,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Should I update my employment history regularly?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Should I update my employment history regularly?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -251,7 +256,7 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. How do I find my employment history for free if I moved between states?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. How do I find my employment history for free if I moved between states?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -297,4 +302,21 @@ How Do I Find My Employment History for Free? A Complete Guide - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

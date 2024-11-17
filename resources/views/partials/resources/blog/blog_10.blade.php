@@ -22,8 +22,8 @@ MYTH OR FACT? Digital Transformation Is Costly And Faces Many Uncertainties - Av
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog10-1.jpg') }}" alt="blog10-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog10-1.jpg') }}" alt="blog10-1">
     </div> 
     <p>
         Through the years an upgrade in tech has become the primary goal of digital innovation in businesses. In the name of maturity, more and more industries are beginning to try to pump information technology into their process, operations, and way of doing things. While many organizations hope to join the trend of digital transformation, digitalization is faced with a cultural atmosphere that resists change, limited sharing and collaboration, readiness issues, and even shortage of talent. While most organizations want so badly to change, existing practices are just not suitable for digitalization, which can also entail huge investments, in the long run. For most organizations, digital transformation projects can also be time-consuming and expensive.

@@ -10,8 +10,8 @@ Digital Transformation - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         Embrace the Future: Digital Transformation to Future-Proof your Business
     </h1>  
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/digitalInformation1.jpg') }}" alt="digitalInformation1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/digitalInformation1.jpg') }}" alt="digitalInformation1">
     </div>   
     <p>
         In an era of technology reshaping the business landscape, staying ahead means embracing digital transformation. Our Digital Transformation Program is designed to equip professionals and leaders with the knowledge and skills to drive digital innovation and leverage cutting-edge technologies in their organizations. Explore the 10 dimensions of digital transformation including AI, RPA, Quantum computing, Blockchain, Machine Learning, and more to unlock new opportunities and lead your organization into the future.
@@ -103,8 +103,8 @@ Digital Transformation - Avvanz Global
     <h1 class="text-center text-pb fw-bolder display-5">
         Critical Soft Skills for the Digital Economy
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/digitalInformation2.png') }}" alt="digitalInformation2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/digitalInformation2.png') }}" alt="digitalInformation2">
     </div>
     <p>
         Welcome to our suite of soft skills training programs. In the modern workplace, technical skills are crucial, but soft skills are the unsung heroes that drive collaboration, innovation, and effectiveness. Our tailored training programs in Team Building, Critical Thinking and Problem Solving, and Effective Communication are designed to empower your team with the essential skills they need to excel in any professional environment. Enhance your team’s dynamics, foster a culture of continuous improvement, and achieve outstanding results through our expert-led training sessions.
@@ -115,8 +115,8 @@ Digital Transformation - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         High-Performance Team Dynamics
     </h1>  
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/digitalInformation3.png') }}" alt="digitalInformation3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/digitalInformation3.png') }}" alt="digitalInformation3">
     </div>   
     <p>
         This program focuses on the foundations of effective team building. Participants will learn strategies to foster collaboration, trust, and synergy among team members. Through our interactive workshop and activities, teams will discover how to overcome common challenges, leverage individual strengths, and achieve collective goals.
@@ -150,8 +150,8 @@ Digital Transformation - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         Multi-dimensional Thinking and Problem Solving Skills
     </h1>  
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/digitalInformation4.png') }}" alt="digitalInformation4">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/digitalInformation4.png') }}" alt="digitalInformation4">
     </div>   
     <p>
         This program equips participants with the tools to apply various thinking skills such as critical thinking, creative thinking, design thinking and system thinking skills and adopt the problem-solving techniques effectively in their daily work. Through real case studies and real-world scenarios, learners will sharpen their analytical skills, make better decisions, and tackle complex problems with confidence.
@@ -185,8 +185,8 @@ Digital Transformation - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         Mastering Workplace Communication
     </h1>  
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/digitalInformation5.png') }}" alt="digitalInformation5">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/digitalInformation5.png') }}" alt="digitalInformation5">
     </div>   
     <p>
         Effective communication is vital for professional success. This program is designed to enhance interpersonal and presentation skills, ensuring participants can communicate clearly and persuasively in a variety of business contexts. Learn to convey your messages confidently, listen actively, and interact professionally with peers, subordinates, and superiors.

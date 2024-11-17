@@ -22,14 +22,14 @@ All you need to know about the British Standard for Security Screening - Avvanz 
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog13-1.jpg') }}" alt="blog13-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog13-1.jpg') }}" alt="blog13-1">
     </div> 
     <p>
         Avvanz’s 7 years of serving more than 2000 companies around the globe has enabled us tooffer some useful data analytics – Out of every 10 resumes at least 3 pose some form of resume frauds. These include inflated or even fake credentials (like education qualifications and inaccurate employment details), undeclared derogatory pasts (criminal, financial and even identity related) and disturbing social media footprint.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog13-2.png') }}" alt="blog13-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog13-2.png') }}" alt="blog13-2">
     </div>
     <p>
         Hence a thorough background checks or a screening framework needs to be in place – not just on new joiners but even on contractors and employees. What checks should be undertaken? Any guidelines out there? A good reference is BS7858.
@@ -90,8 +90,8 @@ All you need to know about the British Standard for Security Screening - Avvanz 
     <p>
         Criminal Checks can be found here:
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog13-3.png') }}" alt="blog13-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog13-3.png') }}" alt="blog13-3">
     </div>
     <p>
         Should you need any assistance with BS7858:2019, you can drop us an email at

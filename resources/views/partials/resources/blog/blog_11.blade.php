@@ -22,8 +22,8 @@ How To Spot Red Flags When Interviewing A Candidate - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog11-1.jpg') }}" alt="blog11-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog11-1.jpg') }}" alt="blog11-1">
     </div> 
     <p>
         Interviewing candidates is important to find the best fit for your company. However, interviews are not always enough to make sure that you have found the right person. There are many more factors involved in assessing a candidate’s fit and personality. Below, we will discuss the signs that may indicate if a candidate is bullshitting during an interview or assessment process!

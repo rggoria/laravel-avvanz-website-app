@@ -13,7 +13,7 @@ Q3 Newsletter - Avvanz Global
 
 <section class="container margin-vertical">
     <div class="text-center margin-vertical">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/newsletter1-1.png') }}" alt="newsletter1-1">
+        <img class="img-fluid w-50 h-50 transition-up" src="{{ asset('images/resources/newsletter1-1.png') }}" alt="newsletter1-1">
     </div>
     <p>
         Welcome to the Q3 edition of Avvanz’s newsletter! We’re excited to share the latest on background screening, compliance solutions, and company updates. Stay informed, stay ahead!

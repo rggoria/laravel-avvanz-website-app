@@ -30,8 +30,8 @@ Singtel Learning Fiesta - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Singtel Learning Fiesta
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar1-1.jpg') }}" alt="webinar1-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar1-1.jpg') }}" alt="webinar1-1">
     </div> 
     <p>
         Kannan Chettiar led a Classroom of Singtel Departmental leaders on:

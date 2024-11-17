@@ -22,8 +22,8 @@ Creating a Strong, Collaborative Multi-Generational Workforce: 4 Must-Do Steps -
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog8-1.jpg') }}" alt="blog8-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog8-1.jpg') }}" alt="blog8-1">
     </div> 
     <p>
         When COVID-19 struck, one of the critical HR issues for organizations was managing a multigenerational workforce ONLINE. This ongoing global crisis provided an opportunity to revisit the long held approach of segmenting the age groups vs truly understanding and managing different skill and workforce profiles.

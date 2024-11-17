@@ -22,8 +22,8 @@ Diamond Rules of Entrepreneurship - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog9-1.jpg') }}" alt="blog9-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog9-1.jpg') }}" alt="blog9-1">
     </div> 
     <p>
         In this age of technological advancement, Entrepreneurship can be overwhelming. Sometimes, what seems easy to some can be hard for others, and vice versa. What if there’s a guide that can help you determine the positive attitudes of success, and how you can be more effective in running your business?
@@ -60,7 +60,7 @@ Diamond Rules of Entrepreneurship - Avvanz Global
     <div class="row margin-vertical">
         <div class="col-6">
             <div class="text-center">
-                <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog9-2.png') }}" alt="blog9-2">
+                <img class="img-fluid w-50 h-50 transition-up" src="{{ asset('images/resources/blogItems/blog9-2.png') }}" alt="blog9-2">
             </div>
         </div>
         <div class="col-6">

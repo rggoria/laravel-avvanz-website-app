@@ -30,8 +30,8 @@ Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Compreh
     <h1 class="display-5 fw-bolder">
         Avvanz Tackles Employee Screening Challenges: Affordable, Compliant, and Comprehensive Background Checks Now Available In India
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press30-1.jpg') }}" alt="press30-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press30-1.jpg') }}" alt="press30-1">
     </div> 
     <p>
         Avvanz, a leading HRTech and FinTech company, has officially launched in India, a move seen as significant for the Indian labor market due to its unique challenges in background screening, such as inaccurate information, time-consuming processes, and a lack of centralized data sources. With a proven track record of serving over 4000 companies globally, Avvanz offers comprehensive, compliant, and affordable solutions tailored to the Indian market. Headquartered in Singapore and with global offices, including a new one in Bengaluru, Karnataka, Avvanz will provide services such as Background Screening, Company Due Diligence, and Digital Economy Training to help Indian businesses and international companies with an Indian presence build a strong and secure workforce.

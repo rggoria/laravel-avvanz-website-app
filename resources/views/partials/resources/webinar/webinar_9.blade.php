@@ -30,8 +30,8 @@ Webinar: Safeguarding And Child Protection Part 3 - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Webinar: Safeguarding And Child Protection Part 3
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar9-1.png') }}" alt="webinar9-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar9-1.png') }}" alt="webinar9-1">
     </div> 
     <p>
         In this Part 3 of Avvanz’s Safeguarding and Child Protection Webinar, our panelists from Singapore, UK and India discussed:
@@ -72,11 +72,11 @@ Webinar: Safeguarding And Child Protection Part 3 - Avvanz Global
     <p>
         Shots taken during Webinar:
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar9-2.png') }}" alt="webinar9-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar9-2.png') }}" alt="webinar9-2">
     </div> 
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar9-3.png') }}" alt="webinar9-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar9-3.png') }}" alt="webinar9-3">
     </div> 
 </section>
 

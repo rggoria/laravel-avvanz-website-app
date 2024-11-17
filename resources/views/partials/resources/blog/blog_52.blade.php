@@ -6,6 +6,11 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -244,11 +249,11 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -260,7 +265,7 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How do I read a criminal background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How do I read a criminal background check?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -272,7 +277,7 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What should I do if I find discrepancies in a candidate's employment history?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What should I do if I find discrepancies in a candidate's employment history?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -284,7 +289,7 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Is a credit report necessary for all positions?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Is a credit report necessary for all positions?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -296,7 +301,7 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. How can I ensure compliance with hiring laws?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. How can I ensure compliance with hiring laws?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -342,4 +347,21 @@ How to Read a Background Verification Check: A Comprehensive Guide - Avvanz Glob
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

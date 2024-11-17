@@ -6,6 +6,11 @@ Does a Background Verification Check Show Employment History? Everything You Nee
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -226,14 +231,14 @@ Does a Background Verification Check Show Employment History? Everything You Nee
     <p>
         To conclude, does a <span class="fw-bolder">background verification check</span> show employment history? The answer is a definite yes. Verifying employment history is a crucial part of the hiring process, helping employers confirm the candidate’s experience and qualifications. By conducting thorough background checks, employers reduce the risk of hiring mistakes, build trust, and ensure a more reliable workforce.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Does a background verification check show employment history?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. Does a background verification check show employment history?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -245,7 +250,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Do background verification checks show employment history for all jobs?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Do background verification checks show employment history for all jobs?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -257,7 +262,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What happens if there’s a gap in employment history?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What happens if there’s a gap in employment history?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -269,7 +274,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Can employment verification reveal why someone left a job?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Can employment verification reveal why someone left a job?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -281,7 +286,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. How far back does employment history verification go?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. How far back does employment history verification go?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -293,7 +298,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. What if my employment history is incorrect on a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. What if my employment history is incorrect on a background check?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -305,7 +310,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Is a candidate notified if a background check is performed?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Is a candidate notified if a background check is performed?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -317,7 +322,7 @@ Does a Background Verification Check Show Employment History? Everything You Nee
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can I refuse a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can I refuse a background verification check?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -363,4 +368,21 @@ Does a Background Verification Check Show Employment History? Everything You Nee
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

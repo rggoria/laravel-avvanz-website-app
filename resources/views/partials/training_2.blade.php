@@ -10,8 +10,8 @@ Sales - Avvanz Global
     <h1 class="text-center text-marigold fw-bolder display-5">
         High-Performance Strategic Selling
     </h1>  
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/sales1.png') }}" alt="sales1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/sales1.png') }}" alt="sales1">
     </div>
     <h5 class="fw-bolder">
         Unleash your Sales Potential: High-Performance Strategic Selling Program
@@ -85,8 +85,8 @@ Sales - Avvanz Global
     <h1 class="text-center text-pb fw-bolder display-5">
         High-Performance Account Management
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/sales2.png') }}" alt="sales2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/sales2.png') }}" alt="sales2">
     </div>
     <h5 class="fw-bolder">
         Elevate Your Success: High-Performance Account Management Programme

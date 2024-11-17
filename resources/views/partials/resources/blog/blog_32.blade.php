@@ -22,8 +22,8 @@ Corporate Leadership Training: Developing Future Leaders - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog32-1.jpg') }}" alt="blog32-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog32-1.jpg') }}" alt="blog32-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding the Need for Leadership Training
@@ -67,8 +67,8 @@ Corporate Leadership Training: Developing Future Leaders - Avvanz Global
     <p>
         Mentoring and coaching are crucial in leadership training. Pairing new leaders with experienced ones helps share knowledge and support growth. These strategies improve leadership skills and create a culture of ongoing learning. This prepares participants for career challenges.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog32-2.jpg') }}" alt="blog32-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog32-2.jpg') }}" alt="blog32-2">
     </div>
     <p class="fw-bolder">
         Source Links

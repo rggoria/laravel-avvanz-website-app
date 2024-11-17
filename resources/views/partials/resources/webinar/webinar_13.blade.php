@@ -30,11 +30,11 @@ Caribbean Webinar: How And Why To Hire The Best Background Check Company - Avvan
     <h1 class="display-5 fw-bolder">
         Caribbean Webinar: How And Why To Hire The Best Background Check Company
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar13-1.png') }}" alt="webinar13-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar13-1.png') }}" alt="webinar13-1">
     </div>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar13-2.jpeg') }}" alt="webinar13-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar13-2.jpeg') }}" alt="webinar13-2">
     </div>
     <a href="https://youtu.be/4RSkI-81Fjw" class="link-hover">Click here to watch the webinar organised by ActionInvest INC and Avvanz. </a>
 </section>

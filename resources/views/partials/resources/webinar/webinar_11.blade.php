@@ -30,8 +30,8 @@ Webinar: Safeguarding And Child Protection Part 4 - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Webinar: Safeguarding And Child Protection Part 4
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar11-1.png') }}" alt="webinar11-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar11-1.png') }}" alt="webinar11-1">
     </div> 
     <p>
         Tune in to our Podcast as Kannan Chettiar, Managing Director of Avvanz speaks about Managing your employee lifecycle from background screening to onboarding to learning. 

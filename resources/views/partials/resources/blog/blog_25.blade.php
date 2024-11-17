@@ -22,8 +22,8 @@ The Essential Background Check: Unveiling the Basics of DBS Checks - Avvanz Glob
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog25-1.png') }}" alt="blog25-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog25-1.png') }}" alt="blog25-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding DBS Checks
@@ -97,8 +97,8 @@ The Essential Background Check: Unveiling the Basics of DBS Checks - Avvanz Glob
     <p>
         It’s worth noting that certain roles may require an Enhanced DBS check with a check against the Barred Lists. The Barred Lists contain the names of individuals who are prohibited from working with vulnerable groups. This additional level of check ensures that those who pose a risk are not employed in positions where they could cause harm.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog25-2.png') }}" alt="blog25-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog25-2.png') }}" alt="blog25-2">
     </div>
     <p class="fw-bolder">
         The Process of Obtaining a DBS Check

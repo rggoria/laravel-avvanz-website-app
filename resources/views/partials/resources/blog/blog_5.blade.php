@@ -22,8 +22,8 @@ Green Finance May Pave A New Way For The Sustainable Development Of The Banking 
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog5-1.jpg') }}" alt="blog5-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog5-1.jpg') }}" alt="blog5-1">
     </div> 
     <p>
         With the rise of sustainable development, more and more attention has been given on how banks can achieve sustainability. The industry believes that although they still have many challenges in developing green finance business models; the opportunities definitely exceed the challenges.

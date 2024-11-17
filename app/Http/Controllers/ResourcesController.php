@@ -12,10 +12,10 @@ class ResourcesController extends Controller
     {
         $blogItems = [
             [
-                'id'=> '2',
+                'id'=> '1',
                 'title' => 'Tips To Have An Effective Teacher Hiring Strategy',
                 'image' => 'blog1.webp',
-                'created_at' => 'June 21, 2021',
+                'created_at' => 'June 10, 2021',
                 'link' => 'https://www.avvanz.com/tips-to-have-an-effective-teacher-hiring-strategy/',
             ], [
                 'id'=> '2',

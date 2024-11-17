@@ -33,8 +33,8 @@ More companies doing background checks for employment pass applicants - Avvanz G
     <p class="text-muted">
         Published on TheBusinessTimes, Dated: Monday, February 26, 2024
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press28-1.jpg') }}" alt="press28-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press28-1.jpg') }}" alt="press28-1">
     </div> 
     <p class="fw-bolder">
         By: Tessa Oh
@@ -52,8 +52,8 @@ More companies doing background checks for employment pass applicants - Avvanz G
     <p class="fw-bolder">
         More SMEs doing checks
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press28-2.jpg') }}" alt="press28-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press28-2.jpg') }}" alt="press28-2">
     </div>
     <p>
         Some screening companies noted a jump in requests from small and medium-sized enterprises (SMEs), many of which did not have proc esses in place for background checks prior to the new requirements. This is in contrast to large multinationals, such as those in the financial sector, which had such practices before Compass due to sectoral regulations or obligations from other jurisdictions. “(Background checks) were already happening. But it’s just SMEs that have jumped on it with this new requirement,” said Kannan Chettiar, chief executive officer of Avvanz. He estimates that demand from SMEs has doubled since the introduction of Compass. But, SME employers are more likely to do only the bare minimum required by the authorities, said screening firms.
@@ -67,8 +67,8 @@ More companies doing background checks for employment pass applicants - Avvanz G
     <p class="text-muted">
         Fiona Cher, Director of Government Services for Asia at Veremark
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press28-3.jpg') }}" alt="press28-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press28-3.jpg') }}" alt="press28-3">
     </div>
     <p>
         For them, it might not be worth coughing up a few thousand dollars to do checks on employees who are needed for only a short stint, he added. Said Fiona Cher, director of government services for Asia at Veremark: “In such cases, these companies may opt to skip the verification process, particularly if they can meet the required Compass points through other candidate or firmwide attributes without relying on qualifications.” Another approach is to run background checks only on candidates applying for certain roles, said Cher.

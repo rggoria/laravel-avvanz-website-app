@@ -30,11 +30,11 @@ Gearing Up For The Unexpected: What Has Changed For Your Business This Year? - A
     <h1 class="text-center display-5 fw-bolder">
         Gearing Up For The Unexpected: What Has Changed For Your Business This Year?
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press14-1.jpeg') }}" alt="press14-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press14-1.jpeg') }}" alt="press14-1">
     </div>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press14-2.jpeg') }}" alt="press14-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press14-2.jpeg') }}" alt="press14-2">
     </div> 
 </section>
 

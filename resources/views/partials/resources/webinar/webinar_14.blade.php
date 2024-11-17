@@ -30,8 +30,8 @@ Joint Webinar: The 4th Industrial Revolution – How To Adapt Your Business To T
     <h1 class="display-5 fw-bolder">
         Joint Webinar: The 4th Industrial Revolution – How To Adapt Your Business To The Inevitable Digital Transformation
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar14-1.png') }}" alt="webinar14-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar14-1.png') }}" alt="webinar14-1">
     </div>
     <p>
         Avvanz, in partnership with Justlogin, presented to close to 150 attendees on “How to Adapt your business to the Inevitable Digital Transformation”. 

@@ -6,6 +6,11 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -199,14 +204,14 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
     <p class="fw-bolder">
         At Avvanz, we specialize in providing comprehensive background verification solutions tailored to your hiring needs. Whether you’re looking to conduct pre-employment checks or in-employment screenings, our innovative services ensure that you hire only the most qualified and trustworthy candidates. Our solutions are designed to minimize risk and protect your business. Visit <a href="{{ route('screen-sub-2') }}" class="link-hover">Avvanz Background Check Services</a> today to learn how we can streamline your hiring process and help you safeguard your organization’s future.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is the purpose of background verification jobs?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is the purpose of background verification jobs?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -218,7 +223,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. What types of background checks are typically performed?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. What types of background checks are typically performed?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -230,7 +235,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Why are background checks important for employers?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Why are background checks important for employers?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -242,7 +247,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does a background check usually take to complete?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does a background check usually take to complete?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -254,7 +259,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can a background check result in a candidate not being hired?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can a background check result in a candidate not being hired?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -266,7 +271,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. What qualifications are required for a career in background verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. What qualifications are required for a career in background verification?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -278,7 +283,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Are background checks required in all industries?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Are background checks required in all industries?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -290,7 +295,7 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. What are the consequences of failing to conduct background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. What are the consequences of failing to conduct background checks?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -336,4 +341,21 @@ The Importance of Background Verification Jobs in Today’s Hiring Process - Avv
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

@@ -6,6 +6,11 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -180,14 +185,14 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
     <p>
         <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> to explore their range of background verification services and ensure that your personal records are up-to-date and error-free.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Can I run a background check on myself for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. Can I run a background check on myself for free?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -199,7 +204,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. What should I do if my background check contains errors?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. What should I do if my background check contains errors?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -211,7 +216,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. How often should I run a background check on myself?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. How often should I run a background check on myself?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -223,7 +228,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What’s included in a free background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What’s included in a free background check?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -235,7 +240,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. How do I dispute an error on my credit report?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. How do I dispute an error on my credit report?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -247,7 +252,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can I check my criminal record for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can I check my criminal record for free?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -259,7 +264,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. What if I find someone using my identity?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. What if I find someone using my identity?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -271,7 +276,7 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can social media affect my background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can social media affect my background check?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -317,4 +322,21 @@ How to Run a Background Verification Check on Yourself for Free - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

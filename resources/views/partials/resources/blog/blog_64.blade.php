@@ -6,6 +6,11 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -110,14 +115,14 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
     <p>
         Looking for an affordable and reliable way to conduct background verification checks? <span class="fw-bolder">Avvanz</span> offers comprehensive solutions tailored to meet your company’s needs. With customizable packages, global coverage, and seamless integration with your HR processes, Avvanz ensures you get the information you need without overpaying. <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> today to learn how much a background verification check costs for your business and start protecting your future hires!
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. How much does a background verification check cost for a small business?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. How much does a background verification check cost for a small business?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -129,7 +134,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Are background verification checks legally required?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Are background verification checks legally required?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -141,7 +146,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. How often should companies conduct background verification checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. How often should companies conduct background verification checks?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -153,7 +158,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Can international candidates be screened?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Can international candidates be screened?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -165,7 +170,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Is there a risk in using free background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Is there a risk in using free background checks?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -177,7 +182,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. How can I reduce the cost of background verification checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. How can I reduce the cost of background verification checks?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -189,7 +194,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. What happens if a candidate fails a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. What happens if a candidate fails a background check?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -201,7 +206,7 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Do background verification checks include drug testing?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Do background verification checks include drug testing?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -247,4 +252,21 @@ How Much Does a Background Verification Check Cost? - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

@@ -22,8 +22,8 @@ Elevate Your Business: Uncover the Power of Executive Coaching in Singapore - Av
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog39-1.png') }}" alt="blog39-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog39-1.png') }}" alt="blog39-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Power of Executive Coaching
@@ -110,8 +110,8 @@ Elevate Your Business: Uncover the Power of Executive Coaching in Singapore - Av
     <p>
         Investing in executive coaching can bring about transformative changes in the way businesses operate and thrive in Singapore’s competitive landscape. By focusing on developing strong leadership, organizations can position themselves for long-term success.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog39-2.jpg') }}" alt="blog39-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog39-2.jpg') }}" alt="blog39-2">
     </div>
     <p class="fw-bolder">
         What to Look for in an Executive Coach

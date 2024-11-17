@@ -22,8 +22,8 @@ The Benefits of Corporate Learning for Businesses - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog37-1.jpg') }}" alt="blog37-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog37-1.jpg') }}" alt="blog37-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding Corporate Learning

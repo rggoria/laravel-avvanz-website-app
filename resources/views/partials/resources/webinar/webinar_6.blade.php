@@ -30,8 +30,8 @@ Recruitment Masterclass: Employer Branding, Candidate Engagement And Background 
     <h1 class="display-5 fw-bolder">
         Recruitment Masterclass: Employer Branding, Candidate Engagement And Background Screening During COVID-19
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar6-1.png') }}" alt="webinar6-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar6-1.png') }}" alt="webinar6-1">
     </div> 
     <p>
         Avvanz, in partnership with Justlogin, presented to close to 200 attendees on why employment screening is even more important amidst Covid-19. RecruiterPal and Happyer spoke about candidate engagement and employer branding. 

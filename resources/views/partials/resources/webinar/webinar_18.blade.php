@@ -30,8 +30,8 @@ Quickiebinar Part 1: How Avvanz Weathered Covid-19 - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Quickiebinar Part 1: How Avvanz Weathered Covid-19
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar18-1.png') }}" alt="webinar18-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar18-1.png') }}" alt="webinar18-1">
     </div>
     <p>
         Kannan Chettiar, CEO of Avvanz speaks about how Avvanz managed to weather Covid-19 and came out stronger after. Digital Transformation, ensuring all our employees were onboard the new changes was key to weathering the changes.

@@ -22,8 +22,8 @@ Customized Corporate Training Programs for Employees - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog29-1.jpg') }}" alt="blog29-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog29-1.jpg') }}" alt="blog29-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding Customized Corporate Training Programs
@@ -99,8 +99,8 @@ Customized Corporate Training Programs for Employees - Avvanz Global
     <p>
         Technology has changed how we train employees. Using Learning Management Systems (LMS) makes training easier and more efficient, especially for those working from home. It lets employees learn at their own pace, making training fit into their busy lives. This approach encourages a culture of ongoing learning and growth in the workplace.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog29-2.jpg') }}" alt="blog29-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog29-2.jpg') }}" alt="blog29-2">
     </div>
     <p class="fw-bolder">
         Conclusion

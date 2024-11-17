@@ -22,8 +22,8 @@ AVVANZ is awarded as HR Technology Company of the Year 2021 - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog7-1.jpg') }}" alt="blog7-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog7-1.jpg') }}" alt="blog7-1">
     </div> 
     <p>
         Closing off the 2021 <span class="fw-bolder">South-East Asia Business awards, Apac-Insider</span> gives opportunities to businesses from different sectors to showcase unparalleled expertise, from manufacturing and exporting to technology and agriculture.

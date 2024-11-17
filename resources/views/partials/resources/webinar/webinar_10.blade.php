@@ -30,8 +30,8 @@ Special APAC COVID-19 Webinar Panel Discussion - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Special APAC COVID-19 Webinar Panel Discussion
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar10-1.png') }}" alt="webinar10-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar10-1.png') }}" alt="webinar10-1">
     </div> 
     <p>
         The webinar kicks off with CV Check’s CEO, Rod Sherwood, sharing some insights on the impact of the pandemic on the background screening market in New Zealand and Australia and follow with a panel of screening experts covering a series of questions relevant to PBSA members during this time.
@@ -86,14 +86,14 @@ Special APAC COVID-19 Webinar Panel Discussion - Avvanz Global
             How do you see the background screening environment in your country evolving in the face of a possible prolonged impact?
         </li>
     </ol>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar10-2.png') }}" alt="webinar10-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar10-2.png') }}" alt="webinar10-2">
     </div> 
     <p>
         To access this Webinar, please log into PBSA and access Webinar Library as below:
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar10-3.png') }}" alt="webinar10-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar10-3.png') }}" alt="webinar10-3">
     </div> 
 </section>
 

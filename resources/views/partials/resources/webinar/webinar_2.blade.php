@@ -30,8 +30,8 @@ Singapore Human Resources Institute - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Singapore Human Resources Institute
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar2-1.png') }}" alt="webinar2-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar2-1.png') }}" alt="webinar2-1">
     </div> 
     <p>
         Kannan Chettiar addressed the Singapore Retail Industry on the importance of a thorough background screening as part of the hiring process. 

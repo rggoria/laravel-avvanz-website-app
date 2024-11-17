@@ -6,6 +6,11 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -203,14 +208,14 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
     <p>
         Visit <a href="{{ route('screen-sub-2') }}" class="link-hover">Visit Avvanz Background Checks</a> and discover how our trusted services can protect your business and ensure safe hiring decisions.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. I legally run a free background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. I legally run a free background check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -222,7 +227,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Which tools can I use to run a free background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Which tools can I use to run a free background check?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -234,7 +239,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Is it safe to rely on free background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Is it safe to rely on free background checks?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -246,7 +251,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What is the difference between free and paid background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What is the difference between free and paid background checks?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -258,7 +263,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Do I need permission to run a free background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Do I need permission to run a free background check?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -270,7 +275,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can I find someone's criminal record for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can I find someone's criminal record for free?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -282,7 +287,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Is it possible to get a complete background check for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Is it possible to get a complete background check for free?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -294,7 +299,7 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. What are the limitations of free background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. What are the limitations of free background checks?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -340,4 +345,21 @@ How to Run a Background Verification Check on Someone for Free - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

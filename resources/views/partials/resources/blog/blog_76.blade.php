@@ -6,6 +6,11 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -227,14 +232,14 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
     <p>
         Looking to ensure a safe and compliant hiring process? Avvanz offers comprehensive background verification solutions, from pre-employment to in-employment screening. With Avvanz, you can customize your checks, receive real-time updates, and ensure compliance with local laws. <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz today</a> to safeguard your organization’s future.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -246,7 +251,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How do background verification checks work for criminal records?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How do background verification checks work for criminal records?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -258,7 +263,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Can an employer conduct a background check without consent?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Can an employer conduct a background check without consent?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -270,7 +275,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long do background verification checks take?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long do background verification checks take?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -282,7 +287,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. What happens if a red flag is found?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. What happens if a red flag is found?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -294,7 +299,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Are credit checks part of background verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Are credit checks part of background verification?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -306,7 +311,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. How often should in-employment checks be conducted?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. How often should in-employment checks be conducted?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -318,7 +323,7 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can background checks be done online?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can background checks be done online?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -364,4 +369,21 @@ How Do Background Verification Checks Work: A Complete Guide for Employers - Avv
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

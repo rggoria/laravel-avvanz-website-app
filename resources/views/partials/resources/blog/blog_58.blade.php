@@ -6,6 +6,11 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -173,14 +178,14 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
     <p>
         Partnering with a reputable background check provider like <span class="fw-bolder">Avvanz</span> ensures that your business hires the right candidates with confidence. <span class="fw-bolder">Avvanz</span> offers global coverage and innovative screening solutions, making it easier for companies to conduct thorough pre-employment and in-employment checks. Their tailored background verification solutions are designed to protect your business from potential risks and enhance the overall quality of your hiring process.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What exactly is an employment background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What exactly is an employment background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -192,7 +197,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How long do background checks typically take?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How long do background checks typically take?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -204,7 +209,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Is candidate consent required for background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Is candidate consent required for background checks?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -216,7 +221,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What happens if a candidate’s background check returns negative information?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What happens if a candidate’s background check returns negative information?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -228,7 +233,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Do all companies need to conduct background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Do all companies need to conduct background checks?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -240,7 +245,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can social media be part of an employment background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can social media be part of an employment background verification check?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -252,7 +257,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. How do background checks impact small businesses?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. How do background checks impact small businesses?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -264,7 +269,7 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. How can employers ensure compliance when conducting background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. How can employers ensure compliance when conducting background checks?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -310,4 +315,21 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

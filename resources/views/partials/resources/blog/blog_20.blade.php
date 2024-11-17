@@ -22,8 +22,8 @@ Navigating the Business World Management Training Courses in Singapore Unveiled 
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog20-1.jpg') }}" alt="blog20-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog20-1.jpg') }}" alt="blog20-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Importance of Management Training in Singapore
@@ -64,8 +64,8 @@ Navigating the Business World Management Training Courses in Singapore Unveiled 
     <p>
         In the next section, we will dive into the different types of management training courses available in Singapore, each catering to specific managerial needs and objectives.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog20-2.png') }}" alt="blog20-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog20-2.png') }}" alt="blog20-1">
     </div>
     <p class="fw-bolder">
         Types of Management Training Courses
@@ -103,8 +103,8 @@ Navigating the Business World Management Training Courses in Singapore Unveiled 
     <p>
         Choose the management training courses that align with your professional objectives and invest in continuous learning and development to enhance your management capabilities.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog20-3.webp') }}" alt="blog20-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog20-3.webp') }}" alt="blog20-3">
     </div>
     <p class="fw-bolder">
         Top Management Training Providers in Singapore

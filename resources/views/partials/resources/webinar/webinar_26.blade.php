@@ -30,8 +30,8 @@ Avvanz Techstival 2023 Philippine Edition - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Avvanz Techstival 2023 Philippine Edition
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar26-1.png') }}" alt="webinar26-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar26-1.png') }}" alt="webinar26-1">
     </div>
     <p>
         Theme: <span class="fw-bolder">Leveraging Disruptive Technologies in Human Resources</span>

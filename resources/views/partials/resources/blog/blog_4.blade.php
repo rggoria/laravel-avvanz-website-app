@@ -22,8 +22,8 @@ The Hidden Risks Of Hiring Remotely - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog4-1.jpg') }}" alt="blog4-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog4-1.jpg') }}" alt="blog4-1">
     </div> 
     <p>
         Hiring remote employees is not an easy thing. It requires a different mindset and willingness to go outside your comfort zone. One of them is to be willing and able to invest in them so that they can become an integral part of the team in the long term.

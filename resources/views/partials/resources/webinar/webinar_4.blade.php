@@ -30,8 +30,8 @@ Singapore HR Congress: Sieving Out RIGHT And SAFE Multi-Generational Talents - A
     <h1 class="display-5 fw-bolder">
         Singapore HR Congress: Sieving Out RIGHT And SAFE Multi-Generational Talents
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar4-1.jpg') }}" alt="webinar4-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar4-1.jpg') }}" alt="webinar4-1">
     </div> 
     <p>
         Singapore HR Congress hosted by SHRI was held on November 8th and 9th in 2016. It was initiated by Mr Teo Ser Luck, Minster of State, Ministry of Manpower. Kannan Chettiar, Managing Director of Avvanz, was specially invited for the following:
@@ -44,8 +44,8 @@ Singapore HR Congress: Sieving Out RIGHT And SAFE Multi-Generational Talents - A
             Speaker on <span class="fw-bolder">Sieving our RIGHT and SAFE Multi-Generational Talents</span>
         </li>
     </ul>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar4-2.jpg') }}" alt="webinar4-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar4-2.jpg') }}" alt="webinar4-2">
     </div> 
 </section>
 

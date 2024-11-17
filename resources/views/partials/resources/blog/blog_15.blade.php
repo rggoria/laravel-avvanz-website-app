@@ -22,8 +22,8 @@ All you need to know about the NEW Workforce Screening Standard in Australia - A
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog15-1.jpg') }}" alt="blog15-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog15-1.jpg') }}" alt="blog15-1">
     </div> 
     <p>
         Avvanz’s 7 years of serving more than 2000 companies around the globe have enabled us to do offer some useful data analytics – Out of every 10 resumes at least 3 pose some form of resume fraud. These include inflated or even fake credentials (like education qualifications and inaccurate employment details), undeclared derogatory pasts (criminal, financial, and even identity-related), and disturbing social media footprints. A 2018 report by the NSW Independent Commission Against Corruption
@@ -33,8 +33,8 @@ All you need to know about the NEW Workforce Screening Standard in Australia - A
     <p>
         There are many high-profile examples of wrongful hires causing damage to the hiring organization and the stakeholders. A couple of examples are Veronica Hilda Theriault and Andrew Flanagan. These damages can be related to financial health, reputation, and even the morale of the employees.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog15-2.png') }}" alt="blog15-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog15-2.png') }}" alt="blog15-2">
     </div> 
     <p>
         This calls for a thorough pre-employment background screening (and even on existing employees) which can be complex and cumbersome. A good reference framework is AS4811 or the Australian Standard for Workforce Screening. It outlines the process for implementing a thorough, consistent and efficient background screening process to mitigate people related risks.
@@ -77,8 +77,8 @@ All you need to know about the NEW Workforce Screening Standard in Australia - A
         <a href="https://www.avvanz.com/screenglobal" class="link-hover">https://www.avvanz.com/screenglobal</a>.
         A sample of information on Australia Criminal Checks can be found here:
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog15-3.png') }}" alt="blog15-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog15-3.png') }}" alt="blog15-3">
     </div> 
     <p>
         Should you need any assistance with AS4811:2022, you can drop us an email at <span class="fw-bolder">consult@avvanz.com</span>.

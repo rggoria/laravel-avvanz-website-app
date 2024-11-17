@@ -22,8 +22,8 @@ The Key to Confidence: Following a Proven Financial Due Diligence Checklist - Av
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog24-1.jpg') }}" alt="blog24-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog24-1.jpg') }}" alt="blog24-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Introduction to Financial Due Diligence
@@ -116,8 +116,8 @@ The Key to Confidence: Following a Proven Financial Due Diligence Checklist - Av
     <p>
         By following this step-by-step guide and utilizing a comprehensive financial due diligence checklist, you can ensure a thorough assessment of the company’s financials. This will help you make informed decisions and mitigate potential risks when considering a business transaction or investment.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog24-2.png') }}" alt="blog24-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog24-2.png') }}" alt="blog24-2">
     </div>
     <p class="fw-bolder">
         Assessing Financial Statements

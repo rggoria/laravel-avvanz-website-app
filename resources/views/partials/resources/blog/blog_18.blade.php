@@ -22,8 +22,8 @@ UK DBS Checks - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog18-1.webp') }}" alt="blog18-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog18-1.webp') }}" alt="blog18-1">
     </div> 
     <p>
         DBS stands for Disclosure and Barring Service, which is a government agency in the UK that provides criminal record checks. The DBS check is a background check that is carried out on individuals who work or volunteer with vulnerable groups, such as children or elderly people.
@@ -76,8 +76,8 @@ UK DBS Checks - Avvanz Global
     <p>
         Avvanz also offers Basic Disclosure Scotland Check, ICPC and Volunteer DBS Check. The screenshot below from our multi-award winning ScreenGlobal platform ( <a href="https://www.avvanz.com/screenglobal/" class="link-hover">https://www.avvanz.com/screenglobal/</a> ) shows the options. Feel free to contact us at <a href="mailto:consult@avvanz.com" class="link-hover">consult@avvanz.com</a> for more information. 
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog18-2.png') }}" alt="blog18-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog18-2.png') }}" alt="blog18-2">
     </div> 
     <div class="my-5">
         <div id="response-message"></div>

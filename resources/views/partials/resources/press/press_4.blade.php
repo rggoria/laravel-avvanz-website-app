@@ -30,11 +30,11 @@ View From The Top: No room for complacency - Avvanz Global
     <h1 class="text-center display-5 fw-bolder">
         View From The Top: No room for complacency
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press4-1.jpg') }}" alt="press4-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press4-1.jpg') }}" alt="press4-1">
     </div>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press4-2.png') }}" alt="press4-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press4-2.png') }}" alt="press4-2">
     </div>
 </section>
 

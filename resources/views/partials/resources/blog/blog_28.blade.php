@@ -22,8 +22,8 @@ Choosing the Best Corporate Training Companies - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog28-1.webp') }}" alt="blog28-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog28-1.webp') }}" alt="blog28-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Importance of Corporate Training
@@ -114,8 +114,8 @@ Choosing the Best Corporate Training Companies - Avvanz Global
     <p>
         These providers use different approaches for various skills and team dynamics. This ensures that businesses can develop their teams effectively and meet their goals.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog28-2.jpg') }}" alt="blog28-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog28-2.jpg') }}" alt="blog28-2">
     </div>
     <p class="fw-bolder">
         Conclusion

@@ -30,8 +30,8 @@ Avvanz At Singapore FinTech Festival 2020 (7-11 Dec) - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Avvanz At Singapore FinTech Festival 2020 (7-11 Dec)
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar16-1.png') }}" alt="webinar16-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar16-1.png') }}" alt="webinar16-1">
     </div>
     <p>
         Tune in to our Podcast as Kannan Chettiar, Managing Director of Avvanz speaks about Managing your employee lifecycle from background screening to onboarding to learning. 
@@ -39,8 +39,8 @@ Avvanz At Singapore FinTech Festival 2020 (7-11 Dec) - Avvanz Global
     <p>
         For the full Podcast, click <a href="https://adriantan.com.sg/kannan-chettiar-avvanz/" class="link-hover">here</a>.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar16-2.png') }}" alt="webinar16-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar16-2.png') }}" alt="webinar16-2">
     </div>
 </section>
 

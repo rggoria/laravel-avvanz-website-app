@@ -30,8 +30,8 @@ Avvanz Techstival 7 April - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Avvanz Techstival 7 April
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar19-1.jpg') }}" alt="webinar19-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar19-1.jpg') }}" alt="webinar19-1">
     </div>
     <h1 class="fw-bolder">
         ABOUT TECHSTIVAL

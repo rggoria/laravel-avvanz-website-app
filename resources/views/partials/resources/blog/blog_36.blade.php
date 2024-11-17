@@ -22,8 +22,8 @@ Unlocking Opportunities: Streamline Your Application with a DBS Check Online - A
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog36-1.png') }}" alt="blog36-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog36-1.png') }}" alt="blog36-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Importance of a DBS Check
@@ -110,8 +110,8 @@ Unlocking Opportunities: Streamline Your Application with a DBS Check Online - A
     <p>
         By embracing the convenience and efficiency of DBS Check Online, applicants can streamline the application process and experience a more seamless journey. Remember to gather all the necessary information before starting your application, follow the instructions carefully, and be prepared for any potential delays that may occur during the process.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog36-2.jpg') }}" alt="blog36-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog36-2.jpg') }}" alt="blog36-2">
     </div>
     <p class="fw-bolder">
         How DBS Check Online Works

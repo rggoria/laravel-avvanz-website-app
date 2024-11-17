@@ -6,6 +6,11 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -199,14 +204,14 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
     <p>
         Avvanz provides a comprehensive and scalable solution for companies looking to streamline how to do background verification checks. With customizable options, global reach, and a deep understanding of compliance, Avvanz ensures that your hiring process is safe, efficient, and legally compliant. <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz today</a> to ensure you’re making the right hiring decisions with confidence!
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -218,7 +223,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Why is consent necessary for background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Why is consent necessary for background checks?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -230,7 +235,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. How long does a background verification check take?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. How long does a background verification check take?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -242,7 +247,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What can be included in a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What can be included in a background verification check?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -254,7 +259,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can a candidate dispute a background check result?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can a candidate dispute a background check result?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -266,7 +271,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. What are the most important background checks for high-security roles?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. What are the most important background checks for high-security roles?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -278,7 +283,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. How far back do background verification checks go?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. How far back do background verification checks go?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -290,7 +295,7 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can I run an international background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can I run an international background check?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -336,4 +341,21 @@ How to Do a Background Verification Check: A Complete Guide for Employers - Avva
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

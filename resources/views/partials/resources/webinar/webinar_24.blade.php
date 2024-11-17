@@ -30,8 +30,8 @@ Avvanz Webcafe: Monetary Authority of Singapore (MAS) Mandatory Reference Checks
     <h1 class="display-5 fw-bolder">
         Avvanz Webcafe: Monetary Authority of Singapore (MAS) Mandatory Reference Checks
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar24-1.png') }}" alt="webinar24-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar24-1.png') }}" alt="webinar24-1">
     </div>
     <p>
         <span class="fw-bolder">Participants:</span> Kannan Chettiar and Siang Tan of Avvanz

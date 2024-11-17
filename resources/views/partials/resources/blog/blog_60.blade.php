@@ -6,6 +6,11 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -302,14 +307,14 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
     <p>
         <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz today</a> to protect your business with fast, comprehensive background checks. Get in touch.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -321,7 +326,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Why are background checks important?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Why are background checks important?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -333,7 +338,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. How long do background checks take?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. How long do background checks take?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -345,7 +350,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Do I need consent for a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Do I need consent for a background check?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -357,7 +362,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. What shows up in a criminal background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. What shows up in a criminal background check?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -369,7 +374,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can a candidate dispute a background check result?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can a candidate dispute a background check result?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -381,7 +386,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Do background checks affect credit scores?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Do background checks affect credit scores?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -393,7 +398,7 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. What’s the best background check provider?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. What’s the best background check provider?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -439,4 +444,21 @@ How to Do a Background Verification Check on Someone: A Complete Guide - Avvanz 
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

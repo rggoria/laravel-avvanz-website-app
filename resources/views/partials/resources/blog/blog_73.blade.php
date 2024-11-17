@@ -6,6 +6,11 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -193,14 +198,14 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
     <p>
         <span class="fw-bolder">Get in touch with Avvanz</span> today to streamline your hiring process and protect your business from risks. <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> now for a consultation on how they can support your verification needs.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What does an employer background verification check include?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What does an employer background verification check include?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -212,7 +217,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How long does an employer background verification check take?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How long does an employer background verification check take?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -224,7 +229,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Are background verification checks mandatory?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Are background verification checks mandatory?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -236,7 +241,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What is the FCRA, and why is it important?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What is the FCRA, and why is it important?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -248,7 +253,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can a candidate dispute background check findings?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can a candidate dispute background check findings?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -260,7 +265,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. How often should background checks be conducted?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. How often should background checks be conducted?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -272,7 +277,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. What’s the cost of an employer background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. What’s the cost of an employer background verification check?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -284,7 +289,7 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. How does Avvanz ensure compliance with local laws?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. How does Avvanz ensure compliance with local laws?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -330,4 +335,21 @@ Comprehensive Guide to Employer Background Verification Check: Why It’s Essent
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

@@ -6,6 +6,11 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -185,14 +190,14 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
     <p>
         To protect your business and ensure safe, compliant hiring, partner with Avvanz for all your <span class="fw-bolder">criminal background verification check for employment</span> needs. With expertise across multiple countries, Avvanz offers reliable, fast, and compliant background screening services. <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> for a consultation!
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What information does a criminal background check reveal?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What information does a criminal background check reveal?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -204,7 +209,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Do employers need permission to run a criminal background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Do employers need permission to run a criminal background check?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -216,7 +221,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Can criminal background checks affect hiring decisions?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Can criminal background checks affect hiring decisions?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -228,7 +233,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does a criminal background check take?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does a criminal background check take?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -240,7 +245,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Are background checks mandatory for all jobs?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Are background checks mandatory for all jobs?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -252,7 +257,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. What are the legal risks of not conducting a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. What are the legal risks of not conducting a background check?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -264,7 +269,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. How does Avvanz ensure compliance with local regulations?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. How does Avvanz ensure compliance with local regulations?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -276,7 +281,7 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can a criminal record be a dealbreaker in all cases?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can a criminal record be a dealbreaker in all cases?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -322,4 +327,21 @@ Why Conducting a Criminal Background Verification Check for Employment is Crucia
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

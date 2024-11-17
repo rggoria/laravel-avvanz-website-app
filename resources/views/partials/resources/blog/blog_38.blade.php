@@ -22,8 +22,8 @@ Empowering Excellence: Enhance Your Team with Soft Skills Training in Singapore 
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog38-1.jpg') }}" alt="blog38-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog38-1.jpg') }}" alt="blog38-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Importance of Soft Skills Training
@@ -107,8 +107,8 @@ Empowering Excellence: Enhance Your Team with Soft Skills Training in Singapore 
     <p>
         To explore specific soft skills training programs available in Singapore, including communication skills training and management training courses, consider partnering with a reputable training provider like Avvanz. They offer comprehensive corporate training programs in Singapore that can be customized to meet your team’s unique needs. Assess your team’s training requirements, design a tailored program, and evaluate the effectiveness of the training to ensure maximum impact on your team’s development.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog38-2.png') }}" alt="blog38-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog38-2.png') }}" alt="blog38-2">
     </div>
     <p class="fw-bolder">
         Soft Skills Training in Singapore

@@ -6,6 +6,11 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -226,11 +231,11 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is the background verification process in HR?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is the background verification process in HR?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -242,7 +247,7 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Why is background verification important in HR?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Why is background verification important in HR?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -254,7 +259,7 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What documents are needed for background verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What documents are needed for background verification?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -266,7 +271,7 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does the background verification process take?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does the background verification process take?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -278,7 +283,7 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. What happens if a candidate fails a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. What happens if a candidate fails a background check?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -324,4 +329,21 @@ What is the Background Verification Process in HR? A Comprehensive Guide - Avvan
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

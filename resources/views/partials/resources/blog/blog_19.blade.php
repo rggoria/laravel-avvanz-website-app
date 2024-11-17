@@ -22,8 +22,8 @@
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog19-1.webp') }}" alt="blog19-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog19-1.webp') }}" alt="blog19-1">
     </div> 
     <p>
         We from Avvanz are extremely excited to announce the launch of our new product  <a href="https://cdd-global.avvanz.com/login" class="link-hover">CDDGlobal</a> – Your Global solution for Company Due Diligence.
@@ -69,8 +69,8 @@
             Avvanz is an ISO 27001 and 27701 Certified company and we understand the importance of data privacy and security. Therefore, CDDGlobal is designed to comply with all relevant data protection regulations, ensuring that sensitive information is protected at all times.
         </li>
     </ul>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog19-2.png') }}" alt="blog19-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog19-2.png') }}" alt="blog19-2">
     </div> 
     <p>
         The launch of CDD comes at a time when businesses are facing increasing pressure to conduct due diligence on their partners and suppliers. With the rise of globalization and the increasing complexity of business relationships, it has become more important than ever for companies to have a reliable way to evaluate their counterparts. We are confident that CDDGlobal  will be a valuable asset for any company looking to protect its interests and reputation in the market.

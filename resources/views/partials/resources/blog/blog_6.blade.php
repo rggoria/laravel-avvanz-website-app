@@ -22,8 +22,8 @@ Digital Transformation Brings New Opportunities For Healthcare - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog6-1.jpg') }}" alt="blog6-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog6-1.jpg') }}" alt="blog6-1">
     </div> 
     <p>
         With the rise of sustainable Healthcare is rapidly changing. New technologies are emerging that can benefit the patient, provider and payer alike. Digital transformation has led to new ways of delivering care, including telemedicine and virtual health clinics. Telemedicine provides patients with access to medical advice from a doctor without having to physically see them in person. This not only saves time for the healthcare professional but it also reduces costs for both parties because there are no travel expenses or wait times associated with waiting rooms. Virtual health clinics work similarly by providing a means of delivering quality care through an online platform that connects providers and patients virtually using high-definition video conferencing technology such as Skype or FaceTime.

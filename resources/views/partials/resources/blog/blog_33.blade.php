@@ -22,8 +22,8 @@ From Application to Approval: Navigating the DBS Check Process - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog33-1.jpg') }}" alt="blog33-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog33-1.jpg') }}" alt="blog33-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding the DBS Check
@@ -111,8 +111,8 @@ From Application to Approval: Navigating the DBS Check Process - Avvanz Global
     <p>
         By understanding the various steps involved in the DBS check process, individuals can navigate the process more effectively and ensure a smooth and timely application. It’s important to consider the specific requirements of the role and choose the appropriate level of DBS check.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog33-2.png') }}" alt="blog33-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog33-2.png') }}" alt="blog33-2">
     </div>
     <p class="fw-bolder">
         Levels of DBS Checks

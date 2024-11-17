@@ -22,8 +22,8 @@ Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers - Av
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog27-1.jpg') }}" alt="blog27-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog27-1.jpg') }}" alt="blog27-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding Enhanced DBS Checks
@@ -114,8 +114,8 @@ Unlocking Opportunities: How Enhanced DBS Checks Open Doors for Job Seekers - Av
         By implementing enhanced DBS checks as a standard practice, organizations can ensure the safety and well-being of those they serve. It provides peace of mind to parents, patients, and the wider community, knowing that those in positions of responsibility have undergone thorough background checks.
     </p>
     The benefits of enhanced DBS checks extend to both employers and job seekers alike. Employers can create a safer working environment and build trust, while job seekers can showcase their commitment to integrity and professionalism. By understanding the advantages of enhanced DBS checks, individuals and organizations can make informed decisions that prioritize safety and security.
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog27-1.png') }}" alt="blog27-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog27-1.png') }}" alt="blog27-1">
     </div>
     <p class="fw-bolder">
         Industries Requiring Enhanced DBS Checks

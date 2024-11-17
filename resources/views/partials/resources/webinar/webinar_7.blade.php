@@ -30,8 +30,8 @@ Webinar: Know Who You Hire - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Webinar: Know Who You Hire
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar7-1.jpg') }}" alt="webinar7-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar7-1.jpg') }}" alt="webinar7-1">
     </div> 
     <p>
         This Webinar discusses strategies and techniques to help HR mitigate risks in making wrongful hires. It covers the following commonly asked questions:

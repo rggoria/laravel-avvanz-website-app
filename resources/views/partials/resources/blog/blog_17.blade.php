@@ -22,8 +22,8 @@ APRA Checks - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog17-1.webp') }}" alt="blog17-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog17-1.webp') }}" alt="blog17-1">
     </div> 
     <p class="fw-bolder">
         What is APRA?
@@ -37,8 +37,8 @@ APRA Checks - Avvanz Global
     <p>
         More information on APRA – <a href="https://www.apra.gov.au/" class="link-hover">https://www.apra.gov.au/</a>
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog17-2.webp') }}" alt="blog17-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog17-2.webp') }}" alt="blog17-2">
     </div> 
     <p class="text-center text-muted">
         Source of logo: APRA site

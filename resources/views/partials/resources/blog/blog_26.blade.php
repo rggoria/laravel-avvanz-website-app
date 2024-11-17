@@ -22,8 +22,8 @@ Demystifying the DBS Check Application: Your Path to Employment - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog26-1.png') }}" alt="blog26-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog26-1.png') }}" alt="blog26-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding DBS Checks
@@ -102,8 +102,8 @@ Demystifying the DBS Check Application: Your Path to Employment - Avvanz Global
     <p>
         By following these steps in the DBS check application process, you can ensure that your application is smoothly processed and increase your chances of securing employment or volunteering opportunities. Remember to provide accurate information, have the necessary identification documents ready, and be patient while awaiting the result. 
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog26-2.png') }}" alt="blog26-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog26-2.png') }}" alt="blog26-2">
     </div>
     <p class="fw-bolder">
         Common Questions about DBS Checks

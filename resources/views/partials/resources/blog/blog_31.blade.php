@@ -22,8 +22,8 @@ Enhancing Corporate Culture Through Effective Training Programs - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog31-1.jpg') }}" alt="blog31-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog31-1.jpg') }}" alt="blog31-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Importance of Corporate Training in Shaping Corporate Culture

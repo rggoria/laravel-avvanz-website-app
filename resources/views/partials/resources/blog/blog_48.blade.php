@@ -6,6 +6,11 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -230,11 +235,11 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Do arrests show up on criminal background verification checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. Do arrests show up on criminal background verification checks?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -246,7 +251,7 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Can employers see arrests that didn’t lead to convictions?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Can employers see arrests that didn’t lead to convictions?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -258,7 +263,7 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Do arrests for minor infractions show up?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Do arrests for minor infractions show up?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -270,7 +275,7 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long do arrests stay on a criminal background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long do arrests stay on a criminal background verification check?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -282,7 +287,7 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can I remove an arrest from my record?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can I remove an arrest from my record?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -328,4 +333,21 @@ Do Arrests Show Up on Criminal Background Verification Checks? - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

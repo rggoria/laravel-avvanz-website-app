@@ -22,8 +22,8 @@ Boost Business Performance: Communication Skills Training in Singapore - Avvanz 
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog34-1.jpg') }}" alt="blog34-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog34-1.jpg') }}" alt="blog34-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         The Importance of Communication Skills Training
@@ -105,8 +105,8 @@ Boost Business Performance: Communication Skills Training in Singapore - Avvanz 
     <p>
         In Singapore, communication skills training goes beyond theoretical knowledge, emphasizing the practical application of skills in real-life business situations. It is an ongoing process that encourages continuous learning and development. By investing in communication skills training in Singapore, individuals and organizations can maximize the impact of their training efforts, measure the impact on business performance, and ultimately achieve their communication goals.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog34-2.jpg') }}" alt="blog34-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog34-2.jpg') }}" alt="blog34-2">
     </div>
     <p class="fw-bolder">
         Key Communication Skills for Business Success

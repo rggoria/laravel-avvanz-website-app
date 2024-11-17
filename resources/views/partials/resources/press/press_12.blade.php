@@ -30,8 +30,8 @@ View From The Top: A Special Exception - Avvanz Global
     <h1 class="text-center display-5 fw-bolder">
         View From The Top: A Special Exception
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press12-1.png') }}" alt="press12-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press12-1.png') }}" alt="press12-1">
     </div> 
 </section>
 

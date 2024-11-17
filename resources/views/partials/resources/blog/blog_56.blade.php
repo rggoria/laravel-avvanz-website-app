@@ -6,6 +6,11 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -248,14 +253,14 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
             Easy integration with existing HR systems for a seamless experience.
         </li>
     </ul>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a smart background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a smart background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -267,7 +272,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How does it differ from traditional background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How does it differ from traditional background checks?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -279,7 +284,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What information does a smart background check provide?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What information does a smart background check provide?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -291,7 +296,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does a smart background verification check take?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does a smart background verification check take?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -303,7 +308,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Is a smart background verification check compliant with regulations?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Is a smart background verification check compliant with regulations?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -315,7 +320,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can candidates opt out of the background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can candidates opt out of the background check?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -327,7 +332,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Why should employers use a smart background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Why should employers use a smart background verification check?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -339,7 +344,7 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. How does Avvanz support smart background verification checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. How does Avvanz support smart background verification checks?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -385,4 +390,21 @@ Smart Background Verification Check: A Comprehensive Guide for Employers - Avvan
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

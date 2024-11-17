@@ -30,8 +30,8 @@ AVVANZ WEBCAFE: The Great Resignation vs. The Great Retention - Avvanz Global
     <h1 class="display-5 fw-bolder">
         AVVANZ WEBCAFE: The Great Resignation vs. The Great Retention
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar25-1.png') }}" alt="webinar25-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar25-1.png') }}" alt="webinar25-1">
     </div>
     <p>
         <span class="fw-bolder">Participants:</span>

@@ -30,8 +30,8 @@ Panel Discussion: Talent Acquisition And Engagement Challenges Amidst The Pandem
     <h1 class="display-5 fw-bolder">
         Panel Discussion: Talent Acquisition And Engagement Challenges Amidst The Pandemic
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar15-1.png') }}" alt="webinar15-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar15-1.png') }}" alt="webinar15-1">
     </div>
     <p>
         Avvanz’s Panel Discussion along with Bank of Singapore, Singlife, Singapore Human Resources Institute (SHRI), OC Tanner and Justlogin, received an overwhelming attendance given the timely topics the panel delved into – ‘Talent Acquisition and Engagement Challenges Amidst the Pandemic’. 

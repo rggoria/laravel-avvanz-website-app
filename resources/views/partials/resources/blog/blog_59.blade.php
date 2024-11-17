@@ -6,6 +6,11 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -218,14 +223,14 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
     <p>
         <a href="{{ route('contact') }}" class="link-hover">Contact Avvanz</a> today to learn more about how you can protect your organization with a reliable and efficient <span class="fw-bolder">personal background verification check</span>.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a personal background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a personal background verification check?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -237,7 +242,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How long does it take to perform a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How long does it take to perform a background check?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -249,7 +254,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Can I run a background check on myself?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Can I run a background check on myself?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -261,7 +266,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What information is included in a criminal background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What information is included in a criminal background check?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -273,7 +278,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Is it legal to run a personal background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Is it legal to run a personal background verification check?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -285,7 +290,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. How can errors in background checks be corrected?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. How can errors in background checks be corrected?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -297,7 +302,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Are social media profiles checked during background verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Are social media profiles checked during background verification?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -309,7 +314,7 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Why is it better to use a third-party service for background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Why is it better to use a third-party service for background checks?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -355,4 +360,21 @@ Personal Background Verification Check: Why It’s Essential and How to Do It Ri
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

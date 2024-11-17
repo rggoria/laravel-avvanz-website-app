@@ -6,6 +6,11 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -185,11 +190,11 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Why is background verification important?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. Why is background verification important?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -201,7 +206,7 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How do these companies conduct background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How do these companies conduct background checks?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -213,7 +218,7 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What is the typical turnaround time for a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What is the typical turnaround time for a background check?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -225,7 +230,7 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. What industries benefit the most from background verification services?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. What industries benefit the most from background verification services?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -237,7 +242,7 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Do background verification companies comply with data privacy laws?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Do background verification companies comply with data privacy laws?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -283,4 +288,21 @@ Top 5 Background Verification Companies in India (2024) - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

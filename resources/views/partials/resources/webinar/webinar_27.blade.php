@@ -30,8 +30,8 @@ Quickiebinar Part 1: Leadership – with Zubin Zack - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Quickiebinar Part 1: Leadership – with Zubin Zack
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar27-1.png') }}" alt="webinar27-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar27-1.png') }}" alt="webinar27-1">
     </div>
     <p>
         As we approach 2023, leaders across industries are facing a rapidly changing landscape and an ever-increasing set of challenges. From navigating the ongoing pandemic to adapting to new technologies and shifting consumer demands, the list of priorities for leaders can seem daunting. 

@@ -33,8 +33,8 @@ Moving Up The Value Chain - Avvanz Global
     <p>
         Avvanz appears in The Business Times today, on topic of What are the unique capabilities and products Singapore can develop as it seeks to transform its manufacturing sector.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press15-1.jpeg') }}" alt="press15-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press15-1.jpeg') }}" alt="press15-1">
     </div> 
 </section>
 

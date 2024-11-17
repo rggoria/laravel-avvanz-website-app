@@ -6,6 +6,11 @@ The Complete Guide to the Background Verification Process for Experienced Profes
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -257,11 +262,11 @@ The Complete Guide to the Background Verification Process for Experienced Profes
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is a background verification process?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is a background verification process?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -273,7 +278,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Why is background verification important for experienced professionals?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Why is background verification important for experienced professionals?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -285,7 +290,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What documents are verified during a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What documents are verified during a background check?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -297,7 +302,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. How long does the background verification process take?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. How long does the background verification process take?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -309,7 +314,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can background checks uncover employment gaps?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can background checks uncover employment gaps?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -321,7 +326,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Are background checks mandatory in all industries?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Are background checks mandatory in all industries?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -333,7 +338,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. How are international employment records verified?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. How are international employment records verified?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -345,7 +350,7 @@ The Complete Guide to the Background Verification Process for Experienced Profes
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEigth" aria-expanded="false" aria-controls="collapseEigth">
-                    Q8. Can companies perform background checks on current employees?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can companies perform background checks on current employees?
                 </button>
             </h2>
             <div id="collapseEigth" class="accordion-collapse collapse">
@@ -391,4 +396,21 @@ The Complete Guide to the Background Verification Process for Experienced Profes
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

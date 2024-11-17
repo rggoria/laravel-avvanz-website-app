@@ -6,6 +6,11 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -220,14 +225,14 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
     <p>
         Learning <span class="fw-bolder">how to check criminal record by name</span> is an essential skill for anyone involved in hiring, tenant screening, or even personal relationships. You can access the most complete and accurate criminal history available by using the right methods and tools and by ensuring all aliases and name variations are included in your search. For those looking for the most reliable and comprehensive solutions, Avvanz provides top-tier background screening services that ensure no detail is overlooked.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Can I check someone’s criminal record for free?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. Can I check someone’s criminal record for free?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -239,7 +244,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Is it legal to check someone’s criminal record by name?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Is it legal to check someone’s criminal record by name?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -251,7 +256,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Do criminal records show all crimes?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Do criminal records show all crimes?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -263,7 +268,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Can I check my own criminal record?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Can I check my own criminal record?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -275,7 +280,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can I search by aliases?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can I search by aliases?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -287,7 +292,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. How long does it take to get results?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. How long does it take to get results?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -299,7 +304,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Can criminal records be removed?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Can criminal records be removed?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -311,7 +316,7 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Can employers check criminal records by name?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Can employers check criminal records by name?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -357,4 +362,21 @@ How to Check Criminal Record by Name: A Comprehensive Guide - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

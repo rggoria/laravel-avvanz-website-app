@@ -22,8 +22,8 @@ How To Prepare Your School For Opening And Reopening During The COVID Crisis - A
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog2-1.jpg') }}" alt="blog2-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog2-1.jpg') }}" alt="blog2-1">
     </div> 
     <p>
         60% of students are eager to return after the worldwide vaccination rollout has slowly restored order in schools and universities. After being able to go back, it’s likely that face-to-face instruction will help make up for lost learning time caused by the global pandemic. Schools and educational institutions are now faced with a huge responsibility when it comes down to precautionary methods in order to keep our children safe while at the same time helping them get up to speed with their learning.

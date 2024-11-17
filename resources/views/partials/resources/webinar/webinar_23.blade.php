@@ -30,8 +30,8 @@ Leadership in Education: In what areas schools can leverage disruptive technolog
     <h1 class="display-5 fw-bolder">
         Leadership in Education: In what areas schools can leverage disruptive technologies?
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar23-1.png') }}" alt="webinar23-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar23-1.png') }}" alt="webinar23-1">
     </div>
     <p class="fw-bolder">
         Following through our <a href="https://youtu.be/5IWLHeU8lC4" class="link-hover">first episode</a> of Leadership in Education series comes a casual fireside discussion among school leaders and talked about the topic: “In what areas schools can leverage disruptive technologies.”

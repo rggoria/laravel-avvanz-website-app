@@ -30,8 +30,8 @@ Digital Transformation For The Maritime Industry – Demystifying The Process - 
     <h1 class="display-5 fw-bolder">
         Digital Transformation For The Maritime Industry – Demystifying The Process
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar17-1.jpeg') }}" alt="webinar17-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar17-1.jpeg') }}" alt="webinar17-1">
     </div>
     <p>
         In this webinar, Avvanz together with the Institute of Chartered Shipbrokers shared the Digital trends in the Maritime Industry and how the companies involved could scale up with a change in mindset and technology.

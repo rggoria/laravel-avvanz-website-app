@@ -22,8 +22,8 @@ How Fintech Is Transforming The Underwriting Process - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog3-1.jpg') }}" alt="blog3-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog3-1.jpg') }}" alt="blog3-1">
     </div> 
     <p>
         The new world of digitalization creates challenges for finance companies, as they begin to adopt the technology. Fintech is a major part in this industry and it’s changing many parts including underwriting. This shift impacts every aspect of the financial sector-and as more people use these technologies everything from banking to investment has been transformed at an ever noticeable rate.

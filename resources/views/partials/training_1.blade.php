@@ -59,8 +59,8 @@ Leadership - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership6.png') }}" alt="leadership6">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership6.png') }}" alt="leadership6">
     </div>
     <h1 class="text-center text-marigold fw-bolder display-5">
         Lead Self
@@ -91,8 +91,8 @@ Leadership - Avvanz Global
     <a href="{{ asset('files/develop/Lead-Self.pdf') }}" class="file-hover" target="_blank">
         <i class="fas fa-file-pdf"></i> Download brochure here
     </a>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership7.png') }}" alt="leadership7">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership7.png') }}" alt="leadership7">
     </div>
     <h1 class="text-center text-marigold fw-bolder display-5">
         Lead People
@@ -123,8 +123,8 @@ Leadership - Avvanz Global
     <a href="{{ asset('files/develop/Lead-People.pdf') }}" class="file-hover" target="_blank">
         <i class="fas fa-file-pdf"></i> Download brochure here
     </a>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership8.png') }}" alt="leadership8">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership8.png') }}" alt="leadership8">
     </div>
     <h1 class="text-center text-marigold fw-bolder display-5">
         Lead Managers
@@ -155,8 +155,8 @@ Leadership - Avvanz Global
     <a href="{{ asset('files/develop/Lead-Managers.pdf') }}" class="file-hover" target="_blank">
         <i class="fas fa-file-pdf"></i> Download brochure here
     </a>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership9.png') }}" alt="leadership9">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership9.png') }}" alt="leadership9">
     </div>
     <h1 class="text-center text-marigold fw-bolder display-5">
         Lead Organizations
@@ -187,14 +187,14 @@ Leadership - Avvanz Global
     <a href="{{ asset('files/develop/Lead-Organizations.pdf') }}" class="file-hover" target="_blank">
         <i class="fas fa-file-pdf"></i> Download brochure here
     </a>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership10.png') }}" alt="leadership10">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership10.png') }}" alt="leadership10">
     </div>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership11.png') }}" alt="leadership11">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership11.png') }}" alt="leadership11">
     </div>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/develop/leadership12.png') }}" alt="leadership12">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/develop/leadership12.png') }}" alt="leadership12">
     </div>
 </section>
 

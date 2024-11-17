@@ -30,8 +30,8 @@ Education Industry: Overcoming Leadership And HR Challenges - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Education Industry: Overcoming Leadership And HR Challenges
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar21-1.png') }}" alt="webinar21-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar21-1.png') }}" alt="webinar21-1">
     </div>
     <p class="fw-bolder">
         Overcoming Leadership and HR Challenges in the Modern International School Environment

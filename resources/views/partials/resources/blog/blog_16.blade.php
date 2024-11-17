@@ -22,8 +22,8 @@ AFP Checks - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog16-1.webp') }}" alt="blog16-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog16-1.webp') }}" alt="blog16-1">
     </div> 
     <p>
         AFP or Australian Federal Police Checks or National Police Checks are critical checks amongst other background checks for employers to assess a candidate and his/her suitability to a role.

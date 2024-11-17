@@ -30,8 +30,8 @@ Golf club managers to meet over money laundering concerns amid S$1 billion probe
     <h1 class="display-5 fw-bolder">
         Golf club managers to meet over money laundering concerns amid S$1 billion probe
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press25-1.webp') }}" alt="press25-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press25-1.webp') }}" alt="press25-1">
     </div> 
     <p class="fw-bolder">
         September 04, 2023

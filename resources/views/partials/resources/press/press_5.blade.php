@@ -30,8 +30,8 @@ View From The Top: Disparity between the stock markets and the economy - Avvanz 
     <h1 class="text-center display-5 fw-bolder">
         View From The Top: Disparity between the stock markets and the economy
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press5-1.png') }}" alt="press5-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press5-1.png') }}" alt="press5-1">
     </div> 
 </section>
 

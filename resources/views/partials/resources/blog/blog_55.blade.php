@@ -6,6 +6,11 @@ How Long Does a Background Verification Check Take? - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -178,11 +183,11 @@ How Long Does a Background Verification Check Take? - Avvanz Global
     <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. How long does a background verification check take for criminal records?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. How long does a background verification check take for criminal records?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -194,7 +199,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. Can background checks be expedited?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. Can background checks be expedited?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -206,7 +211,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. What causes delays in background checks?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. What causes delays in background checks?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -218,7 +223,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Do all background checks include criminal history?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Do all background checks include criminal history?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -230,7 +235,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. How long do background verification checks take for education verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. How long do background verification checks take for education verification?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -242,7 +247,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Can background checks be performed internationally?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Can background checks be performed internationally?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -254,7 +259,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. What is included in a background verification check?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. What is included in a background verification check?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -266,7 +271,7 @@ How Long Does a Background Verification Check Take? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. Does Avvanz provide updates during the background check process?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. Does Avvanz provide updates during the background check process?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -312,4 +317,21 @@ How Long Does a Background Verification Check Take? - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

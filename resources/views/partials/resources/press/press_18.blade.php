@@ -33,8 +33,8 @@ Gender Parity More Than Workplace Flexibility Required - Avvanz Global
     <p>
         Avvanz appears in The Business Times today on topic of ‘What should the focus be for Singapore’s Budget for 2021?’ to gear up for a Digital Future.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press18-1.png') }}" alt="press18-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press18-1.png') }}" alt="press18-1">
     </div> 
 </section>
 

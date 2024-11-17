@@ -22,8 +22,8 @@ Introduction to US Screening requirements - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog14-1.jpg') }}" alt="blog14-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog14-1.jpg') }}" alt="blog14-1">
     </div> 
     <p>
         Background screening in the United States is a common practice and hence that explains the plentiful number of background screening vendors. However, the regulatory requirements can be complex. Avvanz, a global multi-award backgrounds screening company with capability to conduct more than 20 types if checks across 150+ countries including the Americas is here to support clients in meeting these complex regulatory requirements.
@@ -95,7 +95,7 @@ Introduction to US Screening requirements - Avvanz Global
             Providing applicant with final notice of adverse action Example screenshots (Showing List Prices before Discounts):
         </li>
         <div class="text-center">
-            <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog14-2.png') }}" alt="blog14-2">
+            <img class="img-fluid w-50 h-50 transition-up" src="{{ asset('images/resources/blogItems/blog14-2.png') }}" alt="blog14-2">
         </div> 
     </ul>
     <p>

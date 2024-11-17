@@ -30,8 +30,8 @@ Ensuring That Shareholders Are Heard - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Ensuring That Shareholders Are Heard
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/pressItems/press21-1.jpeg') }}" alt="press21-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/pressItems/press21-1.jpeg') }}" alt="press21-1">
     </div> 
 </section>
 

@@ -30,8 +30,8 @@ Managing Your Employee Lifecycle From Background Screening To Onboarding To Lear
     <h1 class="display-5 fw-bolder">
         Conference Details
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar20-1.png') }}" alt="webinar20-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar20-1.png') }}" alt="webinar20-1">
     </div>
     <h1 class="fw-bolder">
         Managing Your Employee Lifecycle From Background Screening To Onboarding To Learning

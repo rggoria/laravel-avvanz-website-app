@@ -6,6 +6,11 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<style>
+    .accordion-button::after {
+        display: none;
+    }
+</style>
 @endsection()
 
 @section('content')
@@ -226,14 +231,14 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
     <p>
         <span class="fw-bolder">Looking to hire trustworthy employees</span>? Contact Avvanz today to streamline your hiring process and protect your organization from unnecessary risks.
     </p>
-    <p class="fwb-bolder">
+    <p class="fw-bolder">
         Frequently Asked Questions
     </p>
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion mb-3" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Q1. What is checked in a background verification?
+                    <i class="fas fa-plus-circle me-2"></i> Q1. What is checked in a background verification?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse">
@@ -245,7 +250,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2. How long does a background check take?
+                    <i class="fas fa-plus-circle me-2"></i> Q2. How long does a background check take?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse">
@@ -257,7 +262,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3. Can you fail a background check for bad credit?
+                    <i class="fas fa-plus-circle me-2"></i> Q3. Can you fail a background check for bad credit?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse">
@@ -269,7 +274,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Q4. Are background checks required for all jobs?
+                    <i class="fas fa-plus-circle me-2"></i> Q4. Are background checks required for all jobs?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse">
@@ -281,7 +286,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Q5. Can employers check my social media?
+                    <i class="fas fa-plus-circle me-2"></i> Q5. Can employers check my social media?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse">
@@ -293,7 +298,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Q6. Do background checks include driving records?
+                    <i class="fas fa-plus-circle me-2"></i> Q6. Do background checks include driving records?
                 </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse">
@@ -305,7 +310,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Q7. Will my current employer be contacted during a background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q7. Will my current employer be contacted during a background check?
                 </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse">
@@ -317,7 +322,7 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Q8. What happens if there’s an error on my background check?
+                    <i class="fas fa-plus-circle me-2"></i> Q8. What happens if there’s an error on my background check?
                 </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse">
@@ -363,4 +368,21 @@ What Comes Up on a Background Verification Check for a Job? - Avvanz Global
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.querySelectorAll('.accordion-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var icon = button.querySelector('i');
+            if (button.classList.contains('collapsed')) {
+                icon.classList.remove('fa-minus-circle');
+                icon.classList.add('fa-plus-circle');
+            } else {
+                icon.classList.remove('fa-plus-circle');
+                icon.classList.add('fa-minus-circle');
+            }
+        });
+    });
+</script>
 @endsection

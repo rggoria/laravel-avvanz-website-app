@@ -22,8 +22,8 @@ Navigating Success: Your Guide to Corporate Training Programs in Singapore - Avv
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog23-1.png') }}" alt="blog23-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog23-1.png') }}" alt="blog23-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Corporate Training in Singapore
@@ -100,8 +100,8 @@ Navigating Success: Your Guide to Corporate Training Programs in Singapore - Avv
     <p>
         When selecting the right corporate training program, organizations should carefully consider their specific needs and goals. Assessing the organizational requirements, evaluating training providers and programs, tailoring training programs to meet specific needs, and measuring the effectiveness of the training are vital steps in maximizing the benefits of corporate training. For more information on corporate training programs in Singapore, explore our comprehensive range of training courses at Avvanz.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog23-2.png') }}" alt="blog23-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog23-2.png') }}" alt="blog23-2">
     </div>
     <p class="fw-bolder">
         Benefits of Corporate Training Programs

@@ -30,8 +30,8 @@ Quickiebinar Part 2: Leadership – with Ariya Chittasy - Avvanz Global
     <h1 class="display-5 fw-bolder">
         Quickiebinar Part 2: Leadership – with Ariya Chittasy
     </h1>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/webinarItems/webinar28-1.png') }}" alt="webinar28-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/webinarItems/webinar28-1.png') }}" alt="webinar28-1">
     </div>
     <p>
         In a recent webinar, Ariya and Kannan addressed the challenges that tech companies face when it comes to fundraising, and offered insights on how to navigate through them.

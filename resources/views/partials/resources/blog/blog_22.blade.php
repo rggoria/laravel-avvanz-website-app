@@ -22,8 +22,8 @@ Safeguarding Your Future: Essential Steps in the Company Due Diligence Process -
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog22-1.png') }}" alt="blog22-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog22-1.png') }}" alt="blog22-1">
     </div>
     <h1 class="fw-bolder display-5 text-marigold text-center">            
         Understanding Company Due Diligence
@@ -102,8 +102,8 @@ Safeguarding Your Future: Essential Steps in the Company Due Diligence Process -
     <p>
         By following these key steps, you can gather comprehensive information about the company and evaluate its suitability for your needs. Conducting a thorough company due diligence investigation allows you to make informed decisions and mitigate potential risks. Remember, engaging professional assistance, such as legal and financial experts, can provide valuable insights and enhance the effectiveness of the due diligence process.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog22-2.jpg') }}" alt="blog22-2">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog22-2.jpg') }}" alt="blog22-2">
     </div>
     <p class="fw-bolder">
         Conducting Interviews and Reference Checks
@@ -184,8 +184,8 @@ Safeguarding Your Future: Essential Steps in the Company Due Diligence Process -
     <p>
         By carefully assessing potential risks and recognizing red flags, stakeholders can gain valuable insights into the company’s overall risk profile. This information can then be used to make informed decisions regarding investments, partnerships, or other business engagements. Remember to utilize the expertise of professionals in conducting a comprehensive company due diligence investigation.
     </p>
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog22-3.png') }}" alt="blog22-3">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog22-3.png') }}" alt="blog22-3">
     </div>
     <p class="fw-bolder">
         Utilizing Professional Assistance

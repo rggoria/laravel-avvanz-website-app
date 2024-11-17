@@ -22,8 +22,8 @@ Tips To Have An Effective Teacher Hiring Strategy - Avvanz Global
 </section>
 
 <section class="container margin-vertical">
-    <div class="text-center">
-        <img class="img-fluid w-50 h-50" src="{{ asset('images/resources/blogItems/blog1-1.jpg') }}" alt="blog1-1">
+    <div class="text-center my-3">
+        <img class="img-fluid w-50 h-50 transition-up rounded" src="{{ asset('images/resources/blogItems/blog1-1.jpg') }}" alt="blog1-1">
     </div> 
     <p>
         Education refers to the process where knowledge is being passed over from one individual (an instructor) to another – this means qualified instructors are required for effective learning outcomes regardless of their age or gender etc.
