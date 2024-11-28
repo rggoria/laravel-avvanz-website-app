@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DevelopController;
 use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\LeadershipController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ResourcesController;
 use App\Http\Controllers\ScreenController;
@@ -95,3 +96,7 @@ Route::get('/privacy-policy-candidate-autralia', [PrivacyController::class, 'aus
 Route::get('/privacy-policy-candidate-singapore', [PrivacyController::class, 'singapore'])->name('privacy-3');
 Route::get('/privacy-policy-candidate-united-states-of-america', [PrivacyController::class, 'usa'])->name('privacy-4');
 Route::get('/privacy-policy-candidate-united-kingdom', [PrivacyController::class, 'uk'])->name('privacy-5');
+
+// Leadership Controller
+Route::get('/leadership', [LeadershipController::class, 'index'])->name('leadership-home');
+Route::get('/leadership/signup', [LeadershipController::class, 'signup'])->name('leadership-signup');
