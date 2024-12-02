@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\LeadershipController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Leadership\AuthController;
+use App\Http\Controllers\Leadership\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$routes = ['UATWEB','Leadership'];
-
-// Routes will be moved to the file name projects
-foreach ($routes as $value) {
-    include 'projects/'.$value.'.php';
-}
+// Leadership Controller
+Route::get('/leadership', [HomepageController::class, 'index'])->name('leadership-home');
+Route::get('/leadership/signup', [AuthController::class, 'signup'])->name('leadership-signup');
