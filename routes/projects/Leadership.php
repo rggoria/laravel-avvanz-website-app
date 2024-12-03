@@ -17,3 +17,4 @@ use App\Http\Controllers\Leadership\HomepageController;
 // Leadership Controller
 Route::get('/leadership', [HomepageController::class, 'index'])->name('leadership-home');
 Route::get('/leadership/signup', [AuthController::class, 'signup'])->name('leadership-signup');
+Route::get('/leadership/signup-1', [AuthController::class, 'signup1'])->name('leadership-signup-1');

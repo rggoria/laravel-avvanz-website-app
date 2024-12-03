@@ -22,7 +22,7 @@
 }
 
 .bg-dmb {
-    background-color: var(--darkMidnightBlue);
+    background-color: var(--darkMidnightBlue) !important;
 }
 
 .bg-marigold {
@@ -69,7 +69,7 @@
 }
 
 .text-marigold {
-    color: var(--marigold);
+    color: var(--marigold) !important;
 }
 
 .text-pb {
