@@ -62,6 +62,7 @@ Leadership Breakthrough Summit
                     Join our Leadership Breakthrough Summit at Bintan
                 </h1>
                 <div class="divider-start-50"></div>
+                <br>
                 <p>
                     A transformative <span class="fw-bolder text-dmb">3-day</span> retreat designed to equip leaders with the tools and insights to accelerate and future proof your business.
                 </p>
@@ -76,7 +77,7 @@ Leadership Breakthrough Summit
         </div>
         <div class="row mt-3">
             <div class="offset-md-2 col-md-4 d-flex align-items-center justify-content-center">
-                <a href="{{ route('contact') }}" class="btn hero-button fw-bolder w-100">
+                <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
                     SIGN UP NOW!
                 </a>
             </div>
@@ -105,6 +106,7 @@ Leadership Breakthrough Summit
             Why Choose the Leadership Breakthrough Summit?
         </h1>
         <div class="divider-start-50"></div>
+        <br>
         <h1>
             The Experience
         </h1>
@@ -280,7 +282,8 @@ Leadership Breakthrough Summit
         <h1 class="fw-bolder text-dmb display-5">
             Who Should Attend?
         </h1>
-        <div class="divider-start-50"></div>
+        <div class="divider-start-25"></div>
+        <br>
         <h1>
             This summit is ideal for:
         </h1>
@@ -378,28 +381,25 @@ Leadership Breakthrough Summit
 
 <section>
     <div class="container padding-vertical">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 class="fw-bolder display-5">
-                    How to Enroll:
-                </h1>
-                <div class="divider-start-50"></div>
-                <ul>
-                    <li>
-                        Click “Sign Up Now” below.
-                    </li>
-                    <li>
-                        Complete the secure registration form.
-                    </li>
-                    <li>
-                        Receive your pre-summit materials and get ready for transformation!
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <h1 class="fw-bolder display-5">
+            How to Enroll:
+        </h1>
+        <div class="divider-start-25"></div>
+        <br>
+        <ul>
+            <li>
+                Click “Sign Up Now” below.
+            </li>
+            <li>
+                Complete the secure registration form.
+            </li>
+            <li>
+                Receive your pre-summit materials and get ready for transformation!
+            </li>
+        </ul>
         <div class="row mt-3">
             <div class="offset-md-2 col-md-4 d-flex align-items-center justify-content-center">
-                <a href="{{ route('contact') }}" class="btn hero-button fw-bolder w-100">
+                <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
                     SIGN UP NOW!
                 </a>
             </div>
