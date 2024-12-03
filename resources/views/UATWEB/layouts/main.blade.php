@@ -76,5 +76,9 @@
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}"></script>
     @yield('scripts')
+
+    <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
+    <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+    <!-- https://respond.io -->
 </body>
 </html>
