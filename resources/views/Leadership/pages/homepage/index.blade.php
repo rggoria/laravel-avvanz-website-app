@@ -388,7 +388,7 @@ Leadership Breakthrough Summit
         <br>
         <ul>
             <li>
-                Click “Sign Up Now” below.
+                Click “<span class="fw-bolder text-dmb">Sign Up Now</span>” below.
             </li>
             <li>
                 Complete the secure registration form.
