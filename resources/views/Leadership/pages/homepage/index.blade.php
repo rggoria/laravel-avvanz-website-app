@@ -186,7 +186,7 @@ Leadership Breakthrough Summit
 <section class="container margin-vertical text-center text-white">
     <div class="row">
         <div class="offset-md-2 col-md-8">
-            <a href="{{ route('contact') }}" class="btn hero-button fw-bolder w-100">
+            <a href="{{ route('leadership-itinerary') }}" class="btn hero-button fw-bolder w-100">
                 Download the Full Itinerary Now
             </a>
         </div>
@@ -208,8 +208,8 @@ Leadership Breakthrough Summit
         <div class="container padding-vertical">
             <figure class="text-center">
                 <blockquote class="blockquote text-dmb fw-bolder">
-                    <p>"From Vision to Victory:</p>
-                    <p>Accelerate and Future proof your Business."</p>
+                    <h1 class="fw-bolder">"From Vision to Victory:</h1>
+                    <h1 class="fw-bolder">Accelerate and Future proof your Business."</h1>
                 </blockquote>
             </figure>
         </div>
@@ -256,12 +256,199 @@ Leadership Breakthrough Summit
             </div>
         </div>
     </div>
-    <div class="container">
+</section>
+
+<section class="bg-afw">
+    <div class="container padding-vertical">
+        <h1 class="text-marigold text-center fw-bolder padding-vertical">
+            Meet the Enablers
+        </h1>
+        <div class="row g-5">
+            <div class="col-md-6">
+                {{-- Enabler 1 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-1.avif')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>
+                            <span class="text-pb h4 fw-bolder">
+                                Salman Syed
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                Avvanz Advisory Council
+                            </span>
+                        </p>
+                        <p>
+                            With over 20 years of experience in scaling and transforming businesses, Salman has driven successful turnarounds and innovations in both private equity-owned businesses and Fortune 200 companies. He has a proven record of transforming companies like Thomas Cook Plc, Sage Plc, and Capita’s People Services division into industry leaders.
+                        </p>
+                        <p>
+                            Salman believes in the power of inclusive culture and strategic execution to achieve business goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{-- Enabler 2 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-2.webp')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>
+                            <span class="text-pb h4 fw-bolder">
+                                Kannan Chettiar
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                CEO and Co-Founder
+                            </span>
+                        </p>
+                        <p>
+                            An award-winning global leader with over 27 years of experience in technology and human capital sectors across Asia, EMEA, and the Americas. Recognized as “Executive of the Year – Human Resources Technology” by Singapore Business Review, Kannan has held senior positions in companies such as Dell, IBM-backed e2open, and Acer-backed i-Sprint Innovations.
+                        </p>
+                        <p>
+                            He is a certified international trainer with a stellar track record among Fortune 500 clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{-- Enabler 3 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-3.avif')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fw-bolder">
+                            <span class="text-pb h4 fw-bolder">
+                                Danny Lee
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                Founder and Managing Partner
+                            </span>
+                        </p>
+                        <p>
+                            With extensive experience in senior leadership roles across the APAC region, Danny excels in helping leaders and teams grow, communicate, and collaborate effectively. His corporate background enables him to empathize with leaders, encouraging them to think outside the box and push beyond their comfort zones.
+                        </p>
+                        <p>
+                            As a CliftonStrengths Coach, he helps teams discover their individual talents, fostering better alignment and higher performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{-- Enabler 4 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-4.avif')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fw-bolder">
+                            <span class="text-pb h4 fw-bolder">
+                                Charlene Ng
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                Founder
+                            </span>
+                        </p>
+                        <p>
+                            A Productivity & Performance Expert, coaching and training mid-senior corporate executives to rediscover passion, purpose, and profit. Specializes in reducing stress, enhancing clarity, and eliminating burnout to drive personal and business growth.
+                        </p>
+                        <p>
+                            With expertise in bodyfulness through Reiki and TRE® (Tension & Trauma Release Exercise), passionate about educating others on how the body processes stress and transforms through sensory perceptions, influencing mind-body actions in the pursuit of goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{-- Enabler 5 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-5.avif')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fw-bolder">
+                            <span class="text-pb h4 fw-bolder">
+                                Nader Tadros
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                Marketing Expert
+                            </span>
+                        </p>
+                        <p>
+                            International Digital First Sales & Marketing leader with a proven track record of building and optimizing teams in the dynamic Tech sector. Known for driving growth through strategic marketing and digital channel development across businesses of all sizes. Expertise includes Digital Sales & Marketing Leadership, International Sales, XaaS, IoT & Cloud Platforms, Hardware, Software, and eCommerce Strategy.
+                        </p>
+                        <p>
+                            Holds an MBA from the University of Chicago Booth School of Business, blending strong strategic and analytical skills with hands-on experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{-- Enabler 6 --}}
+                <div class="row align-items-start">
+                    <div class="col-lg-4">
+                        <img 
+                            src="{{ asset('images/leadership/enablers/enablers-6.avif')}}" 
+                            style="width: 150px; height: 150px;" 
+                            alt="Kannan Chettiar Image" 
+                            class="d-block mx-auto img-border-rounded-afw"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fw-bolder">
+                            <span class="text-pb h4 fw-bolder">
+                                Coming Soon
+                            </span>
+                            <br>
+                            <span class="text-marigold fw-bolder">
+                                Future Speaker to be announced
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container padding-vertical">
         <div class="row g-0 text-white">
             <div class="col-md-7 d-flex flex-column">
                 <div class="bg-dmb flex-grow-1">
                     <div class="p-5">
-                        <h1 class="fw-bolder my-4">
+                        <h1 class="fw-bolder my-5">
                             TAILORED FOR LEADERS LIKE YOU!
                         </h1>
                     </div>

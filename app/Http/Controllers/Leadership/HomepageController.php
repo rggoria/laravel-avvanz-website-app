@@ -10,4 +10,8 @@ class HomepageController extends Controller
     public function index() {
         return view('Leadership.pages.homepage.index');
     }
+
+    public function itinerary() {
+        return view('Leadership.pages.homepage.itinerary');
+    }
 }
