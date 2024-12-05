@@ -81,7 +81,7 @@
     
                     <!-- Link Below Image -->
                     <div class="text-center position-absolute bottom-0 start-50 translate-middle-x w-75">
-                        <a href="{{ route('leadership-home') }}" class="btn btn-primary w-100 p-3 fs-4">Visit the Leadership Training</a>
+                        <a href="{{ route('leadership-home') }}" class="btn btn-marigold-link w-100 p-3 fs-4">Visit the Leadership Training</a>
                     </div>
                 </div>
             </div>
@@ -98,16 +98,11 @@
     <script src="{{ asset('js/index.js') }}"></script>
     @yield('scripts')
 
-     <!-- Check Session and Show Modal -->
-     <script>
+    <!-- Show Modal Automatically -->
+    <script>
         $(document).ready(function() {
-            @if(session('show_modal'))
-                $('#imageModal').modal('show');
-            @endif
-    
-            $('#imageModal').on('hidden.bs.modal', function () {
-                $.post('{{ route('updateSession') }}', {_token: '{{ csrf_token() }}', show_modal: false});
-            });
+            // Show the modal when the page loads
+            $('#imageModal').modal('show');
         });
     </script>
 

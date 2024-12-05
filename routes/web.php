@@ -20,8 +20,3 @@ $routes = ['UATWEB','Leadership'];
 foreach ($routes as $value) {
     include 'projects/'.$value.'.php';
 }
-
-Route::post('/update-session', function () {
-    Session::put('show_modal', false);
-    return response()->json(['status' => 'success']);
-})->name('updateSession');
