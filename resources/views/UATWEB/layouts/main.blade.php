@@ -67,6 +67,27 @@
     <!-- Footer Section -->
     @include('UATWEB.partials.footer')
 
+    <!-- Modal Popup -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <!-- Modal Body -->
+                <div class="modal-body position-relative">
+                    <!-- Exit Button in Upper Right -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                    <!-- Image Content -->
+                    <img src="{{ asset('images/resources/newsletter1-6.webp') }}" alt="Leadership" class="img-fluid rounded shadow-lg">
+    
+                    <!-- Link Below Image -->
+                    <div class="text-center position-absolute bottom-0 start-50 translate-middle-x w-75">
+                        <a href="{{ route('leadership-home') }}" class="btn btn-primary w-100 p-3 fs-4">Visit the Leadership Training</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- jQuery CDN -->
@@ -76,6 +97,19 @@
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}"></script>
     @yield('scripts')
+
+     <!-- Check Session and Show Modal -->
+     <script>
+        $(document).ready(function() {
+            @if(session('show_modal'))
+                $('#imageModal').modal('show');
+            @endif
+    
+            $('#imageModal').on('hidden.bs.modal', function () {
+                $.post('{{ route('updateSession') }}', {_token: '{{ csrf_token() }}', show_modal: false});
+            });
+        });
+    </script>
 
     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
     <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
