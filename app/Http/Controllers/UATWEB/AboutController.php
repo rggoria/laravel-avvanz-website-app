@@ -4,6 +4,7 @@ namespace App\Http\Controllers\UATWEB;
 
 use App\Http\Controllers\Controller;
 use App\Mail\CareersEmail;
+use File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -124,6 +125,41 @@ class AboutController extends Controller
             'title' => $item['title'],
             'item' => $item,
             'description' => $item['description'],
+        ]);
+    }
+
+    public function pages(Request $request)
+    {
+        $jsonFilePath = resource_path('json/UATWEB/resources/blogItems.json');
+        $jsonContent = File::get($jsonFilePath);
+        
+        $blogItems = json_decode($jsonContent, true);
+
+        usort($blogItems, function ($a, $b) {
+            return (int)$b['id'] - (int)$a['id'];
+        });
+
+        $searchTerm = $request->get('s', '');
+
+        if ($searchTerm) {
+            $blogItems = array_filter($blogItems, function ($item) use ($searchTerm) {
+                return stripos($item['title'], $searchTerm) !== false; // Case-insensitive search in title
+            });
+        }
+
+        $collection = collect($blogItems);
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 6;
+        $currentItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->all();
+        
+        $blogItemsPaginated = new LengthAwarePaginator($currentItems, $collection->count(), $perPage, $currentPage, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+            'query' => ['s' => $searchTerm]
+        ]);
+
+        return view("UATWEB.pages.about.pages", [
+            "blogItems" => $blogItemsPaginated,
+            "searchTerm" => $searchTerm
         ]);
     }
 

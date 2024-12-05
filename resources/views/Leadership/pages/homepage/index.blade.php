@@ -249,7 +249,7 @@ Leadership Breakthrough Summit
             </div>
             <div class="row">
                 <div class="offset-md-2 col-md-8">
-                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder w-100">
+                    <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
                         Sign Up Today and Save SGD 300!
                     </a>
                 </div>
@@ -447,13 +447,13 @@ Leadership Breakthrough Summit
         <div class="row g-0 text-white">
             <div class="col-md-7 d-flex flex-column">
                 <div class="bg-dmb flex-grow-1">
-                    <div class="p-5">
+                    <div class="d-flex justify-content-center align-items-center p-5 h-100">
                         <h1 class="fw-bolder my-5">
                             TAILORED FOR LEADERS LIKE YOU!
                         </h1>
                     </div>
                 </div>
-            </div>
+            </div>            
             <div class="col-md-5 d-flex">
                 <img 
                     src="{{ asset('images/leadership/homapage/leadership-5.webp') }}" 
@@ -549,20 +549,20 @@ Leadership Breakthrough Summit
     <div class="container-fluid bg-lw w-100">
         <div class="container padding-vertical">
             <div class="row align-items-center">
-                <div class="col-md-auto">
-                    <i class="fas fa-info-circle text-marigold fs-3"></i>
+                <div class="col-md-1 text-center">
+                    <i class="fas fa-info-circle text-marigold fs-1"></i>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-11">
                     <figure class="text-start">
                         <blockquote class="blockquote text-dmb fw-bolder">
-                            <p>
+                            <h1 class="fw-bolder my-5">
                                 Join an exclusive session led by a panel of 7 global experts, including renowned leadership coaches, an AI specialist, the former MD of Thomas Cook, and a global marketing leader, all coming together to share their insights and expertise.
-                            </p>
+                            </h1>
                         </blockquote>
                     </figure>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 </section>
 

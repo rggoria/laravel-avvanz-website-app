@@ -39,6 +39,7 @@ Route::get('/about-us/{title}', [AboutController::class, 'aboutUsItem'])->name('
 Route::get('/workplace-safety-and-health-guideline', [AboutController::class, 'workplaceSafety'])->name('about-1');
 Route::get('/environmental-social-and-governance', [AboutController::class, 'environmental'])->name('about-2');
 Route::get('/environmental-social-and-governance/{title}', [AboutController::class, 'environmentalItem1'])->name('environmentalItem1');
+Route::get('/pages', [AboutController::class, 'pages'])->name('pages');
 Route::get('/join-avvanz', [AboutController::class, 'careers'])->name('about-3');
 Route::post('/join-avvanz', [AboutController::class, 'send'])->name('about-3-send');
 

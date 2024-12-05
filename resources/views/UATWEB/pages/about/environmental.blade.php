@@ -23,7 +23,7 @@ Environmental, Social and Governance
                 <p>
                     Make a difference
                 </p>
-                <form action="https://www.avvanz.com/" method="get">
+                <form action="{{ route('pages') }}" method="get">
                     <div class="input-group mt-5">
                         <input type="text" class="form-control border-simple-left" name="s" placeholder="Search..." required>
                         <div class="input-group-append">
