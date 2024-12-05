@@ -71,22 +71,16 @@
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <!-- Modal Body -->
                 <div class="modal-body position-relative">
-                    <!-- Exit Button in Upper Right -->
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-                    <!-- Image Content -->
-                    <img src="{{ asset('images/resources/newsletter1-6.webp') }}" alt="Leadership" class="img-fluid rounded shadow-lg">
-    
-                    <!-- Link Below Image -->
-                    <div class="text-center position-absolute bottom-0 start-50 translate-middle-x w-75">
-                        <a href="{{ route('leadership-home') }}" class="btn btn-marigold-link w-100 p-3 fs-4">Visit the Leadership Training</a>
-                    </div>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+
+                    <a href="{{ route('leadership-home') }}">
+                        <img src="{{ asset('images/homepage/leadership.webp') }}" alt="Leadership" class="img-fluid figure rounded shadow-lg">
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
