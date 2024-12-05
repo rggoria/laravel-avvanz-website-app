@@ -68,7 +68,7 @@
     @include('UATWEB.partials.footer')
 
     <!-- Modal Popup -->
-    {{-- <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body position-relative">
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-    </div>     --}}
+    </div>    
 
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
