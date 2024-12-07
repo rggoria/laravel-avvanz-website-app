@@ -15,9 +15,9 @@ Leadership: Signup
     <div class="row py-4 justify-content-center">
         <div class="col-md-10 col-lg-10">
             <div class="card shadow-lg rounded-lg p-4">
-                <form id="consultationForm" method="POST" enctype="multipart/form-data">
+                <div id="response-message"></div>
+                <form id="registerForm" method="POST" action="{{ route('leadership-register') }}" enctype="multipart/form-data">
                     @csrf
-                    
                     <div class="row mb-4">
                         <!-- Name Field -->
                         <div class="col-md-12">
@@ -26,7 +26,7 @@ Leadership: Signup
                             <div class="invalid-feedback" id="name-error"></div>
                         </div>
                     </div>
-
+                
                     <div class="row mb-4">
                         <!-- Company Email -->
                         <div class="col-md-12">
@@ -44,7 +44,7 @@ Leadership: Signup
                             <div class="invalid-feedback" id="contact_number-error"></div>
                         </div>
                     </div>
-
+                
                     <div class="row mb-4">
                         <!-- Consent Checkbox -->
                         <div class="col-md-12">
@@ -59,12 +59,10 @@ Leadership: Signup
                     <!-- Submit Button -->
                     <div class="mb-3">
                         <button type="submit" class="btn btn-marigold-transition w-100 py-3">
-                            <h4>
-                                Register Your Interest
-                            </h4>
+                            <h4>Register Your Interest</h4>
                         </button>
                     </div>
-                </form>                                
+                </form>                                             
             </div>
         </div>
     </div>

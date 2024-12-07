@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Leadership\AuthController;
 use App\Http\Controllers\Leadership\HomepageController;
 
 /*
@@ -17,4 +16,5 @@ use App\Http\Controllers\Leadership\HomepageController;
 // Leadership Controller
 Route::get('/leadership', [HomepageController::class, 'index'])->name('leadership-home');
 Route::get('/leadership/itinerary', [HomepageController::class, 'itinerary'])->name('leadership-itinerary');
-Route::get('/leadership/signup', [AuthController::class, 'signup'])->name('leadership-signup');
+Route::get('/leadership/register', [HomepageController::class, 'register'])->name('leadership-register');
+Route::post('/leadership/register', [HomepageController::class, 'registerLeadership']);

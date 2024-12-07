@@ -70,15 +70,15 @@ Leadership Breakthrough Summit
         </div>
         <div class="row">
             <div class="offset-md-2 col-md-8">
-                <a href="{{ route('contact') }}" class="btn btn-orange-border fw-bolder w-100">
+                <a class="btn btn-orange-border fw-bolder w-100" href="#target-section">
                     Exclusively Designed for SME Owners and Leaders
                 </a>
             </div>
         </div>
         <div class="row mt-3">
             <div class="offset-md-2 col-md-4 d-flex align-items-center justify-content-center">
-                <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
-                    SIGN UP NOW!
+                <a href="{{ route('leadership-register') }}" class="btn hero-button fw-bolder w-100">
+                    REGISTER NOW!
                 </a>
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-center">
@@ -193,6 +193,62 @@ Leadership Breakthrough Summit
     </div>
 </section>
 
+<section class="container" id="target-section">
+    <div class="row py-4 justify-content-center">
+        <div class="card shadow-lg rounded-lg p-4">
+            <h1 class="text-center fw-bolder pb-5">
+                Exclusively Designed for Business Owners and Leaders
+            </h1>           
+            <div class="col-md-10 col-lg-10">
+                <h4 class="text-marigold fw-bolder">
+                    Are You facing these challenges in your business?
+                </h4>
+                <ol>
+                    <li>
+                        Difficulty in adapting to rapid market changes and economic volatility
+                    </li>
+                    <li>
+                        Struggling to scale your business effectively
+                    </li>
+                    <li>
+                        Finding it hard to innovate or differentiate from competitors
+                    </li>
+                    <li>
+                        Feeling isolated in decision-making with sufficient peer support
+                    </li>
+                    <li>
+                        Difficulties in attracting, retaining, and developing top talent
+                    </li>
+                    <li>
+                        Inefficient use of resources leading to wasted potential and increased costs
+                    </li>
+                    <li>
+                        Difficulty in maintaining a clear strategic focus amidst daily operational demands
+                    </li>
+                    <li>
+                        Overwhelmed by the pace of technological change and its impact on the business
+                    </li>
+                    <li>
+                        Managing the pressures of leadership without sacrificing personal well-being
+                    </li>
+                    <li>
+                        Concerns about succession planning and leadership continuity.
+                    </li>
+                </ol>
+                <p>
+                    In today’s fast-paced business environment, the challenges for SME leaders are more intense than ever. With constant change, increased competition, and new market dynamics, how can you ensure your business not only survives but thrives in the future?
+                </p>
+                <p>
+                    Welcome to the Leadership Breakthrough Summit @ Bintan – a unique 3-day retreat designed exclusively for Singapore’s SME business owners and leaders.
+                </p>
+                <p>
+                    This retreat is your opportunity to gain actionable insights, connect with like-minded peers, and develop a powerful strategy that will future-proof your business.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section>
     <div class="container padding-vertical">
         <div class="row">
@@ -249,7 +305,7 @@ Leadership Breakthrough Summit
             </div>
             <div class="row">
                 <div class="offset-md-2 col-md-8">
-                    <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
+                    <a href="{{ route('leadership-register') }}" class="btn hero-button fw-bolder w-100">
                         Sign Up Today and Save SGD 300!
                     </a>
                 </div>
@@ -586,8 +642,8 @@ Leadership Breakthrough Summit
         </ul>
         <div class="row mt-3">
             <div class="offset-md-2 col-md-4 d-flex align-items-center justify-content-center">
-                <a href="{{ route('leadership-signup') }}" class="btn hero-button fw-bolder w-100">
-                    SIGN UP NOW!
+                <a href="{{ route('leadership-register') }}" class="btn hero-button fw-bolder w-100">
+                    REGISTER NOW!
                 </a>
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-center">
