@@ -54,7 +54,7 @@
         <div style="text-align: center">
             <img src="https://www.avvanz.com/wp-content/uploads/2021/07/avvanz.webp" alt="Logo" class="logo">
         </div>
-        <h1>General Inquiry Form Submission</h1>
+        <h1>Leadership Training Registration Form</h1>
         <p><strong>Name:</strong> {{ $name }}</p>
         <p><strong>Company Email:</strong> {{ $company_email }}</p>
         <p><strong>Contact Number:</strong> {{ $contact_number }}</p>

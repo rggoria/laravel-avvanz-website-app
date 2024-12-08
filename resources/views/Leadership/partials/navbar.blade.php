@@ -5,7 +5,7 @@
         </a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item nav-main-display">
-                <a class="btn btn-primary text-uppercase fw-bolder" href="{{ route('leadership-register') }}">Register</a>
+                <a class="btn btn-lg btn-primary text-uppercase fw-bolder" href="{{ route('leadership-register') }}">Register</a>
             </li>
         </ul>
     </div>

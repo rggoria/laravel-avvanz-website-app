@@ -24,14 +24,21 @@ class HomepageController extends Controller
 
     public function registerLeadership(Request $request)
     {
-        {
-            $request->validate([
-                'name' => 'required',
-                'company_email' => 'required',
-                'contact_number' => 'required',
-                'consent' => 'required|boolean',
-            ], $this->messages());
-    
+        // Validate the form data
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'company_email' => 'required|email',
+            'contact_number' => 'required',
+            'consent' => 'required|boolean',
+        ], $this->messages());
+
+        // Check if validation fails
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
+        try {
+            // Send the email
             Mail::to($request->company_email)
                 ->cc(env('ADMIN_EMAIL'))
                 ->send(new LeadershipEmail(
@@ -39,11 +46,15 @@ class HomepageController extends Controller
                     $request->company_email,
                     $request->contact_number
                 ));
-    
-            return redirect()->route('leadership-register')->with('success', 'Email sent successfully!');
+
+            return response()->json(['message' => 'Registration successful! We have sent a confirmation email.'], 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'An error occurred. Please try again later.'], 500);
         }
     }
 
+    // Custom error messages
     public function messages() {
         return [
             'name.required' => 'The name field is required.',

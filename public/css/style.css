@@ -65,7 +65,7 @@
 }
 
 .text-dmb {
-    color: var(--darkMidnightBlue);
+    color: var(--darkMidnightBlue) !important;
 }
 
 .text-marigold {
