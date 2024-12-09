@@ -40,7 +40,7 @@ class HomepageController extends Controller
         try {
             // Send the email
             Mail::to($request->company_email)
-                ->cc(env('ADMIN_EMAIL'))
+                ->cc(env('LEADERSHIP_EMAIL'))
                 ->send(new LeadershipEmail(
                     $request->name,
                     $request->company_email,
