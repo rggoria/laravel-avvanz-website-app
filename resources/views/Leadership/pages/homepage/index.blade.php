@@ -92,7 +92,7 @@ Leadership Breakthrough Summit
         <div class="row my-3">
             <div class="offset-md-2 col-md-8">
                 <h3 class="text-center text-dmb fw-bolder">
-                    (Exclusive Early Bird Discount of SGD 300 till November 30th)
+                    (Exclusive Early Bird Discount of SGD 300 till 31st December)
                 </h3>
             </div>
         </div>
@@ -176,7 +176,7 @@ Leadership Breakthrough Summit
                     6 Months Post-Summit Support
                 </p>
                 <p class="fs-4">
-                    Connect with SME owners, corporate leaders, and industry experts to build lasting professional relationships.
+                    Exclusive 6 months follow-up coaching for implementation
                 </p>
                 <img src="{{ asset('images/leadership/homapage/leadership-4.png') }}" class="img-fluid" alt="Leadership-4">
             </div>
@@ -609,7 +609,7 @@ Leadership Breakthrough Summit
                         SGD 6,888
                         <br>
                         <span class="text-dark">
-                            (Early Bird Offer: SGD 6,588 until Nov 30th)
+                            (Early Bird Offer: SGD 6,588 until 31st December)
                         </span>
                     </td>
                 </tr>
