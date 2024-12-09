@@ -564,7 +564,7 @@ Leadership Breakthrough Summit
                 <span class="fw-bolder text-dmb">
                     "The 5Ps framework completely transformed how I view my business. This isn’t just theory; it’s practical and impactful." 
                 </span>
-                <span class="blockquote-footer">
+                <span class="blockquote-footer fs-4">
                     A 2023 Participant
                 </span>
             </blockquote>
@@ -645,7 +645,7 @@ Leadership Breakthrough Summit
         <br>
         <ul>
             <li class="fs-4">
-                Click “<span class="fw-bolder text-dmb">Sign Up Now</span>” below.
+                Click “<span class="fw-bolder text-dmb">REGISTER NOW</span>” below.
             </li>
             <li class="fs-4">
                 Complete the secure registration form.

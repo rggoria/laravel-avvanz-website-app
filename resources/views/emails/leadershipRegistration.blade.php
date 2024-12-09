@@ -1,73 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Leadership Training Registeration Form</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 40px;
-            text-align: center;
-        }
-        .container {
-            max-width: 500px;
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            display: inline-block;
-            text-align: left;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #555;
-            margin: 10px 0;
-        }
-        strong {
-            color: #333;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
-            text-align: center;
-            background-color: #eaf1ee;
-            padding: 10px;
-        }
-        .logo {
-            width: 150px;
-            height: 50px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Leadership Training Registration Form</title>
 </head>
-<body>
-    <div class="container">
-        <div style="text-align: center">
-            <img src="https://www.avvanz.com/wp-content/uploads/2021/07/avvanz.webp" alt="Logo" class="logo">
-        </div>
-        <h1>Leadership Training Registration Form</h1>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4;">
+    <div style="max-width: 600px; margin: auto; background: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="text-align: center">
+            Leadership Training Registration Confirmation
+        </h1>
+        <p>
+            Thank you for registering for our Leadership Training program.
+        </p>
+        <p>
+            Here is the information you submitted:
+        </p>
+        <br>
         <p><strong>Name:</strong> {{ $name }}</p>
         <p><strong>Company Email:</strong> {{ $company_email }}</p>
         <p><strong>Contact Number:</strong> {{ $contact_number }}</p>
         <br>
-        <div style="padding-top: 5px;">
-            <p>Thank you for your inquiry!. We are here to assist you every step of the way!</p>
-        </div>
-        <footer>
-            <p>
-                Best regards,<br>
-                IT Team
-            </p>
-        </footer>
+        <p>
+            If you experience any issues or have questions, please feel free to reach out to us.
+            Thank you for registering in Avvanz Leadership Training. We look forward to supporting you in your leadership training journey!
+        </p>
+        <br>
+        <p>Warm regards,</p>
+        <p><strong>Avvanz IT Team</strong></p>
+        <img src="https://www.avvanz.com/wp-content/uploads/2021/07/avvanz.webp" alt="Logo" style="width: 200px; height: auto;">
     </div>
 </body>
 </html>
