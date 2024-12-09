@@ -7,9 +7,35 @@ You searched for {{ $searchTerm }} - Avvanz GLobal
 @section('content')
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<link rel="preload" href="{{ asset('images/about/background/aboutSubBg4.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-@endsection()
+
+<style>
+    .bg-image-2 {
+        background: url("../images/about/background/aboutSubBg4.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    .bg-image-2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(190, 201, 206, 0.6);
+        z-index: 1;
+    }
+
+    .bg-image-2 .container {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+@endsection
 
 <!-- Environmental Section -->
 <div class="bg-image-2">
@@ -18,8 +44,8 @@ You searched for {{ $searchTerm }} - Avvanz GLobal
             <div class="col-md-6">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item active">HOME</li>
-                      <li class="breadcrumb-item active" aria-current="page">THOUGH LEADERSHIP</li>
+                      <li class="breadcrumb-item active fw-bolder">HOME</li>
+                      <li class="breadcrumb-item active fw-bolder" aria-current="page">THOUGH LEADERSHIP</li>
                     </ol>
                 </nav>
                 <h1 class="divider-start-25"></h1>

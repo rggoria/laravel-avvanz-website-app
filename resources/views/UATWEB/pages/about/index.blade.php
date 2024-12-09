@@ -35,7 +35,7 @@ About Us - Avvanz Global
     }
 </style>
 
-@endsection()
+@endsection
 
 <!-- Hero Section -->
 <section class="bg-image-2">
