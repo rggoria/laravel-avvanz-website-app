@@ -64,7 +64,6 @@
         <p><strong>How did you hear about Avvanz?</strong> {{ implode(', ', $data['about'] ?? []) }}</p> <!-- Display selected checkboxes -->
         <br>
         <div style="padding-top: 5px;">
-            <p>Please do not reply to this email as it is automatically generated.</p>
             <p>Thank you for your inquiry!. We are here to assist you every step of the way!</p>
         </div>
         <footer>

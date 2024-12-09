@@ -74,7 +74,7 @@ class ContactController extends Controller
         ], $this->messages());
 
         Mail::to($request->email)
-            ->cc(env('ADMIN_EMAIL'))
+            // ->cc(env('ADMIN_EMAIL'))
             ->send(new ContactEmail($request->all()));
 
         return response()->json(['success' => 'Email sent successfully!']);
@@ -152,7 +152,7 @@ class ContactController extends Controller
         ], $this->messages());
 
         Mail::to($request->email)
-            ->cc(env('ADMIN_EMAIL'))
+            // ->cc(env('ADMIN_EMAIL'))
             ->send(new RequestEmail($request->all()));
 
         return response()->json(['success' => 'Email sent successfully!']);

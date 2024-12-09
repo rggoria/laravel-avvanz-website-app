@@ -63,7 +63,6 @@
         <p><strong>Work Position:</strong>  {{ $data['position'] }}</p>
         <br>
         <div style="padding-top: 5px;">
-            <p>Please do not reply to this email as it is automatically generated.</p>
             <p>Thank you for your inquiry!. We are here to assist you every step of the way!</p>
         </div>
         <footer>
