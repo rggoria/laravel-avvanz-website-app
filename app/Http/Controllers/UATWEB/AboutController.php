@@ -217,7 +217,7 @@ class AboutController extends Controller
         ]);
     
         Mail::to($request->email)
-            // ->cc(env('ADMIN_EMAIL'))
+            ->cc(env('ADMIN_EMAIL'))
             ->send(new CareersEmail($data, $filePath));
 
         return response()->json(['success' => 'Inquiry sent successfully!']);

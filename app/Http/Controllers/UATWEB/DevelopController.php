@@ -282,7 +282,7 @@ class DevelopController extends Controller
         ]);
 
         Mail::to($request->email)
-            // ->cc(env('ADMIN_EMAIL'))
+            ->cc(env('ADMIN_EMAIL'))
             ->send(new LearnGlobalEmail($request->all()));
 
         return response()->json(['success' => 'Email sent successfully!']);
