@@ -1,7 +1,7 @@
 @extends('Leadership.layouts.main')
 
 @section('title')
-Leadership Breakthrough Summit
+Avvanz Leadership Breakthrough Summit
 @endsection
 
 @section('css')
