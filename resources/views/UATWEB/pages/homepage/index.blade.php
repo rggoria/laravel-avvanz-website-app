@@ -339,7 +339,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 @section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}"></script>
+    <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
 @endsection
 
 @endsection
