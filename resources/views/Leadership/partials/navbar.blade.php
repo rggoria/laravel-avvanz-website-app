@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-transparent shadow-sm sticky-top">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('leadership-home') }}">
             <img src="{{ asset('images/leadership/homapage/avvanzLogoNavbar.webp') }}" width="150" height="50" alt="Avvanz Logo" class="image-navbar-logo">
         </a>

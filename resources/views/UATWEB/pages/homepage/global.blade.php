@@ -25,9 +25,68 @@ Landing Page
 @endsection
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+
+@if($currentRouteName === 'global-singapore')
+    <link rel="preload" href="{{ asset('images/global/background/globalSingaporeBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-australia')
+    <link rel="preload" href="{{ asset('images/global/background/globalAustraliaBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-ph')
+    <link rel="preload" href="{{ asset('images/global/background/globalPhilippinesBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-usa')
+    <link rel="preload" href="{{ asset('images/global/background/globalSUsaBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-latin-america')
+    <link rel="preload" href="{{ asset('images/global/background/globalLatinBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-uae')
+    <link rel="preload" href="{{ asset('images/global/background/globalMiddleEastBg.webp') }}" as="image">
+@elseif($currentRouteName === 'global-uk')
+    <link rel="preload" href="{{ asset('images/global/background/globalUkBg.webp') }}" as="image">
+@else
+    <link rel="preload" href="{{ asset('images/global/background/globalSDefaultBg.webp') }}" as="image">
+@endif
+
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
-@endsection()
+
+<style>
+    .bg-image-1 {
+        @if($currentRouteName === 'global-singapore')
+            background: url("{{ asset('images/global/background/globalSingaporeBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-australia')
+            background: url("{{ asset('images/global/background/globalAustraliaBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-ph')
+            background: url("{{ asset('images/global/background/globalPhilippinesBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-usa')
+            background: url("{{ asset('images/global/background/globalSUsaBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-latin-america')
+            background: url("{{ asset('images/global/background/globalLatinBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-uae')
+            background: url("{{ asset('images/global/background/globalMiddleEastBg.webp') }}") no-repeat center;
+        @elseif($currentRouteName === 'global-uk')
+            background: url("{{ asset('images/global/background/globalUkBg.webp') }}") no-repeat center;
+        @else
+            background: url("{{ asset('images/global/background/globalSDefaultBg.webp') }}") no-repeat center;
+        @endif
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    .bg-image-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 71, 95, 0.8);
+        z-index: 1;
+    }
+
+    .bg-image-1 .container {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+@endsection
 
 @section('content')
 
