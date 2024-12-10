@@ -32,9 +32,10 @@ Avvanz - Background Checks & Screening
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
                 <img 
                     src="{{ asset('images/homepage/homepage1.webp') }}"
-                    alt="Placeholder Image"
+                    alt="Homepage Image 1"
                     class="img-fluid transition-up"
-                    style="width: 300px; height: 300px;"
+                    width="300"
+                    height="300"
                     loading="lazy">
             </div>
         </div>            
@@ -341,7 +342,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 @section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}" async></script>
+    <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
 @endsection
 
 @endsection
