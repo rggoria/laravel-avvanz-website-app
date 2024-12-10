@@ -8,7 +8,8 @@ Avvanz - Background Checks & Screening
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="preload" href="{{ asset('images/homepage/homepage1.webp') }}" as="image">
 <link rel="preload" href="{{ asset('images/homepage/leadership.webp') }}" as="image">
-<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+{{-- <link rel="stylesheet" href="{{ asset('css/homepage.css') }}"> --}}
+@vite('resources/css/homepage.css')
 @endsection
 
 @section('content')
@@ -342,7 +343,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 @section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
+    @vite('resources/js/homepageSwiper.js')
 @endsection
 
 @endsection
