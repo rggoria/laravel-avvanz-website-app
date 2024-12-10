@@ -7,8 +7,33 @@ Integrating Background Screening with your HRMS/ATS - Avvanz Global
 @section('content')
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
-@endsection()
+<link rel="preload" href="{{ asset('images/resources/background/itemsBg.webp') }}" as="image">
+
+<style>
+    .bg-image-2 {
+        background: url("../images/resources/background/itemsBg.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    .bg-image-2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 71, 95, 0.8);
+        z-index: 1;
+    }
+
+    .bg-image-2 .container {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+@endsection
 
 <!-- Environmental Section -->
 <section class="bg-image-2">

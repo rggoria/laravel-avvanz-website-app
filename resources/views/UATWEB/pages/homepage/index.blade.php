@@ -9,7 +9,7 @@ Avvanz - Background Checks & Screening
 <link rel="preload" href="{{ asset('images/homepage/homepage1.webp') }}" as="image">
 <link rel="preload" href="{{ asset('images/homepage/leadership.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
-@endsection()
+@endsection
 
 @section('content')
 

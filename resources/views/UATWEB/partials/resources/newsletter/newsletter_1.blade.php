@@ -7,7 +7,7 @@ Q3 Newsletter - Avvanz Global
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
-@endsection()
+@endsection
 
 @section('content')
 
