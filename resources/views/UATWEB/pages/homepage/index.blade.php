@@ -339,7 +339,58 @@ Avvanz - Background Checks & Screening
 </section>
 
 @section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/homepageSwiper.js') }}" defer></script> --}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiperContainers = document.querySelectorAll('.swiper');
+
+            const loadSwiperWhenVisible = (entries, observer) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Load Swiper JS
+                    const script = document.createElement('script');
+                    script.src = "{{ asset('js/swiper-bundle.min.js') }}"; // Path to your Swiper.js file
+                    script.onload = function () {
+                    new Swiper(entry.target, {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                        el: entry.target.querySelector('.swiper-pagination'),
+                        clickable: true,
+                        },
+                        loop: true,
+                        navigation: {
+                        nextEl: entry.target.querySelector('.swiper-button-next'),
+                        prevEl: entry.target.querySelector('.swiper-button-prev'),
+                        },
+                        breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                        },
+                    });
+                    };
+                    document.body.appendChild(script);
+
+                    // Stop observing once the Swiper is initialized
+                    observer.unobserve(entry.target);
+                }
+                });
+            };
+
+            const observer = new IntersectionObserver(loadSwiperWhenVisible, { threshold: 0.5 });
+
+            swiperContainers.forEach(container => {
+                observer.observe(container);
+            });
+            });
+    </script>
 @endsection
 
 @endsection
