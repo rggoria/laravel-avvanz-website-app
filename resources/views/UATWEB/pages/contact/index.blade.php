@@ -35,7 +35,7 @@ Contact Us - Avvanz Global
         <div class="col-md-3">
             <a href="{{ route('request-ibc') }}" class="text-decoration-none">
                 <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100 text-white">
-                    International Backgorund Check
+                    International Background Check
                 </h4>
             </a>
         </div>
@@ -49,7 +49,7 @@ Contact Us - Avvanz Global
         <div class="col-md-3">
             <a href="{{ route('request-cdd') }}" class="text-decoration-none">
                 <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100 text-white">
-                    Compnay Due Diligence
+                    Company Due Diligence
                 </h4>
             </a>
         </div>
