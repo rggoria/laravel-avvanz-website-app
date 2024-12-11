@@ -19,6 +19,8 @@
     <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
     <!-- Swiper CSS -->
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
     <!-- Critical CSS -->
     <style>
         body {
@@ -55,8 +57,6 @@
             text-align: center;
         }
     </style>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
     @yield('css')
 </head>
 <body>
@@ -76,11 +76,11 @@
             <div class="modal-content">
                 <div class="modal-body position-relative">
                     <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
-
                     <a href="{{ route('leadership-home') }}">
-                        <img src="{{ asset('images/homepage/leadership.webp') }}"
-                            alt="Leadership"
-                            class="img-fluid figure rounded shadow-lg"             
+                        <img src="{{ asset('images/homepage/leadership.webp') }}" 
+                            alt="Leadership" 
+                            class="img-fluid figure rounded shadow-lg"
+                            loading="lazy"
                             width="300"
                             height="300">
                     </a>
@@ -92,20 +92,21 @@
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <!-- Swiper JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Custom JS -->
-    <script src="{{ asset('js/index.js') }}"></script>
-    @yield('scripts')
+    <script src="{{ asset('js/index.js') }}" defer></script>
 
     <!-- Show Modal Automatically -->
     <script>
-        $(document).ready(function() {
-            // Show the modal when the page loads
-            $('#imageModal').modal('show');
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
         });
     </script>
+
+    @yield('scripts')
 
     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
     {{-- <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script> --}}
