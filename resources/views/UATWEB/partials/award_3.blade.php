@@ -34,7 +34,7 @@ Avvanz – Best Background Screening Provider - Avvanz Global
         z-index: 2;
     }
 </style>
-@endsection
+@endsection()
 
 <section class="bg-image-2">
     <div class="container padding-vertical">

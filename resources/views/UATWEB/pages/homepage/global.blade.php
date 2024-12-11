@@ -67,7 +67,7 @@ Landing Page
         @endif
         background-size: cover;
         position: relative;
-        min-height: 300px
+        min-height: 100px;
     }
 
     .bg-image-1::before {

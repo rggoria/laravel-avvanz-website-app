@@ -9,7 +9,7 @@ Avvanz Managing Director is Executive of the Year – HR Technology - Avvanz Glo
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-@endsection
+@endsection()
 
 <!-- Environmental Section -->
 <section class="bg-image-2">
