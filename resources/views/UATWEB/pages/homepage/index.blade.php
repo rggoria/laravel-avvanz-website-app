@@ -57,15 +57,19 @@ Avvanz - Background Checks & Screening
         <div class="row">
             <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
-                    <h1 class="fw-bolder display-5 skeleton skeleton-text"></h1>
+                    <!-- Skeleton for Title -->
+                    <h1 id="skeleton-title" class="fw-bolder display-5 skeleton skeleton-text"></h1>
                     <div class="divider-start-50"></div>
-                    <p class="skeleton skeleton-text"></p>
-                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder skeleton skeleton-button"></a>
+                    <!-- Skeleton for Paragraph -->
+                    <p id="skeleton-paragraph" class="skeleton skeleton-text"></p>
+                    <!-- Skeleton for Button -->
+                    <a id="skeleton-button" href="{{ route('contact') }}" class="btn hero-button fw-bolder skeleton skeleton-button"></a>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <div class="skeleton skeleton-image"></div>
-                <picture class="d-none">
+                <!-- Skeleton for Image -->
+                <div id="skeleton-image" class="skeleton skeleton-image"></div>
+                <picture id="real-image" class="d-none">
                     <source srcset="{{ asset('images/homepage/homepage1.webp') }}" type="image/webp">
                     <source srcset="{{ asset('images/homepage/homepage1.jpg') }}" type="image/jpeg">
                     <img src="{{ asset('images/homepage/homepage1.jpg') }}" alt="Homepage Image 1" class="img-fluid transition-up" width="300" height="300">
@@ -378,8 +382,18 @@ Avvanz - Background Checks & Screening
     <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
     <script>
         window.onload = function() {
-            document.querySelector('.skeleton').classList.add('d-none');
-            document.querySelector('picture').classList.remove('d-none');
+            // Wait for the image to fully load
+            const img = document.querySelector('img');
+            img.onload = function() {
+                // Hide the skeletons after image is loaded
+                document.getElementById('skeleton-title').classList.add('d-none');
+                document.getElementById('skeleton-paragraph').classList.add('d-none');
+                document.getElementById('skeleton-button').classList.add('d-none');
+                document.getElementById('skeleton-image').classList.add('d-none');
+
+                // Show the real image
+                document.getElementById('real-image').classList.remove('d-none');
+            };
         };
     </script>
 @endsection
