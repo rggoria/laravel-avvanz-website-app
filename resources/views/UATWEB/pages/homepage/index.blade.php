@@ -8,45 +8,6 @@ Avvanz - Background Checks & Screening
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
 <link rel="preload" href="{{ asset('images/homepage/homepage1.webp') }}" as="image" type="image/webp">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
-
-<style>
-    .skeleton {
-        background: #e0e0e0;
-        animation: loading 1.5s infinite ease-in-out;
-        position: relative;
-    }
-
-    .skeleton-text {
-        height: 20px;
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 5px;
-    }
-
-    .skeleton-button {
-        height: 40px;
-        width: 200px;
-        background-color: #e0e0e0;
-        border-radius: 5px;
-    }
-
-    .skeleton-image {
-        width: 100%;
-        height: 300px;
-        background-color: #e0e0e0;
-        border-radius: 5px;
-    }
-
-    @keyframes loading {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: 200px 0;
-        }
-    }
-</style>
-
 @endsection
 
 @section('content')
@@ -57,19 +18,18 @@ Avvanz - Background Checks & Screening
         <div class="row">
             <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
-                    <!-- Skeleton for Title -->
-                    <h1 id="skeleton-title" class="fw-bolder display-5 skeleton skeleton-text"></h1>
+                    <h1 class="fw-bolder display-5">
+                        We Screen & Strengthen your Human Assets
+                    </h1>
                     <div class="divider-start-50"></div>
-                    <!-- Skeleton for Paragraph -->
-                    <p id="skeleton-paragraph" class="skeleton skeleton-text"></p>
-                    <!-- Skeleton for Button -->
-                    <a id="skeleton-button" href="{{ route('contact') }}" class="btn hero-button fw-bolder skeleton skeleton-button"></a>
+                    <p>
+                        Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
+                    </p>
+                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <!-- Skeleton for Image -->
-                <div id="skeleton-image" class="skeleton skeleton-image"></div>
-                <picture id="real-image" class="d-none">
+                <picture>
                     <source srcset="{{ asset('images/homepage/homepage1.webp') }}" type="image/webp">
                     <source srcset="{{ asset('images/homepage/homepage1.jpg') }}" type="image/jpeg">
                     <img src="{{ asset('images/homepage/homepage1.jpg') }}" alt="Homepage Image 1" class="img-fluid transition-up" width="300" height="300">
@@ -380,22 +340,6 @@ Avvanz - Background Checks & Screening
 
 @section('scripts')
     <script src="{{ asset('js/homepageSwiper.js') }}" defer></script>
-    <script>
-        window.onload = function() {
-            // Wait for the image to fully load
-            const img = document.querySelector('img');
-            img.onload = function() {
-                // Hide the skeletons after image is loaded
-                document.getElementById('skeleton-title').classList.add('d-none');
-                document.getElementById('skeleton-paragraph').classList.add('d-none');
-                document.getElementById('skeleton-button').classList.add('d-none');
-                document.getElementById('skeleton-image').classList.add('d-none');
-
-                // Show the real image
-                document.getElementById('real-image').classList.remove('d-none');
-            };
-        };
-    </script>
 @endsection
 
 @endsection
