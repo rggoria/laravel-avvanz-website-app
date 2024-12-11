@@ -57,6 +57,9 @@
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="{{ asset('images/homepage/leadership.webp') }}" as="image" type="image/webp">
+    
     @yield('css')
 </head>
 <body>
@@ -78,7 +81,11 @@
                     <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
 
                     <a href="{{ route('leadership-home') }}">
-                        <img src="{{ asset('images/homepage/leadership.webp') }}" alt="Leadership" class="img-fluid figure rounded shadow-lg">
+                        <img src="{{ asset('images/homepage/leadership.webp') }}"
+                            alt="Leadership"
+                            class="img-fluid figure rounded shadow-lg"             
+                            width="300"
+                            height="300">
                     </a>
                 </div>
             </div>
