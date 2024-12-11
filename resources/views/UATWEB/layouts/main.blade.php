@@ -57,9 +57,6 @@
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
-
-    <link rel="preload" href="{{ asset('images/homepage/leadership.webp') }}" as="image" type="image/webp">
-    
     @yield('css')
 </head>
 <body>
