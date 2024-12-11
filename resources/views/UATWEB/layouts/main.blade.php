@@ -87,17 +87,17 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Swiper JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="{{ asset('js/index.js') }}" defer></script>
-
+    <script src="{{ asset('js/index.js') }}"></script>
+    
     <!-- Show Modal Automatically -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
