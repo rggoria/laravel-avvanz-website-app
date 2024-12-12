@@ -104,9 +104,7 @@
                     <a href="{{ route('leadership-home') }}">
                         <img src="{{ asset('images/homepage/leadership.webp') }}"
                             alt="Leadership"
-                            class="img-fluid figure rounded shadow-lg"             
-                            width="300"
-                            height="300">
+                            class="img-fluid figure rounded shadow-lg">
                     </a>
                 </div>
             </div>
