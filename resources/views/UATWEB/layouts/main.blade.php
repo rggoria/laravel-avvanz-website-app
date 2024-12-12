@@ -52,6 +52,32 @@
         .text-center {
             text-align: center;
         }
+        /* Cookie consent styles */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            display: none;
+            z-index: 9999;
+        }
+        .accept-cookies-btn, .reject-cookies-btn {
+            background-color: green;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .reject-cookies-btn {
+            background-color: red;
+        }
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
@@ -87,6 +113,13 @@
         </div>
     </div>    
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-consent-banner">
+        <p><b>Do you like cookies? 🍪</b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
+        <button id="accept-cookies" class="accept-cookies-btn">Accept</button>
+        <button id="reject-cookies" class="reject-cookies-btn">Reject</button>
+    </div>
+
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- jQuery CDN -->
@@ -100,6 +133,34 @@
         $(document).ready(function() {
             // Show the modal when the page loads
             $('#imageModal').modal('show');
+        });
+    </script>
+
+    <!-- Cookie Consent JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsentBanner = document.getElementById('cookie-consent-banner');
+            const acceptCookiesButton = document.getElementById('accept-cookies');
+            const rejectCookiesButton = document.getElementById('reject-cookies');
+            
+            // Check if cookies have been accepted or rejected before
+            if (!localStorage.getItem('cookie_accepted') && !localStorage.getItem('cookie_rejected')) {
+                cookieConsentBanner.style.display = 'block';
+            }
+
+            // Handle acceptance of cookies
+            acceptCookiesButton.addEventListener('click', function() {
+                localStorage.setItem('cookie_accepted', 'true');
+                localStorage.removeItem('cookie_rejected'); // In case the user previously rejected
+                cookieConsentBanner.style.display = 'none';
+            });
+
+            // Handle rejection of cookies
+            rejectCookiesButton.addEventListener('click', function() {
+                localStorage.setItem('cookie_rejected', 'true');
+                localStorage.removeItem('cookie_accepted'); // In case the user accepted before
+                cookieConsentBanner.style.display = 'none';
+            });
         });
     </script>
 
