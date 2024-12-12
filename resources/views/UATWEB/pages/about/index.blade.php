@@ -33,6 +33,39 @@ About Us - Avvanz Global
         position: relative;
         z-index: 2;
     }
+
+    @media (max-width: 767px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item.active,
+    #carouselPartnershipItems .carousel-inner .carousel-item-next,
+    #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item-end.active,
+        #carouselPartnershipItems .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item-start.active, 
+        #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item-end,
+    #carouselPartnershipItems .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
 </style>
 
 @endsection
@@ -389,22 +422,39 @@ About Us - Avvanz Global
             Connect with our trusted service providers and integration partners to streamline your background screening process.
         </p>
     </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper my-5">
-            @foreach ( $trustedPartnerItems as $count => $item )
-                <div class="swiper-slide">
-                    <img src="{{ asset('images/screen/' . $item) }}" 
-                        width="300" 
-                        height="200" 
-                        alt="Partner Image {{ $count }}" 
-                        loading="lazy"
-                        loading="lazy">
-                </div>
-            @endforeach
+    <div class="row justify-content-center my-5">
+        <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                @endforeach
+            </div>
+            <div class="carousel-inner" role="listbox">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                        <div class="col-md-4">
+                            <div class="card mx-3">
+                                <div class="card-img">
+                                    <img 
+                                    src="{{ asset('images/screen/' . $item) }}" 
+                                    class="img-fluid"
+                                    alt="{{ "Award ". $item }}"
+                                    loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 </div>
 
@@ -565,7 +615,7 @@ About Us - Avvanz Global
             </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
-                    Kannan is an award-winning Global Leader with 27 years of experience in the Technology and Human Capital sectors spanning Asia, EMEA & Americas. Kannan’s Technopreneurship has earned him the “<b>Executive of the Year – Human Resources Technology</b>” award which is an extremely prestigious Management Excellence award from Singapore Business Review. Kannan has held management and leadership positions in First Advantage, Dell Computers, Future Electronics, Arrow Electronics (NY-listed), Farnell Group (London-listed), e2open (IBM-backed), and i-Sprint Innovations (Acer-backed). Kannan is also a Certified International Trainer with very high ratings from Fortune 500 Clients and an accredited Strength Scope Practitioner. Kannan regularly delivers Thought Leadership talks and Masterclasses in the region and constantly offers insights and perspectives in mainstream newspapers and trade publications. Kannan is proficient in several languages – he speaks fluent English, Tamil, elementary Mandarin, Malay, and Thai. An engineer by training, he holds an Honours degree in Electrical and Electronics Engineering from the Nanyang Technological University in Singapore and an MBA from the University of Birmingham in the UK. Kannan holds an Advanced Certificate in Training and Assessment as well.
+                    Kannan is an award-winning Global Leader with 27 years of experience in the Technology and Human Capital sectors spanning Asia, EMEA & Americas. Kannan’s Technopreneurship has earned him the “<span class="fw-bolder">Executive of the Year – Human Resources Technology</span>” award which is an extremely prestigious Management Excellence award from Singapore Business Review. Kannan has held management and leadership positions in First Advantage, Dell Computers, Future Electronics, Arrow Electronics (NY-listed), Farnell Group (London-listed), e2open (IBM-backed), and i-Sprint Innovations (Acer-backed). Kannan is also a Certified International Trainer with very high ratings from Fortune 500 Clients and an accredited Strength Scope Practitioner. Kannan regularly delivers Thought Leadership talks and Masterclasses in the region and constantly offers insights and perspectives in mainstream newspapers and trade publications. Kannan is proficient in several languages – he speaks fluent English, Tamil, elementary Mandarin, Malay, and Thai. An engineer by training, he holds an Honours degree in Electrical and Electronics Engineering from the Nanyang Technological University in Singapore and an MBA from the University of Birmingham in the UK. Kannan holds an Advanced Certificate in Training and Assessment as well.
                 </p>
             </div>
         </section>
@@ -756,15 +806,42 @@ About Us - Avvanz Global
             </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
-                    Mike has more than 18 years of accumulative work experience in IT such as network, system, and system development. He is a graduate of Bachelor’s Degree in Electronics and Communication Engineering (ECE) with extensive training in Azure System administration 101 and 104, VMware Administration, Wireless, OSP, Network administration, Data Center Administration, and IT Project management.
+                    With over 18 years of diverse and hands-on experience in the IT industry, Mike has developed a comprehensive skill set spanning network management, system administration, software development, and IT project management. He is recognized for his technical expertise and ability to deliver high-impact solutions across a wide array of IT disciplines, making him a valuable asset in any organization.
+                </p>
+                <p class="fw-bolder">
+                    Mike holds a <span class='fw-bolder'>Bachelor’s Degree in Electronics and Communication Engineering (ECE)</span>, where he gained a strong foundation in engineering principles. Over the years, he has supplemented his academic background with specialized certifications and training to stay ahead of industry trends. Notably, Mike has completed <span class="fw-bolder">Azure System Administration 101 & 104</span> courses, gaining in-depth knowledge in cloud infrastructure management, and has advanced skills in <span class="fw-bolder">VMware Administration, Wireless Technologies</span>, <span class="fw-bolder">OSP (Outside Plant)</span>, <span class="fw-bolder">Network Administration</span>, and <span class="fw-bolder">Data Center Administration</span>.
+                </p>
+                <p class="fw-bolder">
+                    In addition to his broad technical expertise, Mike has spent the past <span class="fw-bolder">2 years specializing in IT Cloud Security</span>, focusing on securing cloud environments, managing risks, and ensuring the integrity and confidentiality of data in the cloud. His experience includes implementing robust security frameworks, conducting vulnerability assessments, and applying best practices for identity and access management (IAM), encryption, and compliance standards. Mike is adept at ensuring secure cloud architectures and mitigating security threats in dynamic and complex environments.
+                </p>
+                <p class="fw-bolder">
+                    His background in <span class="fw-bolder">Data Center Administration</span> and <span class="fw-bolder">IT Project Management</span> complements his technical skills, enabling him to effectively manage large-scale infrastructure projects, from planning and design to implementation and optimization. Mike’s leadership in project management ensures alignment with organizational goals, budget constraints, and timelines, while maintaining a focus on scalability, performance, and security.
+                </p>
+                <p class="fw-bolder">
+                    Throughout his career, Mike has proven himself as a versatile IT leader with a passion for solving complex technical challenges. He excels in designing innovative solutions, optimizing systems, and driving cloud security initiatives that meet the evolving needs of modern enterprises. Whether managing networks, securing cloud environments, or optimizing data centers, Mike’s results-oriented approach consistently delivers reliable, scalable, and secure IT solutions.
                 </p>
             </div>
         </section>
     </div>
 </section>
 
-@section('scripts')
-    <script src="{{ asset('js/swiper.js') }}" defer></script>
 @endsection
 
+@section('scripts')
+    <script>
+        let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
+    
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection

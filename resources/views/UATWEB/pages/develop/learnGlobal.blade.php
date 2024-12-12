@@ -116,34 +116,45 @@ LearnGlobal - Avvanz Global
             Client Testimonials
         </h1>
         <h1 class="divider-center-25"></h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5">
-                <div class="swiper-slide">
-                    <div class="speech-bubble my-3">
-                        "I thought the program will be highly technical and dry but to my amazement, it was delivered in a very engaging and layman way, and I still managed to grasp the in-depth elements of difficult to comprehend technologies like AI and Blockchain. The use of interactive training methodologies really helped."
-                        <div class="speech-bubble-tail"></div>
+        <div class="carousel slide my-5" data-bs-ride="carousel">
+            <div id="carouselTestimonialIndicators" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-inner" style="height: 270px">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-content">
+                            <div class="speech-bubble my-3">
+                                "I thought the program will be highly technical and dry but to my amazement, it was delivered in a very engaging and layman way, and I still managed to grasp the in-depth elements of difficult to comprehend technologies like AI and Blockchain. The use of interactive training methodologies really helped."
+                                <div class="speech-bubble-tail"></div>
+                            </div>
+                            <p class="fw-bold text-dmb">
+                                Ocean Network Express
+                                <br>
+                                <small class="text-dark">
+                                    Managing Director
+                                </small>
+                            </p>
+                        </div>
                     </div>
-                    <p class="fw-bold text-dmb">
-                        Ocean Network Express
-                        <br>
-                        <small class="text-dark">
-                            Managing Director
-                        </small>
-                    </p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="speech-bubble my-3">
-                        "All our staff across all levels from all regions went through the DT Program. We built solid actionable plan in line with ARA's Digital Vision"
-                        <div class="speech-bubble-tail"></div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-content">
+                            <div class="speech-bubble my-3">
+                                "All our staff across all levels from all regions went through the DT Program. We built solid actionable plan in line with ARA's Digital Vision"
+                                <div class="speech-bubble-tail"></div>
+                            </div>
+                            <p class="fw-bold text-dmb">
+                                ARA Group
+                            </p>
+                        </div>
                     </div>
-                    <p class="fw-bold text-dmb">
-                        ARA Group
-                    </p>
                 </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
         </div>
     </div>
 </section>
@@ -179,10 +190,12 @@ LearnGlobal - Avvanz Global
     </div>
 </section>
 
+@endsection
+
 @section('scripts')
 <script>
     $(document).ready(function() {
-        const totalCount = {{ $totalCount }}; // Get total count from the server
+        const totalCount = {{ $totalCount }};
 
         $('#load-more').on('click', function() {
             let offset = $(this).data('offset');
@@ -282,8 +295,4 @@ LearnGlobal - Avvanz Global
         });
     });
 </script>
-<script src="{{ asset('js/learnGlobalSwiper.js') }}"></script>
-@endsection
-
-
 @endsection

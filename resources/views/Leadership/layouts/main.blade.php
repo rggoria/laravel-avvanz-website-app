@@ -14,25 +14,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
-    <!-- Swiper CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
     <!-- Critical CSS -->
     <style>
         body {
             margin: 0;
             padding: 0;
-        }
-        .bg-image-1 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 300px
-        }
-        .bg-image-2 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 100px;
         }
         .padding-vertical {
             padding-top: 3rem;

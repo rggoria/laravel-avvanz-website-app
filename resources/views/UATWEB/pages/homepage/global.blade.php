@@ -85,6 +85,39 @@ Landing Page
         position: relative;
         z-index: 2;
     }
+
+    @media (max-width: 767px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item.active,
+    #carouselPartnershipItems .carousel-inner .carousel-item-next,
+    #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item-end.active,
+        #carouselPartnershipItems .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item-start.active, 
+        #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item-end,
+    #carouselPartnershipItems .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
 </style>
 @endsection
 
@@ -151,9 +184,14 @@ Landing Page
     <h1 class="text-center divider-center-25"></h1>
     <div class="row g-5 my-5">
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <div class="swiper awardSwiper">
-                <div class="swiper-wrapper my-5">              
-                    <div class="swiper-slide">
+            <div id="carouselAwardsIndicators" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <img
                             src="{{ asset('images/homepage/certification1.webp') }}"
                             class="img-fluid"
@@ -161,7 +199,7 @@ Landing Page
                             alt="Award 1"
                             loading="lazy">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="carousel-item">
                         <img
                             src="{{ asset('images/homepage/certification2.webp') }}"
                             class="img-fluid"
@@ -169,7 +207,7 @@ Landing Page
                             alt="Award 2"
                             loading="lazy">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="carousel-item">
                         <img
                             src="{{ asset('images/homepage/certification3.webp') }}"
                             class="img-fluid"
@@ -178,10 +216,15 @@ Landing Page
                             loading="lazy">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>  
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
             <img
@@ -253,27 +296,44 @@ Landing Page
     <p class="text-center mt-2 text-wrap text-justify">
         Connect with our trusted service providers and integration partners to streamline your background screening process.
     </p>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper my-5">
-            @foreach ( $trustedPartnerItems as $count => $item )
-                <div class="swiper-slide">
-                    <img
-                        src="{{ asset('images/screen/' . $item) }}"
-                        width="300"
-                        height="200"
-                        alt="Partner Image {{ $count }}"
-                        loading="lazy">
-                </div>
-            @endforeach
+    <div class="row justify-content-center my-5">
+        <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                @endforeach
+            </div>
+            <div class="carousel-inner" role="listbox">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                        <div class="col-md-4">
+                            <div class="card mx-3">
+                                <div class="card-img">
+                                    <img 
+                                    src="{{ asset('images/screen/' . $item) }}" 
+                                    class="img-fluid"
+                                    alt="{{ "Award ". $item }}"
+                                    loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image-1 text-center container-fluid py-5">
+<section class="bg-image-2 text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -417,8 +477,23 @@ Landing Page
     </div>
 </section>
 
-@section('scripts')
-    <script src="{{ asset('js/homepageSwiper.js') }}"></script>
 @endsection
 
+@section('scripts')
+    <script>
+        let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
+    
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection

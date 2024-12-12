@@ -30,6 +30,39 @@ Partnership Integration - Avvanz Global
         position: relative;
         z-index: 2;
     }
+
+    @media (max-width: 767px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item.active,
+    #carouselPartnershipItems .carousel-inner .carousel-item-next,
+    #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item-end.active,
+        #carouselPartnershipItems .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item-start.active, 
+        #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item-end,
+    #carouselPartnershipItems .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
 </style>
 
 @endsection
@@ -64,22 +97,39 @@ Partnership Integration - Avvanz Global
             Connect with our trusted service providers and integration partners to streamline your background screening process.
         </p>
     </div>
-    <div class="swiper mySwiper my-5">
-        <div class="swiper-wrapper my-5">
-            @foreach ( $trustedPartnerItems as $count => $item )
-                <div class="swiper-slide">
-                    <img
-                        src="{{ asset('images/screen/' . $item) }}"
-                        width="300"
-                        height="200"
-                        alt="Partner Image {{ $count }}"
-                        loading="lazy">
-                </div>
-            @endforeach
+    <div class="row justify-content-center my-5">
+        <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                @endforeach
+            </div>
+            <div class="carousel-inner" role="listbox">
+                @foreach ($trustedPartnerItems as $count => $item)
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                        <div class="col-md-4">
+                            <div class="card mx-3">
+                                <div class="card-img">
+                                    <img 
+                                    src="{{ asset('images/screen/' . $item) }}" 
+                                    class="img-fluid"
+                                    alt="{{ "Award ". $item }}"
+                                    loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
     <div class="row g-3 py-5">
         @foreach($partnerAchievementItems as $item)
@@ -108,8 +158,23 @@ Partnership Integration - Avvanz Global
     </div>
 </div>
 
-@section('scripts')
-    <script src="{{ asset('js/swiper.js') }}"></script>
 @endsection
 
+@section('scripts')
+    <script>
+        let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
+    
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection

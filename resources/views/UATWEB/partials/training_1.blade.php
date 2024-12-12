@@ -4,6 +4,43 @@
 Leadership - Avvanz Global
 @endsection
 
+@section('css')
+<style>
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
+</style>
+@endsection
+
 @section('content')
 
 <section class="container padding-vertical">
@@ -29,33 +66,47 @@ Leadership - Avvanz Global
         Due Diligence Background Checks
     </h1>
     <h1 class="text-center divider-center-25"></h1>
-    <div class="swiper mySwiper pb-5">
-        <div class="swiper-wrapper my-5">
-            @foreach ( $leadershipItems as $item )
-                <div class="swiper-slide">
-                    <div class="card border-radius-dmb text-center" style="height: 25rem;">
-                        <img
-                            src="{{ asset('images/develop/' . $item['image']) }}"
-                            class="card-img-top"
-                            alt="{{ $item['title'] }}"
-                            style="height: 200px; width: auto;"
-                            loading="lazy">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bolder text-dmb">
-                                {{ $item['title'] }}
-                            </h5>
-                            <small class="card-text text-muted mb-3">
-                                {{ $item['description'] }}
-                            </small>
+    <div class="row justify-content-center my-5">
+        <div id="carouselLeadershipItems" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @foreach ($leadershipItems as $count => $item)
+                    <button type="button" data-bs-target="#carouselLeadershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                @endforeach
+            </div>
+            <div class="carousel-inner" role="listbox">
+                @foreach ($leadershipItems as $count => $item)
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                        <div class="col-md-4">
+                            <div class="card mx-3 border-radius-dmb text-center" style="height: 25rem;">
+                                <img
+                                    src="{{ asset('images/develop/' . $item['image']) }}"
+                                    class="card-img-top"
+                                    alt="{{ $item['title'] }}"
+                                    style="height: 200px; width: auto;"
+                                    loading="lazy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder text-dmb">
+                                        {{ $item['title'] }}
+                                    </h5>
+                                    <small class="card-text text-muted mb-3">
+                                        {{ $item['description'] }}
+                                    </small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLeadershipItems" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLeadershipItems" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
+    </div>    
 </section>
 
 <section class="container margin-vertical">
@@ -198,8 +249,23 @@ Leadership - Avvanz Global
     </div>
 </section>
 
-@section('scripts')
-    <script src="{{ asset('js/leadershipSwiper.js') }}"></script>
 @endsection
 
+@section('scripts')
+    <script>
+        let items = document.querySelectorAll('#carouselLeadershipItems .carousel-item');
+    
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection

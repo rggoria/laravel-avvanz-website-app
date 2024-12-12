@@ -30,6 +30,39 @@ Background Checks Singapore - Avvanz Global
         position: relative;
         z-index: 2;
     }
+
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
 </style>
 
 @endsection
@@ -81,29 +114,43 @@ Background Checks Singapore - Avvanz Global
             Due Diligence Background Checks
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper pb-5">
-            <div class="swiper-wrapper my-5">
-                @foreach ( $dueDiligenceItems as $item )
-                    <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+        <div class="row justify-content-center my-5">
+            <div id="carouselDueDiligenceItems" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($dueDiligenceItems as $count => $item)
+                        <button type="button" data-bs-target="#carouselDueDiligenceItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    @endforeach
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    @foreach ($dueDiligenceItems as $count => $item)
+                        <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                            <div class="col-md-4">
+                                <div class="card mx-3 p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                        </div>
+                                        <h4 class="card-title fw-bolder">
+                                            {{ $item['title'] }}
+                                        </h4>
+                                        <p class="card-text">
+                                            {{ $item['description'] }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <h4 class="card-title fw-bolder">
-                                    {{ $item['title'] }}
-                                </h4>
-                                <p class="card-text">
-                                    {{ $item['description'] }}
-                                </p>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDueDiligenceItems" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDueDiligenceItems" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 
@@ -113,29 +160,43 @@ Background Checks Singapore - Avvanz Global
             Identity Checks
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5">
-                @foreach ( $identityCheck as $item )
-                    <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+        <div class="row justify-content-center my-5">
+            <div id="carouselIdentityCheckItems" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($identityCheck as $count => $item)
+                        <button type="button" data-bs-target="#carouselIdentityCheckItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    @endforeach
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    @foreach ($identityCheck as $count => $item)
+                        <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                            <div class="col-md-4">
+                                <div class="card mx-3 p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                        </div>
+                                        <h4 class="card-title fw-bolder">
+                                            {{ $item['title'] }}
+                                        </h4>
+                                        <p class="card-text">
+                                            {{ $item['description'] }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <h4 class="card-title fw-bolder">
-                                    {{ $item['title'] }}
-                                </h4>
-                                <p class="card-text">
-                                    {{ $item['description'] }}
-                                </p>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdentityCheckItems" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIdentityCheckItems" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 
@@ -145,29 +206,43 @@ Background Checks Singapore - Avvanz Global
             Financial Checks
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5">
-                @foreach ( $financialCheck as $item )
-                    <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+        <div class="row justify-content-center my-5">
+            <div id="carouselFinancialCheckItems" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($financialCheck as $count => $item)
+                        <button type="button" data-bs-target="#carouselFinancialCheckItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    @endforeach
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    @foreach ($financialCheck as $count => $item)
+                        <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                            <div class="col-md-4">
+                                <div class="card mx-3 p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                        </div>
+                                        <h4 class="card-title fw-bolder">
+                                            {{ $item['title'] }}
+                                        </h4>
+                                        <p class="card-text">
+                                            {{ $item['description'] }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <h4 class="card-title fw-bolder">
-                                    {{ $item['title'] }}
-                                </h4>
-                                <p class="card-text">
-                                    {{ $item['description'] }}
-                                </p>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinancialCheckItems" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFinancialCheckItems" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 
@@ -177,29 +252,43 @@ Background Checks Singapore - Avvanz Global
             Integrity Checks
         </h1>
         <h1 class="text-center divider-center-25"></h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper my-5">
-                @foreach ( $integrityCheck as $item )
-                    <div class="swiper-slide">
-                        <div class="card p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <i class="fas {{ $item['icon'] }} fa-2x"></i>
+        <div class="row justify-content-center my-5">
+            <div id="carouselIntegrityCheckItems" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($integrityCheck as $count => $item)
+                        <button type="button" data-bs-target="#carouselIntegrityCheckItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    @endforeach
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    @foreach ($integrityCheck as $count => $item)
+                        <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                            <div class="col-md-4">
+                                <div class="card mx-3 p-3 d-flex justify-content-center align-items-center bg-mg text-white" style="height: 20rem">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="fas {{ $item['icon'] }} fa-2x"></i>
+                                        </div>
+                                        <h4 class="card-title fw-bolder">
+                                            {{ $item['title'] }}
+                                        </h4>
+                                        <p class="card-text">
+                                            {{ $item['description'] }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <h4 class="card-title fw-bolder">
-                                    {{ $item['title'] }}
-                                </h4>
-                                <p class="card-text">
-                                    {{ $item['description'] }}
-                                </p>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIntegrityCheckItems" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIntegrityCheckItems" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 </section>
@@ -262,8 +351,68 @@ Background Checks Singapore - Avvanz Global
     </div>
 </section>
 
-@section('scripts')
-    <script src="{{ asset('js/backgroundCheckSwiper.js') }}"></script>
 @endsection
 
+@section('scripts')
+    <script>
+        let dueDiligenceItems = document.querySelectorAll('#carouselDueDiligenceItems .carousel-item');
+    
+        dueDiligenceItems.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = dueDiligenceItems[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+
+        let identityCheckItems = document.querySelectorAll('#carouselIdentityCheckItems .carousel-item');
+
+        identityCheckItems.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = identityCheckItems[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+
+        let carouselFinancialCheckItems = document.querySelectorAll('#carouselFinancialCheckItems .carousel-item');
+
+        carouselFinancialCheckItems.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = carouselFinancialCheckItems[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+
+        let carouselIntegrityCheckItems = document.querySelectorAll('#carouselIntegrityCheckItems .carousel-item');
+
+        carouselIntegrityCheckItems.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = carouselIntegrityCheckItems[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection
