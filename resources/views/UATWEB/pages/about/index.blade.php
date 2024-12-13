@@ -496,105 +496,6 @@ About Us - Avvanz Global
     </div>
 </section>
 
-<!-- Council Section -->
-<section class="my-5 text-center">
-    <div class="container text-center">
-        <h1 class="text-dmb fw-bolder display-5">
-            Avvanz Advisory Council
-        </h1>
-        <h1 class="divider-center-25"></h1>
-        <br>
-        <p class="mt-2 lead">
-            Avvanz Advisory Council consists of global veteran leaders from multiple disciplines. The Council with diverse expertise strives to guide and mentor Avvanz in paving Avvanz’s way to success. The Council acts as a resource that provides industry-specific and market-specific domain knowledge that includes talent concerns, needs, best practices, and trends. The Council also offers unbiased insights and ideas purely from a third-party point of view and is not involved in the operations of Avvanz in any way.
-        </p>
-
-        <!-- Advisory # 1 -->
-        <section class="my-5">
-            <img 
-                src="{{ asset('images/about/advisory1.webp')}}" 
-                width="200" 
-                height="200" 
-                alt="Salman Syed Image" 
-                class="img-border-rounded-dmb"
-                loading="lazy">
-            <h1 class="text-dmb fw-bolder">
-                Salman Syed
-            </h1>
-            <h1 class="divider-center-25"></h1>
-            <div class="border-dmb p-5 my-5 text-start text-dmb">
-                <p class="fw-bolder">
-                    Salman brings over 20 years of leadership experience spent in the deep end of scaling and transforming businesses from private equity-owned businesses (First Advantage) to start-ups to Fortune 200 (Arrow Inc) and FTSE 100 (Sage Plc). As the Managing Director for UK and Western Europe at Thomas Cook Plc, he drove a turnaround of a £3 billion P&L with over 10,000 employees. As the EVP of Transformation at Sage Plc, he was directly responsible for the successful transformation of the business to a global, cloud-based SaaS business. He has directly been responsible for leading innovation as Head of Global Innovation at Premier Farnell (formerly a FTSE 250 and now acquired by Avnet a Fortune 200 company) and as the Chief Digital Officer for Capita’s People Services division. He is a purpose-driven leader who has worked and lived in many parts of the world including Singapore, Hong Kong, Japan, Canada, and the UK. He believes in the power of people, and inclusive culture and that strategy is simply what you DO to make the business achieve its goals.
-                </p>
-            </div>
-        </section>
-
-        <!-- Advisory # 2 -->
-        <section class="my-5">
-            <img 
-                src="{{ asset('images/about/advisory2.webp')}}" 
-                width="200" 
-                height="200" 
-                alt="Chia Hock Lai Image" 
-                class="img-border-rounded-dmb"
-                loading="lazy">    
-            <h1 class="text-dmb fw-bolder">
-                Chia Hock Lai
-            </h1>
-            <h1 class="divider-center-25"></h1>
-            <div class="border-dmb p-5 my-5 text-start text-dmb">
-                <p class="fw-bolder">
-                    Chia Hock Lai has nearly two decades of experience in the financial and technology industry, having worked in Singapore’s GovTech and NTUC Income. An alumnus of NUS and NTU, he is the founding president of the Singapore Fintech Association, a founding board member of the Global Fintech Institute, and co-chairman of the Blockchain Association Singapore.
-                </p>
-                <p class="fw-bolder">
-                    He is a council member of and strategic advisor to numerous fintech startups and organizations, such as ASEAN AFIN, IEEE C/BDL, Singapore Sichuan Trade & Investment Committee, IBF, and a Fellow of the Singapore University of Social Science (SUSS). He frequently speaks on topics related to fintech and blockchain at international events and universities.
-                </p>
-            </div>
-        </section>
-
-        <!-- Advisory # 3 -->
-        <section class="my-5">
-            <img 
-                src="{{ asset('images/about/advisory3.webp')}}" 
-                width="200" 
-                height="200" 
-                alt="David Wee Image" 
-                class="img-border-rounded-dmb"
-                loading="lazy">
-            <h1 class="text-dmb fw-bolder">
-                David Wee
-            </h1>
-            <h1 class="divider-center-25"></h1>
-            <div class="border-dmb p-5 my-5 text-start text-dmb">
-                <p class="fw-bolder">
-                    David has spent 3 decades of his career in diverse organizations that include government agencies (National Productivity Board and Bank Negara’s ICLIF), MNCs (GE and J&J), and conglomerates (SinarMas Group). He has served in Chief Talent Officer and Chief Human Resources Officer roles across the globe.
-                </p>
-                <p class="fw-bolder">
-                    He has managed GE’s Executive Leadership Programmes in Crotonville, New York; led leadership centres in Brussels, Hong Kong, London, Mumbai, Sydney, Singapore, and Tokyo and served as a consultant to many Asian organizations that include Garuda Airlines, Samsung, Wipro, and Bank Negara. David holds degrees and certificates from the National University of Singapore, INSEAD, University of Michigan, and MIT’s Sloan Business School. He was co-author of Lights, Camera, and Action and served in an editorial capacity for the Productivity Digest and the Singapore Productivity Casebook. He has spoken at numerous conferences and delivered workshops across the world including the renowned American Society for Training and Development in Denver, Colorado. He also serves as a Board Advisor for the Institute of Advance Studies in Complex Choices.
-                </p>
-            </div>
-        </section>
-    </div>
-</section>
-<section>
-    <div class="container-fluid bg-mg py-5">
-        <div class="container text-center text-white">
-            <h1 class="fw-bolder display-5">
-                Avvanz’s Management Team
-            </h1>
-            <h1 class="divider-center-25"></h1>
-            <p class="lead my-3">
-                Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
-            </p>
-            <br>
-            <img 
-                src="{{ asset('images/about/management.webp')}}" 
-                width="300" 
-                height="300" 
-                alt="Management Team" 
-                loading="lazy">
-        </div>
-    </div>
-</section>
 <section class="my-5 text-center">
     <div class="container text-center">
         <!-- Advisory # 4 -->
@@ -819,6 +720,107 @@ About Us - Avvanz Global
                 </p>
                 <p class="fw-bolder">
                     Throughout his career, Mike has proven himself as a versatile IT leader with a passion for solving complex technical challenges. He excels in designing innovative solutions, optimizing systems, and driving cloud security initiatives that meet the evolving needs of modern enterprises. Whether managing networks, securing cloud environments, or optimizing data centers, Mike’s results-oriented approach consistently delivers reliable, scalable, and secure IT solutions.
+                </p>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid bg-mg py-5">
+        <div class="container text-center text-white">
+            <h1 class="fw-bolder display-5">
+                Avvanz’s Management Team
+            </h1>
+            <h1 class="divider-center-25"></h1>
+            <p class="lead my-3">
+                Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
+            </p>
+            <br>
+            <img 
+                src="{{ asset('images/about/management.webp')}}" 
+                width="300" 
+                height="300" 
+                alt="Management Team" 
+                loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Council Section -->
+<section class="my-5 text-center">
+    <div class="container text-center">
+        <h1 class="text-dmb fw-bolder display-5">
+            Avvanz Advisory Council
+        </h1>
+        <h1 class="divider-center-25"></h1>
+        <br>
+        <p class="mt-2 lead">
+            Avvanz Advisory Council consists of global veteran leaders from multiple disciplines. The Council with diverse expertise strives to guide and mentor Avvanz in paving Avvanz’s way to success. The Council acts as a resource that provides industry-specific and market-specific domain knowledge that includes talent concerns, needs, best practices, and trends. The Council also offers unbiased insights and ideas purely from a third-party point of view and is not involved in the operations of Avvanz in any way.
+        </p>
+
+        <!-- Advisory # 1 -->
+        <section class="my-5">
+            <img 
+                src="{{ asset('images/about/advisory1.webp')}}" 
+                width="200" 
+                height="200" 
+                alt="Salman Syed Image" 
+                class="img-border-rounded-dmb"
+                loading="lazy">
+            <h1 class="text-dmb fw-bolder">
+                Salman Syed
+            </h1>
+            <h1 class="divider-center-25"></h1>
+            <div class="border-dmb p-5 my-5 text-start text-dmb">
+                <p class="fw-bolder">
+                    Salman brings over 20 years of leadership experience spent in the deep end of scaling and transforming businesses from private equity-owned businesses (First Advantage) to start-ups to Fortune 200 (Arrow Inc) and FTSE 100 (Sage Plc). As the Managing Director for UK and Western Europe at Thomas Cook Plc, he drove a turnaround of a £3 billion P&L with over 10,000 employees. As the EVP of Transformation at Sage Plc, he was directly responsible for the successful transformation of the business to a global, cloud-based SaaS business. He has directly been responsible for leading innovation as Head of Global Innovation at Premier Farnell (formerly a FTSE 250 and now acquired by Avnet a Fortune 200 company) and as the Chief Digital Officer for Capita’s People Services division. He is a purpose-driven leader who has worked and lived in many parts of the world including Singapore, Hong Kong, Japan, Canada, and the UK. He believes in the power of people, and inclusive culture and that strategy is simply what you DO to make the business achieve its goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Advisory # 2 -->
+        <section class="my-5">
+            <img 
+                src="{{ asset('images/about/advisory2.webp')}}" 
+                width="200" 
+                height="200" 
+                alt="Chia Hock Lai Image" 
+                class="img-border-rounded-dmb"
+                loading="lazy">    
+            <h1 class="text-dmb fw-bolder">
+                Chia Hock Lai
+            </h1>
+            <h1 class="divider-center-25"></h1>
+            <div class="border-dmb p-5 my-5 text-start text-dmb">
+                <p class="fw-bolder">
+                    Chia Hock Lai has nearly two decades of experience in the financial and technology industry, having worked in Singapore’s GovTech and NTUC Income. An alumnus of NUS and NTU, he is the founding president of the Singapore Fintech Association, a founding board member of the Global Fintech Institute, and co-chairman of the Blockchain Association Singapore.
+                </p>
+                <p class="fw-bolder">
+                    He is a council member of and strategic advisor to numerous fintech startups and organizations, such as ASEAN AFIN, IEEE C/BDL, Singapore Sichuan Trade & Investment Committee, IBF, and a Fellow of the Singapore University of Social Science (SUSS). He frequently speaks on topics related to fintech and blockchain at international events and universities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Advisory # 3 -->
+        <section class="my-5">
+            <img 
+                src="{{ asset('images/about/advisory3.webp')}}" 
+                width="200" 
+                height="200" 
+                alt="David Wee Image" 
+                class="img-border-rounded-dmb"
+                loading="lazy">
+            <h1 class="text-dmb fw-bolder">
+                David Wee
+            </h1>
+            <h1 class="divider-center-25"></h1>
+            <div class="border-dmb p-5 my-5 text-start text-dmb">
+                <p class="fw-bolder">
+                    David has spent 3 decades of his career in diverse organizations that include government agencies (National Productivity Board and Bank Negara’s ICLIF), MNCs (GE and J&J), and conglomerates (SinarMas Group). He has served in Chief Talent Officer and Chief Human Resources Officer roles across the globe.
+                </p>
+                <p class="fw-bolder">
+                    He has managed GE’s Executive Leadership Programmes in Crotonville, New York; led leadership centres in Brussels, Hong Kong, London, Mumbai, Sydney, Singapore, and Tokyo and served as a consultant to many Asian organizations that include Garuda Airlines, Samsung, Wipro, and Bank Negara. David holds degrees and certificates from the National University of Singapore, INSEAD, University of Michigan, and MIT’s Sloan Business School. He was co-author of Lights, Camera, and Action and served in an editorial capacity for the Productivity Digest and the Singapore Productivity Casebook. He has spoken at numerous conferences and delivered workshops across the world including the renowned American Society for Training and Development in Denver, Colorado. He also serves as a Board Advisor for the Institute of Advance Studies in Complex Choices.
                 </p>
             </div>
         </section>
