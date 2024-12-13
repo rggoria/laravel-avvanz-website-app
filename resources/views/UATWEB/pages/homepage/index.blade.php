@@ -401,10 +401,33 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
+<!-- Modal Popup -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+
+                <a href="{{ route('leadership-home') }}">
+                    <img src="{{ asset('images/homepage/leadership.webp') }}"
+                        alt="Leadership"
+                        class="img-fluid figure rounded shadow-lg">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @section('scripts')
     <script>
+        // Show Modal Automatically
+        $(document).ready(function() {
+            // Show the modal when the page loads
+            $('#imageModal').modal('show');
+        });
+
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
         items.forEach((el) => {

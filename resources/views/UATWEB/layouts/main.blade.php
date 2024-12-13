@@ -94,23 +94,6 @@
     <!-- Footer Section -->
     @include('UATWEB.partials.footer')
 
-    <!-- Modal Popup -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-body position-relative">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
-
-                    <a href="{{ route('leadership-home') }}">
-                        <img src="{{ asset('images/homepage/leadership.webp') }}"
-                            alt="Leadership"
-                            class="img-fluid figure rounded shadow-lg">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>    
-
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-consent-banner">
         <p><b>Do you like cookies? 🍪</b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
@@ -125,14 +108,6 @@
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}"></script>
     @yield('scripts')
-
-    <!-- Show Modal Automatically -->
-    <script>
-        $(document).ready(function() {
-            // Show the modal when the page loads
-            $('#imageModal').modal('show');
-        });
-    </script>
 
     <!-- Cookie Consent JavaScript -->
     <script>
