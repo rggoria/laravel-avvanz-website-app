@@ -496,6 +496,26 @@ About Us - Avvanz Global
     </div>
 </section>
 
+<section>
+    <div class="container-fluid bg-mg py-5">
+        <div class="container text-center text-white">
+            <h1 class="fw-bolder display-5">
+                Avvanz’s Management Team
+            </h1>
+            <h1 class="divider-center-25"></h1>
+            <p class="lead my-3">
+                Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
+            </p>
+            <br>
+            <picture>
+                <source srcset="{{ asset('images/about/management.webp') }}" type="image/webp">
+                <source srcset="{{ asset('images/about/management.webp') }}" type="image/webp">
+                <img src="{{ asset('images/about/management.webp') }}" alt="Avvanz’s Management Team" class="img-fluid transition-up" width="300" height="300">
+            </picture>          
+        </div>
+    </div>
+</section>
+
 <section class="my-5 text-center">
     <div class="container text-center">
         <!-- Advisory # 4 -->
@@ -723,27 +743,6 @@ About Us - Avvanz Global
                 </p>
             </div>
         </section>
-    </div>
-</section>
-
-<section>
-    <div class="container-fluid bg-mg py-5">
-        <div class="container text-center text-white">
-            <h1 class="fw-bolder display-5">
-                Avvanz’s Management Team
-            </h1>
-            <h1 class="divider-center-25"></h1>
-            <p class="lead my-3">
-                Avvanz’s business is founded and led by an extremely experienced management team with decades of global experiences in the area of employee lifecycle management. The founders are Kannan Chettiar, Jan Espino and Alvin Caga.
-            </p>
-            <br>
-            <img 
-                src="{{ asset('images/about/management.webp')}}" 
-                width="300" 
-                height="300" 
-                alt="Management Team" 
-                loading="lazy">
-        </div>
     </div>
 </section>
 
