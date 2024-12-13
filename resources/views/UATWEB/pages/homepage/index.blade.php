@@ -116,28 +116,25 @@ Avvanz - Background Checks & Screening
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img
-                            src="{{ asset('images/homepage/certification1.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 1"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification1-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 1" loading="lazy">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img
-                            src="{{ asset('images/homepage/certification2.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 2"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification2-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification2-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification2-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 2" loading="lazy">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img
-                            src="{{ asset('images/homepage/certification3.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 3"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification3-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification3-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification3-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 3" loading="lazy">
+                        </picture>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="prev">
@@ -151,12 +148,11 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <img
-                src="{{ asset('images/homepage/certification4.webp') }}"
-                class="img-fluid"
-                style="height: 200px; width:auto"
-                alt="Award 4"
-                loading="lazy">
+            <picture>
+                <source srcset="{{ asset('images/homepage/certification4-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                <source srcset="{{ asset('images/homepage/certification4-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                <img src="{{ asset('images/homepage/certification4-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 4" loading="lazy">
+            </picture>
         </div>
     </div>
 </section>
@@ -409,9 +405,11 @@ Avvanz - Background Checks & Screening
                 <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
 
                 <a href="{{ route('leadership-home') }}">
-                    <img src="{{ asset('images/homepage/leadership.webp') }}"
-                        alt="Leadership"
-                        class="img-fluid figure rounded shadow-lg">
+                    <picture>
+                        <source srcset="{{ asset('images/homepage/leadership-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="{{ asset('images/homepage/leadership-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid figure rounded shadow-lg">
+                    </picture>
                 </a>
             </div>
         </div>
