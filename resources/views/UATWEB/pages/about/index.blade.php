@@ -723,7 +723,7 @@ About Us - Avvanz Global
             </h1>
             <h1 class="divider-center-25"></h1>
             <h4 class="fw-bolder mt-3">
-                IT Manager
+                Information Technology Manager
             </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
