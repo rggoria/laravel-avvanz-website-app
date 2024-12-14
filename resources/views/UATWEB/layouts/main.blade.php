@@ -136,14 +136,6 @@
             });
         });
     </script>
-    <script src="{{ asset('js/ChristmasOverlay.js') }}"></script>
-    <script>
-        christmasOverlaySnow.enable({
-            snowflakeCount: 100,
-            snowflakeColor: 'white',
-            zIndex: 9999
-        });
-    </script>
     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
     <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
     <!-- https://respond.io -->
