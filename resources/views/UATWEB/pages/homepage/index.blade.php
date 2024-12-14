@@ -418,18 +418,18 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/ChristmasOverlay.js') }}"></script>
+    {{-- <script src="{{ asset('js/ChristmasOverlay.js') }}"></script> --}}
     <script>
-        christmasOverlaySnow.enable({
-            snowflakeCount: 100,
-            snowflakeColor: 'white',
-            zIndex: 9999
-        });
-        // Show Modal Automatically
-        $(document).ready(function() {
-            // Show the modal when the page loads
-            $('#imageModal').modal('show');
-        });
+        // christmasOverlaySnow.enable({
+        //     snowflakeCount: 100,
+        //     snowflakeColor: 'white',
+        //     zIndex: 9999
+        // });
+        // // Show Modal Automatically
+        // $(document).ready(function() {
+        //     // Show the modal when the page loads
+        //     $('#imageModal').modal('show');
+        // });
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
