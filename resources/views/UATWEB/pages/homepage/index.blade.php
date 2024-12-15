@@ -8,9 +8,7 @@ Avvanz - Background Checks & Screening
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
 
-<link rel="preload" href="{{ asset('images/homepage/homepage1-m.webp') }}" as="image" type="image/webp">
-<link rel="preload" href="{{ asset('images/homepage/leadership-m.webp') }}" as="image" type="image/webp">
-
+<link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
 <style>
     @media (max-width: 767px) {
         #carouselPartnershipItems .carousel-inner .carousel-item > div {
@@ -119,7 +117,7 @@ Avvanz - Background Checks & Screening
                 <picture>
                     <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="300" height="300" loading="lazy">
+                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up">
                 </picture>
             </div>
         </div>            
@@ -459,7 +457,7 @@ Avvanz - Background Checks & Screening
                     <picture>
                         <source srcset="{{ asset('images/homepage/leadership-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                         <source srcset="{{ asset('images/homepage/leadership-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid figure rounded shadow-lg">
+                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid rounded">
                     </picture>
                 </a>
             </div>
@@ -472,10 +470,14 @@ Avvanz - Background Checks & Screening
 @section('scripts')
     <script>
 
-        // Show Modal Automatically
         $(document).ready(function() {
-            // Show the modal when the page loads
-            $('#imageModal').modal('show');
+            // Preload the modal image
+            var img = new Image();
+            img.src = "{{ asset('images/homepage/leadership-m.webp') }}";
+
+            setTimeout(function() {
+                $('#imageModal').modal('show');
+            }, 500);
         });
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
