@@ -458,7 +458,7 @@ Avvanz - Background Checks & Screening
                     <picture>
                         <source srcset="{{ asset('images/homepage/leadership-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                         <source srcset="{{ asset('images/homepage/leadership-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid">
+                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid" fetchpriority="high">
                     </picture>
                 </a>
             </div>
