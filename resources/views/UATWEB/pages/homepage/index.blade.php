@@ -8,6 +8,8 @@ Avvanz - Background Checks & Screening
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
 
+<link rel="preload" href="{{ asset('images/homepage/leadership-w.webp') }}" as="image" type="image/webp">
+
 <style>
     @media (max-width: 767px) {
         #carouselPartnershipItems .carousel-inner .carousel-item > div {
