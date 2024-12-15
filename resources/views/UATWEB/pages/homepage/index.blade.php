@@ -102,20 +102,31 @@ Avvanz - Background Checks & Screening
 <section class="bg-image-1">
     <div class="container padding-vertical">
         <div class="row">
+            <!-- Text Section -->
             <div class="col-md-6 order-2 order-md-1">
                 <div class="text-white">
-                    <h1 class="fw-bolder display-5">
-                        We Screen & Strengthen your Human Assets
+                    <!-- Skeleton placeholder for the heading -->
+                    <h1 class="fw-bolder display-5 placeholder-glow" id="hero-heading">
+                        <span class="placeholder col-6"></span>
                     </h1>
                     <div class="divider-start-50"></div>
-                    <p>
-                        Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
+                    <!-- Skeleton placeholder for the paragraph -->
+                    <p class="placeholder-glow" id="hero-paragraph">
+                        <span class="placeholder col-8"></span>
                     </p>
+                    <!-- Skeleton placeholder for the button -->                  
                     <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
                 </div>
             </div>
+            
+            <!-- Image Section -->
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <picture>
+                <!-- Placeholder for the image -->
+                <div id="hero-image-placeholder" class="placeholder-glow">
+                    <div class="placeholder w-100" style="height: 300px;"></div>
+                </div>
+                <!-- Actual image (hidden initially) -->
+                <picture id="hero-image" style="display: none;">
                     <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
                     <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up">
@@ -475,6 +486,14 @@ Avvanz - Background Checks & Screening
                 $('#imageModal').modal('show');
             }, 10000);
         });
+
+        setTimeout(function() {
+            // Show the actual text and image after 5 seconds
+            document.getElementById('hero-heading').innerHTML = "We Screen & Strengthen your Human Assets";
+            document.getElementById('hero-paragraph').innerHTML = "Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.";
+            document.getElementById('hero-image-placeholder').style.display = 'none'; // Hide placeholder
+            document.getElementById('hero-image').style.display = 'block'; // Show image
+        }, 5000); // 5000 milliseconds = 5 seconds
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
