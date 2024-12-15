@@ -468,6 +468,13 @@ Avvanz - Background Checks & Screening
 
 @section('scripts')
     <script>
+
+        // Show Modal Automatically
+        $(document).ready(function() {
+            // Show the modal when the page loads
+            $('#imageModal').modal('show');
+        });
+
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
         items.forEach((el) => {
