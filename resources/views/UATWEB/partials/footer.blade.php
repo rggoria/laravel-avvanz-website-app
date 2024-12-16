@@ -3,7 +3,7 @@
         <div class="row g-3 py-5">
             <div class="col-md-3">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('images/homepage/avvanzFooter.webp') }}" alt="Avvan Footer Logo" width="150" height="50" class="image-footer-logo" loading="lazy">
+                    <img src="{{ asset('images/homepage/avvanzLogoChristmas.webp') }}" alt="Avvan Footer Logo" width="150" height="50" class="image-footer-logo" loading="lazy">
                 </a>
             </div>
             <div class="col-md-2">
