@@ -38,7 +38,7 @@
 
                     <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Screen
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -110,7 +110,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Develop
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -130,7 +130,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder christmas-text" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -160,10 +160,10 @@
                         </ul>
                     </li>
                     <li class="nav-item nav-main-display">
-                        <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
+                        <a class="nav-link navigation text-uppercase fw-bolder christmas-text {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder christmas-text" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Global
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">

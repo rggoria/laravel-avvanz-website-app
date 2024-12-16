@@ -122,6 +122,7 @@ Avvanz Leadership Breakthrough Summit
             <div class="col-md-11">
                 <p class="fs-4 fw-bolder">
                     3D2N Retreat in Luxury at Bintan
+                    &nbsp;<span class="text-danger">(Valued at $1,500)</span>
                 </p>
                 <p class="fs-4">
                     Experience rejuvenation at a serene venue with guided workshops, <span class="fw-bolder text-dmb">real business practitioner</span> - led sessions, and personalized coaching.
@@ -139,6 +140,7 @@ Avvanz Leadership Breakthrough Summit
             <div class="col-md-11">
                 <p class="fs-4 fw-bolder">
                     Exclusive Strategic Tools
+                    &nbsp;<span class="text-danger">(Valued at $5,000)</span>
                 </p>
                 <p class="fs-4">
                     Leverage the 5Ps Framework (People, Process, Profit, Product, Partners) to analyse and transform your business effectively.
@@ -174,6 +176,7 @@ Avvanz Leadership Breakthrough Summit
             <div class="col-md-11">
                 <p class="fs-4 fw-bolder">
                     6 Months Post-Summit Support
+                    &nbsp;<span class="text-danger">(Valued at $3,000)</span>
                 </p>
                 <p class="fs-4">
                     Exclusive 6 months follow-up coaching for implementation
@@ -615,6 +618,9 @@ Avvanz Leadership Breakthrough Summit
                 </tr>
             </tbody>
         </table>
+        <p class="fs-4 text-danger">
+            Whether you're in technology, retail, manufacturing, or beyond, our frameworks adapt to your specific business context.
+        </p>
     </div>
     <div class="container-fluid bg-lw w-100">
         <div class="container padding-vertical">
