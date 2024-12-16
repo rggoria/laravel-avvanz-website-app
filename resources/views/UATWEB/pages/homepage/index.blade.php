@@ -245,9 +245,9 @@ Avvanz - Background Checks & Screening
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div>
-                    <h3 class="fw-bold">
+                    <p class="fw-bold fs-3">
                         Do you want to be effectively onboard and upskill your employees?
-                    </h3>
+                    </p>
                     <p>
                         Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
                     </p>
