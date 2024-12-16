@@ -3,13 +3,13 @@
         <div class="row g-3 py-5">
             <div class="col-md-3">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('images/homepage/avvanzLogoChristmas.webp') }}" alt="Avvan Footer Logo" width="150" height="50" class="image-footer-logo" loading="lazy">
+                    <img src="{{ asset('images/homepage/avvanzLogoChristmas.webp') }}" alt="Avvan Footer Logo" width="150" height="49.08" class="image-footer-logo" loading="lazy">
                 </a>
             </div>
             <div class="col-md-2">
-                <h4 class="text-uppercase fw-bold mb-4 link-category">
+                <p class="text-uppercase fs-3 fw-bold mb-4 link-category">
                     Sitemap
-                </h4>
+                </p>
                 <p>
                     <a href="{{ route('contact') }}" class="text-decoration-none text-white fw-bolder link-item">Contact Us</a>
                 </p>
@@ -53,9 +53,9 @@
                     <div class="col-md-6">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-singapore" role="tabpanel" aria-labelledby="v-pills-singapore-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz Pte Ltd
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     1 Wallich St, #14-01 Guoco Tower , Singapore 078881
                                 </p>
@@ -67,9 +67,9 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-usa-latam" role="tabpanel" aria-labelledby="v-pills-usa-latam-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz LLC
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     1850 Mountain Boulevard, Oakland, California 94611, United States of America
                                 </p>
@@ -81,9 +81,9 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-philippines" role="tabpanel" aria-labelledby="v-pills-philippines-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz Inc.
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     31st Floor, Virspacio Coworkspaces, One San Miguel Avenue Building, San Miguel Avenue corner, Shaw Blvd Ortigas Center, Pasig City
                                 </p>
@@ -95,9 +95,9 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-australia-nz" role="tabpanel" aria-labelledby="v-pills-australia-nz-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz Pty Ltd
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     L 3 85 William St Darlinghurst NSW 2010
                                 </p>
@@ -109,9 +109,9 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-uk" role="tabpanel" aria-labelledby="v-pills-uk-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz Limited
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     27 Old Gloucester Street, London, WC1N 3AX
                                 </p>
@@ -123,9 +123,9 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-india" role="tabpanel" aria-labelledby="v-pills-india-tab">
-                                <h4 class="fw-bold mb-4 text-white">
+                                <p class="fw-bold fs-3 mb-4 text-white">
                                     Avvanz India Private Limited
-                                </h4>
+                                </p>
                                 <p class="fw-bolder link-category">
                                     Bridge+, 2nd Floor, Park Square Mall,
                                     ITPB, Whitefield, Bangalore – 560066.
@@ -140,12 +140,12 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="{{ asset('images/homepage/pbsa.webp') }}" alt="PBSA" width="150" height="75" class="image-footer-logo" loading="lazy">
+                <img src="{{ asset('images/homepage/pbsa.webp') }}" alt="PBSA" width="150" height="68.25" class="image-footer-logo" loading="lazy">
             </div>
             <div class="col-md-2">
-                <h4 class="text-uppercase fw-bold mb-4 link-category">
+                <p class="text-uppercase fs-3 fw-bold mb-4 link-category">
                     Social Media
-                </h4>
+                </p>
                 <div class="d-flex flex-row gap-3">
                     <a class="btn social-icon" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
