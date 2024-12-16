@@ -276,14 +276,14 @@ Avvanz - Background Checks & Screening
             </div>
             <div class="carousel-inner" role="listbox" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }} - {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
                                     <img 
                                         src="{{ asset('images/screen/' . $item) }}" 
                                         class="img-fluid"
-                                        alt="{{ "Award ". $item }}"
+                                        alt="{{ "Award ". $item }} - Image {{ $count + 1 }} of {{ count($trustedPartnerItems) }}"
                                         loading="lazy">
                                 </div>
                             </div>
