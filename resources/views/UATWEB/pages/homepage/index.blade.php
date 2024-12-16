@@ -473,7 +473,7 @@ Avvanz - Background Checks & Screening
         $(document).ready(function() {
             setTimeout(function() {
                 $('#imageModal').modal('show');
-            }, 100);
+            }, 5000);  // Show modal after 5 seconds
         });
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');

@@ -18,7 +18,6 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
     <!-- Critical CSS -->
-    <link rel="preload" href="{{ asset('images/homepage/avvanzBgChristmas.svg') }}" as="image" type="image/webp">
     <style>
         body {
             margin: 0;
@@ -37,12 +36,36 @@
             min-height: 100px;
         }
         .bg-image-christmas {
-            background: url("../images/homepage/avvanzBgChristmas.svg") no-repeat center center;
+            background: url("../images/homepage/avvanzBgChristmas2.svg") no-repeat center center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
-            background-position: center top;
+            background-position: center;
         }
+
+        #navbarBrand > a {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,red) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(red 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+        }
+
+        #navbarText > ul {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,#fff) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(#fff 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+        }
+
         .padding-vertical {
             padding-top: 3rem;
             padding-bottom: 3rem;
