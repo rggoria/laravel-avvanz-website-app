@@ -471,8 +471,9 @@ Avvanz - Background Checks & Screening
 @section('scripts')
     <script>
         $(document).ready(function() {
-            // Show the modal when the page loads
-            $('#imageModal').modal('show');
+            setTimeout(function() {
+                $('#imageModal').modal('show');
+            }, 100);
         });
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
