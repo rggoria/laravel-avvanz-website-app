@@ -274,23 +274,23 @@ Avvanz - Background Checks & Screening
                     <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
                 @endforeach
             </div>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
                                     <img 
-                                    src="{{ asset('images/screen/' . $item) }}" 
-                                    class="img-fluid"
-                                    alt="{{ "Award ". $item }}"
-                                    loading="lazy">
+                                        src="{{ asset('images/screen/' . $item) }}" 
+                                        class="img-fluid"
+                                        alt="{{ "Award ". $item }}"
+                                        loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div>            
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -316,7 +316,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Banking, Financial Services & Insurance</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -331,7 +331,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Retail</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Retail</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -346,7 +346,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-basket"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -361,7 +361,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-laptop"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Technology</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Technology</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -376,7 +376,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-stethoscope"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Healthcare</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Healthcare</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -391,7 +391,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-users"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Business Process Outsourcing</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Business Process Outsourcing</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -406,7 +406,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Education</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Education</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -421,7 +421,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-water"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Oil & Gas</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Oil & Gas</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -436,7 +436,7 @@ Avvanz - Background Checks & Screening
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-lightbulb"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Others</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Others</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -449,12 +449,12 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Modal Popup -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div class="modal fade" id="adsModal" tabindex="-1" aria-label="Leadership Ads Modal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
+            <!-- Modal Body -->
             <div class="modal-body position-relative">
                 <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
-
                 <a href="{{ route('leadership-home') }}">
                     <picture>
                         <source srcset="{{ asset('images/homepage/leadership-m.webp') }}" type="image/webp" media="(max-width: 767px)">
@@ -473,7 +473,7 @@ Avvanz - Background Checks & Screening
     <script>
         $(document).ready(function() {
             setTimeout(function() {
-                $('#imageModal').modal('show');
+                $('#adsModal').modal('show');
             }, 5000);  // Show modal after 5 seconds
         });
 
