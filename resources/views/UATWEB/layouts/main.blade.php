@@ -35,6 +35,13 @@
             position: relative;
             min-height: 100px;
         }
+        .bg-image-christmas {
+            background: url("../images/homepage/avvanzBgChristmas.webp") no-repeat center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center top;
+        }
         .padding-vertical {
             padding-top: 3rem;
             padding-bottom: 3rem;

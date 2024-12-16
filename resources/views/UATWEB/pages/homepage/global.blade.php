@@ -140,12 +140,11 @@ Landing Page
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <img 
-                    src="{{ asset('images/homepage/homepage1.webp') }}"
-                    alt="Placeholder Image"
-                    class="img-fluid transition-up"
-                    style="width: 300px; height: 300px;"
-                    loading="lazy">
+                <picture>
+                    <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                    <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up">
+                </picture>
             </div>
         </div>            
     </div>
@@ -192,28 +191,25 @@ Landing Page
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img
-                            src="{{ asset('images/homepage/certification1.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 1"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification1-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 1" loading="lazy">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img
-                            src="{{ asset('images/homepage/certification2.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 2"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification2-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification2-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification2-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 2" loading="lazy">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img
-                            src="{{ asset('images/homepage/certification3.webp') }}"
-                            class="img-fluid"
-                            style="height: 200px; width:auto"
-                            alt="Award 3"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="{{ asset('images/homepage/certification3-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="{{ asset('images/homepage/certification3-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                            <img src="{{ asset('images/homepage/certification3-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 3" loading="lazy">
+                        </picture>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="prev">
@@ -224,15 +220,14 @@ Landing Page
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>  
+            </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <img
-                src="{{ asset('images/homepage/certification4.webp') }}"
-                class="img-fluid"
-                style="height: 200px; width:auto"
-                alt="Award 4"
-                loading="lazy">
+            <picture>
+                <source srcset="{{ asset('images/homepage/certification4-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                <source srcset="{{ asset('images/homepage/certification4-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                <img src="{{ asset('images/homepage/certification4-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 4" loading="lazy">
+            </picture>
         </div>
     </div>
 </section>
