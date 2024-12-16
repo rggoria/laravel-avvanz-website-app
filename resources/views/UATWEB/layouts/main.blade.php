@@ -18,6 +18,7 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
     <!-- Critical CSS -->
+    <link rel="preload" href="{{ asset('images/homepage/avvanzBgChristmas.svg') }}" as="image" type="image/webp">
     <style>
         body {
             margin: 0;
@@ -36,7 +37,7 @@
             min-height: 100px;
         }
         .bg-image-christmas {
-            background: url("../images/homepage/avvanzBgChristmas.webp") no-repeat center center;
+            background: url("../images/homepage/avvanzBgChristmas.svg") no-repeat center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
