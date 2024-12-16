@@ -36,7 +36,7 @@
             min-height: 100px;
         }
         .bg-image-christmas {
-            background: url("../images/homepage/avvanzBgChristmas2.svg") no-repeat center center;
+            background: url("../images/homepage/avvanzBgChristmas2.webp") no-repeat center center;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
