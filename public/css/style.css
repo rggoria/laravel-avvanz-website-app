@@ -505,9 +505,9 @@
     object-fit: cover;
 }
 
-.modal-dialog {
+/* .modal-dialog {
     max-width: 700px;
-}
+} */
 
 .speech-bubble {
     position: relative;

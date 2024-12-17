@@ -45,6 +45,56 @@
             background-position: center;
         }
 
+        #navbarBrand > a {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,#FA1616) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(#FA1616 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+        }
+
+        #navbarBrand > button {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,#3BC400) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(#3BC400 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+            border: none;
+        }
+
+        #navbarBrand > button:onclick  {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,#3BC400) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(#3BC400 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+            border: none;
+        }
+
+        #navbarText > ul {
+            --r: 5px;
+            padding: calc(2*var(--r));
+            filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+            background: 
+                radial-gradient(var(--r),#0000 98%,#3BC400) round
+                calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+                linear-gradient(#3BC400 0 0)  no-repeat
+                50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+                z-index: 2;
+        }
+
         .padding-vertical {
             padding-top: 3rem;
             padding-bottom: 3rem;
