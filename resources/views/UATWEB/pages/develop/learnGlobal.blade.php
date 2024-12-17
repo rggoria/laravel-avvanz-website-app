@@ -162,8 +162,8 @@ LearnGlobal - Avvanz Global
 <!-- Contact Us Section -->
 <section class="container my-5">
     <hr>
-    <div class="row mt-5">
-        <div class="col-6 offset-3">
+    <div class="row text-start justify-content-center mt-5">
+        <div class="col-md-6">
             <div class="card p-4 shadow">
                 <h4 class="text-center">Contact Us</h4>
                 <div id="response-message"></div>

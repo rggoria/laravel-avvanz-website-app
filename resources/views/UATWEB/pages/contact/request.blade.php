@@ -77,8 +77,8 @@ Request Form
     <p class="text-dark my-3">
         please fill the required information so that we connect with you soonest possible.
     </p>
-    <div class="row text-start">
-        <div class="col-md-6 offset-3">
+    <div class="row text-start justify-content-center">
+        <div class="col-md-6">
             <div class="p-4">
                 <div id="response-message"></div>
                 <form id="contact-form">

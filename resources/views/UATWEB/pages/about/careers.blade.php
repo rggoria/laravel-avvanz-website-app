@@ -64,8 +64,8 @@ Join Avvanz - Avvanz Global
         To join us, please fill in the required information so that we connect with you soonest possible.
     </p>
 
-    <div class="row">
-        <div class="col-6 offset-3">
+    <div class="row text-start justify-content-center">
+        <div class="col-md-6">
             <div class="p-4">
                 <div id="response-message"></div>
                 <form id="inquiry-form" enctype="multipart/form-data">

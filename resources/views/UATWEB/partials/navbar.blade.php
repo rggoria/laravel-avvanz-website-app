@@ -168,11 +168,12 @@
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
                             <li class="dropdown-submenu-left dropend nav-submenu-display">
-                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APC</a>
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APAC</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-singapore' ? 'active' : '' }}" href="{{ route('global-singapore') }}">Singapore</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-australia' ? 'active' : '' }}" href="{{ route('global-australia') }}">Australia</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-ph' ? 'active' : '' }}" href="{{ route('global-ph') }}">Philippines</a></li>
+                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-india' ? 'active' : '' }}" href="{{ route('global-india') }}">India</a></li>
                                 </ul>
                             </li>
                             <li>

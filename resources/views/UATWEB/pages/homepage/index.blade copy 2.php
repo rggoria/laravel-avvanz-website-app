@@ -1,95 +1,28 @@
 @extends('UATWEB.layouts.main')
 
-@php
-    $currentRouteName = Route::currentRouteName();
-@endphp
-
 @section('title')
-Landing Page 
-@if($currentRouteName === 'global-singapore')
-    (singapore)
-@elseif($currentRouteName === 'global-australia')
-    (australia)
-@elseif($currentRouteName === 'global-ph')
-    (ph)
-@elseif($currentRouteName === 'global-india')
-    (india)
-@elseif($currentRouteName === 'global-usa')
-    (usa)
-@elseif($currentRouteName === 'global-latin-america')
-    (latin america)
-@elseif($currentRouteName === 'global-uae')
-    (uae)
-@elseif($currentRouteName === 'global-uk')
-    (uk)
-@endif
-- Avvanz Global
+Avvanz - Background Checks & Screening
 @endsection
 
 @section('css')
+<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
+<link rel="preload" href="{{ asset('images/homepage/avvanzBgChristmas2.webp') }}" as="image" type="image/webp">
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
 
-@if($currentRouteName === 'global-singapore')
-    <link rel="preload" href="{{ asset('images/global/background/globalSingaporeBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-australia')
-    <link rel="preload" href="{{ asset('images/global/background/globalAustraliaBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-ph')
-    <link rel="preload" href="{{ asset('images/global/background/globalIndiaBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-india')
-    <link rel="preload" href="{{ asset('images/global/background/globalPhilippinesBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-usa')
-    <link rel="preload" href="{{ asset('images/global/background/globalSUsaBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-latin-america')
-    <link rel="preload" href="{{ asset('images/global/background/globalLatinBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-uae')
-    <link rel="preload" href="{{ asset('images/global/background/globalMiddleEastBg.webp') }}" as="image">
-@elseif($currentRouteName === 'global-uk')
-    <link rel="preload" href="{{ asset('images/global/background/globalUkBg.webp') }}" as="image">
-@else
-    <link rel="preload" href="{{ asset('images/global/background/globalSDefaultBg.webp') }}" as="image">
-@endif
-
-<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
-
+<link rel="preload" href="{{ asset('images/homepage/homepage1-m.webp') }}" as="image" type="image/webp">
+<link rel="preload" href="{{ asset('images/homepage/leadership-m.webp') }}" as="image" type="image/webp">
 <style>
-    .bg-image-1 {
-        @if($currentRouteName === 'global-singapore')
-            background: url("{{ asset('images/global/background/globalSingaporeBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-australia')
-            background: url("{{ asset('images/global/background/globalAustraliaBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-ph')
-            background: url("{{ asset('images/global/background/globalPhilippinesBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-india')
-            background: url("{{ asset('images/global/background/globalIndiaBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-usa')
-            background: url("{{ asset('images/global/background/globalSUsaBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-latin-america')
-            background: url("{{ asset('images/global/background/globalLatinBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-uae')
-            background: url("{{ asset('images/global/background/globalMiddleEastBg.webp') }}") no-repeat center;
-        @elseif($currentRouteName === 'global-uk')
-            background: url("{{ asset('images/global/background/globalUkBg.webp') }}") no-repeat center;
-        @else
-            background: url("{{ asset('images/global/background/globalSDefaultBg.webp') }}") no-repeat center;
-        @endif
+    @media (max-width: 768px) {
+        .no-stack {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .bg-image-bintan {
+        background: url("../images/homepage/bintan.webp") no-repeat center;
         background-size: cover;
         position: relative;
-        min-height: 100px;
-    }
-
-    .bg-image-1::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 100%;
-        background-color: rgba(18, 71, 95, 0.8);
-        z-index: 1;
-    }
-
-    .bg-image-1 .container {
-        position: relative;
-        z-index: 2;
     }
 
     @media (max-width: 767px) {
@@ -125,10 +58,60 @@ Landing Page
         transform: translateX(0);
     }
 </style>
+
+<style>
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+    
+    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+</style>
+
 @endsection
 
 @section('content')
-
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+        <div class="inner">❅</div>
+    </div>
+</div>
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
@@ -243,9 +226,9 @@ Landing Page
     <div class="row g-3">
         <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
             <div>
-                <h3 class="fw-bold text-co">
+                <p class="fw-bold fs-3 text-co">
                     Searching for an automated compliant background screening solution?
-                </h3>
+                </p>
                 <p>
                     As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
                 </p>
@@ -275,9 +258,9 @@ Landing Page
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div>
-                    <h3 class="fw-bold">
+                    <p class="fw-bold fs-3">
                         Do you want to be effectively onboard and upskill your employees?
-                    </h3>
+                    </p>
                     <p>
                         Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
                     </p>
@@ -304,23 +287,23 @@ Landing Page
                     <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
                 @endforeach
             </div>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }} - {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
                                     <img 
-                                    src="{{ asset('images/screen/' . $item) }}" 
-                                    class="img-fluid"
-                                    alt="{{ "Award ". $item }}"
-                                    loading="lazy">
+                                        src="{{ asset('images/screen/' . $item) }}" 
+                                        class="img-fluid"
+                                        alt="{{ "Award ". $item }} - Image {{ $count + 1 }} of {{ count($trustedPartnerItems) }}"
+                                        loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div>            
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -334,7 +317,7 @@ Landing Page
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image-2 text-center container-fluid py-5">
+<section class="bg-image-1 text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -346,7 +329,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Banking, Financial Services & Insurance</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -361,7 +344,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Retail</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Retail</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -376,7 +359,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-shopping-basket"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -391,7 +374,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-laptop"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Technology</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Technology</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -406,7 +389,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-stethoscope"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Healthcare</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Healthcare</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -421,7 +404,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-users"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Business Process Outsourcing</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Business Process Outsourcing</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -436,7 +419,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Education</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Education</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -451,7 +434,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-water"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Oil & Gas</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Oil & Gas</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -466,7 +449,7 @@ Landing Page
                             <div class="card-icon d-flex justify-content-center align-items-center">
                                 <i class="fas fa-lightbulb"></i>
                             </div>
-                            <h5 class="card-title fw-bold mt-5">Others</h5>
+                            <p class="card-title fs-4 fw-bold mt-5">Others</p>
                         </div>
                     </div>
                     <div class="card-description">
@@ -478,10 +461,58 @@ Landing Page
     </div>
 </section>
 
+<!-- Modal Popup -->
+<div class="modal fade" id="adsModal" tabindex="-1" aria-labelledby="adsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-3 shadow-lg">
+            <div class="modal-body p-0">
+
+                <!-- Close Button -->
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Flexbox Container to prevent stacking -->
+                <div class="d-flex w-100" style="height: 100%;">
+
+                    <!-- Left Side: Hero Message/Description -->
+                    <div class="d-flex flex-column justify-content-center align-items-start p-4 bg-mg" style="flex: 1;">
+                        <img 
+                            src="{{ asset('images/homepage/avvanzFooter.webp') }}"
+                            alt="Avvanz Logo"
+                            loading="lazy"
+                            style="width: 75px; height: auto; margin-right: 1rem;"
+                        >
+                        <h1 class="text-marigold fw-bolder">
+                            LEADERSHIP BREAKTHROUGH SUMMIT
+                        </h1>
+                        <p class="fs-5 mb-3 text-white">
+                            Join us for a Transformative 3-Day Leadership Summit Retreat!    
+                        </p>
+                        <p class="fs-5 mb-3 text-white">
+                            Elevate your skills, connect with visionaries, and unlock your leadership potential.
+                        </p>
+                    </div>
+
+                    <!-- Right Side: Placeholder Image -->
+                    <div class="d-flex justify-content-center align-items-center bg-image-bintan p-0" style="flex: 1; height: 100%; overflow: hidden;">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 @endsection
 
 @section('scripts')
     <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#adsModal').modal('show');
+            }, 100);  // Show modal after 5 seconds
+        });
+
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
         items.forEach((el) => {

@@ -99,8 +99,8 @@ Contact Us - Avvanz Global
         <p class="text-dark my-3">
             Feel free to send us a message. We would like to hear it from you!
         </p>
-        <div class="row text-start">
-            <div class="col-md-6 offset-3">
+        <div class="row text-start justify-content-center">
+            <div class="col-md-6">
                 <div class="p-4">
                     <div id="response-message"></div>
                     <form id="contact-form">

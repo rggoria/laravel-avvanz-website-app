@@ -28,6 +28,7 @@ Route::get('/global', [HomepageController::class, 'global'])->name('global');
 Route::get('/singapore', [HomepageController::class, 'global'])->name('global-singapore');
 Route::get('/australia', [HomepageController::class, 'global'])->name('global-australia');
 Route::get('/ph', [HomepageController::class, 'global'])->name('global-ph');
+Route::get('/india', [HomepageController::class, 'global'])->name('global-india');
 Route::get('/usa', [HomepageController::class, 'global'])->name('global-usa');
 Route::get('/latin-america', [HomepageController::class, 'global'])->name('global-latin-america');
 Route::get('/uae', [HomepageController::class, 'global'])->name('global-uae');
