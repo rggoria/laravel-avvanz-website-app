@@ -106,7 +106,7 @@
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-consent-banner">
-        <p><b>Do you like cookies? 🍪</b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
+        <p><b>Do you like cookies? </b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
         <button id="accept-cookies" class="accept-cookies-btn">Accept</button>
         <button id="reject-cookies" class="reject-cookies-btn">Reject</button>
     </div>
