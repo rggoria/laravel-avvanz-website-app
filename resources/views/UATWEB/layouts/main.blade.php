@@ -16,7 +16,10 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
     <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script>
+    {{-- <script src="https://kit.fontawesome.com/134c64fe1d.js" crossorigin="anonymous"></script> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Critical CSS -->
     <style>
         body {
