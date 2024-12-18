@@ -5,13 +5,41 @@ The Complete Guide to Employment Background Verification Check: Why It Matters f
 @endsection
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<link rel="preload" href="{{ asset('images/resources/background/itemsBg.webp') }}" as="image">
 <style>
+    .bg-image-2 {
+        background: url("../images/resources/background/itemsBg.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    .bg-image-2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 71, 95, 0.8);
+        z-index: 1;
+    }
+
+    .bg-image-2 .container {
+        position: relative;
+        z-index: 2;
+    }
+    
     .accordion-button::after {
         display: none;
     }
 </style>
-@endsection()
+@endsection
+    .accordion-button::after {
+        display: none;
+    }
+</style>
+@endsection
 
 @section('content')
 

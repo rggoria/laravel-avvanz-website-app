@@ -28,7 +28,7 @@ Route::get('/global', [HomepageController::class, 'global'])->name('global');
 Route::get('/singapore', [HomepageController::class, 'global'])->name('global-singapore');
 Route::get('/australia', [HomepageController::class, 'global'])->name('global-australia');
 Route::get('/ph', [HomepageController::class, 'global'])->name('global-ph');
-Route::get('/india', [HomepageController::class, 'global'])->name('global-india');
+// Route::get('/india', [HomepageController::class, 'global'])->name('global-india');
 Route::get('/usa', [HomepageController::class, 'global'])->name('global-usa');
 Route::get('/latin-america', [HomepageController::class, 'global'])->name('global-latin-america');
 Route::get('/uae', [HomepageController::class, 'global'])->name('global-uae');
@@ -87,6 +87,7 @@ Route::get('/request-form-wrbc', [ContactController::class, 'request'])->name('r
 Route::get('/request-form-cdd', [ContactController::class, 'request'])->name('request-cdd');
 Route::get('/request-form-lte', [ContactController::class, 'request'])->name('request-lte');
 Route::post('/request-form', [ContactController::class, 'requestSend'])->name('request-send');
+Route::get('/contact-us-australia', [ContactController::class, 'contactUsAustralia'])->name('contact-us-australia');
 
 
 // Privacy Controller

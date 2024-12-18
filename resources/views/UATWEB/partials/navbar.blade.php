@@ -173,7 +173,7 @@
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-singapore' ? 'active' : '' }}" href="{{ route('global-singapore') }}">Singapore</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-australia' ? 'active' : '' }}" href="{{ route('global-australia') }}">Australia</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-ph' ? 'active' : '' }}" href="{{ route('global-ph') }}">Philippines</a></li>
-                                    <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-india' ? 'active' : '' }}" href="{{ route('global-india') }}">India</a></li>
+                                    {{-- <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-india' ? 'active' : '' }}" href="{{ route('global-india') }}">India</a></li> --}}
                                 </ul>
                             </li>
                             <li>

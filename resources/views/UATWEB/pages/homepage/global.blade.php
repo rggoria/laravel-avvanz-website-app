@@ -83,7 +83,7 @@ Landing Page
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(18, 71, 95, 0.8);
+        background-color: rgba(128, 122, 122, 0.3);
         z-index: 1;
     }
 
@@ -254,8 +254,8 @@ Landing Page
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
             <img
-                src="{{ asset('images/homepage/homepage2.webp') }}"
-                alt="Homepage Image 2"
+                src="{{ asset('images/global/globalScreen.webp') }}"
+                alt="Global Screen"
                 class="transition-up image-horizontal-display"
                 loading="lazy">
         </div>
@@ -268,8 +268,8 @@ Landing Page
         <div class="row g-3">
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <img
-                    src="{{ asset('images/homepage/homepage3.webp') }}"
-                    alt="Homepage Image 3"
+                    src="{{ asset('images/global/globalDevelop.webp') }}"
+                    alt="Global Develop"
                     class="transition-up image-horizontal-display"
                     loading="lazy">
             </div>
@@ -329,6 +329,76 @@ Landing Page
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+    </div>
+</section>
+
+<!-- Highlights Section -->
+<section class="container my-5">
+    <h1 class="text-center text-dmb display-5 fw-bolder">
+        Highlights
+    </h1>
+    <h1 class="text-center divider-center-25"></h1>
+    <div class="row g-3 py-5">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card border-0 h-100 text-center">
+                <img
+                    src="{{ asset('images/global/globalUkHighlight1.webp') }}"
+                    class="card-img-top"
+                    alt="UK Higlight 1"
+                    loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bolder text-marigold">
+                        UK DBS Checks
+                    </h5>
+                    <h5 class="card-text">
+                        DBS stands for Disclosure and Barring Service, which is a government agency in the UK that provides criminal record checks. The DBS check is a background check that is carried out on individuals who work or volunteer with vulnerable...
+                    </h5>
+                    <div class="d-grid gap-2 col-6 mx-auto my-4">
+                        <a href="" class="btn btn-orange-border text-uppercase">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card border-0 h-100 text-center">
+                <img
+                    src="{{ asset('images/global/globalUkHighlight2.webp') }}"
+                    class="card-img-top"
+                    alt="UK Higlight 2"
+                    loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bolder text-marigold">
+                        BS7858: All you need to know about the British Standard for Security Screening
+                    </h5>
+                    <h5 class="card-text">
+                        Avvanz’s 7 years of serving more than 2000 companies around the globe has enabled us to do offer some useful data analytics...
+                    </h5>
+                    <div class="d-grid gap-2 col-6 mx-auto my-4">
+                        <a href="" class="btn btn-orange-border text-uppercase">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card border-0 h-100 text-center">
+                <img
+                    src="{{ asset('images/global/globalUkHighlight3.webp') }}"
+                    class="card-img-top"
+                    alt="UK Higlight 3"
+                    loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bolder text-marigold">
+                        AVVANZ is awarded as HR Technology Company
+                    </h5>
+                    <h5 class="card-text">
+                        Closing off the 2021 South-East Asia Business awards, Apac-Insider gives opportunities to businesses from different sectors to showcase unparalleled expertise, from manufacturing and exporting to technology...
+                    </h5>
+                    <div class="d-grid gap-2 col-6 mx-auto my-4">
+                        <a href="" class="btn btn-orange-border text-uppercase">learn more</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -42,7 +42,7 @@ Q3 Newsletter - Avvanz Global
         transform: translateX(0);
     }
 </style>
-@endsection()
+@endsection
 
 @section('content')
 

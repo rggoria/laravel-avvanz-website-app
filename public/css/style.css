@@ -152,7 +152,19 @@
 .btn-marigold-transition:hover {
     color: white;
     transform: scale(0.95);
-    background-color: var(--marigold);
+    background-color: var(--dark);
+}
+
+.btn-dmb-transition {
+    color: white;
+    background-color: var(--darkMidnightBlue);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-dmb-transition:hover {
+    color: white;
+    background-color: var(--darkMidnightBlue);
+    transform: scale(0.95);
 }
 
 .border-dmb {

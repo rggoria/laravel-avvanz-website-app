@@ -157,4 +157,9 @@ class ContactController extends Controller
 
         return response()->json(['success' => 'Email sent successfully!']);
     }
+
+    public function contactUsAustralia()
+    {
+        return view("UATWEB.pages.contact.contact-us-australia");
+    }
 }

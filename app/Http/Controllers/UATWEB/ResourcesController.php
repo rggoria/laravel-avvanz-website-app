@@ -37,7 +37,8 @@ class ResourcesController extends Controller
 
     public function blogItem($title) {
         return match ($title) {
-            'tips-to-have-an-effective-teacher-hiring-strategy' => view('UATWEB.partials.resources.blog.blog_1'),
+            'tips-to-have-an-effective-teacher-hiring-strategy' => view('UATWEB.partials.resources.blog.blog_0'),
+            'how-do-social-media-checks-compliment-background-checks' => view('UATWEB.partials.resources.blog.blog_1'),
             'how-to-prepare-your-school-for-opening-and-reopening-during-the-covid-crisis' => view('UATWEB.partials.resources.blog.blog_2'),
             'how-fintech-is-transforming-the-underwriting-process' => view('UATWEB.partials.resources.blog.blog_3'),
             'the-hidden-risks-of-hiring-remotely' => view('UATWEB.partials.resources.blog.blog_4'),

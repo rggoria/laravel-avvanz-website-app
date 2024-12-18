@@ -34,7 +34,7 @@ Avvanz Managing Director is Executive of the Year – HR Technology - Avvanz Glo
         z-index: 2;
     }
 </style>
-@endsection()
+@endsection
 
 <section class="bg-image-2">
     <div class="container padding-vertical">

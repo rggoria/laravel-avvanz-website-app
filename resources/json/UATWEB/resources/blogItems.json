@@ -1,10 +1,17 @@
 [
     {
-        "id": "1",
+        "id": "0",
         "title": "Tips To Have An Effective Teacher Hiring Strategy",
-        "image": "blog1.webp",
+        "image": "blog0.webp",
         "created_at": "June 10, 2021",
         "link": "https://www.avvanz.com/tips-to-have-an-effective-teacher-hiring-strategy/"
+    },
+    {
+        "id": "1",
+        "title": "How do Social Media checks compliment background checks?",
+        "image": "blog1.webp",
+        "created_at": "June 11, 2021",
+        "link": "https://www.avvanz.com/how-do-social-media-checks-compliment-background-checks//"
     },
     {
         "id": "2",
