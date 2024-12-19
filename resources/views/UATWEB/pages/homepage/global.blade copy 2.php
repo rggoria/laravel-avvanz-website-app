@@ -321,7 +321,7 @@ Landing Page
                         Si bien las personas son los mayores activos de su organización, las personas equivocadas pueden representar los mayores riesgos para su negocio. Por lo tanto, debe identificar los talentos “correctos” y “seguros” antes de incorporarlos. Nuestro Avvanz ScreenGlobal, ganador de múltiples premios, lo ayudará a mitigar el riesgo debido a contrataciones indebidas.
                     @else
                         As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
-                    @endif                    
+                    @endif
                 </p>
                 <a href="{{ route('screen-main') }}" class="btn solution-button fw-bolder text-uppercase">
                     @if($currentRouteName === 'global-latin-america')
@@ -367,7 +367,7 @@ Landing Page
                             Avvanz trabajará en estrecha colaboración con usted para equipar sus activos humanos con habilidades y competencias para vivir en esta economía digital mientras supera los KPI de su negocio.
                         @else
                             Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
-                        @endif                        
+                        @endif
                     </p>
                     <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">
                         @if($currentRouteName === 'global-latin-america')
@@ -389,7 +389,7 @@ Landing Page
             Descubre Nuestras Socios   
         @else
             Discover Our Partners
-        @endif       
+        @endif
     </h1>
     <h1 class="text-center divider-center-25"></h1>
     <p class="text-center mt-2 text-wrap text-justify">
@@ -397,7 +397,7 @@ Landing Page
             Conéctese con nuestros proveedores de servicios de confianza y socios de integración para agilizar su procedimiento de verificación de antecedaentes.      
         @else
             Connect with our trusted service providers and integration partners to streamline your background screening process.
-        @endif        
+        @endif
     </p>
     <div class="row justify-content-center my-5">
         <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">

@@ -131,12 +131,25 @@
     background-color: var(--marigold);
 }
 
+.btn-co {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--carrotOrange);
+}
+
+.btn-co:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--carrotOrange);
+}
+
 .btn-marigold-link {
     color: white !important;
     border-radius: 5px;
     background-color: var(--carrotOrange);
     transition: color 1s, border-radius 1s, background-color 1s;
 }
+
 .btn-marigold-link:hover {
     color: var(--carrotOrange) !important;
     border-radius: 5px;
@@ -165,6 +178,10 @@
     color: white;
     background-color: var(--darkMidnightBlue);
     transform: scale(0.95);
+}
+
+.border-mg {
+    border: 3px solid var(--midnightGreen) !important;
 }
 
 .border-dmb {

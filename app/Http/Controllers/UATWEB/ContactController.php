@@ -4,9 +4,11 @@ namespace App\Http\Controllers\UATWEB;
 
 use App\Http\Controllers\Controller;
 use App\Mail\ContactEmail;
+use App\Mail\ContactUsAustraliaEmail;
 use App\Mail\RequestEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Validator;
 
 class ContactController extends Controller
 {
@@ -161,5 +163,35 @@ class ContactController extends Controller
     public function contactUsAustralia()
     {
         return view("UATWEB.pages.contact.contact-us-australia");
+    }
+
+    public function submitContactUsAustralia(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'role' => 'required|string',
+            'companySize' => 'required|string',
+            'primaryNeed' => 'required|string',
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'phone' => 'nullable|string',
+            'companyName' => 'nullable|string',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => $validator->errors()->first()  // Return the first error message
+            ], 422);  // 422 is for Unprocessable Entity (validation errors)
+        }
+
+        Mail::to($request->email)
+            ->cc(env('ADMIN_EMAIL'))
+            ->send(new ContactUsAustraliaEmail($request->all())); 
+
+        // return redirect()->route('contact-us-australia')->with('success', 'Form submitted successfully!');
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Form submitted successfully!'
+        ]);
     }
 }

@@ -88,6 +88,7 @@ Route::get('/request-form-cdd', [ContactController::class, 'request'])->name('re
 Route::get('/request-form-lte', [ContactController::class, 'request'])->name('request-lte');
 Route::post('/request-form', [ContactController::class, 'requestSend'])->name('request-send');
 Route::get('/contact-us-australia', [ContactController::class, 'contactUsAustralia'])->name('contact-us-australia');
+Route::post('/submit-contact-us-australia', [ContactController::class, 'submitContactUsAustralia'])->name('submit-contact-us-australia');
 
 
 // Privacy Controller
