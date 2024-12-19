@@ -5,10 +5,33 @@ Q3 Newsletter - Avvanz Global
 @endsection
 
 @section('css')
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
+<link rel="preload" href="{{ asset('images/resources/newsletter/bg-bintan.webp') }}" as="image">
 <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
 
 <style>
+    .bg-image-1 {
+        background: url("../images/resources/newsletter/bg-bintan.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    .bg-image-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 71, 95, 0.8);
+        z-index: 1;
+    }
+
+    .bg-image-1 .container {
+        position: relative;
+        z-index: 2;
+    }
+
     @media (max-width: 767px) {
         .carousel-inner .carousel-item > div {
             display: none;
@@ -281,7 +304,7 @@ Q3 Newsletter - Avvanz Global
                         Unlock your leadership potential
                     </li>
                  </ul>
-                 <a href="https://training.avvanz.com/avvanz-leadership-retreat/" class="link-hover">Register Here</a>
+                 <a href="{{ route('leadership-home') }}" class="link-hover">Register Here</a>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-5">
                 <img class="img-fluid w-100 h-100 rounded" src="{{ asset('images/resources/newsletter1-6.webp') }}" alt="newsletter1-5">
