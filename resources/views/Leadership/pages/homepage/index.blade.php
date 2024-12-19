@@ -618,8 +618,12 @@ Avvanz Leadership Breakthrough Summit
                 </tr>
             </tbody>
         </table>
-        <p class="fs-4 text-danger">
-            Whether you're in technology, retail, manufacturing, or beyond, our frameworks adapt to your specific business context.
+        <p class="fs-4 fw-bolder text-danger">
+            Group discount available! Email 
+            <a href="mailto:joe.tan@avvanz.com" class="text-decoration-none text-danger">
+                joe.tan@avvanz.com
+            </a>
+            for special group discount
         </p>
     </div>
     <div class="container-fluid bg-lw w-100">
