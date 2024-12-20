@@ -8,8 +8,22 @@
             </a>
             <div class="navbar-collapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link login-1 text-uppercase fw-bolder" href="https://www.avvanz.com/screenglobal/">ScreenGlobal LOGIN</a>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link login-1 text-uppercase fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ScreenGlobal LOGIN
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item navigation-enterprise fw-bolder" href="https://www.avvanz.com/screenglobal">
+                                    Enterprise
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item navigation-self-screen fw-bolder" href="http://screenglobal.avvanz.com/login">
+                                    Self Screen
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link login-2 text-uppercase fw-bolder" href="https://www.avvanz.com/cddglobal/">CDDGLOBAL LOGIN</a>
@@ -22,10 +36,10 @@
         </div>
     </nav>            
     <!-- Navbar #2 -->
-    <nav class="navbar bg-image-christmas navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container" id="navbarBrand">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('images/homepage/avvanzLogoChristmas.webp') }}" width="150" height="50" alt="Avvanz Logo" class="image-navbar-logo">
+                <img src="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" width="150" height="50" alt="Avvanz Logo" class="image-navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +52,7 @@
 
                     <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to About Us page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to About Us page">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
@@ -63,7 +77,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Screen page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Screen page">
                             Screen
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -110,7 +124,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main christmas-text {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Develop page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Develop page">
                             Develop
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -130,7 +144,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder christmas-text" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Resources page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Resources page">
                             Resources
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
@@ -160,19 +174,20 @@
                         </ul>
                     </li>
                     <li class="nav-item nav-main-display">
-                        <a class="nav-link navigation text-uppercase fw-bolder christmas-text {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
+                        <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder christmas-text" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  aria-label="Go to Global page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  aria-label="Go to Global page">
                             Global
                         </a>
                         <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
                             <li class="dropdown-submenu-left dropend nav-submenu-display">
-                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APC</a>
+                                <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APAC</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-singapore' ? 'active' : '' }}" href="{{ route('global-singapore') }}">Singapore</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-australia' ? 'active' : '' }}" href="{{ route('global-australia') }}">Australia</a></li>
                                     <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-ph' ? 'active' : '' }}" href="{{ route('global-ph') }}">Philippines</a></li>
+                                    {{-- <li><a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'global-india' ? 'active' : '' }}" href="{{ route('global-india') }}">India</a></li> --}}
                                 </ul>
                             </li>
                             <li>

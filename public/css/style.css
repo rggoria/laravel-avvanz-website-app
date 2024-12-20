@@ -257,6 +257,28 @@
     color: var(--marigold) !important;
 }
 
+.navigation-enterprise {
+    color: black !important;
+    background-color: transparent;
+    transition: color 0.5s, border-radius 1s, background-color 1s;
+}
+
+.navigation-enterprise:hover {
+    color: white !important;
+    background-color: var(--darkMidnightBlue);
+}
+
+.navigation-self-screen {
+    color: black !important;
+    background-color: transparent;
+    transition: color 0.5s, border-radius 1s, background-color 1s;
+}
+
+.navigation-self-screen:hover {
+    color: white !important;
+    background-color: var(--marigold);
+}
+
 .navigation-item {
     color: black !important;
     background-color: transparent;
