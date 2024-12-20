@@ -30,7 +30,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
         .bg-image-1 {
-            background: url( asset('images/homepage/homepageBg.webp')) no-repeat center;
+            background: url("../images/homepage/homepageBg.webp") no-repeat center;
             background-size: cover;
             position: relative;
             min-height: 300px
