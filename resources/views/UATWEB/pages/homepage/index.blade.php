@@ -120,8 +120,8 @@ Avvanz - Background Checks & Screening
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
                     <img src="{{ asset('images/homepage/homepage1-m.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="360" height="360">
                 </picture>
-            </div>            
-        </div>            
+            </div>
+        </div>
     </div>
 </section>
 
