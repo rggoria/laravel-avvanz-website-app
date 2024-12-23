@@ -98,3 +98,7 @@ Route::get('/privacy-policy-candidate-autralia', [PrivacyController::class, 'aus
 Route::get('/privacy-policy-candidate-singapore', [PrivacyController::class, 'singapore'])->name('privacy-3');
 Route::get('/privacy-policy-candidate-united-states-of-america', [PrivacyController::class, 'usa'])->name('privacy-4');
 Route::get('/privacy-policy-candidate-united-kingdom', [PrivacyController::class, 'uk'])->name('privacy-5');
+
+
+// Testing only
+Route::get('/testing', [HomepageController::class, 'testing'])->name('testing');

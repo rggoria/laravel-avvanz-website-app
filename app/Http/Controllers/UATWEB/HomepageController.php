@@ -57,4 +57,21 @@ class HomepageController extends Controller
             "trustedPartnerItems"=> $trustedPartnerItems,
         ]);
     }
+
+    public function testing()
+    {
+        $trustedPartnerItems = [
+            'partner1.webp',
+            'partner2.webp',
+            'partner3.webp',
+            'partner4.webp',
+            'partner5.webp',
+            'partner6.webp',
+            'partner7.webp',
+            'partner8.webp',
+        ];
+        return view('UATWEB.pages.homepage.testingPages', [
+            "trustedPartnerItems"=> $trustedPartnerItems,
+        ]);
+    }
 }
