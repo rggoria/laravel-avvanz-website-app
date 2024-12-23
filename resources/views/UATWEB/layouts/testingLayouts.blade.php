@@ -36,6 +36,9 @@
     <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
     <!-- https://respond.io -->
 
+    <!-- Custom JS -->
+    <script src="{{ asset('js/index.js') }}" defer></script>
+
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     @yield('scripts')
