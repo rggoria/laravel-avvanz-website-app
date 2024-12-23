@@ -1,4 +1,4 @@
-<footer class="text-center bg-mg pt-5">
+<footer class="text-center bg-mg pt-5" role="contentinfo">
     <div class="container text-center text-md-start">
         <div class="row g-3 py-5">
             <div class="col-md-3">
@@ -11,41 +11,41 @@
                     Sitemap
                 </p>
                 <p>
-                    <a href="{{ route('contact') }}" class="text-decoration-none text-white fw-bolder link-item">Contact Us</a>
+                    <a href="{{ route('contact') }}" class="text-decoration-none text-white fw-bolder link-item" aria-label="Contact Us">Contact Us</a>
                 </p>
                 <p>
-                    <a href="{{ route('privacy-main') }}" class="text-decoration-none text-white fw-bolder link-item">Privacy Policy</a>
+                    <a href="{{ route('privacy-main') }}" class="text-decoration-none text-white fw-bolder link-item" aria-label="Privacy Policy">Privacy Policy</a>
                 </p>
                 <p>
-                    <a href="{{ route('cookie') }}" class="text-decoration-none text-white fw-bolder link-item">Cookie Policy</a>
+                    <a href="{{ route('cookie') }}" class="text-decoration-none text-white fw-bolder link-item" aria-label="Cookie Policy">Cookie Policy</a>
                 </p>
                 <p>
-                    <a href="{{ route('general') }}" class="text-decoration-none text-white fw-bolder link-item">General Information Security Policy</a>
+                    <a href="{{ route('general') }}" class="text-decoration-none text-white fw-bolder link-item" aria-label="General Information Security Policy">General Information Security Policy</a>
                 </p>
                 <p>
-                    <a href="{{ route('ethics') }}" class="text-decoration-none text-white fw-bolder link-item">Code of Conduct and Ethics Policy</a>
+                    <a href="{{ route('ethics') }}" class="text-decoration-none text-white fw-bolder link-item" aria-label="Code of Conduct and Ethics Policy">Code of Conduct and Ethics Policy</a>
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 cold-lg-6">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link link-location active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true">
+                            <button class="nav-link link-location active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true" aria-label="Singapore Office Location">
                                 <i class="fas fa-map-marker-alt"></i> Singapore
                             </button>
-                            <button class="nav-link link-location" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false" aria-label="USA & LATAM Office Location">
                                 <i class="fas fa-map-marker-alt"></i> USA & LATAM
                             </button>
-                            <button class="nav-link link-location" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false" aria-label="Philippines Office Location">
                                 <i class="fas fa-map-marker-alt"></i> Philippines
                             </button>
-                            <button class="nav-link link-location" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false" aria-label="Australia & NZ Office Location">
                                 <i class="fas fa-map-marker-alt"></i> Australia & NZ
                             </button>
-                            <button class="nav-link link-location" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false" aria-label="UK Office Location">
                                 <i class="fas fa-map-marker-alt"></i> United Kingdom
                             </button>
-                            <button class="nav-link link-location" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false">
+                            <button class="nav-link link-location" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false" aria-label="India Office Location">
                                 <i class="fas fa-map-marker-alt"></i> India
                             </button>
                         </div>
@@ -147,15 +147,13 @@
                     Social Media
                 </p>
                 <div class="d-flex flex-row gap-3">
-                    <a class="btn social-icon" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Facebook">
+                    <a class="btn social-icon" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Visit Avvanz on Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-
-                    <a class="btn social-icon" href="https://www.linkedin.com/company/avvanz/" target="_blank" aria-label="LinkedIn">
+                    <a class="btn social-icon" href="https://www.linkedin.com/company/avvanz/" target="_blank" aria-label="Visit Avvanz on LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-
-                    <a class="btn social-icon" href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" target="_blank" aria-label="YouTube">
+                    <a class="btn social-icon" href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" target="_blank" aria-label="Visit Avvanz on YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
@@ -164,7 +162,7 @@
         </div>
         <div class="text-center py-4 text-white">
             Copyright © 2024
-            <a class="text-decoration-none text-white fw-bold" href="{{ route('home') }}"> Avvanz.com</a>
+            <a class="text-decoration-none text-white fw-bold" href="{{ route('home') }}" aria-label="Visit Avvanz Website"> Avvanz.com</a>
             All rights reserved
         </div>
     </div>
