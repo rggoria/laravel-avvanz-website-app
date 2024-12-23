@@ -428,6 +428,10 @@
     box-shadow: 0 0 10px var(--darkMidnightBlue);
 }
 
+.floating-btn i {
+    font-size: 2em;
+}
+
 .floating-btn img {
     width: 24px;
     height: 24px;
