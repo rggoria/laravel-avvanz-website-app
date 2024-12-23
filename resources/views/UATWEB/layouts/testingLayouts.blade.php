@@ -20,6 +20,9 @@
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
 
+    <!-- Floating Button -->
+    @include('UATWEB.partials.floating')
+
     @yield('content')
 
      <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
