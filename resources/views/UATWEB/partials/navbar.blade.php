@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container" id="navbarBrand">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" width="150" height="50" alt="Avvanz Logo" class="image-navbar-logo" loading="lazy">
+                <img src="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" width="150" height="50" alt="Avvanz Logo" class="image-navbar-logo">
             </a>            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
