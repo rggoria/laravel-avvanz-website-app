@@ -40,7 +40,7 @@
     @yield('content')
 
     <!-- Footer Section -->
-    @include('UATWEB.partials.footer')
+    {{-- @include('UATWEB.partials.footer') --}}
 
     <!-- Webchat -->
     <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
