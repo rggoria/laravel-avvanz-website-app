@@ -2,7 +2,7 @@
     <div class="container text-center text-md-start">
         <div class="row g-3 py-5">
             <div class="col-md-3">
-                <a class="navbar-brand" href="{{ route('home') }}">
+                <a class="navbar-brand" href="{{ route('home') }}" aria-label="Go to homepage">
                     <img src="{{ asset('images/homepage/avvanzLogoChristmas_v2.webp') }}" alt="Avvan Footer Logo" width="150" height="49.08" class="image-footer-logo" loading="lazy">
                 </a>
             </div>
