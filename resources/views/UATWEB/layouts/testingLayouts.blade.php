@@ -36,7 +36,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Footer Section -->
-    {{-- @include('UATWEB.partials.footer') --}}
+    @include('UATWEB.partials.footer')
 
     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
     <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
