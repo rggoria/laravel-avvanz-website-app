@@ -12,7 +12,6 @@
     
     <!-- Preload critical CSS -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
     
     <!-- Preload Google Fonts with font-display swap -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" />
@@ -25,7 +24,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    
     @yield('css')
 </head>
 <body>
@@ -35,6 +36,7 @@
     <!-- Floating Button -->
     @include('UATWEB.partials.floating')
 
+    <!-- Main Content -->
     @yield('content')
 
     <!-- Footer Section -->
@@ -46,11 +48,11 @@
     <!-- jQuery CDN (async) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
 
-    <!-- Custom JS -->
-    <script src="{{ asset('js/index.js') }}" defer></script>
-
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script src="{{ asset('js/index.js') }}" defer></script>
 
     @yield('scripts')
 </body>
