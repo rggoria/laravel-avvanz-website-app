@@ -36,6 +36,9 @@
     <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
     <!-- https://respond.io -->
 
+    <!-- jQuery CDN (async) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
 
