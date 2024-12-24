@@ -59,23 +59,24 @@
             transition: background-color 0.3s ease;
         }
 
-
+        /* Accept button - dark green with white text (high contrast) */
         .accept-cookies-btn {
-            background-color: #4CAF50;
-            color: #ffffff;
+            background-color: #388E3C;  /* Darker green background */
+            color: #ffffff;  /* White text */
         }
 
         .accept-cookies-btn:hover {
-            background-color: #45a049;
+            background-color: #2c6e2f; /* Slightly darker green for hover */
         }
 
+        /* Reject button - dark red with white text (high contrast) */
         .reject-cookies-btn {
-            background-color: #f44336;
-            color: #ffffff;
+            background-color: #D32F2F;  /* Darker red background */
+            color: #ffffff;  /* White text */
         }
 
         .reject-cookies-btn:hover {
-            background-color: #e53935;
+            background-color: #b71c1c; /* Slightly darker red for hover */
         }
 
         .padding-vertical {
