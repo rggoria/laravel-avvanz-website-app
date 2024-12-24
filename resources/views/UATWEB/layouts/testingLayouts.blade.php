@@ -49,16 +49,33 @@
             z-index: 9998;
         }
         .accept-cookies-btn, .reject-cookies-btn {
-            background-color: green;
-            color: #fff;
-            padding: 5px 10px;
+            padding: 10px 20px;
             font-size: 16px;
             border: none;
             cursor: pointer;
             margin: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
+
+
+        .accept-cookies-btn {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+
+        .accept-cookies-btn:hover {
+            background-color: #45a049;
+        }
+
         .reject-cookies-btn {
-            background-color: red;
+            background-color: #f44336;
+            color: #ffffff;
+        }
+
+        .reject-cookies-btn:hover {
+            background-color: #e53935;
         }
 
         .padding-vertical {
