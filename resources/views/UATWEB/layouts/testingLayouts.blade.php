@@ -16,7 +16,7 @@
     
     <!-- Preload Google Fonts with font-display swap -->
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" as="style" />
-
+    
     <!-- Preload logo image for faster LCP -->
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image" type="image/webp" />
     
@@ -35,43 +35,6 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
-        .bg-image-1 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 300px
-        }
-        .bg-image-2 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 100px;
-        }
-        .bg-image-christmas {
-            background: url("../images/homepage/avvanzBgChristmas2.webp") no-repeat center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .padding-vertical {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-        .margin-vertical {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-        .section-padding {
-            padding: 3rem;
-        }
-        .text-white {
-            color: white;
-        }
-        .text-center {
-            text-align: center;
-        }
-        /* Cookie consent styles */
         .cookie-consent-banner {
             position: fixed;
             bottom: 0;
@@ -97,6 +60,24 @@
         .reject-cookies-btn {
             background-color: red;
         }
+
+        .padding-vertical {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .margin-vertical {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
     </style>
 
     <!-- Custom Stylesheet -->
@@ -118,10 +99,10 @@
     @include('UATWEB.partials.footer')
 
     <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner" class="cookie-consent-banner">
-        <p><b>Do you like cookies? </b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
-        <button id="accept-cookies" class="accept-cookies-btn">Accept</button>
-        <button id="reject-cookies" class="reject-cookies-btn">Reject</button>
+    <div id="cookie-consent-banner" class="cookie-consent-banner" role="alert" aria-live="assertive" aria-labelledby="cookie-banner-text">
+        <p id="cookie-banner-text"><b>Do you like cookies?</b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
+        <button id="accept-cookies" class="accept-cookies-btn" aria-label="Accept cookies">Accept</button>
+        <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
     </div>
 
     <!-- Webchat (Defer this to load after the page content) -->
@@ -138,6 +119,7 @@
     <script src="{{ asset('js/index.js') }}" defer></script>
 
     @yield('scripts')
+
     <!-- Cookie Consent JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -148,6 +130,8 @@
             // Check if cookies have been accepted or rejected before
             if (!localStorage.getItem('cookie_accepted') && !localStorage.getItem('cookie_rejected')) {
                 cookieConsentBanner.style.display = 'block';
+                cookieConsentBanner.setAttribute('aria-live', 'assertive');  // Announce the banner
+                acceptCookiesButton.focus(); // Set focus to the first button
             }
 
             // Handle acceptance of cookies
