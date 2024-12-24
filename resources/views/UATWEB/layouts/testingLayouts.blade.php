@@ -61,12 +61,20 @@
 
         /* Accept button - dark green with white text (high contrast) */
         .accept-cookies-btn {
-            background-color: #388E3C;  /* Darker green background */
-            color: #ffffff;  /* White text */
+            background-color: #388E3C;  /* Darker green background for better contrast */
+            color: #ffffff;  /* White text for readability */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .accept-cookies-btn:hover {
-            background-color: #2c6e2f; /* Slightly darker green for hover */
+            background-color: #2c6e2f;
         }
 
         /* Reject button - dark red with white text (high contrast) */
