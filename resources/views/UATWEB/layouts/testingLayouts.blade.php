@@ -9,7 +9,7 @@
     
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
-    
+
     <!-- Preload critical CSS -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
@@ -26,8 +26,8 @@
     
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
-    @yield('css')
+
+    @yield('css') <!-- Allow additional styles from specific pages -->
 </head>
 <body>
     <!-- Navbar -->
@@ -42,18 +42,18 @@
     <!-- Footer Section -->
     {{-- @include('UATWEB.partials.footer') --}}
 
-    <!-- Webchat -->
+    <!-- Webchat (Defer this to load after the page content) -->
     <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
-    <!-- jQuery CDN (async) -->
+    <!-- Core JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
 
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- Custom JS -->
+    <!-- Custom JavaScript (Deferred to load last) -->
     <script src="{{ asset('js/index.js') }}" defer></script>
 
-    @yield('scripts')
+    @yield('scripts') <!-- Allow additional scripts from specific pages -->
 </body>
 </html>
