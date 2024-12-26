@@ -130,11 +130,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img
-                src="{{ asset('images/homepage/homepage2.webp') }}"
-                alt="Homepage Image 2"
-                class="transition-up image-horizontal-display"
-                loading="lazy">
+            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Homepage Image 2" class="img-fluid transition-up" loading="lazy">
         </div>
     </div>
 </section>
