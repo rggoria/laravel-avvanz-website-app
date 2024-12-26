@@ -107,7 +107,7 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
-<!-- Awards Section -->
+{{-- <!-- Awards Section -->
 <section class="container my-5">
     <h1 class="text-center text-dmb display-5 fw-bolder">
         Awards & Certification
@@ -238,7 +238,7 @@ Avvanz - Background Checks & Screening
             </button>
         </div>
     </div>
-</section>
+</section> --}}
 
 <!-- Industry Section -->
 <section class="bg-image-1 text-center container-fluid py-5">
