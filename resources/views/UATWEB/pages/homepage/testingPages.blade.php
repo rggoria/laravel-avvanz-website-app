@@ -135,4 +135,30 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
+<!-- Courses Section -->
+<section class="bg-mg text-white p-5">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img
+                    src="{{ asset('images/homepage/homepage3.webp') }}"
+                    alt="Homepage Image 3"
+                    class="transition-up image-horizontal-display"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+                <div>
+                    <p class="fw-bold fs-3">
+                        Do you want to be effectively onboard and upskill your employees?
+                    </p>
+                    <p>
+                        Avvanz will work closely with you to equip your human assets with skills and competencies to thrive in this Digital Economy whilst surpassing your business KPI’s.
+                    </p>
+                    <a href="{{ route('develop-main') }}" class="btn btn-orange-border fw-bolder text-uppercase">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
 @endsection
