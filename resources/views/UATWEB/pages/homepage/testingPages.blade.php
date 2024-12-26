@@ -22,14 +22,14 @@ Avvanz - Background Checks & Screening
                     <p>
                         Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                     </p>
-                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">Request a Demo</a>
+                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder" aria-label="Request a demo">Request a Demo</a>
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
                 <picture>
                     <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                    <img src="{{ asset('images/homepage/homepage1-m.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="360" height="360">
+                    <img src="{{ asset('images/homepage/homepage1-m.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up" width="360" height="360">
                 </picture>
             </div>
         </div>
