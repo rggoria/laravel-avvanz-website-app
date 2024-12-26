@@ -3,6 +3,9 @@
     color: white;
     background-color: var(--marigold) !important;
     border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .hero-button:hover {
