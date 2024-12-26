@@ -1,10 +1,12 @@
 /* Hero Section */
 .hero-button {
-    background-color: var(--marigold) !important;
+    color: white;
+    background-color: #fd610d !important;
     border-radius: 25px;
 }
 
 .hero-button:hover {
+    color: white;
     background-color: var(--pictonBlue) !important;
     border-radius: 25px;
 }
