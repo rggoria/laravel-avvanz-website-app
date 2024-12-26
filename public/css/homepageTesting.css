@@ -58,6 +58,21 @@
     margin: 0 auto;
 }
 
+.bg-image-industry {
+    background-color: #f0f0f0; /* Fallback background color */
+    background-image: url("/images/homepage/homepageBg.webp"); /* Use a relative path or absolute URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 300px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* The 'loaded' modifier class will be added once the background image is loaded */
+.bg-image-industry.loaded {
+    background-image: url("/images/homepage/homepageBg.webp"); /* Set the actual background image */
+}
+
 .industry-card {
     position: relative;
     border: 1px solid #dee2e6;
@@ -66,8 +81,6 @@
     transition: transform 0.3s ease;
     background-color: white;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .industry-card:hover {
@@ -113,6 +126,7 @@
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 1rem;
 }
 
 .industry-card:hover .industry-description {
