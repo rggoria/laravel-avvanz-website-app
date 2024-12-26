@@ -140,11 +140,7 @@ Avvanz - Background Checks & Screening
     <div class="container">
         <div class="row g-3">
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <img
-                    src="{{ asset('images/homepage/homepage3.webp') }}"
-                    alt="Homepage Image 3"
-                    class="transition-up image-horizontal-display"
-                    loading="lazy">
+                <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Homepage Image 3" class="img-fluid transition-up" loading="lazy">
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div>
