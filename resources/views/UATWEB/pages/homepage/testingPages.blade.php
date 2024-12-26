@@ -26,6 +26,7 @@ Avvanz - Background Checks & Screening
 
 @section('content')
 
+<!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
         <div class="row">
@@ -44,6 +45,31 @@ Avvanz - Background Checks & Screening
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
                 <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up" width="360" height="360" loading="lazy">
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="container margin-vertical text-center text-white">
+    <div class="row">
+        <div class="col-md-6 bg-dmb p-5">
+            <h1 class="fw-bolder display-5">
+                Screen
+            </h1>
+            <p>
+                Background Checks, KYC/AML and Company Due Diligence
+            </p>
+            <a href="{{ route('screen-main') }}" class="btn hero-screen-button fw-bolder text-uppercase">
+                Click to know more
+            </a>
+        </div>
+        <div class="col-md-6 bg-marigold p-5">
+            <h1 class="fw-bolder display-5">
+                Develop
+            </h1>
+            <p>
+                F2F/Virtual LIVE Training, Coaching and Customized elearning
+            </p>
+            <a href="{{ route('develop-main') }}" class="btn hero-develop-button fw-bolder text-uppercase">Click to know more</a>
         </div>
     </div>
 </section>
