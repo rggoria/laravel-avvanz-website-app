@@ -29,18 +29,7 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
-        .bg-image-1 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 300px
-        }
-        .bg-image-2 {
-            background: url("../images/homepage/homepageBg.webp") no-repeat center;
-            background-size: cover;
-            position: relative;
-            min-height: 100px;
-        }
+        
         .bg-image-christmas {
             background: url("../images/homepage/avvanzBgChristmas2.webp") no-repeat center center;
             background-repeat: no-repeat;

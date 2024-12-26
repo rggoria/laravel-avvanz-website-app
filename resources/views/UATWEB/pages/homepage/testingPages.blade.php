@@ -8,6 +8,22 @@ Avvanz - Background Checks & Screening
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
 <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
+
+<style>
+    .bg-image-1 {
+        background: url("../images/homepage/homepageBg.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 300px
+    }
+    .bg-image-2 {
+        background: url("../images/homepage/homepageBg.webp") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+</style>
+
 @endsection
 
 @section('content')
