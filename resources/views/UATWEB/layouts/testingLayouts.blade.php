@@ -63,7 +63,7 @@
         .text-center {
             text-align: center;
         }
-        /* Cookie consent styles */
+        /* Cookie Consent Banner */
         .cookie-consent-banner {
             position: fixed;
             bottom: 0;
@@ -78,18 +78,27 @@
             z-index: 9998;
             border-top: 2px solid #fff;
         }
+
+        /* General Button Styling */
         .accept-cookies-btn, .reject-cookies-btn {
-            background-color: green;
-            color: #fff;
             padding: 5px 10px;
             font-size: 16px;
             border: none;
             cursor: pointer;
             margin: 5px;
+            color: #fff; /* White text */
         }
+
+        /* Accept Button - No Changes */
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
+        /* Reject Button - Darker Red Background for Better Contrast */
         .reject-cookies-btn {
-            background-color: red;
+            background-color: #c0392b; /* Darker red */
         }
+
     </style>
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
