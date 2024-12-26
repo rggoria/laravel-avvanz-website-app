@@ -26,7 +26,7 @@ Avvanz - Background Checks & Screening
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up">
+                <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up" width="360" height="360">
             </div>
         </div>
     </div>
