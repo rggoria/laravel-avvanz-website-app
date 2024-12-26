@@ -210,9 +210,9 @@ Avvanz - Background Checks & Screening
                     </button>
                 @endforeach
             </div>
-            <div class="carousel-inner" aria-live="polite"> <!-- Removed role="listbox" -->
+            <div class="carousel-inner" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" 
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" 
                          aria-label="Award image {{ $item }} - Slide {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
@@ -227,7 +227,7 @@ Avvanz - Background Checks & Screening
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div>            
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev" aria-label="Previous slide">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
