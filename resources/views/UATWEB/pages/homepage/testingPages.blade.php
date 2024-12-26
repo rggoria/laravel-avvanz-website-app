@@ -115,4 +115,28 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
+<!-- Solution Section -->
+<section class="container my-5 py-5">
+    <div class="row g-3">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
+            <div>
+                <p class="fw-bold fs-3 text-co">
+                    Searching for an automated compliant background screening solution?
+                </p>
+                <p>
+                    As much as people are the biggest assets to your organization, the wrong people can pose the highest risks to your business. Hence, you need to identify the “right” and “safe” talents before onboarding them. Our Multi-award winning Avvanz ScreenGlobal will help you mitigate risks due to wrongful hires.
+                </p>
+                <a href="{{ route('screen-main') }}" class="btn solution-button fw-bolder text-uppercase">Explore Solutions</a>
+            </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+            <img
+                src="{{ asset('images/homepage/homepage2.webp') }}"
+                alt="Homepage Image 2"
+                class="transition-up image-horizontal-display"
+                loading="lazy">
+        </div>
+    </div>
+</section>
+
 @endsection
