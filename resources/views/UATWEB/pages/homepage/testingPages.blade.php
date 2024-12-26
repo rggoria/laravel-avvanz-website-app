@@ -20,6 +20,39 @@ Avvanz - Background Checks & Screening
         position: relative;
         min-height: 100px;
     }
+
+    @media (max-width: 767px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item.active,
+    #carouselPartnershipItems .carousel-inner .carousel-item-next,
+    #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item-end.active,
+        #carouselPartnershipItems .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item-start.active, 
+        #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item-end,
+    #carouselPartnershipItems .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
 </style>
 
 @endsection
@@ -170,12 +203,17 @@ Avvanz - Background Checks & Screening
         <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" 
+                            class="{{ $count === 0 ? 'active' : '' }}" 
+                            aria-current="{{ $count === 0 ? 'true' : 'false' }}" 
+                            aria-label="Slide {{ $count + 1 }}">
+                    </button>
                 @endforeach
             </div>
             <div class="carousel-inner" role="listbox" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }} - {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" 
+                         aria-label="Award image {{ $item }} - Slide {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
@@ -189,12 +227,12 @@ Avvanz - Background Checks & Screening
                         </div>
                     </div>
                 @endforeach
-            </div>            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev" aria-label="Previous slide">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next" aria-label="Next slide">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -202,4 +240,23 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+    <script>
+        let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
+    
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>     
 @endsection
