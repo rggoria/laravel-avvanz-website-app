@@ -1,0 +1,120 @@
+/* Hero Section */
+.hero-button {
+    color: white;
+    background-color: var(--marigold) !important;
+    border-radius: 25px;
+}
+
+.hero-button:hover {
+    color: white;
+    background-color: var(--pictonBlue) !important;
+    border-radius: 25px;
+}
+
+.hero-screen-button {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.hero-screen-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--marigold);
+}
+
+.hero-develop-button {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.hero-develop-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--darkMidnightBlue);
+}
+
+/* Solution Section */
+.solution-button {
+    color: var(--darkMidnightBlue);
+    border-radius: 25px;
+    border: 3px solid var(--darkMidnightBlue);
+}
+
+.solution-button:hover {
+    color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color: var(--darkMidnightBlue);
+}
+
+/* Industry Section */
+.industry-divider {
+    border-bottom: 5px solid var(--marigold);
+    width: 25%;
+    margin: 0 auto;
+}
+
+.industry-card {
+    position: relative;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-card:hover {
+    transform: scale(1.05);
+}
+
+.industry-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.industry-content {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.industry-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.industry-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.industry-card:hover .industry-description {
+    opacity: 1;
+}

@@ -5,7 +5,7 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+<link rel="stylesheet" href="{{ asset('css/homepageTesting.css') }}">
 
 <style>
     .bg-image-1 {
@@ -107,7 +107,7 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
-{{-- <!-- Awards Section -->
+<!-- Awards Section -->
 <section class="container my-5">
     <h1 class="text-center text-dmb display-5 fw-bolder">
         Awards & Certification
@@ -238,7 +238,7 @@ Avvanz - Background Checks & Screening
             </button>
         </div>
     </div>
-</section> --}}
+</section>
 
 <!-- Industry Section -->
 <section class="bg-image-1 text-center container-fluid py-5">
@@ -246,137 +246,128 @@ Avvanz - Background Checks & Screening
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
         <div class="row g-3">
+            <!-- Industry Cards -->
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Banking, Financial Services & Insurance</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Financial compliance requires specific background checks for various risk based roles.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Retail</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Retail</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Fast Hiring and Effective Onboarding are critical on top of the thorough background checks to address financial losses due to stock loss.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-shopping-basket"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-basket"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Fast Moving Consumer Goods and Manufacturing</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Due to generally quick staff turnover, Fast Hiring, Effective Onboarding and Engaging Training solutions are key.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-laptop"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Technology</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-laptop"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Technology</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Due to war for talent and inherent risk due to wrongful hires, thorough background checks and continuous learning and development solutions are required.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-stethoscope"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Healthcare</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-stethoscope"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Healthcare</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Customized Pre-employment Sceening, Regular re-screening and Continuous Monitoring solutions are needed for the various medical professionals depending on the compliance requirements.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Business Process Outsourcing</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Business Process Outsourcing</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Ensure the right people are placed in the various roles which pose different levels of risks and thus warrant different types of background checks.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-user-graduate"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Education</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-user-graduate"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Education</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Safeguarding and Child Protection guidelines require different mix of background checks on the various roles. Higher level educational institutions pose varying complexities and hence a right background screening methodology needs to be adopted.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-water"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Oil & Gas</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-water"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Oil & Gas</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Inhouse staff and Site workers pose different types of risks and hence a varied background screening, onboarding and training framework needs to be implemented.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-1">
-                <div class="card-display card-border">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Others</p>
-                        </div>
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <div class="card-description">
+                    <div class="industry-content">
+                        <p class="industry-title">Others</p>
+                    </div>
+                    <div class="industry-description">
                         <p>Avvanz provides customized solutions for all other industries given our in-depth domain expertise across all these industries.</p>
                     </div>
                 </div>
