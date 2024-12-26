@@ -166,7 +166,7 @@ Landing Page
                             Avvanz is a multi-award winning HRTech and FinTech company that helps more than 3000 companies around the globe mitigate people related risks through background checks and due diligence solutions and enhance their skills and competencies through highly interactive training solutions suited for the Digital Economy.
                         @endif
                     </p>
-                    <a href="{{ route('contact') }}" class="btn hero-button fw-bolder">
+                    <a href="{{ route('contact') }}" class="btn text-white hero-button fw-bolder">
                         @if($currentRouteName === 'global-latin-america')
                             Solicite una demostración
                         @else
