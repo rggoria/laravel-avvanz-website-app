@@ -38,11 +38,11 @@
 
                     <li class="nav-item dropdown nav-main-display">
                         <!-- Main "About Us" link -->
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to About Us page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'about-main' ? 'active' : '' }}" href="#" data-href="{{ route('about-main') }}" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to About Us page">
                             About Us
                         </a>
                         <!-- Dropdown menu -->
-                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarDropdownAbout">
                             <li>
                                 <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'about-1' ? 'active' : '' }}" href="{{ route('about-1') }}">
                                     Workplace Safety and Health Guideline
@@ -63,10 +63,10 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Screen page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'screen-main' ? 'active' : '' }}" href="#" data-href="{{ route('screen-main') }}" id="navbarDropdownScreen" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Screen page">
                             Screen
                         </a>
-                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarDropdownScreen">
                             <li class="dropdown-submenu-right dropend nav-submenu-display">
                                 <a class="dropdown-item dropdown-toggle navigation-item fw-bolder {{ $currentRouteName == 'screen-1' ? 'active' : '' }}" href="{{ route('screen-1') }}">
                                     Background Screening
@@ -110,10 +110,10 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Develop page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder nav-main {{ $currentRouteName == 'develop-main' ? 'active' : '' }}" href="#" data-href="{{ route('develop-main') }}" id="navbarDropdownDevelop" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Develop page">
                             Develop
                         </a>
-                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarDropdownDevelop">
                             <li>
                                 <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'develop-1' ? 'active' : '' }}" href="{{ route('develop-1') }}">Star Trainers</a>
                             </li>
@@ -130,10 +130,10 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Resources page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" id="navbarDropdownResources" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Go to Resources page">
                             Resources
                         </a>
-                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarDropdownResources">
                             <li>
                                 <a class="dropdown-item navigation-item fw-bolder {{ $currentRouteName == 'resources-1' ? 'active' : '' }}" href="{{ route('resources-1') }}">Blog</a>
                             </li>
@@ -163,10 +163,10 @@
                         <a class="nav-link navigation text-uppercase fw-bolder {{ $currentRouteName == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown nav-main-display">
-                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  aria-label="Go to Global page">
+                        <a class="nav-link dropdown-toggle navigation text-uppercase fw-bolder" href="#" data-href="{{ route('global') }}" id="navbarDropdownGlobal" role="button" data-bs-toggle="dropdown" aria-expanded="false"  aria-label="Go to Global page">
                             Global
                         </a>
-                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu nav-main-content" aria-labelledby="navbarDropdownGlobal">
                             <li class="dropdown-submenu-left dropend nav-submenu-display">
                                 <a class="dropdown-item dropdown-toggle navigation-item fw-bolder" href="#">APAC</a>
                                 <ul class="dropdown-menu">
