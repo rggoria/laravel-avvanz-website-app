@@ -60,7 +60,7 @@
 
 .bg-image-industry {
     background-color: #f0f0f0; /* Fallback background color */
-    background-image: url("/images/homepage/homepageBg.webp"); /* Use a relative path or absolute URL */
+    background-image: url("{{ asset('assets/images/homepage/homepageBg.webp')}}");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -70,7 +70,7 @@
 
 /* The 'loaded' modifier class will be added once the background image is loaded */
 .bg-image-industry.loaded {
-    background-image: url("/images/homepage/homepageBg.webp"); /* Set the actual background image */
+    background-image: url("{{ asset('assets/images/homepage/homepageBg.webp')}}");
 }
 
 .industry-card {
