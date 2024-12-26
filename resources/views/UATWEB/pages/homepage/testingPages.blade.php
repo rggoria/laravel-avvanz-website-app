@@ -5,19 +5,17 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
-<link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
-<link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 
 <style>
     .bg-image-1 {
-        background: url("../images/homepage/homepageBg.webp") no-repeat center;
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
         background-size: cover;
         position: relative;
-        min-height: 300px
+        min-height: 300px;
     }
     .bg-image-2 {
-        background: url("../images/homepage/homepageBg.webp") no-repeat center;
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
         background-size: cover;
         position: relative;
         min-height: 100px;
@@ -44,7 +42,7 @@ Avvanz - Background Checks & Screening
                 </div>
             </div>
             <div class="col-md-6 order-1 order-md-2 justify-content-center align-content-center text-center">
-                <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up" width="360" height="360">
+                <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Avvanz homepage image showcasing background check services" class="img-fluid transition-up" width="360" height="360" loading="lazy">
             </div>
         </div>
     </div>

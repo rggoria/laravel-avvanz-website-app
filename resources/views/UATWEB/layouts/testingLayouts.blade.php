@@ -12,6 +12,8 @@
 
     <!-- Preload Bootstrap CSS -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
+    <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
 
     <!-- Minified Bootstrap CSS -->
@@ -20,7 +22,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Critical CSS -->
     <style>
@@ -29,9 +31,9 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
-        
+
         .bg-image-christmas {
-            background: url("../images/homepage/avvanzBgChristmas2.webp") no-repeat center center;
+            background: url("{{ asset('images/homepage/avvanzBgChristmas2.webp') }}") no-repeat center center;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -89,7 +91,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('css')
 </head>
 <body>
@@ -114,10 +116,6 @@
         <button id="accept-cookies" class="accept-cookies-btn" aria-label="Accept cookies">Accept</button>
         <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
     </div>
-
-    <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
-    <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
-    <!-- https://respond.io -->
 
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
