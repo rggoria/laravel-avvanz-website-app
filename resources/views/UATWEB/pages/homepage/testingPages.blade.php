@@ -90,25 +90,13 @@ Avvanz - Background Checks & Screening
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification1-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 1" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification1-w.webp') }}" alt="Certificate 1" class="img-fluid" width="388" height="200" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification2-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification2-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification2-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 2" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification2-w.webp') }}" alt="Certificate 2" class="img-fluid" width="388" height="200" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification3-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification3-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification3-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 3" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification3-w.webp') }}" alt="Certificate 3" class="img-fluid" width="388" height="200" loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="prev">
