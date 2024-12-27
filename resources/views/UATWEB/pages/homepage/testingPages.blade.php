@@ -21,6 +21,14 @@ Avvanz - Background Checks & Screening
         min-height: 100px;
     }
 
+    .bg-image-industry {
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.5s ease-in-out;
+    }
+
+
     @media (max-width: 767px) {
         #carouselPartnershipItems .carousel-inner .carousel-item > div {
             display: none;
@@ -241,12 +249,11 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Industry Section -->
-{{-- <section class="bg-image-industry text-center container-fluid py-5" id="industry-section"> --}}
-<section class="text-center container-fluid py-5">
+<section class="bg-image-industry container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
-    <div class="container mt-5">
-        hello
+    <div class="container">
+        
     </div>
 </section>
 

@@ -57,13 +57,3 @@
     width: 25%;
     margin: 0 auto;
 }
-
-.bg-image-industry {
-    background-color: #f0f0f0; /* Fallback background color */
-    background-image: url("/images/homepage/homepageBg.webp");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-height: 300px;
-    transition: background-image 0.5s ease-in-out;
-}
