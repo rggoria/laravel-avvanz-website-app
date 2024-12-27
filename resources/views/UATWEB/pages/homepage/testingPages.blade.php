@@ -242,7 +242,7 @@ Avvanz - Background Checks & Screening
 
 <!-- Industry Section -->
 {{-- <section class="bg-image-industry text-center container-fluid py-5" id="industry-section"> --}}
-{{-- <section class="bg-image-1 text-center container-fluid py-5">
+<section class="text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -375,7 +375,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
     </div>
-</section> --}}
+</section>
 
 @endsection
 
