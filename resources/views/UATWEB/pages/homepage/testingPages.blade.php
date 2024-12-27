@@ -403,10 +403,32 @@ Avvanz - Background Checks & Screening
     </div>
 </section>
 
+<!-- Modal Popup -->
+<div class="modal fade" id="adsModal" tabindex="-1" aria-label="Leadership Ads Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <!-- Modal Body -->
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+                <a href="{{ route('leadership-home') }}">
+                    <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid" fetchpriority="high">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @section('scripts')
     <script>
+        // Modal Leadership Ads
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#adsModal').modal('show');
+            }, 5000);  // Show modal after 5 seconds
+        });
+
         // function for carousel
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
