@@ -107,7 +107,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Footer Section -->
-    {{-- @include('UATWEB.partials.footer') --}}
+    @include('UATWEB.partials.footer')
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-labelledby="cookie-consent-heading" aria-live="assertive" aria-hidden="true">
