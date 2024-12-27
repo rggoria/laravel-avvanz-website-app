@@ -92,7 +92,7 @@ Avvanz Leadership Breakthrough Summit
         <div class="row my-3">
             <div class="offset-md-2 col-md-8">
                 <h3 class="text-center text-dmb fw-bolder">
-                    (Exclusive Early Bird Discount of SGD 300 till 31st December)
+                    (Exclusive Early Bird Discount of SGD 300 till 31st January 2025)
                 </h3>
             </div>
         </div>
@@ -612,7 +612,7 @@ Avvanz Leadership Breakthrough Summit
                         SGD 6,888
                         <br>
                         <span class="text-dark">
-                            (Early Bird Offer: SGD 6,588 until 31st December)
+                            (Early Bird Offer: SGD 6,588 until 31st January 2025)
                         </span>
                     </td>
                 </tr>
