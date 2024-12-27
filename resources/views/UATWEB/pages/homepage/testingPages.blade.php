@@ -253,7 +253,23 @@ Avvanz - Background Checks & Screening
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container">
-        
+        <div class="row g-3">
+            <div class="col-lg-4 p-1">
+                <div class="card">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Financial compliance requires specific background checks for various risk based roles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
