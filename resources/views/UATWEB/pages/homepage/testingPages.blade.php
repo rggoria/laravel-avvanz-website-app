@@ -295,7 +295,10 @@ Avvanz - Background Checks & Screening
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
+                        // Set background image to cover the section
                         section.style.backgroundImage = `url('${section.dataset.bg}')`;
+                        section.style.backgroundSize = "cover";  // Ensure the background covers the section
+                        section.style.backgroundPosition = "center";  // Center the image
                         observer.disconnect(); // Stop observing once the background image is loaded
                     }
                 });
