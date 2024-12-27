@@ -125,50 +125,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            function loadFontAwesome(entries, observer) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        // Load Font Awesome CSS
-                        var link = document.createElement('link');
-                        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css';
-                        link.crossorigin = "anonymous";
-                        link.referrerpolicy = "no-referrer";
-                        link.rel = 'stylesheet';
-                        link.type = 'text/css';
-                        document.head.appendChild(link);
-            
-                        // Replace placeholder with Font Awesome icon
-                        var placeholder = entry.target;
-                        var iconClass = placeholder.getAttribute('data-icon');
-                        var iconElement = document.createElement('i');
-                        iconElement.className = iconClass;
-                        placeholder.parentNode.replaceChild(iconElement, placeholder);
-            
-                        // Stop observing this element
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }
-        
-            // Set up Intersection Observer
-            var options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-        
-            var observer = new IntersectionObserver(loadFontAwesome, options);
-        
-            // Start observing the placeholder elements
-            var placeholders = document.querySelectorAll('.font-awesome-placeholder');
-            placeholders.forEach(function(placeholder) {
-                observer.observe(placeholder);
-            });
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
             const cookieConsentBanner = document.getElementById('cookie-consent-banner');
             const acceptCookiesButton = document.getElementById('accept-cookies');
             const rejectCookiesButton = document.getElementById('reject-cookies');
