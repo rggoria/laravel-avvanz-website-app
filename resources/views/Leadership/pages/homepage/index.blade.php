@@ -606,7 +606,7 @@ Avvanz Leadership Breakthrough Summit
                         BINTAN
                     </td>
                     <td class="border-dmb text-marigold fs-4">
-                        19th to 21st Feb 2025 
+                        12th to 14th March 2025
                     </td>
                     <td class="border-dmb text-marigold fs-4">
                         SGD 6,888
