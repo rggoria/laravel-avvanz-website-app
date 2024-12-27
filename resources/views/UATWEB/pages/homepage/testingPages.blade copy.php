@@ -242,11 +242,138 @@ Avvanz - Background Checks & Screening
 
 <!-- Industry Section -->
 {{-- <section class="bg-image-industry text-center container-fluid py-5" id="industry-section"> --}}
-<section class="text-center container-fluid py-5">
+<section class="bg-image-1 text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
-        hello
+        <div class="row g-3">
+            <!-- Industry Cards -->
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Banking, Financial Services & Insurance</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Financial compliance requires specific background checks for various risk based roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Retail</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Fast Hiring and Effective Onboarding are critical on top of the thorough background checks to address financial losses due to stock loss.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Fast Moving Consumer Goods and Manufacturing</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Due to generally quick staff turnover, Fast Hiring, Effective Onboarding and Engaging Training solutions are key.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Technology</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Due to war for talent and inherent risk due to wrongful hires, thorough background checks and continuous learning and development solutions are required.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Healthcare</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Customized Pre-employment Sceening, Regular re-screening and Continuous Monitoring solutions are needed for the various medical professionals depending on the compliance requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Business Process Outsourcing</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Ensure the right people are placed in the various roles which pose different levels of risks and thus warrant different types of background checks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Education</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Safeguarding and Child Protection guidelines require different mix of background checks on the various roles. Higher level educational institutions pose varying complexities and hence a right background screening methodology needs to be adopted.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Oil & Gas</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Inhouse staff and Site workers pose different types of risks and hence a varied background screening, onboarding and training framework needs to be implemented.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                   <div class="industry-card h-100">
+                    <div class="industry-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="industry-content">
+                        <p class="industry-title">Others</p>
+                    </div>
+                    <div class="industry-description">
+                        <p>Avvanz provides customized solutions for all other industries given our in-depth domain expertise across all these industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -254,8 +381,6 @@ Avvanz - Background Checks & Screening
 
 @section('scripts')
     <script>
-
-        // carousel
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
         items.forEach((el) => {
@@ -270,5 +395,32 @@ Avvanz - Background Checks & Screening
                 next = next.nextElementSibling;
             }
         });
+
+        // script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the element with the 'bg-image-industry' class
+            const bgElements = document.querySelectorAll('.bg-image-industry');
+
+            const options = {
+                rootMargin: '100px 0px',  // Trigger when the section is 100px from the viewport
+                threshold: 0.1            // Trigger when 10% of the section is visible
+            };
+
+            // IntersectionObserver to apply the 'loaded' class when the section enters the viewport
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('loaded');  // Add the 'loaded' class
+                        observer.unobserve(entry.target);     // Stop observing once loaded
+                    }
+                });
+            }, options);
+
+            // Start observing the '.bg-image-industry' section
+            bgElements.forEach(element => {
+                observer.observe(element);  // Observe the industry background section
+            });
+        });
+
     </script>     
 @endsection
