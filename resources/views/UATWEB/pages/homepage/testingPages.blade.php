@@ -244,7 +244,7 @@ Avvanz - Background Checks & Screening
 <section class="container-fluid py-5" id="industry-section" data-bg="{{ asset('images/homepage/homepageBg.webp') }}">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row g-3">
             <div class="col-lg-4 p-1">
                 <div class="card-display card-border h-100">
@@ -260,6 +260,142 @@ Avvanz - Background Checks & Screening
                     </div>
                     <div class="card-description">
                         <p>Financial compliance requires specific background checks for various risk-based roles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
+                                    <path fill="white" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Retail</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Fast Hiring and Effective Onboarding are critical on top of the thorough background checks to address financial losses due to stock loss.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
+                                    <path fill="white" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Fast Moving Consumer Goods and Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Due to generally quick staff turnover, Fast Hiring, Effective Onboarding and Engaging Training solutions are key.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="32" height="32">
+                                    <path fill="white" d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Technology</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Due to war for talent and inherent risk due to wrongful hires, thorough background checks and continuous learning and development solutions are required.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
+                                    <path fill="white" d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Healthcare</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Customized Pre-employment Sceening, Regular re-screening and Continuous Monitoring solutions are needed for the various medical professionals depending on the compliance requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="32" height="32">
+                                    <path fill="white" d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Business Process Outsourcing</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Ensure the right people are placed in the various roles which pose different levels of risks and thus warrant different types of background checks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475 512" width="32" height="32">
+                                    <path fill="white" d="M219.3 .5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9l0 57.1c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-57.1L48 93.3l0 65.1 15.7 78.4c.9 4.7-.3 9.6-3.3 13.3s-7.6 5.9-12.4 5.9l-32 0c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4l0-71.8C6.5 83.3 0 74.3 0 64C0 52.6 8.1 42.7 19.3 40.5l200-40zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7L30.7 512C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6z"/>
+                                </svg>
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Education</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Safeguarding and Child Protection guidelines require different mix of background checks on the various roles. Higher level educational institutions pose varying complexities and hence a right background screening methodology needs to be adopted.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 512" width="32" height="32">
+                                    <path fill="white" d="M269.5 69.9c11.1-7.9 25.9-7.9 37 0C329 85.4 356.5 96 384 96c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 149.7 417 160 384 160c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4C42.8 92.6 61 83.5 75.3 71.6c11.1-9.5 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 85.2 165.1 96 192 96c27.5 0 55-10.6 77.5-26.1zm37 288C329 373.4 356.5 384 384 384c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 437.7 417 448 384 448c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 373.2 165.1 384 192 384c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0zm0-144C329 229.4 356.5 240 384 240c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 293.7 417 304 384 304c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.5 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 229.2 165.1 240 192 240c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/>
+                                </svg>                                
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Oil & Gas</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Inhouse staff and Site workers pose different types of risks and hence a varied background screening, onboarding and training framework needs to be implemented.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-1">
+                <div class="card-display card-border h-100">
+                    <div class="card-content p-5">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 512" width="32" height="32">
+                                    <path fill="white" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c0 0 0 0 0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c0 0 0 0 0 0c19.8 27.1 39.7 54.4 49.2 86.2l160 0zM192 512c44.2 0 80-35.8 80-80l0-16-160 0 0 16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>
+                                </svg>  
+                            </div>
+                            <p class="card-title fs-4 fw-bold mt-5">Others</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>Avvanz provides customized solutions for all other industries given our in-depth domain expertise across all these industries.</p>
                     </div>
                 </div>
             </div>
