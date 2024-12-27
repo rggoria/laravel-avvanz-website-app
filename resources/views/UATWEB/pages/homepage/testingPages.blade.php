@@ -379,7 +379,7 @@ Avvanz - Background Checks & Screening
 
 @endsection
 
-@section('scripts')
+{{-- @section('scripts')
     <script>
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
@@ -423,4 +423,4 @@ Avvanz - Background Checks & Screening
         });
 
     </script>     
-@endsection
+@endsection --}}
