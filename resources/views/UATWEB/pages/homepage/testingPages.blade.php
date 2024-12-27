@@ -58,7 +58,7 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('content')
-<div class="font-awesome-placeholder" data-icon="fas fa-heart"></div>
+
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
@@ -242,7 +242,7 @@ Avvanz - Background Checks & Screening
 
 <!-- Industry Section -->
 {{-- <section class="bg-image-industry text-center container-fluid py-5" id="industry-section"> --}}
-<section class="bg-image-1 text-center container-fluid py-5">
+<section class="text-center container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container mt-5">
@@ -379,8 +379,10 @@ Avvanz - Background Checks & Screening
 
 @endsection
 
-{{-- @section('scripts')
+@section('scripts')
     <script>
+
+        // carousel
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
     
         items.forEach((el) => {
@@ -395,32 +397,5 @@ Avvanz - Background Checks & Screening
                 next = next.nextElementSibling;
             }
         });
-
-        // script.js
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select the element with the 'bg-image-industry' class
-            const bgElements = document.querySelectorAll('.bg-image-industry');
-
-            const options = {
-                rootMargin: '100px 0px',  // Trigger when the section is 100px from the viewport
-                threshold: 0.1            // Trigger when 10% of the section is visible
-            };
-
-            // IntersectionObserver to apply the 'loaded' class when the section enters the viewport
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('loaded');  // Add the 'loaded' class
-                        observer.unobserve(entry.target);     // Stop observing once loaded
-                    }
-                });
-            }, options);
-
-            // Start observing the '.bg-image-industry' section
-            bgElements.forEach(element => {
-                observer.observe(element);  // Observe the industry background section
-            });
-        });
-
     </script>     
-@endsection --}}
+@endsection
