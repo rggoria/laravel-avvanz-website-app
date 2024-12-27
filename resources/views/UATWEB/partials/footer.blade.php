@@ -31,32 +31,32 @@
                     <div class="col-md-6">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link link-location active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true" aria-label="Singapore Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> Singapore
                             </button>
                             <button class="nav-link link-location" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false" aria-label="USA & LATAM Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> USA & LATAM
                             </button>
                             <button class="nav-link link-location" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false" aria-label="Philippines Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> Philippines
                             </button>
                             <button class="nav-link link-location" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false" aria-label="Australia & NZ Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> Australia & NZ
                             </button>
                             <button class="nav-link link-location" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false" aria-label="UK Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> United Kingdom
                             </button>
                             <button class="nav-link link-location" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false" aria-label="India Office Location">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
                                     <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                                 </svg> India
                             </button>
@@ -160,13 +160,19 @@
                 </p>
                 <div class="d-flex flex-row gap-3">
                     <a class="btn social-icon" href="https://www.facebook.com/AvvanzGlobal/" target="_blank" aria-label="Visit Avvanz on Facebook">
-                        <i class="fab fa-facebook-f"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24">
+                            <path fill="currentColor" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+                        </svg>
                     </a>
                     <a class="btn social-icon" href="https://www.linkedin.com/company/avvanz/" target="_blank" aria-label="Visit Avvanz on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path fill="currentColor" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                        </svg>
                     </a>
                     <a class="btn social-icon" href="https://www.youtube.com/channel/UC0GtKhkOvAZCQoA141KDyoA" target="_blank" aria-label="Visit Avvanz on YouTube">
-                        <i class="fab fa-youtube"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24">
+                            <path fill="currentColor" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+                        </svg>
                     </a>
                 </div>
             </div>
