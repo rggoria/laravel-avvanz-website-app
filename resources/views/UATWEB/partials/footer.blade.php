@@ -31,22 +31,34 @@
                     <div class="col-md-6">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link link-location active" id="v-pills-singapore-tab" data-bs-toggle="pill" data-bs-target="#v-pills-singapore" type="button" role="tab" aria-controls="v-pills-singapore" aria-selected="true" aria-label="Singapore Office Location">
-                                <i class="fas fa-map-marker-alt"></i> Singapore
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> Singapore
                             </button>
                             <button class="nav-link link-location" id="v-pills-usa-latam-tab" data-bs-toggle="pill" data-bs-target="#v-pills-usa-latam" type="button" role="tab" aria-controls="v-pills-usa-latam" aria-selected="false" aria-label="USA & LATAM Office Location">
-                                <i class="fas fa-map-marker-alt"></i> USA & LATAM
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> USA & LATAM
                             </button>
                             <button class="nav-link link-location" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab" aria-controls="v-pills-philippines" aria-selected="false" aria-label="Philippines Office Location">
-                                <i class="fas fa-map-marker-alt"></i> Philippines
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> Philippines
                             </button>
                             <button class="nav-link link-location" id="v-pills-australia-nz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-australia-nz" type="button" role="tab" aria-controls="v-pills-australia-nz" aria-selected="false" aria-label="Australia & NZ Office Location">
-                                <i class="fas fa-map-marker-alt"></i> Australia & NZ
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> Australia & NZ
                             </button>
                             <button class="nav-link link-location" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab" aria-controls="v-pills-uk" aria-selected="false" aria-label="UK Office Location">
-                                <i class="fas fa-map-marker-alt"></i> United Kingdom
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> United Kingdom
                             </button>
                             <button class="nav-link link-location" id="v-pills-india-tab" data-bs-toggle="pill" data-bs-target="#v-pills-india" type="button" role="tab" aria-controls="v-pills-india" aria-selected="false" aria-label="India Office Location">
-                                <i class="fas fa-map-marker-alt"></i> India
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  width="24" height="24">
+                                    <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                </svg> India
                             </button>
                         </div>
                     </div>
