@@ -58,7 +58,7 @@ Avvanz - Background Checks & Screening
 @endsection
 
 @section('content')
-
+<div class="font-awesome-placeholder" data-icon="fas fa-heart"></div>
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">

@@ -130,8 +130,7 @@
                     if (entry.isIntersecting) {
                         // Load Font Awesome CSS
                         var link = document.createElement('link');
-                        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1';
-                        link.integrity = "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==";
+                        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css';
                         link.crossorigin = "anonymous";
                         link.referrerpolicy = "no-referrer";
                         link.rel = 'stylesheet';
