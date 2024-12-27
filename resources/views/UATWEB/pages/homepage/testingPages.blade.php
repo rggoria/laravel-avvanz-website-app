@@ -249,6 +249,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Industry Section -->
+<!-- Industry Section -->
 <section class="bg-image-industry container-fluid py-5">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
@@ -259,7 +260,10 @@ Avvanz - Background Checks & Screening
                     <div class="card-content p-5">
                         <div class="card-body d-flex flex-column align-items-center text-center">
                             <div class="card-icon d-flex justify-content-center align-items-center">
-                                <i class="fas fa-shopping-cart"></i>
+                                <!-- Use SVG icon or optimize Font Awesome usage -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                  <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm0 14a6 6 0 1 1 6-6 6 6 0 0 1-6 6z"/>
+                                </svg>
                             </div>
                             <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
                         </div>
