@@ -58,33 +58,12 @@
     margin: 0 auto;
 }
 
+/* Card Styles */
 .card-display {
-    border: 1px solid #dee2e6;
-    border-radius: 0.375rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
-}
-
-.card-icon i {
-    font-size: 2rem;
-}
-
-.card-description {
-    padding: 1rem;
-}
-
-.card-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--darkMidnightBlue);
-    color: white;
-    font-size: 50px;
-}
-
-.card-display {
-    height: 300px;
     width: auto;
+    border: 1px solid #dee2e6;
     border-radius: 50px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     position: relative;
     transition: transform 0.3s ease;
     background-color: white;
@@ -92,21 +71,6 @@
 
 .card-display:hover {
     transform: scale(1.05);
-}
-
-.card-body {
-    transition: opacity 0.3s ease;
-}
-
-.card-display:hover .card-body {
-    opacity: 0;
-}
-
-.card-display:hover .card-description {
-    opacity: 1;
-    border-radius: 50px;
-    background-color: var(--darkMidnightBlue);
-    color: white;
 }
 
 .card-description {
@@ -122,4 +86,45 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     padding: 20px;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+    border-radius: 50px;
+}
+
+.card-display:hover .card-body {
+    opacity: 0;
+}
+
+.card-display:hover .card-description {
+    opacity: 1;
+}
+
+/* Card Icon Styling */
+.card-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--darkMidnightBlue);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Body and Title Styling */
+.card-body {
+    transition: opacity 0.3s ease;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Responsive Design (optional, based on your layout) */
+@media (max-width: 768px) {
+    .card-display {
+        height: auto;
+    }
 }

@@ -21,14 +21,6 @@ Avvanz - Background Checks & Screening
         min-height: 100px;
     }
 
-    .bg-image-industry {
-        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
-        background-size: cover;
-        background-position: center;
-        transition: background-image 0.5s ease-in-out;
-    }
-
-
     @media (max-width: 767px) {
         #carouselPartnershipItems .carousel-inner .carousel-item > div {
             display: none;
@@ -249,7 +241,7 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Industry Section -->
-<section class="bg-image-industry container-fluid py-5" id="industry-section">
+<section class="container-fluid py-5" id="industry-section" data-bg="{{ asset('images/homepage/homepageBg.webp') }}">
     <h1 class="text-center text-white fw-bolder">In-depth Industry Expertise</h1>
     <h1 class="text-center industry-divider"></h1>
     <div class="container">
@@ -267,41 +259,7 @@ Avvanz - Background Checks & Screening
                         </div>
                     </div>
                     <div class="card-description">
-                        <p>Financial compliance requires specific background checks for various risk based roles.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 p-1">
-                <div class="card-display card-border h-100">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
-                                    <path fill="white" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
-                                </svg>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                        <p>Financial compliance requires specific background checks for various risk based roles.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 p-1">
-                <div class="card-display card-border h-100">
-                    <div class="card-content p-5">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
-                            <div class="card-icon d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
-                                    <path fill="white" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
-                                </svg>
-                            </div>
-                            <p class="card-title fs-4 fw-bold mt-5">Banking, Financial Services & Insurance</p>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                        <p>Financial compliance requires specific background checks for various risk based roles.</p>
+                        <p>Financial compliance requires specific background checks for various risk-based roles.</p>
                     </div>
                 </div>
             </div>
@@ -333,18 +291,17 @@ Avvanz - Background Checks & Screening
         document.addEventListener("DOMContentLoaded", function () {
             const section = document.getElementById("industry-section");
 
-            // Check if the section is in the viewport
-            function loadBackgroundImage() {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                section.style.backgroundImage = "url('{{ asset('images/homepage/homepageBg.webp') }}')";
-                window.removeEventListener("scroll", loadBackgroundImage); // Remove listener after loading
-            }
-            }
+            // Use IntersectionObserver for lazy-loading the background image
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        section.style.backgroundImage = `url('${section.dataset.bg}')`;
+                        observer.disconnect(); // Stop observing once the background image is loaded
+                    }
+                });
+            }, { threshold: 0.1 });
 
-            // Add scroll event to load the background image when in view
-            window.addEventListener("scroll", loadBackgroundImage);
-            loadBackgroundImage(); // Check on page load
+            observer.observe(section); // Start observing the section
         });
     </script>
 @endsection
