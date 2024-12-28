@@ -6,5 +6,8 @@ Avvanz - Background Checks & Screening
 
 
 @section('content')
-Hello World
+    <!-- Navbar -->
+    @include('UATWEB.partials.navbar')
+    
+    Hello World
 @endsection
