@@ -117,10 +117,6 @@
         <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
     </div>
 
-    <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
-    <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
-    <!-- https://respond.io -->
-
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
 
@@ -163,6 +159,13 @@
                     cookieConsentBanner.setAttribute('aria-hidden', 'true');
                 }
             });
+        });
+
+        window.addEventListener('load', function() {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
+            script.defer = true;
+            document.body.appendChild(script);
         });
     </script>
 
