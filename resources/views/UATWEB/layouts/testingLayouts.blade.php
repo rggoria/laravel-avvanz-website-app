@@ -32,18 +32,9 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Lazy Load Respond.io Script -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function() {
-                var script = document.createElement('script');
-                script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
-                script.async = true;
-                document.body.appendChild(script);
-            }, 2000);  // Wait for 2 seconds before loading
-        });
-    </script>
-    
+    <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
+    <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+    <!-- https://respond.io -->
 
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
