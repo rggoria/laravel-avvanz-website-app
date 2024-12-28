@@ -124,6 +124,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
     <script>
+       window.addEventListener('load', function() {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
+            script.defer = true;
+            document.body.appendChild(script);
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const cookieConsentBanner = document.getElementById('cookie-consent-banner');
             const acceptCookiesButton = document.getElementById('accept-cookies');
@@ -159,13 +166,6 @@
                     cookieConsentBanner.setAttribute('aria-hidden', 'true');
                 }
             });
-        });
-
-        window.addEventListener('load', function() {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
-            script.defer = true;
-            document.body.appendChild(script);
         });
     </script>
 
