@@ -35,12 +35,15 @@
     <!-- Lazy Load Respond.io Script -->
     <script>
         window.addEventListener('load', function () {
-            var script = document.createElement('script');
-            script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
-            script.async = true;  // Ensure it doesn't block the page
-            document.body.appendChild(script);  // Add it to the body
+            setTimeout(function() {
+                var script = document.createElement('script');
+                script.src = 'https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5';
+                script.async = true;
+                document.body.appendChild(script);
+            }, 2000);  // Wait for 2 seconds before loading
         });
     </script>
+    
 
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
