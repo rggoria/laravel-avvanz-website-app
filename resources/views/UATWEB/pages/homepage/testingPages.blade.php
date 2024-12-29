@@ -6,6 +6,9 @@ Avvanz - Background Checks & Screening
 
 @section('content')
 
+<!-- Preload Hero Image for Desktop -->
+<link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp" media="(min-width: 768px)">
+
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
@@ -26,7 +29,7 @@ Avvanz - Background Checks & Screening
                 <picture>
                     <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="360" height="360" loading="lazy">
+                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="360" height="360">
                 </picture>
             </div>
         </div>
