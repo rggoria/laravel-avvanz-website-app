@@ -26,80 +26,22 @@
 
     <!-- Minified Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- Critical CSS -->
     
-
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
-    @yield('css')
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <!-- Navbar -->
-    @include('UATWEB.partials.navbar')
-
-    <!-- Floating Button -->
-    @include('UATWEB.partials.floating')
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-labelledby="cookie-consent-heading" aria-live="assertive" aria-hidden="true">
-        <h2 id="cookie-consent-heading" class="sr-only">Cookie Consent</h2>
-        <p><b>Do you like cookies? </b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
-        <button id="accept-cookies" class="accept-cookies-btn" aria-label="Accept cookies">Accept</button>
-        <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
-    </div>
-
     @yield('content')
 
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    <!-- Respond.io Script (Lazy-loaded) -->
+    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
-
-    <!-- Deferred Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cookieConsentBanner = document.getElementById('cookie-consent-banner');
-            const acceptCookiesButton = document.getElementById('accept-cookies');
-            const rejectCookiesButton = document.getElementById('reject-cookies');
-            
-            // Check if cookies have been accepted or rejected before
-            if (!localStorage.getItem('cookie_accepted') && !localStorage.getItem('cookie_rejected')) {
-                cookieConsentBanner.style.display = 'block';
-                cookieConsentBanner.setAttribute('aria-hidden', 'false');
-                acceptCookiesButton.focus(); // Focus on the Accept button
-            }
-
-            // Handle acceptance of cookies
-            acceptCookiesButton.addEventListener('click', function() {
-                localStorage.setItem('cookie_accepted', 'true');
-                localStorage.removeItem('cookie_rejected'); // In case the user previously rejected
-                cookieConsentBanner.style.display = 'none';
-                cookieConsentBanner.setAttribute('aria-hidden', 'true');
-            });
-
-            // Handle rejection of cookies
-            rejectCookiesButton.addEventListener('click', function() {
-                localStorage.setItem('cookie_rejected', 'true');
-                localStorage.removeItem('cookie_accepted'); // In case the user accepted before
-                cookieConsentBanner.style.display = 'none';
-                cookieConsentBanner.setAttribute('aria-hidden', 'true');
-            });
-
-            // Close the banner with the Escape key
-            document.addEventListener('keydown', function(event) {
-                if (event.key === 'Escape' && cookieConsentBanner.style.display === 'block') {
-                    cookieConsentBanner.style.display = 'none';
-                    cookieConsentBanner.setAttribute('aria-hidden', 'true');
-                }
-            });
-        });
-    </script>
-
-    @yield('scripts')
 </body>
-
 </html>
