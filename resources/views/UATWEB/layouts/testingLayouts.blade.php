@@ -19,10 +19,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navbar -->
+    @include('UATWEB.partials.navbar')
+    
     @yield('content')
 
-     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
-     <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
-     <!-- https://respond.io -->
+    <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
+    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+    <!-- https://respond.io -->
 </body>
 </html>
