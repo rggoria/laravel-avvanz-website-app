@@ -25,29 +25,7 @@
 
     <!-- Critical CSS -->
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .padding-vertical {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-        .margin-vertical {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        }
-        .section-padding {
-            padding: 3rem;
-        }
-        .text-white {
-            color: white;
-        }
-        .text-center {
-            text-align: center;
-        }
+        
 
         /* Cookie Consent Banner */
         .cookie-consent-banner {
