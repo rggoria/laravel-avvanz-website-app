@@ -38,6 +38,11 @@
 
     @yield('content')
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{{ asset('js/index.js') }}" defer></script>
 </body>
 
 </html>
