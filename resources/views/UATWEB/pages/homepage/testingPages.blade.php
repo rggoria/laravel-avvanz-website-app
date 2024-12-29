@@ -4,6 +4,24 @@
 Avvanz - Background Checks & Screening
 @endsection
 
+@section('css')
+<style>
+    .bg-image-1 {
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 300px;
+    }
+    .bg-image-2 {
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+</style>
+
+@endsection
+
 @section('content')
 
 <!-- Hero Section -->
