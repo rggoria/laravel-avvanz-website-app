@@ -99,7 +99,7 @@
     </style>
 
     <!-- Main CSS file with "onload" for efficient loading -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('css')
 </head>
 
