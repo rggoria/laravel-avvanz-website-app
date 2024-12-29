@@ -108,6 +108,17 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
+    <!-- Footer Section -->
+    @include('UATWEB.partials.footer')
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-labelledby="cookie-consent-heading" aria-live="assertive" aria-hidden="true">
+        <h2 id="cookie-consent-heading" class="sr-only">Cookie Consent</h2>
+        <p><b>Do you like cookies? </b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
+        <button id="accept-cookies" class="accept-cookies-btn" aria-label="Accept cookies">Accept</button>
+        <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
+    </div>
+
     <!-- Respond.io Script (Lazy-loaded) -->
     <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
