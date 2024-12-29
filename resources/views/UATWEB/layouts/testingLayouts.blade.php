@@ -93,6 +93,8 @@
             background-color: #c0392b;
         }
     </style>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
     <!-- Navbar -->
