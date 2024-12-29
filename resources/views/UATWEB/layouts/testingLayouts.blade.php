@@ -99,7 +99,8 @@
     </style>
 
     <!-- Main CSS file with "onload" for efficient loading -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link href="{{ asset('css/style.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ asset('css/style.css') }}"></noscript>
     @yield('css')
 </head>
 
