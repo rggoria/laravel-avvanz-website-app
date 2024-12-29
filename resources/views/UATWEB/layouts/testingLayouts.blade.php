@@ -11,9 +11,6 @@
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Preload critical CSS for faster load -->
-    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" type="text/css" media="all">
-
     <!-- Preload important image for faster rendering -->
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
     <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
@@ -26,7 +23,66 @@
     <!-- Ensure async scripts don’t block page rendering -->
     <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
-    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'"> --}}
+    <!-- Critical CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .padding-vertical {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .margin-vertical {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            display: none;
+            z-index: 9998;
+            border-top: 2px solid #fff;
+        }
+
+        .accept-cookies-btn, .reject-cookies-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            color: #fff;
+        }
+
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
+        .reject-cookies-btn {
+            background-color: #c0392b;
+        }
+    </style>
+
     @yield('css')
 </head>
 <body>
