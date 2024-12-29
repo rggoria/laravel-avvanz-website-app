@@ -80,16 +80,20 @@
             z-index: 9999;
         }
         .accept-cookies-btn, .reject-cookies-btn {
-            background-color: green;
-            color: #fff;
             padding: 5px 10px;
             font-size: 16px;
             border: none;
             cursor: pointer;
             margin: 5px;
+            color: #fff;
         }
+
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
         .reject-cookies-btn {
-            background-color: red;
+            background-color: #c0392b;
         }
     </style>
     <!-- Custom CSS -->
