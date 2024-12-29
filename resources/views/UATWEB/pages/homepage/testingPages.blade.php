@@ -4,6 +4,9 @@
 Avvanz - Background Checks & Screening
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/homepageTesting.css') }}">
+
 <style>
     .bg-image-1 {
         background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
