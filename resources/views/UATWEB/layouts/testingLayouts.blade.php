@@ -33,6 +33,9 @@
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
 
+    <!-- Floating Button -->
+    @include('UATWEB.partials.floating')
+
     @yield('content')
 
     <!-- jQuery CDN -->
