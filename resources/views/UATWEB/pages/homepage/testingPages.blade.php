@@ -6,26 +6,29 @@ Avvanz - Background Checks & Screening
 
 @section('css')
 <style>
-    .bg-image-1 {
-        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+    /* Consolidated Background Image Styles */
+    .bg-image {
+        background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+    }
+
+    .bg-image-1 {
+        background-image: url("{{ asset('images/homepage/homepageBg.webp') }}");
         min-height: 300px;
     }
+
     .bg-image-2 {
-        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
-        background-size: cover;
-        position: relative;
+        background-image: url("{{ asset('images/homepage/homepageBg.webp') }}");
         min-height: 100px;
     }
 </style>
-
 @endsection
 
 @section('content')
 
 <!-- Hero Section -->
-<section class="bg-image-1">
+<section class="bg-image bg-image-1">
     <div class="container padding-vertical">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 justify-content-center align-content-center">
