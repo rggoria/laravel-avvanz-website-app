@@ -95,7 +95,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('css')
 </head>
 
