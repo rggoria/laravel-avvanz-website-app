@@ -21,8 +21,8 @@
     <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
     <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
 
-    <!-- Preload the critical styles CSS -->
-    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" onload="this.rel='stylesheet'">
+    {{-- <!-- Preload the critical styles CSS -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" onload="this.rel='stylesheet'"> --}}
 
     <!-- Minified Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -99,8 +99,7 @@
     </style>
 
     <!-- Main CSS file with "onload" for efficient loading -->
-    
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="style.css">
     @yield('css')
 </head>
 
