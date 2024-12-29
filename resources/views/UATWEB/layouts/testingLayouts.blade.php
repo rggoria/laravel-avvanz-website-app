@@ -7,25 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <meta name="description" content="Our Multi-award winning background checks platform ScreenGlobal will help you mitigate risk due to wrongful hires.">
-    
+
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Preload Bootstrap CSS (for faster page rendering) -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" 
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- Preload important image for faster rendering -->
-    <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image">
+    <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image">
 
     <!-- Minified Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Ensure async scripts don’t block page rendering -->
-    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
-
-    <!-- Critical Inline CSS (for faster page rendering) -->
     <style>
         body {
             margin: 0;
@@ -33,7 +26,6 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
 
-        /* Consolidated Background Image Class */
         .bg-image {
             background-repeat: no-repeat;
             background-size: cover;
@@ -49,8 +41,7 @@
             background-image: url("{{ asset('images/homepage/homepageBg.webp') }}");
             min-height: 100px;
         }
-
-        /* Cookie Consent Banner */
+        
         .cookie-consent-banner {
             position: fixed;
             bottom: 0;
@@ -84,20 +75,13 @@
         }
     </style>
 
-    <!-- Custom External CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
     @yield('css')
 </head>
 
 <body>
-    <!-- Navbar -->
     @include('UATWEB.partials.navbar')
-
-    <!-- Floating Button -->
     @include('UATWEB.partials.floating')
 
-    <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-labelledby="cookie-consent-heading" aria-live="assertive" aria-hidden="true">
         <h2 id="cookie-consent-heading" class="sr-only">Cookie Consent</h2>
         <p><b>Do you like cookies? </b> We use cookies to improve your experience. By using our site, you consent to cookies. You can accept or reject them.</p>
@@ -108,12 +92,12 @@
     @yield('content')
 
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
     <!-- Custom JS -->
     <script src="{{ asset('js/index.js') }}" defer></script>
 
-    <!-- Deferred Bootstrap JavaScript -->
+    <!-- Deferred Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
     <script>
@@ -122,30 +106,26 @@
             const acceptCookiesButton = document.getElementById('accept-cookies');
             const rejectCookiesButton = document.getElementById('reject-cookies');
             
-            // Check if cookies have been accepted or rejected before
             if (!localStorage.getItem('cookie_accepted') && !localStorage.getItem('cookie_rejected')) {
                 cookieConsentBanner.style.display = 'block';
                 cookieConsentBanner.setAttribute('aria-hidden', 'false');
-                acceptCookiesButton.focus(); // Focus on the Accept button
+                acceptCookiesButton.focus();
             }
 
-            // Handle acceptance of cookies
             acceptCookiesButton.addEventListener('click', function() {
                 localStorage.setItem('cookie_accepted', 'true');
-                localStorage.removeItem('cookie_rejected'); // In case the user previously rejected
+                localStorage.removeItem('cookie_rejected');
                 cookieConsentBanner.style.display = 'none';
                 cookieConsentBanner.setAttribute('aria-hidden', 'true');
             });
 
-            // Handle rejection of cookies
             rejectCookiesButton.addEventListener('click', function() {
                 localStorage.setItem('cookie_rejected', 'true');
-                localStorage.removeItem('cookie_accepted'); // In case the user accepted before
+                localStorage.removeItem('cookie_accepted');
                 cookieConsentBanner.style.display = 'none';
                 cookieConsentBanner.setAttribute('aria-hidden', 'true');
             });
 
-            // Close the banner with the Escape key
             document.addEventListener('keydown', function(event) {
                 if (event.key === 'Escape' && cookieConsentBanner.style.display === 'block') {
                     cookieConsentBanner.style.display = 'none';
@@ -157,5 +137,4 @@
 
     @yield('scripts')
 </body>
-
 </html>
