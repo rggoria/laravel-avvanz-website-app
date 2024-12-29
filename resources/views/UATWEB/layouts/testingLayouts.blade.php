@@ -100,9 +100,9 @@
 
     <!-- Desktop-specific styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen and (min-width: 769px)">
-
+    
     <!-- Mobile-specific styles -->
-    <link rel="stylesheet" href="style.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen and (max-width: 768px)" onload="this.media='all'">
     @yield('css')
 </head>
 
