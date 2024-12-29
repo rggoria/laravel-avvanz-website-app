@@ -98,8 +98,11 @@
         }
     </style>
 
-    <!-- Main CSS file with "onload" for efficient loading -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Mobile Styles (loaded immediately for small screens) -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen and (max-width: 767px)">
+
+    <!-- Desktop Styles (loaded with onload for desktop performance) -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
     @yield('css')
 </head>
 
