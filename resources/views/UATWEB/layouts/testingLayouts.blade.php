@@ -30,6 +30,8 @@
 
     <!-- Ensure async scripts don’t block page rendering -->
     <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+
+     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
