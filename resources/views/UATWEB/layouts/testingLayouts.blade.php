@@ -11,6 +11,9 @@
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
+    <!-- Preload critical CSS for faster load -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" type="text/css" media="all">
+
     <!-- Preload important image for faster rendering -->
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
     <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
