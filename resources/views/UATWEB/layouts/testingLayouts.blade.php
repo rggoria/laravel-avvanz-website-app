@@ -26,11 +26,73 @@
 
     <!-- Minified Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Critical CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .bg-image-christmas {
+            background: url("{{ asset('images/homepage/avvanzBgChristmas2.webp') }}") no-repeat center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .padding-vertical {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .margin-vertical {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            display: none;
+            z-index: 9998;
+            border-top: 2px solid #fff;
+        }
+
+        .accept-cookies-btn, .reject-cookies-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            color: #fff;
+        }
+
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
+        .reject-cookies-btn {
+            background-color: #c0392b;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
