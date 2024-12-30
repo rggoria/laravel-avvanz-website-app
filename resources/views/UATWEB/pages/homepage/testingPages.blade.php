@@ -4,6 +4,59 @@
 Avvanz - Background Checks & Screening
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/homepageTesting.css') }}">
+
+<style>
+    .bg-image-1 {
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 300px;
+    }
+    .bg-image-2 {
+        background: url("{{ asset('images/homepage/homepageBg.webp') }}") no-repeat center;
+        background-size: cover;
+        position: relative;
+        min-height: 100px;
+    }
+
+    @media (max-width: 767px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item > div {
+            display: none;
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item.active,
+    #carouselPartnershipItems .carousel-inner .carousel-item-next,
+    #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+        #carouselPartnershipItems .carousel-inner .carousel-item-end.active,
+        #carouselPartnershipItems .carousel-inner .carousel-item-next {
+            transform: translateX(33%); /* adjust thist base on the column max number */
+        }
+
+        #carouselPartnershipItems .carousel-inner .carousel-item-start.active, 
+        #carouselPartnershipItems .carousel-inner .carousel-item-prev {
+            transform: translateX(-33%); /* adjust thist base on the column max number */
+        }
+    }
+
+    #carouselPartnershipItems .carousel-inner .carousel-item-end,
+    #carouselPartnershipItems .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
+</style>
+
+@endsection
+
 @section('content')
 
 <!-- Preload Hero Image for Desktop -->
@@ -14,7 +67,7 @@ Avvanz - Background Checks & Screening
     <div class="container padding-vertical">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 justify-content-center align-content-center">
-                <div class="text-white hero-text">
+                <div class="text-white">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>

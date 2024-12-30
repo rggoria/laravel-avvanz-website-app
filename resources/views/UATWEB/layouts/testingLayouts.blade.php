@@ -84,48 +84,6 @@
         .reject-cookies-btn {
             background-color: #c0392b;
         }
-
-        /* Mobile-specific Styles */
-        @media (max-width: 767px) {
-            .bg-image-christmas {
-                background-size: contain;
-                background-position: center;
-                background-attachment: scroll;
-            }
-
-            /* Hero Section for Mobile */
-            .hero-text {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-
-            .hero-button {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-
-            .padding-vertical {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-        }
-
-        /* Desktop-specific Styles */
-        @media (min-width: 768px) {
-            .hero-text {
-                font-size: 2rem;
-            }
-
-            .hero-button {
-                font-size: 1.25rem;
-                padding: 12px 24px;
-            }
-
-            .padding-vertical {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-        }
     </style>
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
