@@ -14,7 +14,7 @@ Avvanz - Background Checks & Screening
     <div class="container padding-vertical">
         <div class="row">
             <div class="col-md-6 order-2 order-md-1 justify-content-center align-content-center">
-                <div class="text-white">
+                <div class="text-white hero-text">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
                     </h1>
