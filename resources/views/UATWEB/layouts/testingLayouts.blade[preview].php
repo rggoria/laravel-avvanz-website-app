@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,8 @@
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Preload Bootstrap CSS (for faster page rendering) -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Preload critical CSS for faster load -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" type="text/css" media="all">
 
     <!-- Preload important image for faster rendering -->
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
@@ -34,13 +32,6 @@
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .bg-image-christmas {
-            background: url("{{ asset('images/homepage/avvanzBgChristmas2.webp') }}") no-repeat center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
         }
 
         .padding-vertical {
@@ -95,10 +86,10 @@
         }
     </style>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'"> --}}
     @yield('css')
 </head>
-
 <body>
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
@@ -166,5 +157,4 @@
 
     @yield('scripts')
 </body>
-
 </html>
