@@ -17,101 +17,106 @@
 
     <!-- Respond.io CDN -->
     <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
+
+    <!-- Normal link to apply the CSS (after preloading) -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <style>
+        :root {
+            --carrotOrange: #de9228;
+            --japaneseIndigo: #1c3843;
+            --marigold: #ffab00;
+            --pictonBlue: #3db2ed;
+            --darkMidnightBlue: #12375f;
+            --midnightGreen: #12475f;
+            --seaGreen: #3c8d5c;
+            --antiFlashWhite: #f2f2f2;
+            --brightGray: #eaf1ee;
+
+            --blackSqueeze: #e9f4f6;
+            --linkWater: #d8e8f3;
+            --givry: #f7e6c5;
+            --periglacialBlue: #dce2d2;
+            --dustStorm: #e9d6d5;
+            --mojo: #bf3d36;
+        }
+        /* Floating Section */
+        .floating-btn {
+            position: fixed;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            border: none;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .floating-btn:focus {
+            outline: 3px solid var(--darkMidnightBlue);
+            box-shadow: 0 0 10px var(--darkMidnightBlue);
+        }
+
+        .floating-btn i {
+            font-size: 2em;
+        }
+
+        .floating-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .floating-btn-left {
+            background-color: var(--darkMidnightBlue);
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .floating-btn-right {
+            background-color: var(--seaGreen);
+            bottom: 25px;
+            right: 20px;
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            display: none;
+            z-index: 9998;
+            border-top: 2px solid #fff;
+        }
+
+        .accept-cookies-btn, .reject-cookies-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            color: #fff;
+        }
+
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
+        .reject-cookies-btn {
+            background-color: #c0392b;
+        }
+    </style>
 </head>
-<style>
-    :root {
-        --carrotOrange: #de9228;
-        --japaneseIndigo: #1c3843;
-        --marigold: #ffab00;
-        --pictonBlue: #3db2ed;
-        --darkMidnightBlue: #12375f;
-        --midnightGreen: #12475f;
-        --seaGreen: #3c8d5c;
-        --antiFlashWhite: #f2f2f2;
-        --brightGray: #eaf1ee;
-
-        --blackSqueeze: #e9f4f6;
-        --linkWater: #d8e8f3;
-        --givry: #f7e6c5;
-        --periglacialBlue: #dce2d2;
-        --dustStorm: #e9d6d5;
-        --mojo: #bf3d36;
-    }
-    /* Floating Section */
-    .floating-btn {
-        position: fixed;
-        width: 68px;
-        height: 68px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        border: none;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .floating-btn:focus {
-        outline: 3px solid var(--darkMidnightBlue);
-        box-shadow: 0 0 10px var(--darkMidnightBlue);
-    }
-
-    .floating-btn i {
-        font-size: 2em;
-    }
-
-    .floating-btn img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .floating-btn-left {
-        background-color: var(--darkMidnightBlue);
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .floating-btn-right {
-        background-color: var(--seaGreen);
-        bottom: 25px;
-        right: 20px;
-    }
-
-    /* Cookie Consent Banner */
-    .cookie-consent-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 16px;
-        display: none;
-        z-index: 9998;
-        border-top: 2px solid #fff;
-    }
-
-    .accept-cookies-btn, .reject-cookies-btn {
-        padding: 5px 10px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        margin: 5px;
-        color: #fff;
-    }
-
-    .accept-cookies-btn {
-        background-color: green;
-    }
-
-    .reject-cookies-btn {
-        background-color: #c0392b;
-    }
-</style>
-<link rel="preload" href="{{ asset('css/style.css') }}" as="style">
 <body>
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
