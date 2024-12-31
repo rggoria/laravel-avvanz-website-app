@@ -15,9 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Ensure async scripts don’t block page rendering -->
-    <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
-
     <!-- This site is converting visitors into subscribers and customers with https://respond.io -->
     <script id="respondio__growth_tool" src="https://cdn.respond.io/widget/widget.js?wId=6feece8e-9e16-43b7-81bd-fab17638b60c"></script>
     <!-- https://respond.io -->
