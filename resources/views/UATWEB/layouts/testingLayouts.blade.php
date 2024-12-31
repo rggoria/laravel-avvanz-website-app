@@ -10,12 +10,20 @@
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Normal link to apply the full CSS (after preloading) -->
+    <!-- Preload Bootstrap CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style">
+
+    <!-- Preload jQuery -->
+    <link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script">
+
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="{{ asset('css/critical.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'; this.onload=null;">
+    <!-- Non-Critical CSS, with async loading -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <noscript><link rel="stylesheet" href="{{ asset('css/style.css') }}"></noscript>
 
-    <!-- Bootstrap CDN -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -36,13 +44,13 @@
     <!-- Floating Button -->
     @include('UATWEB.partials.floating')
 
-    <!-- jQuery CDN (Defer loading) -->
+    <!-- Defer jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
-    <!-- Bootstrap JavaScript (Defer loading) -->
+    <!-- Defer Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- Respond.io script (Defer loading) -->
+    <!-- Defer Respond.io script -->
     <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5" defer></script>
 
     <script>
@@ -84,7 +92,7 @@
         });
     </script>
 
-    <!-- Custom JS -->
+    <!-- Custom JS (Defer Loading) -->
     <script src="{{ asset('js/index.js') }}" defer></script>
 </body>
 </html>
