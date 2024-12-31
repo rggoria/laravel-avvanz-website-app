@@ -111,7 +111,7 @@
         background-color: #c0392b;
     }
 </style>
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/styleTesting.css') }}">
 <body>
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
