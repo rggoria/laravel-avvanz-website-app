@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +11,10 @@
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Preload Bootstrap CSS (for faster page rendering) -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Preload critical CSS for faster load -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" type="text/css" media="all">
 
-    <!-- Preload important images -->
+    <!-- Preload important image for faster rendering -->
     <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
     <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
     <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
@@ -25,7 +23,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Critical CSS (Inline for above-the-fold content) -->
+    <!-- Ensure async scripts don’t block page rendering -->
+    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
+
+    <!-- Critical CSS -->
     <style>
         body {
             margin: 0;
@@ -33,21 +34,20 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
 
-        .bg-image-christmas {
-            background: url("{{ asset('images/homepage/avvanzBgChristmas2.webp') }}") no-repeat center center;
-            background-size: cover;
-            background-position: center;
-        }
-
         .padding-vertical {
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
-
+        .margin-vertical {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
         .text-white {
             color: white;
         }
-
         .text-center {
             text-align: center;
         }
@@ -84,48 +84,12 @@
         .reject-cookies-btn {
             background-color: #c0392b;
         }
-
-        /* Mobile-specific Styles */
-        @media (max-width: 767px) {
-            /* Hero Section for Mobile */
-            .hero-text {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-
-            .hero-button {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-
-            .padding-vertical {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-        }
-
-        /* Desktop-specific Styles */
-        @media (min-width: 768px) {
-            .hero-text {
-                font-size: 2rem;
-            }
-
-            .hero-button {
-                font-size: 1.25rem;
-                padding: 12px 24px;
-            }
-
-            .padding-vertical {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-        }
     </style>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'"> --}}
     @yield('css')
 </head>
-
 <body>
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
@@ -143,9 +107,6 @@
 
     @yield('content')
 
-    <!-- Footer Section -->
-    @include('UATWEB.partials.footer')
-
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -154,9 +115,6 @@
 
     <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <!-- Ensure async scripts don’t block page rendering -->
-    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -199,5 +157,4 @@
 
     @yield('scripts')
 </body>
-
 </html>
