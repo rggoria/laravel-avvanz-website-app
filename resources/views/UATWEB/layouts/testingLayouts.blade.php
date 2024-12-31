@@ -112,6 +112,9 @@
     }
 </style>
 <body>
+    <!-- Navbar -->
+    @include('UATWEB.partials.navbar')
+    
     @yield('content')
 
     <!-- Cookie Consent Banner -->
