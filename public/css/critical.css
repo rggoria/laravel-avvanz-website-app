@@ -1,28 +1,23 @@
+:root {
+    --carrotOrange: #de9228;
+    --japaneseIndigo: #1c3843;
+    --marigold: #ffab00;
+    --pictonBlue: #3db2ed;
+    --darkMidnightBlue: #12375f;
+    --midnightGreen: #12475f;
+    --seaGreen: #3c8d5c;
+    --antiFlashWhite: #f2f2f2;
+    --brightGray: #eaf1ee;
+    --blackSqueeze: #e9f4f6;
+    --linkWater: #d8e8f3;
+    --givry: #f7e6c5;
+    --periglacialBlue: #dce2d2;
+    --dustStorm: #e9d6d5;
+    --mojo: #bf3d36;
+}
+
 .bg-ji {
     background-color: var(--japaneseIndigo);
-}
-
-.bg-dmb {
-    background-color: var(--darkMidnightBlue) !important;
-}
-
-.bg-marigold {
-    background-color: var(--marigold) !important;
-}
-
-.bg-mg {
-    background-color: var(--midnightGreen);
-}
-
-.bg-afw {
-    background-color: var(--antiFlashWhite);
-}
-.bg-bg {
-    background-color: var(--brightGray);
-}
-
-.bg-bs {
-    background-color: var(--blackSqueeze);
 }
 
 .bg-lw {
@@ -197,37 +192,50 @@
     background-color: var(--midnightGreen);
 }
 
-/* Links */
-.link-hover {
-    color: var(--marigold) !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.link-hover:hover {
-    color: var(--pictonBlue) !important;
-    font-weight: bold;
-}
-
-.file-hover {
-    color: var(--mojo) !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .file-hover:hover {
     color: black !important;
     font-weight: bold;
 }
 
-/* Navigation Section */
+/* Navigation #1 Section */
+.login-1 {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-1:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--marigold);
+}
+.login-2 {
+    color: var(--pictonBlue) !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-2:hover {
+    color: white !important;
+    border-radius: 5px;
+    background-color: var(--pictonBlue);
+}
+.login-3 {
+    color: white !important;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 1s, border-radius 1s, background-color 1s;
+}
+.login-3:hover {
+    color: var(--marigold) !important;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Navigation #2 Section */
 .navigation {
     color: black !important;
     background-color: transparent;
-}
-
-.christmas-text {
-    color: white !important;
 }
 
 .navigation:hover {
@@ -268,7 +276,7 @@
 
 .navigation-item:hover {
     color: white !important;
-    background-color: var(--marigold);
+    background-color: var(--marigold) !important;
 }
 
 .navigation-item.active {
@@ -277,12 +285,12 @@
 }
 
 .dropdown-divider {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .dropdown-menu {
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .nav-main-display:hover .nav-main-content {
@@ -324,69 +332,13 @@
     display: block;
 }
 
-.divider-start-25 {
-    border-bottom: 3px solid var(--marigold) !important;
-    width: 25%;
-}
-
-.divider-start-50 {
-    border-bottom: 3px solid var(--marigold) !important;
-    width: 50%;
-}
-
-.divider-center-25 {
-    border-bottom: 3px solid var(--marigold) !important;
-    width: 25%;
-    margin: 0 auto;
-}
-
-.divider-ji {
-    border-bottom: 3px solid var(--japaneseIndigo) !important;
-    width: 100%;
-    margin: 0 auto;
-}
-
+/* Transition Section */
 .transition-up {
     transition: transform 0.3s ease-in-out;
 }
 
 .transition-up:hover {
     transform: translateY(-10px);
-}
-
-/* Header Section */
-.login-1 {
-    color: var(--marigold) !important;
-    border-radius: 5px;
-    background-color: transparent;
-    transition: color 1s, border-radius 1s, background-color 1s;
-}
-.login-1:hover {
-    color: white !important;
-    border-radius: 5px;
-    background-color: var(--marigold);
-}
-.login-2 {
-    color: var(--pictonBlue) !important;
-    border-radius: 5px;
-    background-color: transparent;
-    transition: color 1s, border-radius 1s, background-color 1s;
-}
-.login-2:hover {
-    color: white !important;
-    border-radius: 5px;
-    background-color: var(--pictonBlue);
-}
-.login-3 {
-    color: white !important;
-    border-radius: 5px;
-    background-color: transparent;
-    transition: color 1s, border-radius 1s, background-color 1s;
-}
-.login-3:hover {
-    color: var(--marigold) !important;
-    border-radius: 5px;
-    background-color: white;
 }
 
 /* Floating Section */
@@ -430,145 +382,77 @@
     right: 20px;
 }
 
-/* Footer Section */
-.link-category {
-    color: var(--marigold) !important;
-}
-
-.link-item {
-    color: white;
-}
-
-.link-item:hover {
-    color: var(--marigold) !important;
-}
-
-.link-location {
-    color: var(--marigold);
-    text-align: start;
-}
-
-.link-location:hover {
-    background-color: transparent;
-    color: white;
-}
-
-.link-location.active {
-    font-weight: bold !important;
-    background-color: transparent !important;
-    color: white !important;
-}
-
-.social-icon {
+/* Floating Section */
+.floating-btn {
+    position: fixed;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 24px;
-    text-decoration: none;
-    color: white;
-    border: 3px solid white;
-    border-radius: 50%;
-    transition: background-color 0.3s, color 0.3s;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.social-icon:hover {
-    border-color: var(--marigold);
-    color: var(--marigold);
+.floating-btn:focus {
+    outline: 3px solid var(--darkMidnightBlue);
+    box-shadow: 0 0 10px var(--darkMidnightBlue);
 }
 
-.btn-floating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 24px;
-    text-decoration: none;
+.floating-btn i {
+    font-size: 2em;
 }
 
-.social-button {
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #333;
-    text-decoration: none;
-    font-size: 1.25rem;
-    margin: 0.5rem;
-}
-.social-button:hover {
-    background-color: #f0f0f0;
+.floating-btn img {
+    width: 24px;
+    height: 24px;
 }
 
-.table-fixed {
-    table-layout: fixed;
+.floating-btn-left {
+    background-color: var(--darkMidnightBlue);
+    bottom: 20px;
+    left: 20px;
+}
+
+.floating-btn-right {
+    background-color: var(--seaGreen);
+    bottom: 25px;
+    right: 20px;
+}
+
+/* Cookie Consent Banner */
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-}
-.table-fixed td {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 8px;
-    vertical-align: middle;
-}
-.table-fixed col {
-    width: 33.33%;
-}
-
-.card-img-top {
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    border-radius: 22px 22px 0 0;
-    border-bottom: 3px solid var(--darkMidnightBlue);
+    padding: 10px 0;
+    font-size: 16px;
+    display: none;
+    z-index: 9998;
+    border-top: 2px solid #fff;
 }
 
-.img-border-rounded-afw {
-    border-radius: 50%;
-    border: 3px solid var(--antiFlashWhite);
+.accept-cookies-btn,
+.reject-cookies-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    color: #fff;
 }
 
-.img-border-rounded-dmb {
-    border-radius: 50%;
-    border: 3px solid var(--darkMidnightBlue);
+.accept-cookies-btn {
+    background-color: green;
 }
 
-.modal-body {
-    padding: 0;
-}
-.modal-body img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* .modal-dialog {
-    max-width: 700px;
-} */
-
-.speech-bubble {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--antiFlashWhite);
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.speech-bubble-tail {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--antiFlashWhite);
+.reject-cookies-btn {
+    background-color: #c0392b;
 }
