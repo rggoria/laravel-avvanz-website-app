@@ -143,6 +143,9 @@
 
     @yield('content')
 
+    <!-- Footer Section -->
+    @include('UATWEB.partials.footer')
+
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
