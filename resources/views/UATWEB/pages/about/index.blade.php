@@ -157,7 +157,7 @@ About Us - Avvanz Global
                 width="250"
                 height="350"
                 alt="About Us Image 1"
-                class="rounded-3 transition-up"
+                class="img-fluid rounded-3 transition-up"
                 loading="lazy">
         </div>
         <div class="col-lg-9">
@@ -202,7 +202,7 @@ About Us - Avvanz Global
                     width="450" 
                     height="300" 
                     alt="About Us Image 2" 
-                    class="transition-up rounded-3"
+                    class="img-fluid rounded-3 transition-up"
                     loading="lazy">
             </div>
         </div>
@@ -262,7 +262,7 @@ About Us - Avvanz Global
                     width="450" 
                     height="300" 
                     alt="About Us Image 3" 
-                    class="transition-up rounded-3"
+                    class="img-fluid rounded-3 transition-up"
                     loading="lazy">
             </div>
         </div>
@@ -412,7 +412,7 @@ About Us - Avvanz Global
                     width="250" 
                     height="350" 
                     alt="About Us Image 4" 
-                    class="rounded-3 transition-up"
+                    class="img-fluid rounded-3 transition-up"
                     loading="lazy">
             </div>
         </div>
