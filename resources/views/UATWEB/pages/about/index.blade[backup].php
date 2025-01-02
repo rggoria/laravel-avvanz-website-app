@@ -91,24 +91,16 @@ About Us - Avvanz Global
 <section class="container margin-vertical text-white">
     <div class="row g-3">
         <div class="col-md-3">
-            <p class="fs-4 p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">
-                Vision, Mission & Core Values
-            </p>
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">Vision, Mission & Core Values</h4>
         </div>
         <div class="col-md-3">
-            <p class="fs-4 p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">
-                Why Avvanz
-            </p>
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">Why Avvanz</h4>
         </div>
         <div class="col-md-3">
-            <p class="fs-4 p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">
-                Council of Advisor
-            </p>
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-dmb fw-bolder text-center h-100 w-100">Council of Advisor</h4>
         </div>
         <div class="col-md-3">
-            <p class="fs-4 p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">
-                Management Team
-            </p>
+            <h4 class="p-5 d-flex justify-content-center align-items-center bg-marigold fw-bolder text-center h-100 w-100">Management Team</h4>
         </div>
     </div>
 </section>
@@ -420,54 +412,51 @@ About Us - Avvanz Global
 </section>
 
 <!-- Partners Section -->
-<section class="container my-5">
-    <h1 class="text-center text-dmb display-5 fw-bolder">
-        Discover Our Partners
-    </h1>
-    <h1 class="text-center divider-center-25"></h1>
-    <p class="text-center mt-2 text-wrap text-justify">
-        Connect with our trusted service providers and integration partners to streamline your background screening process.
-    </p>
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="text-dmb fw-bolder display-5">
+            Discover Our Partners
+        </h1>
+        <h1 class="divider-center-25"></h1>
+        <p class="mt-2 lead">
+            Connect with our trusted service providers and integration partners to streamline your background screening process.
+        </p>
+    </div>
     <div class="row justify-content-center my-5">
         <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" 
-                            class="{{ $count === 0 ? 'active' : '' }}" 
-                            aria-current="{{ $count === 0 ? 'true' : 'false' }}" 
-                            aria-label="Slide {{ $count + 1 }}">
-                    </button>
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
                 @endforeach
             </div>
-            <div class="carousel-inner" aria-live="polite">
+            <div class="carousel-inner" role="listbox">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" 
-                         aria-label="Award image {{ $item }} - Slide {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
                                     <img 
-                                        src="{{ asset('images/screen/' . $item) }}" 
-                                        class="img-fluid"
-                                        alt="{{ "Award ". $item }} - Image {{ $count + 1 }} of {{ count($trustedPartnerItems) }}"
-                                        loading="lazy">
+                                    src="{{ asset('images/screen/' . $item) }}" 
+                                    class="img-fluid"
+                                    alt="{{ "Award ". $item }}"
+                                    loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev" aria-label="Previous slide">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next" aria-label="Next slide">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-</section>
+</div>
 
 <!-- Awards Section -->
 <section class="bg-ji py-5">
@@ -490,10 +479,10 @@ About Us - Avvanz Global
                             alt="{{ $item['title'] }}"
                             loading="lazy">
                         <div class="card-body d-flex flex-column text-white text-center">
-                            <p class="fs-5 fw-bolder card-title text-center">
+                            <h5 class="card-title text-center">
                                 {{ $item['title'] }}
-                            </p>
-                            <p class="card-text text-center flex-fill mt-3">
+                            </h5>
+                            <p class="card-text text-center flex-fill">
                                 {{ $item['description'] }}
                             </p>
                             <a class="btn btn-orange-border" href="{{ route('aboutUsItem', ['title' => Str::slug($item['title'])]) }}">
@@ -521,7 +510,7 @@ About Us - Avvanz Global
             <picture>
                 <source srcset="{{ asset('images/about/management.webp') }}" type="image/webp">
                 <source srcset="{{ asset('images/about/management.webp') }}" type="image/webp">
-                <img src="{{ asset('images/about/management.webp') }}" alt="Avvanz’s Management Team" class="img-fluid transition-up" width="500" height="500">
+                <img src="{{ asset('images/about/management.webp') }}" alt="Avvanz’s Management Team" class="img-fluid transition-up" width="300" height="300">
             </picture>          
         </div>
     </div>
@@ -542,9 +531,9 @@ About Us - Avvanz Global
                 Kannan Chettiar
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 CEO and Co-Founder
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Kannan is an award-winning Global Leader with 27 years of experience in the Technology and Human Capital sectors spanning Asia, EMEA & Americas. Kannan’s Technopreneurship has earned him the “<span class="fw-bolder">Executive of the Year – Human Resources Technology</span>” award which is an extremely prestigious Management Excellence award from Singapore Business Review. Kannan has held management and leadership positions in First Advantage, Dell Computers, Future Electronics, Arrow Electronics (NY-listed), Farnell Group (London-listed), e2open (IBM-backed), and i-Sprint Innovations (Acer-backed). Kannan is also a Certified International Trainer with very high ratings from Fortune 500 Clients and an accredited Strength Scope Practitioner. Kannan regularly delivers Thought Leadership talks and Masterclasses in the region and constantly offers insights and perspectives in mainstream newspapers and trade publications. Kannan is proficient in several languages – he speaks fluent English, Tamil, elementary Mandarin, Malay, and Thai. An engineer by training, he holds an Honours degree in Electrical and Electronics Engineering from the Nanyang Technological University in Singapore and an MBA from the University of Birmingham in the UK. Kannan holds an Advanced Certificate in Training and Assessment as well.
@@ -564,9 +553,9 @@ About Us - Avvanz Global
                 Alvin Caga
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Co-Founder
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Alvin has more than 13 years of entrepreneurial experience focused on business development, sales & marketing, and operations. He co-built Vanguard Screening Solutions and developed it to become the top background screening provider in the Philippines. His sharp business acumen has helped craft Avvanz and other businesses including Vanguard Workforce Mobility and Tirta Resorts Management Group operate on top of their respective industries.  Prior to these, Alvin had a wealth of experience in handling top-notch customer service clientele with multinational companies in the fields of Business Process Outsourcing, IT Services, and Supply Chain Management. Alvin holds a Bachelor’s Degree in Business Administration (Major in Computer Applications) from De La Salle University – College of St. Benilde.
@@ -586,9 +575,9 @@ About Us - Avvanz Global
                 Jan Espino
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Co-Founder
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Jan is also co-founder and the Chief Executive Officer of Vanguard Screening Solutions which is a sister company of Avvanz in the same group of companies. He has led Vanguard’s growth from a three-person startup to one of the biggest background screening companies with around 250 employees serving more than 300 companies mainly in the Philippines. Jan has been in the Background Screening industry for more than 10 years, including his stint as the Regional IT Leader of First Advantage Asia-Pacific. Prior to that, he had spent almost 9 years with the San Miguel Group, mostly with its IT subsidiary, SMITS, Inc., where he held various positions in Portfolio Management, Customer Support, Technology Planning, and Network Management.
@@ -608,9 +597,9 @@ About Us - Avvanz Global
                 Siang Tan
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Managing Director for Asia
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Born and bred in Singapore, Siang is a consummate Sales professional having honed his skills with work experiences in FMCG with Fraser & Neeve and Unilever early in his career. Next came stints in IT sales leadership at Jebsen & Jessen and Dimension Data along with dives into entrepreneurship including F&B and most recently, cross-border payments partnership with WeChatPay. Siang holds a Bachelor of Commerce degree from Curtin University in Australia.
@@ -630,9 +619,9 @@ About Us - Avvanz Global
                 Marcellus Solomon
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Director-Business consultancy
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Marcellus is a seasoned business leader with a proven track record of driving strategic growth and delivering exceptional customer outcomes. With over a decade of experience in various leadership roles, his deep understanding of the local market and industry will be instrumental in mapping out Avvanz’s development and expansion.
@@ -661,9 +650,9 @@ About Us - Avvanz Global
                 Christy Lim
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Head of Finance and Strategy Execution
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     A finance professional with 15 years of experience in analysis, financial management reporting and control. Christy’s qualifications include an MBA in Corporate Finance from Nottingham Trent University, UK; and she graduated with a BBA (Distinction) in Finance & Real Estate from the University of Oklahoma, USA. 
@@ -686,9 +675,9 @@ About Us - Avvanz Global
                 Jhoann Alberto
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Senior Operations Manager
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     Jhoann has extensive experience in handling both operations and client success teams during her 10 years of experience in the background check industry. She is a graduate of Business Administration majoring in Office Management at the Polytechnic University of the Philippines. Prior to her role as the Senior Operations Manager, she was involved in and has led various departments including Finance, Vendor Management, and client care.
@@ -711,9 +700,9 @@ About Us - Avvanz Global
                 Denisse Aisah Pangilinan
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Head of Human Resources
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     A passionate HR person dedicated to creating a positive corporate culture and employee experience that promotes continuous business growth and cultivates customer obsession. With more than 7 years of experience in HR and people operations, Aisah worked with international companies focused on customer service, talent acquisition, employee engagement, learning, and collaboration. She is a graduate of Business Administration majoring in Human Resources at Saint Louis University and is currently taking up a Master’s in Business Administration. After achieving the national certification in Human Resources Associate in the Philippines as a top-notch, Aisah has been certified as a Mental Health First Responder – advocating mental wellness not only in the workplace but also in the community. 
@@ -733,9 +722,9 @@ About Us - Avvanz Global
                 Michael Santos
             </h1>
             <h1 class="divider-center-25"></h1>
-            <p class="fs-4 fw-bolder mt-3">
+            <h4 class="fw-bolder mt-3">
                 Information Technology Manager
-            </p>
+            </h4>
             <div class="border-dmb p-5 my-5 text-start text-dmb">
                 <p class="fw-bolder">
                     With over 18 years of diverse and hands-on experience in the IT industry, Mike has developed a comprehensive skill set spanning network management, system administration, software development, and IT project management. He is recognized for his technical expertise and ability to deliver high-impact solutions across a wide array of IT disciplines, making him a valuable asset in any organization.
