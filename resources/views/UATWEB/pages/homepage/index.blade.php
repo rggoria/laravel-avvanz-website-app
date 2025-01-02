@@ -116,25 +116,13 @@ Avvanz - Background Checks & Screening
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification1-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 1" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification1-w.webp') }}" alt="Certificate 1" class="img-fluid" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification2-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification2-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification2-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 2" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification2-w.webp') }}" alt="Certificate 2" class="img-fluid" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <picture>
-                            <source srcset="{{ asset('images/homepage/certification3-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                            <source srcset="{{ asset('images/homepage/certification3-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                            <img src="{{ asset('images/homepage/certification3-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 3" loading="lazy">
-                        </picture>
+                        <img src="{{ asset('images/homepage/certification3-w.webp') }}" alt="Certificate 3" class="img-fluid" loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAwardsIndicators" data-bs-slide="prev">
@@ -148,11 +136,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <picture>
-                <source srcset="{{ asset('images/homepage/certification4-m.webp') }}" type="image/webp" media="(max-width: 767px)">
-                <source srcset="{{ asset('images/homepage/certification4-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                <img src="{{ asset('images/homepage/certification4-w.webp') }}" class="img-fluid" style="height: 200px; width:auto" alt="Award 4" loading="lazy">
-            </picture>
+            <img src="{{ asset('images/homepage/certification4-w.webp') }}" alt="Certificate 4" class="img-fluid" loading="lazy">
         </div>
     </div>
 </section>
@@ -172,11 +156,7 @@ Avvanz - Background Checks & Screening
             </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img
-                src="{{ asset('images/homepage/homepage2.webp') }}"
-                alt="Homepage Image 2"
-                class="transition-up image-horizontal-display"
-                loading="lazy">
+            <img src="{{ asset('images/homepage/homepage2.webp') }}" alt="Homepage Image 2" class="img-fluid transition-up" loading="lazy">
         </div>
     </div>
 </section>
@@ -186,11 +166,7 @@ Avvanz - Background Checks & Screening
     <div class="container">
         <div class="row g-3">
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <img
-                    src="{{ asset('images/homepage/homepage3.webp') }}"
-                    alt="Homepage Image 3"
-                    class="transition-up image-horizontal-display"
-                    loading="lazy">
+                <img src="{{ asset('images/homepage/homepage3.webp') }}" alt="Homepage Image 3" class="img-fluid transition-up" loading="lazy">
             </div>
             <div class="col-lg-6 d-flex align-items-center">
                 <div>
@@ -220,12 +196,17 @@ Avvanz - Background Checks & Screening
         <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" 
+                            class="{{ $count === 0 ? 'active' : '' }}" 
+                            aria-current="{{ $count === 0 ? 'true' : 'false' }}" 
+                            aria-label="Slide {{ $count + 1 }}">
+                    </button>
                 @endforeach
             </div>
-            <div class="carousel-inner" role="listbox" aria-live="polite">
+            <div class="carousel-inner" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" role="option" aria-label="Award image {{ $item }} - {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" 
+                         aria-label="Award image {{ $item }} - Slide {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
@@ -240,11 +221,11 @@ Avvanz - Background Checks & Screening
                     </div>
                 @endforeach
             </div>            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev" aria-label="Previous slide">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next" aria-label="Next slide">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
