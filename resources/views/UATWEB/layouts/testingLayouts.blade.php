@@ -5,33 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <meta name="description" content="Our Multi-award winning background checks platform ScreenGlobal will help you mitigate risk due to wrongful hires.">
+    <meta name="description"
+        content="Our Multi-award winning background checks platform ScreenGlobal will help you mitigate risk due to wrongful hires.">
     
     <!-- Website Icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/homepage/avvanz.ico') }}"/>
 
-    <!-- Preload Bootstrap CSS -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style">
+    <!-- Preload critical CSS for faster load -->
+    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" type="text/css" media="all">
 
-    <!-- Preload jQuery -->
-    <link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script">
+    <!-- Preload important image for faster rendering -->
+    <link rel="preload" href="{{ asset('images/homepage/avvanzLogoChristmas_v1.webp') }}" as="image">
+    <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
+    <link rel="preload" href="{{ asset('images/homepage/homepage1-w.webp') }}" as="image" type="image/webp">
+
+    <!-- Minified Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Ensure async scripts don’t block page rendering -->
+    <script async id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5"></script>
 
     <!-- Critical CSS -->
-    <link rel="stylesheet" href="{{ asset('css/critical.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        }
 
-    <!-- Non-Critical CSS, with async loading -->
-    <link rel="preload" href="{{ asset('css/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet';" />
-    <noscript><link rel="stylesheet" href="{{ asset('css/style.css') }}"></noscript>
+        .padding-vertical {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .margin-vertical {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .section-padding {
+            padding: 3rem;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-center {
+            text-align: center;
+        }
 
-    <!-- Bootstrap CSS (from CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        /* Cookie Consent Banner */
+        .cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            display: none;
+            z-index: 9998;
+            border-top: 2px solid #fff;
+        }
+
+        .accept-cookies-btn, .reject-cookies-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            color: #fff;
+        }
+
+        .accept-cookies-btn {
+            background-color: green;
+        }
+
+        .reject-cookies-btn {
+            background-color: #c0392b;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="print" onload="this.media='all'"> --}}
+    @yield('css')
 </head>
 <body>
     <!-- Navbar -->
     @include('UATWEB.partials.navbar')
 
-    @yield('content')
+    <!-- Floating Button -->
+    @include('UATWEB.partials.floating')
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-labelledby="cookie-consent-heading" aria-live="assertive" aria-hidden="true">
@@ -41,17 +105,16 @@
         <button id="reject-cookies" class="reject-cookies-btn" aria-label="Reject cookies">Reject</button>
     </div>
 
-    <!-- Floating Button -->
-    @include('UATWEB.partials.floating')
+    @yield('content')
 
-    <!-- Defer jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Defer Bootstrap JS -->
+    <!-- Custom JS -->
+    <script src="{{ asset('js/index.js') }}" defer></script>
+
+    <!-- Deferred Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <!-- Defer Respond.io script -->
-    <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=6850f5d54cbfd25be536b0b59847be5" defer></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -92,7 +155,6 @@
         });
     </script>
 
-    <!-- Custom JS (Defer Loading) -->
-    <script src="{{ asset('js/index.js') }}" defer></script>
+    @yield('scripts')
 </body>
 </html>
