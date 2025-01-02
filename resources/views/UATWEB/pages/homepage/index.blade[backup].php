@@ -6,25 +6,11 @@ Avvanz - Background Checks & Screening
 
 @section('css')
 <link rel="preload" href="{{ asset('images/homepage/homepageBg.webp') }}" as="image" type="image/webp">
-<link rel="preload" href="{{ asset('images/homepage/avvanzBgChristmas2.webp') }}" as="image" type="image/webp">
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}" media="print" onload="this.media='all'">
 
 <link rel="preload" href="{{ asset('images/homepage/homepage1-m.webp') }}" as="image" type="image/webp">
 <link rel="preload" href="{{ asset('images/homepage/leadership-m.webp') }}" as="image" type="image/webp">
 <style>
-    @media (max-width: 768px) {
-        .no-stack {
-            flex-wrap: nowrap;
-        }
-    }
-
-    .bg-image-bintan {
-        background: url("../images/homepage/bintan.webp") no-repeat center;
-        background-size: cover;
-        position: relative;
-        height: 100%;
-    }
-
     @media (max-width: 767px) {
         #carouselPartnershipItems .carousel-inner .carousel-item > div {
             display: none;
@@ -59,64 +45,14 @@ Avvanz - Background Checks & Screening
     }
 </style>
 
-<style>
-    /* customizable snowflake styling */
-    .snowflake {
-      color: #fff;
-      font-size: 1em;
-      font-family: Arial, sans-serif;
-      text-shadow: 0 0 5px #000;
-    }
-    
-    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
-</style>
-
 @endsection
 
 @section('content')
-<div class="snowflakes" aria-hidden="true">
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-    <div class="snowflake">
-        <div class="inner">❅</div>
-    </div>
-</div>
 <!-- Hero Section -->
 <section class="bg-image-1">
     <div class="container padding-vertical">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 justify-content-center align-content-center">
                 <div class="text-white">
                     <h1 class="fw-bolder display-5">
                         We Screen & Strengthen your Human Assets
@@ -132,10 +68,10 @@ Avvanz - Background Checks & Screening
                 <picture>
                     <source srcset="{{ asset('images/homepage/homepage1-m.webp') }}" type="image/webp" media="(max-width: 767px)">
                     <source srcset="{{ asset('images/homepage/homepage1-w.webp') }}" type="image/webp" media="(min-width: 768px)">
-                    <img src="{{ asset('images/homepage/homepage1-w.webp') }}" alt="Homepage Image" class="img-fluid transition-up">
+                    <img src="{{ asset('images/homepage/homepage1-m.webp') }}" alt="Homepage Image" class="img-fluid transition-up" width="360" height="360">
                 </picture>
             </div>
-        </div>            
+        </div>
     </div>
 </section>
 
@@ -462,46 +398,23 @@ Avvanz - Background Checks & Screening
 </section>
 
 <!-- Modal Popup -->
-<div class="modal fade" id="adsModal" tabindex="-1" aria-labelledby="adsModalLabel" aria-hidden="true">
+<div class="modal fade" id="adsModal" tabindex="-1" aria-label="Leadership Ads Modal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content rounded-3 shadow-lg">
-            <div class="modal-body p-0">
-
-                <!-- Close Button -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <!-- Flexbox Container to prevent stacking -->
-                <div class="d-flex w-100" style="height: 100%;">
-
-                    <!-- Left Side: Hero Message/Description -->
-                    <div class="d-flex flex-column justify-content-center align-items-start p-4 bg-mg" style="flex: 1;">
-                        <img 
-                            src="{{ asset('images/homepage/avvanzFooter.webp') }}"
-                            alt="Avvanz Logo"
-                            loading="lazy"
-                            style="width: 75px; height: auto; margin-right: 1rem;"
-                        >
-                        <h1 class="text-marigold fw-bolder">
-                            LEADERSHIP BREAKTHROUGH SUMMIT
-                        </h1>
-                        <p class="fs-5 mb-3 text-white">
-                            Join us for a Transformative 3-Day Leadership Summit Retreat!    
-                        </p>
-                        <p class="fs-5 mb-3 text-white">
-                            Elevate your skills, connect with visionaries, and unlock your leadership potential.
-                        </p>
-                    </div>
-
-                    <!-- Right Side: Placeholder Image -->
-                    <div class="d-flex justify-content-center align-items-center bg-image-bintan p-0" style="flex: 1; height: 100%; overflow: hidden;">
-                      
-                    </div>
-                </div>
+        <div class="modal-content">
+            <!-- Modal Body -->
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+                <a href="{{ route('leadership-home') }}">
+                    <picture>
+                        <source srcset="{{ asset('images/homepage/leadership-m.webp') }}" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="{{ asset('images/homepage/leadership-w.webp') }}" type="image/webp" media="(min-width: 768px)">
+                        <img src="{{ asset('images/homepage/leadership-w.webp') }}" alt="Leadership" class="img-fluid" fetchpriority="high">
+                    </picture>
+                </a>
             </div>
         </div>
     </div>
 </div>
-
 
 @endsection
 
@@ -510,7 +423,7 @@ Avvanz - Background Checks & Screening
         $(document).ready(function() {
             setTimeout(function() {
                 $('#adsModal').modal('show');
-            }, 100);  // Show modal after 5 seconds
+            }, 5000);  // Show modal after 5 seconds
         });
 
         let items = document.querySelectorAll('#carouselPartnershipItems .carousel-item');
