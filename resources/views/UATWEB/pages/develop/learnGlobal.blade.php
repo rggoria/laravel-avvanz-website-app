@@ -58,7 +58,11 @@ LearnGlobal - Avvanz Global
 <section class="container margin-vertical">
     <div class="text-center">
         <div class="d-flex align-items-center justify-content-center mt-5">
-            <img src="{{ asset('images/develop/LearnGlobal.webp') }}" alt="LearnGlobal" style="height: 350px; width: auto" class="transition-up img-fluid" loading="lazy">
+            <img src="{{ asset('images/develop/LearnGlobal.webp') }}"
+                alt="LearnGlobal"
+                class="img-fluid transition-up w-auto h-auto"
+                class="transition-up img-fluid"
+                loading="lazy">
         </div>
         <h1 class="divider-center-25"></h1>
         <p class="mt-5">
@@ -72,7 +76,9 @@ LearnGlobal - Avvanz Global
                     <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-{{ $i }}">
                         <img src="{{ asset('images/develop/' . $learnglobalItems[$i]['image']) }}" class="card-img-top" style="height: 200px; width: auto;" alt="{{ $learnglobalItems[$i]['title'] }}" loading="lazy">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-text fw-bolder text-co">{{ $learnglobalItems[$i]['title'] }}</h5>
+                            <p class="card-text fs-4 fw-bolder text-co">
+                                {{ $learnglobalItems[$i]['title'] }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +86,9 @@ LearnGlobal - Avvanz Global
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title w-bolder text-co" id="modalLabel-{{ $i }}">{{ $learnglobalItems[$i]['title'] }}</h5>
+                                <p class="modal-title fs-4 fw-bolder text-co" id="modalLabel-{{ $i }}">
+                                    {{ $learnglobalItems[$i]['title'] }}
+                                </p>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -165,7 +173,9 @@ LearnGlobal - Avvanz Global
     <div class="row text-start justify-content-center mt-5">
         <div class="col-md-6">
             <div class="card p-4 shadow">
-                <h4 class="text-center">Contact Us</h4>
+                <p class="fs-3 fw-bolder text-center">
+                    Contact Us
+                </p>
                 <div id="response-message"></div>
                 <form id="contact-form">
                     @csrf
@@ -212,7 +222,9 @@ LearnGlobal - Avvanz Global
                                     <div class="card border-radius-dmb h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-${offset + index}">
                                         <img src="/images/develop/${item.image}" class="card-img-top" style="height: 200px; width: auto;" alt="${item.title}" loading="lazy">
                                         <div class="card-body d-flex flex-column">
-                                            <h5 class="card-text fw-bolder text-co">${item.title}</h5>
+                                            <p class="card-text fs-4 fw-bolder text-co">
+                                                ${item.title}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -223,7 +235,9 @@ LearnGlobal - Avvanz Global
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title w-bolder text-co" id="modalLabel-${offset + index}">${item.title}</h5>
+                                                <p class="modal-title fs-4 fw-bolder text-co" id="modalLabel-${offset + index}">
+                                                    ${item.title}
+                                                </p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">

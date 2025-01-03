@@ -146,9 +146,9 @@ Revision Nibble & Learn - Avvanz Global
                             class="list-group-item d-flex align-items-center video-thumbnail {{ $loop->first ? 'active-video' : '' }}" 
                             data-video-id="{{ $items['code'] }}">
                             <i class="fas fa-play-circle me-2 fs-4"></i>
-                            <h5 class="mb-1 me-auto">
+                            <p class="fs-5 mb-1 me-auto">
                                 {{ $items['title'] }}
-                            </h5>
+                            </p>
                             <small class="text-body-secondary">
                                 {{ $items['duration'] }}
                             </small>
