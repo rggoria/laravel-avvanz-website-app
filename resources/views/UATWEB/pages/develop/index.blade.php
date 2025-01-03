@@ -125,7 +125,7 @@ Develop - Avvanz Global
                         <div class="d-grid gap-2 col-6 mx-auto my-4">
                             <a href="{{ route('trainingItems', ['title' => Str::slug($item['title'])]) }}" class="btn learn-button-marigold text-uppercase" title="Learn more about {{ $item['title'] }}">
                                 @if($item['title'] === 'Digital Transformation & Critical Skills for Digital Economy')
-                                    Learn more about Digital Transformation
+                                    Learn more about digital economy
                                 @else
                                     Learn more about {{ $item['title'] }}
                                 @endif
