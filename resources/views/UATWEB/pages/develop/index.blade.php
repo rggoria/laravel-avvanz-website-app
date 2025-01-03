@@ -123,7 +123,13 @@ Develop - Avvanz Global
                             {{ $item['description'] }}
                         </p>
                         <div class="d-grid gap-2 col-6 mx-auto my-4">
-                            <a href="{{ route('trainingItems', ['title' => Str::slug($item['title'])]) }}" class="btn learn-button-marigold text-uppercase">learn more</a>
+                            <a href="{{ route('trainingItems', ['title' => Str::slug($item['title'])]) }}" class="btn learn-button-marigold text-uppercase" title="Learn more about {{ $item['title'] }}">
+                                @if($item['title'] === 'Digital Transformation & Critical Skills for Digital Economy')
+                                    Learn more about Digital Transformation
+                                @else
+                                    Learn more about {{ $item['title'] }}
+                                @endif
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +194,7 @@ Develop - Avvanz Global
                             <div class="d-grid gap-2 col-6 mx-auto my-4">
                                 <a href="{{ $item['link'] }}" class="btn learn-button-mg text-uppercase" title="Learn more about {{ $item['title'] }}">
                                     Learn more about {{ $item['title'] }}
-                                </a>                                
+                                </a>
                             </div>
                         </div>
                     </div>
