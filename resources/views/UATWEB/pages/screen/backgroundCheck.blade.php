@@ -102,8 +102,8 @@ Background Checks Singapore - Avvanz Global
         <div class="col-md-5 d-flex align-items-center justify-content-center">
             <img 
                 src="{{ asset('images/screen/backgroundcheck.webp') }}" 
-                alt="Placeholder Image" 
-                class="transition-up img-fluid rounded-3 w-auto h-auto"
+                alt="Background Check Image 1" 
+                class="img-fluid transition-up rounded-3 w-auto h-auto"
                 loading="lazy">
         </div>
     </div>
@@ -130,9 +130,9 @@ Background Checks Singapore - Avvanz Global
                                         <div class="mb-3">
                                             <i class="fas {{ $item['icon'] }} fa-2x"></i>
                                         </div>
-                                        <h4 class="card-title fw-bolder">
+                                        <p class="card-title fs-4 fw-bolder">
                                             {{ $item['title'] }}
-                                        </h4>
+                                        </p>
                                         <p class="card-text">
                                             {{ $item['description'] }}
                                         </p>
@@ -176,9 +176,9 @@ Background Checks Singapore - Avvanz Global
                                         <div class="mb-3">
                                             <i class="fas {{ $item['icon'] }} fa-2x"></i>
                                         </div>
-                                        <h4 class="card-title fw-bolder">
+                                        <p class="card-title fs-4 fw-bolder">
                                             {{ $item['title'] }}
-                                        </h4>
+                                        </p>
                                         <p class="card-text">
                                             {{ $item['description'] }}
                                         </p>
@@ -222,9 +222,9 @@ Background Checks Singapore - Avvanz Global
                                         <div class="mb-3">
                                             <i class="fas {{ $item['icon'] }} fa-2x"></i>
                                         </div>
-                                        <h4 class="card-title fw-bolder">
+                                        <p class="card-title fs-4 fw-bolder">
                                             {{ $item['title'] }}
-                                        </h4>
+                                        </p>
                                         <p class="card-text">
                                             {{ $item['description'] }}
                                         </p>
@@ -268,9 +268,9 @@ Background Checks Singapore - Avvanz Global
                                         <div class="mb-3">
                                             <i class="fas {{ $item['icon'] }} fa-2x"></i>
                                         </div>
-                                        <h4 class="card-title fw-bolder">
+                                        <p class="card-title fs-4 fw-bolder">
                                             {{ $item['title'] }}
-                                        </h4>
+                                        </p>
                                         <p class="card-text">
                                             {{ $item['description'] }}
                                         </p>

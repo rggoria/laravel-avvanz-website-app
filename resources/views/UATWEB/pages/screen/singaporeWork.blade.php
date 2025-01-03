@@ -86,9 +86,9 @@ MOM Verification - Avvanz Global
 
 <!-- Accredited Rules Section -->
 <section class="container my-5 text-center">
-    <h4 class="fw-bolder text-dmb">
+    <p class="fs-4 fw-bolder text-dmb">
         Employers must ensure that their candidates’ qualifications are authentic and are awarded by accredited institutions.
-    </h4>
+    </p>
     <br>
     <div class="row g-3">
         <div class="col-6">

@@ -49,9 +49,9 @@ You searched for {{ $searchTerm }} - Avvanz GLobal
                     </ol>
                 </nav>
                 <h1 class="divider-start-25"></h1>
-                <h4>
+                <p class="fs-4 fw-bolder">
                     Search Results
-                </h4>
+                </p>
             </div>
             <div class="col-md-6">
                 <form action="{{ route('pages') }}" method="get">

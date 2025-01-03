@@ -69,7 +69,7 @@ Process - Avvanz Global
                 alt="Proccess"
                 width="350"
                 height="500"
-                class="transition-up rounded-3"
+                class="img-fluid transition-up rounded-3 w-auto h-auto"
                 loading="lazy">
         </div>
     </div>
@@ -78,9 +78,9 @@ Process - Avvanz Global
 <!-- Note Section  -->
 <section class="bg-afw">
     <div class="container text-center section-padding">
-        <h6 class="fw-bold">
+        <p class="fs-4 fw-bolder">
             Note: TAT or Turn-Around Time is computed from the date when you Checkout your Order after Candidate’s required information, signed Letter of Consent and mandatory documents are submitted at Avvanz ScreenGlobal.
-        </h6>
+        </p>
     </div>
 </section>
 

@@ -72,7 +72,7 @@ Avvanz ScreenGlobal - Avvanz Global
                 <img
                     src="{{ asset('images/screen/screenglobal.webp') }}"
                     alt="Screen Global"
-                    class="transition-up img-fluid rounded-3 w-auto h-auto"
+                    class="img-fluid transition-up rounded-3 w-auto h-auto"
                     loading="lazy">
             </div>
         </div>

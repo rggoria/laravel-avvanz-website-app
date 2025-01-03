@@ -65,9 +65,7 @@ ScreenChain - Avvanz Global
             <img 
                 src="{{ asset('images/screen/screenchain.webp') }}" 
                 alt="ScreenChain"
-                width="350"
-                height="300"
-                class="transition-up rounded-3"
+                class="img-fluid rounded-3 transition-up"
                 loading="lazy">
         </div>
         <div class="text-dark text-start section-padding">

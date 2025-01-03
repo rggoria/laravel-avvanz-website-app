@@ -57,9 +57,9 @@ Company Due Diligence - Avvanz Global
 <section class="bg-mg padding-vertical">
     <div class="container">
         <div class="text-center">
-            <h4 class="text-white fw-bolder">
+            <p class="fs-4 fw-bolder text-white">
                 According to the Association of Certified Fraud Examiners, more than $3.5 Trillion is lost by businesses to frauds.
-            </h4>
+            </p>
         </div>
     </div>
 </section>
@@ -141,9 +141,9 @@ Company Due Diligence - Avvanz Global
                     <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="p-3 bg-mg h-100 w-100">
                             <div class="text-start text-center">
-                                <h4 class="fw-bold">
+                                <p class="fs-4 fw-bold">
                                     {{ $item['title'] }}
-                                </h4>
+                                </p>
                                 <p>
                                     {{ $item['description'] }}
                                 </p>
@@ -175,9 +175,9 @@ Company Due Diligence - Avvanz Global
                     <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="p-3 border-radius-dmb h-100 w-100">
                             <div class="text-start text-center">
-                                <h4 class="fw-bold">
+                                <p class="fs-4 fw-bold">
                                     {{ $item['title'] }}
-                                </h4>
+                                </p>
                                 <p>
                                     {{ $item['description'] }}
                                 </p>

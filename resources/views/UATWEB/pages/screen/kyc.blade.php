@@ -73,7 +73,9 @@ KYC AML Compliance - Avvanz Global
                         class="card-img-top img-fluid rounded mx-auto d-block" 
                         alt="KYC Image 1"
                         loading="lazy">
-                    <h4 class="card-title mt-3 fw-bolder">Verify identity of your subjects</h4>
+                    <p class="card-title fs-4 mt-3 fw-bolder">
+                        Verify identity of your subjects
+                    </p>
                     <p class="card-text">
                         Avvanz’s Digital Identity Verification partnerships across the globe enable you to authenticate and ensure your subject is really who (s)he claims to be.
                     </p>
@@ -88,7 +90,9 @@ KYC AML Compliance - Avvanz Global
                         class="card-img-top img-fluid rounded mx-auto d-block" 
                         alt="KYC Image 2"
                         loading="lazy">
-                    <h4 class="card-title mt-3 fw-bolder">KYC or Know Your Customer (or Business or Partner or Employee)</h4>
+                    <p class="card-title fs-4 mt-3 fw-bolder">
+                        KYC or Know Your Customer (or Business or Partner or Employee)
+                    </p>
                     <p class="card-text">
                         Avvanz’s CDDGlobal and ScreenGlobal will offer you full insights on your subject before you engage in a partnership with that subject. We have APIs available too.
                     </p>
@@ -103,7 +107,9 @@ KYC AML Compliance - Avvanz Global
                         class="card-img-top img-fluid rounded mx-auto d-block" 
                         alt="KYC Image 3"
                         loading="lazy">
-                    <h4 class="card-title mt-3 fw-bolder">Global Watchlist and Sanctions with constant monitoring tools</h4>
+                    <p class="card-title fs-4 mt-3 fw-bolder">
+                        Global Watchlist and Sanctions with constant monitoring tools
+                    </p>
                     <p class="card-text">
                         Avvanz’s checks are focused around AML (Anti-money laundering), CTF (Counter-terrorism Financing), PEP (Politically Exposed Persons), Sanctions Compliance, Adverse Media and other crimes such as bribery and corruption, fraud and modern slavery.
                     </p>
@@ -143,7 +149,7 @@ KYC AML Compliance - Avvanz Global
             <div class="col-md-5 d-flex align-items-center justify-content-center">
                 <img 
                     src="{{ asset('images/screen/kyc4.webp') }}" 
-                    class="transition-up img-fluid rounded-3 w-auto h-auto" 
+                    class="img-fluid transition-up rounded-3 w-auto h-auto"
                     alt="KYC Image 4"
                     loading="lazy">
             </div>

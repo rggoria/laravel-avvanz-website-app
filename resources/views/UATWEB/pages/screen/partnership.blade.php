@@ -88,44 +88,47 @@ Partnership Integration - Avvanz Global
 
 <!-- Partners Section -->
 <div class="container margin-vertical">
-    <div class="text-center">
-        <h1 class="text-dmb fw-bolder display-5">
-            Discover Our Partners
-        </h1>
-        <h1 class="divider-center-25"></h1>
-        <p class="mt-2">
-            Connect with our trusted service providers and integration partners to streamline your background screening process.
-        </p>
-    </div>
+    <h1 class="text-center text-dmb display-5 fw-bolder">
+        Discover Our Partners
+    </h1>
+    <h1 class="text-center divider-center-25"></h1>
+    <p class="text-center mt-2 text-wrap text-justify">
+        Connect with our trusted service providers and integration partners to streamline your background screening process.
+    </p>
     <div class="row justify-content-center my-5">
         <div id="carouselPartnershipItems" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" class="{{ $count === 0 ? 'active' : '' }}" aria-current="{{ $count === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $count + 1 }}"></button>
+                    <button type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide-to="{{ $count }}" 
+                            class="{{ $count === 0 ? 'active' : '' }}" 
+                            aria-current="{{ $count === 0 ? 'true' : 'false' }}" 
+                            aria-label="Slide {{ $count + 1 }}">
+                    </button>
                 @endforeach
             </div>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" aria-live="polite">
                 @foreach ($trustedPartnerItems as $count => $item)
-                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}">
+                    <div class="carousel-item {{ $count === 0 ? 'active' : '' }}" 
+                         aria-label="Award image {{ $item }} - Slide {{ $count + 1 }} of {{ count($trustedPartnerItems) }}">
                         <div class="col-md-4">
                             <div class="card mx-3">
                                 <div class="card-img">
                                     <img 
-                                    src="{{ asset('images/screen/' . $item) }}" 
-                                    class="img-fluid"
-                                    alt="{{ "Award ". $item }}"
-                                    loading="lazy">
+                                        src="{{ asset('images/screen/' . $item) }}" 
+                                        class="img-fluid"
+                                        alt="{{ "Award ". $item }} - Image {{ $count + 1 }} of {{ count($trustedPartnerItems) }}"
+                                        loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev">
+            </div>            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="prev" aria-label="Previous slide">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPartnershipItems" data-bs-slide="next" aria-label="Next slide">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -142,9 +145,9 @@ Partnership Integration - Avvanz Global
                             alt="{{ $item['title'] }}"
                             loading="lazy">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bolder text-dmb">
+                            <p class="card-title fw-bolder fs-5 text-dmb">
                                 {{ $item['title'] }}
-                            </h5>
+                            </p>
                             <div class="text-muted">
                                 <small>
                                     {{ $item['created_at'] }}
