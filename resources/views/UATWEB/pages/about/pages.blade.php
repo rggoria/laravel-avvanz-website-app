@@ -58,7 +58,7 @@ You searched for {{ $searchTerm }} - Avvanz GLobal
                     <div class="input-group mt-5">
                         <input type="text" class="form-control border-simple-left" name="s" placeholder="Search..." value="{{ $searchTerm }}" required>
                         <div class="input-group-append">
-                            <button class="btn border-simple-right bg-marigold px-5" type="submit">
+                            <button class="btn border-simple-right bg-marigold px-5" type="submit" aria-label="Search">
                                 <i class="fas fa-search text-white"></i>
                             </button>
                         </div>
@@ -98,7 +98,7 @@ You searched for {{ $searchTerm }} - Avvanz GLobal
                                 loading="lazy">
                         @endif
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bolder text-dmb">
+                            <p class="card-title fw-bolder fs-5 text-dmb">
                                 {{ $item['title'] === 'Back Digital Transformation Brings New Opportunities For Healthcare' ? 'Digital Transformation Brings New Opportunities For Healthcare' : $item['title'] }}
                             </h5>
                             <p class="card-text fw-bolder text-marigold">

@@ -53,7 +53,7 @@ Environmental, Social and Governance
                     <div class="input-group mt-5">
                         <input type="text" class="form-control border-simple-left" name="s" placeholder="Search..." required>
                         <div class="input-group-append">
-                            <button class="btn border-simple-right bg-marigold px-5" type="submit">
+                            <button class="btn border-simple-right bg-marigold px-5" type="submit" aria-label="Search">
                                 <i class="fas fa-search text-white"></i>
                             </button>
                         </div>
@@ -77,9 +77,9 @@ Environmental, Social and Governance
                         style="height: 200px; width: auto;"
                         loading="lazy">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bolder text-dmb">
+                        <p class="card-title fw-bolder fs-5 text-dmb">
                             {{ $item['title'] }}
-                        </h5>
+                        </p>
                         <p class="card-text fw-bolder text-marigold">
                             Read More »
                         </p>
