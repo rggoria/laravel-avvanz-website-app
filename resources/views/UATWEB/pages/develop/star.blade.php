@@ -60,8 +60,7 @@ Star Trainers - Avvanz Global
         <img
             src="{{ asset('images/develop/star1.webp')}}"
             alt="Kevin Cottam Image"
-            style="height: 250px; width: 250px;"
-            class="img-fluid img-border-rounded-dmb"
+            class="img-fluid transition-up img-border-rounded-dmb"
             loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Kevin Cottam, PCC, BSc
@@ -110,8 +109,7 @@ Star Trainers - Avvanz Global
         <img
             src="{{ asset('images/develop/star2.webp')}}"
             alt="Sylvia Fernandes Image"
-            style="height: 250px; width: 250px;"
-            class="img-fluid img-border-rounded-dmb"
+            class="img-fluid transition-up img-border-rounded-dmb"
             loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Sylvia Fernandes
@@ -166,8 +164,7 @@ Star Trainers - Avvanz Global
         <img
             src="{{ asset('images/develop/star3.webp')}}"
             alt="Dr. Gleb Tsipurksy Image"
-            style="height: 250px; width: 250px;"
-            class="img-fluid img-border-rounded-dmb"
+            class="img-fluid transition-up img-border-rounded-dmb"
             loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Dr. Gleb Tsipurksy
@@ -208,8 +205,7 @@ Star Trainers - Avvanz Global
         <img
             src="{{ asset('images/develop/star4.webp')}}"
             alt="Kannan Chettiar Image"
-            style="height: 250px; width: 250px;"
-            class="img-fluid img-border-rounded-dmb"
+            class="img-fluid transition-up img-border-rounded-dmb"
             loading="lazy">
         <h1 class="text-dmb fw-bolder">
             Kannan Chettiar
