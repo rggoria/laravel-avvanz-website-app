@@ -57,32 +57,34 @@ Develop - Avvanz Global
 <!-- Training Framework Section -->
 <section class="container margin-vertical">
     <div class="text-center">
-        <p class="mt-2 text-pb">
+        <p class="fs-4 fw-bolder mt-2 text-dmb">
             To be a successful contributor to your organization amidst the Digital Economy, the right skills and competencies are very critical. To achieve that, a customized, contextualized, localized, and highly engaging training and development strategy must be crafted.
         </p>
-        <h3 class="text-co">
+        <p class="fs-3 fw-bolder mt-2 text-co">
             Avvanz's Training Framework
-        </h3>
+        </p>
         <div class="d-flex align-items-center justify-content-center my-5">
             <img
                 src="{{ asset('images/develop/develop1.webp')}}"
                 alt="Develop Image 1"
-                style="height: 450px; width:350px;"
-                class="transition-up img-fluid"
+                height="500"
+                width="500"
+                class="img-fluid transition-up rounded-3 w-auto h-auto"
                 loading="lazy">
         </div>
-        <p class="my-5 text-start">
+        <p class="fs-4 fw-bolder my-5 text-start">
             Avvanz’s mission is to bring you world-class Mastery of Business Skills to stay relevant in this Digital Economy through our face-to-face, virtual, or blending trainings facilitated by STAR Trainers, who possess in-depth role-specific and domain-specific working experiences across multiple disciplines around the globe. The learning journey also consists of an on-demand, micro-learning programs that learners can access 24/7 at their own time and a monthly Nibble & Learn sessions for maximum retention and application.
         </p>
-        <h3 class="text-co">
+        <p class="fs-3 fw-bolder mt-2 text-co">
             Avvanz's Training Methodology
-        </h3>
+        </p>
         <div class="d-flex align-items-center justify-content-center my-5">
             <img
                 src="{{ asset('images/develop/develop2.webp')}}"
                 alt="Develop Image 2"
-                style="height: 350px; width:350px;"
-                class="transition-up img-fluid"
+                height="500"
+                width="500"
+                class="img-fluid transition-up rounded-3 w-auto h-auto"
                 loading="lazy">
         </div>
         <hr>
@@ -90,8 +92,9 @@ Develop - Avvanz Global
             <img
                 src="{{ asset('images/develop/develop3.webp')}}"
                 alt="Develop Image 3"
-                style="height: 200px; width:350px;"
-                class="transition-up img-fluid"
+                height="500"
+                width="500"
+                class="img-fluid transition-up rounded-3 w-auto h-auto"
                 loading="lazy">
         </div>
     </div>
@@ -113,12 +116,12 @@ Develop - Avvanz Global
                     </div>
                     @endif
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bolder text-dmb">
+                        <p class="card-title fs-4 fw-bolder text-dmb">
                             {{ $item['title'] }}
-                        </h5>
-                        <h5 class="card-text">
+                        </p>
+                        <p class="card-text">
                             {{ $item['description'] }}
-                        </h5>
+                        </p>
                         <div class="d-grid gap-2 col-6 mx-auto my-4">
                             <a href="{{ route('trainingItems', ['title' => Str::slug($item['title'])]) }}" class="btn learn-button-marigold text-uppercase">learn more</a>
                         </div>
@@ -128,29 +131,31 @@ Develop - Avvanz Global
         @endforeach
     </div>
     <div class="row g-3 py-5">
-        <div class="col-sm-12 col-md-6 col-lg-6 mb-4 d-flex align-items-center ">
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-4 d-flex align-items-center">
             <div class="d-flex justify-content-center">
                 <img
                     src="{{ asset('images/develop/develop4.webp')}}"
                     alt="Develop Image 4"
-                    class="transition-up img-fluid h-50 w-50"
+                    class="img-fluid transition-up rounded-3 w-auto h-auto"
                     loading="lazy">
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
-            <p>
-                A study has shown that a robust training and development program consisting of the following mentioned components can improve an employee’s performance by at least 20% in a year.
-            </p>
-            <div class="text-start">
-                <ul class="list-unstyled">
-                    @foreach ( $programItems as $items )
-                        <li class="d-flex align-items-start mb-2">
-                            <i class="fas fa-check-circle me-2 fs-6 mt-1 text-co align-self-start"></i>
-                            {{ $items }}
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-4 d-flex align-items-center">
+            <div>
+                <p>
+                    A study has shown that a robust training and development program consisting of the following mentioned components can improve an employee’s performance by at least 20% in a year.
+                </p>
+                <div class="text-start">
+                    <ul class="list-unstyled">
+                        @foreach ( $programItems as $items )
+                            <li class="d-flex align-items-start mb-2">
+                                <i class="fas fa-check-circle me-2 fs-6 mt-1 text-co align-self-start"></i>
+                                {{ $items }}
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>            
         </div>
     </div>
 </section>
@@ -174,12 +179,12 @@ Develop - Avvanz Global
                             alt="{{ $item['title'] }}"
                             loading="lazy">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bolder text-dmb">
+                            <p class="card-title fs-4 fw-bolder text-dmb">
                                 {{ $item['title'] }}
-                            </h5>
-                            <h5 class="card-text">
+                            </p>
+                            <p class="card-text">
                                 {{ $item['description'] }}
-                            </h5>
+                            </p>
                             <div class="d-grid gap-2 col-6 mx-auto my-4">
                                 <a href="{{ $item['link'] }}" class="btn learn-button-mg text-uppercase">learn more</a>
                             </div>

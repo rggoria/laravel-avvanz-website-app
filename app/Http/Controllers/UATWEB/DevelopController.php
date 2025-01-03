@@ -40,17 +40,17 @@ class DevelopController extends Controller
                 'title' => 'LEARNGLOBAL',
                 'description' => 'An integrated platform for complete Learning and Development without needing multiple investments in various platforms and solutions.',
                 'image' => 'methodology1.webp',
-                'link' => 'https://uatweb.avvanz.com/learnglobal',
+                'link' => route('develop-2'),
             ], [
                 'title' => 'STAR TRAINERS',
                 'description' => 'Highly experienced business leaders who have global training experience.',
                 'image' => 'methodology2.webp',
-                'link' => 'https://uatweb.avvanz.com/star-trainers',
+                'link' => route('develop-1'),
             ], [
                 'title' => 'NIBBLE & LEARN',
                 'description' => 'Short, quick, and effective Nibble-n-Learn format courses.',
                 'image' => 'methodology3.webp',
-                'link' => 'https://uatweb.avvanz.com/revision-nibble-learn',
+                'link' => route('develop-3'),
             ],
         ];
         $methodologyItems = [
